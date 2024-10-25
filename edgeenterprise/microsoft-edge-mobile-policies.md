@@ -3,7 +3,7 @@ title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 10/18/2024
+ms.date: 10/25/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -2531,7 +2531,6 @@ Supported actions are:
 - 'close_tabs': close all open tabs and create a NTP (New Tab Page).
 - 'clear_browsing_history': clear the browsing history.
 - 'clear_cookies_and_other_site_data': clear browsing history and other site data.
-- 'sign_out': Signs out the current signed in user. Only supported on iOS.
 
 #### Supported features
 
