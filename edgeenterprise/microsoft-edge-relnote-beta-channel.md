@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -154,12 +154,6 @@ Fixed various bugs and performance issues, feature updates, and policy updates.
 ## Version 130.0.2849.27: October 7, 2024
 
 Fixed various bugs and performance issues.
-
-### Policy updates
-
-#### New policies
-
-- [ImageEditorServiceEnabled](/deployedge/microsoft-edge-policies#imageeditorserviceenabled) - Enable the Designer for Image Editor feature
 
 ## Version 130.0.2849.13: September 30, 2024
 
