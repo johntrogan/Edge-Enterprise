@@ -3,7 +3,7 @@ title: "Release notes for Microsoft Edge Security Updates"
 ms.author: pchiquini
 author: dan-wesley
 manager: robfranco
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -171,6 +171,9 @@ This update also contains the following Microsoft Edge-specific update:
 
 Microsoft has a fix for [CVE-2024-4947](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4947) to **Microsoft Edge Stable Channel (Version 124.0.2478.109) and Extended Stable channel (Version 124.0.2478.109)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4947](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4947). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
+
 This update also contains the following Microsoft Edge-specific update:
 
 - [CVE-2024-30056](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30056)
@@ -179,9 +182,15 @@ This update also contains the following Microsoft Edge-specific update:
 
 Microsoft has a fix for [CVE-2024-4761](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4761) to **Microsoft Edge Stable Channel and Extended Stable Channels, (Version 124.0.2478.105)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4761](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4761). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
+
 ## May 10, 2024
 
 Microsoft has a fix for [CVE-2024-4671](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4671) to **Microsoft Edge Stable Channel (Version 124.0.2478.97)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4671](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4671). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
 
 This update also contains the following Microsoft Edge-specific update:
 
