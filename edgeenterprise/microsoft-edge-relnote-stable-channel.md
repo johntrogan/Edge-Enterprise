@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -67,6 +67,8 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - Fixed an issue that prevented the briefcase icon from appearing on the *edge://settings/sidebar* page when Edge Bar was disabled using the [StandaloneHubsSidebarEnabled](/deployedge/microsoft-edge-policies#standalonehubssidebarenabled) policy.
 
 - Fixed an issue that caused rendering issues on some SharePoint sites.
+
+- Fixed an issue where a "Can't update Microsoft Edge" dialog was mistakenly shown for managed Windows devices.
 
 ### Announcements
 
