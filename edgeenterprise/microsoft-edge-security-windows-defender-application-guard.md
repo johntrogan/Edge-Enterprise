@@ -15,7 +15,7 @@ description: "Microsoft Edge support for Microsoft Defender Application Guard"
 # Microsoft Edge support for Microsoft Defender Application Guard
 
 > [!IMPORTANT]
-> Microsoft Defender Application Guard, including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher), will be deprecated for Microsoft Edge for Business and [will no longer be updated](/windows/whats-new/deprecated-features).
+> Microsoft Defender Application Guard, including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher), is deprecated for Microsoft Edge for Business and [will no longer be updated](/windows/whats-new/deprecated-features). Starting with Windows 11, version 24H2, Microsoft Defender Application Guard, including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is no longer available.
 >
 >**Existing installations of Application Guard**
 >
