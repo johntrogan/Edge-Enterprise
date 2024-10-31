@@ -169,7 +169,10 @@ The second option is to set the [EdgeSidebarAppUrlHostBlockList](/deployedge/mic
 ![Use group policy to control which appsextensions can't be installed in the sidebar.](media/microsoft-edge-sidebar/control-app-cannot-be-opened-sidebar2-cropped.png)
 
 <!-- =========================================== -->
-## Allow specific sidebar apps
+## Allow specific sidebar apps (deprecated)
+
+> [!NOTE]
+> This applies to Microsoft Edge 107 and later. Starting with Microsoft Edge 131 we recommend using [Allow specific sidebar apps except Search using URLs](#allow-specific-sidebar-apps-except-search-using-urls).
 
 You can use the [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#extensioninstallblocklist) and [ExtensionInstallAllowlist](/deployedge/microsoft-edge-policies#extensioninstallallowlist) policies to allow specific sidebar apps while blocking the rest of the sidebar apps. Use the following steps as a guide to exempt a specific sidebar app from the blocklist.
 
@@ -192,6 +195,26 @@ You can use the [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#
    Use group policy to allow the installation of specific extensions:
 
    ![Use group policy to install specific extensions.](media/microsoft-edge-sidebar/allow-install-specific-extension.png)
+
+<!-- =========================================== -->
+## Allow specific sidebar apps except Search using URLs
+
+> [!NOTE]
+> This applies to Microsoft Edge 131 and later.
+
+You can use the [EdgeSidebarAppUrlHostBlockList], [ExtensionInstallBlocklist] and **EdgeSidebarAppUrlHostAllowlist** policies to allow specific sidebar apps, (except the Search app) while blocking the rest of the sidebar apps. To allow the Search app, see [Allow the Search app](#allow-the-search-app).
+
+
+<!----- Allow apps to be opened: sidebar-allow-specific-apps-to-open.png --->
+
+
+
+## Allow the Search app
+
+> [!NOTE]
+> This applies to Microsoft Edge 131 and later.
+
+<!----- Allow extensions to be installed: sidebar-allow-specific-extensions-to-install.png --->
 
 ## Force enable specific sidebar apps
 
