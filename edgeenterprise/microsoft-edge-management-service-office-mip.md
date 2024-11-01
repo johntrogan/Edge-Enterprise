@@ -18,6 +18,8 @@ This article explains how to use the Microsoft Information Protection(MIP) polic
 
 ## About the use of MIP
 
+## How to enable the MIP setting inside a policy
+
 ## See also
 
 - [Microsoft Edge management service](microsoft-edge-management-service.md)
