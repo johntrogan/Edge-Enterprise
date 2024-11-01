@@ -207,11 +207,11 @@ You can use the [EdgeSidebarAppUrlHostBlockList], [ExtensionInstallBlocklist] 
 Use the following steps as a guide to exempt a specific sidebar app from the blocklist.
 
 1. Follow the **second option** in [Block all sidebar apps](#block-all-sidebar-apps) to block all sidebar apps.  
-2. In the ****group policy management editor, go to **Administrative Templates** > **Microsoft Edge** > **Extensions** and then select "Allow specific apps to be opened in Microsoft Edge sidebar".
+2. In the group policy management editor, go to **Administrative Templates** > **Microsoft Edge** > **Extensions** and then select "Allow specific apps to be opened in Microsoft Edge sidebar".
 3. Select **Enabled**.
 4. Click **Show**.
 5. Enter the URLs or URL patterns of the sidebar app that you want to allow. For more information about valid URL patterns, see [Filter format for URL list-based policies](/deployedge/edge-learnmore-ent-policy-url-patterns).
-6. Click OK when you're finished entering URLs.
+6. Click **OK** when you're finished entering URLs.
 
 <!----- Allow apps to be opened: sidebar-allow-specific-apps-to-open.png --->
 
