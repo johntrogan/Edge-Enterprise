@@ -211,11 +211,10 @@ Use the following steps as a guide to exempt a specific sidebar app from the blo
 3. Select **Enabled**.
 4. Click **Show**.
 5. Enter the URLs or URL patterns of the sidebar app that you want to allow. For more information about valid URL patterns, see [Filter format for URL list-based policies](/deployedge/edge-learnmore-ent-policy-url-patterns).
-6. Click **OK** when you're finished entering URLs.
+6. Click **OK** when you're finished entering URLs. For example, *[\*.]youtube.com* in the next screenshot.
 
 <!----- Allow apps to be opened: sidebar-allow-specific-apps-to-open.png --->
-
-[Allow specific apps to be opened](media/microsoft-edge-sidebar/sidebar-allow-specific-apps-to-open.png)
+   ![Allow specific apps to be opened](media/microsoft-edge-sidebar/sidebar-allow-specific-apps-to-open.png)
 
 ## Allow the Search app
 
@@ -238,7 +237,7 @@ Use the following steps as a guide to allow the Search app.
    - The Sidebar internals JSON file includes a manifest for all sidebar apps, including an `extension_id` parameter for each app. You can use these values to configure the policy.
 
 <!----- Allow extensions to be installed: sidebar-allow-specific-extensions-to-install.png --->
-[Allow specific extensions to be installed](media/microsoft-edge-sidebar/sidebar-allow-specific-extensions-to-install.png)
+   ![Allow specific extensions to be installed](media/microsoft-edge-sidebar/sidebar-allow-specific-extensions-to-install.png)
 
 ## Force enable specific sidebar apps
 
