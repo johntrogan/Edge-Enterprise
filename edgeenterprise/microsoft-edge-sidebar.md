@@ -202,7 +202,7 @@ You can use the [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#
 > [!NOTE]
 > This applies to Microsoft Edge 131 and later.
 
-You can use the [EdgeSidebarAppUrlHostBlockList], [ExtensionInstallBlocklist] and **EdgeSidebarAppUrlHostAllowlist** policies to allow specific sidebar apps, (except the Search app) while blocking the rest of the sidebar apps. To allow the Search app, see [Allow the Search app](#allow-the-search-app).
+You can use the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist), [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#extensioninstallblocklist) and **EdgeSidebarAppUrlHostAllowlist** policies to allow specific sidebar apps, (except the Search app) while blocking the rest of the sidebar apps. To allow the Search app, see [Allow the Search app](#allow-the-search-app).
 
 Use the following steps as a guide to exempt a specific sidebar app from the blocklist.
 
