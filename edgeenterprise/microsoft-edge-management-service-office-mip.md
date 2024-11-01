@@ -18,7 +18,7 @@ This article explains how to use the Microsoft Information Protection (MIP) poli
 
 ## About the use of MIP
 
-MIP supports Data Loss Prevention (DLP) controls in office documents by enabling the use of labels and policies. Sensitivity labels can be applied to different office documents, and policies can be applied to prohibit or limit actions taken on a document based on a specific sensitivity label. This functionality exists today in office applications, but the protections can be bypassed by opening the document in a browser. Bringing MIP functionality to Edge strengthens DLP. It prohibits the use of other browsers, thereby preventing users from bypassing these controls by opening documents in alternative browsers where these labels and policies are not honored.  
+MIP supports Data Loss Prevention (DLP) controls in office documents by enabling the use of labels and policies. Sensitivity labels can be applied to different office documents, and policies can be applied to prohibit or limit actions taken on a document based on a specific sensitivity label. This functionality exists today in office applications, but the protections can be bypassed by opening the document in a browser other than Microsoft Edge. Bringing MIP functionality to Edge strengthens DLP. It prohibits the use of other browsers, which prevents users from bypassing these controls by opening documents in alternative browsers where these labels and policies are not honored.  
 
  
 
