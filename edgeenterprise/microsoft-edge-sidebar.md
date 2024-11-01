@@ -3,7 +3,7 @@ title: "Manage the sidebar in Microsoft Edge"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/24/2024
+ms.date: 11/02/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -204,17 +204,41 @@ You can use the [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#
 
 You can use the [EdgeSidebarAppUrlHostBlockList], [ExtensionInstallBlocklist] and **EdgeSidebarAppUrlHostAllowlist** policies to allow specific sidebar apps, (except the Search app) while blocking the rest of the sidebar apps. To allow the Search app, see [Allow the Search app](#allow-the-search-app).
 
+Use the following steps as a guide to exempt a specific sidebar app from the blocklist.
+
+1. Follow the **second option** in [Block all sidebar apps](#block-all-sidebar-apps) to block all sidebar apps.  
+2. In the ****group policy management editor, go to **Administrative Templates** > **Microsoft Edge** > **Extensions** and then select "Allow specific apps to be opened in Microsoft Edge sidebar".
+3. Select **Enabled**.
+4. Click **Show**.
+5. Enter the URLs or URL patterns of the sidebar app that you want to allow. For more information about valid URL patterns, see [Filter format for URL list-based policies](/deployedge/edge-learnmore-ent-policy-url-patterns).
+6. Click OK when you're finished entering URLs.
 
 <!----- Allow apps to be opened: sidebar-allow-specific-apps-to-open.png --->
 
-
+[Allow specific apps to be opened](media/microsoft-edge-sidebar/sidebar-allow-specific-apps-to-open.png)
 
 ## Allow the Search app
 
 > [!NOTE]
 > This applies to Microsoft Edge 131 and later.
 
+The Search app doesn't have a URL. You can only use the [ExtensionInstallAllowlist](/deployedge/microsoft-edge-policies#extensioninstallallowlist) policy to allow the Search app while blocking the rest of the sidebar apps with the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist), and [ExtensionInstallBlocklist](/deployedge/microsoft-edge-policies#extensioninstallblocklist) policies.
+
+Use the following steps as a guide to allow the Search app.
+
+1. Follow the **second option** in [Block all sidebar apps](#block-all-sidebar-apps) to block all sidebar apps.
+2. Open the group policy management editor and go to **Administrative Templates** > **Microsoft Edge** > **Extensions**.
+3. Select  "Allow specific extensions to be installed".
+4. Select **Enabled**.
+5. Click **Show**.
+6. Enter the **Extension ID** of the Search app to block and then click **OK**. Note that:
+
+   - The Search app Extension ID (`extension_id` parameter), shown in the next screenshot is "jbleckejnaboogigodiafflhkajdmpcl".
+   - You can also find Extension ID for Search app by going to *edge://sidebar-internals*.
+   - The Sidebar internals JSON file includes a manifest for all sidebar apps, including an `extension_id` parameter for each app. You can use these values to configure the policy.
+
 <!----- Allow extensions to be installed: sidebar-allow-specific-extensions-to-install.png --->
+[Allow specific extensions to be installed](media/microsoft-edge-sidebar/sidebar-allow-specific-extensions-to-install.png)
 
 ## Force enable specific sidebar apps
 
