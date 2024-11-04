@@ -3,7 +3,7 @@ title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 10/25/2024
+ms.date: 11/04/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -1344,6 +1344,8 @@ q={searchTerms},ie=utf-8,oe=utf-8
 Edge for iOS and Android allows organizations to disable the New Tab Page experience and instead have a web site launch when the user opens a new tab. 
 
 While this is a supported scenario, Microsoft recommends organizations take advantage of the New Tab Page experience to provide dynamic content that is relevant to the user.
+
+**Note:** If you have configured URLAllowlist or URLBlocklist, ensure that **about://newtab** is added to the URLAllowlist to enable EdgeNewTabPageCustomURL to function properly.
 
 #### Supported features:
 
