@@ -123,7 +123,7 @@
       - name: Customization settings
         href: microsoft-edge-management-service-customizations.md
       - name: Enabling Office Microsoft Purview Information Protection labeling
-      - href: microsoft-edge-management-service-office-mip.md
+        href: microsoft-edge-management-service-office-mip.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
    - name: Microsoft Edge for Virtual desktop infrastructure 
