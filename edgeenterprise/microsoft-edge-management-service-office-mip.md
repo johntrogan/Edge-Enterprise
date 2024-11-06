@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 description: "Learn about Office Microsoft Purview Information Protection labeling through the Microsoft Edge management service "
 ---
 
-# Enable Microsoft Purview Information Protection labeling through the Microsoft Edge management service
+# Enabling Office Microsoft Purview Information Protection labeling through the Microsoft Edge management service
 
 This article explains how to use the Microsoft Purview Information Protection (MPIP) policy and security settings inside the Edge management service to ensure that Office documents are kept secure inside your organization.
 
@@ -23,6 +23,8 @@ Microsoft Purview Information Protection (MPIP) enables data loss prevention (DL
 When an admin chooses to enable Microsoft Purview Information Protection in the Edge management service, that action will simultaneously disable other browsers that do not respect Microsoft Word, Excel, and PowerPoint rights restrictions. An admin can choose to re-enable other browsers, simply by unchecking an option. However, the result is a security loophole, where users can avoid rights restrictions simply by opening the Microsoft Word, Excel and PowerPoint documents in another browser.  
 
 ## Enable MPIP and manage access to other browsers
+
+You can enable MPIP in a policy and allow the use of other browsers if MPIP is enabled.
 
 ### How to enable the MPIP setting inside a policy
 
