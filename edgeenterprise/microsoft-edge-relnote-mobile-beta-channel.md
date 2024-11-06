@@ -39,21 +39,20 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 
 ### Bug fixes
 
-- [iOS] Fix the issue with saving Word/Excel/PowerPoint files locally
-- [iOS] Fix unresponsive sign-in panel in "Send to device"
-- [iOS] Fix the issue about the IdleTimeout policy fails to resume normal after action is completed
-- [iOS] Fix Tooltip cannot auto-dismiss when VoiceOver is turned on
+- [iOS] Fix the issue with saving Word/Excel/PowerPoint files locally.
+- [iOS] Fix unresponsive sign-in panel in "Send to device".
+- [iOS] Fix the issue where the IdleTimeout policy did not resume normal operation after the action was completed.
+- [iOS] Fix Tooltip cannot auto-dismiss when VoiceOver is turned on.
 
 ### New Policies
 
 - [iOS] Support Microsoft Entra ID File advanced encryption by Intune auto file encryption capability. (Implement comprehensive encryption of sandbox files under Microsoft Entra ID accounts using Intune MAM SDK's File Transparent Encryption. File encryption is enabled when the `com.microsoft.intune.IntuneMAMOnly.AdvancedEncryption` policy is set to Enabled.)
 - [iOS & Android] Support to disable settings and feedback features via DisableFeature policy
-(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now support to config to disable settings and feedback features on NTP by value "settings"
- and "feedback")
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now supports configuring disable settings and feedback features on the NTP using the values "settings" and "feedback")
 
 ### Enhancements
 
-- [iOS] Improve the feature experience for App Proxy policy by avoiding not function until next cold start sometimes.
+- [iOS] Improve the feature experience for the App Proxy policy by preventing it from not functioning correctly until the next cold start.
 - [iOS] Improve the feature experience for switching profile.
 - [Android] Enhancements the display size of brandLogo (Related policy `com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo`).
 - [Android] Improve the sign-in experience for single device mode (Remove SDM needed restart on first startup).
