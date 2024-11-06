@@ -86,7 +86,7 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
 15. On the **Scope tags** tab, add a Scope tag if wanted, otherwise click the **Next** button.
 
-16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the Microsoft Entra group that contains the devices or the users that you want to receive this policy setting. See [Assign user and device profiles in Microsoft Intune](/intune/device-profile-assign) for information about how to assign the profile to your Microsoft Entra user or device groups.
+16. On the **Assignments** tab, click **+ Select groups to include** to assign this policy to the Microsoft Entra group that contains the devices or the users that you want to receive this policy setting. See [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign) for information about how to assign the profile to your Microsoft Entra user or device groups.
 
     ![Select groups to include](./media/configure-edge-with-intune/create-profile-assignments-tab.png)
 
@@ -98,11 +98,11 @@ The next screenshot shows the form for the **Basics** tab and the menu bar shows
 
     ![Select Microsoft Edge Policy groups to include](./media/configure-edge-with-intune/create-profile-new-policy-finished.png)
 
-For more information about Windows 10 profiles, see [Use Windows 10 templates to configure group policy settings in Microsoft Intune](/intune/administrative-templates-windows).
+For more information about Windows 10 profiles, see [Use Windows 10 templates to configure group policy settings in Microsoft Intune](/mem/intune/protect/administrative-templates-windows).
 
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
-- [Manage web access by using Microsoft Edge with Microsoft Intune](/intune/manage-microsoft-edge)
-- [Use Windows 10 templates to configure group policy settings in Microsoft Intune](/intune/administrative-templates-windows)
-- [Deploy Microsoft Edge using Microsoft Intune](/intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)
+- [Manage web access by using Microsoft Edge with Microsoft Intune](/mem/intune/apps/manage-microsoft-edge)
+- [Use Windows 10 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows)
+- [Deploy Microsoft Edge using Microsoft Intune](/mem/intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)

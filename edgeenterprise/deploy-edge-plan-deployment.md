@@ -145,7 +145,7 @@ After you create your Enterprise Site List, we recommend identifying and configu
 
 First, consider the first-run experience you want your users to have. If you want to automatically import settings from the current browser, configure the policy for [AutoImportAtFirstRun](./microsoft-edge-policies.md#autoimportatfirstrun).
 
-For security policies, we recommend starting with the Microsoft Edge Security Baseline. The Security Baseline can be applied using the [Microsoft Security Baselines Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) or by using [Microsoft Intune](/intune/protect/security-baseline-settings-edge).
+For security policies, we recommend starting with the Microsoft Edge Security Baseline. The Security Baseline can be applied using the [Microsoft Security Baselines Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) or by using [Microsoft Intune](/mem/intune/protect/security-baseline-settings-edge).
 
 For other policies, we recommend reviewing the policy configurations for [Microsoft Edge](./microsoft-edge-policies.md) and [Microsoft Edge Updates](./microsoft-edge-update-policies.md).
 
@@ -156,7 +156,7 @@ You also want to determine how you want to do updates after you deploy Microsoft
 - **Allow Microsoft Edge to update itself** (default). If you choose to allow automatic updates of Microsoft Edge, then Microsoft Edge will automatically update itself at the pace determined by one or more channels you deployed.
 - **Update Microsoft Edge at your own pace**. If you prefer to have explicit control over when updates are deployed, you can disable automatic updates and deploy them yourself (see the [Update Policy reference](./microsoft-edge-update-policies.md).) After you disable automatic updates you can deploy updates for each channel using one of the following tools:
 
-- [Intune](/intune/apps/apps-windows-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)
+- [Intune](/mem/intune/apps/apps-windows-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)
 - [Configuration Manager](./deploy-edge-with-configuration-manager.md)
 - The deployment tool of your choice.
 
@@ -194,7 +194,7 @@ In addition to their own line of business apps, many organizations use apps prov
 
 After you've defined your policies and have finished your initial app compatibility testing, you're ready to deploy to your pilot group. Deploy to your pilot group using one of the following tools:
 
-- [Microsoft Intune for Windows](/intune/apps/apps-windows-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json), or [Microsoft Intune for macOS](/intune/apps/apps-edge-macos?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)
+- [Microsoft Intune for Windows](/mem/intune/apps/apps-windows-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json), or [Microsoft Intune for macOS](/mem/intune/apps/apps-edge-macos?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json)
 - [Configuration Manager](./deploy-edge-with-configuration-manager.md).
 - Another management tool, download and deploy the [MSI file for Microsoft Edge](https://www.microsoftedgeinsider.com/enterprise).
 
