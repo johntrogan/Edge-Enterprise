@@ -3,7 +3,7 @@ title: "Microsoft Edge hands-on deployment lab"
 ms.author: archandr
 author: dan-wesley
 manager: seanlynd
-ms.date: 06/03/2022
+ms.date: 11/05/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -18,7 +18,7 @@ The Microsoft Edge team partnered with the Windows and Office Deployment Lab to 
 
 ## About the lab guides
 
-The step-by-step lab guides will take you through multiple deployment and management scenarios. These scenarios include the latest versions of Microsoft Intune and Configuration Manager (Version 1910). You'll see Microsoft Edge has been added to the Device and App Readiness section of the step-by-step labs.
+The step-by-step lab guides will take you through multiple deployment and management scenarios. These scenarios include the latest versions of [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/). You'll see Microsoft Edge has been added to the Device and App Readiness section of the step-by-step labs.
 
 For more information, see the [Windows and Office Deployment Lab Kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab).
 
