@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 10/31/2024
+ms.date: 11/07/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -27,6 +27,40 @@ Archived versions of these release notes are available at [Archived release note
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 131.0.2903.32 (Android and iOS): November 7, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.28 (Android and iOS): November 5, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.2
+- [iOS & Android] Upgrade MS OneAuth SDK version 4.0.2
+
+### Bug fixes
+
+- [iOS] Fix the issue with saving Word/Excel/PowerPoint files locally.
+- [iOS] Fix unresponsive sign-in panel in "Send to device".
+- [iOS] Fix the issue where the IdleTimeout policy did not resume normal operation after the action was completed.
+- [iOS] Fix Tooltip cannot auto-dismiss when VoiceOver is turned on.
+
+### New Policies
+
+- [iOS] Support Microsoft Entra ID File advanced encryption by Intune auto file encryption capability. (Implement comprehensive encryption of sandbox files under Microsoft Entra ID accounts using Intune MAM SDK's File Transparent Encryption. File encryption is enabled when the `com.microsoft.intune.IntuneMAMOnly.AdvancedEncryption` policy is set to Enabled.)
+- [iOS & Android] Support to disable settings and feedback features via DisableFeature policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now supports configuring disable settings and feedback features on the NTP using the values "settings" and "feedback")
+
+### Enhancements
+
+- [iOS] Improve the feature experience for the App Proxy policy by preventing it from not functioning correctly until the next cold start.
+- [iOS] Improve the feature experience for switching profile.
+- [Android] Enhancements the display size of brandLogo (Related policy `com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo`).
+- [Android] Improve the sign-in experience for single device mode (Remove SDM needed restart on first startup).
+- [iOS & Android] General enhancements to NewTabPageLayout policy (Policy auto correct NewTabPageLayout to custom if NewTabPageLayout.Custom has value).
 
 ## Version 131.0.2903.19 (Android and iOS): October 31, 2024
 
