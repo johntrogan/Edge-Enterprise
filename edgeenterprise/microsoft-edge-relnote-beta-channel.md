@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 11/05/2024
+ms.date: 11/07/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -18,6 +18,24 @@ These release notes provide information about new features and non-security upda
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 131.0.2903.X: November X, 2024
+
+Fixed various bugs and performance issues, and feature updates.
+
+> [!NOTE]
+> Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+### Feature updates
+
+- **Changes to Kyber.** The Kyber algorithm has been standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM has been implemented in the BoringSSL cryptography library, which allows for it to be deployed and utilized by services that depend on this library.
+
+  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to the incompatibility the following changes in Edge will be made:
+
+  - Edge will switch from supporting Kyber to ML-KEM.
+  - Edge will offer a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
+  - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy will apply to both Kyber and ML-KEM.
+  - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
 ## Version 131.0.2903.27: November 4, 2024
 
