@@ -30,7 +30,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be deployed and utilized by services that depend on this library.
 
-  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to the incompatibility the following changes in Microsoft Edge will be made:
+  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
 
   - Edge switches from supporting Kyber to ML-KEM.
   - Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
@@ -63,9 +63,9 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge has changed the behavior of the cancel dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the cancel dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
 
-- **Get the latest updates effortlessly with instant update.** Instant update in Microsoft Edge ensures you get the latest browser updates automatically, when you step away from your computer. You can keep browsing, knowing that you already have the latest updates to keep you safe online. For more information, see [Get instant updates in Microsoft Edge - Microsoft Support](https://support.microsoft.com/microsoft-edge/get-instant-updates-in-microsoft-edge-4820adad-dd32-470c-9bd9-dba1de71a7f1). **Note:** This feature is in private preview for enterprise customers. Future feature updates will be available via Microsoft Edge release notes.
+- **Get the latest updates effortlessly with instant update.** Instant update in Microsoft Edge ensures you get the latest browser updates automatically, when you step away from your computer. You can keep browsing, knowing that you already have the latest updates to keep you safe online. For more information, see [Get instant updates in Microsoft Edge - Microsoft Support](https://support.microsoft.com/microsoft-edge/get-instant-updates-in-microsoft-edge-4820adad-dd32-470c-9bd9-dba1de71a7f1). **Note:** This feature is in private preview for enterprise customers. Future feature updates are available via Microsoft Edge release notes.
 
 ### Site compatibility impacting changes
 
@@ -85,7 +85,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **@property support `<string>` syntax.** Support for `<string>` syntax component name for registered custom properties.
 
-- **Support `currentcolor` in relative color syntax.** Allow relative colors in CSS (using the `from` keyword) to use `currentcolor` as a base. This lets you set complementary colors, based on an element's text color, for that element's borders, shadows, or backgrounds.
+- **Support `currentcolor` in relative color syntax.** Allow relative colors in CSS (using the `from` keyword) to use `currentcolor` as a base. This support lets you set complementary colors, based on an element's text color, for that element's borders, shadows, or backgrounds.
 
   This feature also includes use cases where color functions are nested with a dependency on `currentcolor`, for example: `color-mix (in srgb, rgb(from currentcolor r g b), white)) or rgb(from rgb(from currentcolor 1 g b) b g r)`.
 
