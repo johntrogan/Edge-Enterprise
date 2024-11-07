@@ -1,4 +1,4 @@
-# last revised 09/17/2024
+# last revised 11/07/2024
 - name: Microsoft Edge Enterprise documentation 
   href: index.yml
 # GET STARTED
@@ -80,9 +80,9 @@
      href: /mem/intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
    - name: Deploy to macOS with Jamf
      href: deploy-edge-mac-jamf.md
-   - name: Deploy to macOS with Intune
+   - name: Add Microsoft Edge to macOS devices using Microsoft Intune 
 #    href: deploy-edge-mac-intune.md
-     href: /intune/apps/apps-edge-macos/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
+     href: /mem/intune/apps/apps-edge-macos/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
 # CONFIGURE
 - name: Configure Microsoft Edge
   items:
