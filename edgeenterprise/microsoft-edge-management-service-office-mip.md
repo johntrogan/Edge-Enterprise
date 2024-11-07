@@ -18,9 +18,11 @@ This article explains how to use the Microsoft Purview Information Protection (M
 
 ## About the use of MPIP
 
-Microsoft Purview Information Protection (MPIP) enables data loss prevention (DLP) controls in Microsoft 365 documents by limiting or preventing certain actions on documents with specific sensitivity levels. Once a sensitivity label is applied to a document, an admin can prevent actions such as editing, printing, copying/pasting, taking screenshots, and more. This functionality, previously only available in Microsoft 365 desktop applications, has now been extended to online Office documents via Microsoft Edge to help protect sensitive information.
+Microsoft Purview Information Protection (MPIP) enables data loss prevention (DLP) controls in Microsoft 365 documents by limiting or preventing certain actions on documents with specific sensitivity levels. After a sensitivity label is applied to a document, an admin can prevent actions such as editing, printing, copying/pasting, taking screenshots, and more. This functionality, previously only available in Microsoft 365 desktop applications, is extended to online Office documents via Microsoft Edge to help protect sensitive information.  
 
-When an admin chooses to enable Microsoft Purview Information Protection in the Edge management service, that action will simultaneously disable other browsers that do not respect Microsoft Word, Excel, and PowerPoint rights restrictions. An admin can choose to re-enable other browsers, simply by unchecking an option. However, the result is a security loophole, where users can avoid rights restrictions simply by opening the Microsoft Word, Excel and PowerPoint documents in another browser.  
+When an admin chooses to enable Microsoft Purview Information Protection in the Edge management service, that action will simultaneously disable other browsers that do not respect Microsoft Word, Excel, and PowerPoint rights restrictions. An admin can choose to re-enable other browsers, by using the following instructions. However, the result is a security loophole, where users can avoid rights restrictions simply by opening the Microsoft Word, Excel and PowerPoint documents in another browser.
+
+Other browsers may also be re-enabled by meeting MPIP requirements for Microsoft 365 documents. A browser must respect the intended user action restrictions set by Microsoft 365. If these requirements are met by a browser, it will not be disabled by the setting. 
 
 ## Enable MPIP and manage access to other browsers
 
@@ -33,8 +35,6 @@ To enable this setting in the Edge management service, navigate within a configu
 ### How to allow the use of other browsers while MPIP setting is enabled
 
 The "block other browsers" state will be enabled by default when the box labeled "Apply sensitivity labels to Microsoft 365 online" is checked. To disable blocking other browsers, uncheck "Block other browsers" and then select "Save changes". For users assigned to this configuration profile, other browsers will remain available.
-
-
 
 ## See also
 
