@@ -3,7 +3,7 @@ title: "Copilot in Edge webpage summarization behavior"
 ms.author: prithviokade
 author: dan-wesley
 manager: likuba
-ms.date: 10/16/2024
+ms.date: 11/07/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -13,9 +13,6 @@ description: "This article shows the results of Copilot page summary tests."
 ---
 
 # Copilot in Edge webpage summarization behavior
-
-> [!NOTE]
-> Page summarization features are being rolled out for Copilot with enterprise data protection in Edge. You may not yet have access to this feature.  
 
 The following chart explains the current behavior of Copilot in Edge webpage summarization on various document types. This information will be updated when support for summarization increases. This chart covers the behavior in Copilot both when enterprise data protection is applied and when it is not. Support for these document types only applies to Copilot in Edge.
 
