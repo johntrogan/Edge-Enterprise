@@ -2739,7 +2739,7 @@ For more information, see [Microsoft Edge Security downloads interruptions](/dep
 
 - **Improvements to font rendering.** Starting with Microsoft Edge version 90, we made improvements to the rendering of text to improve clarity and reduce blurriness. Part of the font rendering improvements land in Beta version 90 but are disabled by default.
 
-- **Kids mode.** We've updated the policy so that when the policy is enabled, it disables the Kid Mode feature in addition to family safety. More about Kids Mode [here](https://go.microsoft.com/fwlink/?linkid=2146910)
+- **Kids mode.** We've updated the policy so that when the policy is enabled, it disables the Kid Mode feature in addition to family safety. More about Kids Mode [here](https://support.microsoft.com/microsoft-edge/learn-more-about-kids-mode-in-microsoft-edge-4bf0273c-1cbd-47a9-a8f3-895bc1f95bdd)
 
 ## Policy updates
 
