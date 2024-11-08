@@ -3,7 +3,7 @@ title: "Write SPNEGO Authenticator for Microsoft Edge on Android"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 01/31/2024
+ms.date: 11/08/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -92,7 +92,7 @@ Edge uses several [policies for controlling the use of SPNEGO authentication](/d
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and shared by Chromium.org and used according to terms 
-  described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://sites.google.com/a/chromium.org/dev/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android).
+  described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://www.chromium.org/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android/).
   
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
