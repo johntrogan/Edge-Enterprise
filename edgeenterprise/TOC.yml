@@ -121,7 +121,7 @@
         href: microsoft-edge-management-service-extensions.md
       - name: Customization settings
         href: microsoft-edge-management-service-customizations.md
-      - name: Enabling Office Microsoft Purview Information Protection labeling
+      - name: Protecting Office documents with Microsoft Purview Information Protection
         href: microsoft-edge-management-service-office-mip.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
