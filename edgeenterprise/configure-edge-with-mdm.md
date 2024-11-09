@@ -287,7 +287,7 @@ OMA-URI examples with their URI path, type, and an example value.
 
 ## Configure Microsoft Edge in Intune using ADMX ingestion
 
-The recommended way to configure Microsoft Edge with Microsoft Intune is to use the Administrative Templates profile. This profile is described in [Configure Microsoft Edge policy settings with Microsoft Intune](./configure-edge-with-intune.md). If you want to evaluate a policy that's currently not available in the Microsoft Edge Administrative Templates in Intune,  you can configure Microsoft Edge using [custom settings for Windows 10 devices in Intune](/intune/configuration/custom-settings-windows-10).
+The recommended way to configure Microsoft Edge with Microsoft Intune is to use the Administrative Templates profile. This profile is described in [Configure Microsoft Edge policy settings with Microsoft Intune](./configure-edge-with-intune.md). If you want to evaluate a policy that's currently not available in the Microsoft Edge Administrative Templates in Intune,  you can configure Microsoft Edge using [custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 This section describes how to:
 
@@ -378,7 +378,7 @@ To ingest the ADMX file, follow these steps:
 8. On **Custom OMA-URI Settings**, click **OK**.
 9. On the "**Microsoft Edge ADMX ingested configuration - Properties**" profile (or the name you used), click **Save**.
 
-After the profile is created and the properties set, you have to [assign the profile in Microsoft Intune](/intune/configuration/device-profile-assign).
+After the profile is created and the properties set, you have to [assign the profile in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 
 #### Confirm that the policy was set
 
@@ -397,13 +397,13 @@ Open the *edge://policy* page on the target device (a device you assigned the pr
 - Check that the policy is in the registry and is correct. On the target device open the Windows 10 Registry Editor (**Windows key + r**, enter "*regedit*" and then press **Enter**.) Check that the policy is correctly defined in the *\Software\Policies\ Microsoft\Edge* path. If you don't find the policy in the expected path, then the policy wasn't pushed to the device correctly.
 - Check that the OMA-URI path is correct, and the value is a valid XML string. If either of these are incorrect the policy won't be pushed to the target device.
 
-For more trouble shooting tips, see [Set up Microsoft Intune](/intune/fundamentals/setup-steps) and [Sync devices](/intune/remote-actions/device-sync).
+For more trouble shooting tips, see [Set up Microsoft Intune](/mem/intune/fundamentals/deployment-plan-setup) and [Sync devices](/mem/intune/remote-actions/device-sync).
 
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
 - [Configure Microsoft Edge policy settings with Microsoft Intune](./configure-edge-with-intune.md)
 - [Mobile device management](/windows/client-management/mdm/)
-- [Use custom settings for Windows 10 devices in Intune](/intune/configuration/custom-settings-windows-10)
+- [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10)
 - [Win32 and Desktop Bridge app policy configuration](/windows/client-management/mdm/win32-and-centennial-app-policy-configuration)
 - [Understanding ADMX-backed policies](/windows/client-management/mdm/understanding-admx-backed-policies)
