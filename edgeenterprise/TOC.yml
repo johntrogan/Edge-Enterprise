@@ -1,4 +1,4 @@
-# last revised 11/07/2024
+# last revised 11/11/2024
 - name: Microsoft Edge Enterprise documentation 
   href: index.yml
 # GET STARTED
@@ -33,6 +33,7 @@
      href: deploy-edge-ready-for-edge.md
    - name: Install Microsoft Edge for mobile platforms in China
      href: microsoft-edge-install-mobile-china.md
+
    - name: Supported Operating Systems
      href: microsoft-edge-supported-operating-systems.md
    - name: Lifecycle Policy
