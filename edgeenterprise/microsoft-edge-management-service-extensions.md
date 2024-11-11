@@ -1,9 +1,9 @@
 ---
-title: "Manage extensions"
+title: "Extensions management"
 ms.author: katherinegan
 author: dan-wesley
 manager: archandr
-ms.date: 09/17/2024
+ms.date: 11/11/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -12,13 +12,13 @@ ms.collection: M365-modern-desktop
 description: "Provides steps for managing extensions for Microsoft Edge management service."
 ---
 
-# Manage extensions
+# Extensions management
 
-This article gives steps for managing extensions for Microsoft Edge management service.
+This article provides details to help you manage extensions in the Microsoft Edge management service.
 
 ## Manage extensions
 
-To manage extension settings for a profile, go **Microsoft Edge management**, select the profile you want to work with and then select the **Extensions** pivot. You can configure profile settings that apply to all extensions. Any extensions you add to be managed will appear in the profile. You can add an extension to the allow list, block list, or forced-installed list by setting the installation policy. If you configure specific settings on an individual extension, then those settings override the profile settings.
+To manage extension settings for a profile, go to the Microsoft Edge management service, select the configuration profile you want to work with, and then select the Extensions tab. You can configure default settings that apply to all extensions in the **Manage extensions** panel. You may also add individual extensions to the profile to manage settings for each extension uniquely. If you configure specific settings on an individual extension, then those settings override the profile settings.
 
 ### Import existing extension settings to an existing configuration profile
 
