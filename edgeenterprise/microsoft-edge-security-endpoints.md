@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
-ms.date: 11/05/2024
+ms.date: 11/11/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -134,6 +134,14 @@ The service that supports Copilot, and other apps, in the Edge sidebar.
 The service that supports Microsoft Rewards.  
 
 - `https://prod.rewardsplatform.microsoft.com/`
+
+## Web Content Filtering
+
+The service that supports Web Content Filtering. For more information, see [Configure Web Content Filtering on Edge](/deployedge/microsoft-edge-web-content-filtering).
+
+- `https://edge.microsoft.com/webcontentfiltering/api/categories`
+- `https://edge.microsoft.com/webcontentfiltering/api/guestmode-categories`
+- `https://edge.microsoft.com/webcontentfiltering/settings/v1`
 
 ## Feedback and Diagnostics
 
