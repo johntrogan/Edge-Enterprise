@@ -1,4 +1,4 @@
-# last revised 11/07/2024
+# last revised 11/11/2024
 - name: Microsoft Edge Enterprise documentation 
   href: index.yml
 # GET STARTED
@@ -116,8 +116,10 @@
         href: microsoft-edge-organization-branding.md
    - name: Microsoft Edge management service
      items:
-      - name: Microsoft Edge management service
+      - name: Get started with configuration profiles
         href: microsoft-edge-management-service.md
+      - name: Monitoring dashboard
+        href: microsoft-edge-management-service-monitoring-dashboard.md
       - name: Extensions management
         href: microsoft-edge-management-service-extensions.md
       - name: Customization settings
