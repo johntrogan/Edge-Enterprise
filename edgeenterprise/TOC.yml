@@ -33,7 +33,6 @@
      href: deploy-edge-ready-for-edge.md
    - name: Install Microsoft Edge for mobile platforms in China
      href: microsoft-edge-install-mobile-china.md
-
    - name: Supported Operating Systems
      href: microsoft-edge-supported-operating-systems.md
    - name: Lifecycle Policy
@@ -124,7 +123,7 @@
         href: microsoft-edge-management-service-extensions.md
       - name: Customization settings
         href: microsoft-edge-management-service-customizations.md
-	    - name: Protecting Office documents with Microsoft Purview Information Protection
+      - name: Protecting Office documents with Microsoft Purview Information Protection
         href: microsoft-edge-management-service-office-mip.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
