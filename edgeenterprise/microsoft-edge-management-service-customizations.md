@@ -3,7 +3,7 @@ title: "Customization settings"
 ms.author: katherinegan
 author: dan-wesley
 manager: archandr
-ms.date: 09/17/2024
+ms.date: 11/11/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -24,7 +24,7 @@ To configure groups of settings that create specific customizations for a profil
 
 To manage AI settings for a profile, navigate to the **enterprise secure AI** tab. You can configure AI related settings on this page. Once any setting is edited on this page, all of the configurations will appear in the **Policies** tab in that profile. If you edit a setting on this page that already has an existing configuration, the new edit will override the existing value.
 
-**Blocking Access to Third-Party LLM Chatbots** will add a dynamic set of URLs to the URLBlocklist policy for blocking access to well-known AI chatbots. This dynamic URL-set is managed by Microsoft and may be updated over time. As of the time of writing, the list includes:
+**Blocking Access to other LLM Chatbots** will add a dynamic set of URLs to the URLBlocklist policy for blocking access to well-known AI chatbots. This dynamic URL-set is managed by Microsoft and may be updated over time. As of the time of writing, the list includes:
 
 - https://bard.google.com
 - https://chat.openai.com
@@ -108,12 +108,12 @@ To add settings that help protect against security threats, navigate to the secu
 2. Specify the **Balanced** or **Strict** mode depending on the level of security you would like.
 3. Select **Save changes**.
 
-#### Block alternative browser use
+#### Block other browsers
 
 > [!NOTE]
 > This setting is only available for customers with a Microsoft Intune license.
 
-Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block alternative browser use. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration profile with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
+Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration profile with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
 
 ## See also
 
