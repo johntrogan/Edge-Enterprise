@@ -3,7 +3,7 @@ title: "Extensions management"
 ms.author: katherinegan
 author: dan-wesley
 manager: archandr
-ms.date: 11/08/2024
+ms.date: 11/11/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
