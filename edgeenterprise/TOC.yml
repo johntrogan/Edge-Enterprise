@@ -118,7 +118,7 @@
      items:
       - name: Microsoft Edge management service
         href: microsoft-edge-management-service.md
-      - name: Manage extensions
+      - name: Extensions management
         href: microsoft-edge-management-service-extensions.md
       - name: Customization settings
         href: microsoft-edge-management-service-customizations.md
