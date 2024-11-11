@@ -113,7 +113,7 @@ Follow these steps to assign a configuration profile to a Microsoft Entra group:
 
 #### To create a new configuration policy
 
-1. Navigate to the **Configuration** policies tab.
+1. Navigate to the **Configuration policies** tab.
 2. Select **Create policy**. This takes you through the following wizard flow to create a new configuration policy.
 
     a. Basics: Give your configuration policy a name. You may also add an optional description. Choose whether you would like to create an Intune type policy or Cloud. You must have an Intune license to be able to create an Intune policy.
