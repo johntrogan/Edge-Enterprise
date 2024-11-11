@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Edge management service"
+title: "Get started with configuration profiles"
 ms.author: katherinegan
 author: dan-wesley
 manager: archandr
-ms.date: 09/17/2024
+ms.date: 11/08/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 description: "Provides steps for configuring the Microsoft Edge management service."
 ---
 
-# Microsoft Edge management service
+# Get started with configuration profiles
 
 The Microsoft Edge management service is a platform in the Microsoft 365 admin center that enables admins to easily configure Microsoft Edge browser settings for their organization. These configurations are stored in the cloud and the settings can be applied to a user's browser through group assignment or group policy. Users must be logged into Microsoft Edge to retrieve these settings.
 
@@ -34,9 +34,6 @@ Use these steps to access the experience:
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and login.
 1. In the main left navigation bar, go to **Settings** > **Microsoft Edge**.  
 <!-- ====================================================================== -->
-
-> [!NOTE]
-> Preview for an updated user interface is currently rolling out. Some strings and pages may differ slightly from the following information.
 
 ## Get started with configuration profiles
 
