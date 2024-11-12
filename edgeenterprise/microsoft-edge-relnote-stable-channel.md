@@ -49,7 +49,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
   - Edge switches from supporting Kyber to ML-KEM.
   - Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
-  - The `PostQuantumKeyAgreementEnabled` flag and the PostQuantumKeyAgreementEnabled policy applies to Kyber and ML-KEM.  Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
+  - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM.  Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
   - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
 ### Policy updates
