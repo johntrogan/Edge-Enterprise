@@ -1,9 +1,9 @@
 ---
-title: "Protecting Office documents with Microsoft Purview Information Protection labeling"
+title: "Protect Office documents with Microsoft Purview Information Protection labeling"
 ms.author: jikong
 author: dan-wesley
 manager: likuba
-ms.date: 11/08/2024
+ms.date: 11/12/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 description: "Learn about Office Microsoft Purview Information Protection labeling through the Microsoft Edge management service "
 ---
 
-# Protecting Office documents with Microsoft Purview Information Protection labeling through the Microsoft Edge management service
+# Protect Office documents with Microsoft Purview Information Protection labeling through the Microsoft Edge management service
 
 This article explains how to use the Microsoft Purview Information Protection (MPIP) policy and security settings inside the Edge management service to ensure that Office documents are kept secure inside your organization.
 
