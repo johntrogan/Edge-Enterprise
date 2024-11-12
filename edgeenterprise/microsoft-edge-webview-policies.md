@@ -3,7 +3,7 @@ title: "Microsoft Edge WebView2 Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 10/22/2024
+ms.date: 11/07/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -19,9 +19,16 @@ The latest version of Microsoft Edge WebView2 includes the following policies. Y
 
 For information about an additional set of policies used to control how and when Microsoft Edge WebView2 is updated, check out [Microsoft Edge update policy reference](microsoft-edge-update-policies.md).
 
-
 > [!NOTE]
 > This article applies to Microsoft Edge version 87 or later.
+
+## New policies
+
+The following table lists the obsoleted policies that are in this article update.
+
+| Policy Name | Caption |
+|:-----|:-----|
+|[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies (obsolete)|
 
 ## Available policies
 
@@ -45,7 +52,7 @@ These tables list all of the group policies available in this release of Microso
 |Policy Name|Caption|
 |-|-|
 |[AccessControlAllowMethodsInCORSPreflightSpecConformant](#accesscontrolallowmethodsincorspreflightspecconformant)|Make Access-Control-Allow-Methods matching in CORS preflight spec conformant|
-|[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies|
+|[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies (obsolete)|
 |[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support|
 ### [*Additional*](#additional-policies)
 
@@ -353,13 +360,13 @@ This policy is intended to be temporary and will be removed in the future.
 
   ### BlockTruncatedCookies
 
-  #### Block truncated cookies
+  #### Block truncated cookies (obsolete)
 
   
-  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 131.
   #### Supported versions:
 
-  - On Windows since 123 or later
+  - On Windows since 123, until 131
 
   #### Description
 
@@ -370,6 +377,8 @@ Now, the presence of these characters will cause the whole cookie string to be i
 If you enable or don't configure this policy, the new behavior is enabled.
 
 If you disable this policy, the old behavior is enabled.
+
+This policy is obsolete because this policy was originally implemented as a safety measure in case of breakage, but none have been reported.
 
   #### Supported features:
 
@@ -386,7 +395,7 @@ If you disable this policy, the old behavior is enabled.
   ##### Group Policy (ADMX) info
 
   - GP unique name: BlockTruncatedCookies
-  - GP name: Block truncated cookies
+  - GP name: Block truncated cookies (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge WebView2/Network settings
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdgeWebView2.admx
