@@ -28,7 +28,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 131.0.XXXX.XX: November X, 2024
 
-Fixed various bugs and performance issues, Dev channel updates, feature updates, site compatibility impacting changes, and policy updates.
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-X-2024).
 
