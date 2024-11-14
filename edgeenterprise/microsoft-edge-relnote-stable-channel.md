@@ -30,7 +30,7 @@ These release notes provide information about new features and non-security upda
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-X-2024).
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-14-2024).
 
 ### Dev Channel updates
 
