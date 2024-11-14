@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 11/07/2024
+ms.date: 11/14/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -26,6 +26,112 @@ These release notes provide information about new features and non-security upda
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 131.0.2903.48: November 14, 2024
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-14-2024).
+
+### Dev Channel updates
+
+The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 131.0.2863.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2863-0-is-live-/4260359)
+- [Dev Channel update to 131.0.2875.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2875-0-is-live-/4267839)
+- [Dev Channel update to 131.0.2889.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2889-0-is-live-/4273465)
+- [Dev Channel update to 131.0.2903.5 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2903-5-is-live-/4277981)
+
+### Feature updates
+
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the cancel dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=main#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+
+- **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be deployed and utilized by services that depend on this library.
+
+  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
+
+  - Edge switches from supporting Kyber to ML-KEM.
+  - Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
+  - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM. Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
+  - Edge will no longer support hybrid Kyber (codepoint 0x6399).
+
+- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allow list can be opened in sidebar even if they are listed in the block list. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
+
+### Policy updates
+
+#### New policies
+
+- [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) - Allow specific apps to be opened in Microsoft Edge sidebar
+- [PrivateNetworkAccessRestrictionsEnabled](/deployedge/microsoft-edge-policies#privatenetworkaccessrestrictionsenabled) - Specifies whether to apply restrictions to requests to more private network endpoints
+
+#### Deprecated policies
+
+- [NewBaseUrlInheritanceBehaviorAllowed](/deployedge/microsoft-edge-policies#newbaseurlinheritancebehaviorallowed) - Allows enabling the feature NewBaseUrlInheritanceBehavior (deprecated)
+- [RSAKeyUsageForLocalAnchorsEnabled](/deployedge/microsoft-edge-policies#rsakeyusageforlocalanchorsenabled) - Check RSA key usage for server certificates issued by local trust anchors (deprecated)
+- [UserAgentClientHintsGREASEUpdateEnabled](/deployedge/microsoft-edge-policies#useragentclienthintsgreaseupdateenabled) - Control the User-Agent Client Hints GREASE Update feature (deprecated)
+
+#### Obsoleted policies
+
+- [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) - Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
+- [SignInCtaOnNtpEnabled](/deployedge/microsoft-edge-policies#signinctaonntpenabled) - Enable sign in click to action dialog (obsolete)
+
+### Site compatibility impacting changes
+
+> [!NOTE]
+> Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+- **CSS Anchor Positioning: `anchor-scope`.** The `anchor-scope` property allows limiting the visibility of anchor names to a given subtree.
+
+- **CSS `font-variant-emoji`.** The `font-variant-emoji` CSS property provides a way to control between colored (emoji-style) and monochromatic (text-style) emoji glyphs. This method can be also done by adding an emoji Variation Selector, specifically U+FE0E for text and U+FE0F for emoji, after each emoji codepoint.
+
+- **CSS highlight inheritance.** With CSS highlight inheritance, the CSS highlight pseudo-classes, such as `::selection` and `::highlight`, inherit their properties through the pseudo highlight chain, rather than the element chain. The result is a more intuitive model for inheritance of properties in highlights.
+
+- **Improvements to styling structure of `<details>` and `<summary>` elements.** Support more CSS styling for the structure of `<details>` and `<summary>` elements to allow these elements to be used in more cases where disclosure widgets or accordion widgets are built on the web. In particular, this change removes restrictions that prevented setting the display property on these elements, and adds a `::details-content` pseudo-element to style the container for the part that expands and collapses.
+
+- **`@page` margin boxes.** Add support for page margin boxes, when printing a web document, or exporting it as PDF.
+
+  The `@page` margin boxes let you define the contents in the margin area of a page, for example to provide custom headers and footers, rather than using the built-in headers and footers generated by the browser.
+
+  A margin box is defined using an at-rule inside a CSS `@page` rule. The appearance and the contents of a margin box are specified with CSS properties inside the `@page` rule, including the `content` property. Counters are also supported, for page numbering. The specification defines two special counter names: `page` for the current page number and `pages` for the total number of pages.
+
+- **@property support `<string>` syntax.** Support for `<string>` syntax component name for registered custom properties.
+
+- **Support `currentcolor` in relative color syntax.** Allow relative colors in CSS (using the `from` keyword) to use `currentcolor` as a base. This support lets you set complementary colors, based on an element's text color, for that element's borders, shadows, or backgrounds.
+
+  This feature also includes use cases where color functions are nested with a dependency on `currentcolor`, for example: `color-mix (in srgb, rgb(from currentcolor r g b), white)) or rgb(from rgb(from currentcolor 1 g b) b g r)`.
+
+- **Support external SVG resources for `clip-path`, `fill`, `stroke`, and `marker-*` properties.** This feature adds support for external references for clip paths, markers, and paint servers (for the `fill` and `stroke` properties). For example, `clip-path: url("resources.svg#myPath")`.
+
+- **Direct Sockets API.** Allows Isolated Web Apps to establish direct transmission control protocol (TCP) and user datagram protocol (UDP) communications with network devices and systems as well as listen to and accept incoming connections.
+
+- **Exempt `Speculation-Rules` header from CSP restrictions.** Updates the integration between speculation rules and CSP so that CSP only applies to `<script type=speculationrules>`, and not to the `Speculation-Rules` header. CSP's script policies are meant to protect against injection of scripts into HTML, and the CSP threat model doesn't relate to HTTP headers. This approach allows easier deployment of speculation rules from CDNs and other edge servers.
+
+- **FedCM as a trust signal for the Storage Access API.** Reconciles the FedCM and Storage Access APIs by making a prior FedCM grant a valid reason to automatically approve a storage access request.
+
+  When a user grants permission to use their identity with a third-party identity provider (IdP) on a relying party (RP), many IdPs require third-party cookies to function correctly and securely. This proposal aims to satisfy that requirement in a private and secure manner by updating the Storage Access API (SAA) permission checks to not only accept the permission grant given by a storage access prompt, but also the permission grant given by a FedCM prompt.
+
+  A key property of this mechanism is limiting the grant to cases explicitly allowed by the RP with the FedCM permissions policy, enforcing a per-frame control for the RP and preventing passive surveillance by the IdP beyond the capabilities that FedCM already grants.
+
+- **COOP value `noopener-allow-popups`.** Some origins can contain different applications with different levels of security requirements. In those cases, it can be beneficial to prevent scripts running in one application from being able to open and script pages of another same-origin application.
+
+  In such cases, it can be beneficial for a document to ensure its opener can't script it, even if the opener document is a same-origin one. The `noopener-allow-popups` Cross-Origin-Opener-Policy value lets documents define that behavior.
+
+- **Select parser relaxation.** This change makes the HTML parser allow more tags in `<select>` besides `<option>`, `<optgroup>`, and `<hr>`.
+
+  This change is in support of the customizable `<select>` feature but is being shipped first because it can be done separately and has some compat risk.
+
+- **WebGPU: Clip distances.** Adds the optional GPU feature `clip-distances` that allows setting user-defined clip distances in vertex shader outputs. This technique is useful for the applications that need to clip all vertices in a scene that are beyond a user-defined plane, such as many CAD applications.
+
+- **WebGPU: `GPUCanvasContext getConfiguration()`**. Once `GPUCanvasContext configure()` is called with a configuration dictionary, the `GPUCanvasContext getConfiguration()` method can be used to check the canvas context configuration. It includes GPU `device`, `format`, `usage`, `viewFormats`, `colorSpace`, `toneMapping`, and `alphaMode` members. As discussed in [issue 4828](https://github.com/gpuweb/gpuweb/issues/4828), web apps can use it to detect whether HDR canvas is supported in WebGPU.
+
+- **WebHID on dedicated workers.** Enables WebHID inside dedicated worker contexts. This lets the performance of heavy I/O and processing of data from a HID device on a separate thread, helping to reduce the performance impact on the main thread.
+
+- **WebRTC `RTCRtpEncodingParameters.scaleResolutionDownTo`.** An API that configures WebRTC encoders to scale input frames if they're greater than the specified `maxWidth` and `maxHeight`. This API is similar to `scaleResolutionDownBy` except that resolution constraints are expressed in absolute terms (for example, 640x360) as opposed to relative terms (for example, scale down by 2), avoiding race conditions related to changing input frame size on the fly.
+
+- **Remove the CSS Anchor Positioning property `inset-area`.** With the CSS Working Group resolution on renaming the `inset-area` property to `position-area`, this removal cleans up the implementation for a standards compliant feature.
+
+- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they removed that option and replaced it with the GPUAdapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
+
+<!----------------end changes------------------------------------>
 ## Version 130.0.2849.80: November 7, 2024
 
 Fixed various bugs and performance issues.
@@ -34,7 +140,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 ## Version 130.0.2849.68: October 31, 2024
 
-Fixed various bugs and performance issues, improved reliabilty.
+Fixed various bugs and performance issues, improved reliability.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#october-31-2024).
 
@@ -94,11 +200,11 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Feature updates
 
-- **Token Binding.** Token Binding uses cryptographic certificates on both ends of the TLS connection in an attempt to close the security gap of bearer tokens, which may be lost or stolen. Token Binding is deprecated in Microsoft Edge version 130. Also, the [AllowTokenBindingForUrls](/deployedge/microsoft-edge-policies#allowtokenbindingforurls) policy is now obsolete.
+- **Token Binding.** Token Binding uses cryptographic certificates on both ends of the TLS connection in an attempt to close the security gap of bearer tokens, which might be lost or stolen. Token Binding is deprecated in Microsoft Edge version 130. Also, the [AllowTokenBindingForUrls](/deployedge/microsoft-edge-policies#allowtokenbindingforurls) policy is now obsolete.
 
 - **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Edge 133.
 
-- **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as they are today but will be behind clickable sections. These changes are as follows.
+- **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as they are today but are behind clickable sections. These changes are as follows.
 
   - Introduce quick access to the most used Settings actions on the first place users land when entering Edge Settings (the Profiles page). Clicking the button with the name of the setting navigates users directly to its location.
 
@@ -248,116 +354,8 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [CryptoWalletEnabled](/deployedge/microsoft-edge-policies#cryptowalletenabled) - Enable CryptoWallet feature (deprecated)
 - [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (deprecated)
 
-## Version 128.0.2739.79: September 12, 2024
-
-Fixed various bugs and performance issues, improved reliability.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-12-2024).
-
-### Fixes
-
-- Fixed an issue that caused deployed pinned Shortcuts to the Taskbar to be duplicated.
-
-### Improved reliability
-
-- Fixed a browser crash that occurred when trying to launch a custom protocol from a web page when using the [URLAllowlist](/deployedge/microsoft-edge-policies#urlallowlist) policy on a managed device.
-
-## Version 128.0.2739.67: September 5, 2024
-
-Fixed various bugs and performance issues.
-
-## Version 128.0.2739.63: September 3, 2024
-
-Fixed various bugs and performance issues.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-3-2024).
-
-### Fixes
-
-- Fixed an issue that prevented pages from fully loading when retrieving resources from the HTTP cache and DevTools showed the requests failing with net::ERR_FAILED.
-
-## Version 128.0.2739.54: August 29, 2024
-
-Fixed various bugs and performance issues, feature updates.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#august-29-2024).
-
-### Fixes
-
-- Fixed an issue that caused custom configured start pages to be stuck in the loading state.
-
-### Feature updates
-
-- **Security setting in the Microsoft Edge management service.** The Microsoft Edge management service gives admins a dedicated experience to manage specific settings that help improve the security posture of their managed browser instances.
-
-
-## Version 128.0.2739.42: August 22, 2024
-
-Fixed various bugs and performance issues, feature updates, and policy updates.
-
-> [!IMPORTANT]
-> This update to Stable channel contains a fix for [CVE-2024-7971](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7971) and [CVE-2024-7965](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7965), which have been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#august-22-2024).
-
-### Dev Channel updates
-
-The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
-
-- [Dev Channel update to 128.0.2661.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2661-0-is-live/m-p/4176024)
-- [Dev Channel update to 128.0.2677.1 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2677-1-is-live/m-p/4182622)
-- [Dev Channel update to 128.0.2690.1 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2690-1-is-live/m-p/4188392)
-- [Dev Channel update to 128.0.2708.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2708-0-is-live/m-p/4194430)
-- [Dev Channel update to 128.0.2730.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2730-0-is-live/m-p/4200632)
-- [Dev Channel update to 128.0.2739.1 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-128-0-2739-1-is-live/m-p/4206617)
-
-### Fixes
-
-- Fixed an issue that caused high CPU usage of renderer processes when running Selenium tests and calling `driver.quit()` to end the testing session.
-
-### Feature updates
-
-- **SSE3 Requirement.**  Microsoft Edge stopped supporting CPUs that lack SSE3. Devices with such CPUs won't receive any more updates. For more information, see [Microsoft Edge Supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
-
-- **Copilot browser Context Policies.** The [DiscoverPageContextEnabled](/deployedge/microsoft-edge-policies#discoverpagecontextenabled) policy is obsoleted in Microsoft Edge version 128 and doesn't work after Microsoft Edge 127.
-
-  To summarize and answer questions based on browser context in Microsoft Edge, Copilot needs to be able to access the browser context. We're providing two new policies to offer more flexibility for admins to customize Edge browser context access across Copilot chats in Edge sidebar.
-
-  - [CopilotPageContext](/deployedge/microsoft-edge-policies#copilotpagecontext) - Control Copilot access to browser context for Microsoft Entra ID profiles.
-  - [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to browser context for Microsoft Entra ID profiles.
-
-- **Deprecation of the followable web feature.** To improve end user experience, the followable web feature is deprecated. The [EdgeFollowEnabled](/deployedge/microsoft-edge-policies#edgefollowenabled) policy is also obsolete.
-
-- **EnforceLocalAnchorConstraintsEnabled policy obsoletion.** The [EnforceLocalAnchorConstraintsEnabled](/deployedge/microsoft-edge-policies#enforcelocalanchorconstraintsenabled) policy was previously deprecated and is now obsolete in Edge version 128. Since Microsoft Edge 112, constraints in certificates loaded from the platform certificate store are enforced. The [EnforceLocalAnchorConstraintsEnabled](/deployedge/microsoft-edge-policies#enforcelocalanchorconstraintsenabled) policy existed as a temporary opt-out in case an enterprise encountered issues with the constraints encoded in their private roots.
-
-- **New Policy for Insecure Downloads over HTTP.** Users that download potentially dangerous content on HTTP sites will receive a UI warning in a future Microsoft Edge version. To prepare for this change, the [ShowDownloadsInsecureWarningsEnabled](/deployedge/microsoft-edge-policies#showdownloadsinsecurewarningsenabled) policy is now available for admins to enable or disable the warnings related to insecure downloads
-
-- **Edge Bar improvements.** Edge Bar, the detachable version of the Edge sidebar in Windows 10, has a changed entry point from the gear icon at the bottom of the Edge sidebar's fly out menu to the *edge://settings/sidebar* page.  
-
-  For Windows 11 and Windows 10 users, clicking the gear icon will now automatically open the *edge://settings/sidebar* page.
-
-  Also, the ability for Edge Bar to start automatically when starting a Windows 10 device has been enabled again, the Close "X" icon has been moved below the ellipsis menu at the bottom right corner of Edge Bar, and Copilot in Edge will remain within the browser not in Edge Bar. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
-
-  Disabling Edge Bar through the [StandaloneHubsSidebarEnabled](/deployedge/microsoft-edge-policies#standalonehubssidebarenabled) policy continues to work, there's a fix to make the UI and briefcase icon appear on the *edge://settings/sidebar* page coming soon.
-
-### Policy updates
-
-#### New policies
-
-- [ApplicationBoundEncryptionEnabled](/deployedge/microsoft-edge-policies#applicationboundencryptionenabled) - Enable Application Bound Encryption
-- [DynamicCodeSettings](/deployedge/microsoft-edge-policies#dynamiccodesettings) - Dynamic Code Settings
-- [ExtensionDeveloperModeSettings](/deployedge/microsoft-edge-policies#extensiondevelopermodesettings) - Control the availability of developer mode on extensions page
-- [ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls](/deployedge/microsoft-edge-policies#extensionextendedbackgroundlifetimeforportconnectionstourls) - Configure a list of origins that grant an extended background lifetime to connecting extensions.
-- [KeyboardFocusableScrollersEnabled](/deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) - Enable keyboard focusable scrollers
-- [ShowDownloadsInsecureWarningsEnabled](/deployedge/microsoft-edge-policies#showdownloadsinsecurewarningsenabled) - Enable insecure download warnings
-
-#### Obsoleted policies
-
-- [DiscoverPageContextEnabled](/deployedge/microsoft-edge-policies#discoverpagecontextenabled) - Enable Discover access to page contents for AAD profiles (obsolete)
-- [EnforceLocalAnchorConstraintsEnabled](/deployedge/microsoft-edge-policies#enforcelocalanchorconstraintsenabled) - Determines whether the built-in certificate verifier will enforce constraints encoded into trust anchors loaded from the platform trust store (deprecated)
-- [SiteSafetyServicesEnabled](/deployedge/microsoft-edge-policies#sitesafetyservicesenabled) - Allow users to configure Site safety services (obsolete)
-
 <!-- ===================== snip for archive ========================== -->
+<!-- Version 128.0.2739.79: September 12, 2024 to Version 128.0.2739.42: August 22, 2024 --->
 <!-- Version 127.0.2651.105: August 15, 2024 to Version 127.0.2651.74: July 25, 2024 --->
 <!-- Version 126.0.2592.113: July 18, 2024 to Version 126.0.2592.61: June 17, 2024 --->
 <!-- Version 124.0.2478.109: May 16, 2024 to Version 124.0.2478.51: April 18, 2024 -->
