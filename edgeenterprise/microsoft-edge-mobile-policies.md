@@ -3,7 +3,7 @@ title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 11/04/2024
+ms.date: 11/14/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -1749,6 +1749,7 @@ true
 #### Supported on:
 
 * Microsoft Edge (iOS and iPadOS) since version 117
+* Microsoft Edge Android since version 117
 
 #### Description
 
