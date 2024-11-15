@@ -36,6 +36,10 @@ Fixed various bugs and performance issues, Dev channel updates, feature updates,
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-14-2024).
 
+### Announcement
+
+Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings.
+
 ### Dev Channel updates
 
 The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
