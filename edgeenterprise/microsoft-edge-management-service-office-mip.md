@@ -3,7 +3,7 @@ title: "Protect Office documents with Microsoft Purview Information Protection l
 ms.author: jikong
 author: dan-wesley
 manager: likuba
-ms.date: 11/12/2024
+ms.date: 11/15/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -20,7 +20,7 @@ This article explains how to use the Microsoft Purview Information Protection (M
 
 [Microsoft Purview Information Protection (MPIP)](/purview/information-protection) enables data loss prevention (DLP) controls in Microsoft 365 documents by limiting or preventing certain actions on documents with specific sensitivity levels. After a sensitivity label is applied to a document, an admin can prevent actions such as editing, printing, copying/pasting, taking screenshots, and more. This functionality, previously only available in Microsoft 365 desktop applications, is extended to online Office documents via Microsoft Edge to help protect sensitive information.  
 
-When an admin chooses to enable Microsoft Purview Information Protection in the Edge management service, that action will simultaneously disable other browsers that don't respect Microsoft Word, Excel, and PowerPoint rights restrictions. An admin can choose to re-enable other browsers, by using the following instructions. However, the result is a security loophole, where users can avoid rights restrictions simply by opening the Microsoft Word, Excel and PowerPoint documents in another browser.
+When an admin chooses to enable Microsoft Purview Information Protection in the Edge management service, that action will simultaneously disable other browsers that don't respect Microsoft Word, Excel, and PowerPoint rights restrictions. An admin can choose to re-enable other browsers, by using the following instructions. However, the result is a security loophole, where users can avoid rights restrictions by opening the Microsoft Word, Excel and PowerPoint documents in another browser.
 
 ## Turning on MPIP and managing access to other browsers
 
