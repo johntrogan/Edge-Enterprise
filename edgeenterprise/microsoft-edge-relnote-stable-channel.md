@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 11/14/2024
+ms.date: 11/15/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -26,11 +26,19 @@ These release notes provide information about new features and non-security upda
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 131.0.2903.51: November 15, 2024
+
+Fixed various bugs and performance issues.
+
 ## Version 131.0.2903.48: November 14, 2024
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#november-14-2024).
+
+### Announcement
+
+Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings.
 
 ### Dev Channel updates
 
