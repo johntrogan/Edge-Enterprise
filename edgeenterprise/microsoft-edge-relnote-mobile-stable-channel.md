@@ -53,8 +53,6 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 - [Android] Improve the sign-in experience for single device mode (Remove SDM needed restart on first startup).
 - [iOS & Android] General enhancements to NewTabPageLayout policy (Policy auto correct NewTabPageLayout to custom if NewTabPageLayout.Custom has value).
 
-
-
 ## Version 130.0.2849.80 (Android and iOS): November 11, 2024
 
 Fixed various bugs and performance issues.
