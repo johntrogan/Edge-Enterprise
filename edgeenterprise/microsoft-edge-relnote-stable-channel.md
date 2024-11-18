@@ -38,7 +38,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 ### Announcement
 
-Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings.
+Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings because it is a persistent system component.
 
 ### Dev Channel updates
 
