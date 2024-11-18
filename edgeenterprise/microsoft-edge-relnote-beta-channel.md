@@ -23,6 +23,14 @@ These release notes provide information about new features and non-security upda
 
 Fixed various bugs and performance issues, etc., and site compatibility impacting changes.
 
+### Dev channel updates
+
+### Fixes
+
+### Feature updates
+
+### Policy updates
+
 ### Site compatibility impacting changes
 
 > [!NOTE]
