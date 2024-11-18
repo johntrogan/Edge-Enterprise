@@ -34,11 +34,11 @@ Fixed various bugs and performance issues, etc., and site compatibility impactin
 
 - **Capture all screens.** Capture all the screens currently connected to the device using `getAllScreensMedia()`.
 
-  Calling `getDisplayMedia()` multiple times requires multiple user gestures, burdens the user with choosing the next screen each time, and does not guarantee to the app that all the screens were selected. The `getAllScreensMedia()` method improves on all of these fronts.
+  Calling `getDisplayMedia()` multiple times requires multiple user gestures, burdens the user with choosing the next screen each time, and doesn't guarantee to the app that all the screens were selected. The `getAllScreensMedia()` method improves on all of these fronts.
 
-  **Note:** Because this feature has privacy ramifications, it's only exposed behind the **MultiScreenCaptureAllowedForUrls** enterprise policy, and users are warned before recording starts, that recording could start at some point. The API will only work for origins that are specified in the **MultiScreenCaptureAllowedForUrls** allowlist. Any origin not specified there, won't have access to it.
+  **Note:** Because this feature has privacy ramifications it's only exposed behind the **MultiScreenCaptureAllowedForUrls** enterprise policy, and users are warned before recording starts, that recording could start at some point. The API will only work for origins that are specified in the **MultiScreenCaptureAllowedForUrls** allowlist. Any origin not specified there, won't have access to it.
 
-  This feature is only shipping on the desktop version of Edge.
+  This feature is only shipping on the desktop version of Microsoft Edge.
   
 - **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or closewatcher) it should dispatch a `ToggleEvent` with `newState=closed`.
 
@@ -48,32 +48,32 @@ Fixed various bugs and performance issues, etc., and site compatibility impactin
 
   The API bears some resemblance to the Region Capture API, but affords greater flexibility for applications, because occluding and occluded content are both excluded from the capture.
 
-- **FedCM authorization features.** This bundles a few features that can be used by Identity Providers (IdP) to implement authorization flows such as letting a user grant access to their calendar to an Relying Party (RP). Specifically:
+- **FedCM authorization features.** This bundles a few features that Identity Providers (IdP) can use to implement authorization flows such as letting a user grant access to their calendar to a Relying Party (RP). Specifically:
 
   - The IdP needs to be able to show a custom prompt for the permission (continuation API).
   - The RP needs an extensible way to communicate to the IdP what it wants access to (parameters API).
-  - The RP needs to be able to customize or suppress the text referring to the IdP sharing "name, email address and profile picture" because in this situation they are asking for different information (fields API).
-  - The IdP may want to use a different endpoint to implement the authorization flow (multiple configURLs).
+  - The RP needs to be able to customize or suppress the text referring to the IdP sharing "name, email address, and profile picture" because in this situation they're asking for different information (fields API).
+  - The IdP might want to use a different endpoint to implement the authorization flow (multiple configURLs).
   - Certain accounts may only be eligible for one of the authentication and authorization flows and so there needs to be a way to show different accounts in the two flows (account labels API).
 
 - **FedCM Mode API and Use Other Account API.** Two new extensions for FedCM:
 
-  - **Mode**: The `active` mode allows websites to call FedCM inside a button click (for example, clicking on a **Sign-in to IdP** button), which requires FedCM to guarantee it will always respond with a visible user interface. Calling the FedCM API in *active mode* takes users to login to the Identity Provider (IdP) when users are logged-out. Also, because the active mode is called within an explicit user gesture, the UI is also more prominent (for example, centered and modal) compared to the UI from the passive mode (which doesn't require a user gesture requirement and can be called on page load).
+  - **Mode**: The `active` mode allows websites to call FedCM inside a button click (for example, selecting a **Sign-in to IdP** button), which requires FedCM to guarantee it always responds with a visible user interface. Calling the FedCM API in *active mode* takes users to sign in to the Identity Provider (IdP) when users are logged-out. Also, because the active mode is called within an explicit user gesture, the UI is also more prominent (for example, centered and modal) compared to the UI from the passive mode (which doesn't require a user gesture requirement and can be called on page load).
   - **Use Other Account**: With this extension, an IdP can allow users to sign in to other accounts.
 
 - **Fetch: `Request.bytes()` and `Response.bytes()`.** Add a `bytes()` method to the `Request` and `Response` interfaces, which returns a promise that resolves with a Uint8Array. While `Request` and `Response` have an `arrayBuffer()` method, it’s not possible to read directly from a buffer. A view such as a `Uint8Array` must be created to read it. The `bytes()` method improves the ergonomics of getting the body of Request and Response.
 
-- **Ignore Strict-Transport-Security for localhost.** `Strict-Transport-Security` (STS) response headers can cause problems for localhost web servers because STS applies host-wide, across all ports. This causes compatibility problems for web developers testing locally. It also affects end-users who use software packages that commonly start localhost web servers for ephemeral reasons. For example, communication of an auth token from a web login to a local software package. If one local listener sets `Strict-Transport-Security` on a localhost response, it's applied to all subsequent localhost requests regardless of port.
+- **Ignore Strict-Transport-Security for localhost.** `Strict-Transport-Security` (STS) response headers can cause problems for localhost web servers because STS applies host-wide, across all ports. This causes compatibility problems for web developers testing locally. It also affects end-users who use software packages that commonly start localhost web servers for ephemeral reasons. For example, communication of an auth token from a web sign-in to a local software package. If one local listener sets `Strict-Transport-Security` on a localhost response, it's applied to all subsequent localhost requests regardless of port.
 
   Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
   
-- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This is fixed and the feature continues to rollout with Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
+- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to rollout with Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
 
 - **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
 
 - **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
 
-- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
+- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
 - **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Edge 132, these situations now throw `InvalidStateError`.
 
