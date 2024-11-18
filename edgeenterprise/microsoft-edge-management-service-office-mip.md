@@ -3,7 +3,7 @@ title: "Protect Office documents with Microsoft Purview Information Protection l
 ms.author: jikong
 author: dan-wesley
 manager: likuba
-ms.date: 11/15/2024
+ms.date: 11/18/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
