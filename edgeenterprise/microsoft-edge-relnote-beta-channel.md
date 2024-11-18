@@ -39,15 +39,7 @@ Fixed various bugs and performance issues, etc., and site compatibility impactin
 - **CSS Anchor Positioning: allow `anchor-size()` in inset and margin properties.** Originally, `anchor-size()` was only allowed in sizing properties. The specification now allows `anchor-size()` in insets and margins as well.
 
 - **CSS sideways writing modes.** Support of `sideways-rl` and `sideways-lr` keywords for the `writing-mode` CSS property. `sideways-rl` and `sideways-lr` are helpful to write non-CJK text vertically. They don't have behaviors favorable for CJK languages unlike `vertical-rl` and `vertical-lr`.
-<!-----
-- **Capture all screens.** Capture all the screens currently connected to the device using `getAllScreensMedia()`.
 
-  Calling `getDisplayMedia()` multiple times requires multiple user gestures, burdens the user with choosing the next screen each time, and doesn't guarantee to the app that all the screens were selected. The `getAllScreensMedia()` method improves on all of these fronts.
-
-  **Note:** Because this feature has privacy ramifications it's only exposed behind the **MultiScreenCaptureAllowedForUrls** enterprise policy, and users are warned before recording starts, that recording could start at some point. The API will only work for origins that are specified in the **MultiScreenCaptureAllowedForUrls** allowlist. Any origin not specified there, won't have access to it.
-
-  This feature is only shipping on the desktop version of Microsoft Edge.
-  --->
 - **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or closewatcher) it should dispatch a `ToggleEvent` with `newState=closed`.
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
