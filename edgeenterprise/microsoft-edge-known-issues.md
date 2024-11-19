@@ -18,7 +18,7 @@ This article tracks the known issues, workarounds, and fixes for Microsoft Edge.
 
 ## High impact issues
 
-These issues are high impact as identified by CSS. Check this article often as the Microsoft Edge team provides workarounds and fixes.
+These issues are high impact as identified by Customer Support and Service. Check this article often as the Microsoft Edge team provides workarounds and fixes.
 
 The following table lists the issues that the Microsoft Edge team is tracking closely, working on, or resolved.
 <!-----------
