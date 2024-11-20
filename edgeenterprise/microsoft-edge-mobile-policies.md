@@ -2534,7 +2534,7 @@ Supported actions are:
 - 'close_tabs': close all open tabs and create a NTP (New Tab Page).
 - 'clear_browsing_history': clear the browsing history.
 - 'clear_cookies_and_other_site_data': clear browsing history and other site data.
-- 'sign_out': sign out of browser.
+- 'sign_out': sign out of browser. (This only applies to iOS.)
 
 #### Supported features
 
