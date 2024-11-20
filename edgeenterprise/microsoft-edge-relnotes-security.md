@@ -18,8 +18,7 @@ These release notes provide information about security fixes that are included i
 
 ## November 20, 2024
 
-Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a
-security fix.
+Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix.
 
 ## November 14, 2024
 
