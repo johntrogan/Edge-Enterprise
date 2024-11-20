@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Stable Channel"
 ms.author: charlielin
 author: dan-wesley
 manager: alexyuan
-ms.date: 11/11/2024
+ms.date: 11/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -22,6 +22,55 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android).
+
+## Version 131.0.2903.54 (iOS): November 19, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.2
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.1
+- [iOS] Upgrade MS OneAuth SDK version 4.0.2
+
+### Bug fixes
+
+- [iOS] Fix the issue with saving Word/Excel/PowerPoint files locally.
+- [iOS] Fix unresponsive sign-in panel in "Send to device".
+- [iOS] Fix the issue where the [IdleTimeout](/deployedge/microsoft-edge-mobile-policies#idletimeout) policy did not resume normal operation after the action was completed.
+- [iOS] Fix Tooltip cannot auto-dismiss when VoiceOver is turned on.
+
+### New Policies
+
+- [iOS] Support to disable settings and feedback features via DisableFeature policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now supports configuring disable settings and feedback features on the NTP using the values "settings" and "feedback")
+- [iOS] Support Microsoft Entra ID File advanced encryption by Intune auto file encryption capability. (Implement comprehensive encryption of sandbox files under Microsoft Entra ID accounts using Intune MAM SDK's File Transparent Encryption. File encryption is enabled when the `com.microsoft.intune.IntuneMAMOnly.AdvancedEncryption` policy is set to Enabled.)
+
+### Enhancements
+
+- [iOS] Improve the feature experience for the App Proxy policy by preventing it from not functioning correctly until the next cold start.
+- [iOS] Improve the feature experience for switching profile.
+- [iOS] General enhancements to [NewTabPageLayout](/deployedge/microsoft-edge-mobile-policies#edgenewtabpagelayout) policy (Policy auto correct NewTabPageLayout to custom if `NewTabPageLayout.Custom` has value).
+- [iOS] Support sign-out action in [IdleTimeoutActions](/deployedge/microsoft-edge-mobile-policies#idletimeoutactions) policy.
+
+## Version 131.0.2903.48 (Android): November 18, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [Android] Upgrade MS OneAuth SDK version 4.0.2
+
+### New Policies
+
+- [Android] Support to disable settings and feedback features via DisableFeature policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now supports configuring disable settings and feedback features on the NTP using the values "settings" and "feedback")
+
+### Enhancements
+
+- [Android] Enhancements the display size of brandLogo (Related policy `com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo`).
+- [Android] Improve the sign-in experience for single device mode (Remove SDM needed restart on first startup).
+- [Android] General enhancements to NewTabPageLayout policy (Policy auto correct NewTabPageLayout to custom if NewTabPageLayout.Custom has value).
 
 ## Version 130.0.2849.80 (Android and iOS): November 11, 2024
 
