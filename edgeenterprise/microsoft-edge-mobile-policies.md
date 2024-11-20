@@ -3,14 +3,14 @@ title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 11/14/2024
+ms.date: 11/19/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser"
+description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser on mobile devices."
 ---
 
 # Microsoft Edge Mobile - Policies
@@ -2534,6 +2534,7 @@ Supported actions are:
 - 'close_tabs': close all open tabs and create a NTP (New Tab Page).
 - 'clear_browsing_history': clear the browsing history.
 - 'clear_cookies_and_other_site_data': clear browsing history and other site data.
+- 'sign_out': sign out of browser. (This only applies to iOS.)
 
 #### Supported features
 
