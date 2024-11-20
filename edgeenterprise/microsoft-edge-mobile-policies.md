@@ -10,7 +10,7 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser"
+description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser on mobile devices."
 ---
 
 # Microsoft Edge Mobile - Policies
