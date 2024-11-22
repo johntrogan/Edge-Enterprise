@@ -38508,7 +38508,7 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 
   ### SelectParserRelaxationEnabled
 
-  #### Controls whether the new HTML parser behavior for the <select> element is enabled
+  #### Controls whether the new HTML parser behavior for the `<select>` element is enabled
 
   
   
@@ -38518,11 +38518,11 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 
   #### Description
 
-  The HTML parser is being changed to allow additional HTML tags inside the <select> element. This policy supports the old HTML parser behavior until M136.
+  The HTML parser is being changed to allow additional HTML tags inside the `<select>` element. This policy supports the old HTML parser behavior until M136.
 
-If this policy is enabled or unset, the HTML parser will allow additional tags inside the <select> element.
+If this policy is enabled or unset, the HTML parser will allow additional tags inside the `<select>` element.
 
-If this policy is disabled, then the HTML parser will restrict which tags can be put in the <select> element.
+If this policy is disabled, then the HTML parser will restrict which tags can be put in the `<select>` element.
 
   #### Supported features:
 
@@ -38541,7 +38541,7 @@ If this policy is disabled, then the HTML parser will restrict which tags can be
   ##### Group Policy (ADMX) info
 
   - GP unique name: SelectParserRelaxationEnabled
-  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
+  - GP name: Controls whether the new HTML parser behavior for the \<select\> element is enabled
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
