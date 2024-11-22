@@ -3940,7 +3940,7 @@ If you don't configure this policy, [DefaultJavaScriptSetting](#defaultjavascrip
 
 For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
 
-Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern "https://[\*.]foo.com/" will not prevent a page hosted on, say, https://contoso.com from running a script loaded from https://www.foo.com/example.js. Furthermore, supplying the pattern "https://contoso.com/" will not prevent a document from https://contoso.com from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, https://www.fabrikam.com.
+Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern "https://[\*.]foo.com/" will not prevent a page hosted on, say, `https://contoso.com` from running a script loaded from `https://www.foo.com/example.js`. Furthermore, supplying the pattern "https://contoso.com/" will not prevent a document from `https://contoso.com` from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, `https://www.fabrikam.com`.
 
   #### Supported features:
 
@@ -11124,7 +11124,7 @@ If you enable this policy, you can configure the list of base64 encoded SHA256 f
 
 If you disable or don't configure this policy, XFA PDFs won't be considered for opening via IE mode except the files from file origin mentioned in Policy [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)
 
-For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823](https://go.microsoft.com/fwlink/?linkid=2294823)), [Dot Net Convert API]([https://go.microsoft.com/fwlink/?linkid=2294913](https://go.microsoft.com/fwlink/?linkid=2294913)).
+For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823), [Dot Net Convert API](https://go.microsoft.com/fwlink/?linkid=2294913).
 
   #### Supported features:
 
@@ -38508,7 +38508,7 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 
   ### SelectParserRelaxationEnabled
 
-  #### Controls whether the new HTML parser behavior for the `<select>` element is enabled
+  #### Controls whether the new HTML parser behavior for the \<select\> element is enabled
 
   
   
