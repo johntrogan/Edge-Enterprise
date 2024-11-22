@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 11/07/2024
+ms.date: 11/20/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -30,23 +30,14 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
-The following table lists the new, deprecated, and obsoleted policies that are in this article update.
+The following table lists the new, and deprecated policies that are in this article update.
 
 | Policy Name | Caption |
 |:-----|:-----|
-|[AutomaticFullscreenAllowedForUrls](#automaticfullscreenallowedforurls)|Allow automatic full screen on specified sites|
-|[AutomaticFullscreenBlockedForUrls](#automaticfullscreenblockedforurls)|Block automatic full screen on specified sites|
-|[GenAILocalFoundationalModelSettings](#genailocalfoundationalmodelsettings)|Settings for GenAI local foundational model|
-|[IPv6ReachabilityOverrideEnabled](#ipv6reachabilityoverrideenabled)|Enable IPv6 reachability check override|
-|[DeletingUndecryptablePasswordsEnabled](#deletingundecryptablepasswordsenabled)|Enable deleting undecryptable passwords|
-|[AdHocCodeSigningForPWAsEnabled](#adhoccodesigningforpwasenabled)|Native application signing during Progressive Web Application installation|
-|[CreatePasskeysInICloudKeychain](#createpasskeysinicloudkeychain)|Control whether passkey creation will default to iCloud Keychain.|
-|[LiveTranslationAllowed](#livetranslationallowed)|Live translation allowed|
-|[PersonalizeTopSitesInCustomizeSidebarEnabled](#personalizetopsitesincustomizesidebarenabled)|Personalize my top sites in Customize Sidebar enabled by default|
-|[InsecureFormsWarningsEnabled](#insecureformswarningsenabled)|Enable warnings for insecure forms (deprecated)|
-|[MutationEventsEnabled](#mutationeventsenabled)|Enable deprecated/removed Mutation Events (deprecated)|
-|[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies (obsolete)|
-|[CertificateTransparencyEnforcementDisabledForLegacyCas](#certificatetransparencyenforcementdisabledforlegacycas)|Disable Certificate Transparency enforcement for a list of legacy certificate authorities (obsolete)|
+|[ViewXFAPDFInIEModeAllowedFileHash](#viewxfapdfiniemodeallowedfilehash)|View XFA-based PDF files using IE Mode for allowed file hash.|
+|[ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)|View XFA-based PDF files using IE Mode for allowed file origin.|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
+|[PromotionalTabsEnabled](#promotionaltabsenabled)|Enable full-tab promotional content (deprecated)|
 
 ## Available policies
 
@@ -71,6 +62,7 @@ These tables list all of the browser-related group policies available in this re
 - [Manageability](#manageability)
 - [Native Messaging](#native-messaging)
 - [Network settings](#network-settings)
+- [PDF Reader](#pdf-reader)
 - [Password manager and protection](#password-manager-and-protection)
 - [Performance](#performance)
 - [Permit or deny screen capture](#permit-or-deny-screen-capture)
@@ -302,6 +294,12 @@ These tables list all of the browser-related group policies available in this re
 |[CompressionDictionaryTransportEnabled](#compressiondictionarytransportenabled)|Enable compression dictionary transport support|
 |[IPv6ReachabilityOverrideEnabled](#ipv6reachabilityoverrideenabled)|Enable IPv6 reachability check override|
 |[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support|
+### [*PDF Reader*](#pdf-reader-policies)
+
+|Policy Name|Caption|
+|-|-|
+|[ViewXFAPDFInIEModeAllowedFileHash](#viewxfapdfiniemodeallowedfilehash)|View XFA-based PDF files using IE Mode for allowed file hash.|
+|[ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)|View XFA-based PDF files using IE Mode for allowed file origin.|
 ### [*Password manager and protection*](#password-manager-and-protection-policies)
 
 |Policy Name|Caption|
@@ -693,7 +691,7 @@ These tables list all of the browser-related group policies available in this re
 |[PinningWizardAllowed](#pinningwizardallowed)|Allow Pin to taskbar wizard|
 |[PostQuantumKeyAgreementEnabled](#postquantumkeyagreementenabled)|Enable post-quantum key agreement for TLS|
 |[ProactiveAuthEnabled](#proactiveauthenabled)|Enable Proactive Authentication (obsolete)|
-|[PromotionalTabsEnabled](#promotionaltabsenabled)|Enable full-tab promotional content|
+|[PromotionalTabsEnabled](#promotionaltabsenabled)|Enable full-tab promotional content (deprecated)|
 |[PromptForDownloadLocation](#promptfordownloadlocation)|Ask where to save downloaded files|
 |[PromptOnMultipleMatchingCertificates](#promptonmultiplematchingcertificates)|Prompt the user to select a certificate when multiple certificates match|
 |[QRCodeGeneratorEnabled](#qrcodegeneratorenabled)|Enable QR Code Generator|
@@ -734,6 +732,7 @@ These tables list all of the browser-related group policies available in this re
 |[SearchbarAllowed](#searchbarallowed)|Enable the Search bar|
 |[SearchbarIsEnabledOnStartup](#searchbarisenabledonstartup)|Allow the Search bar at Windows startup|
 |[SecurityKeyPermitAttestation](#securitykeypermitattestation)|Websites or domains that don't need permission to use direct Security Key attestation|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
 |[SendIntranetToInternetExplorer](#sendintranettointernetexplorer)|Send all intranet sites to Internet Explorer|
 |[SendMouseEventsDisabledFormControlsEnabled](#sendmouseeventsdisabledformcontrolsenabled)|Control the new behavior for event dispatching on disabled form controls (obsolete)|
 |[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services (obsolete)|
@@ -1718,7 +1717,7 @@ SOFTWARE\Policies\Microsoft\Edge\AutomaticFullscreenBlockedForUrls\2 = "[*.]exam
 
   #### Description
 
-  Define a list of sites, based on URL patterns, that are allowed to set cookies.
+  Define a list of sites, based on URL patterns, that are allowed to set cookies. URL patterns may be a single URL indicating that the site may use cookies on all top-level sites. Patterns may also be two URLs delimited by a comma. The first specifies the site that should be allowed to use cookies. The second specifies the top-level site that the first value should be applied on. If you use a pair of URLs, the first value in the pair supports * but the second value does not. Using * for the first value indicates that all sites may use cookies when the second URL is the top-level site.
 
 If you don't configure this policy, the global default value from the [DefaultCookiesSetting](#defaultcookiessetting) policy (if set) or the user's personal configuration is used for all sites.
 
@@ -2885,17 +2884,19 @@ Use the preceding information when configuring this policy.
 
   #### Description
 
-  Third-party storage partitioning is on by default for some users starting with Microsoft Edge version 115, but it can be disabled with edge://flags.
+  This policy controls whether third-party storage partitioning is allowed by default.
 
-If this policy is configured to "AllowPartitioning" or not configured, third-party storage partitioning can be enabled.
+If this policy is set to 1 - AllowPartitioning, or unset, third-party storage partitioning will be allowed by default. This default may be overridden for specific top-level origins by other means.
 
-If this policy is set to "BlockPartitioning", third-party storage partitioning can't be enabled.
+If this policy is set to 2 - BlockPartitioning, third-party storage partitioning will be disabled for all contexts.
+
+Use ThirdPartyStoragePartitioningBlockedForOrigins to disable third-party storage partitioning for specific top-level origins.
 
 Policy options mapping:
 
-* AllowPartitioning (1) = Let third-party storage partitioning to be enabled.
+* AllowPartitioning (1) = Allow third-party storage partitioning by default.
 
-* BlockPartitioning (2) = Block third-party storage partitioning from being enabled.
+* BlockPartitioning (2) = Disable third-party storage partitioning.
 
 Use the preceding information when configuring this policy.
 
@@ -3868,7 +3869,7 @@ Users may opt out of prompts on a per-protocol/per-site basis unless the [Extern
 
 If you don't configure this policy, [DefaultJavaScriptSetting](#defaultjavascriptsetting) applies for all sites, if it's set. If not, the user's personal setting applies.
 
-For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+For detailed information about valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
 
   #### Supported features:
 
@@ -3937,7 +3938,9 @@ SOFTWARE\Policies\Microsoft\Edge\JavaScriptAllowedForUrls\2 = "[*.]contoso.edu"
 
 If you don't configure this policy, [DefaultJavaScriptSetting](#defaultjavascriptsetting) applies for all sites, if it's set. If not, the user's personal setting applies.
 
-For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
+
+Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern "https://[\*.]foo.com/" will not prevent a page hosted on, say, https://contoso.com from running a script loaded from https://www.foo.com/example.js. Furthermore, supplying the pattern "https://contoso.com/" will not prevent a document from https://contoso.com from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, https://www.fabrikam.com.
 
   #### Supported features:
 
@@ -4004,7 +4007,7 @@ SOFTWARE\Policies\Microsoft\Edge\JavaScriptBlockedForUrls\2 = "[*.]contoso.edu"
 
   Allows you to set a list of site url patterns that specify sites which are allowed to run JavaScript with JIT (Just In Time) compiler enabled.
 
-For detailed information on valid site url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+For detailed information on valid site url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
 
 JavaScript JIT policy exceptions will only be enforced at a site granularity (eTLD+1). A policy set for only subdomain.contoso.com will not correctly apply to contoso.com or subdomain.contoso.com since they both resolve to the same eTLD+1 (contoso.com) for which there is no policy. In this case, policy must be set on contoso.com to apply correctly for both contoso.com and subdomain.contoso.com.
 
@@ -4077,7 +4080,7 @@ SOFTWARE\Policies\Microsoft\Edge\JavaScriptJitAllowedForSites\1 = "[*.]example.e
 
 Disabling the JavaScript JIT will mean that Microsoft Edge may render web content more slowly, and may also disable parts of JavaScript including WebAssembly. Disabling the JavaScript JIT may allow Microsoft Edge to render web content in a more secure configuration.
 
-For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
 
 JavaScript JIT policy exceptions will only be enforced at a site granularity (eTLD+1). A policy set for only subdomain.contoso.com will not correctly apply to contoso.com or subdomain.contoso.com since they both resolve to the same eTLD+1 (contoso.com) for which there is no policy. In this case, policy must be set on contoso.com to apply correctly for both contoso.com and subdomain.contoso.com.
 
@@ -11099,6 +11102,373 @@ This policy is temporary and will be removed in the future.
 
   [Back to top](#microsoft-edge---policies)
 
+  ## PDF Reader policies
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### ViewXFAPDFInIEModeAllowedFileHash
+
+  #### View XFA-based PDF files using IE Mode for allowed file hash.
+
+  
+  
+  #### Supported versions:
+
+  - On Windows since 132 or later
+
+  #### Description
+
+  XFA is a legacy technology that is deprecated by its original creators. It is not an ISO standard and as such, doesn't align with the modern web architecture. Continued use poses potential risks and vulnerabilities. For more information, see - [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins).
+
+If you enable this policy, you can configure the list of base64 encoded SHA256 file hashes for which XFA PDF files will automatically open in Microsoft Edge using IE Mode.
+
+If you disable or don't configure this policy, XFA PDFs won't be considered for opening via IE mode except the files from file origin mentioned in Policy [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)
+
+For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823](https://go.microsoft.com/fwlink/?linkid=2294823)), [Dot Net Convert API]([https://go.microsoft.com/fwlink/?linkid=2294913](https://go.microsoft.com/fwlink/?linkid=2294913)).
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: No
+
+  #### Data Type:
+
+  - List of strings
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: ViewXFAPDFInIEModeAllowedFileHash
+  - GP name: View XFA-based PDF files using IE Mode for allowed file hash.
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/PDF Reader
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash
+  - Path (Recommended): N/A
+  - Value Name: 1, 2, 3, ...
+  - Value Type: list of REG_SZ
+
+  ##### Example value:
+
+```
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\1 = "'"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\2 = "["
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\3 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\4 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\5 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\6 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\7 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\8 = "Z"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\9 = "G"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\10 = "m"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\11 = "1"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\12 = "A"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\13 = "v"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\14 = "0"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\15 = "I"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\16 = "E"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\17 = "B"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\18 = "K"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\19 = "A"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\20 = "R"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\21 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\22 = "z"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\23 = "z"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\24 = "7"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\25 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\26 = "x"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\27 = "k"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\28 = "N"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\29 = "Y"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\30 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\31 = "Z"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\32 = "b"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\33 = "8"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\34 = "L"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\35 = "z"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\36 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\37 = "M"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\38 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\39 = "V"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\40 = "7"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\41 = "J"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\42 = "3"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\43 = "2"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\44 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\45 = "2"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\46 = "f"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\47 = "F"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\48 = "G"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\49 = "4"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\50 = "="
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\51 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\52 = ","
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\53 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\54 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\55 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\56 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\57 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\58 = "F"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\59 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\60 = "L"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\61 = "0"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\62 = "Q"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\63 = "+"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\64 = "9"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\65 = "H"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\66 = "X"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\67 = "7"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\68 = "W"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\69 = "F"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\70 = "I"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\71 = "3"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\72 = "R"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\73 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\74 = "m"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\75 = "S"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\76 = "D"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\77 = "F"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\78 = "T"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\79 = "l"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\80 = "U"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\81 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\82 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\83 = "b"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\84 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\85 = "l"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\86 = "X"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\87 = "H"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\88 = "6"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\89 = "7"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\90 = "M"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\91 = "T"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\92 = "d"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\93 = "X"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\94 = "D"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\95 = "w"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\96 = "W"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\97 = "u"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\98 = "u"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\99 = "4"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\100 = "="
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\101 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\102 = ","
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\103 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\104 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\105 = "]"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\106 = "'"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\107 = "\n"
+
+```
+
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### ViewXFAPDFInIEModeAllowedOrigins
+
+  #### View XFA-based PDF files using IE Mode for allowed file origin.
+
+  
+  
+  #### Supported versions:
+
+  - On Windows since 132 or later
+
+  #### Description
+
+  Internet Explorer (IE) mode uses the Adobe Acrobat Active-X PDF Plugin to open XFA-based PDF files. This policy will only work if the Active-X plugin is already on the user's device, it's not installed as part of this policy.
+
+It's important to note that XFA is a legacy technology that is deprecated by its original creators. It is not an ISO standard and as such, doesn't align with the modern web architecture. Continued use poses potential risks and vulnerabilities.
+
+Given the deprecated status of XFA technology and the lack of any investment by its creators, we strongly recommend that you start planning your transition to a more advanced HTML\PDF form-based solutions.
+
+In the interim, this policy provides a workaround for users to view XFA PDF in Microsoft Edge.
+
+If you enable this policy, you can configure the list of origins from which XFA PDF files will be automatically opened in Microsoft Edge using IE Mode.
+
+If you disable or don't configure the policy, XFA PDFs won't be considered for opening via Internet Explorer mode.
+
+For detailed information on valid URL patterns, see - [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322)
+
+Alternatively, [ViewXFAPDFInIEModeAllowedFileHash](#viewxfapdfiniemodeallowedfilehash) can also be used to configure list of file hashes instead of URL origins, which will enable those files to be automatically opened in Microsoft Edge using IE Mode.
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: No
+
+  #### Data Type:
+
+  - List of strings
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: ViewXFAPDFInIEModeAllowedOrigins
+  - GP name: View XFA-based PDF files using IE Mode for allowed file origin.
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/PDF Reader
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins
+  - Path (Recommended): N/A
+  - Value Name: 1, 2, 3, ...
+  - Value Type: list of REG_SZ
+
+  ##### Example value:
+
+```
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\1 = "'"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\2 = "["
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\3 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\4 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\5 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\6 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\7 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\8 = "h"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\9 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\10 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\11 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\12 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\13 = ":"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\14 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\15 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\16 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\17 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\18 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\19 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\20 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\21 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\22 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\23 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\24 = "."
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\25 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\26 = "h"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\27 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\28 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\29 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\30 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\31 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\32 = "i"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\33 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\34 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\35 = "."
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\36 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\37 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\38 = "m"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\39 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\40 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\41 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\42 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\43 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\44 = "u"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\45 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\46 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\47 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\48 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\49 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\50 = ","
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\51 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\52 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\53 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\54 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\55 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\56 = "h"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\57 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\58 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\59 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\60 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\61 = ":"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\62 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\63 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\64 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\65 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\66 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\67 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\68 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\69 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\70 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\71 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\72 = "."
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\73 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\74 = "h"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\75 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\76 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\77 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\78 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\79 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\80 = "i"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\81 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\82 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\83 = "."
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\84 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\85 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\86 = "m"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\87 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\88 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\89 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\90 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\91 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\92 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\93 = "p"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\94 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\95 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\96 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\97 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\98 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\99 = ","
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\100 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\101 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\102 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\103 = " "
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\104 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\105 = "f"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\106 = "i"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\107 = "l"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\108 = "e"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\109 = ":"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\110 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\111 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\112 = "a"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\113 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\114 = "c"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\115 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\116 = "u"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\117 = "n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\118 = "t"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\119 = "_"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\120 = "f"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\121 = "o"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\122 = "r"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\123 = "m"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\124 = "s"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\125 = "/"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\126 = "\""
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\127 = "\n"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\128 = "]"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\129 = "'"
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\130 = "\n"
+
+```
+
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ## Password manager and protection policies
 
   [Back to top](#microsoft-edge---policies)
@@ -14500,25 +14870,24 @@ If you enable this policy, Microsoft Edge ignores all proxy-related options spec
 If you don't configure this policy, users can choose their own proxy settings.
 
 This policy overrides the following individual policies:
-
 [ProxyMode](#proxymode)
 [ProxyPacUrl](#proxypacurl)
 [ProxyServer](#proxyserver)
 [ProxyBypassList](#proxybypasslist)
 
 Setting the [ProxySettings](#proxysettings) policy accepts the following fields:
-  * ProxyMode, which lets you specify the proxy server used by Microsoft Edge and prevents users from changing proxy settings
-  * ProxyPacUrl, a URL to a proxy .pac file
-  * ProxyPacMandatory, a boolean flag which prevents the network stack from falling back to direct connections with invalid or unavailable PAC script
-  * ProxyServer, a URL for the proxy server
-  * ProxyBypassList, a list of proxy hosts that Microsoft Edge bypasses
+* ProxyMode, which lets you specify the proxy server used by Microsoft Edge and prevents users from changing proxy settings
+* ProxyPacUrl, a URL to a proxy .pac file, or a PAC script encoded as a data URL with MIME type application/x-ns-proxy-autoconfig
+* ProxyPacMandatory, a boolean flag which prevents the network stack from falling back to direct connections with invalid or unavailable PAC script
+* ProxyServer, a URL for the proxy server
+* ProxyBypassList, a list of proxy hosts that Microsoft Edge bypasses
 
 For ProxyMode, if you choose the value:
-  * direct, a proxy is never used and all other fields are ignored.
-  * system, the systems's proxy is used and all other fields are ignored.
-  * auto_detect, all other fields are ignored.
-  * fixed_servers, the ProxyServer and ProxyBypassList fields are used.
-  * pac_script, the ProxyPacUrl, ProxyPacMandatory and ProxyBypassList fields are used.
+* direct, a proxy is never used and all other fields are ignored.
+* system, the systems's proxy is used and all other fields are ignored.
+* auto_detect, all other fields are ignored.
+* fixed_servers, the ProxyServer and ProxyBypassList fields are used.
+* pac_script, the ProxyPacUrl, ProxyPacMandatory and ProxyBypassList fields are used.
 
 For more detailed examples go to [https://go.microsoft.com/fwlink/?linkid=2094936](https://go.microsoft.com/fwlink/?linkid=2094936).
 
@@ -35362,9 +35731,9 @@ If you don't configure this policy, Proactive Authentication is turned on.
 
   ### PromotionalTabsEnabled
 
-  #### Enable full-tab promotional content
+  #### Enable full-tab promotional content (deprecated)
 
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   
   #### Supported versions:
 
@@ -35377,6 +35746,8 @@ If you don't configure this policy, Proactive Authentication is turned on.
 If you enable this policy (set it true) or don't configure it, Microsoft Edge can show full-tab content to users to provide product information.
 
 If you disable (set to false) this policy, Microsoft Edge can't show full-tab content to users.
+
+This is deprecated - use ShowRecommendationsEnabled instead.
 
   #### Supported features:
 
@@ -35395,7 +35766,7 @@ If you disable (set to false) this policy, Microsoft Edge can't show full-tab co
   ##### Group Policy (ADMX) info
 
   - GP unique name: PromotionalTabsEnabled
-  - GP name: Enable full-tab promotional content
+  - GP name: Enable full-tab promotional content (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -38130,6 +38501,70 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 <array>
   <string>contoso.com</string>
 </array>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### SelectParserRelaxationEnabled
+
+  #### Controls whether the new HTML parser behavior for the <select> element is enabled
+
+  
+  
+  #### Supported versions:
+
+  - On Windows and macOS since 132 or later
+
+  #### Description
+
+  The HTML parser is being changed to allow additional HTML tags inside the <select> element. This policy supports the old HTML parser behavior until M136.
+
+If this policy is enabled or unset, the HTML parser will allow additional tags inside the <select> element.
+
+If this policy is disabled, then the HTML parser will restrict which tags can be put in the <select> element.
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: No - Requires browser restart
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: No
+
+  #### Data Type:
+
+  - Boolean
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: SelectParserRelaxationEnabled
+  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: SelectParserRelaxationEnabled
+  - Value Type: REG_DWORD
+
+  ##### Example value:
+
+```
+0x00000001
+```
+
+  #### Mac information and settings
+
+  - Preference Key Name: SelectParserRelaxationEnabled
+  - Example value:
+``` xml
+<true/>
 ```
   
 
