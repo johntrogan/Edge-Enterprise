@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 11/21/2024
+ms.date: 11/25/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -39,6 +39,10 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 ## Version 131.0.2903.51: November 15, 2024
 
 Fixed various bugs and performance issues.
+
+## Version 130.0.2849.99: November 14, 2024
+
+Fixed various bugs and performance issues for Extended Stable release.
 
 ## Version 131.0.2903.48: November 14, 2024
 
