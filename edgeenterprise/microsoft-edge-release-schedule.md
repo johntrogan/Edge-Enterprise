@@ -3,7 +3,7 @@ title: "Microsoft Edge release schedule"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
-ms.date: 11/22/2024
+ms.date: 11/25/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -34,14 +34,14 @@ The following table lists the planned and actual release dates for major release
 | Version | Release status | Beta Channel<br>Release week | Stable Channel<br>Release week | Extended Stable Channel<br>Release week |
 |:-----|:-----|:-----|:-----|:-----|
 | 140 | Target release | Week of 14-Aug-2025 | Week of 04-Sep-2025 | Week of 04-Sep-2025 |
-| 139 | Target release | Week of 03-Jul-2025 | Week of 07-Aug-2025 | Not applicable |
+| 139 | Target release | Week of 17-Jul-2025 | Week of 07-Aug-2025 | Not applicable |
 | 138 | Target release | Week of 05-Jun-2025 | Week of 26-Jun-2025 | Week of 26-Jun-2025 |
 | 137 | Target release | Week of 08-May-2025 | Week of 29-May-2025 | Not applicable |
 | 136 | Target release | Week of 10-Apr-2025 | Week of 01-May-2025 | Week of 01-May-2025 |
 | 135 | Target release | Week of 13-Mar-2025 | Week of 03-Apr-2025 | Not applicable |
 | 134 | Target release | Week of 13-Feb-2025 | Week of 06-Mar-2025 | Week of 06-Mar-2025 |
 | 133 | Target release | Week of 16-Jan-2025 | Week of 06-Feb-2025 | Not applicable |
-| 132 | Release<br>Version | 22-Nov-2024<br>[132.0.2957.11](/deployedge/microsoft-edge-relnote-beta-channel#version-1320295711-november-22-2024) | Week of 09-Jan-2025 | Week of 09-Jan-2025 |
+| 132 | Release<br>Version | 22-Nov-2024<br>[132.0.2957.11](/deployedge/microsoft-edge-relnote-beta-channel#version-1320295711-november-22-2024) | Week of 16-Jan-2025 | Week of 16-Jan-2025 |
 | 131 | Release<br>Version | 24-Oct-2024<br>[131.0.2903.9](/deployedge/microsoft-edge-relnote-beta-channel#version-131029039-october-24-2024) | 14-Nov-2024<br>[131.0.2903.48](/deployedge/microsoft-edge-relnote-stable-channel#version-1310290348-november-14-2024) | Not applicable |
 | 130 | Release<br>Version | 26-Sep-2024<br>[130.0.2849.5](/deployedge/microsoft-edge-relnote-beta-channel#version-130028495-september-26-2024) | 17-Oct-2024<br>[130.0.2849.46](/deployedge/microsoft-edge-relnote-stable-channel#version-1300284946-october-17-2024) | 17-Oct-2024<br>[130.0.2849.46](/deployedge/microsoft-edge-relnote-stable-channel#version-1300284946-october-17-2024) |
 | 129 | Release<br>Version | 29-Aug-2024<br>[129.0.2792.12](/deployedge/microsoft-edge-relnote-beta-channel#version-1290279212-august-29-2024) | 19-Sep-2024<br>[129.0.2792.52](/deployedge/microsoft-edge-relnote-stable-channel#version-1290279252-september-19-2024) | Not applicable |
