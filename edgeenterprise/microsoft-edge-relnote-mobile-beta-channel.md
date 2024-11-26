@@ -28,6 +28,10 @@ Archived versions of these release notes are available at [Archived release note
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 132.0.2957.17 (Android and iOS): November 26, 2024
+
+Fixed various bugs and performance issues.
+
 ## Version 132.0.2957.8 (Android and iOS): November 22, 2024
 
 Fixed various bugs and performance issues.
