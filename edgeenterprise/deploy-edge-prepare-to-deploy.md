@@ -3,7 +3,7 @@ title: "Microsoft Edge in your environment"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/18/2024
+ms.date: 11/25/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -13,6 +13,9 @@ description: "Microsoft Edge in your environment"
 ---
 
 # Microsoft Edge in your environment
+
+> [!IMPORTANT]
+> This article applies to Microsoft Edge Legacy. Support for the Microsoft Edge Legacy desktop application ended on March 9, 2021. For more information, see [Microsoft Edge Legacy - Microsoft Lifecycle | Microsoft Learn](/lifecycle/products/microsoft-edge-legacy). We’re no longer updating "Microsoft Edge in your environment" regularly.  
 
 This article describes how to prepare to deploy Microsoft Edge when Microsoft Edge Legacy reaches its end of service.
 
