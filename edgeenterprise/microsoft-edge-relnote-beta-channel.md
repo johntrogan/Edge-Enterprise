@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 11/22/2024
+ms.date: 12/02/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -18,6 +18,16 @@ These release notes provide information about new features and non-security upda
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 132.0.2957.26: December 2, 2024
+
+Fixed various bugs and performance issues, and feature updates.
+
+### Feature updates
+
+- **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
+
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which will direct them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -435,7 +445,6 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 <!--=========================== archived =================================-->
 <!-- Version 129.0.2792.52: September 19, 2024 to Version 129.0.2792.12: August 29, 2024 -->
-
 <!-- Version 128.0.2739.42: August 22, 2024 to Version 128.0.2739.5: August 1, 2024 -->
 <!-- Version 127.0.2651.74: July 25, 2024 to Version 127.0.2651.8: June 21, 2024 -->
 <!-- Version 126.0.2592.68: June 20, 2024 to Version 126.0.2592.13: May 23, 2024 -->
