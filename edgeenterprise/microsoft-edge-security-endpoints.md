@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
-ms.date: 11/11/2024
+ms.date: 12/03/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -154,9 +154,23 @@ The service that supports feedback and diagnostics for desktop and mobile users.
 
 Provide metadata for browser features such as tracking protection, certificate revocation lists, and other browser component updates. Provide downloadable spellcheck dictionaries and ad-blocking block lists. Provide services to support browser features such as collections, autofill, and extension store.
 
+#### HTTP
+
+- `http://msedge.f.tlu.dl.delivery.mp.microsoft.com`
+- `http://msedge.f.dl.delivery.mp.microsoft.com`
+- `http://msedge.b.tlu.dl.delivery.mp.microsoft.com`
+- `http://msedge.b.dl.delivery.mp.microsoft.com`
+
+#### HTTPS
+
+- `https://msedge.sf.tlu.dl.delivery.mp.microsoft.com`
+- `https://msedge.sf.dl.delivery.mp.microsoft.com`
+- `https://msedge.sb.tlu.dl.delivery.mp.microsoft.com`
+- `https://msedge.sb.dl.delivery.mp.microsoft.com`
+<!-------
 - `http://edge.microsoft.com/`
 - `https://edge.microsoft.com/`
-
+---->
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
