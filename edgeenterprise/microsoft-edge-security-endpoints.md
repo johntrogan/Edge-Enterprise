@@ -154,11 +154,9 @@ The service that supports feedback and diagnostics for desktop and mobile users.
 
 Provide metadata for browser features such as tracking protection, certificate revocation lists, and other browser component updates. Provide downloadable spellcheck dictionaries and ad-blocking block lists. Provide services to support browser features such as collections, autofill, and extension store.
 
-- `http://edge.microsoft.com/`
-- `https://edge.microsoft.com/`
-
 #### HTTP
 
+- `http://edge.microsoft.com/`
 - `http://msedge.f.tlu.dl.delivery.mp.microsoft.com`
 - `http://msedge.f.dl.delivery.mp.microsoft.com`
 - `http://msedge.b.tlu.dl.delivery.mp.microsoft.com`
@@ -166,6 +164,7 @@ Provide metadata for browser features such as tracking protection, certificate r
 
 #### HTTPS
 
+- `https://edge.microsoft.com/`
 - `https://msedge.sf.tlu.dl.delivery.mp.microsoft.com`
 - `https://msedge.sf.dl.delivery.mp.microsoft.com`
 - `https://msedge.sb.tlu.dl.delivery.mp.microsoft.com`
