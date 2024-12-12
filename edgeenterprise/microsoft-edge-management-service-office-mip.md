@@ -30,7 +30,7 @@ You can turn on Microsoft Purview Information Protection in a policy and allow t
 
 To enable this setting in the Edge management service, navigate within a configuration profile to the **Customization Settings** tab. From there, navigate to the **Security settings** page. If you would like to turn on this setting, check the box that is labeled "Apply sensitivity labels to Microsoft 365 online" and then select "Save changes." For users assigned to this configuration profile, Microsoft 365 online will now be able to access labels managed by Microsoft Purview Information Protection.
 
-:::image type="content" source="media/microsoft-edge-management-service-office-mip/MIP labels-edited.png" alt-text="configure additional settings":::
+:::image type="content" source="media/microsoft-edge-management-service-office-mip/mip-configure-labels.png" alt-text="configure additional settings":::
 
 ### How to allow the use of other browsers while Microsoft Purview Information Protection setting is enabled
 
