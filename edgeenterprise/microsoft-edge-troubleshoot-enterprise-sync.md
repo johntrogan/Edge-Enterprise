@@ -3,7 +3,7 @@ title: "Diagnose and fix Microsoft Edge sync issues"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/18/2024
+ms.date: 12/18/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -122,7 +122,9 @@ If this error is encountered for a Microsoft Entra account, or if DISABLED_BY_AD
       - `https://api.aadrm.com` (for most tenants)
       - `https://api.aadrm.de` (for tenants in Germany)
       - `https://api.aadrm.cn` (for tenants in China)
-   - [Enterprise Firewall Configurations to Support WNS Traffic](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).
+
+   - Microsoft Edge cloud messaging service endpoints:
+   - `https://*.cloudmessaging.edge.microsoft.com/` `wss://*.cloudmessaging.edge.microsoft.com/`
 
 5. If the issue still isn't fixed, contact [Microsoft Edge support](https://www.microsoftedgeinsider.com/support).
 

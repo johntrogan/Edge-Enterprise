@@ -3,7 +3,7 @@ title: "Allow list for Microsoft Edge endpoints"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
-ms.date: 12/03/2024
+ms.date: 12/18/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -96,7 +96,9 @@ These endpoints manage the reading and writing of synced data, rights management
   - `https://api.aadrm.de` (for tenants in Germany)
   - `https://api.aadrm.cn` (for tenants in China)
 
-- [Windows Notification Service endpoints](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- Microsoft Edge cloud messaging service endpoints:
+ 
+   - `https://*.cloudmessaging.edge.microsoft.com/` `wss://*.cloudmessaging.edge.microsoft.com/`
 
 ### Cloud Site List Management
 
