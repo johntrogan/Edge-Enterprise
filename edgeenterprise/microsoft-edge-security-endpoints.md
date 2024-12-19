@@ -98,7 +98,8 @@ These endpoints manage the reading and writing of synced data, rights management
 
 - Microsoft Edge cloud messaging service endpoints:
  
-   - `https://*.cloudmessaging.edge.microsoft.com/` `wss://*.cloudmessaging.edge.microsoft.com/`
+   - `https://*.cloudmessaging.edge.microsoft.com/` 
+   - `wss://*.cloudmessaging.edge.microsoft.com/`
 
 ### Cloud Site List Management
 
