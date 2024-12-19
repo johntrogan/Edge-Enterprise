@@ -124,8 +124,9 @@ If this error is encountered for a Microsoft Entra account, or if DISABLED_BY_AD
       - `https://api.aadrm.cn` (for tenants in China)
       
     - Microsoft Edge cloud messaging service endpoints:
-      - `https://*.cloudmessaging.edge.microsoft.com/` 
-      - `wss://*.cloudmessaging.edge.microsoft.com/`
+      - `https://*.cloudmessaging.edge.microsoft.com/`
+      - `wss://*.cloudmessaging.edge.microsoft.com/` 
+
    
 
 5. If the issue still isn't fixed, contact [Microsoft Edge support](https://www.microsoftedgeinsider.com/support).
