@@ -35,7 +35,7 @@ The following table lists the new, and deprecated policies that are in this arti
 |:-----|:-----|
 |[CACertificatesWithConstraints](#cacertificateswithconstraints)|TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints|
 |[CSSCustomStateDeprecatedSyntaxEnabled](#csscustomstatedeprecatedsyntaxenabled)|Controls whether the deprecated :--foo syntax for CSS custom state is enabled (deprecated)|
-|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select> element is enabled|
 
 
 ## Available policies
@@ -744,7 +744,7 @@ These tables list all of the browser-related group policies available in this re
 |[SearchbarAllowed](#searchbarallowed)|Enable the Search bar|
 |[SearchbarIsEnabledOnStartup](#searchbarisenabledonstartup)|Allow the Search bar at Windows startup|
 |[SecurityKeyPermitAttestation](#securitykeypermitattestation)|Websites or domains that don't need permission to use direct Security Key attestation|
-|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select> element is enabled|
 |[SendIntranetToInternetExplorer](#sendintranettointernetexplorer)|Send all intranet sites to Internet Explorer|
 |[SendMouseEventsDisabledFormControlsEnabled](#sendmouseeventsdisabledformcontrolsenabled)|Control the new behavior for event dispatching on disabled form controls (obsolete)|
 |[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services (obsolete)|
@@ -4380,7 +4380,7 @@ If you don't configure this policy, [DefaultJavaScriptSetting](#defaultjavascrip
 
 For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
 
-Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern "https://[\*.]foo.com/" will not prevent a page hosted on, say, https://contoso.com from running a script loaded from https://www.foo.com/example.js. Furthermore, supplying the pattern "https://contoso.com/" will not prevent a document from https://contoso.com from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, https://www.fabrikam.com.
+Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern "`https://[\*.]foo.com/`" will not prevent a page hosted on, say, https://contoso.com from running a script loaded from `https://www.foo.com/example.js`. Furthermore, supplying the pattern "https://contoso.com/" will not prevent a document from https://contoso.com from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, https://www.fabrikam.com.
 
   #### Supported features:
 
@@ -8219,7 +8219,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 The source code of any extension can be altered by users with developer tools, potentially rendering the extension unfunctional. If this is a concern, configure the [DeveloperToolsAvailability](#developertoolsavailability) policy.
 
-Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document ( [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043) ). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see https://learn.microsoft.com/en-us/deployedge/microsoft-edge-manage-extensions-ref-guide.
+Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document (https://go.microsoft.com/fwlink/?linkid=2095043). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see [https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions-ref-guide](/deployedge/microsoft-edge-manage-extensions-ref-guide).
 
 Note: This policy doesn't apply to InPrivate mode. Read about hosting extensions at [Publish and update extensions in the Microsoft Edge Add-ons website](/microsoft-edge/extensions-chromium/enterprise/hosting-and-updating).
 
@@ -11630,7 +11630,7 @@ If you enable this policy, you can configure the list of base64 encoded SHA256 f
 
 If you disable or don't configure this policy, XFA PDFs won't be considered for opening via IE mode except the files from file origin mentioned in Policy [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)
 
-For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823](https://go.microsoft.com/fwlink/?linkid=2294823)), [Dot Net Convert API]([https://go.microsoft.com/fwlink/?linkid=2294913](https://go.microsoft.com/fwlink/?linkid=2294913)).
+For more information, see - [Get-FileHash](https://go.microsoft.com/fwlink/?linkid=2294823), [Dot Net Convert API](https://go.microsoft.com/fwlink/?linkid=2294913).
 
   #### Supported features:
 
@@ -38864,7 +38864,7 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 
   ### SelectParserRelaxationEnabled
 
-  #### Controls whether the new HTML parser behavior for the <select> element is enabled
+  #### Controls whether the new HTML parser behavior for the \<select> element is enabled
 
   
   
@@ -38874,11 +38874,11 @@ SOFTWARE\Policies\Microsoft\Edge\SecurityKeyPermitAttestation\1 = "contoso.com"
 
   #### Description
 
-  The HTML parser is being changed to allow additional HTML tags inside the <select> element. This policy supports the old HTML parser behavior until M136.
+  The HTML parser is being changed to allow additional HTML tags inside the \<select> element. This policy supports the old HTML parser behavior until M136.
 
-If this policy is enabled or unset, the HTML parser will allow additional tags inside the <select> element.
+If this policy is enabled or unset, the HTML parser will allow additional tags inside the \<select> element.
 
-If this policy is disabled, then the HTML parser will restrict which tags can be put in the <select> element.
+If this policy is disabled, then the HTML parser will restrict which tags can be put in the \<select> element.
 
   #### Supported features:
 
@@ -38897,7 +38897,7 @@ If this policy is disabled, then the HTML parser will restrict which tags can be
   ##### Group Policy (ADMX) info
 
   - GP unique name: SelectParserRelaxationEnabled
-  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
+  - GP name: Controls whether the new HTML parser behavior for the \<select> element is enabled
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -40378,8 +40378,8 @@ If you enable or don't configure this policy, web-based applications that use th
 If you disable this policy, Speech Recognition is not available through the Web Speech API.
 
 Read more about this feature here:
-SpeechRecognition API: [https://go.microsoft.com/fwlink/?linkid=2143388](https://go.microsoft.com/fwlink/?linkid=2143388)
-Cognitive Services: [https://go.microsoft.com/fwlink/?linkid=2143680](https://go.microsoft.com/fwlink/?linkid=2143680)
+- SpeechRecognition API
+- Cognitive Services: [https://go.microsoft.com/fwlink/?linkid=2143680](https://go.microsoft.com/fwlink/?linkid=2143680)
 
   #### Supported features:
 
