@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Stable Channel"
 ms.author: charlielin
 author: dan-wesley
 manager: alexyuan
-ms.date: 12/17/2024
+ms.date: 12/23/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -21,7 +21,15 @@ To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge c
 All the Stable channel security updates are listed in [Release notes for Microsoft Edge Security Updates](./microsoft-edge-relnotes-security.md).
 
 > [!NOTE]
-> For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android).
+> For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
+
+## Version 131.0.2903.113 (Android): December 23, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.112 (iOS): December 19, 2024
+
+Fixed various bugs and performance issues.
 
 ## Version 131.0.2903.107 (Android and iOS): December 17, 2024
 
