@@ -27,7 +27,7 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 Fixed various bugs and performance issues.
 
-## Version 131.0.2903.112 (Android and iOS): December 19, 2024
+## Version 131.0.2903.112 (iOS): December 19, 2024
 
 Fixed various bugs and performance issues.
 
