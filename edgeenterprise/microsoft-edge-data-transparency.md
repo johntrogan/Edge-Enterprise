@@ -1,9 +1,9 @@
-
+---
 title: "Microsoft Edge data transparency for connected Entra ID users"
 ms.author: radiasl
-author: <v-mlira>
+author: dan-wesley
 manager: pravadha
-ms.date: 01/06/2024
+ms.date: 01/06/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
