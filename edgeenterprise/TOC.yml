@@ -112,6 +112,8 @@
         href: microsoft-edge-for-business-config-recommendations.md
       - name: Organization branding
         href: microsoft-edge-organization-branding.md
+      - name: Data transparency in Microsoft Edge
+        href: microsoft-edge-data-transparency.md  
    - name: Microsoft Edge management service
      items:
       - name: Get started with configuration profiles
