@@ -12,6 +12,7 @@ ms.collection: M365-modern-desktop
 description: "Describes Edge data transparency for connected Entra ID users"
 ---
 
+
 # Data transparency in Microsoft Edge: Connected Experiences for Entra ID users 
 
 The connected experiences in Microsoft Edge help you to search, discover, collaborate, and access work apps on the web more productively. For example, you can translate the contents of a web page into a different language, or automatically group tabs. Connected experiences might analyze the content of the web pages you're seeing in Microsoft Edge to offer editing suggestions, help you discover related articles, and more. Microsoft Copilot, Editor, and Text Prediction are all examples of connected experiences.
@@ -77,8 +78,8 @@ When the enterprise features in the next table are turned on, the browser sends 
 | Feature | Article |
 |:-----|:-----|
 | Windows Information Protection (WIP)     |  [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)     |
-| Microsoft Endpoint Data Loss Prevention (DLP)    | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) |
-| Microsoft Purview Information Protection (MPIP)  | [Protect Office documents with Microsoft Purview \| Microsoft Learn](/deployedge/microsoft-edge-management-service-office-mip)      |
+| Microsoft Endpoint Data Loss Prevention (DLP)    | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) |Protect
+| Microsoft Purview Information Protection (MPIP)  | [ Office documents with Microsoft Purview \| Microsoft Learn](/deployedge/microsoft-edge-management-service-office-mip)      |
 | Microsoft Defender for Cloud Apps (Preview)     |  [Session policies](/defender-cloud-apps/session-policy-aad)    |
 | Microsoft Insider Risk Management | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview)  |
 | Microsoft Edge management service | [Microsoft Edge management service](/deployedge/microsoft-edge-management-service) |
