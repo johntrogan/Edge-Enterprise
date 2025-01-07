@@ -1,3 +1,16 @@
+---
+title: "Microsoft Edge data transparency for connected Entra ID users"
+ms.author: radiasl
+author: dan-wesley
+manager: pravadha
+ms.date: 12/18/2024
+audience: ITPro
+ms.topic: conceptual
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+description: "Describes Edge data transparency for connected Entra ID users"
+---
 
 # Data transparency in Microsoft Edge: Connected Experiences for Entra ID users 
 
