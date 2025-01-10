@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
-author: dan-wesley
+author: vmliramichael
 manager: venkatk
-ms.date: 01/08/2025
+ms.date: 01/10/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -744,7 +744,7 @@ These tables list all of the browser-related group policies available in this re
 |[SearchbarAllowed](#searchbarallowed)|Enable the Search bar|
 |[SearchbarIsEnabledOnStartup](#searchbarisenabledonstartup)|Allow the Search bar at Windows startup|
 |[SecurityKeyPermitAttestation](#securitykeypermitattestation)|Websites or domains that don't need permission to use direct Security Key attestation|
-|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select\> element is enabled|
 |[SendIntranetToInternetExplorer](#sendintranettointernetexplorer)|Send all intranet sites to Internet Explorer|
 |[SendMouseEventsDisabledFormControlsEnabled](#sendmouseeventsdisabledformcontrolsenabled)|Control the new behavior for event dispatching on disabled form controls (obsolete)|
 |[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services (obsolete)|
@@ -11637,7 +11637,8 @@ If you enable this policy, you can configure the list of base64 encoded SHA256 f
 
 If you disable or don't configure this policy, XFA PDFs won't be considered for opening via IE mode except the files from file origin mentioned in Policy [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)
 
-For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823](https://go.microsoft.com/fwlink/?linkid=2294823)), [Dot Net Convert API]([https://go.microsoft.com/fwlink/?linkid=2294913](https://go.microsoft.com/fwlink/?linkid=2294913)).
+For more information, see [Get-FileHash](https://go.microsoft.com/fwlink/?linkid=2294823), [Dot Net Convert API](https://go.microsoft.com/fwlink/?linkid=2294913).
+
 
   #### Supported features:
 
@@ -38982,7 +38983,7 @@ If this policy is disabled, then the HTML parser will restrict which tags can be
   ##### Group Policy (ADMX) info
 
   - GP unique name: SelectParserRelaxationEnabled
-  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
+  - GP name: Controls whether the new HTML parser behavior for the \<select\> element is enabled
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
