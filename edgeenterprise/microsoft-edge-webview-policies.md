@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge WebView2 Policy Documentation"
 ms.author: stmoody
-author: dan-wesley
+author: vmliramichael
 manager: venkatk
-ms.date: 12/13/2024
+ms.date: 01/10/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -310,7 +310,8 @@ If you enable or don't configure this policy, request methods are not uppercased
 This would reject fetch(url, {method: 'Foo'}) + "Access-Control-Allow-Methods: FOO" response header,
 and would accept fetch(url, {method: 'Foo'}) + "Access-Control-Allow-Methods: Foo" response header.
 
-Note: request methods "post" and "put" are not affected, while "patch" is affected.
+> [!Note]
+> request methods "post" and "put" are not affected, while "patch" is affected.
 
 This policy is intended to be temporary and will be removed in the future.
 
@@ -627,7 +628,8 @@ Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-
 
 Blanket host wildcards (i.e., "*" or "[*]") are not allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
 
-Note: This policy does not apply to HSTS upgrades.
+> [!Note]
+> This policy does not apply to HSTS upgrades.
 
   #### Supported features:
 
