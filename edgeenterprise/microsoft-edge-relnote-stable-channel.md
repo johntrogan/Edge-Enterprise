@@ -28,7 +28,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 131.0.2903.147: January 10, 2025
 
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#January-13-2025).
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#January-10-2025).
 
 ## Version 131.0.2903.146: January 10, 2025
 
