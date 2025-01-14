@@ -32,14 +32,14 @@ Dev Channel updates
 
 The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
 
-- [Dev Channel update to 131.0.2863.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2863-0-is-live-/4260359)
-- [Dev Channel update to 131.0.2875.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2875-0-is-live-/4267839)
-- [Dev Channel update to 131.0.2889.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2889-0-is-live-/4273465)
-- [Dev Channel update to 131.0.2903.5 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2903-5-is-live-/4277981)
+- [Dev Channel update to 132.0.2917.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-132-0-2917-0-is-live-/4283359)
+- [Dev Channel update to 132.0.2931.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-132-0-2931-1-is-live-/4288628)
+- [Dev Channel update to 132.0.2945.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-132-0-2945-0-is-live-/4296080)
+- [Dev Channel update to 132.0.2957.11 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-132-0-2957-11-is-live-/4342194)
 
 ### Fixes
 
-Fixed an issue on macOS that caused rendering issues and missing text when viewing certain PDF files containing Japanese fonts.
+- Fixed an issue on macOS that caused rendering issues and missing text when viewing certain PDF files containing Japanese fonts.
 
 ### Feature Updates
 
@@ -49,11 +49,11 @@ Fixed an issue on macOS that caused rendering issues and missing text when viewi
 
 - **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **New password manager policy.** The [DeletingUndecryptablePasswordsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) policy controls whether the built-in password manager can delete undecryptable passwords from its database. This policy is required to restore the full functionality of the built-in password manager, but it might cause permanent data loss. Undecryptable password values won't become decryptable on their own. If fixing them is possible, it usually requires complex user actions.
+- **New password manager policy.** The [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) policy controls whether the built-in password manager can delete undecryptable passwords from its database. This policy is required to restore the full functionality of the built-in password manager, but it might cause permanent data loss. Undecryptable password values won't become decryptable on their own. If fixing them is possible, it usually requires complex user actions.
 
-- **PromotionalTabsEnabled policy deprecation.** [The PromotionalTabsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy instead.
+- **PromotionalTabsEnabled policy deprecation.** [The PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy instead.
  
-- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
+- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
  
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, edge://support is being deprecated. The information found on edge://support is available on other pages: *edge://version, edge://metrics-internals, edge://extensions, and edge://policy.*
 
@@ -114,12 +114,11 @@ Previously when in a workspace, a user's existing Favorites Bar was not easily a
 
 Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 
-***Include all the previous Site compatibility impacting changes from Beta Release Notes Version 132.0.2957.11: November 22, 2024 [(Microsoft Edge release notes for Beta Channel | Microsoft Learn)](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel#site-compatibility-impacting-changes)
+***Include all the previous Site compatibility impacting changes from Beta Release Notes Version 132.0.2957.11: November 22, 2024 [(Microsoft Edge release notes for Beta Channel | Microsoft Learn)](/deployedge/microsoft-edge-relnote-beta-channel#site-compatibility-impacting-changes)
 
 - **Removal of old Headless from the Edge binary.**  Running Edge with `--headless=old` no longer launches the old Headless mode, and instead prints the following log message:
 
 Old Headless mode has been removed from the Chrome binary. Please use the [new Headless mode](https://developer.chrome.com/docs/chromium/headless) or the chrome-headless-shell which is a standalone implementation of the [old Headless mode](https://developer.chrome.com/blog/chrome-headless-shell).
-
 
 ## Version 131.0.2903.147: January 10, 2025
 
