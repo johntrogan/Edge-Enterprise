@@ -57,9 +57,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
  
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, edge://support is being deprecated. The information found on edge://support is available on other pages: *edge://version, edge://metrics-internals, edge://extensions, and edge://policy.*
 
-- **Full Favorites Bar available in Workspaces.**  Workspaces now display a user's full set of favorites in the Favorites Bar, with a dedicated workspace folder accessible from the bar.
- 
-Previously when in a workspace, a user's existing Favorites Bar was not easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
+- **Full Favorites Bar available in Workspaces.**  Workspaces now display a user's full set of favorites in the Favorites Bar, with a dedicated workspace folder accessible from the bar. Previously when in a workspace, a user's existing Favorites Bar was not easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
 
 ### Policy updates
 
@@ -116,9 +114,7 @@ Portions of this release note are modifications based on work created and shared
 
 ***Include all the previous Site compatibility impacting changes from Beta Release Notes Version 132.0.2957.11: November 22, 2024 [(Microsoft Edge release notes for Beta Channel | Microsoft Learn)](/deployedge/microsoft-edge-relnote-beta-channel#site-compatibility-impacting-changes)
 
-- **Removal of old Headless from the Edge binary.**  Running Edge with `--headless=old` no longer launches the old Headless mode, and instead prints the following log message:
-
-Old Headless mode has been removed from the Chrome binary. Please use the [new Headless mode](https://developer.chrome.com/docs/chromium/headless) or the chrome-headless-shell which is a standalone implementation of the [old Headless mode](https://developer.chrome.com/blog/chrome-headless-shell).
+- **Removal of old Headless from the Edge binary.**  Running Edge with `--headless=old` no longer launches the old Headless mode, and instead prints the following log message: Old Headless mode has been removed from the Chrome binary. Please use the [new Headless mode](https://developer.chrome.com/docs/chromium/headless) or the chrome-headless-shell which is a standalone implementation of the [old Headless mode](https://developer.chrome.com/blog/chrome-headless-shell).
 
 ## Version 131.0.2903.147: January 10, 2025
 
