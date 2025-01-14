@@ -134,7 +134,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
    - Save as (PDF,Webpage)
    - Screenshots
 
-For more information about how to enable, [see Protect Office documents with Microsoft Purview Information Protection labeling | Microsoft Learn.](/deployedge/microsoft-edge-management-service-office-mip). 
+For more information about how to enable, [see Protect Office documents with Microsoft Purview Information Protection labeling | Microsoft Learn.](/deployedge/microsoft-edge-management-service-office-mip)
 
 ### Policy updates
 
