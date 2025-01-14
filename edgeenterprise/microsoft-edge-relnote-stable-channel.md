@@ -28,7 +28,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 132.x.xxx.xxxx: January 14, 2025
 
-Dev Channel updates
+### Dev Channel updates
 
 The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
 
@@ -41,7 +41,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - Fixed an issue on macOS that caused rendering issues and missing text when viewing certain PDF files containing Japanese fonts.
 
-### Feature Updates
+### Feature updates
 
 - **Intune policies in the Microsoft Edge management service.** Admins now can set Intune policies via the Microsoft Edge management service, alongside the existing cloud policies. This ability lets admins deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that streamlines the creation process into a comprehensive, step-by-step flow. Note: This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
@@ -61,9 +61,9 @@ The following Dev channel updates preceded this Stable channel release. The foll
  
 Previously when in a workspace, a user's existing Favorites Bar was not easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
 
-### Policy Updates
+### Policy updates
 
-#### New Policies
+#### New policies
 
 - [AdHocCodeSigningForPWAsEnabled](/deployedge/microsoft-edge-policies#adhoccodesigningforpwasenabled) - Native application signing during Progressive Web Application installation
 
@@ -108,7 +108,7 @@ Previously when in a workspace, a user's existing Favorites Bar was not easily a
 
 - [CertificateTransparencyEnforcementDisabledForLegacyCas](/deployedge/microsoft-edge-policies#certificatetransparencyenforcementdisabledforlegacycas) - Disable Certificate Transparency enforcement for a list of legacy certificate authorities (obsolete)
 
-**Site compatibility impacting changes**
+#### Site compatibility impacting changes
 
 **Note**
 
