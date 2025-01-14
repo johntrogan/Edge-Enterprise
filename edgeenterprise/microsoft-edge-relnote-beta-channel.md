@@ -23,6 +23,10 @@ These release notes provide information about new features and non-security upda
 
 Fixed various bugs and performance issues.
 
+## Version 132.0.2957.101: January 11, 2025
+
+Fixed various bugs and performance issues.
+
 ## Version 132.0.2957.93: January 6, 2025
 
 Fixed various bugs and performance issues.
