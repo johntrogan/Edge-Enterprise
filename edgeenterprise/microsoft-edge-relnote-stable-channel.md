@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 01/10/2025
+ms.date: 01/14/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -25,6 +25,101 @@ These release notes provide information about new features and non-security upda
 > For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 132.x.xxx.xxxx: January 14, 2025
+
+Dev Channel updates
+
+The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 131.0.2863.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2863-0-is-live-/4260359)
+- [Dev Channel update to 131.0.2875.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2875-0-is-live-/4267839)
+- [Dev Channel update to 131.0.2889.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2889-0-is-live-/4273465)
+- [Dev Channel update to 131.0.2903.5 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-131-0-2903-5-is-live-/4277981)
+
+### Fixes
+
+Fixed an issue on macOS that caused rendering issues and missing text when viewing certain PDF files containing Japanese fonts.
+
+### Feature Updates
+
+- **Intune policies in the Microsoft Edge management service.** Admins now can set Intune policies via the Microsoft Edge management service, alongside the existing cloud policies. This ability lets admins deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that streamlines the creation process into a comprehensive, step-by-step flow. Note: This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
+
+- **Version monitoring in the Edge management service.** The Edge management service offers a single view of all managed Edge instances with their update status and possible actions to take. For out-of-date devices, you can easily schedule updates or notify users to update their browsers to avoid workflow interruptions. Note: This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
+
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **New password manager policy.** The [DeletingUndecryptablePasswordsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) policy controls whether the built-in password manager can delete undecryptable passwords from its database. This policy is required to restore the full functionality of the built-in password manager, but it might cause permanent data loss. Undecryptable password values won't become decryptable on their own. If fixing them is possible, it usually requires complex user actions.
+
+- **PromotionalTabsEnabled policy deprecation.** [The PromotionalTabsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy instead.
+ 
+- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
+ 
+- **Deprecation of Microsoft Edge Support page.** To improve end user experience, edge://support is being deprecated. The information found on edge://support is available on other pages: *edge://version, edge://metrics-internals, edge://extensions, and edge://policy.*
+
+- **Full Favorites Bar available in Workspaces.**  Workspaces now display a user's full set of favorites in the Favorites Bar, with a dedicated workspace folder accessible from the bar.
+ 
+Previously when in a workspace, a user's existing Favorites Bar was not easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
+
+### Policy Updates
+
+#### New Policies
+
+- [AdHocCodeSigningForPWAsEnabled](/deployedge/microsoft-edge-policies#adhoccodesigningforpwasenabled) - Native application signing during Progressive Web Application installation
+
+- [AutomaticFullscreenAllowedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenallowedforurls) - Allow automatic full screen on specified sites
+
+- [AutomaticFullscreenBlockedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenblockedforurls) - Block automatic full screen on specified sites
+
+- [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation will default to iCloud Keychain
+
+- [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) - Enable deleting undecryptable passwords
+
+- [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-policies#edgeautofillmlenabled) - Machine learning powered autofill suggestions
+
+- [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies#genailocalfoundationalmodelsettings) - Settings for GenAI local foundational model
+
+- [IPv6ReachabilityOverrideEnabled](/deployedge/microsoft-edge-policies#ipv6reachabilityoverrideenabled) - Enable IPv6 reachability check override
+
+- [LiveTranslationAllowed](/deployedge/microsoft-edge-policies#livetranslationallowed) - Live translation allowed
+
+- [PersonalizeTopSitesInCustomizeSidebarEnabled](/deployedge/microsoft-edge-policies#personalizetopsitesincustomizesidebarenabled) - Personalize my top sites in Customize Sidebar enabled by default
+
+- [SelectParserRelaxationEnabled](/deployedge/microsoft-edge-policies#selectparserrelaxationenabled) - Controls whether the new HTML parser behavior for the `<select>` element is enabled
+
+- [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash)- View XFA-based PDF files using IE Mode for allowed file hash.
+
+- [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) - View XFA-based PDF files using IE Mode for allowed file origin.
+
+
+#### Deprecated policies
+
+- [InsecureFormsWarningsEnabled](/deployedge/microsoft-edge-policies#insecureformswarningsenabled) - Enable warnings for insecure forms (deprecated)
+
+- [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (deprecated)
+
+- [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) - Enable deprecated/removed Mutation Events (deprecated)
+
+- [PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled)- Enable full-tab promotional content (deprecated)
+
+#### Obsoleted policies
+
+- [BlockTruncatedCookies](/deployedge/microsoft-edge-policies#blocktruncatedcookies) - Block truncated cookies (obsolete)
+
+- [CertificateTransparencyEnforcementDisabledForLegacyCas](/deployedge/microsoft-edge-policies#certificatetransparencyenforcementdisabledforlegacycas) - Disable Certificate Transparency enforcement for a list of legacy certificate authorities (obsolete)
+
+**Site compatibility impacting changes**
+
+**Note**
+
+Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+
+***Include all the previous Site compatibility impacting changes from Beta Release Notes Version 132.0.2957.11: November 22, 2024 [(Microsoft Edge release notes for Beta Channel | Microsoft Learn)](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel#site-compatibility-impacting-changes)
+
+- **Removal of old Headless from the Edge binary.**  Running Edge with `--headless=old` no longer launches the old Headless mode, and instead prints the following log message:
+
+Old Headless mode has been removed from the Chrome binary. Please use the [new Headless mode](https://developer.chrome.com/docs/chromium/headless) or the chrome-headless-shell which is a standalone implementation of the [old Headless mode](https://developer.chrome.com/blog/chrome-headless-shell).
+
 
 ## Version 131.0.2903.147: January 10, 2025
 
