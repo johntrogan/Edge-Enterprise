@@ -91,9 +91,9 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 #### Site compatibility impacting changes
 
-[!NOTE]
-Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
-
+>[!NOTE]
+>Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+>
 ***Include all the previous Site compatibility impacting changes from Beta Release Notes Version 132.0.2957.11: November 22, 2024 [(Microsoft Edge release notes for Beta Channel | Microsoft Learn)](/deployedge/microsoft-edge-relnote-beta-channel#site-compatibility-impacting-changes)
 
 - **Removal of old Headless from the Edge binary.**  Running Edge with `--headless=old` no longer launches the old Headless mode, and instead prints the following log message: Old Headless mode has been removed from the Chrome binary. Please use the [new Headless mode](https://developer.chrome.com/docs/chromium/headless) or the chrome-headless-shell which is a standalone implementation of the [old Headless mode](https://developer.chrome.com/blog/chrome-headless-shell).
