@@ -26,6 +26,18 @@ These release notes provide information about new features and non-security upda
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 131.0.2903.147: January 10, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#January-10-2025).
+
+## Version 131.0.2903.146: January 10, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#January-10-2025).
+
 ## Version 130.0.2849.142: January 10, 2025
 
 Fixed various bugs and performance issues for Extended Stable Channel.
@@ -123,6 +135,18 @@ The following Dev channel updates preceded this Stable channel release. The foll
   - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
 - **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allow list can be opened in sidebar even if they are listed in the block list. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
+
+- **Support for Microsoft Purview Information Protection label for Office Online documents.** Microsoft Edge for Business now natively supports enforcing data loss prevention (DLP) controls via Microsoft Information Protection (MIP) sensitivity labels in Word, Excel, and PowerPoint documents in Office online. This support closes the document protection gap in browser scenarios for commercial users.  The following leak controls are now natively supported in the browser:
+   - Copy
+   - Debugging Tools 
+   - Export
+   - Extract
+   - Paste
+   - Print
+   - Save as (PDF,Webpage)
+   - Screenshots
+
+For more information about how to enable, [see Protect Office documents with Microsoft Purview Information Protection labeling | Microsoft Learn.](/deployedge/microsoft-edge-management-service-office-mip)
 
 ### Policy updates
 
