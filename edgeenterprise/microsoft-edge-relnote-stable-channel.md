@@ -64,46 +64,29 @@ The following Dev channel updates preceded this Stable channel release. The foll
 #### New policies
 
 - [AdHocCodeSigningForPWAsEnabled](/deployedge/microsoft-edge-policies#adhoccodesigningforpwasenabled) - Native application signing during Progressive Web Application installation
-
 - [AutomaticFullscreenAllowedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenallowedforurls) - Allow automatic full screen on specified sites
-
 - [AutomaticFullscreenBlockedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenblockedforurls) - Block automatic full screen on specified sites
-
 - [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation will default to iCloud Keychain
-
 - [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) - Enable deleting undecryptable passwords
-
 - [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-policies#edgeautofillmlenabled) - Machine learning powered autofill suggestions
-
 - [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies#genailocalfoundationalmodelsettings) - Settings for GenAI local foundational model
-
 - [IPv6ReachabilityOverrideEnabled](/deployedge/microsoft-edge-policies#ipv6reachabilityoverrideenabled) - Enable IPv6 reachability check override
-
 - [LiveTranslationAllowed](/deployedge/microsoft-edge-policies#livetranslationallowed) - Live translation allowed
-
 - [PersonalizeTopSitesInCustomizeSidebarEnabled](/deployedge/microsoft-edge-policies#personalizetopsitesincustomizesidebarenabled) - Personalize my top sites in Customize Sidebar enabled by default
-
 - [SelectParserRelaxationEnabled](/deployedge/microsoft-edge-policies#selectparserrelaxationenabled) - Controls whether the new HTML parser behavior for the `<select>` element is enabled
-
 - [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash)- View XFA-based PDF files using IE Mode for allowed file hash.
-
 - [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) - View XFA-based PDF files using IE Mode for allowed file origin.
 
 
 #### Deprecated policies
 
 - [InsecureFormsWarningsEnabled](/deployedge/microsoft-edge-policies#insecureformswarningsenabled) - Enable warnings for insecure forms (deprecated)
-
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (deprecated)
-
 - [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) - Enable deprecated/removed Mutation Events (deprecated)
-
 - [PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled)- Enable full-tab promotional content (deprecated)
-
 #### Obsoleted policies
 
 - [BlockTruncatedCookies](/deployedge/microsoft-edge-policies#blocktruncatedcookies) - Block truncated cookies (obsolete)
-
 - [CertificateTransparencyEnforcementDisabledForLegacyCas](/deployedge/microsoft-edge-policies#certificatetransparencyenforcementdisabledforlegacycas) - Disable Certificate Transparency enforcement for a list of legacy certificate authorities (obsolete)
 
 #### Site compatibility impacting changes
