@@ -14,7 +14,7 @@ description: "Microsoft Edge release notes for Mobile Beta Channel"
 
 # Release notes for Microsoft Edge Mobile Beta Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Mobile Beta Channel.
+These release notes provide information about new features and non security updates that are included in the Microsoft Edge Mobile Beta Channel.
 
 To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](./microsoft-edge-channels.md).
 
@@ -44,7 +44,7 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 
 ### New Policies
 
-- [iOS] Support manage web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs are not blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs will be blocked if they are listed as blocked.)
+- [iOS] Support manage web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs aren't blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.)
 
 ### Bug Fixes
 
