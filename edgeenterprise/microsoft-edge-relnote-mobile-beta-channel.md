@@ -14,7 +14,7 @@ description: "Microsoft Edge release notes for Mobile Beta Channel"
 
 # Release notes for Microsoft Edge Mobile Beta Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Mobile Beta Channel.
+These release notes provide information about new features and non security updates that are included in the Microsoft Edge Mobile Beta Channel.
 
 To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](./microsoft-edge-channels.md).
 
@@ -28,9 +28,38 @@ Archived versions of these release notes are available at [Archived release note
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 132.0.2957.99 (Android and iOS): January 9, 2025
+## Version 132.0.2957.108 (Android and iOS): January 14, 2025
 
 Fixed various bugs and performance issues.
+
+## Version 132.0.2957.99 (Android and iOS): January 9, 2025
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General Updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.8
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.1
+- [Android] Support workspaces feature on Android (Need to enable feature under edge://flags)
+
+### New Policies
+
+- [iOS] Support manage web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs aren't blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.)
+
+### Bug Fixes
+
+- [iOS] Fix the issue with open PDF file with special characters in the file name
+- [iOS] Fix bookmark MDM Policy not taking effect
+- [iOS] Fix download bypasses Intune share policy under InPrivate mode
+- [iOS] Fix InPrivate policy was not fully effective in the context menu
+- [Android] Fix brand logo may not show at sometimes
+
+### New Enhancements
+
+- [iOS] Improve the sign-in experience for single device mode
+- [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
+- [iOS] Enhancements the experience of bookmark icon under App Proxy
+- [Android] Support remove certain account from sign in account list
 
 ## Version 132.0.2957.95 (Android and iOS): January 7, 2025
 
