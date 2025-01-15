@@ -71,7 +71,6 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-policies#edgeautofillmlenabled) - Machine learning powered autofill suggestions
 - [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies#genailocalfoundationalmodelsettings) - Settings for GenAI local foundational model
 - [IPv6ReachabilityOverrideEnabled](/deployedge/microsoft-edge-policies#ipv6reachabilityoverrideenabled) - Enable IPv6 reachability check override
-- [LiveTranslationAllowed](/deployedge/microsoft-edge-policies#livetranslationallowed) - Live translation allowed
 - [PersonalizeTopSitesInCustomizeSidebarEnabled](/deployedge/microsoft-edge-policies#personalizetopsitesincustomizesidebarenabled) - Personalize my top sites in Customize Sidebar enabled by default
 - [SelectParserRelaxationEnabled](/deployedge/microsoft-edge-policies#selectparserrelaxationenabled) - Controls whether the new HTML parser behavior for the `<select>` element is enabled
 - [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash)- View XFA-based PDF files using IE Mode for allowed file hash.
