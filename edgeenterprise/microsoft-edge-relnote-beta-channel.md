@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 01/15/2025
+ms.date: 01/17/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -18,6 +18,64 @@ These release notes provide information about new features and non-security upda
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+# Version 133.0.3065.10: January 17, 2024
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 133.0.2992.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-2992-0-is-live-/4354854)
+- [Dev Channel update to 133.0.3000.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3000-0-is-live-/4357092)
+- [Dev Channel update to 133.0.3014.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3014-0-is-live-/4359765)
+- [Dev Channel update to 133.0.3054.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3054-1-is-live-/4364687)
+- [Dev Channel update to 133.0.3065.7 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3065-7-is-live-/4367429)
+
+### Fixes
+
+- Fixed an issue which prevented users from selecting "Report this file as safe" when downloading a file.  
+
+### Feature updates
+
+- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) will be able to open MIP protected PDF content in Microsoft Edge. This change will be available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
+
+- **Non-special scheme URL handling.** Non-special scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which may require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
+
+- **Deprecate ‘textprediction’ attribute.** Removes support for the ‘textprediction’ HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs. Instead, use the standardized ‘writingsuggestions’ attribute, which functions similarly to ‘textprediction’, but also applies to other writing-assistance features that browsers may provide. Sites that explicitly set ‘textprediction’ to ‘true’ or ‘false’ can instead set ‘writingsuggestions’ to the same value. For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification.
+
+- **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. **Note:** This experience is in preview and users can opt in via Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.  
+
+- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy will be obsolete in Microsoft Edge version 133.
+
+- **Updated Downloads UI to Improve Performance.** The Downloads UI has been completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
+
+### Policy updates
+
+#### New policies
+- [CACertificateManagementAllowed](/deployedge/microsoft-edge-policies#cacertificatemanagementallowed) - Allow users to manage installed CA certificates
+- [CACertificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
+- [CACertificatesWithConstraints](/deployedge/microsoft-edge-policies#cacertificateswithconstraints) - TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints
+- [CADistrustedCertificates](/deployedge/microsoft-edge-policies#cadistrustedcertificates) - TLS certificates that should be distrusted by Microsoft Edge for server authentication
+- [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that are not trusted or distrusted but can be used in path-building for server authentication
+- [CAPlatformIntegrationEnabled](/deployedge/microsoft-edge-policies#caplatformintegrationenabled) - Use user-added TLS certificates from platform trust stores for server authentication
+- [DataURLWhitespacePreservationEnabled](/deployedge/microsoft-edge-policies#dataurlwhitespacepreservationenabled) - DataURL Whitespace Preservation for all media types
+- [EdgeSidebarAppUrlHostForceList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostforcelist) - Control which apps are forced to be shown in Microsoft Edge sidebar
+- [PdfViewerOutOfProcessIframeEnabled](/deployedge/microsoft-edge-policies#pdfvieweroutofprocessiframeenabled) - Use out-of-process iframe PDF Viewer
+- [SeamlessWebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#seamlesswebtobrowsersigninenabled) - Seamless Web To Browser Sign-in Enabled
+- [WebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#webtobrowsersigninenabled) - Web To Browser Sign-in Enabled
+
+#### Obsoleted policies
+
+- [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (obsolete)
+- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
+- [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
+
+### Site compatibility impacting changes
+
+> [!NOTE]
+> Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 ## Version 132.0.2957.111: January 15, 2025
 
