@@ -14,12 +14,12 @@ description: "Microsoft Edge release notes for Beta Channel"
 
 # Release notes for Microsoft Edge Beta Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).
+These release notes provide information about new features and nonsecurity updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-# Version 133.0.3065.10: January 17, 2024
+## Version 133.0.3065.10: January 17, 2024
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
@@ -39,15 +39,15 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) will be able to open MIP protected PDF content in Microsoft Edge. This change will be available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
+- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) will be able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
 
-- **Non-special scheme URL handling.** Non-special scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which may require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
+- **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
 
 - **Deprecate ‘textprediction’ attribute.** Removes support for the ‘textprediction’ HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs. Instead, use the standardized ‘writingsuggestions’ attribute, which functions similarly to ‘textprediction’, but also applies to other writing-assistance features that browsers may provide. Sites that explicitly set ‘textprediction’ to ‘true’ or ‘false’ can instead set ‘writingsuggestions’ to the same value. For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification.
 
-- **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. **Note:** This experience is in preview and users can opt in via Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.  
+- **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. **Note:** This experience is in preview and users can opt in via Microsoft Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.  
 
-- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy will be obsolete in Microsoft Edge version 133.
+- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
 
 - **Updated Downloads UI to Improve Performance.** The Downloads UI has been completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
 
@@ -76,6 +76,111 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 > [!NOTE]
 > Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+- **CSS advanced attr() function.** Implements the augmentation to `attr()` specified in CSS Level 5, which allows types besides `<string>` and use in all CSS properties (in addition to the existing support for the pseudo-element `content`).
+
+- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when they are in their open state, and matches `<select>` and `<input>` when they are in modes which have a picker and the picker is showing.
+
+- **CSS scroll state container queries.** Use container queries to style descendants of containers based on their scroll state.
+
+    The query container is either a scroll container, or an element affected by the scroll position of a scroll container. The following states can be queried:
+    - `stuck`: A sticky positioned container is stuck to one of the edges of the scroll box.
+    - `snapped`: A scroll snap aligned container is currently snapped horizontally or vertically.
+    - `scrollable`: Whether a scroll container can be scrolled in a queried direction.
+
+    A new `container-type: scroll-state` lets containers be queried.
+
+    ```css
+    #sticky {
+      position: sticky;
+      container-type: scroll-state;
+    }
+
+    @container scroll-state(stuck: top) {
+      #sticky-child {
+        font-size: 75%;
+      }
+    }
+    ```
+- **CSS `text-box`, `text-box-trim`, and `text-box-edge`.** To achieve optimal balance of text content, the `text-box-trim` and `text-box-edge` properties, along with the `text-box` shorthand property, make finer control of vertical alignment of text possible.
+
+    The `text-box-trim` property specifies the sides to trim, above or below, and the `text-box-edge` property specifies how the edge should be trimmed.
+
+    These properties let you control vertical spacing precisely by using the font metrics.
+
+- **The `hint` value of the `popover` attribute.**  The Popover API specifies the behavior for two values of the `popover` attribute: `auto` and `manual`. This feature describes a third value, `popover=hint`. Hints, which are most often associated with "tooltip" type behaviors, have slightly different behaviors. Primarily, the difference is that a `hint` is subordinate to auto when opening nested stacks of popovers. So it's possible to open an unrelated `hint` popover while an existing stack of `auto` popovers stays open.
+
+    The canonical example is that a `<select>` picker is open (`popover=auto`) and a hover-triggered tooltip (`popover=hint`) is shown. That action doesn't close the `<select>` picker.
+
+- **Popover invoker and anchor positioning improvements.** Adds an imperative way to set invoker relationships between popovers with `popover.showPopover({source})`. Enables invoker relationships to create implicit anchor element references.
+
+- **Popover nested inside invoker shouldn't re-invoke it.** In the following case clicking the button properly activates the popover, however, clicking on the popover itself after that shouldn't close the popover.
+
+  ```css
+  <button popovertarget=foo>Activate
+    <div popover id=foo>Clicking me shouldn't close me</div>
+  </button>
+  ```
+
+  Previously this happened, because the popover click bubbles to the `<button>` and activates the invoker, which toggles the popover closed. This has now been changed to the expected behavior.
+
+- **`Animation.overallProgress`.** Provides developers with a convenient and consistent representation of how far along an animation has advanced across its iterations and regardless of the nature of its timeline. Without the `overallProgress` property, you need to manually compute how far an animation has advanced, factoring in the number of iterations of the animation and whether the `currentTime` of the animation is a percentage of total time (as in the case of scroll-driven animations) or an absolute time quantity (as in the case of time-driven animations).
+
+- **The `pause()` method of the `Atomics` object.** Adds the `pause()` method to the `Atomics` namespace object, to hint the CPU that the current code is executing a spinlock.
+
+- **CSP hash reporting for scripts.**  Complex web applications often need to keep track of the subresources that they download, for security purposes.
+
+    In particular, upcoming industry standards and best practices (for example, PCI-DSS v4) require that web applications keep an inventory of all the scripts they download and execute.
+
+    This feature builds on CSP and the Reporting API to report the URLs and hashes (for CORS/same-origin) of all the script resources that the document loads.
+
+- **DOM state-preserving move.** Adds a DOM primitive (`Node.prototype.moveBefore`) that lets you move elements around a DOM tree, without resetting the element's state.
+
+    When moving instead of removing and inserting, following state such as the following is preserved:
+    - `<iframe>` elements remain loaded.
+    - The active element remains focus.
+    - Popovers, fullscreen, and modal dialogs remain open.
+    - CSS transitions and animations continue.
+
+- **Expose `attributionsrc` attribute on `<area>`.**  Aligns exposure of the `attributionsrc` attribute on `<area>` with the existing processing behavior of the attribute, even when it wasn't exposed.
+
+    Additionally, it makes sense to support the attribute on `<area>`, as that element is a first-class navigation surface, and Microsoft Edge already supports this on the other surfaces of `<a>` and `window.open`
+
+- **Expose coarsened cross-origin `renderTime` in element timing and LCP (regardless of `Timing-Allow-Origin`).** Element timing and LCP entries have a `renderTime` attribute, aligned with the first frame in which an image or text was painted.
+
+    This attribute is currently guarded for cross-origin images by requiring a `Timing-Allow-Origin` header on the image resource. However, that restriction is easy to work around (for example, by displaying a same-origin and cross-origin image in the same frame).
+
+    Since this has been a source of confusion, we instead plan to remove this restriction, and instead coarsen all render times by 4 ms when the document isn't cross-origin-isolated. This is seemingly coarse enough to avoid leaking any useful decoding-time information about cross-origin images.
+
+- **The `FileSystemObserver` interface.** The `FileSystemObserver` interface notifies websites of changes to the file system. Sites observe changes to files and directories, to which the user has previously granted permission, in the user's local device, or in the Bucket File System (also known as the Origin Private File System), and are notified of basic change info, such as the change type.
+
+- **Multiple import maps.** Import maps currently have to load before any ES module and there can only be a single import map per document. That makes them fragile and potentially slow to use in real-life scenarios: Any module that loads before them breaks the entire app, and in apps with many modules they become a large blocking resource, as the entire map for all possible modules needs to load first.
+
+    This feature enables multiple import maps per document, by merging them in a consistent and deterministic way.
+
+- **Storage Access Headers.**  Offers an alternate way for authenticated embeds to opt in for unpartitioned cookies. These headers indicate whether unpartitioned cookies are (or can be) included in a given network request, and allow servers to activate `storage-access` permissions they have already been granted. Giving an alternative way to activate the `storage-access` permission allows usage by noniframe resources, and can reduce latency for authenticated embeds.
+
+- **Support creating `ClipboardItem` with `Promise<DOMString>.`**  The `ClipboardItem`, which is the input to the async clipboard `write()` method, now accepts string values in addition to Blobs in its constructor. `ClipboardItemData` can be a Blob, a string, or a Promise that resolves to either a Blob or a string.
+
+- **WebAssembly Memory64.** The [memory64 proposal](https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md) adds support for linear WebAssembly memories with size larger than 2^32 bits. It provides no new instructions, but instead extends the existing instructions to allow 64-bit indexes for memories and tables.
+
+- **Web Authentication API: PublicKeyCredential `getClientCapabilities()` method.** The PublicKeyCredential `getClientCapabilities()` method lets you determine which WebAuthn features are supported by the user's client. The method returns a list of supported capabilities, allowing developers to tailor authentication experiences and workflows based on the client's specific functionality.
+
+- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8 and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
+
+- **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey and deriveBits.
+
+- **Deprecate the WebGPU `maxInterStageShaderComponents` limit.**  The `maxInterStageShaderComponents limit` is deprecated due to a combination of factors. The intended removal date in Microsoft Edge 135.
+    - Redundancy with `maxInterStageShaderVariables`: This limit already serves a similar purpose, controlling the amount of data passed between shader stages.
+    - Minor discrepancies: While there are slight differences in how the two limits are calculated, these differences are minor and can be effectively managed within the `maxInterStageShaderVariables` limit.
+    - Simplification: Removing `maxInterStageShaderComponents` streamlines the shader interface and reduces complexity for developers. Instead of managing two separate limits with subtle differences, they can focus on the more appropriately named and comprehensive `maxInterStageShaderVariables`.
+
+- **Remove `<link rel=prefetch>` five-minute rule.**  Previously, when a resource was prefetched using `<link rel=prefetch>`, Microsoft Edge ignored its cache semantics (namely `max-age` and `no-cache`) for the first use within five minutes, to avoid refetching. Now, Microsoft Edge removes this special case and uses normal HTTP cache semantics.
+
+    This means web developers need to include appropriate caching headers (Cache-Control or Expires) to see benefits from 1<link rel=prefetch>`.
+
+    This also affects the nonstandard `<link rel=prerender>`.
+
 
 ## Version 132.0.2957.111: January 15, 2025
 
