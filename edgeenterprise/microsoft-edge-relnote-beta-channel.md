@@ -39,7 +39,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) will be able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
+- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) are able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
 
 - **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
 
@@ -136,7 +136,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **DOM state-preserving move.** Adds a DOM primitive (`Node.prototype.moveBefore`) that lets you move elements around a DOM tree, without resetting the element's state.
 
-    When moving instead of removing and inserting, following state such as the following is preserved:
+    When moving instead of removing and inserting, state such as the following is preserved:
     - `<iframe>` elements remain loaded.
     - The active element remains focus.
     - Popovers, fullscreen, and modal dialogs remain open.
@@ -214,7 +214,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
 
-- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which will direct them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings will be available, but users won't be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users will not be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -232,17 +232,17 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Intune policies in the Microsoft Edge management service.** Admins now can set Intune policies via the Microsoft Edge management service, alongside the existing cloud policies. This ability lets admins deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that streamlines the creation process into a comprehensive, step-by-step flow. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
-- **Version monitoring in the Edge management service.** The Edge management service offers a single view of all managed Edge instances with their update status and possible actions to take. For out-of-date devices, you can easily schedule updates or notify users to update their browsers to avoid workflow interruptions. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
+- **Version monitoring in the Edge management service.** The Edge management service offers a single view of all managed Microsoft Edge instances with their update status and possible actions to take. For out-of-date devices, you can easily schedule updates or notify users to update their browsers to avoid workflow interruptions. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
-- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Microsoft Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Microsoft Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
-- **Feature Usage Data Sync.** Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category allows users to synchronize data regarding their utilization of Edge features across all their devices. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Feature Usage Data Sync.** Microsoft Edge Sync, which enables users to synchronize their Microsoft Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category allows users to synchronize data regarding their utilization of Microsoft Edge features across all their devices. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **New password manager policy.** The [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) policy controls whether the built-in password manager can delete undecryptable passwords from its database. This policy is required to restore the full functionality of the built-in password manager, but it might cause permanent data loss. Undecryptable password values won't become decryptable on their own. If fixing them is possible, it usually requires complex user actions.
 
 - **PromotionalTabsEnabled policy deprecation.** The [PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](/deployedge/microsoft-edge-policies#showrecommendationsenabled) policy instead.
 
-- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
+- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change is available in the new PDF viewer on Microsoft Edge.
 
 ### Policy updates
 
@@ -307,9 +307,9 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Ignore Strict-Transport-Security for localhost.** `Strict-Transport-Security` (STS) response headers can cause problems for localhost web servers because STS applies host-wide, across all ports. This causes compatibility problems for web developers testing locally. It also affects end-users who use software packages that commonly start localhost web servers for ephemeral reasons. For example, communication of an auth token from a web sign-in to a local software package. If one local listener sets `Strict-Transport-Security` on a localhost response, it's applied to all subsequent localhost requests regardless of port.
 
-  Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
+  Microsoft Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
   
-- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to rollout with Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
+- **Keyboard focusable scroll containers.** The rollout of this feature (from Microsoft Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to roll out with Microsoft Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
 
 - **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
 
@@ -317,7 +317,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
-- **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Edge 132, these situations now throw `InvalidStateError`.
+- **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Microsoft Edge 132, these situations now throw `InvalidStateError`.
 
 - **WebAuthn Signal API.** Allows WebAuthn relying parties to signal information about existing credentials back to credential storage providers, so that incorrect or revoked credentials can be updated or removed from provider and system UI.
 
@@ -333,15 +333,15 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **New origin trials: Document-Isolation-Policy.** The **Document-Isolation-Policy** lets a document enable `crossOriginIsolation` for itself, without having to deploy COOP or COEP, and regardless of the `crossOriginIsolation` status of the page. The policy is backed by process isolation. Additionally, the document non-CORS cross-origin subresources will either be loaded without credentials or will need to have a CORP header.
 
-- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information will be encoded as magic comments.
+- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information is encoded as magic comments.
 
 - **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage` will no longer extend `EventTarget`.
 
-- **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Edge.
+- **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Microsoft Edge.
 
   They were replaced by the `Element.requestFullscreen()` API. As of 2024, most browsers have had support for the unprefixed APIs for a few years now.
 
-  Edge 132 removes the following from `HTMLVideoElement`:
+  Microsoft Edge 132 removes the following from `HTMLVideoElement`:
 
   - The `webkitSupportsFullscreen` attribute.
   - The `webkitDisplayingFullscreen` attribute.
@@ -377,10 +377,10 @@ Fixed various bugs and performance issues, and feature updates.
 
   The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
 
-  - Edge switches from supporting Kyber to ML-KEM.
-  - Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
+  - Microsoft Edge switches from supporting Kyber to ML-KEM.
+  - Microsoft Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
   - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM.
-  - Edge will no longer support hybrid Kyber (codepoint 0x6399).
+  - Microsoft Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
 ## Version 131.0.2903.27: November 4, 2024
 
@@ -506,7 +506,7 @@ Fixed various bugs and performance issues, feature updates, and policy updates.
 
 ### Feature updates
 
-- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Edge 133.
+- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Microsoft Edge 133.
 
 ### Policy updates
 
