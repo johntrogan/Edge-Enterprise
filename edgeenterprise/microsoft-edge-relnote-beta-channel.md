@@ -35,7 +35,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Fixes
 
-- Fixed an issue which prevented users from selecting "Report this file as safe" when downloading a file.  
+- Fixed an issue which prevented users from selecting 'Report this file as safe' when downloading a file.  
 
 ### Feature updates
 
@@ -49,7 +49,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
 
-- **Updated Downloads UI to Improve Performance.** The Downloads UI has been completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
+- **Updated Downloads UI to Improve Performance.** The Downloads UI is completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
 
 ### Policy updates
 
@@ -168,7 +168,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8 and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
 
-- **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey and deriveBits.
+- **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey, and deriveBits.
 
 - **Deprecate the WebGPU `maxInterStageShaderComponents` limit.**  The `maxInterStageShaderComponents limit` is deprecated due to a combination of factors. The intended removal date in Microsoft Edge 135.
     - Redundancy with `maxInterStageShaderVariables`: This limit already serves a similar purpose, controlling the amount of data passed between shader stages.
@@ -177,7 +177,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove `<link rel=prefetch>` five-minute rule.**  Previously, when a resource was prefetched using `<link rel=prefetch>`, Microsoft Edge ignored its cache semantics (namely `max-age` and `no-cache`) for the first use within five minutes, to avoid refetching. Now, Microsoft Edge removes this special case and uses normal HTTP cache semantics.
 
-    This means web developers need to include appropriate caching headers (Cache-Control or Expires) to see benefits from 1<link rel=prefetch>`.
+    This means web developers need to include appropriate caching headers (Cache-Control or Expires) to see benefits from `<link rel=prefetch>`.
 
     This also affects the nonstandard `<link rel=prerender>`.
 
@@ -214,7 +214,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
 
-- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which will direct them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Edge Settings will be available, but users won't be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which will direct them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings will be available, but users won't be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -286,7 +286,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
 
-- **Element Capture.** Given a video `MediaStreamTrack` obtained through pre-existing means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
+- **Element Capture.** Given a video `MediaStreamTrack` obtained through preexisting means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
 
   The API bears some resemblance to the Region Capture API, but affords greater flexibility for applications, because occluding and occluded content are both excluded from the capture.
 
