@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 01/15/2025
+ms.date: 01/17/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -14,10 +14,173 @@ description: "Microsoft Edge release notes for Beta Channel"
 
 # Release notes for Microsoft Edge Beta Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).
+These release notes provide information about new features and nonsecurity updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 133.0.3065.10: January 17, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 133.0.2992.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-2992-0-is-live-/4354854)
+- [Dev Channel update to 133.0.3000.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3000-0-is-live-/4357092)
+- [Dev Channel update to 133.0.3014.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3014-0-is-live-/4359765)
+- [Dev Channel update to 133.0.3054.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3054-1-is-live-/4364687)
+- [Dev Channel update to 133.0.3065.7 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3065-7-is-live-/4367429)
+
+### Fixes
+
+- Fixed an issue which prevented users from selecting 'Report this file as safe' when downloading a file.  
+
+### Feature updates
+
+- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) are able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
+
+- **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
+
+- **Deprecate `textprediction` attribute.** Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs. Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide. Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value. For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification.
+
+- **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. **Note:** This experience is in preview and users can opt in via Microsoft Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.  
+
+- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
+
+- **Updated Downloads UI to Improve Performance.** The Downloads UI is completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
+
+### Policy updates
+
+#### New policies
+- [CACertificateManagementAllowed](/deployedge/microsoft-edge-policies#cacertificatemanagementallowed) - Allow users to manage installed CA certificates
+- [CACertificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
+- [CACertificatesWithConstraints](/deployedge/microsoft-edge-policies#cacertificateswithconstraints) - TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints
+- [CADistrustedCertificates](/deployedge/microsoft-edge-policies#cadistrustedcertificates) - TLS certificates that should be distrusted by Microsoft Edge for server authentication
+- [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that are not trusted or distrusted but can be used in path-building for server authentication
+- [CAPlatformIntegrationEnabled](/deployedge/microsoft-edge-policies#caplatformintegrationenabled) - Use user-added TLS certificates from platform trust stores for server authentication
+- [DataURLWhitespacePreservationEnabled](/deployedge/microsoft-edge-policies#dataurlwhitespacepreservationenabled) - DataURL Whitespace Preservation for all media types
+- [EdgeSidebarAppUrlHostForceList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostforcelist) - Control which apps are forced to be shown in Microsoft Edge sidebar
+- [PdfViewerOutOfProcessIframeEnabled](/deployedge/microsoft-edge-policies#pdfvieweroutofprocessiframeenabled) - Use out-of-process iframe PDF Viewer
+- [SeamlessWebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#seamlesswebtobrowsersigninenabled) - Seamless Web To Browser Sign-in Enabled
+- [WebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#webtobrowsersigninenabled) - Web To Browser Sign-in Enabled
+
+#### Obsoleted policies
+
+- [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (obsolete)
+- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
+- [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
+
+### Site compatibility impacting changes
+
+> [!NOTE]
+> Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+- **CSS advanced attr() function.** Implements the augmentation to `attr()` specified in CSS Level 5, which allows types besides `<string>` and use in all CSS properties (in addition to the existing support for the pseudo-element `content`).
+
+- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when they are in their open state, and matches `<select>` and `<input>` when they are in modes which have a picker and the picker is showing.
+
+- **CSS scroll state container queries.** Use container queries to style descendants of containers based on their scroll state.
+
+    The query container is either a scroll container, or an element affected by the scroll position of a scroll container. The following states can be queried:
+    - `stuck`: A sticky positioned container is stuck to one of the edges of the scroll box.
+    - `snapped`: A scroll snap aligned container is currently snapped horizontally or vertically.
+    - `scrollable`: Whether a scroll container can be scrolled in a queried direction.
+
+    A new `container-type: scroll-state` lets containers be queried.
+
+    ```css
+    #sticky {
+      position: sticky;
+      container-type: scroll-state;
+    }
+
+    @container scroll-state(stuck: top) {
+      #sticky-child {
+        font-size: 75%;
+      }
+    }
+    ```
+- **CSS `text-box`, `text-box-trim`, and `text-box-edge`.** To achieve optimal balance of text content, the `text-box-trim` and `text-box-edge` properties, along with the `text-box` shorthand property, make finer control of vertical alignment of text possible.
+
+    The `text-box-trim` property specifies the sides to trim, above or below, and the `text-box-edge` property specifies how the edge should be trimmed.
+
+    These properties let you control vertical spacing precisely by using the font metrics.
+
+- **The `hint` value of the `popover` attribute.**  The Popover API specifies the behavior for two values of the `popover` attribute: `auto` and `manual`. This feature describes a third value, `popover=hint`. Hints, which are most often associated with "tooltip" type behaviors, have slightly different behaviors. Primarily, the difference is that a `hint` is subordinate to auto when opening nested stacks of popovers. So it's possible to open an unrelated `hint` popover while an existing stack of `auto` popovers stays open.
+
+    The canonical example is that a `<select>` picker is open (`popover=auto`) and a hover-triggered tooltip (`popover=hint`) is shown. That action doesn't close the `<select>` picker.
+
+- **Popover invoker and anchor positioning improvements.** Adds an imperative way to set invoker relationships between popovers with `popover.showPopover({source})`. Enables invoker relationships to create implicit anchor element references.
+
+- **Popover nested inside invoker shouldn't re-invoke it.** In the following case clicking the button properly activates the popover, however, clicking on the popover itself after that shouldn't close the popover.
+
+  ```css
+  <button popovertarget=foo>Activate
+    <div popover id=foo>Clicking me shouldn't close me</div>
+  </button>
+  ```
+
+  Previously this happened, because the popover click bubbles to the `<button>` and activates the invoker, which toggles the popover closed. This has now been changed to the expected behavior.
+
+- **`Animation.overallProgress`.** Provides developers with a convenient and consistent representation of how far along an animation has advanced across its iterations and regardless of the nature of its timeline. Without the `overallProgress` property, you need to manually compute how far an animation has advanced, factoring in the number of iterations of the animation and whether the `currentTime` of the animation is a percentage of total time (as in the case of scroll-driven animations) or an absolute time quantity (as in the case of time-driven animations).
+
+- **The `pause()` method of the `Atomics` object.** Adds the `pause()` method to the `Atomics` namespace object, to hint the CPU that the current code is executing a spinlock.
+
+- **CSP hash reporting for scripts.**  Complex web applications often need to keep track of the subresources that they download, for security purposes.
+
+    In particular, upcoming industry standards and best practices (for example, PCI-DSS v4) require that web applications keep an inventory of all the scripts they download and execute.
+
+    This feature builds on CSP and the Reporting API to report the URLs and hashes (for CORS/same-origin) of all the script resources that the document loads.
+
+- **DOM state-preserving move.** Adds a DOM primitive (`Node.prototype.moveBefore`) that lets you move elements around a DOM tree, without resetting the element's state.
+
+    When moving instead of removing and inserting, state such as the following is preserved:
+    - `<iframe>` elements remain loaded.
+    - The active element remains focus.
+    - Popovers, fullscreen, and modal dialogs remain open.
+    - CSS transitions and animations continue.
+
+- **Expose `attributionsrc` attribute on `<area>`.**  Aligns exposure of the `attributionsrc` attribute on `<area>` with the existing processing behavior of the attribute, even when it wasn't exposed.
+
+    Additionally, it makes sense to support the attribute on `<area>`, as that element is a first-class navigation surface, and Microsoft Edge already supports this on the other surfaces of `<a>` and `window.open`
+
+- **Expose coarsened cross-origin `renderTime` in element timing and LCP (regardless of `Timing-Allow-Origin`).** Element timing and LCP entries have a `renderTime` attribute, aligned with the first frame in which an image or text was painted.
+
+    This attribute is currently guarded for cross-origin images by requiring a `Timing-Allow-Origin` header on the image resource. However, that restriction is easy to work around (for example, by displaying a same-origin and cross-origin image in the same frame).
+
+    Since this has been a source of confusion, we instead plan to remove this restriction, and instead coarsen all render times by 4 ms when the document isn't cross-origin-isolated. This is seemingly coarse enough to avoid leaking any useful decoding-time information about cross-origin images.
+
+- **The `FileSystemObserver` interface.** The `FileSystemObserver` interface notifies websites of changes to the file system. Sites observe changes to files and directories, to which the user has previously granted permission, in the user's local device, or in the Bucket File System (also known as the Origin Private File System), and are notified of basic change info, such as the change type.
+
+- **Multiple import maps.** Import maps currently have to load before any ES module and there can only be a single import map per document. That makes them fragile and potentially slow to use in real-life scenarios: Any module that loads before them breaks the entire app, and in apps with many modules they become a large blocking resource, as the entire map for all possible modules needs to load first.
+
+    This feature enables multiple import maps per document, by merging them in a consistent and deterministic way.
+
+- **Storage Access Headers.**  Offers an alternate way for authenticated embeds to opt in for unpartitioned cookies. These headers indicate whether unpartitioned cookies are (or can be) included in a given network request, and allow servers to activate `storage-access` permissions they have already been granted. Giving an alternative way to activate the `storage-access` permission allows usage by noniframe resources, and can reduce latency for authenticated embeds.
+
+- **Support creating `ClipboardItem` with `Promise<DOMString>.`**  The `ClipboardItem`, which is the input to the async clipboard `write()` method, now accepts string values in addition to Blobs in its constructor. `ClipboardItemData` can be a Blob, a string, or a Promise that resolves to either a Blob or a string.
+
+- **WebAssembly Memory64.** The [memory64 proposal](https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md) adds support for linear WebAssembly memories with size larger than 2^32 bits. It provides no new instructions, but instead extends the existing instructions to allow 64-bit indexes for memories and tables.
+
+- **Web Authentication API: PublicKeyCredential `getClientCapabilities()` method.** The PublicKeyCredential `getClientCapabilities()` method lets you determine which WebAuthn features are supported by the user's client. The method returns a list of supported capabilities, allowing developers to tailor authentication experiences and workflows based on the client's specific functionality.
+
+- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8 and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
+
+- **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey, and deriveBits.
+
+- **Deprecate the WebGPU `maxInterStageShaderComponents` limit.**  The `maxInterStageShaderComponents limit` is deprecated due to a combination of factors. The intended removal date in Microsoft Edge 135.
+    - Redundancy with `maxInterStageShaderVariables`: This limit already serves a similar purpose, controlling the amount of data passed between shader stages.
+    - Minor discrepancies: While there are slight differences in how the two limits are calculated, these differences are minor and can be effectively managed within the `maxInterStageShaderVariables` limit.
+    - Simplification: Removing `maxInterStageShaderComponents` streamlines the shader interface and reduces complexity for developers. Instead of managing two separate limits with subtle differences, they can focus on the more appropriately named and comprehensive `maxInterStageShaderVariables`.
+
+- **Remove `<link rel=prefetch>` five-minute rule.**  Previously, when a resource was prefetched using `<link rel=prefetch>`, Microsoft Edge ignored its cache semantics (namely `max-age` and `no-cache`) for the first use within five minutes, to avoid refetching. Now, Microsoft Edge removes this special case and uses normal HTTP cache semantics.
+
+    This means web developers need to include appropriate caching headers (Cache-Control or Expires) to see benefits from `<link rel=prefetch>`.
+
+    This also affects the nonstandard `<link rel=prerender>`.
+
 
 ## Version 132.0.2957.111: January 15, 2025
 
@@ -51,7 +214,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
 
-- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which will direct them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Edge Settings will be available, but users won't be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users will not be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -69,17 +232,17 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Intune policies in the Microsoft Edge management service.** Admins now can set Intune policies via the Microsoft Edge management service, alongside the existing cloud policies. This ability lets admins deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that streamlines the creation process into a comprehensive, step-by-step flow. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
-- **Version monitoring in the Edge management service.** The Edge management service offers a single view of all managed Edge instances with their update status and possible actions to take. For out-of-date devices, you can easily schedule updates or notify users to update their browsers to avoid workflow interruptions. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
+- **Version monitoring in the Edge management service.** The Edge management service offers a single view of all managed Microsoft Edge instances with their update status and possible actions to take. For out-of-date devices, you can easily schedule updates or notify users to update their browsers to avoid workflow interruptions. **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
-- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Microsoft Edge Address Bar that appears on the product detail page. Users can track prices quickly and are notified when there's a price drop on that product and save more. Administrators can control the availability of Shopping in Microsoft Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
-- **Feature Usage Data Sync.** Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category allows users to synchronize data regarding their utilization of Edge features across all their devices. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Feature Usage Data Sync.** Microsoft Edge Sync, which enables users to synchronize their Microsoft Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category allows users to synchronize data regarding their utilization of Microsoft Edge features across all their devices. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **New password manager policy.** The [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) policy controls whether the built-in password manager can delete undecryptable passwords from its database. This policy is required to restore the full functionality of the built-in password manager, but it might cause permanent data loss. Undecryptable password values won't become decryptable on their own. If fixing them is possible, it usually requires complex user actions.
 
 - **PromotionalTabsEnabled policy deprecation.** The [PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](/deployedge/microsoft-edge-policies#showrecommendationsenabled) policy instead.
 
-- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
+- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change is available in the new PDF viewer on Microsoft Edge.
 
 ### Policy updates
 
@@ -123,7 +286,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
 
-- **Element Capture.** Given a video `MediaStreamTrack` obtained through pre-existing means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
+- **Element Capture.** Given a video `MediaStreamTrack` obtained through preexisting means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
 
   The API bears some resemblance to the Region Capture API, but affords greater flexibility for applications, because occluding and occluded content are both excluded from the capture.
 
@@ -144,9 +307,9 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Ignore Strict-Transport-Security for localhost.** `Strict-Transport-Security` (STS) response headers can cause problems for localhost web servers because STS applies host-wide, across all ports. This causes compatibility problems for web developers testing locally. It also affects end-users who use software packages that commonly start localhost web servers for ephemeral reasons. For example, communication of an auth token from a web sign-in to a local software package. If one local listener sets `Strict-Transport-Security` on a localhost response, it's applied to all subsequent localhost requests regardless of port.
 
-  Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
+  Microsoft Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
   
-- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to rollout with Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
+- **Keyboard focusable scroll containers.** The rollout of this feature (from Microsoft Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to roll out with Microsoft Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
 
 - **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
 
@@ -154,7 +317,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
-- **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Edge 132, these situations now throw `InvalidStateError`.
+- **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Microsoft Edge 132, these situations now throw `InvalidStateError`.
 
 - **WebAuthn Signal API.** Allows WebAuthn relying parties to signal information about existing credentials back to credential storage providers, so that incorrect or revoked credentials can be updated or removed from provider and system UI.
 
@@ -170,15 +333,15 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **New origin trials: Document-Isolation-Policy.** The **Document-Isolation-Policy** lets a document enable `crossOriginIsolation` for itself, without having to deploy COOP or COEP, and regardless of the `crossOriginIsolation` status of the page. The policy is backed by process isolation. Additionally, the document non-CORS cross-origin subresources will either be loaded without credentials or will need to have a CORP header.
 
-- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information will be encoded as magic comments.
+- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information is encoded as magic comments.
 
 - **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage` will no longer extend `EventTarget`.
 
-- **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Edge.
+- **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Microsoft Edge.
 
   They were replaced by the `Element.requestFullscreen()` API. As of 2024, most browsers have had support for the unprefixed APIs for a few years now.
 
-  Edge 132 removes the following from `HTMLVideoElement`:
+  Microsoft Edge 132 removes the following from `HTMLVideoElement`:
 
   - The `webkitSupportsFullscreen` attribute.
   - The `webkitDisplayingFullscreen` attribute.
@@ -214,10 +377,10 @@ Fixed various bugs and performance issues, and feature updates.
 
   The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
 
-  - Edge switches from supporting Kyber to ML-KEM.
-  - Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
+  - Microsoft Edge switches from supporting Kyber to ML-KEM.
+  - Microsoft Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
   - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM.
-  - Edge will no longer support hybrid Kyber (codepoint 0x6399).
+  - Microsoft Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
 ## Version 131.0.2903.27: November 4, 2024
 
@@ -343,7 +506,7 @@ Fixed various bugs and performance issues, feature updates, and policy updates.
 
 ### Feature updates
 
-- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Edge 133.
+- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Microsoft Edge 133.
 
 ### Policy updates
 
@@ -397,7 +560,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Edge on macOS now seamlessly opens links in Teams.** When you set the default browser to Microsoft Edge on macOS and enable the feature, web links from the Teams desktop app are sent via chats, channels, calendar, and other entry points. These links seamlessly open automatically in the profile signed into Teams app and skips the need to reauthenticate in the browser. This feature makes it faster and easier to access content. Administrators can control the availability of this feature using the "Choose Which Browser Opens Web Links" Microsoft 365 policy. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
-- **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as they are today but will be behind clickable sections. These changes are as follows.
+- **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as they're today but will be behind clickable sections. These changes are as follows.
 
   - Introduce quick access to the most used Settings actions on the first place users land when entering Edge Settings (the Profiles page). Clicking the button with the name of the setting navigates users directly to its location.
 
@@ -443,7 +606,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
   If more time is needed to implement this feature, the [KeyboardFocusableScrollersEnabled](/deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) policy is available starting with Edge 128.
 
-- **Support non-special scheme URLs.** Previously, the URL parser didn't support non-special URLs. The parser parses non-special URLs as if they had an "opaque path," which isn't aligned with the URL Standard. Now, the URL parser parses non-special URLs correctly, following the URL Standard.
+- **Support non-special scheme URLs.** Previously, the URL parser didn't support nonspecial URLs. The parser parses nonspecial URLs as if they had an "opaque path," which isn't aligned with the URL Standard. Now, the URL parser parses nonspecial URLs correctly, following the URL Standard.
 
   See [bit.ly/url-non-special](https://docs.google.com/document/d/1LjxHl32fE4tCKugrK_PIso7mfXQVEeoD1wSnX2y0ZU8/edit?resourcekey=0-d1gP4X2sG7GPl9mlTeptIA#heading=h.voahsyj6c2dh) for more details.
 
