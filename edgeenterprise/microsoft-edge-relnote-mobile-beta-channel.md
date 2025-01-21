@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 01/09/2025
+ms.date: 01/20/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
