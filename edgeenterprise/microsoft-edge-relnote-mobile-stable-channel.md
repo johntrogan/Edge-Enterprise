@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Stable Channel"
 ms.author: charlielin
 author: dan-wesley
 manager: alexyuan
-ms.date: 01/13/2025
+ms.date: 01/22/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -22,6 +22,10 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
+
+## Version 132.0.2957.118 (Android and iOS): January 22, 2025
+
+Fixed various bugs and performance issues.
 
 ## Version 131.0.2903.145 (Android and iOS): January 13, 2025
 
