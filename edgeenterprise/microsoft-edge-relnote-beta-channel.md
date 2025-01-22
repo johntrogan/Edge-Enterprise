@@ -53,13 +53,13 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
 
-- **Updated Downloads UI to Improve Performance.** The Downloads UI is completely rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
+- **Updated Downloads UI to Improve Performance.** The Downloads UI is rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
 
 ### Policy updates
 
 #### New policies
 - [CACertificateManagementAllowed](/deployedge/microsoft-edge-policies#cacertificatemanagementallowed) - Allow users to manage installed CA certificates
-- [CACertificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
+- [CA Certificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
 - [CACertificatesWithConstraints](/deployedge/microsoft-edge-policies#cacertificateswithconstraints) - TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints
 - [CADistrustedCertificates](/deployedge/microsoft-edge-policies#cadistrustedcertificates) - TLS certificates that should be distrusted by Microsoft Edge for server authentication
 - [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that are not trusted or distrusted but can be used in path-building for server authentication
@@ -87,7 +87,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **CSS scroll state container queries.** Use container queries to style descendants of containers based on their scroll state.
 
-    The query container is either a scroll container, or an element affected by the scroll position of a scroll container. The following states can be queried:
+    The query container is either a scroll container, or an element affected by the scrolled position of a scroll container. The following states can be queried:
     - `stuck`: A sticky positioned container is stuck to one of the edges of the scroll box.
     - `snapped`: A scroll snap aligned container is currently snapped horizontally or vertically.
     - `scrollable`: Whether a scroll container can be scrolled in a queried direction.
@@ -112,7 +112,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
     These properties let you control vertical spacing precisely by using the font metrics.
 
-- **The `hint` value of the `popover` attribute.**  The Popover API specifies the behavior for two values of the `popover` attribute: `auto` and `manual`. This feature describes a third value, `popover=hint`. Hints, which are most often associated with "tooltip" type behaviors, have slightly different behaviors. Primarily, the difference is that a `hint` is subordinate to auto when opening nested stacks of popovers. So it's possible to open an unrelated `hint` popover while an existing stack of `auto` popovers stays open.
+- **The `hint` value of the `popover` attribute.**  The Pop over API specifies the behavior for two values of the `popover` attribute: `auto` and `manual`. This feature describes a third value, `popover=hint`. Hints, which are most often associated with "tooltip" type behaviors, have slightly different behaviors. Primarily, the difference is that a `hint` is subordinate to auto when opening nested stacks of popovers. So it's possible to open an unrelated `hint` popover while an existing stack of `auto` popovers stays open.
 
     The canonical example is that a `<select>` picker is open (`popover=auto`) and a hover-triggered tooltip (`popover=hint`) is shown. That action doesn't close the `<select>` picker.
 
@@ -286,7 +286,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **CSS sideways writing modes.** Support of `sideways-rl` and `sideways-lr` keywords for the `writing-mode` CSS property. `sideways-rl` and `sideways-lr` are helpful to write non-CJK text vertically. They don't have behaviors favorable for CJK languages unlike `vertical-rl` and `vertical-lr`.
 
-- **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or closewatcher) it should dispatch a `ToggleEvent` with `newState=closed`.
+- **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or close watcher) it should dispatch a `ToggleEvent` with `newState=closed`.
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
 
@@ -304,7 +304,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **FedCM Mode API and Use Other Account API.** Two new extensions for FedCM:
 
-  - **Mode**: The `active` mode allows websites to call FedCM inside a button click (for example, selecting a **Sign-in to IdP** button), which requires FedCM to guarantee it always responds with a visible user interface. Calling the FedCM API in *active mode* takes users to sign in to the Identity Provider (IdP) when users are logged-out. Also, because the active mode is called within an explicit user gesture, the UI is also more prominent (for example, centered and modal) compared to the UI from the passive mode (which doesn't require a user gesture requirement and can be called on page load).
+  - **Mode**: The `active` mode allows websites to call FedCM inside a button select (for example, selecting a **Sign-in to IdP** button), which requires FedCM to guarantee it always responds with a visible user interface. Calling the FedCM API in *active mode* takes users to sign in to the Identity Provider (IdP) when users are logged-out. Also, because the active mode is called within an explicit user gesture, the UI is also more prominent (for example, centered and modal) compared to the UI from the passive mode (which doesn't require a user gesture requirement and can be called on page load).
   - **Use Other Account**: With this extension, an IdP can allow users to sign in to other accounts.
 
 - **Fetch: `Request.bytes()` and `Response.bytes()`.** Add a `bytes()` method to the `Request` and `Response` interfaces, which returns a promise that resolves with a Uint8Array. While `Request` and `Response` have an `arrayBuffer()` method, it’s not possible to read directly from a buffer. A view such as a `Uint8Array` must be created to read it. The `bytes()` method improves the ergonomics of getting the body of Request and Response.
@@ -315,9 +315,9 @@ The following Dev channel updates preceded this Beta channel release. These note
   
 - **Keyboard focusable scroll containers.** The rollout of this feature (from Microsoft Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to roll out with Microsoft Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
 
-- **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
+- **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Microsoft Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
 
-- **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
+- **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Microsoft Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
 
 - **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
