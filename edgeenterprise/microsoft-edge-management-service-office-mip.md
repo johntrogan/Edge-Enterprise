@@ -3,7 +3,7 @@ title: "Protect Office documents with Microsoft Purview Information Protection l
 ms.author: jikong
 author: dan-wesley
 manager: likuba
-ms.date: 12/12/2024
+ms.date: 01/15/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -34,7 +34,7 @@ To enable this setting in the Edge management service, navigate within a configu
 
 ### How to allow the use of other browsers while Microsoft Purview Information Protection setting is enabled
 
-The "block other browsers" state is turned on by default when the box labeled "Apply sensitivity labels to Microsoft 365 online" is checked. To allow the use of other browsers, uncheck "Block other browsers" and then select "Save changes." For users assigned to this configuration profile, other browsers remain available.
+The "block other browsers" state is turned on by default when the box labeled "Apply sensitivity labels to Microsoft 365 online" is checked. This serves to keep your data secure by preventing users from trying to avoid sensitivity labels through other browsers. If you would still like to allow the use of other browsers, uncheck "Block other browsers" and then select "Save changes." Doing this means that other browsers will remain available for users assigned to this configuration profile.
 
 ## See also
 
