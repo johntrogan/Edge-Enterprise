@@ -29,6 +29,8 @@ Fixed various bugs and performance issues.
 
 ## Version 132.0.2957.118 (Android and iOS): January 22, 2025
 
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
 ### General Updates
 
 - [iOS] Upgrade Intune MAM SDK to version 19.7.8
