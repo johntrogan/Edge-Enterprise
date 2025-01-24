@@ -21,7 +21,7 @@ For information about an additional set of policies used to control how and when
 
 You can download the [Microsoft Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319) for the recommended security configuration baseline settings for Microsoft Edge. For more information see the [Microsoft Security Baselines Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines).
 
-Starting in Microsoft Edge version 116, certain policies will not be applied to a profile that is signed in with a Microsoft account. For more information, please check an individual policy for details on whether it applies to a profile that is signed in with a Microsoft account.
+Starting in Microsoft Edge version 116, certain policies won't be applied to a profile that is signed in with a Microsoft account. For more information, please check an individual policy for details on whether it applies to a profile that is signed in with a Microsoft account.
 
 > [!NOTE]
 > This article applies to Microsoft Edge version 77 or later.
@@ -87,7 +87,7 @@ These tables list all of the browser-related group policies available in this re
 |-|-|
 |[ApplicationGuardContainerProxy](#applicationguardcontainerproxy)|Application Guard Container Proxy|
 |[ApplicationGuardFavoritesSyncEnabled](#applicationguardfavoritessyncenabled)|Application Guard Favorites Sync Enabled|
-|[ApplicationGuardPassiveModeEnabled](#applicationguardpassivemodeenabled)|Ignore Application Guard site list configuration and browse Edge normally|
+|[ApplicationGuardPassiveModeEnabled](#applicationguardpassivemodeenabled)|Ignore Application Guard site list configuration and browse Microsoft Edge normally|
 |[ApplicationGuardTrafficIdentificationEnabled](#applicationguardtrafficidentificationenabled)|Application Guard Traffic Identification|
 |[ApplicationGuardUploadBlockingEnabled](#applicationguarduploadblockingenabled)|Prevents files from being uploaded while in Application Guard|
 ### [*Cast*](#cast-policies)
@@ -105,7 +105,7 @@ These tables list all of the browser-related group policies available in this re
 |[CACertificates](#cacertificates)|TLS server certificates that should be trusted by Microsoft Edge|
 |[CACertificatesWithConstraints](#cacertificateswithconstraints)|TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints|
 |[CADistrustedCertificates](#cadistrustedcertificates)|TLS certificates that should be distrusted by Microsoft Edge for server authentication|
-|[CAHintCertificates](#cahintcertificates)|TLS certificates that are not trusted or distrusted but can be used in path-building for server authentication|
+|[CAHintCertificates](#cahintcertificates)|TLS certificates that aren't trusted or distrusted but can be used in path-building for server authentication|
 |[CAPlatformIntegrationEnabled](#caplatformintegrationenabled)|Use user-added TLS certificates from platform trust stores for server authentication|
 ### [*Content settings*](#content-settings-policies)
 
@@ -192,14 +192,14 @@ These tables list all of the browser-related group policies available in this re
 |Policy Name|Caption|
 |-|-|
 |[ShowDownloadsInsecureWarningsEnabled](#showdownloadsinsecurewarningsenabled)|Enable insecure download warnings|
-### [*Edge Website Typo Protection settings*](#edge-website-typo-protection-settings-policies)
+### [*Microsoft Edge Website Typo Protection settings*](#edge-website-typo-protection-settings-policies)
 
 |Policy Name|Caption|
 |-|-|
-|[PreventTyposquattingPromptOverride](#preventtyposquattingpromptoverride)|Prevent bypassing Edge Website Typo Protection prompts for sites|
-|[TyposquattingAllowListDomains](#typosquattingallowlistdomains)|Configure the list of domains for which Edge Website Typo Protection won't trigger warnings|
-|[TyposquattingCheckerEnabled](#typosquattingcheckerenabled)|Configure Edge Website Typo Protection|
-### [*Edge Workspaces settings*](#edge-workspaces-settings-policies)
+|[PreventTyposquattingPromptOverride](#preventtyposquattingpromptoverride)|Prevent bypassing Microsoft Edge Website Typo Protection prompts for sites|
+|[TyposquattingAllowListDomains](#typosquattingallowlistdomains)|Configure the list of domains for which Microsoft Edge Website Typo Protection won't trigger warnings|
+|[TyposquattingCheckerEnabled](#typosquattingcheckerenabled)|Configure Microsoft Edge Website Typo Protection|
+### [*Microsoft Edge Workspaces settings*](#edge-workspaces-settings-policies)
 
 |Policy Name|Caption|
 |-|-|
@@ -220,7 +220,7 @@ These tables list all of the browser-related group policies available in this re
 |[ExtensionDeveloperModeSettings](#extensiondevelopermodesettings)|Control the availability of developer mode on extensions page|
 |[ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls](#extensionextendedbackgroundlifetimeforportconnectionstourls)|Configure a list of origins that grant an extended background lifetime to connecting extensions.|
 |[ExtensionInstallAllowlist](#extensioninstallallowlist)|Allow specific extensions to be installed|
-|[ExtensionInstallBlocklist](#extensioninstallblocklist)|Control which extensions cannot be installed|
+|[ExtensionInstallBlocklist](#extensioninstallblocklist)|Control which extensions can't be installed|
 |[ExtensionInstallForcelist](#extensioninstallforcelist)|Control which extensions are installed silently|
 |[ExtensionInstallSources](#extensioninstallsources)|Configure extension and user script install sources|
 |[ExtensionInstallTypeBlocklist](#extensioninstalltypeblocklist)|Blocklist for extension install types|
@@ -247,7 +247,7 @@ These tables list all of the browser-related group policies available in this re
 |[AuthServerAllowlist](#authserverallowlist)|Configure list of allowed authentication servers|
 |[BasicAuthOverHttpEnabled](#basicauthoverhttpenabled)|Allow Basic authentication for HTTP|
 |[DisableAuthNegotiateCnameLookup](#disableauthnegotiatecnamelookup)|Disable CNAME lookup when negotiating Kerberos authentication|
-|[EnableAuthNegotiatePort](#enableauthnegotiateport)|Include non-standard port in Kerberos SPN|
+|[EnableAuthNegotiatePort](#enableauthnegotiateport)|Include nonstandard port in Kerberos SPN|
 |[NtlmV2Enabled](#ntlmv2enabled)|Control whether NTLMv2 authentication is enabled|
 |[WindowsHelloForHTTPAuthEnabled](#windowshelloforhttpauthenabled)|Windows Hello For HTTP Auth Enabled|
 ### [*Identity and sign-in*](#identity-and-sign-in-policies)
@@ -406,7 +406,7 @@ These tables list all of the browser-related group policies available in this re
 |[AutoDiscardSleepingTabsEnabled](#autodiscardsleepingtabsenabled)|Configure auto discard sleeping tabs|
 |[SleepingTabsBlockedForUrls](#sleepingtabsblockedforurls)|Block sleeping tabs on specific sites|
 |[SleepingTabsEnabled](#sleepingtabsenabled)|Configure sleeping tabs|
-|[SleepingTabsTimeout](#sleepingtabstimeout)|Set the background tab inactivity timeout for sleeping tabs|
+|[SleepingTabsTimeout](#sleepingtabstimeout)|Set the background tab inactivity time-out for sleeping tabs|
 ### [*SmartScreen settings*](#smartscreen-settings-policies)
 
 |Policy Name|Caption|
@@ -948,9 +948,9 @@ SOFTWARE\Policies\Microsoft\Edge\ApplicationGuardContainerProxy = {
 
 If [ManagedFavorites](#managedfavorites) are configured, those favorites will also be synced to the container.
 
-If you enable this policy, editing favorites in the container is disabled. So, the add favorites and add favorites folder buttons will be blurred out in the UI of the container browser.
+If you enable this policy, editing favorites in the container is disabled. So, the added favorites and add favorites folder buttons are blurred out in the UI of the container browser.
 
-If you disable or don't configure this policy, favorites on the host will not be shared to the container.
+If you disable or don't configure this policy, favorites on the host won't be shared to the container.
 
   #### Supported features:
 
