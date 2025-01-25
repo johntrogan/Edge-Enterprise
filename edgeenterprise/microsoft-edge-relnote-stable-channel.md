@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 01/17/2025
+ms.date: 01/24/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -28,11 +28,13 @@ These release notes provide information about new features and non-security upda
 
 
 ## Version 132.0.2957.127: January 24, 2025
-Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+Fixed various bugs and performance issues.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#january-24-2025).
 
 ## Version 132.0.2957.115: January 17, 2025
+
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#january-17-2025).
