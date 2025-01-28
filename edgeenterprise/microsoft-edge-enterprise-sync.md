@@ -33,7 +33,7 @@ Microsoft Edge sync enables users to access their browsing data across all their
 - History (available in Microsoft Edge version 88 or later)
 
 > [!NOTE]
-> Additional device connectivity and configuration data (such as device name, device make,  and device model) is uploaded to support sync functionality.
+> Additional device connectivity and configuration data (such as device name, device make,  and device model) are uploaded to support sync functionality.
 
 ### Sync functionality and user sync configuration
 
@@ -50,7 +50,7 @@ The following prerequisites apply to Microsoft Edge enterprise sync:
 - An active subscription to a cloud service in a supported environment.
 - An Enterprise Mobility + Security service plan, specifically A3, A5, E3, E5, G3, or G5.
 
-Note that Department of Defense (DoD) and Government Community Cloud (GCC) High subscriptions aren't supported at this time. For more information, refer to [Microsoft Edge enterprise sync FAQ](/deployedge/microsoft-edge-enterprise-sync-faq#does-microsoft-edge-support-government-community-cloud-gcc-high-and-azure-government-department-of-defense-dod-cloud-compliance).  
+Note that Department of Defense (DoD) and Government Community Cloud (GCC) High subscriptions aren't supported at this time. For more information, see [Microsoft Edge enterprise sync FAQ](/deployedge/microsoft-edge-enterprise-sync-faq#does-microsoft-edge-support-government-community-cloud-gcc-high-and-azure-government-department-of-defense-dod-cloud-compliance).  
 
 ## Supported environments
 
@@ -59,12 +59,12 @@ Microsoft Edge sync for Microsoft Entra accounts is available for any of the fol
 - Microsoft Entra ID (P1 or P2)
   
   > [!NOTE]
-  > Customers that only have Microsoft Entra ID P1 or P2 must enable Microsoft Entra Enterprise State Roaming (ESR). Microsoft Edge sync isn't part of ESR, but ESR is required to provide the Microsoft Purview functionality that's needed for the P1 and P2 configurations. To learn more, see the [Enable Enterprise State Roaming in Microsoft Entra ID](/azure/active-directory/devices/enterprise-state-roaming-enable) article.
+  > Customers that only have Microsoft Entra ID P1 or P2 must enable Microsoft Entra Enterprise State Roaming (ESR). Microsoft Edge sync isn't part of ESR, but ESR is required to provide the Microsoft Purview functionality that's needed for the P1 and P2 configurations. To learn more, see the [Enabled Enterprise State Roaming in Microsoft Entra ID](/azure/active-directory/devices/enterprise-state-roaming-enable) article.
 
 - Microsoft 365 Business Premium, Business Standard, or Business Basic
 
   > [!NOTE]
-  > Business Basic or Business Standard is supported, but tenants created before 2021 need to have Microsoft Purview Rights Management Service (RMS) - RMS_S_BASIC enabled.  Customers can check if RMS is enabled in their tenants by following [Get-AipServiceConfiguration (AIPService) | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/aipservice/get-aipserviceconfiguration?view=azureipps). Customers can enable RMS in their tenants by following [Enable-AipService (AIPService) | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/aipservice/enable-aipservice?view=azureipps).  Customers that are having a sync issue should review [Diagnose and fix Microsoft Edge sync issues](/deployedge/microsoft-edge-troubleshoot-enterprise-sync) and [Reset Microsoft Edge data](/deployedge/edge-learnmore-reset-data-in-cloud) in the cloud before filing a support request. Business Premium includes Microsoft Entra ID Plan 1 and Edge Enterprise Sync Services are available, see [Microsoft 365 Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf).
+  > Business Basic or Business Standard is supported, but tenants created before 2021 need to have Microsoft Purview Rights Management Service (RMS) - RMS_S_BASIC enabled.  Customers can check if RMS is enabled in their tenants by following [Get-AipServiceConfiguration (AIPService) | Microsoft Learn](/powershell/module/aipservice/get-aipserviceconfiguration?view=azureipps). Customers can enable RMS in their tenants by following [Enable-AipService (AIPService) | Microsoft Learn](/powershell/module/aipservice/enable-aipservice?view=azureipps).  Customers that are having a sync issue should review [Diagnose and fix Microsoft Edge sync issues](/deployedge/microsoft-edge-troubleshoot-enterprise-sync) and [Reset Microsoft Edge data](/deployedge/edge-learnmore-reset-data-in-cloud) in the cloud before filing a support request. Business Premium includes Microsoft Entra ID Plan 1 and Microsoft Edge Enterprise Sync Services are available, see [Microsoft 365 Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf).
  
 
 - Office 365 E1 and above
@@ -91,7 +91,7 @@ Admins can use the following group policies to configure and manage Microsoft Ed
 Configuration options for Microsoft Edge sync are available through the Rights Management Service (RMS). When the service is enabled for a tenant, all users can sync Microsoft Edge data, regardless of licensing.  The protection service might be activated automatically, by using PowerShell, or by using the Azure portal. For more information and instructions on how to enable AIP, see [Activating the protection service from Azure Information Protection (AIP)](/azure/information-protection/activate-service).
 
 > [!CAUTION]
-> Activating Azure Information Protection will also allow other applications, such as Microsoft Word or Microsoft Outlook, to protect content with AIP. Any onboarding control policy that's used to restrict Microsoft Edge sync will also restrict other applications from protecting content using AIP.
+> Activating Azure Information Protection allows other applications, such as Microsoft Word or Microsoft Outlook, to protect content with AIP. Any onboarding control policy that's used to restrict Microsoft Edge sync will also restrict other applications from protecting content using AIP.
 
 ### Control user onboarding for a phased deployment
 
@@ -99,7 +99,7 @@ You can use the [Set-AipServiceOnboardingControlPolicy](/powershell/module/aipse
 
 ## Microsoft Edge and Enterprise State Roaming (ESR)
 
-Microsoft Edge is a cross-platform application with an expanded scope for syncing user data across all their devices and is no longer a part of Microsoft Entra Enterprise State Roaming. However, Microsoft Edge will fulfill the data protection promises of ESR, such as the ability to bring your own key. For more information, see [Microsoft Edge and Enterprise State Roaming](microsoft-edge-enterprise-state-roaming.md).
+Microsoft Edge is a cross-platform application with an expanded scope for syncing user data across all their devices and is no longer a part of Microsoft Entra Enterprise State Roaming. However, Microsoft Edge fulfills the data protection promises of ESR, such as the ability to bring your own key. For more information, see [Microsoft Edge and Enterprise State Roaming](microsoft-edge-enterprise-state-roaming.md).
 
 ## See also
 

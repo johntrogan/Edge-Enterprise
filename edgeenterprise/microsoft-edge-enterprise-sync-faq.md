@@ -28,7 +28,7 @@ To reduce resource utilization on end-user devices, history data is generated se
 
 ### Can tenant admins bring their own key?
 
-Yes, through [Microsoft Purview Information Protection | Microsoft Security](/security/business/information-protection/microsoft-purview-information-protection).
+Yes, through [Microsoft Purview Information Protection | Microsoft Security](https://www.microsoft.com/en-us/security/business/information-protection/microsoft-purview-information-protection).
 
 ### Where is Microsoft Edge sync data stored?
 
