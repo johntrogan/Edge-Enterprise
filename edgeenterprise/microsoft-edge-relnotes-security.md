@@ -16,6 +16,7 @@ description: "Release notes for Microsoft Edge Security Updates"
 
 These release notes provide information about security fixes that are included in updates to Microsoft Edge Stable channel.
 
+
 ## January 24, 2025
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.127)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
@@ -23,13 +24,6 @@ Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0
 This update contains the following Microsoft Edge-specific update:
 
 - [CVE-2025-21262](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21262)
-
-## January 22, 2025
-
-Microsoft is aware of the recent Chromium fixes. We are actively working on releasing a fix.
-
-- [CVE-2025-0611](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0611)
-- [CVE-2025-0612](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0612)
 
 
 ## January 17, 2025

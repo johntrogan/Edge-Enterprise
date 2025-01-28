@@ -26,6 +26,9 @@ These release notes provide information about new features and non-security upda
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## January 28, 2025
+
+Microsoft is aware of recent Chromium security fixes. We are actively working on releasing a security fix.
 
 ## Version 132.0.2957.127: January 24, 2025
 
