@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Stable Channel"
 ms.author: charlielin
 author: dan-wesley
 manager: alexyuan
-ms.date: 01/22/2025
+ms.date: 01/29/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -201,54 +201,7 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 - [iOS & Android] General enhancements to NTLMSSO policies to make it more useful.
 - [iOS & Android] Enable Managed Browser revamp feature by default with silent mode as the managed browser. This change helps customers remediate from non-compliant cases, such as no device registration.
 
-## Version 129.0.2792.92 (Android and iOS): October 15, 2024
-
-Fixed various bugs and performance issues.
-
-## Version 129.0.2792.84 (Android and iOS): October 9, 2024
-
-Fixed various bugs and performance issues, enhancements.  
-
-### Enhancements
-
-- [Android and iOS] The page layout of the New Tab Page (NTP) defaults to Inspirational for Microsoft Entra ID accounts.
-
-## Version 129.0.2792.65 (Android): September 27, 2024
-
-Fixed various bugs and performance issues.
-
-## Version 129.0.2792.58 (Android and iOS): September 24, 2024
-
-Fixed various bugs and performance issues, general updates, bug fixes, enhancements, and new policies.
-
-### General updates
-
-- [iOS] Upgrade Intune MAM SDK to version 19.6.0
-- [Android] Upgrade Intune MAM SDK to version 10.4.0
-- [Android and iOS] Upgrade MS OneAuth SDK version 3.3.0 
-- [Android and iOS] Remove native AAD Copilot support
-
-### Bug fixes
-
-- [iOS] Fix managed bookmarks dismiss under AAD account (without "XXX's Favorites" folder under favorites)
-- [iOS] Fix downloaded files not properly moved in work profile
-- [iOS] Fix a bug related to MAM Tunnel can't be disconnected automatically when change to personal account
-- [iOS] Fix disableFeatures policy - InPrivate mode disablement bug & support policy auto change
-(The problem is when set `com.microsoft.intune.mam.managedbrowser.disabledFeatures='inprivate'`, the InPrivate mode can still be accessed, and the corresponding toolbar button remains functional. Expects the policy to support dynamic switching without needing to restart Microsoft Edge. When the policy disables InPrivate mode, the application should automatically exit InPrivate mode and close all open InPrivate tabs)
-
-### Enhancements
-
-- [iOS] Improve the transition user experience for account switcher in iPad
-- [iOS] Improve Web SSO for CMC (copilot.microsoft.com) sign in in MSA
-- [Android and iOS] Improve the occurrence of re-sign-in prompts by disallow user interaction for proactive-auth
-- [Android and iOS] Improve account verification by consider sync and news feed status
-- [Android and iOS] General enhancements to NTLMSSO policies to make it more useful
-
-### New Policies
-
-- [Android and iOS] Support to disable Share and SendtoDevices via **DisableFeature** policy
-(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now support to config to disable Share and Sendtodevices in overflow menu by value share|sendtodevices)
-
+<!-- Version 129.0.2792.58 (Android and iOS): September 24, 2024 to Version 129.0.2792.92 (Android and iOS): October 15, 2024 --->
 <!-- Version 128.0.2739.82 (iOS): September 18, 2024 to Version 128.0.2739.42 (iOS): August 27, 2024 --->
 <!-- Version 127.0.2651.111 (Android and iOS): August 20, 2024 to Version 127.0.2651.81 (iOS): July 31, 2024 --->
 <!-- Version 126.2592.120 (iOS): July 24, 2024 to Version 126.0.2592.56 (Android and iOS): June 17, 2024 -->
