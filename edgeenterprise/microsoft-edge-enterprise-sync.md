@@ -31,6 +31,7 @@ Microsoft Edge sync enables users to access their browsing data across all their
 - Extensions
 - Open tabs (available in Microsoft Edge version 88 or later)
 - History (available in Microsoft Edge version 88 or later)
+- Feature usage data (available in Microsoft Edge version 133 or later)
 
 > [!NOTE]
 > Additional device connectivity and configuration data (such as device name, device make,  and device model) are uploaded to support sync functionality.
