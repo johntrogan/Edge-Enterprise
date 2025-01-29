@@ -49,7 +49,7 @@ These tables list all of the browser-related group policies available in this re
 - [Content settings](#content-settings)
 - [Default search provider](#default-search-provider)
 - [Downloads](#downloads)
-- [Edge Website Typo Protection settings](#edge-website-typo-protection-settings)
+- [Edge Website Typo Protection settings](#edge-website-typo-protection-settings-policies)
 - [Edge Workspaces settings](#edge-workspaces-settings)
 - [Experimentation](#experimentation)
 - [Extensions](#extensions)
