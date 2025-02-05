@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 01/27/2025
+ms.date: 02/05/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -14,10 +14,20 @@ description: "Microsoft Edge release notes for Beta Channel"
 
 # Release notes for Microsoft Edge Beta Channel
 
-These release notes provide information about new features and nonsecurity updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).
+These release notes provide information about new features and nonsecurity updates that are included in the Microsoft Edge Beta Channel. Archived versions of these release notes are available at [Archived release notes for Microsoft Edge Beta Channel](./microsoft-edge-relnote-archive-beta-channel.md).  
+
+Get the latest Microsoft Edge for Business updates for your business, school, or organization at our [Download Page](https://www.microsoft.com/en-us/edge/business/download?form=MA13FQ)
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 133.0.3065.49: February 05, 2025
+
+Fixed various bugs and performance issues. 
+
+## Version 133.0.3065.39: January 31, 2025
+
+Fixed various bugs and performance issues. 
 
 ## Version 133.0.3065.31: January 27, 2025
 

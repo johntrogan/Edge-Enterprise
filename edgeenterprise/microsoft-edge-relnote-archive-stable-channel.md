@@ -16,6 +16,119 @@ description: "Archived release notes for Microsoft Edge Stable Channel"
 
 These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel. All the security updates are listed [here](microsoft-edge-relnotes-security.md).
 
+
+
+<!-- Version  129.0.2792.52: September 12, 2024 to Version 129.0.2792.89: October 10, 2024 --->
+
+## Version 129.0.2792.89: October 10, 2024
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#october-10-2024).
+
+## Version 128.0.2739.113: October 10, 2024
+
+Fixed various bugs and performance issues for Extended Stable channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#october-10-2024).
+
+## Version 129.0.2792.79: October 3, 2024
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#october-3-2024).
+
+## Version 128.0.2739.107: October 3, 2024
+
+Fixed various bugs and performance issues for Extended Stable channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#october-3-2024).
+
+## Version 128.0.2739.97: September 26, 2024
+
+Fixed various bugs and performance issues for Extended Stable channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-26-2024).
+
+## Version 129.0.2792.65: September 26, 2024
+
+Fixed various bugs and performance issues, and feature updates.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-26-2024).
+
+### Feature updates
+
+- **Microsoft Edge sidebar updates.** For inactive sidebar users and new Edge users, the sidebar is turned OFF. Users can always return to **Settings > Sidebar** and turn the sidebar ON again at any time. For active sidebar users, the current sidebar state stays the same.
+  
+  Administrators can control the availability of the sidebar using the [HubsSidebarEnabled](/deployedge/microsoft-edge-policies#hubssidebarenabled) policy.
+
+## Version 128.0.2739.90: September 19, 2024
+
+Fixed various bugs and performance issues Extended Stable channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-19-2024).
+
+## Version 129.0.2792.52: September 19, 2024
+
+Fixed various bugs and performance issues, feature updates, site impacting compatibility changes, and policy updates.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#september-19-2024).
+
+> [!NOTE]
+> Portions of this release note are modifications based on work created and shared by Chromium.org and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+### Dev Channel updates
+
+The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 129.0.2752.4 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-129-0-2752-4-is-live/m-p/4215208)
+- [Dev Channel update to 129.0.2766.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-129-0-2766-0-is-live/m-p/4218361)
+- [Dev Channel update to 129.0.2779.0 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-129-0-2779-0-is-live/m-p/4226574)
+- [Dev Channel update to 129.0.2792.10 is live. - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/articles/dev-channel-update-to-129-0-2792-10-is-live/m-p/4232423)
+
+### Fixes
+
+- **Policy updates to allow wildcards.** The documentation for the following policies were inaccurate and were corrected. These policies support wildcards (*) in URL patterns when being configured: [ImagesAllowedForUrls](/deployedge/microsoft-edge-policies#imagesallowedforurls), [ImagesBlockedForUrls](/deployedge/microsoft-edge-policies#imagesblockedforurls), [InsecureContentAllowedForUrls](/deployedge/microsoft-edge-policies#insecurecontentallowedforurls), [InsecureContentBlockedForUrls](/deployedge/microsoft-edge-policies#insecurecontentblockedforurls), [PopupsAllowedForUrls](/deployedge/microsoft-edge-policies#popupsallowedforurls), [PopupsBlockedForUrls](/deployedge/microsoft-edge-policies#popupsblockedforurls).
+
+### Feature updates
+
+- **Update to Microsoft Edge supported operating systems.** The minimum supported macOS version is increased to macOS 11. Users on older versions of macOS will no longer receive Microsoft Edge updates. For more information, see [Microsoft Edge Supported Operating Systems](/DeployEdge/microsoft-edge-supported-operating-systems).
+
+- **Deprecation of the CryptoWallet feature.** To improve end user experience, the CryptoWallet feature and the [CryptoWalletEnabled](/deployedge/microsoft-edge-policies#cryptowalletenabled) policy is deprecated. The [CryptoWalletEnabled](/deployedge/microsoft-edge-policies#cryptowalletenabled) policy will be obsolete in an upcoming release.
+
+### Site compatibility impacting changes
+
+- **Deprecation of non-standard declarative shadow DOM serialization.** The prototype implementation, which shipped in 2020 and then updated in 2023, contained a method called `getInnerHTML()` that could be used to serialize DOM trees containing shadow roots. That part of the prototype wasn't standardized with the rest of the declarative shadow DOM, and has only recently reached spec consensus (for details, see [GitHub](https://github.com/whatwg/html/issues/8867). As part of that consensus, the shape of the `getInnerHTML` API changed.
+
+- **Deprecate the includeShadowRoots argument on DOMParser.** The `includeShadowRoots` argument was a never-standardized argument to the `DOMParser.parseFromString()` function, which was there to allow imperative parsing of HTML content that contains declarative shadow DOM. This function was shipped as part of the initial shipment of declarative shadow DOM. Since the standards discussion rematerialized in 2023, the shape of DSD APIs changed, including this feature for imperative parsing.
+
+  Now that a standardized version of this API, in the form of `setHTMLUnsafe()` and `parseHTMLUnsafe()` shipped, the non-standard `includeShadowRoots` argument needs to be deprecated and removed. All usage should shift accordingly:
+
+  Instead of:
+
+  `(new DOMParser()).parseFromString(html,'text/html',{includeShadowRoots: true});`
+
+  This can be used instead:
+
+  `document.parseHTMLUnsafe(html);`
+
+- **Rename inset-area to position-area**. The CSS working group ([CSSWG](https://www.w3.org/groups/wg/css/)) resolved to rename this property from `inset-area` to `position-area`. For more information, see the CSSWG discussion in [GitHub](https://github.com/w3c/csswg-drafts/issues/10209#issuecomment-2221005001).
+
+  The old and new property names are supported for a few milestones, to help developers migrate to the new position-area name. We're shipping the new property name, `position-area`, as a synonym for `inset-area`.
+
+  The `inset-area` property is currently planned for removal in Microsoft Edge version 131.
+
+### Policy updates
+
+#### New policies
+
+- [PrintingLPACSandboxEnabled](/deployedge/microsoft-edge-policies#printinglpacsandboxenabled) - Enable Printing LPAC Sandbox
+
+#### Deprecated policies
+
+- [CryptoWalletEnabled](/deployedge/microsoft-edge-policies#cryptowalletenabled) - Enable CryptoWallet feature (deprecated)
+- [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (deprecated)
+
 <!-- Version  128.0.2739.79: September 12, 2024 to Version 128.0.2739.42: August 22, 2024 --->
 
 ## Version 128.0.2739.79: September 12, 2024
@@ -956,7 +1069,7 @@ In an upcoming update to Microsoft Edge, the Bing icon entry point in the Micros
 
 - **New Microsoft Edge Update policies.** The **MeteredUpdatesDefault** and **MeteredUpdates** policies allows administrators to control the "Download Updates over metered connections" setting (`edge://settings/help`). The **MeteredUpdatesDefault** applies to all apps and **MeteredUpdates** applies to targeted apps. When a policy is configured to Allow, updates occur on a metered connection, such as cellular connections or others where data usage is controlled.
 
-- **Support for WindowsTabManager API.** Microsoft Edge version 118 uses the new public Windows WindowTabManager API (for more information, see [WindowTabManager Class (Windows.UI.Shell) - Windows UWP applications](/uwp/api/windows.ui.shell.windowtabmanager?view=winrt-22621&viewFallbackFrom=winrt-22000)) to support features such as showing browser tabs in Alt+Tab, tab tearout, and taskbar pin glomming. These features will only work on newer Windows versions that support this API:
+- **Support for WindowsTabManager API.** Microsoft Edge version 118 uses the new public Windows WindowTabManager API for more information, see [WindowTabManager Class (Windows.UI.Shell) - Windows UWP applications](/uwp/api/windows.ui.shell.windowtabmanager) to support features such as showing browser tabs in Alt+Tab, tab tearout, and taskbar pin glomming. These features will only work on newer Windows versions that support this API:
 
   - Windows 11: [May 24, 2023—KB5026446 (OS Build 22621.1778) Preview - Microsoft Support](https://support.microsoft.com/en-us/topic/may-24-2023-kb5026446-os-build-22621-1778-preview-3c547100-7a73-4ae6-bb7d-ebd02e87dc04)
   - Windows 10: [May 23, 2023—KB5026435 (OS Build 19045.3031) Preview - Microsoft Support](https://support.microsoft.com/en-us/topic/may-23-2023-kb5026435-os-build-19045-3031-preview-2751b693-5544-4110-bc0c-feb8dd7336b3)
