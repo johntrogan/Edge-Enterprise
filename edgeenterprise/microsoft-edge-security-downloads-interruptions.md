@@ -54,6 +54,16 @@ Enterprises can use [ExemptFileTypeDownloadWarnings](/deployedge/microsoft-edge-
 `[{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
 {"file_extension":"msg", "domains": ["*"]}]`
 
+### Update for Edge Version 132
+
+With the release of Edge Version 132.0.2915.0, a change was introduced that affects the handling of `.crx` files (Chrome extension files). The `DownloadRestrictions` policy now blocks the download of `.crx` files if configured to block dangerous file types (options 1, 2, or 3). This change was introduced through Chromium and is documented in the Chromium code review.
+
+To address this issue, enterprises should update their policies to include the `ExemptFileTypeDownloadWarnings` policy to allow `.crx` files to be downloaded without interruption. For example:
+
+`[{"file_extension": "crx", "domains": ["*"]},
+{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
+{"file_extension":"msg", "domains": ["*"]}]`
+
 ## File types requiring a gesture
 
 Chromium's latest [file types policies](https://source.chromium.org/chromium/chromium/src/+/main:components/safe_browsing/core/resources/download_file_types.asciipb;drc=af17ad3f07c1d8a24381eb7669bec0c2ffb86521) are published in the Chromium source code, and Microsoft Edge inherits most of these, with a few changes for security or compatibility reasons. As of May 2021, file types with a `danger_level` of `ALLOW_ON_USER_GESTURE` on at least one OS platform include:
