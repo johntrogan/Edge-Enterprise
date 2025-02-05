@@ -41,7 +41,7 @@ If a download for a potentially dangerous type starts without the required gestu
 
 :::image type="content" source="media/microsoft-edge-security-Download-interruptions/Dowload-was-blocked.png" alt-text="Download is blocked, user can keep or delete the download.":::
 
-On the `edge://downloads` page, the user will see the same options. The next screenshot shows and example of these options.
+On the `edge://downloads` page, the user will see the same options. The next screenshot shows an example of these options.
 
 :::image type="content" source="media/microsoft-edge-security-Download-interruptions/msg-keep-delete-option.png" alt-text="Download is blocked but user can keep or delete the download.":::
 
