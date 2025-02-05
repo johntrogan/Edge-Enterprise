@@ -55,7 +55,7 @@ We'll provide control and visibility over who syncs settings in your organizatio
 
 ### Management
 
-Admins will be able to control which members in your organization can enable sync. See [Use Azure Information Protection to configure Microsoft Edge sync](microsoft-edge-enterprise-sync.md#use-azure-information-protection-to-configure-microsoft-edge-sync) and [Sync group policies](microsoft-edge-enterprise-sync.md#sync-group-policies). Additionally, users can turn sync on/off for each of their devices and toggle each data attribute individually for sync.
+Admins will be able to control which members in your organization can enable sync. See [Use Microsoft Purview Information Protection to configure Microsoft Edge sync](microsoft-edge-enterprise-sync.md#Use-Microsoft-Purview-Information-Protection to-configure-Microsoft-Edge-sync) and [Sync group policies](microsoft-edge-enterprise-sync.md#sync-group-policies). Additionally, users can turn sync on/off for each of their devices and toggle each data attribute individually for sync.
 
 ### Key management
 
