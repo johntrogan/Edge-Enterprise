@@ -28,7 +28,7 @@ These release notes provide information about new features and non-security upda
 
 ## Version 133.x.xxxx.xxx: February 06, 2025
 
-Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#february-06-2025).
 
@@ -47,8 +47,6 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - Fixed an issue which prevented users from selecting 'Report this file as safe' when downloading a file.
 
 ### Feature updates
-
-- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
 
 - **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) are able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
 
