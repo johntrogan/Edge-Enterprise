@@ -58,11 +58,11 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. For more information, [see Stand up to scareware with scareware blocker](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/). Note: This experience is in preview and users can opt in via Microsoft Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.
  
-- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
+- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
  
 - **Updated Downloads UI to Improve Performance.** The Downloads UI is rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
 
-- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page.  Users can track prices quickly and will be notified when there is a price drop on that product and save more.  Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy.
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page.  Users can track prices quickly and will be notified when there is a price drop on that product and save more.  Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy.
 
 ### Policy updates
 
@@ -87,7 +87,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
 
 > [!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 133 web platform release notes (Feb. 2025).](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/release-notes/133)
+>For the latest web platform features and updates, see [Microsoft Edge 133 web platform release notes (Feb. 2025).](deployedge/microsoft-edge/web-platform/release-notes/133)
 
 ## Version 132.0.2957.140: January 30, 2025
 
