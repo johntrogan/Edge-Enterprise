@@ -87,7 +87,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
 
 > [!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 133 web platform release notes (Feb. 2025).](deployedge/microsoft-edge/web-platform/release-notes/133)
+>For the latest web platform features and updates, see [Microsoft Edge 133 web platform release notes (Feb. 2025).](/microsoft-edge/web-platform/release-notes/133)
 
 ## Version 132.0.2957.140: January 30, 2025
 
