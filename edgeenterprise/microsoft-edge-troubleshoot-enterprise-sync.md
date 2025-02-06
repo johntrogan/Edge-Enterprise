@@ -3,7 +3,7 @@ title: "Diagnose and fix Microsoft Edge sync issues"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 12/18/2024
+ms.date: 01/28/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -69,13 +69,13 @@ If this error is encountered for a Microsoft Entra account, or if DISABLED_BY_AD
 > Because the source of this error usually needs a configuration change in a Microsoft Entra tenant, these troubleshooting steps can only performed by a tenant admin.
 
 1. Verify that the enterprise tenant has one of the supported subscriptions in [Configure Microsoft Edge enterprise sync](/deployedge/microsoft-edge-enterprise-sync). To find out which subscription you have, see [What subscription do I have?](/microsoft-365/admin/admin-overview/what-subscription-do-i-have). If the tenant doesn't have a supported subscription, they can either purchase Azure Information Protection separately, or upgrade to one of the supported subscriptions.
-2. If a supported subscription is available, verify that the tenant has Azure Information Protection (AIP). If you need to check AIP status and, if necessary, activate  AIP, see these instructions: [Activating the protection service from Azure Information Protection](/azure/information-protection/activate-service).
-3. If step 2 shows that AIP is active but sync still doesn't work, turn on Enterprise State Roaming (ESR). If you need to enable ESR, see these instructions: [Enable Enterprise State Roaming in Microsoft Entra ID](/azure/active-directory/devices/enterprise-state-roaming-enable).
+2. If a supported subscription is available, verify that the tenant has Rights Management Service (RMS). If you need to check RMS status and, if necessary, activate RMS, see these instructions: [Activating the protection service from Azure Information Protection](/azure/information-protection/activate-service).
+3. If step 2 shows that RMS is active but sync still doesn't work, turn on Enterprise State Roaming (ESR). If you need to enable ESR, see these instructions: [Enable Enterprise State Roaming in Microsoft Entra ID](/azure/active-directory/devices/enterprise-state-roaming-enable).
 
    > [!NOTE]
    > ESR doesn't need to stay on. You can turn off ESR if this step fixes the issue.
 
-4. Confirm that Azure Information Protection isn't scoped via an onboarding policy. You can use the [Get-AIPServiceOnboardingControlPolicy](/powershell/module/aipservice/get-aipserviceonboardingcontrolpolicy) PowerShell cmdlet to see if scoping is enabled. Make sure the aIPService PowerShell monitor is installed. You can get it here: [Install the AIPService PowerShell module for Azure Information Protection](/azure/information-protection/install-powershell). The next two examples show an unscoped configuration and a configuration scoped to a specific security group.
+4. Confirm that RMS isn't scoped via an onboarding policy. You can use the [Get-AIPServiceOnboardingControlPolicy](/powershell/module/aipservice/get-aipserviceonboardingcontrolpolicy) PowerShell cmdlet to see if scoping is enabled. Make sure the aIPService PowerShell monitor is installed. You can get it here: [Install the AIPService PowerShell module for Azure Information Protection](/azure/information-protection/install-powershell). The next two examples show an unscoped configuration and a configuration scoped to a specific security group.
 
    ```powershell
     PS C:\Work\scripts\PowerShell> Get-AIPServiceOnboardingControlPolicy
