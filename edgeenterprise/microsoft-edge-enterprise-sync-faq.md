@@ -3,7 +3,7 @@ title: "Microsoft Edge enterprise sync FAQ"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/18/2024
+ms.date: 01/28/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -28,7 +28,7 @@ To reduce resource utilization on end-user devices, history data is generated se
 
 ### Can tenant admins bring their own key?
 
-Yes, through [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
+Yes, through [Microsoft Purview Information Protection | Microsoft Security](https://www.microsoft.com/en-us/security/business/information-protection/microsoft-purview-information-protection).
 
 ### Where is Microsoft Edge sync data stored?
 
@@ -51,10 +51,6 @@ Not today. For customers in the GCC High cloud and Azure Government DoD cloud, M
 Not today. For customers in Microsoft Azure operated by 21Vianet, Microsoft Edge sync is not supported.
 
 ## Applying Sync
-
-### Why isn't Microsoft Edge sync supported in all Microsoft 365 subscriptions?
-
-Enterprise sync depends on [Azure Information Protection](https://azure.microsoft.com/services/information-protection/), which isn't available for all Microsoft 365 subscriptions.
 
 ### Is Microsoft Edge sync based on Enterprise State Roaming?
 
