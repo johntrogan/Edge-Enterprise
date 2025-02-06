@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 01/30/2025
+ms.date: 02/06/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -14,7 +14,7 @@ description: "Microsoft Edge release note for Stable Channel"
 
 # Release notes for Microsoft Edge Stable Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Stable Channel.
+These release notes provide information about new features and nonsecurity updates that are included in the Microsoft Edge Stable Channel.
 
 - All the security updates are listed in [Release notes for Microsoft Edge Security Updates](./microsoft-edge-relnotes-security.md).
 - Archived release notes for Microsoft Edge Stable Channel are located in [Archived release notes for Microsoft Edge Stable Channel](./microsoft-edge-relnote-archive-stable-channel.md).
@@ -22,9 +22,70 @@ These release notes provide information about new features and non-security upda
  To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](./microsoft-edge-channels.md).
 
 > [!NOTE]
-> For the Stable Channel, updates will roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
+> For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 133.0.3065.51: February 6, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#february-06-2025).
+
+### Dev Channel updates
+
+The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 133.0.2992.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-2992-0-is-live-/4354854)
+- [Dev Channel update to 133.0.3000.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3000-0-is-live-/4357092)
+- [Dev Channel update to 133.0.3014.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3014-0-is-live-/4359765)
+- [Dev Channel update to 133.0.3054.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3054-1-is-live-/4364687)
+- [Dev Channel update to 133.0.3065.7 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-133-0-3065-7-is-live-/4367429)
+
+### Fixes
+
+- Fixed an issue which prevented users from selecting 'Report this file as safe' when downloading a file.
+
+### Feature updates
+
+- **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) are able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
+
+- **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
+ 
+- **Deprecate `textprediction` attribute.** Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs. Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide. Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value. For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification.
+
+- **Scareware blocker.** Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks. Once enabled, scareware blocker uses machine learning (ML) to identify and block these scams, keeping you safe as you browse the web. For more information, [see Stand up to scareware with scareware blocker](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/). Note: This experience is in preview and users can opt in via Microsoft Edge Settings, under `edge://settings/privacy`, Scareware is located under “Security”.
+ 
+- **Remove policy used for legacy same site behavior.** In Microsoft Edge version 80, we introduced the [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy to revert the SameSite behavior of cookies to legacy behavior on the specified domains. The [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) policy is obsolete in Microsoft Edge version 133.
+ 
+- **Updated Downloads UI to Improve Performance.** The Downloads UI is rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
+
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page.  Users can track prices quickly and will be notified when there is a price drop on that product and save more.  Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy.
+
+### Policy updates
+
+#### New policies
+
+- [CACertificateManagementAllowed](/deployedge/microsoft-edge-policies#cacertificatemanagementallowed)- Allow users to manage installed CA certificates
+- [CA Certificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
+- [CACertificatesWithConstraints](/deployedge/microsoft-edge-policies#cacertificateswithconstraints) - TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints
+- [CADistrustedCertificates](/deployedge/microsoft-edge-policies#cadistrustedcertificates) - TLS certificates that should be distrusted by Microsoft Edge for server authentication
+- [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that aren't trusted or distrusted but can be used in path-building for server authentication
+- [CAPlatformIntegrationEnabled](/deployedge/microsoft-edge-policies#caplatformintegrationenabled) - Use user-added TLS certificates from platform trust stores for server authentication
+- [DataURLWhitespacePreservationEnabled](/deployedge/microsoft-edge-policies#dataurlwhitespacepreservationenabled) - DataURL Whitespace Preservation for all media types
+- [EdgeSidebarAppUrlHostForceList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostforcelist) - Control which apps are forced to be shown in Microsoft Edge sidebar
+- [PdfViewerOutOfProcessIframeEnabled](/deployedge/microsoft-edge-policies#pdfvieweroutofprocessiframeenabled) - Use out-of-process iframe PDF Viewer
+- [SeamlessWebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#seamlesswebtobrowsersigninenabled) - Seamless Web To Browser Sign-in Enabled
+- [WebToBrowserSignInEnabled](/deployedge/microsoft-edge-policies#webtobrowsersigninenabled) - Web To Browser Sign-in Enabled
+
+#### Obsoleted policies
+
+- [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (obsolete)
+- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
+- [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
+
+> [!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 133 web platform release notes (Feb. 2025).](/microsoft-edge/web-platform/release-notes/133)
 
 ## Version 132.0.2957.140: January 30, 2025
 
@@ -69,11 +130,11 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **PromotionalTabsEnabled policy deprecation.** [The PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy is deprecated in Microsoft Edge version 132 and will be obsolete in a future Microsoft Edge version. Administrators can use the [ShowRecommendationsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled) policy instead.
  
-- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change will be available in the new PDF viewer on Microsoft Edge.
+- **Allow enterprise users to view XFA PDFs using IE Mode.** Enterprise customers can view XFA PDFs in Microsoft Edge using IE mode through either the [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) or [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash) policy. This change is available in the new PDF viewer on Microsoft Edge.
  
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, edge://support is being deprecated. The information found on edge://support is available on other pages: *edge://version, edge://metrics-internals, edge://extensions, and edge://policy.*
 
-- **Full Favorites Bar available in Workspaces.**  Workspaces now display a user's full set of favorites in the Favorites Bar, with a dedicated workspace folder accessible from the bar. Previously when in a workspace, a user's existing Favorites Bar was not easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
+- **Full Favorites Bar available in Workspaces.**  Workspaces now display a user's full set of favorites in the Favorites Bar, with a dedicated workspace folder accessible from the bar. Previously when in a workspace, a user's existing Favorites Bar wasn't easily accessible and instead only the workspace favorites folder was visible.  Users can control the behavior by **modifying #edge-workspace-favorites-bar** in edge://flags.
 
 ### Policy updates
 
@@ -92,13 +153,13 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [ViewXFAPDFInIEModeAllowedFileHash](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedfilehash)- View XFA-based PDF files using IE Mode for allowed file hash.
 - [ViewXFAPDFInIEModeAllowedOrigins](/deployedge/microsoft-edge-policies#viewxfapdfiniemodeallowedorigins) - View XFA-based PDF files using IE Mode for allowed file origin.
 
-
 #### Deprecated policies
 
 - [InsecureFormsWarningsEnabled](/deployedge/microsoft-edge-policies#insecureformswarningsenabled) - Enable warnings for insecure forms (deprecated)
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (deprecated)
 - [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) - Enable deprecated/removed Mutation Events (deprecated)
 - [PromotionalTabsEnabled](/deployedge/microsoft-edge-policies#promotionaltabsenabled)- Enable full-tab promotional content (deprecated)
+
 #### Obsoleted policies
 
 - [BlockTruncatedCookies](/deployedge/microsoft-edge-policies#blocktruncatedcookies) - Block truncated cookies (obsolete)
@@ -115,7 +176,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **CSS sideways writing modes.** Support of `sideways-rl` and `sideways-lr` keywords for the `writing-mode` CSS property. `sideways-rl` and `sideways-lr` are helpful to write non-CJK text vertically. They don't have behaviors favorable for CJK languages unlike `vertical-rl` and `vertical-lr`.
 
-- **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or closewatcher) it should dispatch a `ToggleEvent` with `newState=closed`.
+- **Dialog toggle events.** This change incorporates the same `ToggleEvent` that popovers dispatch, but for `<dialog>` elements: when `showModal` or `show` is called, `<dialog>` dispatches a `ToggleEvent` with `newState=open`. When a `<dialog>` is closed (using the form, button, or close watcher) it should dispatch a `ToggleEvent` with `newState=closed`.
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
 
@@ -148,7 +209,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
 
-- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
+- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
 - **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Edge 132, these situations now throw `InvalidStateError`.
 
@@ -166,7 +227,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **New origin trials: Document-Isolation-Policy.** The **Document-Isolation-Policy** lets a document enable `crossOriginIsolation` for itself, without having to deploy COOP or COEP, and regardless of the `crossOriginIsolation` status of the page. The policy is backed by process isolation. Additionally, the document non-CORS cross-origin subresources will either be loaded without credentials or will need to have a CORP header.
 
-- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information will be encoded as magic comments.
+- **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information is encoded as magic comments.
 
 - **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage` will no longer extend `EventTarget`.
 
@@ -269,7 +330,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 ### Announcement
 
-Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings because it is a persistent system component.
+Microsoft Edge WebView2 Runtime will no longer appear in the Installed Apps list in Windows Settings because it's a persistent system component.
 
 ### Dev Channel updates
 
@@ -282,7 +343,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Feature updates
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the cancel dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=main#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=main#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
 
 - **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be deployed and utilized by services that depend on this library.
 
@@ -293,7 +354,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
   - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM. Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
   - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
-- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allow list can be opened in sidebar even if they are listed in the block list. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
+- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allow list can be opened in sidebar even if they're listed in the blocklist. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
 
 - **Support for Microsoft Purview Information Protection label for Office Online documents.** Microsoft Edge for Business now natively supports enforcing data loss prevention (DLP) controls via Microsoft Information Protection (MIP) sensitivity labels in Word, Excel, and PowerPoint documents in Office online. This support closes the document protection gap in browser scenarios for commercial users.  The following leak controls are now natively supported in the browser:
    - Copy
