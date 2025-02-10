@@ -43,7 +43,7 @@ Fixed various bugs and performance issues.
 ### New Policies
 
 - [iOS] Support new policy to ignore the post requests when URL blocked auto switches to private mode or MSA mode
-(Set com.microsoft.intune.mam.managedbrowser.IgnorePostRequestOnAutoTransition=true)
+(Set `com.microsoft.intune.mam.managedbrowser.IgnorePostRequestOnAutoTransition=true`)
 
 
 ### Bug fixes
