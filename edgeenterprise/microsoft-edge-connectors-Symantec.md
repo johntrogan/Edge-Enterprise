@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Browser Policy Documentation"
+title: "Microsoft Edge Symantec"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk

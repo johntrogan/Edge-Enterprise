@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Browser Policy Documentation"
+title: "Microsoft Edge Browser Duo Documentation"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
