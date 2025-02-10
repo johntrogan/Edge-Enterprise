@@ -143,8 +143,9 @@
         items:
          - name: Symantec
            href: microsoft-edge-connectors-Symantec.md
+      - name: Reporting
         items:
-         - name: Reporting
+         - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
         href: microsoft-edge-management-service.md
       - name: Monitoring dashboard
