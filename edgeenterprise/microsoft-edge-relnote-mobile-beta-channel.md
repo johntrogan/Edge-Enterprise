@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 02/06/2025
+ms.date: 02/10/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -31,6 +31,34 @@ Archived versions of these release notes are available at [Archived release note
 ## Version 133.0.3065.50 (Android and iOS): February 06, 2025
 
 Fixed various bugs and performance issues.
+
+### General updates
+
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.3
+- [Android] Upgrade Intune MAM SDK to version 11.1.0
+- [iOS & Android] Upgrade MS OneAuth SDK version 5.0.0
+- [iOS & Android] Support Page Summary via Copilot for Commercial users
+ 
+
+### New Policies
+
+- [iOS] Support new policy to ignore the post requests when URL blocked auto switches to private mode or MSA mode
+(Set `com.microsoft.intune.mam.managedbrowser.IgnorePostRequestOnAutoTransition=true`)
+
+
+### Bug fixes
+
+- [iOS] Fix the issue about App Proxy does not take effect after signing out and then signing back in without exiting the app
+- [iOS] Fix the issue about canceling in Guided Switch does not return to the homepage when URL Block is active
+ 
+
+### New enhancements
+
+- [iOS] Improve IdleTimeoutActions policy and support signout action
+- [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
+- [iOS] Improve the user experience about InPrivate mode on iPad
+- [iOS & Android] Add manage account entry in account settings page
+ 
 
 ## Version 133.0.3065.22 (Android and iOS): January 23, 2025
 
