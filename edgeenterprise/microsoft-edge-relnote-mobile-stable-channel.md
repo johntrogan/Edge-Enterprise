@@ -23,9 +23,36 @@ All the Stable channel security updates are listed in [Release notes for Microso
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
 
-## Version 133.0.3065.54 (Android): February 10, 2025
+## Version 133.0.3065.54 (Android and iOS): February 10, 2025
 
-Fixed various bugs and performance issues
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.3
+- [Android] Upgrade Intune MAM SDK to version 11.1.0
+- [iOS & Android] Upgrade MS OneAuth SDK version 5.0.0
+- [iOS & Android] Support Page Summary via Copilot for Commercial users
+ 
+
+### New Policies
+
+- [iOS] Support new policy to ignore the post requests when URL blocked auto switches to private mode or MSA mode
+(Set `com.microsoft.intune.mam.managedbrowser.IgnorePostRequestOnAutoTransition=true`)
+
+
+### Bug fixes
+
+- [iOS] Fix the issue about App Proxy does not take effect after signing out and then signing back in without exiting the app
+- [iOS] Fix the issue about canceling in Guided Switch does not return to the homepage when URL Block is active
+ 
+
+### New enhancements
+
+- [iOS] Improve IdleTimeoutActions policy and support signout action
+- [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
+- [iOS] Improve the user experience about InPrivate mode on iPad
+- [iOS & Android] Add manage account entry in account settings page
 
 ## Version 132.0.2957.129 (Android): January 27, 2025
 
