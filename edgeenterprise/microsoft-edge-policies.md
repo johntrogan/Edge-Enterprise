@@ -13162,7 +13162,7 @@ This policy has no effect if the [EfficiencyModeEnabled](#efficiencymodeenabled)
 
 Learn more about efficiency mode: [https://go.microsoft.com/fwlink/?linkid=2173921](https://go.microsoft.com/fwlink/?linkid=2173921)
 
-Learn more about energy saver: https://learn.microsoft.com/windows-hardware/design/component-guidelines/energy-saver
+Learn more about energy saver: [Energy Saver](/windows-hardware/design/component-guidelines/energy-saver)
 
 Policy options mapping:
 
