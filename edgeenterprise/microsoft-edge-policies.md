@@ -3108,7 +3108,7 @@ Use the preceding information when configuring this policy.
 
   ##### Example value:
 
-```
+```plaintext
 0x00000001
 ```
 
@@ -4727,7 +4727,7 @@ If you don't configure this policy for a site then the policy from [DefaultJavaS
 
   ##### Example value:
 
-```
+```plaintext 
 SOFTWARE\Policies\Microsoft\Edge\JavaScriptOptimizerAllowedForSites\1 = "[*.]example.edu"
 
 ```
@@ -4800,7 +4800,7 @@ If you don't configure this policy for a site then the policy from [DefaultJavaS
 
   ##### Example value:
 
-```
+```plaintext
 SOFTWARE\Policies\Microsoft\Edge\JavaScriptOptimizerBlockedForSites\1 = "[*.]example.edu"
 
 ```
@@ -40277,13 +40277,10 @@ This policy is temporary and planned for deprecation in 2026.
   - Value Name: ServiceWorkerToControlSrcdocIframeEnabled
   - Value Type: REG_DWORD
 
-  ##### Example value:
+  ```plaintext
+SOFTWARE\Policies\Microsoft\Edge\JavaScriptOptimizerBlockedForSites\1 = "[*.]example.edu"
 
 ```
-0x00000001
-```
-
-  #### Mac information and settings
 
   - Preference Key Name: ServiceWorkerToControlSrcdocIframeEnabled
   - Example value:
