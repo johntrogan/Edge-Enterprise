@@ -32,7 +32,7 @@ The following table lists the new, and deprecated policies that are in this arti
 
 | Policy Name | Caption |
 |:-----|:-----|
-||[DefaultJavaScriptOptimizerSetting](#defaultjavascriptoptimizersetting)|Control use of JavaScript optimizers|
+|[DefaultJavaScriptOptimizerSetting](#defaultjavascriptoptimizersetting)|Control use of JavaScript optimizers|
 |[JavaScriptOptimizerAllowedForSites](#javascriptoptimizerallowedforsites)|Allow JavaScript optimization on these sites|
 |[JavaScriptOptimizerBlockedForSites](#javascriptoptimizerblockedforsites)|Block JavaScript optimizations on these sites|
 |[ServiceWorkerToControlSrcdocIframeEnabled](#serviceworkertocontrolsrcdociframeenabled)|Allow ServiceWorker to control srcdoc iframes|
