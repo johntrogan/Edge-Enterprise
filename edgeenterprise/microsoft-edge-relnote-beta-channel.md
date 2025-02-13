@@ -25,9 +25,9 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
-The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
-
 ### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
 
 - [Dev Channel update to 134.0.3081.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3081-2-is-live-/4370518)
 - [Dev Channel update to 134.0.3096.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3096-1-is-live-/4372525)
@@ -37,17 +37,17 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 **Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Edge will introduce support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
  
-A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the EdgeEntraCopilotPageContext policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
+A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
 
 ### Feature updates
 
 - **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
  
-- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The AddressBarMicrosoftSearchInBingProviderEnabled policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is AddressBarWorkSearchResultsEnabled which is available in Microsoft Edge version 134. 
+- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134. 
 
 - **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
-- **Scareware blocker policy.**  Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks.  Scareware blocker is currently in preview and admins can control availability to this feature using the ScarewareBlockerProtectionEnabled Policy.  For more information, see Stand up to scareware with scareware blocker, now available in preview in Microsoft Edge - Microsoft Edge Blog.
+- **Scareware blocker policy.**  Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks.  Scareware blocker is currently in preview and admins can control availability to this feature using the [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) Policy.  For more information, see [Stand up to scareware with scareware blocker, now available in preview in Microsoft Edge - Microsoft Edge Blog](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/).
 
 ### Policy updates
 
@@ -70,7 +70,7 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 - [UserAgentClientHintsGREASEUpdateEnabled](/deployedge/microsoft-edge-policies#useragentclienthintsgreaseupdateenabled) - Control the User-Agent Client Hints GREASE Update feature (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see Microsoft Edge 134 web platform release notes (Mar. 2025).
+>For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/release-notes/134).
 
 ## Version 133.0.3065.59: February 10, 2025
 
