@@ -70,7 +70,7 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 - [UserAgentClientHintsGREASEUpdateEnabled](/deployedge/microsoft-edge-policies#useragentclienthintsgreaseupdateenabled) - Control the User-Agent Client Hints GREASE Update feature (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/release-notes/134).
+>For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025](/microsoft-edge/web-platform/release-notes/134).
 
 ## Version 133.0.3065.59: February 10, 2025
 
