@@ -21,6 +21,57 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 134.0.3124.8: February 13, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 134.0.3081.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3081-2-is-live-/4370518)
+- [Dev Channel update to 134.0.3096.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3096-1-is-live-/4372525)
+- [Dev Channel update to 134.0.3109.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3109-0-is-live-/4374330)
+ 
+### Announcement
+
+**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Edge will introduce support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
+ 
+A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
+
+### Feature updates
+
+- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
+ 
+- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134. 
+
+- **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **Scareware blocker policy.**  Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks.  Scareware blocker is currently in preview and admins can control availability to this feature using the [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) Policy.  For more information, see [Stand up to scareware with scareware blocker, now available in preview in Microsoft Edge - Microsoft Edge Blog](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/).
+
+### Policy updates
+
+#### New policies
+
+- [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) - Enable Work Search suggestions in the address bar
+- [DefaultJavaScriptOptimizerSetting](/deployedge/microsoft-edge-policies#defaultjavascriptoptimizersetting) - Control use of JavaScript optimizers
+- [IdleTimeout](/deployedge/microsoft-edge-policies#idletimeout) - Delay before running idle actions
+- [IdleTimeoutActions](/deployedge/microsoft-edge-policies#idletimeoutactions) - Actions to run when the computer is idle
+- [JavaScriptOptimizerAllowedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerallowedforsites) - Allow JavaScript optimization on these sites
+- [JavaScriptOptimizerBlockedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerblockedforsites) - Block JavaScript optimizations on these sites
+- [OopPrintDriversAllowed](/deployedge/microsoft-edge-policies#oopprintdriversallowed) - Out-of-process print drivers allowed
+- [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) - Configure Edge Scareware Blocker Protection
+- [ServiceWorkerToControlSrcdocIframeEnabled](/deployedge/microsoft-edge-policies#serviceworkertocontrolsrcdociframeenabled) - Allow ServiceWorker to control srcdoc iframes
+- [SharedWorkerBlobURLFixEnabled](/deployedge/microsoft-edge-policies#sharedworkerbloburlfixenabled) - Make SharedWorker blob URL behavior aligned with the specification
+- [WebAudioOutputBufferingEnabled](/deployedge/microsoft-edge-policies#webaudiooutputbufferingenabled) - Enable adaptive buffering for Web Audio
+
+#### Obsoleted policies
+
+- [UserAgentClientHintsGREASEUpdateEnabled](/deployedge/microsoft-edge-policies#useragentclienthintsgreaseupdateenabled) - Control the User-Agent Client Hints GREASE Update feature (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025](/microsoft-edge/web-platform/release-notes/134).
+
 ## Version 133.0.3065.59: February 10, 2025
 
 Fixed various bugs and performance issues. 
@@ -148,7 +199,7 @@ The following Dev channel updates preceded this Beta channel release. These note
   </button>
   ```
 
-  Previously this happened, because the popover click bubbles to the `<button>` and activates the invoker, which toggles the popover closed. This has now been changed to the expected behavior.
+  Previously this happened, because the popover select bubbles to the `<button>` and activates the invoker, which toggles the popover closed. This has now been changed to the expected behavior.
 
 - **`Animation.overallProgress`.** Provides developers with a convenient and consistent representation of how far along an animation has advanced across its iterations and regardless of the nature of its timeline. Without the `overallProgress` property, you need to manually compute how far an animation has advanced, factoring in the number of iterations of the animation and whether the `currentTime` of the animation is a percentage of total time (as in the case of scroll-driven animations) or an absolute time quantity (as in the case of time-driven animations).
 
@@ -192,7 +243,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Web Authentication API: PublicKeyCredential `getClientCapabilities()` method.** The PublicKeyCredential `getClientCapabilities()` method lets you determine which WebAuthn features are supported by the user's client. The method returns a list of supported capabilities, allowing developers to tailor authentication experiences and workflows based on the client's specific functionality.
 
-- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8 and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
+- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8-bit and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
 
 - **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey, and deriveBits.
 
@@ -240,7 +291,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
 
-- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users will not be allowed to generate images and they'll see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users will not be allowed to generate images and they see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -277,7 +328,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [AdHocCodeSigningForPWAsEnabled](/deployedge/microsoft-edge-policies#adhoccodesigningforpwasenabled) - Native application signing during Progressive Web Application installation
 - [AutomaticFullscreenAllowedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenallowedforurls) - Allow automatic full screen on specified sites
 - [AutomaticFullscreenBlockedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenblockedforurls) - Block automatic full screen on specified sites
-- [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation will default to iCloud Keychain
+- [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation defaults to iCloud Keychain
 - [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) - Enable deleting undecryptable passwords
 - [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies#genailocalfoundationalmodelsettings) - Settings for GenAI local foundational model
 - [IPv6ReachabilityOverrideEnabled](/deployedge/microsoft-edge-policies#ipv6reachabilityoverrideenabled) - Enable IPv6 reachability check override
@@ -434,7 +485,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the cancel dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
 
 - **Get the latest updates effortlessly with instant update.** Instant update in Microsoft Edge ensures you get the latest browser updates automatically, when you step away from your computer. You can keep browsing, knowing that you already have the latest updates to keep you safe online. For more information, see [Get instant updates in Microsoft Edge - Microsoft Support](https://support.microsoft.com/microsoft-edge/get-instant-updates-in-microsoft-edge-4820adad-dd32-470c-9bd9-dba1de71a7f1). **Note:** This feature is in private preview for enterprise customers. Future feature updates are available via Microsoft Edge release notes.
 
@@ -490,7 +541,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove the CSS Anchor Positioning property `inset-area`.** With the CSS Working Group resolution on renaming the `inset-area` property to `position-area`, this removal cleans up the implementation for a standards compliant feature.
 
-- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they've removed that option and replaced it with the GPUAdapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
+- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they've removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
 
 ### Policy updates
 
@@ -507,8 +558,8 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 #### Obsoleted policies
 
-- [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) - Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
-- [SignInCtaOnNtpEnabled](/deployedge/microsoft-edge-policies#signinctaonntpenabled) - Enable sign in click to action dialog (obsolete)
+- [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) - Control the behavior for the canceled dialog produced by the before unload event (obsolete)
+- [SignInCtaOnNtpEnabled](/deployedge/microsoft-edge-policies#signinctaonntpenabled) - Enable sign in select to action dialog (obsolete)
 
 
 
