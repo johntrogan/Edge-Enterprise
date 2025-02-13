@@ -27,6 +27,8 @@ Fixed various bugs and performance issues, Dev channel updates, feature updates,
 
 The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
 
+### Dev channel updates
+
 - [Dev Channel update to 134.0.3081.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3081-2-is-live-/4370518)
 - [Dev Channel update to 134.0.3096.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3096-1-is-live-/4372525)
 - [Dev Channel update to 134.0.3109.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3109-0-is-live-/4374330)
@@ -41,7 +43,7 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 
 - **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
  
-- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. **The AddressBarMicrosoftSearchInBingProviderEnabled policy,** used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is AddressBarWorkSearchResultsEnabled which is available in Microsoft Edge version 134. 
+- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The AddressBarMicrosoftSearchInBingProviderEnabled policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is AddressBarWorkSearchResultsEnabled which is available in Microsoft Edge version 134. 
 
 - **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
