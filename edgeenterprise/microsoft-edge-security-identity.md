@@ -3,7 +3,7 @@ title: "Microsoft Edge identity support and configuration"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/18/2024
+ms.date: 02/18/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -91,6 +91,10 @@ Proactive authentication is an optimization over browser to website SSO that fro
 > [!NOTE]
 > You can control this service using the [ProactiveAuthWorkflowEnabled](/deployedge/microsoft-edge-policies#proactiveauthworkflowenabled) policy for Microsoft Edge version 126 or higher;
 or using [ProactiveAuthEnabled](/deployedge/microsoft-edge-policies#proactiveauthenabled) policy for Microsoft Edge version 90 or lower. For in between versions, if you want to configure browser sign in, use the [BrowserSignin](/deployedge/microsoft-edge-policies#browsersignin) policy.
+
+> [!NOTE]
+> When [Mobile Application Management (MAM)](/mem/intune/fundamentals/deployment-guide-enrollment-mamwe) is applied to Edge,
+> this authentication integration will stop working. Some functionalities on New Tab Page might also be affected.
 
 ### Windows Hello CredUI for NTLM Authentication
 
