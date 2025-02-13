@@ -23,6 +23,8 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 133.0.3065.59: February 13, 2025
 
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
 The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
 
 - [Dev Channel update to 134.0.3081.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3081-2-is-live-/4370518)
@@ -39,9 +41,7 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 
 - **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
  
-- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025.
-
-- **The AddressBarMicrosoftSearchInBingProviderEnabled policy,** used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is AddressBarWorkSearchResultsEnabled which is available in Microsoft Edge version 134. 
+- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025.**The AddressBarMicrosoftSearchInBingProviderEnabled policy,** used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is AddressBarWorkSearchResultsEnabled which is available in Microsoft Edge version 134. 
 
 - **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
@@ -52,25 +52,15 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 #### New policies
 
 - [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) - Enable Work Search suggestions in the address bar
-
 - [DefaultJavaScriptOptimizerSetting](/deployedge/microsoft-edge-policies#defaultjavascriptoptimizersetting) - Control use of JavaScript optimizers
-
 - [IdleTimeout](/deployedge/microsoft-edge-policies#idletimeout) - Delay before running idle actions
-
 - [IdleTimeoutActions](/deployedge/microsoft-edge-policies#idletimeoutactions) - Actions to run when the computer is idle
-
 - [JavaScriptOptimizerAllowedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerallowedforsites) - Allow JavaScript optimization on these sites
-
 - [JavaScriptOptimizerBlockedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerblockedforsites) - Block JavaScript optimizations on these sites
-
 - [OopPrintDriversAllowed](/deployedge/microsoft-edge-policies#oopprintdriversallowed) - Out-of-process print drivers allowed
-
 - [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) - Configure Edge Scareware Blocker Protection
-
 - [ServiceWorkerToControlSrcdocIframeEnabled](/deployedge/microsoft-edge-policies#serviceworkertocontrolsrcdociframeenabled) - Allow ServiceWorker to control srcdoc iframes
-
 - [SharedWorkerBlobURLFixEnabled](/deployedge/microsoft-edge-policies#sharedworkerbloburlfixenabled) - Make SharedWorker blob URL behavior aligned with the specification
-
 - [WebAudioOutputBufferingEnabled](/deployedge/microsoft-edge-policies#webaudiooutputbufferingenabled) - Enable adaptive buffering for Web Audio
 
 #### Obsoleted policies
@@ -79,8 +69,6 @@ A Microsoft 365 Copilot license is required to use this feature.  Administrators
 
 >[!NOTE]
 >For the latest web platform features and updates, see Microsoft Edge 134 web platform release notes (Mar. 2025).
-
-Fixed various bugs and performance issues. 
 
 ## Version 133.0.3065.59: February 10, 2025
 
