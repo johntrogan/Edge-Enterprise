@@ -3,7 +3,7 @@ title: "Microsoft Edge identity support and configuration"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 02/18/2024
+ms.date: 02/12/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
