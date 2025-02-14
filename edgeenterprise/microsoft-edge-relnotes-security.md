@@ -16,9 +16,11 @@ description: "Release notes for Microsoft Edge Security Updates"
 
 These release notes provide information about security fixes that are included in updates to Microsoft Edge Stable channel.
 
-## February 12, 2025
+## February 14, 2025
 
-Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix. 
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2025-21401](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21401)
 
 ## February 6, 2025
 
