@@ -29,7 +29,7 @@ These release notes provide information about new features and nonsecurity updat
 
 ## Version 133.0.3065.69: February 14, 2025
 
-Fixed various bugs and performance issues.
+This update contains the following Microsoft Edge specific security fixes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#february-14-2025).
 
