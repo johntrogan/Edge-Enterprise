@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
-author: dan-wesley
+author: vmliramichael
 manager: likuba
-ms.date: 02/10/2025
+ms.date: 02/18/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -27,6 +27,10 @@ Archived versions of these release notes are available at [Archived release note
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 134.0.3124.16 (Android): February 18, 2025
+
+Fixed various bugs and performance issues.
 
 ## Version 134.0.3124.8 (Android and iOS): February 13, 2025
 
