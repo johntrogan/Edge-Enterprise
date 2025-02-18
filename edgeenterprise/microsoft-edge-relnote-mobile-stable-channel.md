@@ -14,7 +14,7 @@ description: "Microsoft Edge release notes for Mobile Stable Channel"
 
 # Release notes for Microsoft Edge Mobile Stable Channel
 
-These release notes provide information about new features that are available to work or school accounts, and non-security updates that are included in the Microsoft Edge for Mobile Stable Channel.
+These release notes provide information about new features that are available to work or school accounts, and nonsecurity updates that are included in the Microsoft Edge for Mobile Stable Channel.
 
 To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](./microsoft-edge-channels.md).
 
@@ -57,13 +57,13 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 
 ### Bug fixes
 
-- [iOS] Fix the issue about App Proxy does not take effect after signing out and then signing back in without exiting the app
-- [iOS] Fix the issue about canceling in Guided Switch does not return to the homepage when URL Block is active
+- [iOS] Fix the issue about App Proxy doesn't take effect after signing out and then signing back in without exiting the app
+- [iOS] Fix the issue about canceling in Guided Switch doesn't return to the homepage when URL Block is active
  
 
 ### New enhancements
 
-- [iOS] Improve IdleTimeoutActions policy and support signout action
+- [iOS] Improve IdleTimeoutActions policy and support sign out action
 - [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
 - [iOS] Improve the user experience about InPrivate mode on iPad
 - [iOS & Android] Add manage account entry in account settings page
@@ -88,14 +88,14 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 
 ### New Policies
 
-- [iOS] Support manage web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs aren't blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.)
+- [iOS] Support manages web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs aren't blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.)
 
 ### Bug Fixes
 
 - [iOS] Fix the issue with open PDF file with special characters in the file name
 - [iOS] Fix bookmark MDM Policy not taking effect
 - [iOS] Fix download bypasses Intune share policy under InPrivate mode
-- [iOS] Fix InPrivate policy was not fully effective in the context menu
+- [iOS] Fix InPrivate policy wasn't fully effective in the context menu
 - [Android] Fix brand logo may not show at sometimes
 
 ### New Enhancements
