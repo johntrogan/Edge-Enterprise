@@ -23,6 +23,20 @@ All the Stable channel security updates are listed in [Release notes for Microso
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
 
+## Version 133.3065.67 (Android): February 18, 2025
+
+Fixed various bugs and performance issues.
+
+- [Android] Microsoft 365 Copilot Chat in Edge mobile has re-enable page summarization features, allowing users to summarize open webpages or PDFs.  This feature is available for non-EU regions.  Administrators can control the availability of Copilot Chat in Edge Mobile using the following policy  [com.microsoft.intune.mam.managedbrowser.ChatPageContext](/mem/intune/apps/manage-microsoft-edge#copilot). For more information, see [Microsoft Edge Mobile Policy Documentation | Microsoft Learn](/deployedge/microsoft-edge-mobile-policies#edgecopilotenabled)
+
+
+## Version 133.3065.65 (iOS): February 18, 2025
+
+Fixed various bugs and performance issues.
+
+- [iOS] Microsoft 365 Copilot Chat in Edge mobile has re-enable page summarization features, allowing users to summarize open webpages or PDFs.  This feature is available for non-EU regions.  Administrators can control the availability of Copilot Chat in Edge Mobile using the following policy [com.microsoft.intune.mam.managedbrowser.ChatPageContext](/mem/intune/apps/manage-microsoft-edge#copilot). For more information, see [Microsoft Edge Mobile Policy Documentation | Microsoft Learn](/deployedge/microsoft-edge-mobile-policies#edgecopilotenabled)
+
+
 ## Version 133.0.3065.54 (Android and iOS): February 10, 2025
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
