@@ -31,6 +31,10 @@ These release notes provide information about new features and nonsecurity updat
 
 Fixed various bugs and performance issues.
 
+### Fixes
+
+- Fixed an issue which caused excessive traffic to the MIP service and resulted in the temporary blocking of sync functionality and the inability to open AIP-protected PDF files in Edge.  Note: For some users it still might be necessary to "sign out (keeping locally saved data)"and then "sign-in" again for sync functionality to resume.  
+
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#february-14-2025).
 
 ## Version 132.0.2957.164: February 13, 2025
