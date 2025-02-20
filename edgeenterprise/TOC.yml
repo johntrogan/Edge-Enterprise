@@ -1,4 +1,4 @@
-# last revised 07/09/2024
+# last revised 11/11/2024
 - name: Microsoft Edge Enterprise documentation 
   href: index.yml
 # GET STARTED
@@ -33,7 +33,6 @@
      href: deploy-edge-ready-for-edge.md
    - name: Install Microsoft Edge for mobile platforms in China
      href: microsoft-edge-install-mobile-china.md
-
    - name: Supported Operating Systems
      href: microsoft-edge-supported-operating-systems.md
    - name: Lifecycle Policy
@@ -75,14 +74,14 @@
    - name: Deploy to Windows with Configuration Manager 
 #     href: deploy-edge-with-configuration-manager.md
      href: /configmgr/apps/deploy-use/deploy-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
-   - name: Deploy to Windows with Intune
+   - name: Add Microsoft Edge for Windows 10/11 to Microsoft Intune
 #    href: deploy-edge-with-intune.md
-     href: /intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
+     href: /mem/intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
    - name: Deploy to macOS with Jamf
      href: deploy-edge-mac-jamf.md
-   - name: Deploy to macOS with Intune
+   - name: Add Microsoft Edge to macOS devices using Microsoft Intune 
 #    href: deploy-edge-mac-intune.md
-     href: /intune/apps/apps-edge-macos/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
+     href: /mem/intune/apps/apps-edge-macos/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json
 # CONFIGURE
 - name: Configure Microsoft Edge
   items:
@@ -94,7 +93,6 @@
      href: Initial-preferences-support-on-Microsoft-Edge-browser.md
    - name: Per-site configuration by policy
      href: Per-Site-Configuration-by-Policy.md
-#     href: configure-edge-with-intune.md
    - name: Configure Microsoft Edge policy settings with Microsoft Intune
      href: configure-edge-with-intune.md
    - name: Configure for Windows with Mobile Device Management
@@ -115,7 +113,17 @@
       - name: Organization branding
         href: microsoft-edge-organization-branding.md
    - name: Microsoft Edge management service
-     href: microsoft-edge-management-service.md
+     items:
+      - name: Get started with configuration profiles
+        href: microsoft-edge-management-service.md
+      - name: Monitoring dashboard
+        href: microsoft-edge-management-service-monitoring-dashboard.md
+      - name: Extensions management
+        href: microsoft-edge-management-service-extensions.md
+      - name: Customization settings
+        href: microsoft-edge-management-service-customizations.md
+      - name: Protect Office documents with Microsoft Purview Information Protection
+        href: microsoft-edge-management-service-office-mip.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
    - name: Microsoft Edge for Virtual desktop infrastructure 

@@ -41,7 +41,7 @@ If a download for a potentially dangerous type starts without the required gestu
 
 :::image type="content" source="media/microsoft-edge-security-Download-interruptions/Dowload-was-blocked.png" alt-text="Download is blocked, user can keep or delete the download.":::
 
-On the `edge://downloads` page, the user will see the same options. The next screenshot shows and example of these options.
+On the `edge://downloads` page, the user will see the same options. The next screenshot shows an example of these options.
 
 :::image type="content" source="media/microsoft-edge-security-Download-interruptions/msg-keep-delete-option.png" alt-text="Download is blocked but user can keep or delete the download.":::
 
@@ -52,6 +52,16 @@ While users are unlikely to encounter download interruptions for sites they use 
 Enterprises can use [ExemptFileTypeDownloadWarnings](/deployedge/microsoft-edge-policies#exemptfiletypedownloadwarnings) to specify the filetypes that are allowed to download from specific sites without interruption. For example, the following policy allows `XML` files to download from `contoso.com` and `woodgrovebank.com` without interruption, and allows `MSG` files to download from any site.
 
 `[{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
+{"file_extension":"msg", "domains": ["*"]}]`
+
+### Update for Edge Version 132
+
+With the release of Edge Version 132.0.2915.0, a change was introduced that affects the handling of `.crx` files (Chrome extension files). The `DownloadRestrictions` policy now blocks the download of `.crx` files if configured to block dangerous file types (options 1, 2, or 3). This change was introduced through Chromium and is documented in the Chromium code review.
+
+To address this issue, enterprises should update their policies to include the `ExemptFileTypeDownloadWarnings` policy to allow `.crx` files to be downloaded without interruption. For example:
+
+`[{"file_extension": "crx", "domains": ["*"]},
+{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
 {"file_extension":"msg", "domains": ["*"]}]`
 
 ## File types requiring a gesture

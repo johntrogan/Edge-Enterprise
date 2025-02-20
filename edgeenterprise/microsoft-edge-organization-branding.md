@@ -3,7 +3,7 @@ title: "Organization branding"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
-ms.date: 07/31/2024
+ms.date: 10/23/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -49,7 +49,7 @@ For more details on defaults and checking what is already configured in Microsof
 
 > [!IMPORTANT]
 > If OneDrive desktop sync is enabled in the user environment, a OneDrive policy to
-[exclude specific kinds of files from being uploaded](/sharepoint/use-group-policy#exclude-specific-kinds-of-files-from-being-uploaded) needs to be enabled to prevent shortcut duplication and enable the organization branding feature.
+[exclude specific kinds of files from being uploaded](/sharepoint/use-group-policy#exclude-specific-kinds-of-files-from-being-uploaded) needs to be enabled to prevent shortcut duplication and enable the organization branding feature. **Note:** You must exclude .Lnk files. The OneDrive sync app won't sync any .Lnk files, regardless of source.
 
 Looking for more advanced customization options? The Edge management service provides admins with an enhanced experience to control, preview, and customize the look of Edge for Business.
 
@@ -83,7 +83,7 @@ After you finish customizing the browser elements with your organization brandin
 
 ### Are there any scenarios where organization branding can't be used?
 
-Yes, organization isn't supported for the following scenarios.
+Yes, organization branding isn't supported for the following scenarios.
 
 - Organization branding isn't applied if:  
   - OneDrive desktop sync is enabled.
@@ -94,6 +94,14 @@ Yes, organization isn't supported for the following scenarios.
   - Microsoft Edge for Business on unmanaged PCs and macOS.
   - Customers with an Office 365 GCC, Office 365 GCC High, and DoD plans.
 
+### Why am I unable to see my taskbar icon overlay update?
+
+The taskbar icon overlay is currently not supported for macOS devices. It might also take a couple of restarts upon initial configuration to  see your icon overlay updated on the taskbar.
+
+### Which Microsoft Entra admin center assets are used for the organization branding icons?
+
+- The organization logo uses the header logo. If this logo doesn't exist, it uses the favicon.
+- The taskbar icon uses the square logo. If this logo doesn't exist, it uses the favicon.
 
 ## See also
 

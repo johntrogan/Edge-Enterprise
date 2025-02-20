@@ -3,14 +3,14 @@ title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
 author: dan-wesley
 manager: venkatk
-ms.date: 07/08/2024
+ms.date: 12/09/2024
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser"
+description: "Windows and Mac documentation for all policies supported by the Microsoft Edge Browser on mobile devices."
 ---
 
 # Microsoft Edge Mobile - Policies
@@ -59,11 +59,12 @@ These tables list all of the browser-related policies available in this release 
 | [EdgeBlockSignInEnabled](#edgeblocksigninenabled) | Block users from signing in to Edge |
 | [EdgeOneAuthProxy](#edgeoneauthproxy) | Specify a dedicated proxy to sign in to Edge in Android   |
 | [EdgeLockedViewModeEnabled](#edgelockedviewmodeenabled)  | Edge locked view mode    |
-|  [EdgeLockedViewModeAllowedActions](#edgelockedviewmodeallowedactions)  |  Configure allowed actions in Edge locked view mode   |
-|  [EdgeCopilotEnabled](#edgecopilotenabled)  |  Enable Copilot in Edge  |
-|  [EdgeNewTabPageLayout](#edgenewtabpagelayout)  |  Manage New Tab Page layout settings  |
-|  [EdgeNewTabPageLayoutCustom](#edgenewtabpagelayoutcustom)  | Manage New Tab Page custom setting   |
-|  [EdgeNewTabPageLayoutUserSelectable](#edgenewtabpagelayoutuserselectable)  |  Manage whether the New Tab Page layout is selectable by users  |
+| [EdgeLockedViewModeAllowedActions](#edgelockedviewmodeallowedactions)  |  Configure allowed actions in Edge locked view mode   |
+| [EdgeCopilotEnabled](#edgecopilotenabled)  |  Enable Copilot in Edge  |
+| [EdgeNewTabPageLayout](#edgenewtabpagelayout)  |  Manage New Tab Page layout settings  |
+| [EdgeNewTabPageLayoutCustom](#edgenewtabpagelayoutcustom)  | Manage New Tab Page custom setting   |
+| [EdgeNewTabPageLayoutUserSelectable](#edgenewtabpagelayoutuserselectable)  |  Manage whether the New Tab Page layout is selectable by users  |
+| [EdgeSharedDeviceSupportEnabled](#edgeshareddevicesupportenabled) | Disable shared device mode |
 
 <!-- ====================================== -->
 ### [*Proxy server*](#proxy-server)
@@ -1344,6 +1345,8 @@ Edge for iOS and Android allows organizations to disable the New Tab Page experi
 
 While this is a supported scenario, Microsoft recommends organizations take advantage of the New Tab Page experience to provide dynamic content that is relevant to the user.
 
+**Note:** If you have configured URLAllowlist or URLBlocklist, ensure that **about://newtab** is added to the URLAllowlist to enable EdgeNewTabPageCustomURL to function properly.
+
 #### Supported features:
 
 - Dynamic Policy Refresh : Yes
@@ -1520,6 +1523,10 @@ Edge for iOS and Android allows organizations to disable certain features that a
 - developertools grays out the build version numbers to prevent users from accessing Developer options (Edge for Android only), as of version 112
 - coupons = Disables coupons/shopping feature, as of version 117
 - extensions = Disables extensions (Edge for Android only), as of version 122
+- webinspector = Disables Web Inspector settings, as of version 128
+- share = Disables Share under menu, as of version 129
+- sendtodevices = Disables Send to devices under menu, as of version 129
+- weather = Disables weather in NTP (New Tab Page), as of version 130
 
 To disable multiple features, separate values with |. For example, inprivate|password disables both InPrivate and password storage.
 
@@ -1743,6 +1750,7 @@ true
 #### Supported on:
 
 * Microsoft Edge (iOS and iPadOS) since version 117
+* Microsoft Edge Android since version 117
 
 #### Description
 
@@ -2304,6 +2312,50 @@ false
 
 [Back to top](#microsoft-edge-mobile---policies)
 
+### EdgeSharedDeviceSupportEnabled 
+
+#### Disable shared device mode
+
+#### Supported on:
+
+- Microsoft Edge (Android) since version 127
+- Microsoft Edge (iOS and iPadOS) since version 126
+
+#### Description
+
+By default, Edge for iOS and Android starts in shared device mode when the devices are enrolled with shared device mode. You can disable shared device mode even in shared devices.
+
+EdgeSharedDeviceSupportEnabled:
+
+- true (default) =  Shared device mode is enabled in shared devices.
+- false  = Shared device mode is disabled in shared devices.
+
+#### Supported features:
+
+- Dynamic Policy Refresh : Yes
+- Per Profile : Yes
+
+#### Data Type:
+
+```
+Android:Boolean
+iOS:Boolean
+```
+
+#### Android and iOS restriction name:
+
+```
+EdgeSharedDeviceSupportEnabled
+```
+
+##### Example value (Android and iOS):
+
+```
+false
+```
+
+[Back to top](#microsoft-edge-mobile---policies)
+
 <!-- =================================================== -->
 ## Proxy server policies
 
@@ -2483,6 +2535,7 @@ Supported actions are:
 - 'close_tabs': close all open tabs and create a NTP (New Tab Page).
 - 'clear_browsing_history': clear the browsing history.
 - 'clear_cookies_and_other_site_data': clear browsing history and other site data.
+- 'sign_out': sign out of browser. (This only applies to iOS.)
 
 #### Supported features
 

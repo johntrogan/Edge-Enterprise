@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
-author: dan-wesley
+author: vmliramichael
 manager: likuba
-ms.date: 08/22/2024
+ms.date: 02/18/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -14,7 +14,7 @@ description: "Microsoft Edge release notes for Mobile Beta Channel"
 
 # Release notes for Microsoft Edge Mobile Beta Channel
 
-These release notes provide information about new features and non-security updates that are included in the Microsoft Edge Mobile Beta Channel.
+These release notes provide information about new features and non security updates that are included in the Microsoft Edge Mobile Beta Channel.
 
 To understand Microsoft Edge channels, see the [Overview of the Microsoft Edge channels](./microsoft-edge-channels.md).
 
@@ -27,6 +27,340 @@ Archived versions of these release notes are available at [Archived release note
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 134.0.3124.18 (iOS): February 19, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.16 (Android): February 18, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.8 (Android and iOS): February 13, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 133.0.3065.50 (Android and iOS): February 06, 2025
+
+Fixed various bugs and performance issues.
+
+### General updates
+
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.3
+- [Android] Upgrade Intune MAM SDK to version 11.1.0
+- [iOS & Android] Upgrade MS OneAuth SDK version 5.0.0
+- [iOS & Android] Support Page Summary via Copilot for Commercial users
+ 
+
+### New Policies
+
+- [iOS] Support new policy to ignore the post requests when URL blocked auto switches to private mode or MSA mode
+(Set `com.microsoft.intune.mam.managedbrowser.IgnorePostRequestOnAutoTransition=true`)
+
+
+### Bug fixes
+
+- [iOS] Fix the issue about App Proxy does not take effect after signing out and then signing back in without exiting the app
+- [iOS] Fix the issue about canceling in Guided Switch does not return to the homepage when URL Block is active
+ 
+
+### New enhancements
+
+- [iOS] Improve IdleTimeoutActions policy and support signout action
+- [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
+- [iOS] Improve the user experience about InPrivate mode on iPad
+- [iOS & Android] Add manage account entry in account settings page
+ 
+
+## Version 133.0.3065.22 (Android and iOS): January 23, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 133.0.3065.18 (Android and iOS): January 21, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 133.0.3065.10 (Android and iOS): January 20, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.108 (Android and iOS): January 14, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.99 (Android and iOS): January 9, 2025
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General Updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.8
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.1
+- [Android] Support workspaces feature on Android (Need to enable feature under edge://flags)
+
+### New Policies
+
+- [iOS] Support manage web sub resource blocking policy (By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as sub resources within a web page, those sub resource URLs aren't blocked. To further restrict these sub resources, you can configure the new policy to block the sub resource URLs. For example, set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.)
+
+### Bug Fixes
+
+- [iOS] Fix the issue with open PDF file with special characters in the file name
+- [iOS] Fix bookmark MDM Policy not taking effect
+- [iOS] Fix download bypasses Intune share policy under InPrivate mode
+- [iOS] Fix InPrivate policy was not fully effective in the context menu
+- [Android] Fix brand logo may not show at sometimes
+
+### New Enhancements
+
+- [iOS] Improve the sign-in experience for single device mode
+- [iOS] Improve the feature experience for DisableFeature policy about settings and feedback
+- [iOS] Enhancements the experience of bookmark icon under App Proxy
+- [Android] Support remove certain account from sign in account list
+
+## Version 132.0.2957.95 (Android and iOS): January 7, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.86 (Android and iOS): January 2, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.82 (Android and iOS): December 31, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.74 (Android and iOS): December 26, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.70 (iOS): December 26, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.60 (Android and iOS): December 19, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.58 (Android and iOS): December 18, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.46 (Android): December 13, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.42 (Android): December 10, 2024
+
+Fixed various bugs and performance issues.
+
+
+## Version 132.0.2957.32 (Android and iOS): December 5, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.29 (iOS): December 3, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.28 (Android): December 3, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.21 (Android): December 2, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.17 (Android and iOS): November 26, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 132.0.2957.8 (Android and iOS): November 22, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.47 (Android and iOS): November 14, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.42 (Android and iOS): November 12, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.32 (Android and iOS): November 7, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.28 (Android and iOS): November 5, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.2
+- [iOS & Android] Upgrade MS OneAuth SDK version 4.0.2
+
+### Bug fixes
+
+- [iOS] Fix the issue with saving Word/Excel/PowerPoint files locally.
+- [iOS] Fix unresponsive sign-in panel in "Send to device".
+- [iOS] Fix the issue where the IdleTimeout policy did not resume normal operation after the action was completed.
+- [iOS] Fix Tooltip cannot auto-dismiss when VoiceOver is turned on.
+
+### New Policies
+
+- [iOS] Support Microsoft Entra ID File advanced encryption by Intune auto file encryption capability. (Implement comprehensive encryption of sandbox files under Microsoft Entra ID accounts using Intune MAM SDK's File Transparent Encryption. File encryption is enabled when the `com.microsoft.intune.IntuneMAMOnly.AdvancedEncryption` policy is set to Enabled.)
+- [iOS & Android] Support to disable settings and feedback features via DisableFeature policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now supports configuring disable settings and feedback features on the NTP using the values "settings" and "feedback")
+
+### Enhancements
+
+- [iOS] Improve the feature experience for the App Proxy policy by preventing it from not functioning correctly until the next cold start.
+- [iOS] Improve the feature experience for switching profile.
+- [Android] Enhancements the display size of brandLogo (Related policy `com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo`).
+- [Android] Improve the sign-in experience for single device mode (Remove SDM needed restart on first startup).
+- [iOS & Android] General enhancements to NewTabPageLayout policy (Policy auto correct NewTabPageLayout to custom if NewTabPageLayout.Custom has value).
+
+## Version 131.0.2903.19 (Android and iOS): October 31, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.15: (Android and iOS): October 29, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 131.0.2903.8 (Android and iOS): October 25, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.45 (Android and iOS): October 17, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.40 (Android and iOS): October 15, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.7.0
+- [iOS] Upgrade MAM Tunnel SDK to version 1.1.12
+- [iOS & Android] Enable wallpaper on NTP for Commercial user by default. A user can configure `com.microsoft.intune.mam.managedbrowser.NewTabPageLayout.Custom` to exclude the wallpaper.
+- [iOS & Android] Enable weather widget on NTP for Commercial user by default. A user can add weather token to **DisableFeature** policy to disable it the widget.
+
+### Bug fixes
+
+- [iOS] Fix issue about single device mode force sign-in interrupted by external intent.
+- [iOS] Fix **disableImportPasswords** policy not working as expected.
+
+### New policies
+
+- [iOS & Android] Support to disable weather widget on NTP via **DisableFeature** policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM) and **EdgeDisabledFeatures** in MDM, now supports disabling weather widget on NTP by using "weather" as value.
+
+### Enhancements
+
+- [iOS] Support removing specified account from sign in account list.
+- [Android] Change default value of `recommendsCustomUi` to support passkey in Edge. Before these changes, the user can only use Google Password Manager and can't select Microsoft Authenticator to save passkey. After these changes, a user can select a 3rd party passkey app, including Microsoft Authenticator.
+- [Android] Improve the feature experience for App proxy.
+- [iOS & Android] Improve the occurrence of re-sign in prompts on NTP.
+- [iOS & Android] General enhancements to NTLMSSO policies to make it more useful.
+- [iOS & Android] Enable Managed Browser revamp feature by default with silent mode as the managed browser. This change helps customers remediate from non-compliant cases, such as no device registration.
+
+## Version 130.0.2849.32 (Android and iOS): October 14, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.28 (Android and iOS): October 10, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.10 (iOS): September 30, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.6 (Android): September 27, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 130.0.2849.4 (iOS): September 26, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.58 (Android): September 24, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.51 (iOS): September 19, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 19.6.0
+- [iOS] Upgrade MS OneAuth SDK version 3.3.0
+- [iOS] Remove native AAD Copilot support
+
+### Bug fixes
+
+- [iOS] Fix managed bookmarks dismiss under AAD account (missing "XXX's Favorites" folder under favorites)
+- [iOS] Fix downloaded files not properly moved in work profile
+- [iOS] Fix a bug related to MAM Tunnel cannot be disconnected automatically when change to personal account
+- [iOS] Fix disableFeatures policy - InPrivate mode disablement bug & support policy auto change
+(The problem is when set `com.microsoft.intune.mam.managedbrowser.disabledFeatures='inprivate'`, the InPrivate mode can still be accessed, and the corresponding toolbar button remains functional. Expects the policy to support dynamic switching without needing to restart Edge. When InPrivate mode is disabled by the policy, the application should automatically exit InPrivate mode and close all open InPrivate tabs)
+
+### New Policies
+
+- [iOS] Support to disable Share and SendtoDevices via **DisableFeature** policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and `EdgeDisabledFeatures` in MDM now support to config to disable Share and Sendtodevices in overflow menu by value `share|sendtodevices`)
+
+### Enhancements
+
+- [iOS] Improve the transition user experience for account switcher in iPad
+- [iOS] Improve Web SSO for CMC (copilot.microsoft.com) login in MSA
+- [iOS] Improve the occurrence of re-sign-in prompts by disallow user interaction for proactive-auth
+- [iOS] Improve account verification by consider sync and news feed status
+- [iOS] General enhancements to NTLMSSO policies to make it more useful
+
+## Version 129.0.2792.49 (Android): September 19, 2024
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [Android] Upgrade Intune MAM SDK to version 10.4.0
+- [Android] Upgrade MS OneAuth SDK version 3.3.0
+- [Android] Remove native AAD Copilot support
+
+### New Policies
+
+- [Android] Support to disable Share and SendtoDevices via DisableFeature policy
+(`com.microsoft.intune.mam.managedbrowser.disabledFeatures` in MAM and EdgeDisabledFeatures in MDM now support to config to disable Share and Sendtodevices in overflow menu by value `share|sendtodevices`)
+
+### Enhancements
+
+- [Android] Improve the occurrence of re-sign-in prompts by disallow user interaction for proactive-auth
+- [Android] Improve account verification by consider sync and news feed status
+- [Android] General enhancements to NTLMSSO policies to make it more useful
+
+## Version 129.0.2792.37 (Android and iOS): September 12, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.33 (Android and iOS): September 10, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.24 (Android and iOS): September 5, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.20 (Android and iOS): September 3, 2024
+
+Fixed various bugs and performance issues.
+
+## Version 129.0.2792.11 (Android and iOS): August 29, 2024
+
+Fixed various bugs and performance issues.
 
 ## Version 128.0.2739.40 (Android and iOS): August 22, 2024
 

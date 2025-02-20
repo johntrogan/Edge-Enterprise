@@ -3,7 +3,7 @@ title: "Release notes for Microsoft Edge Security Updates"
 ms.author: pchiquini
 author: dan-wesley
 manager: robfranco
-ms.date: 08/22/2024
+ms.date: 02/05/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -16,9 +16,158 @@ description: "Release notes for Microsoft Edge Security Updates"
 
 These release notes provide information about security fixes that are included in updates to Microsoft Edge Stable channel.
 
+## February 19, 2025
+
+Microsoft is aware of the recent Chromium fixes. We are actively working on releasing a security fix.  
+
+## February 14, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 133.0.3065.69)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge specific security fixes:
+
+- [CVE-2025-21401](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21401)
+
+## February 6, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 133.0.3065.51)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2025-21253](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21253)
+- [CVE-2025-21404](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21404)
+- [CVE-2025-21267](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21267)
+- [CVE-2025-21279](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21279)
+- [CVE-2025-21283](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21283)
+- [CVE-2025-21408](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21408)
+- [CVE-2025-21342](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21342)
+
+## January 30, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.140)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## January 24, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.127)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2025-21262](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21262)
+
+## January 17, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.115)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2025-21399](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21399)
+- [CVE-2025-21185](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21185)
+
+## January 10, 2025
+
+Microsoft has released the latest **Microsoft  Edge Stable Channel (Version 131.0.2903.146 and Version 131.0.2903.147)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## December 19, 2024
+
+Microsoft has released the latest **Microsoft  Edge Stable Channel (Version 131.0.2903.112) And Extended Stable Channel (Version 130.0.2849.123)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## December 12, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 131.0.2903.99) And Extended Stable Channel (Version 130.0.2849.116)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+
+## December 5, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 131.0.2903.86)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2024-49041](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49041)
+
+## November 21, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 131.0.2903.63)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2024-49054](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49054)
+
+## November 14, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 131.0.2903.48)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2024-49025](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49025)
+
+## November 7, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 130.0.2849.80)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## October 31, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 130.0.2849.68)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## October 24, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 130.0.2849.56)** that incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## October 17, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 130.0.2849.46)** which incorporates the latest updates of the Chromium project.
+
+This update contains the following Microsoft Edge-specific updates:
+
+- [CVE-2024-43587](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43587)
+- [CVE-2024-43566](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43566)
+- [CVE-2024-43578](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43578)
+- [CVE-2024-43595](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43595)
+- [CVE-2024-43596](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43596)
+- [CVE-2024-43579](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43579)
+- [CVE-2024-43580](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43580)
+- [CVE-2024-43577](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43577)
+- [CVE-2024-49023](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-49023)
+
+## October 10, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 129.0.2792.89) and Microsoft Edge Extended Stable Channel (128.0.2739.113)** which incorporate the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## October 3, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 129.0.2792.79) and Microsoft Edge Extended Stable Channel (128.0.2739.107)** which incorporate the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## September 26, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 129.0.2792.65) and Microsoft Edge Extended Stable Channel (128.0.2739.97)** which incorporate the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+## September 19, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 129.0.2792.52) and Microsoft Edge Extended Stable Channel (128.0.2739.90)** which incorporate the latest updates of the Chromium project.
+
+This update contains the following Microsoft Edge-specific updates:
+
+- [CVE-2024-43489](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43489)
+- [CVE-2024-43496](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43496)
+- [CVE-2024-38221](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38221)
+
+## September 12, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 128.0.2739.79)** which incorporates the latest updates of the Chromium project.
+
+## September 3, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 128.0.2739.63)** which incorporates the latest updates of the Chromium project.
+
+## August 29, 2024
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 128.0.2739.54)** which incorporates the latest updates of the Chromium project.
+
 ## August 22, 2024
 
-Microsoft has a fix for [CVE-2024-7971](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7971) to **Microsoft Edge Stable Channel (Version 128.0.2739.42)** which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+Microsoft has a fix for [CVE-2024-7971](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7971) and [CVE-2024-7965](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7965) to **Microsoft Edge Stable Channel (Version 128.0.2739.42)** which have been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-7971](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7971). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
 
 This update contains the following Microsoft Edge-specific updates:
 
@@ -27,6 +176,7 @@ This update contains the following Microsoft Edge-specific updates:
 - [CVE-2024-38207](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38207)
 - [CVE-2024-38210](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38210)
 - [CVE-2024-38209](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38209)
+- [CVE-2024-38222](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38222)
 
 ## August 15, 2024
 
@@ -113,6 +263,9 @@ This update also contains the following Microsoft Edge-specific update:
 
 Microsoft has a fix for [CVE-2024-4947](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4947) to **Microsoft Edge Stable Channel (Version 124.0.2478.109) and Extended Stable channel (Version 124.0.2478.109)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4947](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4947). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
+
 This update also contains the following Microsoft Edge-specific update:
 
 - [CVE-2024-30056](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30056)
@@ -121,9 +274,15 @@ This update also contains the following Microsoft Edge-specific update:
 
 Microsoft has a fix for [CVE-2024-4761](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4761) to **Microsoft Edge Stable Channel and Extended Stable Channels, (Version 124.0.2478.105)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4761](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4761). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
+
 ## May 10, 2024
 
 Microsoft has a fix for [CVE-2024-4671](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4671) to **Microsoft Edge Stable Channel (Version 124.0.2478.97)**, which has been reported by the Chromium team as having an exploit in the wild. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+> [!NOTE]
+> It's worth highlighting that [Microsoft Edge's enhanced security mode](/DeployEdge/microsoft-edge-security-browse-safer) feature mitigates the vulnerability described in [CVE-2024-4671](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-4671). You can opt-in into this security feature and have peace of mind that Microsoft Edge is protecting you against this exploit.
 
 This update also contains the following Microsoft Edge-specific update:
 
