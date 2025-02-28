@@ -5,7 +5,7 @@ author: vmliramichael
 manager: alexyuan
 ms.date: 02/28/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: release-notes
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
