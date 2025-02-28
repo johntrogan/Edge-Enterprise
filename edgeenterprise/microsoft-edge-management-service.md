@@ -5,7 +5,7 @@ author: dan-wesley
 manager: archandr
 ms.date: 11/11/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: get-started
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
