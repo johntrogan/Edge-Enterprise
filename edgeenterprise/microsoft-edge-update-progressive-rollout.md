@@ -5,7 +5,7 @@ author: dan-wesley
 manager: srugh
 ms.date: 04/04/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: faq
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
