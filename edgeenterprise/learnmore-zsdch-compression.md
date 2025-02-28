@@ -5,7 +5,7 @@ author: dan-wesley
 manager: megp
 ms.date: 08/07/2022
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
