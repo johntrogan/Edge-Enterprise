@@ -5,7 +5,7 @@ author: AndreaLBarr
 manager: balajek
 ms.date: 07/20/2023
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
