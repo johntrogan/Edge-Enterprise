@@ -5,7 +5,7 @@ author: dan-wesley
 manager: archandr
 ms.date: 01/30/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
