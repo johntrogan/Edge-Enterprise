@@ -5,7 +5,7 @@ author: vmliramichael
 manager: likuba
 ms.date: 02/26/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: release-notes
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
