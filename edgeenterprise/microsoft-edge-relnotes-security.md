@@ -23,6 +23,8 @@ Microsoft has released the latest **Microsoft Edge Stable Channel (Version 134.0
 This update contains the following Microsoft Edge specific security fixes:
 
 - [CVE-2025-26643](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26643)
+- [CVE-2025-21401](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21401)
+- [CVE-2025-21262](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21262)
 
 ## February 27, 2025
 
