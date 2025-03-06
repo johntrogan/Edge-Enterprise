@@ -62,25 +62,15 @@ The following Dev channel updates preceded this Stable channel release. The foll
 #### New policies
 
 - [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) - Enable Work Search suggestions in the address bar
-
 - [DefaultJavaScriptOptimizerSetting](/deployedge/microsoft-edge-policies#defaultjavascriptoptimizersetting) - Control use of JavaScript optimizers
-
 - [IdleTimeout](/deployedge/microsoft-edge-policies#idletimeout) - Delay before running idle actions
-
 - [IdleTimeoutActions](/deployedge/microsoft-edge-policies#idletimeoutactions) - Actions to run when the computer is idle
-
 - [JavaScriptOptimizerAllowedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerallowedforsites) - Allow JavaScript optimization on these sites
-
 - [JavaScriptOptimizerBlockedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerblockedforsites) - Block JavaScript optimizations on these sites
-
 - [OopPrintDriversAllowed](/deployedge/microsoft-edge-policies#oopprintdriversallowed) - Out-of-process print drivers allowed
-
 - [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) - Configure Edge Scareware Blocker Protection
-
 - [ServiceWorkerToControlSrcdocIframeEnabled](/deployedge/microsoft-edge-policies#serviceworkertocontrolsrcdociframeenabled) - Allow ServiceWorker to control srcdoc iframes
-
 - [SharedWorkerBlobURLFixEnabled](/deployedge/microsoft-edge-policies#sharedworkerbloburlfixenabled) - Make SharedWorker blob URL behavior aligned with the specification
-
 - [WebAudioOutputBufferingEnabled](/deployedge/microsoft-edge-policies#webaudiooutputbufferingenabled) - Enable adaptive buffering for Web Audio
 
 #### Obsoleted policies
@@ -90,7 +80,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [LinkedAccountEnabled](/deployedge/microsoft-edge-policies#linkedaccountenabled) - Enable the linked account feature (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see Microsoft Edge 134 web platform release notes Mar. 2025.
+>For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025.](/microsoft-edge/web-platform/release-notes/134)
 
 ## Version 132.0.2957.178: February 27, 2025
 
