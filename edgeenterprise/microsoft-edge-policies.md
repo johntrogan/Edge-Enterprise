@@ -37,7 +37,7 @@ The following table lists the new, and deprecated policies that are in this arti
 |[NewTabPageCompanyLogoBackplateColor](#newtabpagecompanylogobackplatecolor)|Set the company logo backplate color on the new tab page.|
 |[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select\> element is enabled|
 
-## Available policies\
+## Available policies
 
 These tables list all of the browser-related group policies available in this release of Microsoft Edge. Use the links in the table to get more details about specific policies.
 
