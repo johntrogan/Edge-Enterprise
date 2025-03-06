@@ -47,7 +47,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
  
 ### Feature updates
 
-- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.  The [LinkedAccountEnabled](deployedge/microsoft-edge-policies#linkedaccountenabled) policy is also obsolete in Microsoft Edge version 134.
+- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.  The [LinkedAccountEnabled](/deployedge/microsoft-edge-policies#linkedaccountenabled) policy is also obsolete in Microsoft Edge version 134.
 
 - **Microsoft Search in Bing deprecation and policy updates.** Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, will be deprecated and obsoleted (non-functional) in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134.
 
