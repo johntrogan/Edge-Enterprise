@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 02/27/2025
+ms.date: 03/6/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -25,6 +25,62 @@ These release notes provide information about new features and nonsecurity updat
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 134.0.3124.51: March 6, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-06-2025).
+
+### Dev Channel updates
+
+The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 134.0.3081.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3081-2-is-live-/4370518)
+- [Dev Channel update to 134.0.3096.1 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3096-1-is-live-/4372525)
+- [Dev Channel update to 134.0.3109.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3109-0-is-live-/4374330)
+- [Dev Channel update to 134.0.3124.5 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-134-0-3124-5-is-live-/4377107)
+
+### Announcement
+
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally-trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+ 
+### Feature updates
+
+- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.  The [LinkedAccountEnabled](/deployedge/microsoft-edge-policies#linkedaccountenabled) policy is also obsolete in Microsoft Edge version 134.
+
+- **Microsoft Search in Bing deprecation and policy updates.** Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, will be deprecated and obsoleted (non-functional) in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134.
+
+- **Edge on macOS now seamlessly opens links in Teams.**  When Microsoft Edge is configured as the browser to open web links in Teams, then links in Teams chat will be opened through Edge, and Edge launches in the profile that matches with the authenticated profile, users can benefit from a seamless browsing experience that integrates their identity and user data across Microsoft apps. Administrators can control the availability of this feature using the "Choose Which Browser Opens Web Links" Microsoft 365 policy.
+
+- **Scareware blocker policy.**  Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks.  Scareware blocker is currently in preview and admins can control availability to this feature using the [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) Policy.  For more information, [see Stand up to scareware with scareware blocker, now available in preview in Microsoft Edge - Microsoft Edge Blog.](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/)
+
+- **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+### Policy updates
+
+#### New policies
+
+- [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) - Enable Work Search suggestions in the address bar
+- [DefaultJavaScriptOptimizerSetting](/deployedge/microsoft-edge-policies#defaultjavascriptoptimizersetting) - Control use of JavaScript optimizers
+- [IdleTimeout](/deployedge/microsoft-edge-policies#idletimeout) - Delay before running idle actions
+- [IdleTimeoutActions](/deployedge/microsoft-edge-policies#idletimeoutactions) - Actions to run when the computer is idle
+- [JavaScriptOptimizerAllowedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerallowedforsites) - Allow JavaScript optimization on these sites
+- [JavaScriptOptimizerBlockedForSites](/deployedge/microsoft-edge-policies#javascriptoptimizerblockedforsites) - Block JavaScript optimizations on these sites
+- [OopPrintDriversAllowed](/deployedge/microsoft-edge-policies#oopprintdriversallowed) - Out-of-process print drivers allowed
+- [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) - Configure Edge Scareware Blocker Protection
+- [ServiceWorkerToControlSrcdocIframeEnabled](/deployedge/microsoft-edge-policies#serviceworkertocontrolsrcdociframeenabled) - Allow ServiceWorker to control srcdoc iframes
+- [SharedWorkerBlobURLFixEnabled](/deployedge/microsoft-edge-policies#sharedworkerbloburlfixenabled) - Make SharedWorker blob URL behavior aligned with the specification
+- [WebAudioOutputBufferingEnabled](/deployedge/microsoft-edge-policies#webaudiooutputbufferingenabled) - Enable adaptive buffering for Web Audio
+
+#### Obsoleted policies
+
+- [UserAgentClientHintsGREASEUpdateEnabled](/deployedge/microsoft-edge-policies#useragentclienthintsgreaseupdateenabled) - Control the User-Agent Client Hints GREASE Update feature (obsolete)
+
+- [LinkedAccountEnabled](/deployedge/microsoft-edge-policies#linkedaccountenabled) - Enable the linked account feature (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 134 web platform release notes Mar. 2025.](/microsoft-edge/web-platform/release-notes/134)
 
 ## Version 132.0.2957.178: February 27, 2025
 
