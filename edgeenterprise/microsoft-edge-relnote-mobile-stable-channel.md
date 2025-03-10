@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Edge release notes for Mobile Stable Channel"
-ms.author: charlielinchfen
+ms.author: chfen
 author: vmliramichael
 manager: alexyuan
 ms.date: 03/01/2025
