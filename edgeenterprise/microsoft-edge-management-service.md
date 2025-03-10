@@ -122,7 +122,7 @@ Follow these steps to assign a configuration profile to a Microsoft Entra group:
 
     c. Extensions: In the **Default extension** settings section, you can modify the default settings that apply to all extensions in this configuration policy. In the **Managed extensions** section, select **Add extension** to add individual extensions (for example, Edge add-on, Sidebar app, or External extension) that you want to manage. Once added, select each extension to edit its specific settings.
 
-    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)) to create one.
+    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) to create one.
 
     e. Finish: Make sure that everything on this page looks correct, and then select **Review and create** to create your new configuration policy.
 
