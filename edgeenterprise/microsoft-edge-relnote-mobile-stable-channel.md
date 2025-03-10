@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Edge release notes for Mobile Stable Channel"
-ms.author: charlielin
+ms.author: chfen
 author: vmliramichael
 manager: alexyuan
 ms.date: 03/01/2025
@@ -22,6 +22,26 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
+
+## Version 134.0.3124.51 (iOS): March 10, 2025
+
+Fixed various bugs and performance issues, general updates, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.4
+- [iOS] Upgrade Intune MAM SDK to version 20.3.0
+
+### Bug fixes
+
+- [iOS] Fix the issue about APP Proxy fails to function properly due to CA Remediation Cache
+- [iOS] Fix the issue about sign-in page crash under InPrivate mode when launching
+- [iOS] Fix the issue about displaying a blocked message when clicking 'Open in Microsoft Edge'
+
+### New enhancements
+
+- [iOS] Improve the user experience of single device mode
+- [iOS] Improve the user experience about InPrivate mode
 
 ## Version 133.0.3065.92 (Android): March 1, 2025
 
