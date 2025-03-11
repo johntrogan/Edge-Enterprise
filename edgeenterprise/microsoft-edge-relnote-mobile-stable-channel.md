@@ -23,6 +23,18 @@ All the Stable channel security updates are listed in [Release notes for Microso
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
 
+## Version 134.0.3124.57 (Android): March 11, 2025
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### New Policies
+
+- [Android] Support manages web sub resource blocking policy By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as subresources within a web page, those subresource URLs aren't blocked. To further restrict these subresources, you can configure the new policy to block them. For example, if you set com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true, subresource URLs are blocked if they're listed as blocked.
+
+### Bug fixes
+
+- [Android] Fix managed bookmark does not show issue in first launch.
+
 ## Version 134.0.3124.51 (iOS): March 10, 2025
 
 Fixed various bugs and performance issues, general updates, and enhancements.
