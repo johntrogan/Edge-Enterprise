@@ -28,7 +28,7 @@ These release notes provide information about new features and nonsecurity updat
 
 ### Version v134.0.3124.62: March 11, 2025
 
-Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+Fixed various bugs and performance issues.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-11-2025).
 
