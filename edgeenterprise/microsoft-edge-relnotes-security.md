@@ -24,7 +24,7 @@ This update contains the following Microsoft Edge specific security fixes:
 
 - [CVE-2025-24201](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24201)
 
-## March 11, 2025
+## March 10, 2025
 
 Microsoft is aware of the recent exploits existing in the wild. We are actively working on releasing a security fix. 
 
