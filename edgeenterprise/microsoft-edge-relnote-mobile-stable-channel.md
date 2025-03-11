@@ -25,11 +25,11 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 ## Version 134.0.3124.57 (Android): March 11, 2025
 
-Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+Fixed various bugs and performance issues and new policies.
 
 ### New Policies
 
-- [Android] Support manages web sub resource blocking policy By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as subresources within a web page, those subresource URLs aren't blocked. To further restrict these subresources, you can configure the new policy to block them. For example, if you set com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true, subresource URLs are blocked if they're listed as blocked.
+- [Android] Support manages web sub resource blocking policy By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as subresources within a web page, those subresource URLs aren't blocked. To further restrict these subresources, you can configure the new policy to block them. For example, if you set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.
 
 ### Bug fixes
 
