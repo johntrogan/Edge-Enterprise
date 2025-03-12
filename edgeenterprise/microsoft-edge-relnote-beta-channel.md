@@ -25,6 +25,10 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 Fixed various bugs and performance issues.
 
+## Version 134.0.3124.62: March 11, 2025
+
+Fixed various bugs and performance issues.
+
 ## Version 134.0.3124.51: March 6, 2025
 
 Fixed various bugs and performance issues.
