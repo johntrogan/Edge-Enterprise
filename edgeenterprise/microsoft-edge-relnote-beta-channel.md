@@ -21,7 +21,7 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 135.x: March 13, 2025
+## Version 135.0.3179.11: March 13, 2025
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
 
@@ -58,7 +58,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 #### Deprecated policies
 
-- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar=
+- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar.
 
 #### Obsoleted policies
 
