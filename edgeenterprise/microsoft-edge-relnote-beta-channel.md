@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
-author: dan-wesley
+author: vmliramichael
 manager: likuba
-ms.date: 03/12/2025
+ms.date: 03/13/2025
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-edge
@@ -20,6 +20,52 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 135.x: March 13, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 135.0.3140.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3140-0-is-live-/4383911)
+- [Dev Channel update to 135.0.3154.3 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3154-3-is-live-/4387046)
+- [Dev Channel update to 135.0.3168.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3168-2-is-live-/4389589)
+
+### Announcements
+ 
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](https://learn.microsoft.com/en-us/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to the one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally-trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+
+- **Microsoft Search experience in the Microsoft Edge address bar.**  After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.  For more information, see [Guidance for retiring Microsoft Search in Bing for your organization](https://learn.microsoft.com/en-us/microsoftsearch/retirement-microsoft-search-bing).  **Note:** Microsoft Edge version 134.0.3134.51+ is required
+
+### Feature updates
+
+- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Commercial users, will have changing and updated functionalities. These changes will include renewed focus on productivity and M365 modules. New tab page policies will continue to be enforced and not impacted by this updated Work Feed experience.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **New Tab Page trending suggestions in address bar.**  On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions will appear in the address bar dropdown when users click the address bar.  Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled policy](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled).
+
+- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change will prevent users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
+
+### Policy updates
+
+#### New policies
+
+- [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) - Enable Microsoft Bing trending suggestions in the address bar
+- [NewTabPageCompanyLogoBackplateColor](/deployedge/microsoft-edge-policies#newtabpagecompanylogobackplatecolor) - Set the company logo backplate color on the new tab page
+- [PartitionedBlobUrlUsage](/deployedge/microsoft-edge-policies#partitionedbloburlusage) - Manage Blob URL Partitioning During Fetching and Navigation
+- [WebRtcIPHandlingUrl](/deployedge/microsoft-edge-policies#webrtciphandlingurl) - WebRTC IP Handling Policy for URL Patterns
+
+#### Deprecated policies
+
+- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar=
+
+#### Obsoleted policies
+
+- [RelatedMatchesCloudServiceEnabled](/deployedge/microsoft-edge-policies#relatedmatchescloudserviceenabled) - Configure Related Matches in Find on Page (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 135 web platform release notes April 2025](/microsoft-edge/web-platform/release-notes/135).
 
 ## Version 134.0.3124.66: March 12, 2025
 
