@@ -1,5 +1,5 @@
 ---
-title: "Allow list for Microsoft Edge endpoints"
+title: "Allowlist for Microsoft Edge endpoints"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
@@ -17,7 +17,7 @@ description: "Allow list for Microsoft Edge endpoints"
 Microsoft Edge requires connectivity to the Internet to support its features. This article identifies the domain URLs that you need to add to the Allow list to ensure communications through firewalls and other security mechanisms.
 
 > [!NOTE]
-> This applies  to Microsoft Edge version 77 or later.
+> Applies to Microsoft Edge version 77 or later.
 
 ## Domain URLs to allow
 
@@ -35,7 +35,7 @@ The service that Microsoft Edge uses to check for new updates.
 
 ### Download locations for Microsoft Edge
 
-Locations Microsoft Edge can be downloaded from during an initial install or when an update is available. The download location is determined by the Update Service.
+Locations Microsoft Edge can be downloaded from during an initial install or when an update is available. The download location determined by the Update Service.
 
 #### HTTP
 
@@ -56,7 +56,7 @@ Locations Microsoft Edge can be downloaded from during an initial install or whe
 
 ### Download locations for Microsoft Edge Extensions
 
-Locations Microsoft Edge Extensions can be downloaded from during an initial install or when an update is available. The download location is determined by the Update Service.
+Locations Microsoft Edge Extensions can be downloaded from during an initial install or when an update is available. The download location determined by the Update Service.
 
 #### HTTP
 
@@ -73,7 +73,14 @@ Locations Microsoft Edge Extensions can be downloaded from during an initial ins
 - `https://msedgeextensions.sb.dl.delivery.mp.microsoft.com`
 
   > [!TIP]
-  > To simplify the allow list for download locations a wild card can be used: `*.dl.delivery.mp.microsoft.com`
+  > To simplify the allowlist for download locations a wild card can be used: `*.dl.delivery.mp.microsoft.com`
+
+### Tab groups
+
+The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assigns them a name and a color.
+
+- `https://edge.microsoft.com/taggrouptitlegeneration/api/TitleGeneration/gen/`
+- `https://edge.microsoft.com/taggrouptitlegeneration/api/AutoGrouping/groupingacstreaming`
 
 ### Optionally for Download Delivery Optimization
 
@@ -125,7 +132,7 @@ The service that Microsoft Edge uses to download the configuration profiles. For
 
 ## Copilot and Sidebar
 
-The service that supports Copilot, and other apps, in the Edge sidebar.
+The service that supports Copilot, and other apps, in the Microsoft Edge sidebar.
 
 - `http://edgeservices.bing.com/`
 - `https://edgeservices.bing.com/`
@@ -141,7 +148,7 @@ The service that supports Microsoft Rewards.
 
 ## Web Content Filtering
 
-The service that supports Web Content Filtering. For more information, see [Configure Web Content Filtering on Edge](/deployedge/microsoft-edge-web-content-filtering).
+The service that supports Web Content Filtering. For more information, see [Configure Web Content Filtering on Microsoft Edge](/deployedge/microsoft-edge-web-content-filtering).
 
 - `https://edge.microsoft.com/webcontentfiltering/api/categories`
 - `https://edge.microsoft.com/webcontentfiltering/api/guestmode-categories`
@@ -156,7 +163,7 @@ The service that supports feedback and diagnostics for desktop and mobile users.
 
 ## Other browser support services
 
-Provide metadata for browser features such as tracking protection, certificate revocation lists, and other browser component updates. Provide downloadable spellcheck dictionaries and ad-blocking block lists. Provide services to support browser features such as collections, autofill, and extension store.
+Provide metadata for browser features such as tracking protection, certificate revocation lists, and other browser component updates. Provide downloadable spellcheck dictionaries and ad-blocking blocklists. Provide services to support browser features such as collections, autofill, and extension store.
 
 #### HTTP
 
