@@ -33,6 +33,10 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [Dev Channel update to 135.0.3154.3 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3154-3-is-live-/4387046)
 - [Dev Channel update to 135.0.3168.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3168-2-is-live-/4389589)
 
+### Fixes
+
+- Fixed an issue where AppLocker was blocking known DLLs such as well_known_domains.dll and domain_actions.dll
+
 ### Announcements
  
 - **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to the one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
