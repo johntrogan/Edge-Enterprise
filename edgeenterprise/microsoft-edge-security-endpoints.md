@@ -75,6 +75,13 @@ Locations Microsoft Edge Extensions can be downloaded from during an initial ins
   > [!TIP]
   > To simplify the allow list for download locations a wild card can be used: `*.dl.delivery.mp.microsoft.com`
 
+### Tab groups
+
+The service that supports AI-assisted tab group features. Auto-named tab groups automatically names tab groups upon creation and organize tabs groups tabs by relevance and assigns them a name and a color.
+
+- `https://edge.microsoft.com/taggrouptitlegeneration/api/TitleGeneration/gen/`
+- `https://edge.microsoft.com/taggrouptitlegeneration/api/AutoGrouping/groupingacstreaming`
+
 ### Optionally for Download Delivery Optimization
 
 For information about delivery optimization, see [Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization).
