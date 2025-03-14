@@ -1,5 +1,5 @@
 ---
-title: "Allow list for Microsoft Edge endpoints"
+title: "Allowlist for Microsoft Edge endpoints"
 ms.author: leahtu
 author: dan-wesley
 manager: archandr
@@ -56,7 +56,7 @@ Locations Microsoft Edge can be downloaded from during an initial install or whe
 
 ### Download locations for Microsoft Edge Extensions
 
-Locations Microsoft Edge Extensions can be downloaded from during an initial install or when an update is available. The download location is determined by the Update Service.
+Locations Microsoft Edge Extensions can be downloaded from during an initial install or when an update is available. The download location determined by the Update Service.
 
 #### HTTP
 
@@ -73,11 +73,11 @@ Locations Microsoft Edge Extensions can be downloaded from during an initial ins
 - `https://msedgeextensions.sb.dl.delivery.mp.microsoft.com`
 
   > [!TIP]
-  > To simplify the allow list for download locations a wild card can be used: `*.dl.delivery.mp.microsoft.com`
+  > To simplify the allowlist for download locations a wild card can be used: `*.dl.delivery.mp.microsoft.com`
 
 ### Tab groups
 
-The service that supports AI-assisted tab group features. Autonamed tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assign them a name and a color.
+The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assigns them a name and a color.
 
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/TitleGeneration/gen/`
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/AutoGrouping/groupingacstreaming`
