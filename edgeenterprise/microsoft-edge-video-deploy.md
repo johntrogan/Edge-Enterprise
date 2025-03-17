@@ -5,7 +5,7 @@ author: dan-wesley
 manager: seanlynd
 ms.date: 06/29/2021
 audience: ITPro
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
