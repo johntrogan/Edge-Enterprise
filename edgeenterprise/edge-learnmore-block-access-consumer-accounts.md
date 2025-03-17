@@ -5,7 +5,7 @@ author: dan-wesley
 manager: collw
 ms.date: 03/30/2023
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.custom: generated
 ms.service: microsoft-edge
 ms.localizationpriority: medium

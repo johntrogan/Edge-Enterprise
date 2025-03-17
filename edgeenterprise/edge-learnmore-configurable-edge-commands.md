@@ -5,7 +5,7 @@ author: dan-wesley
 manager: seanlynd
 ms.date: 03/16/2022
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop

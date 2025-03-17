@@ -5,7 +5,7 @@ author: dan-wesley
 manager: robfranco
 ms.date: 03/11/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: release-notes
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop

@@ -5,7 +5,7 @@ author: dan-wesley
 manager: likuba
 ms.date: 11/04/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
