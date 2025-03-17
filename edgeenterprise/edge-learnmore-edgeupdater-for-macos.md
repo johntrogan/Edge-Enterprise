@@ -5,7 +5,7 @@ author: dan-wesley
 manager: edmaurer
 ms.date: 03/17/2023
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
