@@ -54,6 +54,9 @@ Enterprises can use [ExemptFileTypeDownloadWarnings](/deployedge/microsoft-edge-
 `[{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
 {"file_extension":"msg", "domains": ["*"]}]`
 
+> [!NOTE]
+> A download generated with a [Data URL](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data) cannot be exempted from download warnings for a specific domain, as it does not have an intrinsic origin. If this is required, a [Blob object](https://developer.mozilla.org/en-US/docs/Web/API/Blob) should be used instead.
+
 ### Update for Edge Version 132
 
 With the release of Edge Version 132.0.2915.0, a change was introduced that affects the handling of `.crx` files (Chrome extension files). The `DownloadRestrictions` policy now blocks the download of `.crx` files if configured to block dangerous file types (options 1, 2, or 3). This change was introduced through Chromium and is documented in the Chromium code review.
