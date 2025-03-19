@@ -1,9 +1,9 @@
 ---
 title: "Release notes for Microsoft Edge Security Updates"
 ms.author: pchiquini
-author: dan-wesley
+author: vmliramichael
 manager: robfranco
-ms.date: 03/11/2025
+ms.date: 03/19/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -15,6 +15,10 @@ description: "Release notes for Microsoft Edge Security Updates"
 # Release notes for Microsoft Edge Security Updates
 
 These release notes provide information about security fixes that are included in updates to Microsoft Edge Stable channel.
+
+## March 19, 2025
+
+Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix. 
 
 ## March 13, 2025
 
