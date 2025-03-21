@@ -26,6 +26,15 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 134.0.3124.83: March 21, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-21-2025).
+
+### Fixes
+
+- Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users will need to restart their browser to receive the fix.
 
 ## Version 134.0.3124.72: March 17, 2025
 
