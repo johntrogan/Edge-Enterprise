@@ -20,7 +20,7 @@ The Microsoft Edge management service is a platform in the Microsoft 365 admin c
 ## Prerequisites
 
 - You must have Microsoft Edge 115.0.1901.7 or greater installed.
-- You must be a [Microsoft Edge Administrator](/azure/active-directory/roles/permissions-reference#edge-administrator) to access the experience in Microsoft 365 Admin Center.
+- You must be a [Microsoft Edge Administrator](/azure/active-directory/roles/permissions-reference#edge-administrator) to access the experience in Microsoft 365 Admin Center (Note: GDAP roles are currently not fully supported).
 - You must be using one of the following supported operating systems: Windows 10/11 or Windows Server 2016 or later. See [Microsoft Edge Supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) for specifics.
 
 > [!IMPORTANT]
