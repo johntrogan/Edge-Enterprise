@@ -77,7 +77,7 @@ Locations Microsoft Edge Extensions can be downloaded from during an initial ins
 
 ### Tab groups
 
-The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assigns them a name and a color.
+The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assign them a name and a color.
 
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/TitleGeneration/gen/`
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/AutoGrouping/groupingacstreaming`
@@ -104,7 +104,7 @@ These endpoints are required to ensure proper profile sign-in for both Microsoft
 - `https://cdn.odc.officeapps.live.com`
 - `https://logincdn.msauth.net`
 
-**Note:** This list of endpoints is not exhaustive and may be updated over time. Please refer to official documentation for the latest required endpoints as changes may occur.
+**Note:** This list of endpoints isn't exhaustive and may be updated over time. Refer to official documentation for the latest required endpoints as changes may occur.
 
 ### Sync
 
