@@ -36,6 +36,10 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 - Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users will need to restart their browser to receive the fix.
 
+### Improved reliability
+
+- Fixed a browser crash which occurred when starting the Microsoft Edge browser programmatically using --inprivate and --app (application mode) via the command line. 
+
 ## Version 134.0.3124.72: March 17, 2025
 
 Fixed various bugs and performance issues.
