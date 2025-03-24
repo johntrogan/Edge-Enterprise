@@ -77,7 +77,7 @@ Locations Microsoft Edge Extensions can be downloaded from during an initial ins
 
 ### Tab groups
 
-The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assigns them a name and a color.
+The service that supports AI-assisted tab group features. Auto-named tab groups automatically name tab groups upon creation and organize tabs groups tabs by relevance and assign them a name and a color.
 
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/TitleGeneration/gen/`
 - `https://edge.microsoft.com/taggrouptitlegeneration/api/AutoGrouping/groupingacstreaming`
@@ -88,6 +88,23 @@ For information about delivery optimization, see [Delivery Optimization for Wind
 
 - Client to Service communication: `*.do.dsp.mp.microsoft.com` (HTTP Port 80, HTTPS Port 443)
 - Client to Client communication: TCP port 7680 should be open for inbound traffic
+
+### Sign In
+
+These endpoints are required to ensure proper profile sign-in for both Microsoft personal accounts and Entra ID (formerly Azure AD) enterprise accounts.
+
+- `https://login.live.com`
+- `https://login.microsoftonline.com`
+- `https://login.microsoft.com`
+- `https://login.windows.net`
+- `https://odc.officeapps.live.com`
+- `https://graph.microsoft.com`
+- `https://substrate.office.com`
+- `https://privacy.microsoft.com`
+- `https://cdn.odc.officeapps.live.com`
+- `https://logincdn.msauth.net`
+
+**Note:** This list of endpoints isn't exhaustive and may be updated over time. Refer to official documentation for the latest required endpoints as changes may occur.
 
 ### Sync
 
