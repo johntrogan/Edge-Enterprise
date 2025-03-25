@@ -145,6 +145,9 @@
            href: microsoft-edge-connectors-Symantec.md
       - name: Reporting
         items:
+         - name: General Reporting Overview
+           href: microsoft-edge-General-Report-Overview.md      
+        items:
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
    - name: Microsoft Edge Workspaces
