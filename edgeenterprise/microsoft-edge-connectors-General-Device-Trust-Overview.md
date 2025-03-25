@@ -15,11 +15,11 @@ description: "Device Trust"
 
 # General Device Trust Overview
 
-Microsoft Edge for Business Device Trust connectors enable admins to strengthen their organization’s security posture within the browser. Device trust connectors enable IDPs to obtain device-level signals directly from Edge for Business during user authentication flows. These signals will be sent to and verified by the IDP before a user can authenticate to a specified resource.
+Microsoft Edge for Business Device Trust connectors enable admins to strengthen their organization’s security posture within the browser. Device trust connectors enable IDPs to obtain device-level signals directly from Microsoft Edge for Business during user authentication flows. These signals are sent to and verified by the IDP before a user can authenticate to a specified resource.
 
 ## Signals
 
-The following signals will be sent to the IDP during the device trust flow:
+The following signals are sent to the IDP during the device trust flow:
 
 1. Device Manufacturer  
 2. Device Model  
@@ -32,7 +32,7 @@ The following signals will be sent to the IDP during the device trust flow:
 9. System DNS Servers  
 10. Hostname  
 11. MAC Addresses  
-12. Screen Lock Secured State  
+12. Screen Locks Secured State  
 13. Secure Boot Mode (Windows only)  
 14. Windows Machine Domain  
 15. Windows User Domain  
@@ -58,7 +58,7 @@ Use these steps to access the experience:
 ## Create a Configuration Profile
 
 *Admin must have a configuration profile to link each connector configuration to.*  
-*Link to walkthrough to create a profile.*
+*Link to walk through to create a profile.*
 
 ## Set Up a Device Trust Connector
 
@@ -75,9 +75,9 @@ Use these steps to access the experience:
 - Secure data handling practices to maintain user privacy.
 
 ### Troubleshooting and FAQ
-- TBD: will get feedback from the team.
+- TBD: feedback from the team.
 
 ## Resources
 
 *Links to ISV documentation / EMX docs?*  
-- TBD: will get feedback from the team.
+- TBD: feedback from the team.

@@ -10,12 +10,12 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Genereal Analysis"
+description: "General Analysis"
 ---
 
 # Analysis Connector Overview
 
-Microsoft Edge for Business Analysis connectors enable Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
+Microsoft Edge for Business Analysis connectors enable Microsoft Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
 When enabled, Microsoft Edge sends content from specific user actions to the on-device agent and waits for the verdict before proceeding.
 
 ## User Actions
