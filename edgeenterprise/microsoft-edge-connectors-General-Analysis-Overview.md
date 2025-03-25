@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Browser Analysis Overview"
+title: "Microsoft Edge Content Analysis Connectors"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -10,10 +10,10 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "General Analysis"
+description: "Content Analysis Connectors"
 ---
 
-# Analysis Overview
+# Content Analysis Connectors
 
 Microsoft Edge for Business Analysis connectors enable Microsoft Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
 When enabled, Microsoft Edge sends content from specific user actions to the on-device agent and waits for the verdict before proceeding.

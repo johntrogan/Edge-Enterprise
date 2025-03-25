@@ -27,5 +27,7 @@ description: "Duo"
 5. Enter the name of the service account.  
 6. Select **Add configuration**.  
 
-## Cisco Duo Configuration / Admin Portal Setup
+## Cisco Duo Configuration 
+
+### Admin Portal Setup
 *[PARTNER ASSET: configuration steps]*

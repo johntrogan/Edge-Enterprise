@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Device Trust Overview"
+title: "Microsoft Edge Device Trust Connectors"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -10,10 +10,10 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Device Trust"
+description: "Device Trust Connectors"
 ---
 
-# Device Trust Overview
+# Device Trust Connectors
 
 Microsoft Edge for Business Device Trust connectors enable admins to strengthen their organization’s security posture within the browser. Device trust connectors enable IDPs to obtain device-level signals directly from Microsoft Edge for Business during user authentication flows. These signals are sent to and verified by the IDP before a user can authenticate to a specified resource.
 
@@ -62,7 +62,7 @@ Use these steps to access the experience:
 
 ## Set Up a Device Trust Connector
 
-*Link to all the subpages?*
+- [Duo Connector Setup](/microsoft-edge-connectors-Duo.md)
 
 ## Privacy and Compliance
 

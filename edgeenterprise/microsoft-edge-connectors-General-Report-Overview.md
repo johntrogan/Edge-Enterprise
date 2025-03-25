@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge General Report Overview"
+title: "Microsoft Edge Reporting Connectors"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -10,18 +10,16 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Genereal Analysis"
+description: "Reporting Connectors"
 ---
 
-# Reporting Overview
+# Reporting Connectors
 
 Microsoft Edge for Business Reporting connectors enable admins to send user security events from the browser to participating provider endpoints.
 
 ## Security Events
 
 The following security events can be enabled in a reporting connector:
-
-### Edge Connector Reporting Events
 
 | Event Value               | Event Description                                                                                   |
 |---------------------------|------------------------------------------------------------------------------------------------------|

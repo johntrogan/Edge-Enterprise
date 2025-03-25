@@ -28,6 +28,7 @@ description: "Symantec"
 5. Select **Test connection** to ensure the connection to the specified endpoint can be established.  
 6. Select **Add configuration**.
 
-## Symantec Configuration / Admin Portal Setup
+## Symantec Configuration 
 
+### Admin Portal Setup
 *[PARTNER ASSET: configuration steps]*

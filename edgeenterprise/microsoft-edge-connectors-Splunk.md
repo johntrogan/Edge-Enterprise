@@ -27,6 +27,7 @@ description: "Splunk"
 4. Select the desired user action toggles.  
 5. Select **Add configuration**.  
 
-## Splunk Configuration / Admin Portal Setup
+## Splunk Configuration 
 
+### Admin Portal Setup
 *[PARTNER ASSET: configuration steps]*
