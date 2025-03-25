@@ -62,7 +62,7 @@ Use these steps to access the experience:
 
 ## Set Up a Device Trust Connector
 
-- [Duo Connector Setup](/microsoft-edge-connectors-Duo.md)
+- [Duo Connector Setup](/microsoft-edge-connectors-Duo)
 
 ## Privacy and Compliance
 

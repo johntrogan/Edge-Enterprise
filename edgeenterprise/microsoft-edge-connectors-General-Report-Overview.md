@@ -20,7 +20,6 @@ Microsoft Edge for Business Reporting connectors enable admins to send user secu
 ## Security Events
 
 The following security events can be enabled in a reporting connector:
-
 | Event Value               | Event Description                                                                                   |
 |---------------------------|------------------------------------------------------------------------------------------------------|
 | Browser crash             | Browser or tab crashed (only reported when device-level reporting is available).                    |
