@@ -126,7 +126,7 @@
         href: microsoft-edge-management-service-office-mip.md
    - name: Connectors
      items:
-      - name: Device Trust
+      - name: Device Trust Connectors
         items:
          - name: Device Trust Connectors
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
@@ -136,13 +136,13 @@
            href: microsoft-edge-connectors-Ping.md
          - name: RSA
            href: microsoft-edge-connectors-RSA.md
-      - name: Analysis
+      - name: Content Analysis Connectors
         items:
          - name: Content Analysis Connectors
            href: microsoft-edge-connectors-General-Analysis-Overview.md
          - name: Symantec
            href: microsoft-edge-connectors-Symantec.md
-      - name: Reporting
+      - name: Reporting Connectors
         items:
          - name: Reporting Connectors
            href: microsoft-edge-connectors-General-Report-Overview.md      
