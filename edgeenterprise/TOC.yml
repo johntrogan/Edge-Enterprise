@@ -128,7 +128,7 @@
      items:
       - name: Device Trust
         items:
-         - name: General Device Trust Overview
+         - name: Device Trust Connectors
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
          - name: Duo
            href: microsoft-edge-connectors-Duo.md
@@ -138,13 +138,13 @@
            href: microsoft-edge-connectors-RSA.md
       - name: Analysis
         items:
-         - name: General Analysis Overview
+         - name: Content Analysis Connectors
            href: microsoft-edge-connectors-General-Analysis-Overview.md
          - name: Symantec
            href: microsoft-edge-connectors-Symantec.md
       - name: Reporting
         items:
-         - name: General Reporting Overview
+         - name: Reporting Connectors
            href: microsoft-edge-connectors-General-Report-Overview.md      
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
