@@ -13,7 +13,7 @@ ms.custom: generated
 description: "General Analysis"
 ---
 
-# Analysis Connector Overview
+# Analysis Overview
 
 Microsoft Edge for Business Analysis connectors enable Microsoft Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
 When enabled, Microsoft Edge sends content from specific user actions to the on-device agent and waits for the verdict before proceeding.

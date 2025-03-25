@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Genereal Analysis"
 ---
 
-# Reporting Connectors
+# Reporting Overview
 
 Microsoft Edge for Business Reporting connectors enable admins to send user security events from the browser to participating provider endpoints.
 

@@ -12,9 +12,8 @@ ms.collection: M365-modern-desktop
 ms.custom: generated
 description: "Duo"
 ---
-# Cisco Duo
+# Cisco Duo Connector Overview
 
-## Connector Overview
 *[PARTNER ASSET: Description of connector]*
 
 ## Connector Setup and Configuration Steps
