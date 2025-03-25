@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Edge release notes for Mobile Stable Channel"
-ms.author: charlielin
+ms.author: chfen
 author: vmliramichael
 manager: alexyuan
-ms.date: 02/21/2025
+ms.date: 03/17/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: release-notes
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
@@ -22,6 +22,58 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
+
+## Version 134.0.3124.77 (Android and iOS): March 24, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.68 (Android and iOS): March 17, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.57 (Android): March 11, 2025
+
+Fixed various bugs and performance issues and new policies.
+
+### New Policies
+
+- [Android] Support manages web sub resource blocking policy By default, AllowListURLs and BlockListURLs apply only at the navigation level. When you embed blocked URLs (either URLs configured in BlockListURLs or URLs not configured in AllowListURLs) as subresources within a web page, those subresource URLs aren't blocked. To further restrict these subresources, you can configure the new policy to block them. For example, if you set `com.microsoft.intune.mam.managedbrowser.ManageRestrictedSubresourceEnabled=true`, subresource URLs are blocked if they're listed as blocked.
+
+### Bug fixes
+
+- [Android] Fix managed bookmark does not show issue in first launch.
+
+## Version 134.0.3124.51 (iOS): March 10, 2025
+
+Fixed various bugs and performance issues, general updates, and enhancements.
+
+### General updates
+
+- [iOS] Upgrade MAM Tunnel SDK to version 1.2.4
+- [iOS] Upgrade Intune MAM SDK to version 20.3.0
+
+### Bug fixes
+
+- [iOS] Fix the issue about APP Proxy fails to function properly due to CA Remediation Cache
+- [iOS] Fix the issue about sign-in page crash under InPrivate mode when launching
+- [iOS] Fix the issue about displaying a blocked message when clicking 'Open in Microsoft Edge'
+
+### New enhancements
+
+- [iOS] Improve the user experience of single device mode
+- [iOS] Improve the user experience about InPrivate mode
+
+## Version 133.0.3065.92 (Android): March 1, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 133.0.3065.92 (iOS): February 28, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 133.0.3065.80 (Android): February 24, 2025
+
+Fixed various bugs and performance issues.
 
 ## Version 133.0.3065.80 (iOS): February 21, 2025
 

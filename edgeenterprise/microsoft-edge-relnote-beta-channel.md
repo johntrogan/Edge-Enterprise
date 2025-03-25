@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
-author: dan-wesley
+author: vmliramichael
 manager: likuba
-ms.date: 02/10/2025
+ms.date: 03/18/2025
 audience: ITPro
-ms.topic: conceptual
+ms.topic: release-notes
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
@@ -20,6 +20,88 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 135.0.3179.21: March 18, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 135.0.3179.18: March 17, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 135.0.3179.11: March 13, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 135.0.3140.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3140-0-is-live-/4383911)
+- [Dev Channel update to 135.0.3154.3 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3154-3-is-live-/4387046)
+- [Dev Channel update to 135.0.3168.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-135-0-3168-2-is-live-/4389589)
+
+### Fixes
+
+- Fixed an issue where AppLocker was blocking known DLLs such as well_known_domains.dll and domain_actions.dll
+
+### Announcements
+ 
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to the one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+
+- **Microsoft Search experience in the Microsoft Edge address bar.**  After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.  For more information, see [Guidance for retiring Microsoft Search in Bing for your organization](/microsoftsearch/retirement-microsoft-search-bing).  **Note:** Microsoft Edge version 134.0.3134.51+ is required
+
+### Feature updates
+
+- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Commercial users, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **New Tab Page trending suggestions in address bar.**  On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar.  Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled policy](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled).
+
+- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
+
+### Policy updates
+
+#### New policies
+
+- [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) - Enable Microsoft Bing trending suggestions in the address bar
+- [NewTabPageCompanyLogoBackplateColor](/deployedge/microsoft-edge-policies#newtabpagecompanylogobackplatecolor) - Set the company logo backplate color on the new tab page
+- [PartitionedBlobUrlUsage](/deployedge/microsoft-edge-policies#partitionedbloburlusage) - Manage Blob URL Partitioning During Fetching and Navigation
+- [WebRtcIPHandlingUrl](/deployedge/microsoft-edge-policies#webrtciphandlingurl) - WebRTC IP Handling Policy for URL Patterns
+
+#### Deprecated policies
+
+- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar.
+
+#### Obsoleted policies
+
+- [RelatedMatchesCloudServiceEnabled](/deployedge/microsoft-edge-policies#relatedmatchescloudserviceenabled) - Configure Related Matches in Find on Page (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 135 web platform release notes April 2025](/microsoft-edge/web-platform/release-notes/135).
+
+## Version 134.0.3124.66: March 12, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.62: March 11, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.51: March 6, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.49: March 6, 2025
+
+Fixed various bugs and performance issues. 
+
+## Version 134.0.3124.39: February 28, 2025
+
+Fixed various bugs and performance issues. 
+
+## Version 134.0.3124.31: February 24, 2025
+
+Fixed various bugs and performance issues. 
 
 ## Version 134.0.3124.19: February 18, 2025
 
@@ -39,7 +121,7 @@ The following Dev channel updates preceded this Beta channel release. These note
  
 ### Announcement
 
-**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Edge will introduce support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
+**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Edge introduces support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
  
 A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
 
@@ -139,7 +221,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [CA Certificates](/deployedge/microsoft-edge-policies#cacertificates) - TLS server certificates that should be trusted by Microsoft Edge
 - [CACertificatesWithConstraints](/deployedge/microsoft-edge-policies#cacertificateswithconstraints) - TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints
 - [CADistrustedCertificates](/deployedge/microsoft-edge-policies#cadistrustedcertificates) - TLS certificates that should be distrusted by Microsoft Edge for server authentication
-- [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that are not trusted or distrusted but can be used in path-building for server authentication
+- [CAHintCertificates](/deployedge/microsoft-edge-policies#cahintcertificates) - TLS certificates that aren't trusted or distrusted but can be used in path-building for server authentication
 - [CAPlatformIntegrationEnabled](/deployedge/microsoft-edge-policies#caplatformintegrationenabled) - Use user-added TLS certificates from platform trust stores for server authentication
 - [DataURLWhitespacePreservationEnabled](/deployedge/microsoft-edge-policies#dataurlwhitespacepreservationenabled) - DataURL Whitespace Preservation for all media types
 - [EdgeSidebarAppUrlHostForceList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostforcelist) - Control which apps are forced to be shown in Microsoft Edge sidebar
@@ -150,7 +232,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 #### Obsoleted policies
 
 - [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (obsolete)
-- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
+- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated: --foo syntax for CSS custom state is enabled (obsolete)
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
 
 ### Site compatibility impacting changes
@@ -193,9 +275,9 @@ The following Dev channel updates preceded this Beta channel release. These note
 
     The canonical example is that a `<select>` picker is open (`popover=auto`) and a hover-triggered tooltip (`popover=hint`) is shown. That action doesn't close the `<select>` picker.
 
-- **Popover invoker and anchor positioning improvements.** Adds an imperative way to set invoker relationships between popovers with `popover.showPopover({source})`. Enables invoker relationships to create implicit anchor element references.
+- **Pop over invoker and anchor positioning improvements.** Adds an imperative way to set invoker relationships between popovers with `popover.showPopover({source})`. Enables invoker relationships to create implicit anchor element references.
 
-- **Popover nested inside invoker shouldn't re-invoke it.** In the following case clicking the button properly activates the popover, however, clicking on the popover itself after that shouldn't close the popover.
+- **Pop over nested inside invoker shouldn't re-invoke it.** In the following case clicking the button properly activates the popover, however, clicking on the popover itself after that shouldn't close the popover.
 
   ```css
   <button popovertarget=foo>Activate
@@ -243,7 +325,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Support creating `ClipboardItem` with `Promise<DOMString>.`**  The `ClipboardItem`, which is the input to the async clipboard `write()` method, now accepts string values in addition to Blobs in its constructor. `ClipboardItemData` can be a Blob, a string, or a Promise that resolves to either a Blob or a string.
 
-- **WebAssembly Memory64.** The [memory64 proposal](https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md) adds support for linear WebAssembly memories with size larger than 2^32 bits. It provides no new instructions, but instead extends the existing instructions to allow 64-bit indexes for memories and tables.
+- **WebAssembly Memory64.** The [memory64 proposal](https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md) adds support for linear WebAssembly memories with size larger than two^32 bits. It provides no new instructions, but instead extends the existing instructions to allow 64-bit indexes for memories and tables.
 
 - **Web Authentication API: PublicKeyCredential `getClientCapabilities()` method.** The PublicKeyCredential `getClientCapabilities()` method lets you determine which WebAuthn features are supported by the user's client. The method returns a list of supported capabilities, allowing developers to tailor authentication experiences and workflows based on the client's specific functionality.
 
@@ -295,7 +377,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Deprecation of Microsoft Edge Support page.** To improve end user experience, *edge://support* is being deprecated. The information found on *edge://support* is available on other pages: *edge://version*, *edge://metrics-internals*, *edge://extensions*, and *edge://policy*.
 
-- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users will not be allowed to generate images and they see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **AI theme generator.** Microsoft Edge includes an AI theme generator that allows users to input a text string and generate a series of images to preview as browser themes. Applying the theme includes setting the generated image on the Microsoft Edge new tab page and applying the image's dominant color to the browser frame.  Users can now find a new entry point in *edge://settings/appearance* which directs them to [AI Theme Generator: Create a Custom Browser Theme](https://www.microsoft.com/en-us/edge/create-a-theme?ep=762&es=147&form=MT00OT). Admins can control availability to this feature using the [AIGenThemesEnabled](/deployedge/microsoft-edge-policies#aigenthemesenabled) policy. If an admin chooses to disable the feature via policy, the page linked in Microsoft Edge Settings is available, but users won't be allowed to generate images and they see an error message. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 ## Version 132.0.2957.11: November 22, 2024
 
@@ -396,15 +478,15 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Microsoft Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
 
-- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries to be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
+- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
-- **Throw exception for popovers and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Microsoft Edge 132, these situations now throw `InvalidStateError`.
+- **Throw exception for pop overs and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Microsoft Edge 132, these situations now throw `InvalidStateError`.
 
 - **WebAuthn Signal API.** Allows WebAuthn relying parties to signal information about existing credentials back to credential storage providers, so that incorrect or revoked credentials can be updated or removed from provider and system UI.
 
 - **WebGPU: 32-bit float textures blending.** The `float32-blendable` GPU feature makes GPU textures with formats `r32float`, `rg32float`, and `rgba32float` blendable.
 
-- **WebGPU: Expose GPUAdapterInfo from GPUDevice.** The GPUDevice `adapterInfo` attribute exposes the same `GPUAdapterInfo` as the `GPUAdapter` object.
+- **WebGPU: Expose GPUAdapterInfo from GPU Device.** The GPU Device `adapterInfo` attribute exposes the same `GPUAdapterInfo` as the `GPUAdapter` object.
 
 - **WebGPU: Texture view usage.** Adds an optional field to WebGPU texture view creation to request a subset of the usage flags from the source texture.
 
@@ -545,7 +627,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove the CSS Anchor Positioning property `inset-area`.** With the CSS Working Group resolution on renaming the `inset-area` property to `position-area`, this removal cleans up the implementation for a standards compliant feature.
 
-- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they've removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
+- **Remove non-standard GPU Adapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they've removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
 
 ### Policy updates
 

@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
-author: vmliramichael
+author: dan-wesley
 manager: venkatk
-ms.date: 02/15/2025
+ms.date: 03/13/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -32,9 +32,11 @@ The following table lists the new, and deprecated policies that are in this arti
 
 | Policy Name | Caption |
 |:-----|:-----|
-|[WebRtcIPHandlingUrl](#webrtciphandlingurl)|WebRTC IP Handling Policy for URL Patterns|
-|[WebRtcLocalhostIpHandling](#webrtclocalhostiphandling)|Restrict exposure of local IP address by WebRTC|
-|[AddressBarTrendingSuggestEnabled](#addressbartrendingsuggestenabled)|Enable Microsoft Bing trending suggestions in the address bar|
+|[SwitchIntranetSitesToWorkProfile](#switchintranetsitestoworkprofile)|Switch intranet sites to a work or school profile|
+|[SwitchSitesOnIEModeSiteListToWorkProfile](#switchsitesoniemodesitelisttoworkprofile)|Switch sites on the IE mode site list to a work or school profile|
+|[OrganizationLogoOverlayOnAppIconEnabled](#organizationlogooverlayonappiconenabled)|Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile|
+|[OrganizationalBrandingOnWorkProfileUIEnabled](#organizationalbrandingonworkprofileuienabled)|Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select\> element is enabled|
 
 ## Available policies
 
@@ -152,6 +154,7 @@ These tables list all of the browser-related group policies available in this re
 |[LegacySameSiteCookieBehaviorEnabledForDomainList](#legacysamesitecookiebehaviorenabledfordomainlist)|Revert to legacy SameSite behavior for cookies on specified sites (obsolete)|
 |[NotificationsAllowedForUrls](#notificationsallowedforurls)|Allow notifications on specific sites|
 |[NotificationsBlockedForUrls](#notificationsblockedforurls)|Block notifications on specific sites|
+|[PartitionedBlobUrlUsage](#partitionedbloburlusage)|Manage Blob URL Partitioning During Fetching and Navigation|
 |[PluginsAllowedForUrls](#pluginsallowedforurls)|Allow the Adobe Flash plug-in on specific sites (obsolete)|
 |[PluginsBlockedForUrls](#pluginsblockedforurls)|Block the Adobe Flash plug-in on specific sites (obsolete)|
 |[PopupsAllowedForUrls](#popupsallowedforurls)|Allow pop-up windows on specific sites|
@@ -256,14 +259,14 @@ These tables list all of the browser-related group policies available in this re
 |[EdgeDefaultProfileEnabled](#edgedefaultprofileenabled)|Default Profile Setting Enabled|
 |[GuidedSwitchEnabled](#guidedswitchenabled)|Guided Switch Enabled|
 |[ImplicitSignInEnabled](#implicitsigninenabled)|Enable implicit sign-in|
-|[LinkedAccountEnabled](#linkedaccountenabled)|Enable the linked account feature|
+|[LinkedAccountEnabled](#linkedaccountenabled)|Enable the linked account feature (obsolete)|
 |[OneAuthAuthenticationEnforced](#oneauthauthenticationenforced)|OneAuth Authentication Flow Enforced for signin|
 |[OnlyOnPremisesImplicitSigninEnabled](#onlyonpremisesimplicitsigninenabled)|Only on-premises account enabled for implicit sign-in|
 |[ProactiveAuthWorkflowEnabled](#proactiveauthworkflowenabled)|Enable proactive authentication|
 |[SeamlessWebToBrowserSignInEnabled](#seamlesswebtobrowsersigninenabled)|Seamless Web To Browser Sign-in Enabled|
 |[SignInCtaOnNtpEnabled](#signinctaonntpenabled)|Enable sign in click to action dialog (obsolete)|
-|[SwitchIntranetSitesToWorkProfile](#switchintranetsitestoworkprofile)|Switch intranet sites to a work profile|
-|[SwitchSitesOnIEModeSiteListToWorkProfile](#switchsitesoniemodesitelisttoworkprofile)|Switch sites on the IE mode site list to a work profile|
+|[SwitchIntranetSitesToWorkProfile](#switchintranetsitestoworkprofile)|Switch intranet sites to a work or school profile|
+|[SwitchSitesOnIEModeSiteListToWorkProfile](#switchsitesoniemodesitelisttoworkprofile)|Switch sites on the IE mode site list to a work or school profile|
 |[WAMAuthBelowWin10RS3Enabled](#wamauthbelowwin10rs3enabled)|WAM for authentication below Windows 10 RS3 enabled|
 |[WebToBrowserSignInEnabled](#webtobrowsersigninenabled)|Web To Browser Sign-in Enabled|
 ### [*Idle Browser Actions*](#idle-browser-actions-policies)
@@ -433,6 +436,7 @@ These tables list all of the browser-related group policies available in this re
 |[NewTabPageAppLauncherEnabled](#newtabpageapplauncherenabled)|Hide App Launcher on Microsoft Edge new tab page|
 |[NewTabPageBingChatEnabled](#newtabpagebingchatenabled)|Disable Bing chat entry-points on Microsoft Edge Enterprise new tab page|
 |[NewTabPageCompanyLogo](#newtabpagecompanylogo)|Set new tab page company logo (obsolete)|
+|[NewTabPageCompanyLogoBackplateColor](#newtabpagecompanylogobackplatecolor)|Set the company logo backplate color on the new tab page.|
 |[NewTabPageCompanyLogoEnabled](#newtabpagecompanylogoenabled)|Hide the company logo on the Microsoft Edge new tab page|
 |[NewTabPageContentEnabled](#newtabpagecontentenabled)|Allow Microsoft content on the new tab page|
 |[NewTabPageHideDefaultTopSites](#newtabpagehidedefaulttopsites)|Hide the default top sites from the new tab page|
@@ -710,8 +714,8 @@ These tables list all of the browser-related group policies available in this re
 |[NewBaseUrlInheritanceBehaviorAllowed](#newbaseurlinheritancebehaviorallowed)|Allows enabling the feature NewBaseUrlInheritanceBehavior (deprecated)|
 |[NewPDFReaderEnabled](#newpdfreaderenabled)|Microsoft Edge built-in PDF reader powered by Adobe Acrobat enabled|
 |[NonRemovableProfileEnabled](#nonremovableprofileenabled)|Configure whether a user always has a default profile automatically signed in with their work or school account|
-|[OrganizationLogoOverlayOnAppIconEnabled](#organizationlogooverlayonappiconenabled)|Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work profile|
-|[OrganizationalBrandingOnWorkProfileUIEnabled](#organizationalbrandingonworkprofileuienabled)|Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work profile|
+|[OrganizationLogoOverlayOnAppIconEnabled](#organizationlogooverlayonappiconenabled)|Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile|
+|[OrganizationalBrandingOnWorkProfileUIEnabled](#organizationalbrandingonworkprofileuienabled)|Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile|
 |[OriginAgentClusterDefaultEnabled](#originagentclusterdefaultenabled)|Origin-keyed agent clustering enabled by default|
 |[OutlookHubMenuEnabled](#outlookhubmenuenabled)|Allow users to access the Outlook menu (obsolete)|
 |[OverrideSecurityRestrictionsOnInsecureOrigin](#overridesecurityrestrictionsoninsecureorigin)|Control where security restrictions on insecure origins apply|
@@ -5109,6 +5113,80 @@ SOFTWARE\Policies\Microsoft\Edge\NotificationsBlockedForUrls\2 = "[*.]contoso.ed
 
   [Back to top](#microsoft-edge---policies)
 
+  ### PartitionedBlobUrlUsage
+
+  #### Manage Blob URL Partitioning During Fetching and Navigation
+
+  
+  
+  #### Supported versions:
+
+  - On Windows and macOS since 135 or later
+
+  #### Description
+
+  This policy controls whether Blob URLs are partitioned during fetching and navigation.
+If this policy is set to Enabled or not set, Blob URLs will be partitioned.
+If this policy is set to Disabled, Blob URLs won't be partitioned.  This is the Blob URL behavior prior to
+Microsoft Edge version 135.
+
+If storage partitioning is disabled for a given top-level origin by either
+ThirdPartyStoragePartitioningBlockedForOrigins
+or DefaultThirdPartyStoragePartitioningSetting,
+then Blob URLs will also not be partitioned.
+
+The policy is scheduled to be available through Microsoft Edge version 140. After this
+version, the policy will be removed, and Microsoft Edge will no longer support unpartitioned
+blob storage.
+
+For detailed information on third-party storage partitioning, please see https://github.com/privacycg/storage-partitioning.
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: No
+
+  #### Data Type:
+
+  - Boolean
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: PartitionedBlobUrlUsage
+  - GP name: Manage Blob URL Partitioning During Fetching and Navigation
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: PartitionedBlobUrlUsage
+  - Value Type: REG_DWORD
+
+  ##### Example value:
+
+```
+0x00000000
+```
+
+  #### Mac information and settings
+
+  - Preference Key Name: PartitionedBlobUrlUsage
+  - Example value:
+``` xml
+<false/>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### PluginsAllowedForUrls
 
   #### Allow the Adobe Flash plug-in on specific sites (obsolete)
@@ -8468,7 +8546,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 The source code of any extension can be altered by users with developer tools, potentially rendering the extension unfunctional. If this is a concern, configure the [DeveloperToolsAvailability](#developertoolsavailability) policy.
 
-Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document ( [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see [https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions-ref-guide](/deployedge/microsoft-edge-manage-extensions-ref-guide).
+Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see [https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions-ref-guide](/deployedge/microsoft-edge-manage-extensions-ref-guide).
 
 Note: This policy doesn't apply to InPrivate mode. Read about hosting extensions at [Publish and update extensions in the Microsoft Edge Add-ons website](/microsoft-edge/extensions-chromium/enterprise/hosting-and-updating).
 
@@ -10064,17 +10142,19 @@ If you disable this setting, implicit sign-in will be disabled.
 
   ### LinkedAccountEnabled
 
-  #### Enable the linked account feature
+  #### Enable the linked account feature (obsolete)
 
   
-  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 133.
   #### Supported versions:
 
-  - On Windows and macOS since 107 or later
+  - On Windows and macOS since 107, until 133
 
   #### Description
 
-  Microsoft Edge guides a user to the account management page where they can link a Microsoft Account (MSA) to an Azure Active Directory (Azure AD) account.
+  This policy is obsolete because Microsoft Edge no longer supports the linked account feature.
+
+Microsoft Edge guides a user to the account management page where they can link a Microsoft Account (MSA) to an Azure Active Directory (Azure AD) account.
 
 If you enable or don't configure this policy, linked account information will be shown on a flyout. When the Azure AD profile doesn't have a linked account it will show "Add account".
 
@@ -10097,7 +10177,7 @@ If you disable this policy, linked accounts will be turned off and no extra info
   ##### Group Policy (ADMX) info
 
   - GP unique name: LinkedAccountEnabled
-  - GP name: Enable the linked account feature
+  - GP name: Enable the linked account feature (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Identity and sign-in
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -10321,9 +10401,9 @@ If you disable this policy, Microsoft Edge does not send authentications request
   #### Description
 
   This policy only takes effect when the [WebToBrowserSignInEnabled](#webtobrowsersigninenabled) is enabled.
-If you enable this policy and set this policy to True, users cannot turn off Seamless Web to Browser Sign-in feature from "Automatic sign in on Microsoft Edge" setting on Microsoft Edge profile settings page and that toggle will be greyed out.
-If you enable this policy and set this policy to False, users cannot turn on Seamless Web to Browser Sign-in feature from "Automatic sign in on Microsoft Edge" setting on Microsoft Edge profile settings page and that toggle will be greyed out.
-If you enable this policy but not configured or disabled, users can turn on/off Seamless Web to Browser Sign-in feature from settings by themselves.
+If this policy is enabled, users cannot turn off Seamless Web to Browser Sign-in feature from "Automatic sign in on Microsoft Edge" setting on Microsoft Edge profile settings page and that toggle will be greyed out.
+If this policy is disabled, users cannot turn on Seamless Web to Browser Sign-in feature from "Automatic sign in on Microsoft Edge" setting on Microsoft Edge profile settings page and that toggle will be greyed out.
+If this policy is not configured, users can turn on/off Seamless Web to Browser Sign-in feature from settings by themselves.
 
   #### Supported features:
 
@@ -10439,7 +10519,7 @@ This policy is obsoleted as the feature has not been enabled in Microsoft Edge, 
 
   ### SwitchIntranetSitesToWorkProfile
 
-  #### Switch intranet sites to a work profile
+  #### Switch intranet sites to a work or school profile
 
   
   
@@ -10451,7 +10531,7 @@ This policy is obsoleted as the feature has not been enabled in Microsoft Edge, 
 
   Allows Microsoft Edge to switch to the appropriate profile when Microsoft Edge detects that a URL is the intranet.
 
-If you enable or don't configure this policy, navigations to intranet URLs will switch to the most recently used work profile if one exists.
+If you enable or don't configure this policy, navigations to intranet URLs will switch to the most recently used work or school profile if one exists.
 
 If you disable this policy, navigations to intranet URLs will remain in the current browser profile.
 
@@ -10472,7 +10552,7 @@ If you disable this policy, navigations to intranet URLs will remain in the curr
   ##### Group Policy (ADMX) info
 
   - GP unique name: SwitchIntranetSitesToWorkProfile
-  - GP name: Switch intranet sites to a work profile
+  - GP name: Switch intranet sites to a work or school profile
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Identity and sign-in
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -10503,7 +10583,7 @@ If you disable this policy, navigations to intranet URLs will remain in the curr
 
   ### SwitchSitesOnIEModeSiteListToWorkProfile
 
-  #### Switch sites on the IE mode site list to a work profile
+  #### Switch sites on the IE mode site list to a work or school profile
 
   
   
@@ -10513,9 +10593,9 @@ If you disable this policy, navigations to intranet URLs will remain in the curr
 
   #### Description
 
-  Allows Microsoft Edge to switch to the appropriate profile when navigating to a site that matches an entry on the IE mode site list. Only sites that specify IE mode or Edge mode will be switched to the work profile.
+  Allows Microsoft Edge to switch to the appropriate profile when navigating to a site that matches an entry on the IE mode site list. Only sites that specify IE mode or Edge mode will be switched to the work or school profile.
 
-If you enable or don't configure this policy, navigations to URLs matching a site on the IE mode site list will switch to the most recently used work profile if one exists.
+If you enable or don't configure this policy, navigations to URLs matching a site on the IE mode site list will switch to the most recently used work or school profile if one exists.
 
 If you disable this policy, navigations to URLs matching a site on the IE mode site list will remain in the current browser profile.
 
@@ -10536,7 +10616,7 @@ If you disable this policy, navigations to URLs matching a site on the IE mode s
   ##### Group Policy (ADMX) info
 
   - GP unique name: SwitchSitesOnIEModeSiteListToWorkProfile
-  - GP name: Switch sites on the IE mode site list to a work profile
+  - GP name: Switch sites on the IE mode site list to a work or school profile
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/Identity and sign-in
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -10701,7 +10781,7 @@ If this policy is disabled, user will not get sign in CTA or seamless sign in ex
 
 If you set this policy, it specifies the length of time without user input (in minutes) before the browser runs actions configured via the IdleTimeoutActions policy.
 
-If you not set this policy, no action will be ran.
+If you do not set this policy, no action will run.
 
 The minimum threshold is 1 minute.
 
@@ -10765,13 +10845,11 @@ The minimum threshold is 1 minute.
 
   #### Description
 
-  List of actions to run when the timeout from the IdleTimeout policy is reached.
+  When the timeout from the IdleTimeout policy is reached, the browser runs the actions configured in this policy.
 
-If the IdleTimeout policy is unset, this policy has no effect.
+If you do not configure the IdleTimeout policy, this policy has no effect.
 
-When the timeout from the IdleTimeout policy is reached, the browser runs the actions configured in this policy.
-
-If you do not set this policy or no actions are selected, the IdleTimeout policy has no effect.
+If you do not configure this policy or no actions are selected, the IdleTimeout policy has no effect.
 
 Supported actions are:
 
@@ -10781,7 +10859,7 @@ Supported actions are:
 
 'clear_browsing_history', 'clear_download_history', 'clear_cookies_and_other_site_data', 'clear_cached_images_and_files', 'clear_password_signing', 'clear_autofill', 'clear_site_settings': clear the corresponding browsing data.
 
-Setting 'clear_browsing_history', 'clear_password_signing', 'clear_autofill', and 'clear_site_settings' will disable sync for the respective data types if neither `Chrome Sync` is disabled by setting the SyncDisabled policy nor BrowserSignin is disabled.
+Setting 'clear_browsing_history', 'clear_password_signing', 'clear_autofill', and 'clear_site_settings' will disable sync for the respective data types if sync is not already disabled by setting either the SyncDisabled policy or BrowserSignin to disabled.
 
 Policy options mapping:
 
@@ -13168,7 +13246,7 @@ This policy has no effect if the [EfficiencyModeEnabled](#efficiencymodeenabled)
 
 Learn more about efficiency mode: [https://go.microsoft.com/fwlink/?linkid=2173921](https://go.microsoft.com/fwlink/?linkid=2173921)
 
-Learn more about energy saver: [https://learn.microsoft.com/windows-hardware/design/component-guidelines/energy-saver](/windows-hardware/design/component-guidelines/energy-saver)
+Learn more about energy saver: [https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/energy-saver](/windows-hardware/design/component-guidelines/energy-saver)
 
 Policy options mapping:
 
@@ -17543,6 +17621,70 @@ SOFTWARE\Policies\Microsoft\Edge\NewTabPageCompanyLogo = {
 
   [Back to top](#microsoft-edge---policies)
 
+  ### NewTabPageCompanyLogoBackplateColor
+
+  #### Set the company logo backplate color on the new tab page.
+
+  
+  
+  #### Supported versions:
+
+  - On Windows and macOS since 135 or later
+
+  #### Description
+
+  By default, the new tab page sets the company logo backplate color to the neutralStrokeActive (#cecece) constant.
+
+You can configure this policy with a color hex code to change the company logo backplate color on the new tab page.
+
+If this policy is not configured, the default neutralStrokeActive (#cecece) color will be used as the backplate color.
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: No
+
+  #### Data Type:
+
+  - String
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: NewTabPageCompanyLogoBackplateColor
+  - GP name: Set the company logo backplate color on the new tab page.
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: NewTabPageCompanyLogoBackplateColor
+  - Value Type: REG_SZ
+
+  ##### Example value:
+
+```
+"#cecece"
+```
+
+  #### Mac information and settings
+
+  - Preference Key Name: NewTabPageCompanyLogoBackplateColor
+  - Example value:
+``` xml
+<string>#cecece</string>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
   ### NewTabPageCompanyLogoEnabled
 
   #### Hide the company logo on the Microsoft Edge new tab page
@@ -18417,7 +18559,7 @@ If you don't configure the policy, users can choose whether to show the home but
   
   #### Supported versions:
 
-  - On Windows and macOS since 134 or later
+  - On Windows and macOS since 135 or later
 
   #### Description
 
@@ -21284,9 +21426,11 @@ SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\2 = "txt"
 
   Enables the AutoFill feature and allows users to auto-complete address information in web forms using previously stored information.
 
-If you disable this policy, AutoFill never suggests or fills in address information, nor does it save additional address information that the user might submit while browsing the web.
+If this policy is enabled or not configured, users can manage AutoFill for addresses in Microsoft Edge settings. AutoFill allows users to complete address fields in web forms using previously saved information.
 
-If you enable this policy or don't configure it, users can control AutoFill for addresses in the user interface.
+If this policy is disabled, Microsoft Edge does not suggest, fill in, or save address information. AutoFill is also disabled for all web forms except payment and password fields, and previously saved addresses are not available.
+
+Disabling this policy also turns off [EdgeAutofillMlEnabled](#edgeautofillmlenabled).
 
 Note that if you disable this policy you also stop all activity for all web forms, except payment and password forms. No further entries are saved, and Microsoft Edge won't suggest or AutoFill any previous entries.
 
@@ -26705,6 +26849,8 @@ If you disable this policy, features won't be able to download assets needed for
 If you enable this policy or don't configure it, users can benefit from machine learning powered autofill suggestions, which improve efficiency by offering more accurate, context aware form recommendations based on historical autofill data.
 
 If you disable this policy, machine learning powered autofill suggestions will not be shown, and autofill will no longer use cloud-based machine learning models to enhance form filling with smarter, context aware suggestions. Instead, autofill will rely on basic form data without the benefits of machine learning.
+
+This policy will be disabled if you disable [AutofillAddressEnabled](#autofilladdressenabled)..
 
   #### Supported features:
 
@@ -36188,7 +36334,7 @@ From Microsoft Edge 93 onwards, if policy [ImplicitSignInEnabled](#implicitsigni
 
   ### OrganizationLogoOverlayOnAppIconEnabled
 
-  #### Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work profile
+  #### Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile
 
   
   
@@ -36223,7 +36369,7 @@ For more information about configuring your organization's logo on Entra, please
   ##### Group Policy (ADMX) info
 
   - GP unique name: OrganizationLogoOverlayOnAppIconEnabled
-  - GP name: Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work profile
+  - GP name: Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile
   - GP path (Mandatory): N/A
   - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/
   - GP ADMX file name: MSEdge.admx
@@ -36254,7 +36400,7 @@ For more information about configuring your organization's logo on Entra, please
 
   ### OrganizationalBrandingOnWorkProfileUIEnabled
 
-  #### Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work profile
+  #### Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile
 
   
   
@@ -36289,7 +36435,7 @@ For more information about configuring your organization's branding assets on En
   ##### Group Policy (ADMX) info
 
   - GP unique name: OrganizationalBrandingOnWorkProfileUIEnabled
-  - GP name: Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work profile
+  - GP name: Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile
   - GP path (Mandatory): N/A
   - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/
   - GP ADMX file name: MSEdge.admx
@@ -36463,7 +36609,7 @@ If you disable this policy, users can't access the Outlook menu.
 
   Specifies a list of origins (URLs) or hostname patterns (like "*.contoso.com") for which security restrictions on insecure origins don't apply.
 
-This policy lets you specify allowed origins for legacy applications that can't deploy TLS or set up a staging server for internal web development so that developers can test out features requiring secure contexts without having to deploy TLS on the staging server. This policy also prevents the origin from being labeled "Not Secure" in the omnibox.
+This policy allows you to specify permitted origins for legacy applications that cannot deploy TLS or for internal web development staging servers. It enables developers to test features requiring secure contexts without the need to configure TLS on the staging server. Patterns are only accepted for hostnames; URLs or origins with schemes must be exact matches. This policy also prevents the origin from being labeled "Not Secure" in the omnibox.
 
 Setting a list of URLs in this policy has the same effect as setting the command-line flag '--unsafely-treat-insecure-origin-as-secure' to a comma-separated list of the same URLs. If you enable this policy, it overrides the command-line flag.
 

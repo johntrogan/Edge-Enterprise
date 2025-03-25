@@ -5,7 +5,7 @@ author: dan-wesley
 manager: abutcher
 ms.date: 01/12/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
