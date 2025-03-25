@@ -139,13 +139,13 @@
       - name: Analysis
         items:
          - name: General Analysis Overview
-           href: microsoft-edge-General-Analysis-Overview.md
+           href: microsoft-edge-connectors-General-Analysis-Overview.md
          - name: Symantec
            href: microsoft-edge-connectors-Symantec.md
       - name: Reporting
         items:
          - name: General Reporting Overview
-           href: microsoft-edge-General-Report-Overview.md      
+           href: microsoft-edge-connectors-General-Report-Overview.md      
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
    - name: Microsoft Edge Workspaces
