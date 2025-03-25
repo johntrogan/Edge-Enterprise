@@ -5,7 +5,7 @@ author: srugh
 manager: likuba
 ms.date: 11/25/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop

@@ -5,7 +5,7 @@ author: dan-wesley
 manager: archandr
 ms.date: 11/11/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: get-started
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
@@ -20,7 +20,7 @@ The Microsoft Edge management service is a platform in the Microsoft 365 admin c
 ## Prerequisites
 
 - You must have Microsoft Edge 115.0.1901.7 or greater installed.
-- You must be a [Microsoft Edge Administrator](/azure/active-directory/roles/permissions-reference#edge-administrator) to access the experience in Microsoft 365 Admin Center.
+- You must be a [Microsoft Edge Administrator](/azure/active-directory/roles/permissions-reference#edge-administrator) to access the experience in Microsoft 365 Admin Center (Note: GDAP roles are currently not fully supported).
 - You must be using one of the following supported operating systems: Windows 10/11 or Windows Server 2016 or later. See [Microsoft Edge Supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) for specifics.
 
 > [!IMPORTANT]
@@ -122,7 +122,7 @@ Follow these steps to assign a configuration profile to a Microsoft Entra group:
 
     c. Extensions: In the **Default extension** settings section, you can modify the default settings that apply to all extensions in this configuration policy. In the **Managed extensions** section, select **Add extension** to add individual extensions (for example, Edge add-on, Sidebar app, or External extension) that you want to manage. Once added, select each extension to edit its specific settings.
 
-    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)) to create one.
+    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) to create one.
 
     e. Finish: Make sure that everything on this page looks correct, and then select **Review and create** to create your new configuration policy.
 
@@ -190,7 +190,7 @@ If there's a conflict with policy that User and Device are both trying to set, D
 
 #### How the configuration profile is applied
 
-The Click-to-Run service used by Microsoft Edge management service checks with Cloud Policy regularly to see if there are any configuration profiles that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens Microsoft Edge.
+Once a configuration profile is created and applied, Microsoft Edge checks with Cloud Policy regularly to see if there are any configuration profiles that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens Microsoft Edge.
 
 **Here's a summary of what happens:**
 

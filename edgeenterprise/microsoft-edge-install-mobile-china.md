@@ -5,7 +5,7 @@ author: dan-wesley
 manager: srugh
 ms.date: 11/05/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop

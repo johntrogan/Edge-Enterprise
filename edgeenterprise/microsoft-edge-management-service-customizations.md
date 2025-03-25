@@ -5,7 +5,7 @@ author: dan-wesley
 manager: archandr
 ms.date: 11/11/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
@@ -35,6 +35,8 @@ To manage AI settings for a profile, navigate to the **enterprise secure AI** ta
 - https://you.com
 - https://writesonic.com/chat
 - https://cohere.com/coral
+- https://deepseek.me
+- https://deepseek.com 
 
 Disabling this feature will automatically remove these URLs from the policy, even if they were manually added beforehand. Values not included in this dynamic URL set will remain unaffected.
 

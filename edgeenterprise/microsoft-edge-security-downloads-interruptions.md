@@ -5,7 +5,7 @@ author: dan-wesley
 manager: likuba
 ms.date: 07/18/2024
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
@@ -53,6 +53,9 @@ Enterprises can use [ExemptFileTypeDownloadWarnings](/deployedge/microsoft-edge-
 
 `[{"file_extension":"xml","domains":["contoso.com", "woodgrovebank.com"]},
 {"file_extension":"msg", "domains": ["*"]}]`
+
+> [!NOTE]
+> A download generated with a [Data URL](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data) cannot be exempted from download warnings for a specific domain, as it does not have an intrinsic origin. If this is required, a [Blob object](https://developer.mozilla.org/en-US/docs/Web/API/Blob) should be used instead.
 
 ### Update for Edge Version 132
 
