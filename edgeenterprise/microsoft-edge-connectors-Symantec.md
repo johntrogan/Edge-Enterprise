@@ -22,7 +22,7 @@ description: "Symantec"
 ### Configuration Steps – Edge Management Service
 
 1. From the **Edge Management Service**, navigate to the **Connectors** tab.  
-2. Under **Discover Connectors**, find the **Splunk reporting connector** and select **Set up**.  
+2. Under **Discover Connectors**, find the **Symantic Analysis connector** and select **Set up**.  
 3. Select a configuration profile for the connector configuration to apply. All users in this configuration profile will have the connector enabled in their browser profile.  
 4. Input the **host address**, **port number**, and **token ID** of the reporting connector provider.  
 5. Select **Test connection** to ensure the connection to the specified endpoint can be established.  
