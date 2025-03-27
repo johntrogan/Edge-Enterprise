@@ -13310,7 +13310,7 @@ This policy has no effect if the [EfficiencyModeEnabled](#efficiencymodeenabled)
 
 Learn more about efficiency mode: [https://go.microsoft.com/fwlink/?linkid=2173921](https://go.microsoft.com/fwlink/?linkid=2173921)
 
-Learn more about energy saver: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/energy-saver
+Learn more about energy saver: [https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/energy-saver](/windows-hardware/design/component-guidelines/energy-saver)
 
 Policy options mapping:
 
@@ -40202,7 +40202,7 @@ If this policy is disabled, then the HTML parser will restrict which tags can be
   ##### Group Policy (ADMX) info
 
   - GP unique name: SelectParserRelaxationEnabled
-  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
+  - GP name: Controls whether the new HTML parser behavior for the \<select\> element is enabled
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
