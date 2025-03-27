@@ -47,9 +47,9 @@ Fixed various bugs and performance issues, general updates, new policies, and en
 - [iOS & Android] Support Managed Desktop View in Mobile
 (MDM Key: `DefaultDesktopSiteSetting`; Value: 1=Open all websites with Desktop view, 2=Open all websites with Mobile view
 
-MDM Key: `DesktopSiteForceForUrls`; Value: a list of site URL patterns that will always open in desktop view
+  MDM Key: `DesktopSiteForceForUrls`; Value: a list of site URL patterns that will always open in desktop view
 
-MDM Key: `MobileSiteForceForUrls`; Value: a list of site URL patterns that will always open in mobile view)
+  MDM Key: `MobileSiteForceForUrls`; Value: a list of site URL patterns that will always open in mobile view)
 
 ### Bug fixes
 
