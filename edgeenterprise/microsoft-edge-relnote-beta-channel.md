@@ -25,6 +25,14 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 Fixed various bugs and performance issues.
 
+## Version 135.0.3179.33: March 24, 2025
+
+Fixed various bugs and performance issues.
+
+### New policies
+
+- [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-policies#webcontentfilteringblockedcategories) - Configure Web Content Filtering
+
 ## Version 135.0.3179.21: March 18, 2025
 
 Fixed various bugs and performance issues.
