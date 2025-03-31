@@ -14,15 +14,19 @@ description: "Learn how the Enterprise new tab page supports context switching a
 
 # Microsoft Edge Enterprise new tab page
 
+
+>[!Important]
+>Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing).
+
 The Enterprise new tab page is a direct response to a new challenge that workers face daily: frequent context switching. Our research shows that in addition to managing schedules, workers juggle roughly three projects a day—and on average, switch between them two to three times a day. Combine that switching with a torrent of emails, pings, and calls (which, when combined, can easily number in the triple digits) and they're constantly switching contexts throughout their day. Finally, add on the challenge of hybrid workplaces and it's no wonder they want to work smarter not harder.
 
 ## The role of the browser
 
-As the browser role grows to become central for workers to finish everyday tasks, it's more important now than ever that information workers can cut through the noise and find what they need. That's why we've created a personalized productivity dashboard right in the Microsoft Edge Enterprise new tab page. Any enterprise user of Microsoft Edge can use this by opening a new tab and then selecting the **Work feed** tab.
+As the browser role grows to become central for workers to finish everyday tasks, it's more important now than ever that information workers can cut through the noise and find what they need. That's why we have created a personalized productivity dashboard right in the Microsoft Edge Enterprise new tab page. Any enterprise user of Microsoft Edge can use this by opening a new tab and then selecting the **Work feed** tab.
 
 ![Image of the work feed page.](media/microsoft-edge-enterprise-ntp/workfeed2.png)
 
-The dashboard is a focal point for quickly finding the information you need and stay up to date on the things that matter most, all while cutting out the noise. Now, we'll highlight some of the top features that can help keep your employees productive.
+The dashboard is a focal point for quickly finding the information you need and stay up to date on the things that matter most, all while cutting out the noise. Now, we highlight some of the top features that can help keep your employees productive.
 
 We're continuously looking to improve the browser experience so we want to get your feedback, which you can provide by pressing alt + shift + I to open the **Send feedback** dialog where you can share your thoughts.
 
@@ -40,7 +44,7 @@ You might, for example, see updates to documents you're working on with others, 
 
 Microsoft Feed is personalized to you. What you see in your feed is different from what your colleagues see in theirs.  
 
-You will only see documents or other content directly shared with you or that you have access to in any case. This can be documents that are stored in a shared folder in OneDrive or on a SharePoint site that you have access to, or a link that someone sent you in an email conversation or a Teams chat.
+You'll only see documents or other content directly shared with you or that you have access to in any case. This can be documents that are stored in a shared folder in OneDrive or on a SharePoint site that you have access to, or a link that someone sent you in an email conversation or a Teams chat.
 
 Documents are not stored in Microsoft Feed. If you want to change permissions on any of your documents, you can do this from where the documents are stored, such as OneDrive or SharePoint. Microsoft Feed always respects the permissions that are set on documents, and will not show your documents to people who don't have access to them.
 
@@ -76,7 +80,7 @@ Trying to find something for work, but can't quite figure out where to start? Ju
 
 ## How to make Work feed the default tab
 
-The new tab page will remember the last tab the user selected, so simply selecting the Work feed tab will set it as default.
+The new tab page remembers the last tab the user selected, so simply selecting the Work feed tab sets it as default.
 
 For tenant admins, if you'd like to have your organization automatically set Work feed as the default tab, follow these steps:
 
