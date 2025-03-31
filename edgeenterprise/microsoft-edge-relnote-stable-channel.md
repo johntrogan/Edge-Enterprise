@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 03/17/2025
+ms.date: 03/27/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -26,6 +26,20 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 134.0.3124.95: March 27, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.93: March 26, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-26-2025).
+
+## Version 134.0.3124.85: March 24, 2025
+
+Fixed various bugs and performance issues.
+
 ## Version 134.0.3124.83: March 21, 2025
 
 Fixed various bugs and performance issues.
@@ -34,7 +48,11 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 ### Fixes
 
-- Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users will need to restart their browser to receive the fix.
+- Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users need to restart their browser to receive the fix.
+
+### Improved reliability
+
+- Fixed a browser crash which occurred when starting the Microsoft Edge browser programmatically using --in private and --app (application mode) via the command line. 
 
 ## Version 134.0.3124.72: March 17, 2025
 
@@ -79,7 +97,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Announcement
 
-- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally-trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
  
 ### Feature updates
 
@@ -148,7 +166,7 @@ Fixed various bugs and performance issues.
 
 ### Fixes
 
-- Fixed an issue which caused excessive traffic to the MIP service and resulted in the temporary blocking of sync functionality and the inability to open AIP-protected PDF files in Edge.  Note: For some users it still might be necessary to "sign out (keeping locally saved data)"and then "sign-in" again for sync functionality to resume.  
+- Fixed an issue which caused excessive traffic to the MIP service and resulted in the temporary blocking of sync functionality and the inability to open AIP-protected PDF files in Edge.  Note: For some users, it still might be necessary to "sign out (keeping locally saved data)"and then "sign-in" again for sync functionality to resume.  
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#february-14-2025).
 
@@ -198,7 +216,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
  
 - **Updated Downloads UI to Improve Performance.** The Downloads UI is rewritten to improve performance. Customer-facing functionality and UX from previous releases remain the same.
 
-- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page.  Users can track prices quickly and will be notified when there is a price drop on that product and save more.  Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy.
+- **Shopping Product Tracking.** Track product prices easily with a new experience in the Edge Address Bar that appears on the product detail page.  Users can track prices quickly and will be notified when there's a price drop on that product and save more.  Administrators can control the availability of Shopping in Edge using the [EdgeShoppingAssistantEnabled](/deployedge/microsoft-edge-policies#edgeshoppingassistantenabled) policy.
 
 ### Policy updates
 
@@ -318,7 +336,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
   Previously, to detect when a `<dialog>` opens a mutation observer had to be registered to check for open.
 
-- **Element Capture.** Given a video `MediaStreamTrack` obtained through pre-existing means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
+- **Element Capture.** Given a video `MediaStreamTrack` obtained through preexisting means to initiate tab-capture, Element Capture allows mutating the track to only capture a subtree of the DOM starting at a given Element.
 
   The API bears some resemblance to the Region Capture API, but affords greater flexibility for applications, because occluding and occluded content are both excluded from the capture.
 
@@ -341,7 +359,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
   Edge 132 resolves this problem by ignoring `Strict-Transport-Security` headers on responses from localhost URLs.
   
-- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to rollout with Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
+- **Keyboard focusable scroll containers.** The rollout of this feature (from Edge 130) was stopped due to an accessibility regression. This issue is fixed and the feature continues to roll out with Microsoft Edge 132. [KeyboardFocusableScrollersEnabled]( /deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) is the policy for this feature.
 
 - **Private State Token API Permissions Policy default allowlist wildcard.** Access to the Private State Token API is gated by Permissions Policy features. Edge 132 updates the default allowlist for both `private-state-token-issuance` and `private-state-token-redemption` features from `self` to `*` (wildcard).
 
@@ -355,7 +373,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **WebGPU: 32-bit float textures blending.** The `float32-blendable` GPU feature makes GPU textures with formats `r32float`, `rg32float`, and `rgba32float` blendable.
 
-- **WebGPU: Expose GPUAdapterInfo from GPUDevice.** The GPUDevice `adapterInfo` attribute exposes the same `GPUAdapterInfo` as the `GPUAdapter` object.
+- **WebGPU: Expose GPUAdapterInfo from GPU Device.** The GPU Device `adapterInfo` attribute exposes the same `GPUAdapterInfo` as the `GPUAdapter` object.
 
 - **WebGPU: Texture view usage.** Adds an optional field to WebGPU texture view creation to request a subset of the usage flags from the source texture.
 
@@ -492,7 +510,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
   - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM. Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
   - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
-- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allow list can be opened in sidebar even if they're listed in the blocklist. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
+- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allowlist can be opened in sidebar even if they're listed in the blocklist. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
 
 - **Support for Microsoft Purview Information Protection label for Office Online documents.** Microsoft Edge for Business now natively supports enforcing data loss prevention (DLP) controls via Microsoft Information Protection (MIP) sensitivity labels in Word, Excel, and PowerPoint documents in Office online. This support closes the document protection gap in browser scenarios for commercial users.  The following leak controls are now natively supported in the browser:
    - Copy
@@ -521,7 +539,7 @@ For more information about how to enable, [see Protect Office documents with Mic
 
 #### Obsoleted policies
 
-- [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) - Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
+- [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) - Control the behavior for the cancel dialog produced by the before unload event (obsolete)
 - [SignInCtaOnNtpEnabled](/deployedge/microsoft-edge-policies#signinctaonntpenabled) - Enable sign in click to action dialog (obsolete)
 
 ### Site compatibility impacting changes
@@ -579,7 +597,7 @@ For more information about how to enable, [see Protect Office documents with Mic
 
 - **Remove the CSS Anchor Positioning property `inset-area`.** With the CSS Working Group resolution on renaming the `inset-area` property to `position-area`, this removal cleans up the implementation for a standards compliant feature.
 
-- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they removed that option and replaced it with the GPUAdapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
+- **Remove non-standard GPUAdapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
 
 <!----------------end changes------------------------------------>
 ## Version 130.0.2849.80: November 7, 2024
@@ -644,15 +662,15 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Announcements
 
-- **Live Captions.** The [LiveCaptionsAllowed](/deployedge/microsoft-edge-policies#livecaptionsallowed) policy was available since Microsoft Edge version 103 but this feature isn't generally available. Clients that have the [ExperimentationAndConfigurationServiceControl](/deployedge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) policy set to 'FullMode' might receive the feature before broad availability. Broad availability will be announced via Microsoft Edge release notes.
+- **Live Captions.** The [LiveCaptionsAllowed](/deployedge/microsoft-edge-policies#livecaptionsallowed) policy was available since Microsoft Edge version 103 but this feature isn't generally available. Clients that have the [ExperimentationAndConfigurationServiceControl](/deployedge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) policy set to 'FullMode' might receive the feature before broad availability. Broad availability is announced via Microsoft Edge release notes.
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge is changing the behavior of the cancel dialog for the `beforeunload` event in Microsoft Edge version 131. Starting in version 131, calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the cancel dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) policy is being obsoleted and will no longer work after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge is changing the behavior of the cancel dialog for the `beforeunload` event in Microsoft Edge version 131. Starting in version 131, calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies#beforeunloadeventcancelbypreventdefaultenabled) policy is being obsoleted and will no longer work after Microsoft Edge version 130.
 
 ### Feature updates
 
 - **Token Binding.** Token Binding uses cryptographic certificates on both ends of the TLS connection in an attempt to close the security gap of bearer tokens, which might be lost or stolen. Token Binding is deprecated in Microsoft Edge version 130. Also, the [AllowTokenBindingForUrls](/deployedge/microsoft-edge-policies#allowtokenbindingforurls) policy is now obsolete.
 
-- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy will be available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Edge 133.
+- **Copilot browser Context Policies.** The [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy is available starting from Microsoft Edge version 130 and will replace the [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy. The [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) policy is deprecated in Microsoft Edge version 130 and will be obsolete in Edge 133.
 
 - **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as they are today but are behind clickable sections. These changes are as follows.
 
@@ -660,7 +678,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
   - Make densely populated Settings pages (such as *Privacy, search, and services*, *Appearance*, *Cookies and site permissions*, *System and performance*) easier to navigate by introducing quick access to the most used actions located on that page. Clicking the button with the name of the setting takes users directly to its location.
 
-  - For these densely populated pages, each lengthy section of settings will be a clickable "table of contents" with descriptive subtexts. This helps users locate settings directly and avoid unnecessary scrolling.
+  - For these densely populated pages, each lengthy section of settings are a clickable "table of contents" with descriptive subtexts. This helps users locate settings directly and avoid unnecessary scrolling.
 
   **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
@@ -674,7 +692,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **Keyboard focusable scroll containers.** This feature improves accessibility by making scroll containers focusable using sequential focus navigation. Today, the tab key doesn't focus scrollers unless tabIndex is explicitly set to 0 or more.
 
-  By making scrollers focusable by default, users without a mouse can now focus clipped content using tab and arrow keys. This behavior is enabled only if the scroller does not contain any keyboard-focusable children. This logic is necessary so there are no regressions for existing focusable elements that might exist within a scroller like a \<textarea\>.
+  By making scrollers focusable by default, users without a mouse can now focus clipped content using tab and arrow keys. This behavior is enabled only if the scroller doesn't contain any keyboard-focusable children. This logic is necessary so there are no regressions for existing focusable elements that might exist within a scroller like a \<textarea\>.
 
   If more time is needed to adjust to this new feature, the [KeyboardFocusableScrollersEnabled](/deployedge/microsoft-edge-policies#keyboardfocusablescrollersenabled) policy is available from Edge 128.
 
