@@ -36,6 +36,8 @@ We're continuously looking to improve the browser experience so we want to get y
 
 Microsoft Feed helps you discover and learn about people and interests relevant at work. The feed shows you a mix of content and activity from across Microsoft 365 to help you stay connected to your colleagues and informed about what's happening around you.
 
+Starting in May 2025, users will have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks. Learn more on the Microsoft Feed.
+
 You might, for example, see updates to documents you're working on with others, links shared with you in Teams chats, suggested tasks to follow up, highlights about colleagues, and much more.
 
 [Learn more about Microsoft Feed.](https://support.microsoft.com/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb?storagetype=live)
@@ -51,21 +53,21 @@ The **Work** tab always respects the permissions that are set on documents and w
 
 When you or others share a document as an attachment in email, or through a Teams chat, only people in the email conversation or the Teams chat will see that document.
 
+## M365 Recently Used Documents
+
+Our research shows that information workers can handle tens, if not hundreds of files over a given week. This volume can get overwhelming when you don't know where each file is saved or who sent it to you. Find the files that are most important to you. Don't see them here? That's okay, select the 'Open Microsoft 365 in new tab' or open page icon to find more.
+
+:::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-quick-access-files.png" alt-text="Quick access to files list":::
+
 ## Recent SharePoint sites card
 
 Tired of jumping through hoops to get to your SharePoint sites? Here's a shortcut to help you get the information you need to be productive, even faster.
 
 :::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-sharepoint-sites-50.png" alt-text="List of recent SharePoint sites":::
 
-## My Content
-
-Our research shows that information workers can handle tens, if not hundreds of files over a given week. This volume can get overwhelming when you don't know where each file is saved or who sent it to you. Find the files that are most important to you. Don't see them here? That's okay, select the 'Open Microsoft 365 in new tab' or open page icon to find more.
-
-:::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-quick-access-files.png" alt-text="Quick access to files list":::
-
 ## Upcoming events card
 
-One of the most important aspects of keeping up with a fast-paced work environment is knowing what meetings you have coming up and when they're scheduled. As if it wasn't hard difficult enough to begin with, hybrid work has increased the number of meetings for many workers, causing overload. No productivity dashboard is complete without a glanceable calendar to make sure you're prepared for your meetings. And with one click you can join your Teams meeting or send a message to other attendees if you happen to be running late.
+One of the most important aspects of keeping up with a fast-paced work environment is knowing what meetings you have coming up and when they're scheduled. As if it wasn't hard difficult enough to begin with, hybrid work has increased the number of meetings for many workers, causing overload. No productivity dashboard is complee without a glanceable calendar to make sure you're prepared for your meetings. And with one click you can join your Teams meeting or send a message to other attendees if you happen to be running late.
 
 :::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-upcoming-events-50.png" alt-text="List of upcoming events from user calendar":::
 
