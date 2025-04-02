@@ -28,6 +28,44 @@ Archived versions of these release notes are available at [Archived release note
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 135.0.3179.38 (Android and iOS): March 27, 2025
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General updates
+
+- [iOS & Android] Upgrade OneAuth SDK to version 5.5.0
+ 
+### New Policies
+
+- [iOS & Android] Support new policy that can support to configure “Continue browsing where I left off” or "Always Start with a Fresh New Tab" when Edge launches
+(MAM Key: `com.microsoft.intune.mam.managedbrowser.RestoreBrowsingOption`; MDM Key: `EdgeRestoreBrowsingOption`; Value: 0=no config, 1=“Continue browsing where I left off”, 2= "Always Start with a Fresh New Tab")
+
+- [iOS & Android] Support Managed Browser Token Interactive Mode
+(MAM Key: `com.microsoft.intune.mam.managedbrowser.EnableInteractiveModeForWebSSO`; Value: true)
+
+- [iOS & Android] Support Managed Desktop View in Mobile
+(MDM Key: `DefaultDesktopSiteSetting`; Value: 1=Open all websites with Desktop view, 2=Open all websites with Mobile view
+
+  MDM Key: `DesktopSiteForceForUrls`; Value: a list of site URL patterns that will always open in desktop view
+
+  MDM Key: `MobileSiteForceForUrls`; Value: a list of site URL patterns that will always open in mobile view)
+
+### Bug fixes
+
+- [Android] Fix the issue about OverlayPermissionDetectionEnabled Policy does not work
+- [iOS] Fix the issue about 'Open in Microsoft Edge' trigger displays a blocked message
+- [iOS] Fix the issue about disabledFeatures=inPrivate does not show toast message
+- [iOS & Android] Fix the issue where Policy related with Brand Color does not take effect
+ 
+
+### New enhancements
+
+- [Android] Improve the user experience of guide switch
+- [iOS] Improve the user experience of single device mode
+- [iOS] Improve the user experience of APP Proxy
+- [iOS & Android] Improve the user experience of B2W Single sign-on
+
 ## Version 135.0.3179.34 (Android and iOS): March 25, 2025
 
 Fixed various bugs and performance issues.
@@ -62,7 +100,7 @@ Fixed various bugs and performance issues.
 
 ## Version 134.0.3124.32 (Android and iOS): February 26, 2025
 
-Fixed various bugs and performance issues.
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
 
 ### General updates
 

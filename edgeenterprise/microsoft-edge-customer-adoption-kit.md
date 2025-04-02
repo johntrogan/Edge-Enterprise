@@ -68,7 +68,6 @@ Use the following digital signage to inform users about Microsoft Edge:
 
 - Enterprise new tab page
 - Multiple Profiles and Cross Platform
-- Microsoft Search in Bing
 - Security
 
 :::image type="content" source="media/customer-adoption-not-md/ms-edge-new-tab-page.png" alt-text="New tab page":::
