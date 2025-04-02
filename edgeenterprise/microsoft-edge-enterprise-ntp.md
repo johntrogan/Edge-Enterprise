@@ -34,9 +34,10 @@ We're continuously looking to improve the browser experience so we want to get y
 
 ## Microsoft Feed
 
-Microsoft Feed helps you discover and learn about people and interests relevant at work. The feed shows you a mix of content and activity from across Microsoft 365 to help you stay connected to your colleagues and informed about what's happening around you.
+>[!Note]
+>Starting in May 2025, users will have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks. [Learn more about Microsoft Feed.](https://support.microsoft.com/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb?storagetype=live)
 
-Starting in May 2025, users will have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks. Learn more on the Microsoft Feed.
+Microsoft Feed helps you discover and learn about people and interests relevant at work. The feed shows you a mix of content and activity from across Microsoft 365 to help you stay connected to your colleagues and informed about what's happening around you.
 
 You might, for example, see updates to documents you're working on with others, links shared with you in Teams chats, suggested tasks to follow up, highlights about colleagues, and much more.
 
