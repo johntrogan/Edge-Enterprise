@@ -47,9 +47,9 @@ You might, for example, see updates to documents you're working on with others, 
 What you see in your tab is different from what your colleagues see in theirs.
 You'll only see documents or other content directly shared with you or that you have access to in any case. This can be documents that are stored in a shared folder in OneDrive or on a SharePoint site that you have access to, or a link that someone sent you in an email conversation or a Teams chat.
 
-Documents are not stored in the **Work** tab. If you want to change permissions on any of your documents, you can do this from where the documents are stored, such as OneDrive or SharePoint. 
+Documents aren't stored in the **Work** tab. If you want to change permissions on any of your documents, you can do this from where the documents are stored, such as OneDrive or SharePoint. 
 
-The **Work** tab always respects the permissions that are set on documents and will not show your documents to people who don't have access to them.
+The **Work** tab always respects the permissions that are set on documents and won't show your documents to people who don't have access to them.
 
 When you or others share a document as an attachment in email, or through a Teams chat, only people in the email conversation or the Teams chat will see that document.
 
@@ -67,13 +67,13 @@ Tired of jumping through hoops to get to your SharePoint sites? Here's a shortcu
 
 ## Upcoming events card
 
-One of the most important aspects of keeping up with a fast-paced work environment is knowing what meetings you have coming up and when they're scheduled. As if it wasn't hard difficult enough to begin with, hybrid work has increased the number of meetings for many workers, causing overload. No productivity dashboard is complee without a glanceable calendar to make sure you're prepared for your meetings. And with one click you can join your Teams meeting or send a message to other attendees if you happen to be running late.
+One of the most important aspects of keeping up with a fast-paced work environment is knowing what meetings you have coming up and when they're scheduled. As if it wasn't hard difficult enough to begin with, hybrid work has increased the number of meetings for many workers, causing overload. No productivity dashboard is complete without a glanceable calendar to make sure you're prepared for your meetings. And with one click you can join your Teams meeting or send a message to other attendees if you happen to be running late.
 
 :::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-upcoming-events-50.png" alt-text="List of upcoming events from user calendar":::
 
 ## To Do task list
 
-One of the most effective ways for many users to stay productive when they're getting overwhelmed is to make a to do list. This keeps users organized and can be cathartic to check items off the list when they are feeling stressed. We have To Do integration in the browser so you can get all the greatness of [Microsoft To Do](https://todo.microsoft.com/tasks/) in an easily accessible format.
+One of the most effective ways for many users to stay productive when they're getting overwhelmed is to make a todo list. This keeps users organized and can be cathartic to check items off the list when they're feeling stressed. We have To Do integration in the browser so you can get all the greatness of [Microsoft To Do](https://todo.microsoft.com/tasks/) in an easily accessible format.
 
 :::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-to-do-50.png" alt-text="To do task list":::
 
