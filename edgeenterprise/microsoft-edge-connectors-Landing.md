@@ -27,13 +27,13 @@ Edge for Business supports a wide range of security providers, offering key cont
 
 The connectors come in three types:
 
-### [Device Trust](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-General-Device-Trust)
+### [Device Trust](/deployedge/microsoft-edge-General-Device-Trust)
 Device Trust ensures only trusted devices access corporate resources.
 
-### [Data Loss Prevention](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-Analysis-Overview)
+### [Data Loss Prevention](/deployedge/microsoft-edge-Analysis-Overview)
 Data Loss Prevention integrates with your DLP solution to control actions like copying and pasting.
 
-### [Reporting](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-General-Report-Overview)
+### [Reporting](/deployedge/microsoft-edge-General-Report-Overview)
 Reporting connectors provide a comprehensive view of security across your estate, with browser-based security events reported directly to your preferred security solution.
 
 ---
