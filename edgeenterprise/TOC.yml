@@ -127,6 +127,9 @@
    - name: Connectors
      items:
       - name: Device Trust Connectors
+        href: microsoft-edge-connectors-Landing.md
+     items:
+      - name: Device Trust Connectors
         items:
          - name: Device Trust Connectors
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
