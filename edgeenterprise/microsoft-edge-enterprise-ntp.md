@@ -14,7 +14,6 @@ description: "Learn how the Enterprise new tab page supports context switching a
 
 # Microsoft Edge Enterprise new tab page
 
-
 >[!Important]
 >Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing).
 
@@ -27,10 +26,6 @@ As the browser role grows to become central for workers to finish everyday tasks
 ![Image of the work feed page.](media/microsoft-edge-enterprise-ntp/workfeed2.png)
 
 The dashboard is a focal point for quickly finding the information you need and stay up to date on the things that matter most, all while cutting out the noise. Now, we highlight some of the top features that can help keep your employees productive.
-
-We're continuously looking to improve the browser experience so we want to get your feedback, which you can provide by pressing alt + shift + I to open the **Send feedback** dialog where you can share your thoughts.
-
-:::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-feedback.png" alt-text="Send browser feedback":::
 
 ## Microsoft Feed
 
@@ -105,6 +100,12 @@ Tenant admins can disable the My Feed or Work feed tabs using the Microsoft 365 
 2. Go to **Org settings** > **News**.
 3. Under **News**, **select Microsoft Edge new tab page**.
 4. Uncheck "Show Work feed content…" or "Show My Feed content…".
+
+## Send feedback
+
+We're continuously looking to improve the browser experience so we want to get your feedback, which you can provide by pressing alt + shift + I to open the **Send feedback** dialog where you can share your thoughts.
+
+:::image type="content" source="media/microsoft-edge-enterprise-ntp/new-tab-feedback.png" alt-text="Send browser feedback":::
 
 ## See also
 
