@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 03/31/2025
+ms.date: 04/2/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -20,6 +20,10 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 135.0.3179.52: April 2, 2025
+
+Fixed various bugs and performance issues.
 
 ## Version 135.0.3179.41: March 31, 2025
 
@@ -65,11 +69,13 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Commercial users, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid April 2025, users have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
+ 
+  New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge](https://support.microsoft.com/en-gb/office/the-work-feed-tab-in-microsoft-edge-db32c45f-7f35-479d-b4a8-f015b55333dc).  **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
 
 - **New Tab Page trending suggestions in address bar.**  On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar.  Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled policy](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled).
 
-- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
+- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Microsoft Edge, thereby enhancing security and compliance.
 
 ### Policy updates
 
@@ -133,17 +139,17 @@ The following Dev channel updates preceded this Beta channel release. These note
  
 ### Announcement
 
-**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Edge introduces support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
+**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Microsoft Edge introduces support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature also includes contextual prompt suggestions to help users ask relevant questions about open pages in Microsoft Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Microsoft Edge side pane.  
  
 A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
 
 ### Feature updates
 
-- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.
+- **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Microsoft Edge is no longer available in the Microsoft Edge profile menu.
  
-- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134. 
+- **Microsoft Search in Bing deprecation and policy updates.**  Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Microsoft Edge for Business address bar, is deprecated in Microsoft Edge version 134 and will be obsoleted in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134. 
 
-- **Edge Settings Improvements.**  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Edge Settings Improvements.**  Microsoft Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface. Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **Scareware blocker policy.**  Scareware blocker in Microsoft Edge is your AI powered shield designed to protect you and your users from scareware attacks.  Scareware blocker is currently in preview and admins can control availability to this feature using the [ScarewareBlockerProtectionEnabled](/deployedge/microsoft-edge-policies#scarewareblockerprotectionenabled) Policy.  For more information, see [Stand up to scareware with scareware blocker, now available in preview in Microsoft Edge - Microsoft Edge Blog](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/).
 
@@ -341,7 +347,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Web Authentication API: PublicKeyCredential `getClientCapabilities()` method.** The PublicKeyCredential `getClientCapabilities()` method lets you determine which WebAuthn features are supported by the user's client. The method returns a list of supported capabilities, allowing developers to tailor authentication experiences and workflows based on the client's specific functionality.
 
-- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds additional vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8-bit and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
+- **WebGPU: 1-component vertex formats (and unorm8x4-bgra).**  Adds other vertex formats not present in the initial release of WebGPU due to lack of support or old macOS versions (which are no longer supported by any browser). The 1-component vertex formats let applications request only the necessary data when previously they had to request at least two times more for 8-bit and 16-bit data types. The unorm8x4-bgra format makes it slightly more convenient to load BGRA-encoded vertex colors while keeping the same shader.
 
 - **X25519 algorithm of the Web Cryptography API.**  The "X25519" algorithm provides tools to perform key agreement using the X25519 function specified in [RFC7748]. The "X25519" algorithm identifier can be used in the SubtleCrypto interface to access the implemented operations: generateKey, importKey, exportKey, deriveKey, and deriveBits.
 
@@ -514,7 +520,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Microsoft Edge.
 
-  They were replaced by the `Element.requestFullscreen()` API. As of 2024, most browsers have had support for the unprefixed APIs for a few years now.
+  Replaced by the `Element.requestFullscreen()` API. As of 2024, most browsers have had support for the unprefixed APIs for a few years now.
 
   Microsoft Edge 132 removes the following from `HTMLVideoElement`:
 
@@ -627,7 +633,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Select parser relaxation.** This change makes the HTML parser allow more tags in `<select>` besides `<option>`, `<optgroup>`, and `<hr>`.
 
-  This change is in support of the customizable `<select>` feature but is being shipped first because it can be done separately and has some compat risk.
+  This change is in support of the customizable `<select>` feature but is being shipped first because it can be done separately and has some compact risk.
 
 - **WebGPU: Clip distances.** Adds the optional GPU feature `clip-distances` that allows setting user-defined clip distances in vertex shader outputs. This technique is useful for the applications that need to clip all vertices in a scene that are beyond a user-defined plane, such as many CAD applications.
 
@@ -639,7 +645,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **Remove the CSS Anchor Positioning property `inset-area`.** With the CSS Working Group resolution on renaming the `inset-area` property to `position-area`, this removal cleans up the implementation for a standards compliant feature.
 
-- **Remove non-standard GPU Adapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they've removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
+- **Remove non-standard GPU Adapter `requestAdapterInfo()` method.** The WebGPU Working Group decided it was impractical for `requestAdapterInfo()` to trigger a permission prompt so they removed that option and replaced it with the GPU Adapter `info` attribute so that web developers can get the same `GPUAdapterInfo` value synchronously.
 
 ### Policy updates
 
