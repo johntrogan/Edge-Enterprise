@@ -45,7 +45,7 @@ Follow these steps to access the experience:
 *Admin must have a configuration profile to link each connector configuration to.*  
 *Link to walkthrough to create a profile.*
 
-## Set Up an Analysis Connector
+## Set Up a Data Loss Prevention Connector
 
 *Link to all the subpages?*
 

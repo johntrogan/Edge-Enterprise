@@ -140,7 +140,7 @@
            href: microsoft-edge-connectors-Ping.md
          - name: RSA
            href: microsoft-edge-connectors-RSA.md
-      - name: Content Analysis Connectors
+      - name: Data Loss Prevention Connectors
         items:
          - name: Data Loss Prevention Connectors
            href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
