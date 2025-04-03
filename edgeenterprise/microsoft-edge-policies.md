@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 03/27/2025
+ms.date: 04/03/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -32,10 +32,9 @@ The following table lists the new, and deprecated policies that are in this arti
 
 | Policy Name | Caption |
 |:-----|:-----|
-|[PasswordExportEnabled](#passwordexportenabled)|Enable exporting saved passwords from Password Manager|
-|[AddressBarMicrosoftSearchInBingProviderEnabled](#addressbarmicrosoftsearchinbingproviderenabled)|Enable Microsoft Search in Bing suggestions in the address bar (deprecated)|
-|[EnhanceSecurityModeOptOutUXEnabled](#enhancesecuritymodeoptoutuxenabled)|Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)|
-|[WebContentFilteringBlockedCategories](#webcontentfilteringblockedcategories)|Configure Web Content Filtering|
+|[AutomaticHttpsDefault](#automatichttpsdefault)|Configure Automatic HTTPS (deprecated)|
+|[HttpsUpgradesEnabled](#httpsupgradesenabled)|Enable automatic HTTPS upgrades|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
 
 ## Available policies
 
@@ -501,7 +500,7 @@ These tables list all of the browser-related group policies available in this re
 |[AutofillAddressEnabled](#autofilladdressenabled)|Enable AutoFill for addresses|
 |[AutofillCreditCardEnabled](#autofillcreditcardenabled)|Enable AutoFill for payment instruments|
 |[AutofillMembershipsEnabled](#autofillmembershipsenabled)|Save and fill memberships|
-|[AutomaticHttpsDefault](#automatichttpsdefault)|Configure Automatic HTTPS|
+|[AutomaticHttpsDefault](#automatichttpsdefault)|Configure Automatic HTTPS (deprecated)|
 |[AutoplayAllowed](#autoplayallowed)|Allow media autoplay for websites|
 |[AutoplayAllowlist](#autoplayallowlist)|Allow media autoplay on specific sites|
 |[BackgroundModeEnabled](#backgroundmodeenabled)|Continue running background apps after Microsoft Edge closes|
@@ -638,6 +637,7 @@ These tables list all of the browser-related group policies available in this re
 |[HideInternetExplorerRedirectUXForIncompatibleSitesEnabled](#hideinternetexplorerredirectuxforincompatiblesitesenabled)|Hide the one-time redirection dialog and the banner on Microsoft Edge|
 |[HideRestoreDialogEnabled](#hiderestoredialogenabled)|Hide restore pages dialog after browser crash|
 |[HttpAllowlist](#httpallowlist)|HTTP Allowlist|
+|[HttpsUpgradesEnabled](#httpsupgradesenabled)|Enable automatic HTTPS upgrades|
 |[HubsSidebarEnabled](#hubssidebarenabled)|Show Hubs Sidebar|
 |[ImportAutofillFormData](#importautofillformdata)|Allow importing of autofill form data|
 |[ImportBrowserSettings](#importbrowsersettings)|Allow importing of browser settings|
@@ -770,7 +770,7 @@ These tables list all of the browser-related group policies available in this re
 |[SearchbarAllowed](#searchbarallowed)|Enable the Search bar|
 |[SearchbarIsEnabledOnStartup](#searchbarisenabledonstartup)|Allow the Search bar at Windows startup|
 |[SecurityKeyPermitAttestation](#securitykeypermitattestation)|Websites or domains that don't need permission to use direct Security Key attestation|
-|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the \<select\> element is enabled|
+|[SelectParserRelaxationEnabled](#selectparserrelaxationenabled)|Controls whether the new HTML parser behavior for the <select> element is enabled|
 |[SendIntranetToInternetExplorer](#sendintranettointernetexplorer)|Send all intranet sites to Internet Explorer|
 |[SendMouseEventsDisabledFormControlsEnabled](#sendmouseeventsdisabledformcontrolsenabled)|Control the new behavior for event dispatching on disabled form controls (obsolete)|
 |[SendSiteInfoToImproveServices](#sendsiteinfotoimproveservices)|Send site information to improve Microsoft services (obsolete)|
@@ -8547,7 +8547,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 The source code of any extension can be altered by users with developer tools, potentially rendering the extension unfunctional. If this is a concern, configure the [DeveloperToolsAvailability](#developertoolsavailability) policy.
 
-Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see [https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions-ref-guide](/deployedge/microsoft-edge-manage-extensions-ref-guide).
+Each list item of the policy is a string that contains an extension ID and, optionally, and an optional "update" URL separated by a semicolon (;). The extension ID is the 32-letter string found, for example, on edge://extensions when in Developer mode. If specified, the "update" URL should point to an Update Manifest XML document ( [https://go.microsoft.com/fwlink/?linkid=2095043](https://go.microsoft.com/fwlink/?linkid=2095043) ). The update URL should use one of the following schemes: http, https or file. By default, the Microsoft Edge Add-ons website's update URL is used. The "update" URL set in this policy is only used for the initial installation; subsequent updates of the extension use the update URL in the extension's manifest. The update url for subsequent updates can be overridden using the ExtensionSettings policy, see https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions-ref-guide.
 
 Note: This policy doesn't apply to InPrivate mode. Read about hosting extensions at [Publish and update extensions in the Microsoft Edge Add-ons website](/microsoft-edge/extensions-chromium/enterprise/hosting-and-updating).
 
@@ -12252,7 +12252,7 @@ If you enable this policy, you can configure the list of base64 encoded SHA256 f
 
 If you disable or don't configure this policy, XFA PDFs won't be considered for opening via IE mode except the files from file origin mentioned in Policy [ViewXFAPDFInIEModeAllowedOrigins](#viewxfapdfiniemodeallowedorigins)
 
-For more information, see - [Get-FileHash](https://go.microsoft.com/fwlink/?linkid=2294823), [Dot Net Convert API](https://go.microsoft.com/fwlink/?linkid=2294913).
+For more information, see - [Get-FileHash]([https://go.microsoft.com/fwlink/?linkid=2294823](https://go.microsoft.com/fwlink/?linkid=2294823)), [Dot Net Convert API]([https://go.microsoft.com/fwlink/?linkid=2294913](https://go.microsoft.com/fwlink/?linkid=2294913)).
 
   #### Supported features:
 
@@ -13310,7 +13310,7 @@ This policy has no effect if the [EfficiencyModeEnabled](#efficiencymodeenabled)
 
 Learn more about efficiency mode: [https://go.microsoft.com/fwlink/?linkid=2173921](https://go.microsoft.com/fwlink/?linkid=2173921)
 
-Learn more about energy saver: [https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/energy-saver](/windows-hardware/design/component-guidelines/energy-saver)
+Learn more about energy saver: https://learn.microsoft.com/en-us/windows-hardware/design/component-guidelines/energy-saver
 
 Policy options mapping:
 
@@ -21680,9 +21680,9 @@ If you disable this policy, users can't have their membership info automatically
 
   ### AutomaticHttpsDefault
 
-  #### Configure Automatic HTTPS
+  #### Configure Automatic HTTPS (deprecated)
 
-  
+  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   
   #### Supported versions:
 
@@ -21699,6 +21699,8 @@ Microsoft Edge attempts to upgrade some navigations from HTTP to HTTPS, when pos
 The separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.
 
 Starting in Microsoft Edge 111, "UpgradePossibleDomains" is deprecated and is treated the same as "DisableAutomaticHttps". It won't work in Microsoft Edge version 114.
+
+Starting in Microsoft Edge 139, this policy will be replaced with the policy [HttpsUpgradesEnabled](#httpsupgradesenabled).
 
 Policy options mapping:
 
@@ -21727,7 +21729,7 @@ Use the preceding information when configuring this policy.
   ##### Group Policy (ADMX) info
 
   - GP unique name: AutomaticHttpsDefault
-  - GP name: Configure Automatic HTTPS
+  - GP name: Configure Automatic HTTPS (deprecated)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/
   - GP ADMX file name: MSEdge.admx
@@ -31208,7 +31210,7 @@ If you set this policy, do not set the [ClearBrowsingDataOnExit](#clearbrowsingd
 
   #### Description
 
-  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS and will not show an error interstitial if HTTPS-First Mode is enabled. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable [AutomaticHttpsDefault](#automatichttpsdefault).
+  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable [AutomaticHttpsDefault](#automatichttpsdefault) or [HttpsUpgradesEnabled](#httpsupgradesenabled).
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 
@@ -31262,6 +31264,72 @@ SOFTWARE\Policies\Microsoft\Edge\HttpAllowlist\2 = "[*.]example.org"
   <string>testserver.example.com</string>
   <string>[*.]example.org</string>
 </array>
+```
+  
+
+  [Back to top](#microsoft-edge---policies)
+
+  ### HttpsUpgradesEnabled
+
+  #### Enable automatic HTTPS upgrades
+
+  
+  
+  #### Supported versions:
+
+  - On Windows and macOS since 136 or later
+
+  #### Description
+
+  As of Microsoft Edge version 120, Microsoft Edge tries to upgrade HTTP navigations to HTTPS whenever possible to improve security.  Navigations to captive portals, IP addresses, and non-unique hostnames are excluded from automatic upgrades.
+
+If this policy is enabled or not configured, automatic HTTPS upgrades are turned on by default.
+
+If this policy is disabled, Microsoft Edge won't attempt to upgrade HTTP connections to HTTPS.
+
+To exempt specific hostnames or hostname patterns from being upgraded, use the HttpAllowlist policy.
+
+  #### Supported features:
+
+  - Can be mandatory: Yes
+  - Can be recommended: No
+  - Dynamic Policy Refresh: Yes
+  - Per Profile: Yes
+  - Applies to a profile that is signed in with a Microsoft account: Yes
+
+  #### Data Type:
+
+  - Boolean
+
+  #### Windows information and settings
+
+  ##### Group Policy (ADMX) info
+
+  - GP unique name: HttpsUpgradesEnabled
+  - GP name: Enable automatic HTTPS upgrades
+  - GP path (Mandatory): Administrative Templates/Microsoft Edge/
+  - GP path (Recommended): N/A
+  - GP ADMX file name: MSEdge.admx
+
+  ##### Windows Registry Settings
+
+  - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+  - Path (Recommended): N/A
+  - Value Name: HttpsUpgradesEnabled
+  - Value Type: REG_DWORD
+
+  ##### Example value:
+
+```
+0x00000001
+```
+
+  #### Mac information and settings
+
+  - Preference Key Name: HttpsUpgradesEnabled
+  - Example value:
+``` xml
+<true/>
 ```
   
 
@@ -40202,7 +40270,7 @@ If this policy is disabled, then the HTML parser will restrict which tags can be
   ##### Group Policy (ADMX) info
 
   - GP unique name: SelectParserRelaxationEnabled
-  - GP name: Controls whether the new HTML parser behavior for the \<select\> element is enabled
+  - GP name: Controls whether the new HTML parser behavior for the <select> element is enabled
   - GP path (Mandatory): Administrative Templates/Microsoft Edge/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdge.admx
@@ -45171,7 +45239,7 @@ If you set this policy to False or don't set this policy, the Web Components v0 
   
   #### Supported versions:
 
-  - On Windows since 118 or later
+  - On Windows since 135 or later
 
   #### Description
 
