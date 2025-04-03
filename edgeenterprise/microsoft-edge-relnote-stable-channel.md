@@ -26,34 +26,6 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 134.0.3124.95: March 27, 2025
-
-Fixed various bugs and performance issues.
-
-## Version 134.0.3124.93: March 26, 2025
-
-Fixed various bugs and performance issues.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-26-2025).
-
-## Version 134.0.3124.85: March 24, 2025
-
-Fixed various bugs and performance issues.
-
-## Version 134.0.3124.83: March 21, 2025
-
-Fixed various bugs and performance issues.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-21-2025).
-
-### Fixes
-
-- Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users need to restart their browser to receive the fix.
-
-### Improved reliability
-
-- Fixed a browser crash which occurred when starting the Microsoft Edge browser programmatically using --in private and --app (application mode) via the command line. 
-
 ## Version 135.x: April 2, 2025
 
 The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
@@ -106,6 +78,33 @@ New tab page policies continue to be enforced and not impacted by this updated W
 >[!NOTE]
 >For the latest web platform features and updates, see [Microsoft Edge 135 web platform release notes Mar. 2025.](/microsoft-edge/web-platform/release-notes/135)
 
+## Version 134.0.3124.95: March 27, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.93: March 26, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-26-2025).
+
+## Version 134.0.3124.85: March 24, 2025
+
+Fixed various bugs and performance issues.
+
+## Version 134.0.3124.83: March 21, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#march-21-2025).
+
+### Fixes
+
+- Fixed an issue for users in the `America/Asuncion` time zone to align with Paraguay’s decision to permanently stay in Daylight Saving Time (DST) or UTC-3.  **Note:** Users need to restart their browser to receive the fix.
+
+### Improved reliability
+
+- Fixed a browser crash which occurred when starting the Microsoft Edge browser programmatically using --in private and --app (application mode) via the command line. 
 
 ## Version 134.0.3124.72: March 17, 2025
 
