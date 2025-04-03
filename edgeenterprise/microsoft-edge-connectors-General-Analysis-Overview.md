@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Content Analysis Connectors"
+title: "Microsoft Edge Data Loss Prevention"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -10,12 +10,12 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Content Analysis Connectors"
+description: "Data Loss Prevention"
 ---
 
-# Content Analysis Connectors
+# Content Data Loss Prevention Connectors
 
-Microsoft Edge for Business Analysis connectors enable Microsoft Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
+Microsoft Edge for Business Data Loss Prevention connectors enable Microsoft Edge for Business to natively enforce DLP (Data Loss Prevention) verdicts from on-device agents.  
 When enabled, Microsoft Edge sends content from specific user actions to the on-device agent and waits for the verdict before proceeding.
 
 ## User Actions

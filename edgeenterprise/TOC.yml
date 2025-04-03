@@ -142,8 +142,8 @@
            href: microsoft-edge-connectors-RSA.md
       - name: Content Analysis Connectors
         items:
-         - name: Content Analysis Connectors
-           href: microsoft-edge-connectors-General-Analysis-Overview.md
+         - name: Data Loss Prevention Connectors
+           href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
          - name: Symantec
            href: microsoft-edge-connectors-Symantec.md
       - name: Reporting Connectors
