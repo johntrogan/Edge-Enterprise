@@ -26,7 +26,13 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 135.x: April 2, 2025
+## Version 135.x: April 3, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#April-03-2025).
+
+### Dev Channel updates
 
 The following Dev channel updates preceded this Stable channel release. The following Dev notes provide detailed information about the changes in each release.
 
@@ -47,15 +53,15 @@ The following Dev channel updates preceded this Stable channel release. The foll
  
 - **Rework of Work Feed on Edge New Tab Page (NTP).** The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid April 2025, users will have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
 
-New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/the-work-feed-tab-in-microsoft-edge-db32c45f-7f35-479d-b4a8-f015b55333dc)  **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
+  New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/the-work-feed-tab-in-microsoft-edge-db32c45f-7f35-479d-b4a8-f015b55333dc)  **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
 
 ### Feature updates
 
-- Feature Usage Data Sync.  Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category will allow users to synchronize data regarding their utilization of Edge features across all their devices.
+- **Feature Usage Data Sync.**  Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category will allow users to synchronize data regarding their utilization of Edge features across all their devices.
 
-- New Tab Page trending suggestions in address bar. On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar. Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) policy.
+- **New Tab Page trending suggestions in address bar.** On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar. Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) policy.
 
-- Authorized group setting in Microsoft Edge for Business. The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
+- **Authorized group setting in Microsoft Edge for Business.** The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
 
 ### Policy updates
 
@@ -76,7 +82,7 @@ New tab page policies continue to be enforced and not impacted by this updated W
 - [RelatedMatchesCloudServiceEnabled](/deployedge/microsoft-edge-policies#relatedmatchescloudserviceenabled) - Configure Related Matches in Find on Page (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 135 web platform release notes Mar. 2025.](/microsoft-edge/web-platform/release-notes/135)
+>For the latest web platform features and updates, see [Microsoft Edge 135 web platform release notes April. 2025.](/microsoft-edge/web-platform/release-notes/135)
 
 ## Version 134.0.3124.95: March 27, 2025
 
