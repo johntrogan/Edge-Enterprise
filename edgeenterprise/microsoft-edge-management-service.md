@@ -64,7 +64,7 @@ A configuration policy that is created as an Intune policy will be available to 
 
 Follow these steps to create a configuration policy:
 
-1. Under t**he **Configuration profiles** pivot, select **Add a profile**.  
+1. Navigate to the ***Configuration policies*** tab.  
 
 2. Select **Create policy**. This takes you through the following wizard flow to create a new configuration policy.  
 
@@ -74,7 +74,7 @@ Follow these steps to create a configuration policy:
 
    c. **Extensions:** In the **Default extension** settings section, you can modify the default settings that apply to all extensions in this configuration policy. In the **Managed extensions** section, select **Add extension** to add individual extensions (Edge add-on, Sidebar app, or External extension) that you want to manage. Once added, select each extension to edit its specific settings. 
 
-   d. **Assignments:** Choose **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](https://learn.microsoft.com/en-us/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) to create one). You may also choose to assign this configuration policy to all users in your tenant by selecting **Add all users**. If you create a tenant-wide policy, this cannot be changed after the policy is created. 
+   d. **Assignments:** Choose **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) to create one). You may also choose to assign this configuration policy to all users in your tenant by selecting **Add all users**. If you create a tenant-wide policy, this cannot be changed after the policy is created. 
  
    e. **Finish:** Make sure that everything on this page looks correct, and then select **Review and create** to create your new configuration policy. 
 
@@ -106,7 +106,7 @@ Follow these steps to export a policy:
 
 Follow these steps to copy a configuration policy:
 
-1. Under the **Configuration policy** pivot, select the profile you want to make a copy.
+1. Select the ***policy*** you want to make a copy of. 
 1. Select **Copy policy**.
 1. Under **Copy configuration policy**, enter a policy name and description and then select **Create**.
 
@@ -156,7 +156,7 @@ Follow these steps to assign a configuration profile to a Microsoft Entra group:
 
     c. Extensions: In the **Default extension** settings section, you can modify the default settings that apply to all extensions in this configuration policy. In the **Managed extensions** section, select **Add extension** to add individual extensions (for example, Edge add-on, Sidebar app, or External extension) that you want to manage. Once added, select each extension to edit its specific settings.
 
-    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) to create one.
+    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) to create one.
 
     e. Finish: Make sure that everything on this page looks correct, and then select **Review and create** to create your new configuration policy.
 

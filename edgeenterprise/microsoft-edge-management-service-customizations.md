@@ -110,7 +110,7 @@ To deploy a set of credentials for a site:
 
 1. Select **Add credentials.**
 2. Enter in the site URL, username, and password for the site.
-   a.Note: The site URL should be the full URL of the login page (ie. https://website.com/login).
+   a.Note: The site URL should be the full URL of the login page ie. 'https://website.com/login'.
 3. Select **Add** at the bottom of the panel.
 
 Once successfully added and deployed, users should be able to see the shared username and password when attempting to log into the specified site. These credentials will appear in the autofill dropdown and password manager and be marked with an indicator that the credentials were shared by their organization.
