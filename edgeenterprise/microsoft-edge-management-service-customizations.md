@@ -102,6 +102,19 @@ You can specify individual hostnames and the profile you would like them to open
 
 To add settings that help protect against security threats, navigate to the security settings tab. Here you can choose to configure settings that help protect your users against security vulnerabilities.
 
+### Secure Password Deployment (in preview)
+
+To deploy a secure set of credentials for your users to access certain sites, navigate to the **Secure Password Deployment** tab. Here you can specify a site URL as well as the username and password you would like your users to have for access to that site. This will allow your users to log into websites seamlessly without ever needing to see the actual password, which also reduces the risk of unauthorized access and enhances your organization's overall security posture.
+
+To deploy a set of credentials for a site:
+
+1. Select **Add credentials.**
+2. Enter in the site URL, username, and password for the site.
+   a.Note: The site URL should be the full URL of the login page (ie. https://website.com/login).
+3. Select **Add** at the bottom of the panel.
+
+Once successfully added and deployed, users should be able to see the shared username and password when attempting to log into the specified site. These credentials will appear in the autofill dropdown and password manager and be marked with an indicator that the credentials were shared by their organization.
+
 #### Enable enhanced security mode
 
 [Enhanced security mode](/deployedge/microsoft-edge-security-browse-safer) helps reduce the risk of an attack caused by memory-related vulnerabilities by automatically applying stricter security settings on unfamiliar sites. To enable this mode:
