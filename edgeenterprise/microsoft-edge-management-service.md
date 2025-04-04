@@ -32,6 +32,7 @@ The Microsoft Edge management service is a platform in the Microsoft 365 admin c
 Use these steps to access the experience:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in.
+
 1. In the main left navigation bar, go to **Settings** > **Microsoft Edge**.  
 <!-- ====================================================================== -->
 
@@ -46,7 +47,9 @@ Each configuration policy can be assigned to multiple Microsoft Entra groups, an
 A configuration policy that has been created using the Cloud Policy service will only be available to manage in the Edge management service. The following features are currently only available using a Cloud policy: 
 
 - **Prioritization:** Configuration policies with conflicting settings will - take the value of the policy with the highest priority.  
+
 - **Extension requests:** Admins will be able to view the extensions that users have requested and take action to approve or deny these requests. 
+
 - **Organization branding:** Admins will be able to apply their organization’s branding to customize the look and feel of the browser  
 
 
@@ -88,9 +91,8 @@ If you've chosen to create an Intune policy, you can navigate to **intune.micr
 
 - **Note:** Any edits you make to settings in Intune or the Edge management service for the same Intune configuration policy should sync. 
 
- Note 
-
-Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device. 
+ [!Note]
+>Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device. 
 
 #### Export a configuration policy
 
@@ -99,7 +101,9 @@ You can export a configuration policy as a JSON file. This export can be used to
 Follow these steps to export a policy:
 
 1. Select the policy you want to export.
+
 2. Select **Export policy**.
+
 3. Select **Export**.
 
 #### Copy a configuration policy
@@ -107,8 +111,10 @@ Follow these steps to export a policy:
 Follow these steps to copy a configuration policy:
 
 1. Select the ***policy*** you want to make a copy of. 
-1. Select **Copy policy**.
-1. Under **Copy configuration policy**, enter a policy name and description and then select **Create**.
+
+2. Select **Copy policy**.
+
+3. Under **Copy configuration policy**, enter a policy name and description and then select **Create**.
 
 After confirmation, the new policy is created with the same configurations as the policy you copied.
 
@@ -127,8 +133,11 @@ Follow these steps to reorder the priority of a configuration policy:
 Follow these steps to configure a policy for a configuration profile:
 
 1. Under the **Configuration profiles** pivot, select the profile you want to configure a policy for.  
+
 2. Under the **Policies** pivot, select **Select policy**.
+
 3. Under **Configure a policy**, search for the policy you want to configure for this profile. Set the configuration settings/values for the policy you select. If the policy is able to be set as either mandatory or recommended, optionally choose to "Allow users to override" the policy.
+
 4. Select **Save**.  
 
 <a name='assign-a-configuration-profile-to-an-microsoft-entra-group'></a>
@@ -138,8 +147,11 @@ Follow these steps to configure a policy for a configuration profile:
 Follow these steps to assign a configuration profile to a Microsoft Entra group:
 
 1. Under the **Configuration profiles** pivot, select the profile you want to assign.
+
 2. Under the **Group assignment** pivot, select **Select group**.
+
 3. Under **Select a security group**, select the group to assign the profile to.
+
 4. Select **Select**. The profile will now be applied to all users in the selected group.
 
 > [!NOTE]
@@ -194,7 +206,9 @@ If you don't want to assign the policy using group assignment in the Microsoft 3
 Use these steps as a guide for setting an enrollment token:
 
 1. Sign in to the Microsoft 365 Admin Center. Go to **Settings** > **Microsoft Edge**. Under the **Configuration policies** pivot, select the policy you want to assign and then click **Deploy** to select **Copy policy ID**.
+
 2. Set the [EdgeManagementEnrollmentToken](/deployedge/microsoft-edge-policies#edgemanagementenrollmenttoken) policy value to the token ID. 
+
 3. If Microsoft Edge is open, restart it.
 
 #### Control policy source precedence
