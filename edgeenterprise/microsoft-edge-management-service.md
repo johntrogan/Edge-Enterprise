@@ -1,9 +1,9 @@
 ---
-title: "Get started with configuration profiles"
+title: "Get started with configuration policies"
 ms.author: katherinegan
-author: dan-wesley
+author: vmliramichael
 manager: archandr
-ms.date: 11/11/2024
+ms.date: 04/07/2025
 audience: ITPro
 ms.topic: get-started
 ms.service: microsoft-edge
@@ -51,7 +51,6 @@ A configuration policy that has been created using the Cloud Policy service will
 - **Extension requests:** Admins will be able to view the extensions that users have requested and take action to approve or deny these requests. 
 
 - **Organization branding:** Admins will be able to apply their organization’s branding to customize the look and feel of the browser  
-
 
 #### Intune policies 
 
@@ -127,62 +126,6 @@ Follow these steps to reorder the priority of a configuration policy:
 2. In the **Reorder policy** priority panel, pick a priority number from the dropdown list. 
 
 3. Select **Save** after you are finished making your changes.  
-
-#### Configure a policy for a configuration profile
-
-Follow these steps to configure a policy for a configuration profile:
-
-1. Under the **Configuration profiles** pivot, select the profile you want to configure a policy for.  
-
-2. Under the **Policies** pivot, select **Select policy**.
-
-3. Under **Configure a policy**, search for the policy you want to configure for this profile. Set the configuration settings/values for the policy you select. If the policy is able to be set as either mandatory or recommended, optionally choose to "Allow users to override" the policy.
-
-4. Select **Save**.  
-
-<a name='assign-a-configuration-profile-to-an-microsoft-entra-group'></a>
-
-#### Assign a configuration profile to a Microsoft Entra group
-
-Follow these steps to assign a configuration profile to a Microsoft Entra group:
-
-1. Under the **Configuration profiles** pivot, select the profile you want to assign.
-
-2. Under the **Group assignment** pivot, select **Select group**.
-
-3. Under **Select a security group**, select the group to assign the profile to.
-
-4. Select **Select**. The profile will now be applied to all users in the selected group.
-
-> [!NOTE]
-> If your tenant is part of the targeted release in the M365 admin center, you will also be able to create Intune configuration policies if you have an Intune license. You will also see any existing Intune policies that you have created in the **Configuration** policies tab of your tenant. Use the following steps to create a new configuration policy.
-
-#### To create a new configuration policy
-
-1. Navigate to the **Configuration policies** tab.
-2. Select **Create policy**. This takes you through the following wizard flow to create a new configuration policy.
-
-    a. Basics: Give your configuration policy a name. You may also add an optional description. Choose whether you would like to create an Intune type policy or Cloud. You must have an Intune license to be able to create an Intune policy.
-
-    b. Settings: Select **Add setting** to browse through the list of Edge settings that you can configure. Choose the settings you would like to configure for this policy and set their appropriate value.
-
-    c. Extensions: In the **Default extension** settings section, you can modify the default settings that apply to all extensions in this configuration policy. In the **Managed extensions** section, select **Add extension** to add individual extensions (for example, Edge add-on, Sidebar app, or External extension) that you want to manage. Once added, select each extension to edit its specific settings.
-
-    d. Assignments: Pick **Select group** to search for Microsoft Entra groups that you would like to assign this configuration policy to. (Note: If you don't have any existing groups, follow [these instructions](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) to create one.
-
-    e. Finish: Make sure that everything on this page looks correct, and then select **Review and create** to create your new configuration policy.
-
-3. Your new policy should now be visible in the **Configuration policies** list. Select it to view and edit its details through the **Properties** and **Managed extensions** pages.
-4. In the **Customization settings** page, you can view and edit specific settings that are grouped together to help enable a productive user experience. Editing settings on any of these pages adds them to the "Settings" section in the **Properties** page.
-
-If you've chosen to create an Intune policy, you can navigate to **intune.microsoft.com** > **Devices** > **Configuration** where you should see your newly created configuration policy in this list.
-
-- Note: Any edits you make to settings in Intune or the Edge management service for the same Intune configuration policy should sync.
-
-<!-- =================================================== -->
-## Configure Microsoft Edge to use a configuration profile
-
-After configuring a profile, the next step is to assign the profile.  
 
 > [!NOTE]
 > Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device.

@@ -1,9 +1,9 @@
 ---
 title: "Customization settings"
 ms.author: katherinegan
-author: dan-wesley
+author: vmliramichael
 manager: archandr
-ms.date: 11/11/2024
+ms.date: 04/1107/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-edge
@@ -128,7 +128,7 @@ Once successfully added and deployed, users should be able to see the shared use
 > [!NOTE]
 > This setting is only available for customers with a Microsoft Intune license.
 
-Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration profile with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
+Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
 
 ## See also
 
