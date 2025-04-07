@@ -15,7 +15,7 @@ description: "Microsoft Edge Lifecycle"
 # Microsoft Edge Lifecycle Policy
 
 > [!IMPORTANT]
-> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program. The ESU program](/windows/whats-new/extended-security-updates) will not be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
+> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program. The ESU program](/windows/whats-new/extended-security-updates) won't be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
 
 This article describes the lifecycle policy that applies to Microsoft Edge.
 
@@ -24,7 +24,7 @@ This article describes the lifecycle policy that applies to Microsoft Edge.
 
 ## Overview of the lifecycle policy for Microsoft Edge
 
-Microsoft Edge features more frequent and more flexible updating capabilities. Because browser releases aren't bound to the Windows major releases, it's necessary to have the governing lifecycle policy updated to reflect this decoupling. Going forward, Microsoft Edge follows the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy). Security updates and servicing updates are only available on the latest Stable channel release and the latest Beta channel release. If you use older releases of Microsoft Edge, it's likely that you'll miss the latest quality and security updates. Using older versions isn't recommended. Assisted Support is available as described in the following section.
+Microsoft Edge features more frequent and more flexible updating capabilities. Because browser releases aren't bound to the Windows major releases, it's necessary to have the governing lifecycle policy updated to reflect this decoupling. Going forward, Microsoft Edge follows the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy). Security updates and servicing updates are only available on the latest Stable channel release and the latest Beta channel release. If you use older releases of Microsoft Edge, it's likely that you miss the latest quality and security updates. Using older versions isn't recommended. Assisted Support is available as described in the following section.
 
 ## Service and assisted support timeline
 
