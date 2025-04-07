@@ -75,7 +75,7 @@ One of the most effective ways for many users to stay productive when they're ge
 
 ## Address bar
 
-Trying to find something for work, but can't quite figure out where to start? Just search for it! The Microsoft Edge address bar (location bar or URL bar) supports finding work content through Microsoft Search for Bing (MSB). Type your query and search or select one of the auto-suggested work results in Microsoft Suggests. You can also select "my organization" in the Microsoft search banner for work information only.
+Trying to find a work document or website, but can't quite figure out where to start? Start in the browser! The Microsoft Edge address bar (location bar or URL bar) allows users to find work-related documents, and people in suggested results. Type your query and select one of the auto-suggested work results. This sends you to work results on M365 cloud microsoft. Learn more about using the Edge address bar to [search on work-related topics ](/microsoftsearch/retirement-microsoft-search-bing#edge-address-bar).
 
 ## How to make Work feed the default tab
 
