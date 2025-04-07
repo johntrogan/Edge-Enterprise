@@ -3,7 +3,7 @@ title: "Customization settings"
 ms.author: katherinegan
 author: vmliramichael
 manager: archandr
-ms.date: 04/1107/2025
+ms.date: 04/07/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-edge
