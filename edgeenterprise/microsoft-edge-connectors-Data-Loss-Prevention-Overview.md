@@ -61,10 +61,6 @@ Follow these steps to access the experience:
 - Adherence to GDPR and regional compliance regulations  
 - Secure data handling practices to maintain user privacy
 
-### Troubleshooting and FAQ
-
-- TBD: Will get feedback from the team
-
 ## Resources
 
 *Links to ISV documentation*

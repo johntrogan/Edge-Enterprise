@@ -71,10 +71,6 @@ Use these steps to access the experience:
 - Adherence to GDPR and regional compliance regulations  
 - Secure data handling practices to maintain user privacy
 
-### Troubleshooting and FAQ
-
-- TBD: will get feedback from the team
-
 ## Resources
 
 *Links to ISV documentation / EMX docs?*  

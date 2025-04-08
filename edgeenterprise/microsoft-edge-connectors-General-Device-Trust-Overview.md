@@ -23,7 +23,6 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 - Seamless Integration: Device Trust connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
 
 ## Signal 
-
 |    |                                          |
 |----|------------------------------------------|
 | 1  | Device Manufacturer                      |
@@ -46,7 +45,6 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 | 18 | Site Isolation Enabled                   |
 | 19 | Password Protection Warning Trigger      |
 
-
 ## Prerequisites 
 
 - Microsoft Edge version 115.0.1901.7 or greater installed  
@@ -61,7 +59,7 @@ Use these steps to access the experience:
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in.  
 2. In the main left navigation bar, go to **Settings > Microsoft Edge**.
 
-## 'Create a Configuration Policy
+## Create a Configuration Policy
 
 *Admin must have a configuration profile to link each connector configuration to.*  
 *Link to walk through to create a profile.*
