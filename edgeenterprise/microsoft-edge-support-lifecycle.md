@@ -15,7 +15,7 @@ description: "Microsoft Edge Lifecycle"
 # Microsoft Edge Lifecycle Policy
 
 > [!IMPORTANT]
-> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program. The ESU program](/windows/whats-new/extended-security-updates) won't be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
+> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program.](/windows/whats-new/extended-security-updates) The ESU program won't be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
 
 This article describes the lifecycle policy that applies to Microsoft Edge.
 

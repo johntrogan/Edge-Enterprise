@@ -15,7 +15,7 @@ description: "Microsoft Edge Supported Operating Systems"
 # Microsoft Edge supported Operating Systems
 
 > [!IMPORTANT]
-> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program. The ESU program](/windows/whats-new/extended-security-updates) will not be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
+> Microsoft Edge and the Microsoft WebView2 Runtime will continue to receive updates on Windows 10 22H2 until at least October 2028, coinciding with the end of the [Extended Security Updates (ESU) program.](/windows/whats-new/extended-security-updates) The ESU program won't be required for devices to continue receiving Microsoft Edge or WebView2 Runtime updates.
 
 This article describes the supported operating systems that apply to Microsoft Edge and Microsoft Edge for Business. Microsoft Edge follows the [Modern Lifecycle Policy](/lifecycle/policies/modern) and is supported on these operating systems.
 
