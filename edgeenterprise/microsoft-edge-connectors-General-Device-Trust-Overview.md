@@ -58,7 +58,7 @@ Use these steps to access the experience:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in.  
 2. In the main left navigation bar, go to **Settings > Microsoft Edge**.
-3. Visit [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connector) to access the EMX connectors in Microsoft Edge.
+3. Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the EMX connectors in Microsoft Edge.
 
 ## Create a Configuration Policy
 
