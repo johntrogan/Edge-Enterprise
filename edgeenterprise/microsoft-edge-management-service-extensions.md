@@ -1,9 +1,9 @@
 ---
 title: "Extensions management"
 ms.author: katherinegan
-author: dan-wesley
+author: vmliramichael
 manager: archandr
-ms.date: 11/11/2024
+ms.date: 04/07/2025
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-edge
@@ -18,9 +18,9 @@ This article provides details to help you manage extensions in the Microsoft Edg
 
 ## Manage extensions
 
-To manage extension settings for a profile, go to the Microsoft Edge management service, select the configuration profile you want to work with, and then select the Extensions tab. You can configure default settings that apply to all extensions in the **Manage extensions** panel. You may also add individual extensions to the profile to manage settings for each extension uniquely. If you configure specific settings on an individual extension, then those settings override the profile settings.
+To manage extension settings for a profile, go to the Microsoft Edge management service, select the configuration policy you want to work with, and then select the Extensions tab. You can configure default settings that apply to all extensions in the **Manage extensions** panel. You may also add individual extensions to the profile to manage settings for each extension uniquely. If you configure specific settings on an individual extension, then those settings override the profile settings.
 
-### Import existing extension settings to an existing configuration profile
+### Import existing extension settings to an existing configuration policy
 
 Follow these steps to import extension settings:
 
@@ -125,7 +125,7 @@ Choose how an extension is displayed in the toolbar. Follow these steps to confi
 
 ### Manage extension requests
 
-If you have blocked any extension for your organization, you can allow users to request access to them. To turn on this feature, go to a configuration profile and navigate to the **Requests** tab in the **Extensions** pivot. Select **Manage request settings** and set the value to **Enabled** to allow users to request blocked extensions. Once enabled, you can view all extensions that your users have requested on this page.
+If you have blocked any extension for your organization, you can allow users to request access to them. To turn on this feature, go to a configuration policy and navigate to the **Requests** tab in the **Extensions** pivot. Select **Manage request settings** and set the value to **Enabled** to allow users to request blocked extensions. Once enabled, you can view all extensions that your users have requested on this page.
 
 You can also choose to receive email notifications when new requests come in. To do this, use these steps:
 
