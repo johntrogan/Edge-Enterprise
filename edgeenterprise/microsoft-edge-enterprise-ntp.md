@@ -79,7 +79,7 @@ Trying to find a work document or website, but can't quite figure out where to s
 
 See how it works:
 
- > [!VIDEO fc86ae5a-1aa7-4b5a-8710-0e1d264cbbbd]
+> [!VIDEO fc86ae5a-1aa7-4b5a-8710-0e1d264cbbbd]
 
 ## How to make Work feed the default tab
 
