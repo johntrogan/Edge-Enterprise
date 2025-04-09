@@ -3,7 +3,7 @@ title: "Microsoft Edge WebView2 Policy Documentation"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 03/27/2025
+ms.date: 04/09/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -621,12 +621,11 @@ If you enable this policy then unload event handlers will continue to work by de
 
   #### Description
 
-  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS and will not show an error interstitial if HTTPS-First Mode is enabled. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable "AutomaticHttpsDefault".
+  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable "AutomaticHttpsDefault" or "HttpsUpgradesEnabled".
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 
 Blanket host wildcards (i.e., "*" or "[*]") are not allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
-
 
 Note: This policy does not apply to HSTS upgrades.
 
@@ -671,13 +670,13 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\HttpAllowlist = "[*.]example.org"
 
   ### NewBaseUrlInheritanceBehaviorAllowed
 
-  #### Allows enabling the feature NewBaseUrlInheritanceBehavior (deprecated)
+  #### Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)
 
-  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 135.
   #### Supported versions:
 
-  - On Windows since 123 or later
+  - On Windows since 123, until 135
 
   #### Description
 
@@ -687,9 +686,7 @@ If you disable this policy, it prevents users or Microsoft Edge variations from 
 
 If you enable or don't configure this policy, it allows enabling NewBaseUrlInheritanceBehavior.
 
-This policy is being deprecated because the feature NewBaseUrlInheritanceBehaviorAllowed has been removed.
-
-This policy will be obsolete in release 133.
+The policy has been obsoleted starting from Microsoft Edge version 136, but the NewBaseUrlInheritanceBehaviorAllowed feature was removed in Microsoft Edge version 123.
 
   #### Supported features:
 
@@ -706,7 +703,7 @@ This policy will be obsolete in release 133.
   ##### Group Policy (ADMX) info
 
   - GP unique name: NewBaseUrlInheritanceBehaviorAllowed
-  - GP name: Allows enabling the feature NewBaseUrlInheritanceBehavior (deprecated)
+  - GP name: Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge WebView2/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdgeWebView2.admx
@@ -792,21 +789,17 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\NewPDFReaderWebView2List = {"name": "*
 
   ### RSAKeyUsageForLocalAnchorsEnabled
 
-  #### Check RSA key usage for server certificates issued by local trust anchors (deprecated)
+  #### Check RSA key usage for server certificates issued by local trust anchors (obsolete)
 
-  >DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
   
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 135.
   #### Supported versions:
 
-  - On Windows since 123 or later
+  - On Windows since 123, until 135
 
   #### Description
 
-  This policy is deprecated because RSAKeyUsageForLocalAnchorsEnabled feature has been removed.
-
-This policy will be removed in version 133.
-
-The X.509 key usage extension declares how the key in a certificate can be
+  The X.509 key usage extension declares how the key in a certificate can be
 used. These instructions ensure certificates aren't used in an unintended
 context, which protects against a class of cross-protocol attacks on HTTPS and
 other protocols. HTTPS clients must verify that server certificates match the
@@ -846,6 +839,9 @@ misconfigured certificate. Modern ECDHE_RSA cipher suites use the
 use the "keyEncipherment" key usage option. If uncertain, administrators should
 include both in RSA certificates meant for HTTPS.
 
+The policy has been obsoleted starting from Microsoft Edge version 136,
+but the key check has been always enabled since Microsoft Edge version 124.
+
   #### Supported features:
 
   - Can be mandatory: Yes
@@ -861,7 +857,7 @@ include both in RSA certificates meant for HTTPS.
   ##### Group Policy (ADMX) info
 
   - GP unique name: RSAKeyUsageForLocalAnchorsEnabled
-  - GP name: Check RSA key usage for server certificates issued by local trust anchors (deprecated)
+  - GP name: Check RSA key usage for server certificates issued by local trust anchors (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge WebView2/
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdgeWebView2.admx
