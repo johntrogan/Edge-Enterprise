@@ -1,9 +1,9 @@
 ---
 title: "Protect Office documents with Microsoft Purview Information Protection labeling"
 ms.author: jikong
-author: dan-wesley
+author: vmliramichael
 manager: likuba
-ms.date: 01/15/2025
+ms.date: 04/07/2025
 audience: ITPro
 ms.topic: concept-article
 ms.service: microsoft-edge
@@ -28,13 +28,13 @@ You can turn on Microsoft Purview Information Protection in a policy and allow t
 
 ### How to enable the Microsoft Purview Information Protection setting inside a policy
 
-To enable this setting in the Edge management service, navigate within a configuration profile to the **Customization Settings** tab. From there, navigate to the **Security settings** page. If you would like to turn on this setting, check the box that is labeled "Apply sensitivity labels to Microsoft 365 online" and then select "Save changes." For users assigned to this configuration profile, Microsoft 365 online will now be able to access labels managed by Microsoft Purview Information Protection.
+To enable this setting in the Edge management service, navigate within a configuration policy to the **Customization Settings** tab. From there, navigate to the **Security settings** page. If you would like to turn on this setting, check the box that is labeled "Apply sensitivity labels to Microsoft 365 online" and then select "Save changes." For users assigned to this configuration policy, Microsoft 365 online will now be able to access labels managed by Microsoft Purview Information Protection.
 
 :::image type="content" source="media/microsoft-edge-management-service-office-mip/mip-configure-labels.png" alt-text="configure additional settings":::
 
 ### How to allow the use of other browsers while Microsoft Purview Information Protection setting is enabled
 
-The "block other browsers" state is turned on by default when the box labeled "Apply sensitivity labels to Microsoft 365 online" is checked. This serves to keep your data secure by preventing users from trying to avoid sensitivity labels through other browsers. If you would still like to allow the use of other browsers, uncheck "Block other browsers" and then select "Save changes." Doing this means that other browsers will remain available for users assigned to this configuration profile.
+The "block other browsers" state is turned on by default when the box labeled "Apply sensitivity labels to Microsoft 365 online" is checked. This serves to keep your data secure by preventing users from trying to avoid sensitivity labels through other browsers. If you would still like to allow the use of other browsers, uncheck "Block other browsers" and then select "Save changes." Doing this means that other browsers will remain available for users assigned to this configuration policy.
 
 ## See also
 
