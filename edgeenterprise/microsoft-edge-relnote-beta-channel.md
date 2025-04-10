@@ -32,7 +32,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [Dev Channel update to 136.0.3193.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3193-0-is-live-/4396080)
 - [Dev Channel update to 136.0.3193.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3209-2-is-live-/4397722)
 
-# Announcements
+## Announcements
 
 - **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program. A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates **and** the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC. Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date. Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally-trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
 
@@ -41,7 +41,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
   New tab page policies continue to be enforced and not impacted by this updated Work Feed experience. For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/use-the-work-tab-on-the-microsoft-edge-home-page-db32c45f-7f35-479d-b4a8-f015b55333dc) **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
 
-# Feature Updates
+## Feature Updates
 
 - **Change to Microsoft Edge Updates Alerting.** Updates to Microsoft Edge now appear as a badge on the **Settings and more** menu (the “…” on the menu bar).
 
@@ -51,7 +51,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **New Password Manager policy.**  The [PasswordExportEnabled](/deployedge/microsoft-edge-policies#passwordexportenabled) policy lets administrators control whether the Export Password button in edge://wallet/passwords is enabled.  If the policy is disabled, the Export Password button is unavailable, preventing password exports.
 
-- **HTTPS Policy Updates.**  The [AutomaticHttpsDefault](/deployedge/microsoft-edge-policies#automatichttpsdefault) policy is deprecated in Microsoft Edge version 136 and is planned to be obsoleted in Microsoft Edge version 139. The new policy to replace this is [HttpsUpgradesEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#httpsupgradesenabled) which is available in Microsoft Edge version 136.
+- **HTTPS Policy Updates.**  The [AutomaticHttpsDefault](/deployedge/microsoft-edge-policies#automatichttpsdefault) policy is deprecated in Microsoft Edge version 136 and is planned to be obsoleted in Microsoft Edge version 139. The new policy to replace this is [HttpsUpgradesEnabled](/deployedge/microsoft-edge-policies#httpsupgradesenabled) which is available in Microsoft Edge version 136.
 
 - **Secure Password Deployment in the Edge management service.** The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture.  **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
 
@@ -79,8 +79,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)
 
 > **Note**  
-> For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes (May 2025)](https://learn.microsoft.com/)
-
+> For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes (May 2025)](/microsoft-edge/web-platform/release-notes/136)
 
 ## Version 135.0.3179.54: April 4, 2025
 
