@@ -30,6 +30,10 @@ These release notes provide information about new features and nonsecurity updat
 
 Fixed various bugs and performance issues.
 
+- **Improved reliability**
+
+  Fixed an issue that may have caused the browser to crash when displaying Google search results, specifically when Google was set as the default search engine through group policy.
+
 ## Version 135.0.3179.54: April 3, 2025
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
