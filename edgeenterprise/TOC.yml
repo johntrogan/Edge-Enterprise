@@ -153,7 +153,7 @@
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
          - name: Crowdstrike
-           href: microsoft-edge-connectors-crodstrike.md      
+           href: microsoft-edge-connectors-crowdstrike.md      
          - name: Devicie
            href: microsoft-edge-connectors-devicie.md
    - name: Microsoft Edge Workspaces
