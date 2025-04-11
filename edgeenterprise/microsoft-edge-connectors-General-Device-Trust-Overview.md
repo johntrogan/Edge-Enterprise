@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Device Trust Connectors"
+title: "Device Trust Connectors"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -22,8 +22,8 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 
 - Seamless Integration: Device Trust connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
 
-## Signal 
-|    |                                          |
+
+|Signals|                                       |
 |----|------------------------------------------|
 | 1  | Device Manufacturer                      |
 | 2  | Device Model                             |
@@ -58,25 +58,17 @@ Use these steps to access the experience:
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in.  
 2. In the main left navigation bar, go to **Settings > Microsoft Edge**.
-3. Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the EMX connectors in Microsoft Edge.
 
 ## Create a Configuration Policy
 
 Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
 ## Set Up a Device Trust Connector
+Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the connectors page in the Edge Management service.
 
 - [Duo Connector Setup](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
-
-## Privacy and Compliance
-
-### Default Settings
-- The feature is enabled only via an admin policy.  
-- User consent considerations are under evaluation.
-
-### Privacy Safeguards
-- Adherence to GDPR and regional compliance regulations.  
-- Secure data handling practices to maintain user privacy.
+- [Ping Identity]()
+- [RSA]()
 
 ## Resources
 
