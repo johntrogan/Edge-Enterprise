@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/4/2025
+ms.date: 04/10/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -20,6 +20,69 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 136.0.3240.8: April 11, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+The following Dev channel updates preceded this Beta channel release. These notes provide detailed information about the changes in each release.
+
+- [Dev Channel update to 136.0.3193.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3193-0-is-live-/4396080)
+- [Dev Channel update to 136.0.3193.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3209-2-is-live-/4397722)
+
+## Announcements
+
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program. A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates **and** the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC. Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date. Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+
+- **Rework of Work Feed on Edge New Tab Page (NTP).** The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid April 2025, users have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-do tasks.
+ 
+
+  New tab page policies continue to be enforced and not impacted by this updated Work Feed experience. For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/use-the-work-tab-on-the-microsoft-edge-home-page-db32c45f-7f35-479d-b4a8-f015b55333dc) **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
+
+## Feature Updates
+
+- **Change to Microsoft Edge Updates Alerting.** Updates to Microsoft Edge now appear as a badge on the **Settings and more** menu (the “…” on the menu bar).
+
+- **Enhancements to performance, secure network, and edge updates.** Microsoft is introducing two improvements to the **Settings and more** menu (“…” on the menu bar). The first makes it easier to discover when a user can update their browser from the **Settings and more** menu.  Second, **browser essentials** is being separated into two distinct experiences (**Performance, Secure Network**) - both available from the **Settings and more** menu.  **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+
+- **Find your Edge profile in the toolbar.** With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we moved the Profile pill to the toolbar. It will also appear as a minimized icon only by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Note:** Any existing organization branding changes configured through the Edge management service won't be affected.
+
+- **New Password Manager policy.**  The [PasswordExportEnabled](/deployedge/microsoft-edge-policies#passwordexportenabled) policy lets administrators control whether the Export Password button in edge://wallet/passwords is enabled.  If the policy is disabled, the Export Password button is unavailable, preventing password exports.
+
+- **HTTPS Policy Updates.**  The [AutomaticHttpsDefault](/deployedge/microsoft-edge-policies#automatichttpsdefault) policy is deprecated in Microsoft Edge version 136 and is planned to be obsoleted in Microsoft Edge version 139. The new policy to replace this is [HttpsUpgradesEnabled](/deployedge/microsoft-edge-policies#httpsupgradesenabled) which is available in Microsoft Edge version 136.
+
+- **Secure Password Deployment in the Edge management service.** The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture.  **Note:** This experience is in public preview and can be accessed by opting in to targeted release in the Microsoft 365 admin center.
+
+- **Elevating top settings and improving settings page navigability.** To make finding browser settings more efficient, Microsoft Edge is introducing three navigation improvements to Edge Settings. We aren’t changing the functionality of any setting, and all the settings stay on the same page as today but will be behind clickable sections. These changes are as follows.
+
+  - Introduce quick access to the most used Settings actions on the first place users land when entering Edge Settings (the Profiles page). Clicking the button with the name of the setting navigates users directly to its location.
+  - Make densely populated Settings pages (such as Privacy, search, and services, Appearance, Cookies and site permissions, System and performance) easier to navigate by introducing quick access to the most used actions located on that page. Clicking the button with the name of the setting takes users directly to its location.
+  - For these densely populated pages, each lengthy section of settings is a clickable "table of contents" with descriptive subtexts. This helps users locate settings directly and avoid unnecessary scrolling.
+
+- **Extensions in Edge Settings.**  Enabling users to find extensions in Browser Settings (edge://settings) through addition of "Extensions" navigation menu and search functionalities across installed extensions. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+### Policy updates
+
+#### New policies
+
+- [HttpsUpgradesEnabled](/deployedge/microsoft-edge-policies#httpsupgradesenabled) - Enable automatic HTTPS upgrades
+- [PasswordExportEnabled](/deployedge/microsoft-edge-policies#passwordexportenabled) - Enable exporting saved passwords from Password Manager
+- [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) - Controls the display of the profile button label for the work or school profile
+
+#### Deprecated policies
+
+- [AutomaticHttpsDefault](/deployedge/microsoft-edge-policies#automatichttpsdefault) - Configure Automatic HTTPS (deprecated)
+
+#### Obsoleted policies
+
+- [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)
+- [NewBaseUrlInheritanceBehaviorAllowed](/deployedge/microsoft-edge-policies#newbaseurlinheritancebehaviorallowed) - Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)
+- [RSAKeyUsageForLocalAnchorsEnabled](/deployedge/microsoft-edge-policies#rsakeyusageforlocalanchorsenabled) - Check RSA key usage for server certificates issued by local trust anchors (obsolete)
+
+> [!NOTE]
+> For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes (May 2025)](/microsoft-edge/web-platform/release-notes/136)
 
 ## Version 135.0.3179.54: April 4, 2025
 
@@ -67,19 +130,19 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Announcements
  
-- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to the one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
+- **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program.  A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to the one of the listed Entrust root certificates and the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC.  Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date.  Alternatively, enterprises can bypass the constraint by installing the root certificate as a trusted local root, but should carefully assess the associated risks.
 
 - **Microsoft Search experience in the Microsoft Edge address bar.**  After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.  For more information, see [Guidance for retiring Microsoft Search in Bing for your organization](/microsoftsearch/retirement-microsoft-search-bing).  **Note:** Microsoft Edge version 134.0.3134.51+ is required
 
 ### Feature updates
 
-- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid April 2025, users have an updated My Feed experience on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
+- **Rework of Work Feed on Edge New Tab Page (NTP).**  The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. In mid April 2025, users have an updated My Feed experience on the enterprise new tab page. Users are no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-do tasks.
  
   New tab page policies continue to be enforced and not impacted by this updated Work Feed experience.  For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge](https://support.microsoft.com/en-gb/office/the-work-feed-tab-in-microsoft-edge-db32c45f-7f35-479d-b4a8-f015b55333dc).  **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
 
 - **New Tab Page trending suggestions in address bar.**  On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar.  Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled policy](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled).
 
-- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Microsoft Edge, thereby enhancing security and compliance.
+- **Authorized group setting in Microsoft Edge for Business.**  The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Microsoft Edge, thereby enhancing security and compliance.
 
 ### Policy updates
 
@@ -143,7 +206,7 @@ The following Dev channel updates preceded this Beta channel release. These note
  
 ### Announcement
 
-**Edge contextual capabilities in Business Chat work tab.**  Starting in mid to late March 2025, Microsoft Copilot in Microsoft Edge introduces support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature also includes contextual prompt suggestions to help users ask relevant questions about open pages in Microsoft Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Microsoft Edge side pane.  
+**Edge contextual capabilities in Business Chat work tab.**  Mid to late March 2025, Microsoft Copilot in Microsoft Edge introduces support for page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature also includes contextual prompt suggestions to help users ask relevant questions about open pages in Microsoft Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Microsoft Edge side pane.  
  
 A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Broad availability of this feature will be announced via Microsoft Edge release notes.
 
@@ -264,7 +327,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **CSS advanced attr() function.** Implements the augmentation to `attr()` specified in CSS Level 5, which allows types besides `<string>` and use in all CSS properties (in addition to the existing support for the pseudo-element `content`).
 
-- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when they are in their open state, and matches `<select>` and `<input>` when they are in modes which have a picker and the picker is showing.
+- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when in their open state, and matches `<select>` and `<input>` when they are in modes which have a picker and the picker is showing.
 
 - **CSS scroll state container queries.** Use container queries to style descendants of containers based on their scroll state.
 
@@ -307,7 +370,7 @@ The following Dev channel updates preceded this Beta channel release. These note
   </button>
   ```
 
-  Previously this happened, because the popover select bubbles to the `<button>` and activates the invoker, which toggles the popover closed. This has now been changed to the expected behavior.
+  Previously happened, because the popover select bubbles to the `<button>` and activates the invoker, which toggles the popover closed, updated to the expected behavior.
 
 - **`Animation.overallProgress`.** Provides developers with a convenient and consistent representation of how far along an animation has advanced across its iterations and regardless of the nature of its timeline. Without the `overallProgress` property, you need to manually compute how far an animation has advanced, factoring in the number of iterations of the animation and whether the `currentTime` of the animation is a percentage of total time (as in the case of scroll-driven animations) or an absolute time quantity (as in the case of time-driven animations).
 
@@ -520,7 +583,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information is encoded as magic comments.
 
-- **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage` will no longer extend `EventTarget`.
+- **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage`  no longer extends`EventTarget`.
 
 - **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Microsoft Edge.
 
@@ -558,7 +621,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 ### Feature updates
 
-- **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be deployed and utilized by services that depend on this library.
+- **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be utilized by services that depend on this library.
 
   The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
 
@@ -593,7 +656,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler won't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler does not prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
 
 - **Get the latest updates effortlessly with instant update.** Instant update in Microsoft Edge ensures you get the latest browser updates automatically, when you step away from your computer. You can keep browsing, knowing that you already have the latest updates to keep you safe online. For more information, see [Get instant updates in Microsoft Edge - Microsoft Support](https://support.microsoft.com/microsoft-edge/get-instant-updates-in-microsoft-edge-4820adad-dd32-470c-9bd9-dba1de71a7f1). **Note:** This feature is in private preview for enterprise customers. Future feature updates are available via Microsoft Edge release notes.
 
