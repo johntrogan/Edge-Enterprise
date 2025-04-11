@@ -29,7 +29,7 @@ Let only the devices you trust in—powered by RSA ID Plus and Microsoft Edge fo
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Ping Device Trust Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **RSA Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
