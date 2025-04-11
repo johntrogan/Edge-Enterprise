@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 03/27/2025
+ms.date: 04/10/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -25,6 +25,14 @@ These release notes provide information about new features and nonsecurity updat
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 135.0.3179.66: April 9, 2025
+
+Fixed various bugs and performance issues.
+
+### Improved reliability
+
+- Fixed an issue that may have caused the browser to crash when displaying Google search results, specifically when Google was set as the default search engine through group policy.
 
 ## Version 135.0.3179.54: April 3, 2025
 
@@ -57,7 +65,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Feature updates
 
-- **Feature Usage Data Sync.**  Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category will allow users to synchronize data regarding their utilization of Edge features across all their devices.
+- **Feature Usage Data Sync.**  Edge Sync, which enables users to synchronize their Edge user data across multiple devices, is now launching a new sync data category called Feature Usage. This new category allows users to synchronize data regarding their utilization of Edge features across all their devices.
 
 - **New Tab Page trending suggestions in address bar.** On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar. Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) policy.
 
@@ -161,7 +169,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 - **Removal of “Add account” option in Profile menu for Entra ID users.** The option to add a linked personal account directly from Edge is no longer available in the Edge profile menu.  The [LinkedAccountEnabled](/deployedge/microsoft-edge-policies#linkedaccountenabled) policy is also obsolete in Microsoft Edge version 134.
 
-- **Microsoft Search in Bing deprecation and policy updates.** Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, will be deprecated and obsoleted (non-functional) in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134.
+- **Microsoft Search in Bing deprecation and policy updates.** Microsoft Search in Bing, the work search experience available on Bing.com, will be retired, such that the last day of availability is on March 31, 2025. The [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, will be deprecated and obsoleted (nonfunctional) in a future Microsoft Edge version. The new policy to replace this is [AddressBarWorkSearchResultsEnabled](/deployedge/microsoft-edge-policies#addressbarworksearchresultsenabled) which is available in Microsoft Edge version 134.
 
 - **Edge on macOS now seamlessly opens links in Teams.**  When Microsoft Edge is configured as the browser to open web links in Teams, then links in Teams chat will be opened through Edge, and Edge launches in the profile that matches with the authenticated profile, users can benefit from a seamless browsing experience that integrates their identity and user data across Microsoft apps. Administrators can control the availability of this feature using the "Choose Which Browser Opens Web Links" Microsoft 365 policy.
 
@@ -295,7 +303,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 #### Obsoleted policies
 
 - [CopilotCDPPageContext](/deployedge/microsoft-edge-policies#copilotcdppagecontext) - Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (obsolete)
-- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
+- [CSSCustomStateDeprecatedSyntaxEnabled](/deployedge/microsoft-edge-policies#csscustomstatedeprecatedsyntaxenabled) - Controls whether the deprecated: --foo syntax for CSS custom state is enabled (obsolete)
 - [LegacySameSiteCookieBehaviorEnabledForDomainList](/deployedge/microsoft-edge-policies#legacysamesitecookiebehaviorenabledfordomainlist) - Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
 
 > [!NOTE]
@@ -357,7 +365,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [AdHocCodeSigningForPWAsEnabled](/deployedge/microsoft-edge-policies#adhoccodesigningforpwasenabled) - Native application signing during Progressive Web Application installation
 - [AutomaticFullscreenAllowedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenallowedforurls) - Allow automatic full screen on specified sites
 - [AutomaticFullscreenBlockedForUrls](/deployedge/microsoft-edge-policies#automaticfullscreenblockedforurls) - Block automatic full screen on specified sites
-- [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation will default to iCloud Keychain
+- [CreatePasskeysInICloudKeychain](/deployedge/microsoft-edge-policies#createpasskeysinicloudkeychain) - Control whether passkey creation defaults to iCloud Keychain
 - [DeletingUndecryptablePasswordsEnabled](/deployedge/microsoft-edge-policies#deletingundecryptablepasswordsenabled) - Enable deleting undecryptable passwords
 - [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-policies#edgeautofillmlenabled) - Machine learning powered autofill suggestions
 - [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies#genailocalfoundationalmodelsettings) - Settings for GenAI local foundational model
@@ -568,7 +576,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
   - The `PostQuantumKeyAgreementEnabled` flag and the [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy applies to Kyber and ML-KEM. Note: The [PostQuantumKeyAgreementEnabled](/deployedge/microsoft-edge-policies#postquantumkeyagreementenabled) policy is scheduled for removal in Edge version 141.
   - Edge will no longer support hybrid Kyber (codepoint 0x6399).
 
-- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allowlist can be opened in sidebar even if they're listed in the blocklist. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
+- **New sidebar policy.** The [EdgeSidebarAppUrlHostAllowList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostallowlist) policy allows admins to define a list of sites, based on URL patterns, that aren't subject to the [EdgeSidebarAppUrlHostBlockList](/deployedge/microsoft-edge-policies#edgesidebarappurlhostblocklist). When the policy is configured, the apps listed in the allowlist can be opened in sidebar even if they're listed in the blocklist. For more information, see [Manage the sidebar in Microsoft Edge](/deployedge/microsoft-edge-sidebar#allow-specific-sidebar-apps-except-search-using-urls).
 
 - **Support for Microsoft Purview Information Protection label for Office Online documents.** Microsoft Edge for Business now natively supports enforcing data loss prevention (DLP) controls via Microsoft Information Protection (MIP) sensitivity labels in Word, Excel, and PowerPoint documents in Office online. This support closes the document protection gap in browser scenarios for commercial users.  The following leak controls are now natively supported in the browser:
    - Copy
@@ -643,7 +651,7 @@ For more information about how to enable, [see Protect Office documents with Mic
 
 - **Select parser relaxation.** This change makes the HTML parser allow more tags in `<select>` besides `<option>`, `<optgroup>`, and `<hr>`.
 
-  This change is in support of the customizable `<select>` feature but is being shipped first because it can be done separately and has some compat risk.
+  This change is in support of the customizable `<select>` feature but is being shipped first because it can be done separately and has some compact risk.
 
 - **WebGPU: Clip distances.** Adds the optional GPU feature `clip-distances` that allows setting user-defined clip distances in vertex shader outputs. This technique is useful for the applications that need to clip all vertices in a scene that are beyond a user-defined plane, such as many CAD applications.
 
