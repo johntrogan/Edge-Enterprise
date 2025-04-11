@@ -42,9 +42,10 @@ Follow these steps to access the experience:
 
 ## Create a Configuration Profile
 
-## Create a Configuration Policy
-
 Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+
+## Set Up a Device Trust Connector
+Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the connectors page in the Edge Management service.
 
 
 ## Set Up a Data Loss Prevention Connector

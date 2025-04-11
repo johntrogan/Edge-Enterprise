@@ -50,12 +50,12 @@ Use these steps to access the experience:
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in  
 2. In the main left navigation bar, go to **Settings > Microsoft Edge**
 
-## Create a Configuration Policy
+## Create a Configuration Profile
 
 Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
-
 ## Set Up a Reporting Connector
+Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the connectors page in the Edge Management service.
 
 - [Splunk](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
 - [Devicie](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
