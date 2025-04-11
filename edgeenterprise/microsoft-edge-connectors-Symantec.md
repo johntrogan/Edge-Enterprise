@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Symantec"
+title: "Symantec DLP"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -27,9 +27,6 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 4. Under Enable data loss prevention for browser actions, select the user actions you want to be scanned by Symantec’s DLP agent.  
 5. Under When the data loss prevention verdict is not received in time, choose to ‘Allow file access’ or ‘Block file access’. This determines the default verdict if a communication error between Edge and the DLP agent occurs.  
 6. Select Save configuration.
-
-
-
 
 ## Symantec Configuration 
 

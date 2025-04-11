@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Browser RSA Documentation"
+title: "RSA Documentation"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Browser Ping Documentation"
+title: "Ping Identity"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Devicie"
+title: "Devicie"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
