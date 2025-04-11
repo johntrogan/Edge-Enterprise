@@ -61,7 +61,4 @@ Use these steps to access the experience:
 - [Devicie](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
 - [Crowdstrike](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
 
-## Resources
 
-*Links to ISV documentation / EMX docs?*  
-- TBD: will get feedback from the team

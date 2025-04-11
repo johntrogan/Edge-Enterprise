@@ -48,7 +48,3 @@ Follow these steps to access the experience:
 ## Set Up a Data Loss Prevention Connector
 
 - [Symantec DLP](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
-
-## Resources
-
-*Links to ISV documentation*

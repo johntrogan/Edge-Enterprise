@@ -70,7 +70,4 @@ Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access th
 - [Ping Identity]()
 - [RSA]()
 
-## Resources
 
-*Links to ISV documentation / EMX docs?*  
-- TBD: feedback from the team.
