@@ -42,8 +42,10 @@ Follow these steps to access the experience:
 
 ## Create a Configuration Profile
 
-*Admin must have a configuration profile to link each connector configuration to.*  
-*Link to walkthrough to create a profile.*
+## Create a Configuration Policy
+
+Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+
 
 ## Set Up a Data Loss Prevention Connector
 
