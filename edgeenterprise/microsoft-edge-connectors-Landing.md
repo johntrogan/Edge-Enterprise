@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Connectors Landing"
+title: "Connectors Landing"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk

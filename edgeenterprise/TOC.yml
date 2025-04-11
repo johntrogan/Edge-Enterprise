@@ -136,7 +136,7 @@
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
          - name: Duo
            href: microsoft-edge-connectors-Duo.md
-         - name: Ping
+         - name: Ping Identity
            href: microsoft-edge-connectors-Ping.md
          - name: RSA
            href: microsoft-edge-connectors-RSA.md
@@ -144,7 +144,7 @@
         items:
          - name: Data Loss Prevention Connectors
            href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
-         - name: Symantec
+         - name: Symantec DLP
            href: microsoft-edge-connectors-Symantec.md
       - name: Reporting Connectors
         items:
@@ -152,6 +152,10 @@
            href: microsoft-edge-connectors-General-Report-Overview.md      
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
+         - name: Crowdstrike
+           href: microsoft-edge-connectors-crodstrike.md      
+         - name: Devicie
+           href: microsoft-edge-connectors-devicie.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
    - name: Microsoft Edge for Virtual desktop infrastructure 

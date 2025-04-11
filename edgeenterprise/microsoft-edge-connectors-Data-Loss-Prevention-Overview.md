@@ -47,19 +47,7 @@ Follow these steps to access the experience:
 
 ## Set Up a Data Loss Prevention Connector
 
-*Link to all the subpages?*
-
-## Privacy and Compliance
-
-### Default Settings
-
-- The feature is enabled only via an admin policy  
-- User consent considerations are under evaluation
-
-### Privacy Safeguards
-
-- Adherence to GDPR and regional compliance regulations  
-- Secure data handling practices to maintain user privacy
+- [Symantec DLP](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
 
 ## Resources
 
