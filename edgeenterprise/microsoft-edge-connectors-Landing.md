@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Landing"
 ---
 
-# Microsoft Edge for Business Connectors
+# Microsoft Edge for Business Connectors Overview
 
 Microsoft Edge for Business now offers seamless integration with your existing security measures through new connectors, enhancing device trust, reporting, and data loss prevention.
 

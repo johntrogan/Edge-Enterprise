@@ -37,7 +37,7 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
    - You’ll activate it when ready to apply your Duo Trusted Endpoints policy.
    - If the Edge for Business trust check fails, fallback to Duo Desktop integrations will occur.
 7. Keep the Duo Admin Panel open — you’ll refer back to complete Microsoft Entra setup.
-![screenshot of news feed settings.](media/microsoft-edge-connectors-duo/image1.png)
+![screenshot of duo admin.](media/microsoft-edge-connectors-duo/image1.png)
 
 #### 2. Register Your Microsoft Entra Application with Duo
 
@@ -88,4 +88,4 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
-   ![screenshot of news feed settings.](media/microsoft-edge-connectors-duo/image2.png)
+   ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)
