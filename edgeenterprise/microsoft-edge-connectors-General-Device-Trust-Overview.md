@@ -23,27 +23,29 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 - Seamless Integration: Device Trust connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
 
 
-|Signals|                                       |
-|----|------------------------------------------|
-| 1  | Device Manufacturer                      |
-| 2  | Device Model                             |
-| 3  | Operating System                         |
-| 4  | Operating System Version                 |
-| 5  | Device Display Name                      |
-| 6  | Disk Encryption State                    |
-| 7  | Device Serial Number                     |
-| 8  | OS Firewall State                        |
-| 9  | System DNS Servers                       |
-| 10 | Hostname                                 |
-| 11 | MAC Addresses                            |
-| 12 | Screen Locks Secured State               |
-| 13 | Secure Boot Mode (Windows only)          |
-| 14 | Windows Machine Domain                   |
-| 15 | Windows User Domain                      |
-| 16 | Browser Version                          |
-| 17 | Built-In Browser DNS Client Enabled      |
-| 18 | Site Isolation Enabled                   |
-| 19 | Password Protection Warning Trigger      |
+| **Signal**                             | **Category**           | **Description**                                                  |
+|----------------------------------------|------------------------|------------------------------------------------------------------|
+| Device Manufacturer                    | Hardware Information   | The company that manufactures the device                         |
+| Device Model                           | Hardware Information   | The model name of the device                                     |
+| Operating System                       | OS Information         | The OS installed on the device                                   |
+| Operating System Version               | OS Information         | Version number of the operating system                           |
+| Device Display Name                    | Hardware Information   | The name given to the device in the system                       |
+| Disk Encryption State                  | Security Features      | Whether disk encryption is enabled                               |
+| Device Serial Number                   | Hardware Information   | The unique serial number of the device                           |
+| OS Firewall State                      | OS Information         | The current state of the OS firewall                             |
+| System DNS Servers                     | Network Information    | The DNS servers configured for the device                        |
+| Hostname                               | General Information    | The hostname of the device                                       |
+| MAC Addresses                          | Hardware Information   | The MAC addresses assigned to the device                         |
+| Screen Locks Secured State             | Security Features      | Whether the screen lock is secured                               |
+| Secure Boot Mode (Windows only)        | OS Information         | Indicates whether secure boot is enabled                         |
+| Windows Machine Domain                 | OS Information         | The domain to which the machine belongs                          |
+| Windows User Domain                    | OS Information         | The user domain for Windows                                      |
+| Browser Version                        | Browser Information    | The version of the browser used                                  |
+| Built-In Browser DNS Client Enabled    | Browser Information    | Indicates if the built-in browser DNS client is enabled          |
+| Site Isolation Enabled                 | Browser Information    | Whether site isolation is enabled in the browser                 |
+| Password Protection Warning Trigger    | Security Features      | A warning triggered for password-related protections             |
+
+
 
 ## Prerequisites 
 

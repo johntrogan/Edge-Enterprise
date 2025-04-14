@@ -18,27 +18,6 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 
 ## Connector Setup and Configuration Steps
 
-## Edge Management Service
-
-### Microsoft Admin Center
-
-#### Step-by-step Instructions
-
-1. **Navigate to the Microsoft Admin Center**  
-   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
-
-2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
-
-3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
-
-4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input the required URL patterns.
-
-5. **Save the Configuration**  
-   Select **Save configuration** to apply your changes.
-
 ## Cisco Duo Configuration 
 
 ### Admin Portal Setup
@@ -58,6 +37,7 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
    - You’ll activate it when ready to apply your Duo Trusted Endpoints policy.
    - If the Edge for Business trust check fails, fallback to Duo Desktop integrations will occur.
 7. Keep the Duo Admin Panel open — you’ll refer back to complete Microsoft Entra setup.
+![screenshot of news feed settings.](media/microsoft-edge-connectors-duo/image1.png)
 
 #### 2. Register Your Microsoft Entra Application with Duo
 
@@ -70,7 +50,6 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
    - If the test fails, recheck the entered values.
 4. If successful, click **Save & Configure**.
 
-
 #### 3. Finish Trusted Endpoints Deployment
 
 1. Apply the **Trusted Endpoints** policy to begin checking Edge for Business browser enrollment during authentication.
@@ -78,7 +57,6 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 3. In the **Change Integration Status** section:
    - Choose to activate for test groups or all users.
 4. Use the **Device Insight** and **Endpoints** pages to confirm which devices are verified.
-
 
 #### 4. Verify Your Setup
 
@@ -91,3 +69,23 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
    - If verification succeeds, access is granted.
    - If verification fails, access is **denied**.
 
+## Edge Management Service
+
+#### Step-by-step Instructions
+
+1. **Navigate to the Microsoft Admin Center**  
+   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+
+2. **Discover the Connector**  
+   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
+
+3. **Select a Policy**  
+   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+
+4. **Enter URL Patterns**  
+   In the **URL patterns to allow, one per line** field, input the required URL patterns.
+
+5. **Save the Configuration**  
+   Select **Save configuration** to apply your changes.
+
+   ![screenshot of news feed settings.](media/microsoft-edge-connectors-duo/image2.png)

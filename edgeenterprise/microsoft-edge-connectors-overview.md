@@ -10,7 +10,7 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Landing"
+description: "Overview"
 ---
 
 # Microsoft Edge for Business Connectors
@@ -37,6 +37,30 @@ Protect your organization's sensitive data by integrating your preferred data lo
 Gain insights into browser-based security events with a direct connection between Edge for Business and your preferred security solution.
 
 ---
+
+## Prerequisites
+
+- Microsoft Edge version 115.0.1901.7 or greater installed  
+- Microsoft Edge Administrator permissions in Microsoft 365 Admin Center  
+- Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
+  - See Microsoft Edge Supported Operating Systems for details  
+
+#### Step-by-step Instructions
+
+1. **Navigate to the Microsoft Admin Center**  
+   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+
+2. **Discover the Connector**  
+   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
+
+3. **Select a Policy**  
+   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+
+4. **Enter URL Patterns**  
+   In the **URL patterns to allow, one per line** field, input the required URL patterns.
+
+5. **Save the Configuration**  
+   Select **Save configuration** to apply your changes.
 
 ## Learn More
 

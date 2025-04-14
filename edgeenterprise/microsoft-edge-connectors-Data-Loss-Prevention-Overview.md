@@ -20,7 +20,7 @@ When enabled, Microsoft Edge sends content from specific user actions to the on-
 
 ## User Actions
 
-The following user actions can send content to the Analysis connector:
+The following user actions can send content to the Data Loss Prevention connector:
 
 - Paste  
 - Print  

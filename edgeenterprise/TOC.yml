@@ -126,10 +126,10 @@
         href: microsoft-edge-management-service-office-mip.md
    - name: Connectors
      items:
-      - name: Connectors Landing
+      - name: Connectors Overview
         items:
          - name: Connectors Landing
-           href: microsoft-edge-connectors-Landing.md
+           href: microsoft-edge-connectors-overview.md
       - name: Device Trust Connectors
         items:
          - name: Device Trust Connectors

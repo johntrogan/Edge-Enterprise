@@ -1,5 +1,5 @@
 ---
-title: "Symantec DLP"
+title: "Data Loss Prevention"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
