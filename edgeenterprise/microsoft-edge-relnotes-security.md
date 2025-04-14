@@ -3,7 +3,7 @@ title: "Release notes for Microsoft Edge Security Updates"
 ms.author: pchiquini
 author: vmliramichael
 manager: robfranco
-ms.date: 03/26/2025
+ms.date: 04/11/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge

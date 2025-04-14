@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/1!/2025
+ms.date: 04/11/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
