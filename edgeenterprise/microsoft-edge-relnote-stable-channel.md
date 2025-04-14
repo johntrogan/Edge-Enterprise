@@ -32,7 +32,7 @@ Fixed various bugs and performance issues.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#April-11-2025).
 
-# Version 134.0.3124.119: April 9, 2025
+## Version 134.0.3124.119: April 9, 2025
 
 Fixed various bugs and performance issues for Extended Stable Channel.
 
