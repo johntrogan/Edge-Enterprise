@@ -54,7 +54,7 @@ Admins must set up a configuration policy to assign to any connector configurati
 
 Once you have at least one configuration policy created, visit [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) access the Connectors page in the Edge Management Service. 
 
-## Set up a Device Trust Connector
+## Device Trust Providers
 
 | Connector         | Documentation Link                                                                 |
 |-------------------|-------------------------------------------------------------------------------------|
