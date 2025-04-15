@@ -17,7 +17,7 @@ description: "Overview"
 
 Microsoft Edge for Business now offers seamless integration with your existing security measures through new connectors, enhancing device trust, reporting, and data loss prevention.
 
-> These connectors allow Edge for Business to align with your established security protocols, extending the reach of your security investments without additional costs.
+These connectors allow Edge for Business to align with your established security protocols, extending the reach of your security investments without additional costs.
 
 Edge for Business supports a wide range of security providers, offering key controls and capabilities familiar to IT professionals.
 
@@ -45,22 +45,12 @@ Gain insights into browser-based security events with a direct connection betwee
 - Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
   - See Microsoft Edge Supported Operating Systems for details  
 
-#### Step-by-step Instructions
+## Access the Edge Management Service
 
-1. **Navigate to the Microsoft Admin Center**  
-   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+Use these steps to access the experience:
 
-2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
-
-3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
-
-4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input the required URL patterns.
-
-5. **Save the Configuration**  
-   Select **Save configuration** to apply your changes.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in.  
+2. In the main left navigation bar, go to **Settings > Microsoft Edge**.
 
 ## Learn More
 
