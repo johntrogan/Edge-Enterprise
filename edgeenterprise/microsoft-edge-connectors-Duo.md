@@ -38,13 +38,13 @@ During setup, keep the Duo Admin Panel open in your browser. You'll need to refe
 3.	Navigate to the newly created app registration. Use the left-side navigation, under “Manage”, to go to Certificates & Secrets. Create a new client secret for your application to be used in a later step. 
 4.	In the left-side navigation, go to Manage > API Permissions. Configure the required permissions on your newly created app registration to give the application permissions to access the Device Trust API. 
 
-   4.1.	Search for the “Microsoft Edge management service” in the “APIs my organization uses” tab. Click on the resulting row. NOTE: If you don’t see the application, you will need to add it to your tenant.  
+    4.1.	Search for the “Microsoft Edge management service” in the “APIs my organization uses” tab. Click on the resulting row. NOTE: If you don’t see the application, you will need to add it to your tenant.  
 
-   4.2 **If you can’t find the Microsoft Edge management Service in your tenant**  – You must add the application to your tenant to see it. Navigate to the Graph Explorer and sign in with your account. Once you’ve done so, copy the request shown and execute it (App ID is **ff846ae4-7ec9-42f4-8576eb14198ad5e1**). Ensure you grant the graph explorer permissions on the “Modify permissions” tab. After completing this step, you should see the Microsoft Edge management service in your tenant 
+    4.2 **If you can’t find the Microsoft Edge management Service in your tenant**  – You must add the application to your tenant to see it. Navigate to the Graph Explorer and sign in with your account. Once you’ve done so, copy the request shown and execute it (App ID is **ff846ae4-7ec9-42f4-8576eb14198ad5e1**). Ensure you grant the graph explorer permissions on the “Modify permissions” tab. After completing this step, you should see the Microsoft Edge management service in your tenant 
 
    ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image1.png)
 
-   4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
+    4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
 
 #### 3. Configure the Connector in the Edge Management Service   
 
@@ -63,7 +63,7 @@ In the **URL patterns to allow, one per line** field, input “https://duose
 5. **Save the Configuration** 
 Select **Save configuration** to apply your changes. 
 
-## Finish Trusted Endpoints Deployment   
+### Finish Trusted Endpoints Deployment   
 
 After creating the Edge for Business Device Trust Connector Trusted Endpoints integration, set the [Trusted Endpoints](https://duo.com/docs/policy#trusted-endpoints) policy to start checking for Edge for Business browser enrollment as users authenticate to Duo-protected services and applications.   
 
@@ -73,6 +73,16 @@ Device Trust Connector [Trusted Endpoints] integration in the Admin Panel. The "
 
  ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)  
 
+The [Device Insight](https://duo.com/docs/insight) and [Endpoints](https://duo.com/docs/endpoints) pages in the Duo Admin Panel show which access devices are verified.   
 
+### Verify Your Setup   
+
+Authenticate to a protected application using a managed Edge for Business browser.   
+
+When the Trusted Endpoints policy is set to “Allow all endpoints”, users receive access to the application (assuming the managed Edge browser passes all other policy verification), and Duo records the trusted or untrusted status of that browser.   
+
+If the Trusted Endpoints policy is set to “Require endpoints to be trusted” and Duo successfully verifies the managed Edge for Business browser's management status and configuration against the required policy settings, then the user receives access to the protected application.  
+
+If the managed Edge for Business browser fails the configuration and policy checks, then Duo will deny access to the application from the unmanaged browser.   
 
   
