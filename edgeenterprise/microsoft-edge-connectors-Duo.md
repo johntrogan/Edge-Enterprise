@@ -22,12 +22,6 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 
 ### Admin Portal Setup
 
-## Connector Setup and Configuration Steps
-
-## Cisco Duo Configuration 
-
-### Admin Portal Setup
-
 #### Prerequisites   
 
 - Access to the [Microsoft Entra Admin Center](https://entra.microsoft.com/#home)  
