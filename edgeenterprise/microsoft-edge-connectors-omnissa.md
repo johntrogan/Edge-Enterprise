@@ -1,29 +1,29 @@
 ---
-title: "Cisco Duo"
+title: "Omnissa"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 02/10/2025
+ms.date: 04/15/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Duo"
+description: "Omnissa"
 ---
-# Set up a Cisco Duo Device Trust Connector 
+# Set up an Omnissa Device Trust Connector 
 
-Microsoft Edge for Business connects with Cisco Duo to strengthen security by enabling device trust verification without the need for additional agents. Simplify your security management with easy Duo implementation, ensuring secure application access and enhanced browser protection. 
+Omnissa...To Be Updated Placement Only below 
 
 ## Prerequisites   
 
 - Access to the Microsoft [Entra Admin Center](https://entra.microsoft.com/) 
 - Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)  
-- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://duo.com/docs/admin-roles).   
+- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application ed[administrative roles](https://duo.com/docs/admin-roles).   
 - Devices with Windows OS to be enrolled   
 
-## Cisco Duo Admin Portal Setup
+## Omnissa Admin Portal Setup
 
 #### 1. Create the Edge Device Trust Connector Integration
 

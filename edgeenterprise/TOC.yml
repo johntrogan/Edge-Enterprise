@@ -136,6 +136,8 @@
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
          - name: Cisco Duo
            href: microsoft-edge-connectors-Duo.md
+         - name: Omnissa
+           href: microsoft-edge-connectors-omnissa.md
          - name: Ping Identity
            href: microsoft-edge-connectors-Ping.md
          - name: RSA
