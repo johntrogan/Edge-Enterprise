@@ -22,8 +22,11 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 
 - Seamless Integration: Device Trust connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
 
+## Signals
 
-| **Signal**                             | **Category**           | **Description**                                                  |
+The following signals are sent to the IDP during the device trust flow: 
+
+| **Signals**                             | **Category**           | **Description**                                                  |
 |----------------------------------------|------------------------|------------------------------------------------------------------|
 | Device Manufacturer                    | Hardware Information   | The company that manufactures the device                         |
 | Device Model                           | Hardware Information   | The model name of the device                                     |
@@ -45,15 +48,19 @@ Microsoft Edge for Business Device Trust connectors enable administrators to enh
 | Site Isolation Enabled                 | Browser Information    | Whether site isolation is enabled in the browser                 |
 | Password Protection Warning Trigger    | Security Features      | A warning triggered for password-related protections             |
 
-## Create a Configuration Policy
+## Set up a Device Trust Connector
 
-Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
-## Set Up a Device Trust Connector
-Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the connectors page in the Edge Management service.
+Once you have at least one configuration policy created, visit [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) access the Connectors page in the Edge Management Service. 
 
-- [Duo Connector Setup](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
-- [Ping Identity]()
-- [RSA]()
+## Set up a Device Trust Connector
+
+| Connector         | Documentation Link                                                                 |
+|-------------------|-------------------------------------------------------------------------------------|
+| Duo Connector     | [Duo Connector Setup](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |
+| Ping Identity     | [Ping Identity](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295)       |
+| RSA               | [RSA](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-rsa?branch=pr-en-us-5295)                 |
+
 
 
