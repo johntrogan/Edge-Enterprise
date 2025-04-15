@@ -49,7 +49,7 @@ During setup, keep the Duo Admin Panel open in your browser. You'll need to refe
 
    ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image1.png)
 
-    4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
+  4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
 
 #### 3. Configure the Connector in the Edge Management Service   
 
