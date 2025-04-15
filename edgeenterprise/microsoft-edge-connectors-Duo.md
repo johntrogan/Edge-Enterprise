@@ -22,54 +22,77 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 
 ### Admin Portal Setup
 
+## Connector Setup and Configuration Steps
+
+## Cisco Duo Configuration 
+
+### Admin Portal Setup
+
+#### Prerequisites   
+
+- Access to the [Microsoft Entra Admin Center](https://entra.microsoft.com/#home)  
+- Access to the [Microsoft 365 Admin Center](https://admin.microsoft.com/#/Edge)  
+- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles.](https://duo.com/docs/admin-roles)  
+- Devices with Windows OS to be enrolled   
+
 #### 1. Create the Edge Device Trust Connector Integration
 
-1. Log in to the **Duo Admin Panel** and navigate to **Trusted Endpoints** under the **Devices** section.
-2. If this is your first management integration:
-   - Click **Get started** at the bottom of the Trusted Endpoints introduction page.
-3. If you're adding another management integration:
-   - Click **Add Integration** at the top of the page.
-4. On the **Add Management Tools Integration** page:
-   - Find **Microsoft Edge for Business Device Trust Connector** under **Device Management Tools**.
-   - Click **Add this integration**.
-5. Choose **Windows** from the "Recommended" options and click **Add**.
-6. The integration is created in a **Disabled** state.
-   - You’ll activate it when ready to apply your Duo Trusted Endpoints policy.
-   - If the Edge for Business trust check fails, fallback to Duo Desktop integrations will occur.
-7. Keep the Duo Admin Panel open — you’ll refer back to complete Microsoft Entra setup.
-![screenshot of duo admin.](media/microsoft-edge-connectors-duo/image1.png)
+1. Log in to the [*Duo Admin Panel](https://admin.duosecurity.com/login?next=%2F) and navigate to **Trusted Endpoints** under the **Devices** section.
+2.	If this is your first management integration, click the **Get started** button at the bottom of the Trusted Endpoints introduction page. If you're adding another management integration, click the **Add Integration** button you see at the top of the page instead. 
+3. On the "Add Management Tools Integration" page, locate **Microsoft Edge for Business Device Trust Connector** in the list of "Device Management Tools" and click the **Add this integration** selector. 
+4. Choose **Windows** from the "Recommended" options, and then click the **Add** button.
 
-#### 2. Register Your Microsoft Entra Application with Duo
+The new Microsoft Edge for Business Device Trust Connector integration is created in the "Disabled" state. You'll turn it on when you're ready to apply your Duo trusted endpoints policy. If the Edge for Business Device Trust Connector trust check fails any active Duo Desktop based integrations will run a trust check as a fallback. 
 
-1. In the Duo Admin Panel, scroll to **Register Microsoft Entra Application with Duo** on the integration details page.
-2. Enter the following values from your Entra application:
-   - **Tenant ID**
-   - **Client ID**
-   - **Client Secret**
-3. Click **Test Configuration** to verify your setup.
-   - If the test fails, recheck the entered values.
-4. If successful, click **Save & Configure**.
+During setup, keep the Duo Admin Panel open in your browser. You'll need to refer back to the Edge for Business Device Trust Connector integration page to complete the Microsoft Entra configuration steps. 
 
-#### 3. Finish Trusted Endpoints Deployment
+## Create A New App Registration in Microsoft Entra 
 
-1. Apply the **Trusted Endpoints** policy to begin checking Edge for Business browser enrollment during authentication.
-2. Return to the **Edge for Business Device Trust Connector** integration page.
-3. In the **Change Integration Status** section:
-   - Choose to activate for test groups or all users.
-4. Use the **Device Insight** and **Endpoints** pages to confirm which devices are verified.
+1.	Navigate to the [Microsoft Entra admin center](https://microsoft-onmicrosoft-com.access.mcas.ms/aad_login) > Applications > App registrations > New registration. 
+2.	Register your new application. Allow access to “Accounts in any organizational directory (Any Microsoft Entra ID tenant – Multitenant)”.  
+3.	Navigate to the newly created app registration. Use the left-side navigation, under “Manage”, to go to Certificates & Secrets. Create a new client secret for your application to be used in a later step. 
+4.	In the left-side navigation, go to Manage > API Permissions. Configure the required permissions on your newly created app registration to give the application permissions to access the Device Trust API. 
 
-#### 4. Verify Your Setup
+- 4.1.	Search for the “Microsoft Edge management service” in the “APIs my organization uses” tab. Click on the resulting row. NOTE: If you don’t see the application, you will need to add it to your tenant.  
 
-1. Authenticate to a Duo-protected app using a **managed Edge for Business** browser.
-2. If the policy is set to **Allow all endpoints**:
-   - The user receives access if all other verifications pass.
-   - Duo logs the browser as trusted or untrusted.
-3. If the policy is set to **Require endpoints to be trusted**:
-   - Duo **blocks** unmanaged browsers.
-   - If verification succeeds, access is granted.
-   - If verification fails, access is **denied**.
+- 4.2 **If you can’t find the Microsoft Edge management Service in your tenant**  – You must add the application to your tenant to see it. Navigate to the Graph Explorer and sign in with your account. Once you’ve done so, copy the request shown and execute it (App ID is **ff846ae4-7ec9-42f4-8576eb14198ad5e1**). Ensure you grant the graph explorer permissions on the “Modify permissions” tab. After completing this step, you should see the Microsoft Edge management service in your tenant 
 
-## Edge Management Service
+   ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image1.png)
+
+- 4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
+
+## Create a New Policy in Microsoft 365   
+
+1. Log in to the Microsoft 365 Admin Center and navigate to the Settings -> Microsoft Edge page.   
+
+2. Navigate to the “Configuration policies” tab, click “Create policy”.   
+
+3. (Optional) After saving, click on your newly created policy, navigate to the “Group assignment” tab, and select a group that your policy will be assigned to.   
+
+4. After creating a policy, navigate to the “Connectors” tab on the Microsoft Edge settings page and click on the “Set up” button under the Cisco Duo Device Trust connector.   
+
+5. Search for the policy you’ve created in step 2 in the “Choose Policy“ dropdown and paste “https://duosecurity.com“ in the “URL patterns to allow”.    
+
+6. Click the “Save configuration” button. You should now see the Cisco Duo Device Trust connector appear under the “Installed Connectors” section.   
+
+## Register your Microsoft Entra Application with Duo   
+
+1. Return to your Edge for Business Device Trust Connector management integration details page in the [Duo Admin Panel](https://admin.duosecurity.com/login?next=%2F). Scroll down to the section labeled **“Register Microsoft Entra Application with Duo”**.   
+
+2. Enter the **Tenant ID, Client ID, and Client Secret** values from the application you created earlier.   
+
+3. Click the **Test Configuration** button to verify your setup. If you do not receive a "Configuration Successful!" message, double-check that you provided the right application information.   
+
+4. If testing your configuration was successful, click **Save & Configure**.  
+
+## Finish Trusted Endpoints Deployment   
+
+After creating the Edge for Business Device Trust Connector Trusted Endpoints integration, set the [Trusted Endpoints](https://duo.com/docs/policy#trusted-endpoints) policy to start checking for Edge for Business browser enrollment as users authenticate to Duo-protected services and applications.   
+
+When your trusted endpoints policy is applied to your Duo applications, return to the Edge for Business   
+
+Device Trust Connector [Trusted Endpoints] integration in the Admin Panel. The "Change Integration Status" section of the page shows the current integration status (disabled by default after creation). You can choose to either activate this integration only for members of a specified test group or groups, or activate for all users. 
+ ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)  
 
 #### Step-by-step Instructions
 
@@ -88,4 +111,4 @@ The Microsoft Edge for Business connector works with Cisco Duo to strengthen sec
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
-   ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)
+  

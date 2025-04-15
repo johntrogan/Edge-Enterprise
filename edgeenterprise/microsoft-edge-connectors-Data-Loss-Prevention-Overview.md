@@ -26,20 +26,6 @@ The following user actions can send content to the Data Loss Prevention connecto
 - Print  
 - Upload  
 
-## Prerequisites
-
-- Microsoft Edge version 115.0.1901.7 or greater installed  
-- Microsoft Edge Administrator permissions in Microsoft 365 Admin Center  
-- Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
-  - See Microsoft Edge Supported Operating Systems for details  
-
-## Access the Experience
-
-Follow these steps to access the experience:
-
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage) and sign in  
-2. In the main left navigation bar, go to **Settings > Microsoft Edge**
-
 ## Create a Configuration Policy
 
 Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
