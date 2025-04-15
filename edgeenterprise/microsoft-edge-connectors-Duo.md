@@ -20,6 +20,11 @@ Microsoft Edge for Business connects with Cisco Duo to strengthen security by en
 
 ### Prerequisites   
 
+- Access to the Microsoft [Entra Admin Center](https://entra.microsoft.com/) 
+- Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)  
+- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://duo.com/docs/admin-roles).   
+- Devices with Windows OS to be enrolled   
+
 #### 1. Create the Edge Device Trust Connector Integration
 
 1. Log in to the [*Duo Admin Panel](https://admin.duosecurity.com/login?next=%2F) and navigate to **Trusted Endpoints** under the **Devices** section.
