@@ -86,6 +86,7 @@ After creating the Edge for Business Device Trust Connector Trusted Endpoint
 When your trusted endpoints policy is applied to your Duo applications, return to the Edge for Business   
 
 Device Trust Connector [Trusted Endpoints] integration in the Admin Panel. The "Change Integration Status" section of the page shows the current integration status (disabled by default after creation). You can choose to either activate this integration only for members of a specified test group or groups, or activate for all users. 
+
  ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)  
 
 #### Step-by-step Instructions
