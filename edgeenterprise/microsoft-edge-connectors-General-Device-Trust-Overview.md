@@ -60,7 +60,7 @@ Once you have at least one configuration policy created, visit [https://admin.
 |-------------------|-------------------------------------------------------------------------------------|
 | Cisco Duo   | [Set up a Cisco Duo Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |    
 | RSA               | [Set up a RSA Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-rsa?branch=pr-en-us-5295)                 |
-| Omnissa              | [Set up a Omnissa Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
+| Omnissa              | [Set up an Omnissa Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
 | Ping Identity     | [Set up a Ping Identity Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295) |  
 
 
