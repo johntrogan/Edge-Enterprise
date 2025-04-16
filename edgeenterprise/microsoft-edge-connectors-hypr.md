@@ -50,27 +50,20 @@ Now that your Entra ID users are integrated with HYPR, you’ll need to configur
 
   ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/2.png)  
   
-
 3. Search for the “Microsoft Edge management service” in the **APIs my organization uses** tab, and click on the resulting row. 
 
-
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/3.png)  
-
-
    If the Microsoft Edge management service is not listed in your environment, you’ll need to add it to your tenant. To do this, navigate to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) and sign in with your account. Once signed in, copy the provided request and execute it (App ID: ff846ae4-7ec9-42f4-8576-eb14198ad5e1). 
 
    Make sure to grant Graph Explorer the necessary permissions under the **Modify permissions** tab. After completing these steps, the Microsoft Edge management service should appear in your tenant. 
-
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/4.png)  
 
 You can find more details about those steps in Microsoft’s [Create a service principal for an application guide](https://learn.microsoft.com/en-us/graph/tutorial-applications-basics?tabs=http#create-a-service-principal-for-an-application). 
 
 4. **Select Application Permissions** and add the “DeviceTrust.Read.All” permission. 
-
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/5.png)  
 
 5. After adding it, grant admin consent for the tenant. 
-
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/6.png) 
 
 ## Configure the Connector in the Edge Management Service
@@ -96,24 +89,19 @@ The final step is to create a HYPR Adapt risk policy to evaluate Microsoft Edge 
 
 1. Contact HYPR Support to ensure that the HYPR Adapt for Microsoft Edge for Business integration is available and enabled on your tenant. 
 
-
 2. Access HYPR Control Center and navigate to **HYPR Adapt**. At the top right of the Risk Policies list, select **+ Risk Policy**. 
 
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/7.png) 
-
 
 3. Select the **HYPR Adapt for Microsoft Edge** for Business policy and provide a **Name** and a **Description**, if desired. 
 
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/8.png) 
 
-
 4. Your policy will now appear in the Risk policies list. 
 
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/9.png) 
 
-
 5. You can configure your policy as needed by clicking on **Configuration**. When satisfied with the settings, click **Save Configuration**. 
-
 
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/10.png) 
 
