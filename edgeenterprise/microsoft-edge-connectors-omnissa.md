@@ -12,6 +12,7 @@ ms.collection: M365-modern-desktop
 ms.custom: generated
 description: "Omnissa"
 ---
+
 # Set up an Omnissa Device Trust Connector 
 
 Omnissa...To Be Updated Placement Only below 

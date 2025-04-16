@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Ping"
 ---
 
-# Ping Connector Overview
+# Setup a Ping Identity Connector 
 
 The Microsoft Edge for Business connector works with Ping to strengthen security by enabling device trust verification without the need for additional agents. Simplify your security management with easy Ping implementation, ensuring secure application access and enhanced browser protections.
 

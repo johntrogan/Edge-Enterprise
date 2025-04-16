@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Symantec"
 ---
 
-# Symantec Content Analysis Connector Setup for Microsoft Edge for Business
+# Setup a Symantec Connector
 
 Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted or printed from the web.  
 

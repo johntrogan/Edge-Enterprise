@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Devicie"
 ---
 
-# Devicie Connector Overview
+# Setup a Devicie Connector
 
 The **Devicie Reporting Connector for Microsoft Edge for Business** enables deep visibility into browser health indicators, user activity, and security events across your organization’s managed devices. By combining **browser telemetry** with **endpoint health reporting**, Devicie provides IT administrators with a unified view of user behavior, security risks, and compliance — all within Microsoft 365.
 

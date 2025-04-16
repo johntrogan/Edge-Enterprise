@@ -12,7 +12,8 @@ ms.collection: M365-modern-desktop
 ms.custom: generated
 description: "Crowdstrike"
 ---
-# Crowdstrike Connector Overview
+
+# Setup a Crowdstrike Connector 
 
 Easily ingest Microsoft Edge for Business data into CrowdStrike Falcon® Next-gen SIEM for unified visibility across endpoints, browsers, and beyond. View browser security insights alongside other threat indicators to accelerate detection, minimize context switching, and improve triage accuracy.  
 

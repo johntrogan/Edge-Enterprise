@@ -13,17 +13,15 @@ ms.custom: generated
 description: "RSA"
 ---
 
-# RSA Connector Overview
+# Setup a RSA Connector 
 
-Let only the devices you trust in—powered by RSA ID Plus and Microsoft Edge for Business. Take control with the RSA Device Trust Connector for Microsoft Edge for Business. This connector leverages device signals from Microsoft Edge so only verified, managed endpoints can access critical apps. By coupling strong identity authentication with device posture checks, you extend protection far beyond just who logs in, accelerating Zero Trust maturity without complex setups. 
+Take control with the RSA Device Trust Connector for Microsoft Edge for Business. This connector leverages device signals from Microsoft Edge so only verified, managed endpoints can access critical apps. By coupling strong identity authentication with device posture checks, you extend protection far beyond just who logs in, accelerating Zero Trust maturity without complex setups. 
 
-## Connector Setup and Configuration Steps
+## Configure the RSA Connector
 
-## Edge Management Service
+Visit [this page](https://community.rsa.com/s/product-integration/a9HPO0000000eWv2AI/edge-for-business) to learn how to enable an RSA Device Trust Connector.
 
-###  Microsoft Admin Center
-
-#### Step-by-step Instructions
+### Configure the Connector in the Edge Management Service
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
@@ -35,12 +33,9 @@ Let only the devices you trust in—powered by RSA ID Plus and Microsoft Edge fo
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
 
 4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input the required URL patterns.
+   In the **URL patterns to allow, one per line** field, input the URL for your configuration.
 
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
-## RSA Configuration 
-
-### Admin Portal Setup
 
