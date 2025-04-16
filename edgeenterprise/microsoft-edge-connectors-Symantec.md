@@ -1,5 +1,5 @@
 ---
-title: "Data Loss Prevention"
+title: "Data Loss Prevention - Symantec"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -19,14 +19,20 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 
 ## Connector Setup and Configuration Steps
 
-### Configuration Steps – Edge Management Service
+1. **Navigate to the Microsoft Admin Center**  
+   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
-1. Navigate to https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors  
-2. Under Discover Connectors, find the Symantec DLP Connector and select Set up.  
-3. In the Choose policy field, select a policy for your connector configuration.  
-4. Under Enable data loss prevention for browser actions, select the user actions you want to be scanned by Symantec’s DLP agent.  
-5. Under When the data loss prevention verdict is not received in time, choose to ‘Allow file access’ or ‘Block file access’. This determines the default verdict if a communication error between Edge and the DLP agent occurs.  
-6. Select Save configuration.
+2. **Discover the Connector**  
+   Under **Discover Connectors**, locate the **Symantec Data Loss Connector** and select **Set up**.
+
+3. **Select a Policy**  
+   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+
+4. **Enter URL Patterns**  
+   In the **URL patterns to allow, one per line** field, input the URL for your configuration.
+
+5. **Save the Configuration**  
+   Select **Save configuration** to apply your changes.
 
 ## Symantec Configuration 
 

@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Splunk"
 ---
 
-# Setup a Splunk Connector 
+# Setup a Splunk Connector Overview
 
 *[PARTNER ASSET: Description of connector]*
 
