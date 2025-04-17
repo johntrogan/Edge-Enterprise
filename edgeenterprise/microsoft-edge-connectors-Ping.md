@@ -117,7 +117,7 @@ See below for an example of a PingOne DaVinci flow which blocks access to users 
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Ping Identity Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Ping Identity Device Trustr** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
