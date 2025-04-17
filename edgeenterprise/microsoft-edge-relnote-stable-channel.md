@@ -36,7 +36,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
   
 - Fixed an issue which caused the first-run experience (FRE) page edge://welcome-new-device to open and fail with an error message page that didn’t close.
 
-- Fixed an issue which may have caused the Copilot icon on the toolbar to disappear when the [HubsSidebarEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#hubssidebarenabled) policy was enabled. 
+- Fixed an issue which may have caused the Copilot icon on the toolbar to disappear when the [HubsSidebarEnabled](deployedge/microsoft-edge-policies#hubssidebarenabled) policy was enabled. 
 
 ## Version 134.0.3124.129: April 17, 2025
 
