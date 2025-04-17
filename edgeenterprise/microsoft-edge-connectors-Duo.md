@@ -20,7 +20,7 @@ Microsoft Edge for Business connects with Cisco Duo to strengthen security by en
 ## Prerequisites   
 
 - Access to the Microsoft [Entra Admin Center](https://entra.microsoft.com/) 
-- Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)  
+- Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)
 - Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://duo.com/docs/admin-roles).   
 - Devices with Windows OS to be enrolled   
 
@@ -58,13 +58,13 @@ During setup, keep the Duo Admin Panel open in your browser. You'll need to refe
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Splunk Device Trust Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
 
 4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input “https://splunk.com“. 
+   In the **URL patterns to allow, one per line** field, input “https://duosecurity.com“. 
 
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.

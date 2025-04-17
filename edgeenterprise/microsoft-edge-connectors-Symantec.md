@@ -17,45 +17,26 @@ description: "Symantec"
 
 Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted or printed from the web.  
 
-## Connector Setup and Configuration Steps
+## Configure the Connector in the Edge Management Service
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Symantec Data Loss Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
 
 4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input the URL for your configuration.
+   In the **URL patterns to allow, one per line** field, input “https://symantec.com“. 
 
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
 ## Symantec Configuration 
 
-### Configuration and Deployment Steps (Partner Instructions)
-
-Note: Microsoft Edge for Business currently requires end-users to sign in to a work profile with a valid Microsoft Entra ID and does not support connectors in personal profiles, the Guest profile, and during InPrivate browsing. To prevent data loss, consider disabling these Microsoft Edge features.
-
-### 1. **Enable** the Connector and **Create** a Configuration Policy in the Microsoft 365 Admin Center
-
-1. **Log on** to the Microsoft 365 admin center at https://admin.microsoft.com as an Edge Administrator, and **navigate** to the settings for Microsoft Edge.
-
-2. **Create** a configuration policy with the required settings.  
-   - *Skip this action if a policy already exists.*
-
-3. In the connector settings, **perform** the setup steps for the Symantec Content Analysis Connector:  
-   - **Enable** the desired monitoring settings  
-   - **Complete** the installation
-
-4. > **Note:** You cannot assign a configuration policy to more than one connector.
-
-5. For detailed instructions, **refer** to the Microsoft 365 documentation at [insert Microsoft Learn hyperlink].
-
-### 2. **Verify** that the Configuration Policy was Deployed Successfully
+### 1. **Verify** that the Configuration Policy was Deployed Successfully
 
 1. On a Windows endpoint, **sign in** to Microsoft Edge for Business with a valid Microsoft Entra ID.
 
@@ -66,7 +47,7 @@ Note: Microsoft Edge for Business currently requires end-users to sign in to a w
    - OnFileAttachedEnterpriseConnector  
    - OnPrintEnterpriseConnector
 
-### 3. **Enable** Monitoring for Microsoft Edge for Business in the Agent Configuration
+### 2. **Enable** Monitoring for Microsoft Edge for Business in the Agent Configuration
 
 1. In the Enforce Server administration console, **navigate** to:  
    System > Agents > Agent Configuration  
@@ -83,7 +64,7 @@ Note: Microsoft Edge for Business currently requires end-users to sign in to a w
 
 4. For more information about configuring print monitoring, **see** Printer/Fax settings.
 
-### 4. **Enable** Monitoring using the Symantec Content Analysis Connector in the Advanced Agent Settings
+### 3. **Enable** Monitoring using the Symantec Content Analysis Connector in the Advanced Agent Settings
 
 1. In the Enforce Server administration console, **navigate** to:  
    System > Agents > Agent Configuration  
@@ -96,13 +77,13 @@ Note: Microsoft Edge for Business currently requires end-users to sign in to a w
 
 3. **Save** your changes.
 
-### 5. **Configure** and **Deploy** a DLP Policy
+### 4. **Configure** and **Deploy** a DLP Policy
 
 1. If you have not already done so, **configure** a DLP policy to specify which confidential information you want to detect in Microsoft Edge for Business.
 
 2. For more information, **see** Workflow for implementing policies.
 
-### 6. **Ensure** that End-Users are Signed In to Microsoft Edge for Business
+### 5. **Ensure** that End-Users are Signed In to Microsoft Edge for Business
 
 1. **Ensure** that end-users **sign in** to Microsoft Edge for Business with a valid Microsoft Entra ID.
 

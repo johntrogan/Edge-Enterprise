@@ -26,7 +26,7 @@ The following user actions can send content to the Data Loss Prevention connecto
 - Print  
 - Upload  
 
-## Set up a Data Loss Connector
+## Set up a Data Loss Prevention Connector
 
 Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
