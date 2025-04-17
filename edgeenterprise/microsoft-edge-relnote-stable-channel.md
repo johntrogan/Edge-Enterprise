@@ -26,11 +26,23 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 135.0.3179.73: April 11, 2025
+## Version 135.0.3179.85: April 17, 2025
 
 Fixed various bugs and performance issues.
 
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#April-11-2025).
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#april-17-2025).
+
+### Fixes
+  
+- Fixed an issue which caused the first-run experience (FRE) page edge://welcome-new-device to open and fail with an error message page that didn’t close.
+
+- Fixed an issue which may have caused the Copilot icon on the toolbar to disappear when the [HubsSidebarEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#hubssidebarenabled) policy was enabled. 
+
+## Version 134.0.3124.129: April 17, 2025
+
+Fixed various bugs and performance issues for Extended Stable Channel.
+
+Extended Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#april-17-2025).
 
 ## Version 134.0.3124.119: April 9, 2025
 
