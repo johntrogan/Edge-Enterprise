@@ -23,15 +23,18 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Symatec DLP Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your connector configuration.
 
-4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input “https://symantec.com“. 
+4. **Enable data loss prevention for browser actions**  
+   **Select** the user actions you want to be scanned by Symantec’s DLP agent. 
 
-5. **Save the Configuration**  
+5. **When the data loss prevention verdict is not received in time**  
+   Choose to **‘Allow file access’** or **‘Block file access’**. This determines the default verdict if a communication error between Edge and the DLP agent occurs.   
+
+6. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
 ## Symantec Configuration 
