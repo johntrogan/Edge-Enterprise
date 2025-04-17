@@ -12,12 +12,9 @@ ms.collection: M365-modern-desktop
 description: "Provides steps for configuring the monitoring dashboard."
 ---
 
-# Monitoring dashboard (in preview)
+# Monitoring dashboard
 
 The monitoring dashboard gives you a snapshot of information about managed devices in your organization.
-
-> [!NOTE]
-> This experience is currently in preview. You can opt in to this preview by navigating to **Settings** > **Org settings** > **Organization profile** > **Release preferences**, and selecting a targeted release option.
 
 ![Edge policies for monitoring dashboard](media/microsoft-edge-management-service-monitoring-dashboard/mgt-service-monitoring-dashboard.png)
 
@@ -34,6 +31,9 @@ To view device insights on this page, you must first turn on the toggle to **Ena
 ## Edge update status
 
 Browser sessions without the latest security updates might be at risk. The Edge update status card provides insight into the different versions of Edge that are in use across your managed devices and provides actions to help keep them up to date with the latest version. This card allows you to see the number of devices that are running across each Edge channel and whether those devices are up to date, have an update available, or are recommended to update. The following information is provided for your devices:
+
+> [!NOTE]
+> If a device has not sent data for 30 days, then the update information for that device will be deleted from the Edge management service.
 
 - The **Total devices** column displays the number of managed devices that are running across each Edge channel.
 
