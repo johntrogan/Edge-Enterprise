@@ -28,9 +28,9 @@ Additionally, this integration supports a unified security posture across variou
 - Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://duo.com/docs/admin-roles).   
 - Devices with Windows OS to be enrolled   
 
-## HYPR Device Trust Integration for Microsoft Edge for Business
+## 1. HYPR Device Trust Integration for Microsoft Edge for Business
 
-### 1. Integrate Entra ID with HYPR
+### Integrate Entra ID with HYPR
 
 The first step is to integrate Entra ID with your HYPR tenant. This allows access to your organization’s Entra ID-based applications using HYPR authentication as a phishing-resistant multi-factor authentication method.
 
@@ -38,11 +38,11 @@ You can find the complete steps to configure this integration in HYPR’s [Entra
 
 ---
 
-### 2. Configure Edge for Business Device Trust Integration
+### Configure Edge for Business Device Trust Integration
 
 Now that your Entra ID users are integrated with HYPR, you’ll need to configure Edge for Business for the Device Trust integration. Perform the following steps through the Entra portal using an account with proper administrative permissions.
 
-## Grant API Permission to the HYPR Application  
+## 2. Grant API Permission to the HYPR Application  
 
 1. From the [Entra ID](https://entra.microsoft.com) portal home screen, select **Entra ID** > **Applications** > **App registrations**, and choose the application you used to integrate with HYPR.
 
@@ -53,20 +53,24 @@ Now that your Entra ID users are integrated with HYPR, you’ll need to configur
 3. Search for the “Microsoft Edge management service” in the **APIs my organization uses** tab, and click on the resulting row. 
 
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/3.png)  
+
    If the Microsoft Edge management service is not listed in your environment, you’ll need to add it to your tenant. To do this, navigate to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) and sign in with your account. Once signed in, copy the provided request and execute it (App ID: ff846ae4-7ec9-42f4-8576-eb14198ad5e1). 
 
    Make sure to grant Graph Explorer the necessary permissions under the **Modify permissions** tab. After completing these steps, the Microsoft Edge management service should appear in your tenant. 
+
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/4.png)  
 
 You can find more details about those steps in Microsoft’s [Create a service principal for an application guide](https://learn.microsoft.com/en-us/graph/tutorial-applications-basics?tabs=http#create-a-service-principal-for-an-application). 
 
 4. **Select Application Permissions** and add the “DeviceTrust.Read.All” permission. 
+
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/5.png)  
 
 5. After adding it, grant admin consent for the tenant. 
+
 ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/6.png) 
 
-## Configure the Connector in the Edge Management Service
+## 3. Configure the Connector in the Edge Management Service
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
@@ -83,7 +87,7 @@ You can find more details about those steps in Microsoft’s [Create a service p
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
  
-## Create and Assign a HYPR Adapt Risk Policy
+## 4. Create and Assign a HYPR Adapt Risk Policy
 
 The final step is to create a HYPR Adapt risk policy to evaluate Microsoft Edge for Business Device Trust signals.
 

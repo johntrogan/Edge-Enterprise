@@ -142,6 +142,8 @@
            href: microsoft-edge-connectors-Ping.md
          - name: RSA
            href: microsoft-edge-connectors-RSA.md
+         - name: HYPR
+           href: microsoft-edge-connectors-hypr.md
       - name: Data Loss Prevention Connectors
         items:
          - name: Data Loss Prevention Connectors
