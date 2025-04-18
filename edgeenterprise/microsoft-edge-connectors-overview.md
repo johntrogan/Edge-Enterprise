@@ -43,7 +43,7 @@ Gain insights into browser-based security events with a direct connection betwee
 - Microsoft Edge version 135.0.3179.85 or greater installed  
 - Microsoft Edge Administrator permissions in Microsoft 365 Admin Center  
 - Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
-  - See Microsoft Edge Supported Operating Systems for details  
+  - [See Microsoft Edge Supported Operating Systems for details](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-supported-operating-systems?branch=pr-en-us-5295)  
 
 ## Access the Edge Management Service
 
