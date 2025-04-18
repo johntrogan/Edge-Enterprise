@@ -124,12 +124,12 @@
         href: microsoft-edge-management-service-customizations.md
       - name: Protect Office documents with Microsoft Purview Information Protection
         href: microsoft-edge-management-service-office-mip.md
-   - name: Connectors Overview
+   - name: Connectors 
      href: microsoft-edge-connectors-overview.md
      items:
-     - name: Device Trust Connectors
+     - name: Device Trust Connectors Overview
        items:
-         - name: Device Trust Connectors Overview
+         - name: Device Trust Connectors 
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
          - name: Cisco Duo
            href: microsoft-edge-connectors-Duo.md
