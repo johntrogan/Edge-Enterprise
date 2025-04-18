@@ -52,7 +52,7 @@ The following signals are sent to the IDP during the device trust flow:
 
 Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
-Once you have at least one configuration policy created, visit [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) access the Connectors page in the Edge Management Service. 
+Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 
 ## Device Trust Providers
 

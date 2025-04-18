@@ -3,7 +3,7 @@ title: "Reporting Connectors"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 02/10/2025
+ms.date: 04/18/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -15,7 +15,7 @@ description: "Reporting Connectors"
 
 # Reporting Connectors
 
-Microsoft Edge for Business Reporting connectors enable admins to send user security events from the browser to participating provider endpoints.
+Microsoft Edge for Business Reporting connectors enable admins to gain insights into browser-based security events with a direct connection between Edge for Business and your preferred security solution
 
 ## Security Events
 
@@ -36,15 +36,21 @@ The following security events can be enabled in a reporting connector:
 | Login                     | A sign-in to a domain in the specified list is successful.                                           |
 | Password breach           | A password is detected as compromised as part of a known data breach.                               |
 
-## Create a Configuration Profile
-
-Admins must have a configuration profile set up as a prerequisite for configuring a connector. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-
 ## Set Up a Reporting Connector
-Visit https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors to access the connectors page in the Edge Management service.
 
-- [Splunk](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
-- [Devicie](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
-- [Crowdstrike](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)
+Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+
+Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
+ 
+
+## Reporting Providers
+
+| Connector     | Documentation Link                                                                 |
+|---------------|-------------------------------------------------------------------------------------|
+| Splunk        | [Set up a Splunk Reporting Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)        |
+| Devicie       | [Set up a Devicie Reporting Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)       |
+| Crowdstrike   | [Set up a Crowdstrike Reporting Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295)   |
+
+
 
 

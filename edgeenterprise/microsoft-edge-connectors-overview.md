@@ -40,7 +40,7 @@ Gain insights into browser-based security events with a direct connection betwee
 
 ## Prerequisites
 
-- Microsoft Edge version 115.0.1901.7 or greater installed  
+- Microsoft Edge version 135.0.3179.85 or greater installed  
 - Microsoft Edge Administrator permissions in Microsoft 365 Admin Center  
 - Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
   - See Microsoft Edge Supported Operating Systems for details  
@@ -53,8 +53,6 @@ All connectors can be configured and managed in the Edge Management Service. Use
 2. In the main left navigation bar, go to **Settings > Microsoft Edge**.
 3. Navigate to the Connectors tab. 
 
-## Learn More
 
-Use the links above to explore each connector type and access detailed setup and integration information.
 
 ---

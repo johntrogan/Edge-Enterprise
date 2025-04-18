@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Ping"
 ---
 
-# Setup a Ping Identity Connector 
+# PingOne DaVinci Connector Set up
 
 The Microsoft Edge for Business connector lets you use Microsoft Edge for Business to improve authentication security in your PingOne DaVinci flow.
 
@@ -72,7 +72,7 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
 - Note the **Value** of the secret. You’ll use this in the connector configuration.  
 *A screen capture of the client secret in Microsoft Azure.*
 
-## Configuring Edge for Business for PingOne DaVinci
+## Configure the Connector in the Edge Management Service
 
 1. Sign on to **Microsoft 365 admin center**.
 2. Navigate to the **Microsoft Edge configuration**.
@@ -109,29 +109,5 @@ Add the connector in DaVinci as shown in *Adding a connector*, then configure it
 The Device Trust capability allows PingOne DaVinci to receive the Microsoft Edge for Business Device Signals which include the device attributes such as Serial Number, MAC Addresses, and Hostname. Also, the CrowdStrike agent ID is included if the CrowdStrike agent is installed.
 
 See below for an example of a PingOne DaVinci flow which blocks access to users who are not using the expected Microsoft Edge for Business enrolled browser:
-
-
-## Configure the Connector in the Edge Management Service   
-
-1. **Navigate to the Microsoft Admin Center**  
-   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
-
-2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Ping Identity Device Trust** and select **Set up**.
-
-3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
-
-4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input. 
-   - auth.pingone.com
-   - auth.pingone.ca
-   - auth.pingone.eu
-   - auth.pingone.asia
-   - auth.pingone.au
-
-5. **Save the Configuration**  
-   Select **Save configuration** to apply your changes.
-
 
 

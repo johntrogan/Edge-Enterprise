@@ -3,7 +3,7 @@ title: "Devicie"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 02/10/2025
+ms.date: 04/18/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -15,9 +15,7 @@ description: "Devicie"
 
 # Setup a Devicie Connector
 
-The **Devicie Reporting Connector for Microsoft Edge for Business** enables deep visibility into browser health indicators, user activity, and security events across your organization’s managed devices. By combining **browser telemetry** with **endpoint health reporting**, Devicie provides IT administrators with a unified view of user behavior, security risks, and compliance — all within Microsoft 365.
-
-Whether you're managing a large enterprise or a multi-tenant MSP environment, Devicie automates endpoint management with policy enforcement, compliance, and configuration aligned to Microsoft Intune — while adding valuable browser-level insights.
+Devicie extends the power of Microsoft Intune by automating policy enforcement, compliance, and security configurations across managed devices. Designed for MSPs and enterprises, Devicie eliminates manual processes, ensuring endpoints remain secure, up-to-date, and aligned with organizational policies. With multi-tenant automation and hyperautomation capabilities, organizations can efficiently scale their endpoint management while maintaining a seamless user experience. 
 
 ## Benefits of Browser Health Integration
 
@@ -28,36 +26,28 @@ Whether you're managing a large enterprise or a multi-tenant MSP environment, De
  - Automate response actions via Devicie’s policy framework  
  - Extend the power of **Microsoft Intune** with **automated telemetry insights**  
 
-## System Requirements
-
-Before setting up the Devicie Reporting Connector, ensure your environment meets the following prerequisites:
+## Prerequisites
 
  - **Microsoft 365** licenses with an **Intune-enabled environment**  
  - An active **Devicie subscription**  
- - **Microsoft Edge for Business** installed on all managed devices  
+ - **Microsoft Edge for Business** installed on all managed devices 
+ - Appropriate administrative permissions to deploy and manage policies   
 
-## How to Configure the Devicie Edge for Business Reporting Connector
-
-Setting up the Devicie Reporting Connector for Microsoft Edge for Business is quick and seamless. Follow these steps:
+## Configure the Connector in the Devicie Admin Console
 
   1. **Log in to the Devicie admin console**  
-Navigate to your Devicie dashboard and open the Edge for Business Report panel.
+Navigate to your Devicie dashboard and open the **Edge for Business Report** panel.
 
   2. **Access configuration settings**  
-In the settings tab, locate your endpoint name and reporting key.
+In the **settings tab**, locate your **endpoint name** and **reporting key**.
 
   3. **Apply settings in the Edge for Business portal**  
 Use the retrieved endpoint name and key to configure the Devicie connector within the Microsoft Edge for Business portal.
 
   4. **Validate integration**  
 Once setup is complete, browser telemetry — including health indicators, extensions, and user behavior — will automatically populate in your Devicie Browser Health dashboard.
- 
 
-## Connector Setup and Configuration Steps
-
-### Edge Management Service
-
-### Instructions
+## Configure the Connector in the Edge Management Service
 
 1. Navigate to [Microsoft Admin Center](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors).
 
