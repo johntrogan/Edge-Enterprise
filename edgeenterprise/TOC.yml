@@ -124,12 +124,12 @@
         href: microsoft-edge-management-service-customizations.md
       - name: Protect Office documents with Microsoft Purview Information Protection
         href: microsoft-edge-management-service-office-mip.md
-   - name: Connectors
+   - name: Connectors Overview
      href: microsoft-edge-connectors-overview.md
      items:
      - name: Device Trust Connectors
        items:
-         - name: overview
+         - name: Device Trust Connectors Overview
            href: microsoft-edge-connectors-General-Device-Trust-Overview.md
          - name: Cisco Duo
            href: microsoft-edge-connectors-Duo.md
@@ -141,12 +141,12 @@
            href: microsoft-edge-connectors-RSA.md
          - name: HYPR
            href: microsoft-edge-connectors-hypr.md
-     - name: Data Loss Prevention Connectors
+     - name: Data Loss Prevention Connectors Overview
        href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
        items:
          - name: Symantec DLP
            href: microsoft-edge-connectors-Symantec.md
-     - name: Reporting Connectors
+     - name: Reporting Connectors Overview
        href: microsoft-edge-connectors-General-Report-Overview.md  
        items:
          - name: Splunk

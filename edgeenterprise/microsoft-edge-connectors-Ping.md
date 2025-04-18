@@ -41,14 +41,6 @@ For information and setup help, see the following:
 
 To use the Microsoft Edge for Business PingOne DaVinci connector you must have access to register an application through Microsoft Entra and assigning it the required Device Trust permissions. As well, access to the Microsoft 365 admin center is required to configure the Edge for Business Policies.
 
-## Setting up Microsoft Edge for Business
-
-To use the connector, you’ll need:
-
-- Administrator access to Microsoft Azure
-- An Azure App Registration for the Microsoft Edge for Business Device Trust integration.
-- Administrator access to Microsoft 365 admin center for Microsoft Edge for Business policy configuration.
-
 ### Setting up Azure App Registration
 
 1. Sign on to the Azure portal.
