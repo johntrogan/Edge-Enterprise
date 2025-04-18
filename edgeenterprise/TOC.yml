@@ -125,15 +125,11 @@
       - name: Protect Office documents with Microsoft Purview Information Protection
         href: microsoft-edge-management-service-office-mip.md
    - name: Connectors
+     href: microsoft-edge-connectors-overview.md
      items:
-      - name: Connectors in Edge for Business
-        items:
-         - name: Connectors in Edge for Business
-           href: microsoft-edge-connectors-overview.md
-      - name: Device Trust Connectors
-        items:
-         - name: Device Trust Connectors
-           href: microsoft-edge-connectors-General-Device-Trust-Overview.md
+     - name: Device Trust Connectors
+       href: microsoft-edge-connectors-General-Device-Trust-Overview.md
+       items:
          - name: Cisco Duo
            href: microsoft-edge-connectors-Duo.md
          - name: Omnissa
@@ -144,16 +140,14 @@
            href: microsoft-edge-connectors-RSA.md
          - name: HYPR
            href: microsoft-edge-connectors-hypr.md
-      - name: Data Loss Prevention Connectors
-        items:
-         - name: Data Loss Prevention Connectors
-           href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
+     - name: Data Loss Prevention Connectors
+       href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
+       items:
          - name: Symantec DLP
            href: microsoft-edge-connectors-Symantec.md
-      - name: Reporting Connectors
-        items:
-         - name: Reporting Connectors
-           href: microsoft-edge-connectors-General-Report-Overview.md      
+     - name: Reporting Connectors
+       href: microsoft-edge-connectors-General-Report-Overview.md  
+       items:
          - name: Splunk
            href: microsoft-edge-connectors-Splunk.md
          - name: Crowdstrike
