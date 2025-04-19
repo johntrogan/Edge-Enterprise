@@ -131,7 +131,7 @@
     - name: Device Trust Connectors
       items:
        - name: Device Trust Connectors Overview
-       - href: microsoft-edge-connectors-General-Device-Trust-Overview.md
+         href: microsoft-edge-connectors-General-Device-Trust-Overview.md
        - name: Cisco Duo
          href: microsoft-edge-connectors-Duo.md
        - name: Omnissa
