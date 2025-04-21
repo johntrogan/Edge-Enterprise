@@ -15,8 +15,18 @@ description: "Omnissa"
 
 # Set up an Omnissa Device Trust Connector 
 
-## Overview
-Microsoft Edge for Business integrates with Omnissa Access to verify the posture of unmanaged or third-party managed devices prior to granting access to company resources. A managed Edge browser can collect device posture information and share it with Omnissa Access, enabling real-time, posture-informed access decisions.
+Device Trust Connector in Edge for Business signals make it possible to verify the  posture of an unmanaged device or a third-party managed device prior to allowing  access to company resources. A managed Edge web browser can collect information  about the security posture of a device and share it with Omnissa Access so that a  posture-informed access decision can be made in real time. 
+
+ The verification of unmanaged devices prior to granting access to apps and resources is  simplified via the Omnissa integration within the Microsoft Trust Connector in  Edge for Business and an authentication adapter within Omnissa Access. Within  Omnissa Access, Device conditional access rules can be created that require specific device  signal criteria to be met. 
+
+ You can configure Microsoft Edge for Business Device Signals as an authentication  factor in Omnissa Access to support authentication for managed profiles on Windows  devices. You enable and configure the adapter in the Omnissa Access console to  retrieve device-level signals from the Edge browser. Users can sign in to Omnissa  Access from an Edge browser with a managed profile on a Windows machine. 
+
+ The Edge for Business Device Signals authentication is based on the device signal  attributes that you enable when you configure the adapter in the Omnissa Access  console. You must also integrate Omnissa Access with the Microsoft Edge Device Trust  connector in the Microsoft Edge management service console. After completing the  setup in both the Omnissa and Microsoft consoles, you configure access policy rules in  the Omnissa Access console. 
+ 
+ When users use the Edge browser to sign in, after their initial credentials are  authenticated, the second-factor authentication through Edge checks the device  security status based on the device signal attributes that you configured. Omnissa  Access retrieves the signal status from the Edge integration. 
+ Edge for Business Device Signals authentication is available for users running the Edge  browser with a managed profile on Windows devices. 
+ 
+ **Note : This authentication method is not available for managed browsers.**
 
 ## Prerequisites
 - Omnissa Access SaaS tenant
@@ -41,10 +51,12 @@ Microsoft Edge for Business integrates with Omnissa Access to verify the posture
 | URLs matcher to trigger Microsoft Edge inline flow | Copy and save this URL for use in the Edge management service |
 | IDP Service Principal | Copy and save this value for the Edge management service |
 | Microsoft Tenant ID | Enter your Microsoft Entra ID tenant ID |
-| Allow access if not a managed Edge browser | Leave disabled (recommended). If enabled, configure an alternative strong fallback authentication |
-| Verify device's disk encryption status | Choose from:<br>- Encrypted<br>- Encrypted \| Unspecified<br>- Encrypted \| Unknown<br>- Encrypted \| Unspecified \| Unknown |
-| Verify device's firewall status | Choose from:<br>- Enabled<br>- Enabled \| Unspecified<br>- Enabled \| Unknown<br>- Enabled \| Unspecified \| Unknown |
-| Verify device's screen lock status | Choose from:<br>- Enabled<br>- Enabled \| Unspecified<br>- Enabled \| Unknown<br>- Enabled \| Unspecified \| Unknown |
+| Allow access if not a managed Edge browser | Leave disabled (recommended). If enabled, configure an alternative strong fallback authentication 
+| Allow access if not a managed Microsoft Edge browser | This setting is deactivated by default to prevent access from browsers without a managed profile. Activating this setting is not recommended. If support for unmanaged browsers is required, configure an alternative authentication method that provides strong validation as fallback. |
+| Verify device's disk encryption status | Enable this setting to require device disk encryption. When multiple options are selected, validation uses OR logic. <br> • **Encrypted**: Main disk must be encrypted. <br> • **Encrypted \| Unspecified**: Main disk is encrypted or Edge did not send the signal. <br> • **Encrypted \| Unknown**: Main disk is encrypted or Edge could not evaluate the state. <br> • **Encrypted \| Unspecified \| Unknown**: Any of the above conditions is valid. |
+| Verify device's firewall status       | Enable this setting to require a firewall. Validation passes if any selected condition is met. <br> • **Enabled**: Firewall is enabled. <br> • **Enabled \| Unspecified**: Firewall is enabled or Edge did not send the signal. <br> • **Enabled \| Unknown**: Firewall is enabled or Edge could not determine the status. <br> • **Enabled \| Unspecified \| Unknown**: Any of the above conditions is valid. |
+| Verify device's screen lock status   | Enable this setting to require screen lock with a password. Validation passes if any selected condition is met. <br> • **Enabled**: Screen lock is enabled. <br> • **Enabled \| Unspecified**: Screen lock is enabled or Edge did not send the signal. <br> • **Enabled \| Unknown**: Screen lock is enabled or Edge could not determine the status. <br> • **Enabled \| Unspecified \| Unknown**: Any of the above conditions is valid. |
+
 
 ![screenshot1S hypr edge API.](media/microsoft-edge-connectors-omnissa/1.png)  
 
