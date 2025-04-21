@@ -15,7 +15,7 @@ description: "Duo"
 
 # Set up a Cisco Duo Device Trust Connector 
 
-Microsoft Edge for Business connects with Cisco Duo to strengthen security by enabling device trust verification without the need for additional agents. Simplify your security management with easy Duo implementation, ensuring secure application access and enhanced browser protection. 
+Microsoft Edge for Business Connects with Cisco Duo to strengthen security by enabling device trust verification without the need for additional agents. Simplify your security management with easy Duo implementation, ensuring secure application access and enhanced browser protection. 
 
 ## Prerequisites   
 
@@ -61,7 +61,7 @@ During setup, keep the Duo Admin Panel open in your browser. You'll need to refe
    Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+   In the **Choose policy** field, select a policy appropriate for your Connector configuration.
 
 4. **Enter URL Patterns**  
    In the **URL patterns to allow, one per line** field, input “https://duosecurity.com“. 

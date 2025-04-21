@@ -15,12 +15,12 @@ description: "Device Trust Connectors"
 
 # Device Trust Connectors
 
-Microsoft Edge for Business Device Trust connectors enable administrators to enhance their organization's security posture directly within the browser. These connectors allow Identity Providers (IDPs) to obtain device-level signals from Microsoft Edge for Business during user authentication flows. These signals are then sent to and verified by the IDP before a user can authenticate to a specified resource.
+Microsoft Edge for Business Device Trust Connectors enable administrators to enhance their organization's security posture directly within the browser. These Connectors allow Identity Providers (IDPs) to obtain device-level signals from Microsoft Edge for Business during user authentication flows. These signals are then sent to and verified by the IDP before a user can authenticate to a specified resource.
 
 ## Benefits for Administrators
 - Enhanced Security: By ensuring that only trusted devices can access corporate resources, administrators can significantly reduce the risk of unauthorized access and potential security breaches 
 
-- Seamless Integration: Device Trust connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
+- Seamless Integration: Device Trust Connectors integrate seamlessly with existing security measures and protocols, extending the reach of security investments without additional costs  
 
 ## Signals
 
@@ -50,7 +50,7 @@ The following signals are sent to the IDP during the device trust flow:
 
 ## Set up a Device Trust Connector
 
-Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
 Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 

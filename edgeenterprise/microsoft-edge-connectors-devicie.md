@@ -13,11 +13,11 @@ ms.custom: generated
 description: "Devicie"
 ---
 
-# Setup a Devicie Connector
+# Set up a Devicie Connector
 
 Devicie extends the power of Microsoft Intune by automating policy enforcement, compliance, and security configurations across managed devices. Designed for MSPs and enterprises, Devicie eliminates manual processes, ensuring endpoints remain secure, up-to-date, and aligned with organizational policies. With multi-tenant automation and hyperautomation capabilities, organizations can efficiently scale their endpoint management while maintaining a seamless user experience. 
 
-## Benefits of Browser Health Integration
+## Benefits for Administrators
 
  - Monitor **browser extensions** across all managed endpoints  
  - Track **usage behavior and security events** in Microsoft Edge for Business  
@@ -42,7 +42,7 @@ Navigate to your Devicie dashboard and open the **Edge for Business Report**�
 In the **settings tab**, locate your **endpoint name** and **reporting key**.
 
   3. **Apply settings in the Edge for Business portal**  
-Use the retrieved endpoint name and key to configure the Devicie connector within the Microsoft Edge for Business portal.
+Use the retrieved endpoint name and key to configure the Devicie Connector within the Microsoft Edge for Business portal.
 
   4. **Validate integration**  
 Once setup is complete, browser telemetry — including health indicators, extensions, and user behavior — will automatically populate in your Devicie Browser Health dashboard.
@@ -53,14 +53,14 @@ Once setup is complete, browser telemetry — including health indicators, exten
 
 2. Under **Discover Connectors**, find the **Devicie Reporting Connector** and select **Set up**.
 
-3. In the **Choose policy** field, select a policy for your connector configuration.
+3. In the **Choose policy** field, select a policy for your Connector configuration.
 
 4. Enter the following fields:
    - **Host address**
    - **Port**
    - **Token ID**
 
-5. Select **Test connection** to confirm the connection is successful.
+5. Select **Test Connection** to confirm the Connection is successful.
 
 6. Under **User & Browser events**, select the desired browser events to be sent to the Devicie endpoint.
 

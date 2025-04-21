@@ -15,80 +15,95 @@ description: "Omnissa"
 
 # Set up an Omnissa Device Trust Connector 
 
-Omnissa...To Be Updated Placement Only below 
+## Overview
+Microsoft Edge for Business integrates with Omnissa Access to verify the posture of unmanaged or third-party managed devices prior to granting access to company resources. A managed Edge browser can collect device posture information and share it with Omnissa Access, enabling real-time, posture-informed access decisions.
 
-## Prerequisites   
+## Prerequisites
+- Omnissa Access SaaS tenant
+- Microsoft Entra tenant ID
+- Managed profiles
+- Subscription plan:
+  - Education: Microsoft 365 A3, A5
+  - Business: Microsoft 365 Business Standard, Premium
+  - Enterprise: Office 365 E3, E5, Microsoft 365 E3, E5
 
-- Access to the Microsoft [Entra Admin Center](https://entra.microsoft.com/) 
-- Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)  
-- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application ed[administrative roles](https://duo.com/docs/admin-roles).   
-- Devices with Windows OS to be enrolled   
+## Set Up Edge for Business Device Signals Adapter in Omnissa Access
 
-## Omnissa Admin Portal Setup
+### 1. Enable the Adapter
+- Navigate to: **Omnissa Access Console > Integrations > Authentication Methods**
+- Select: **Edge for Business Device Signals**
+- Click **Configure**
 
-#### 1. Create the Edge Device Trust Connector Integration
+### 2. Configuration Fields
+| Option | Description |
+|--------|-------------|
+| Enable Microsoft Edge for Business Device Signal Adapter | Set to **Yes** to enable |
+| URLs matcher to trigger Microsoft Edge inline flow | Copy and save this URL for use in the Edge management service |
+| IDP Service Principal | Copy and save this value for the Edge management service |
+| Microsoft Tenant ID | Enter your Microsoft Entra ID tenant ID |
+| Allow access if not a managed Edge browser | Leave disabled (recommended). If enabled, configure an alternative strong fallback authentication |
+| Verify device's disk encryption status | Choose from:<br>- Encrypted<br>- Encrypted \| Unspecified<br>- Encrypted \| Unknown<br>- Encrypted \| Unspecified \| Unknown |
+| Verify device's firewall status | Choose from:<br>- Enabled<br>- Enabled \| Unspecified<br>- Enabled \| Unknown<br>- Enabled \| Unspecified \| Unknown |
+| Verify device's screen lock status | Choose from:<br>- Enabled<br>- Enabled \| Unspecified<br>- Enabled \| Unknown<br>- Enabled \| Unspecified \| Unknown |
 
-1. Log in to the [*Duo Admin Panel](https://admin.duosecurity.com/login?next=%2F) and navigate to **Trusted Endpoints** under the **Devices** section.
-2.	If this is your first management integration, click the **Get started** button at the bottom of the Trusted Endpoints introduction page. If you're adding another management integration, click the **Add Integration** button you see at the top of the page instead. 
-3. On the "Add Management Tools Integration" page, locate **Microsoft Edge for Business Device Trust Connector** in the list of "Device Management Tools" and click the **Add this integration** selector. 
-4. Choose **Windows** from the "Recommended" options, and then click the **Add** button.
+![screenshot1S hypr edge API.](media/microsoft-edge-connectors-omnissa/1.png)  
 
-The new Microsoft Edge for Business Device Trust Connector integration is created in the "Disabled" state. You'll turn it on when you're ready to apply your Duo trusted endpoints policy. If the Edge for Business Device Trust Connector trust check fails any active Duo Desktop based integrations will run a trust check as a fallback. 
+### 3. Click **Save**.
 
-During setup, keep the Duo Admin Panel open in your browser. You'll need to refer back to the Edge for Business Device Trust Connector integration page to complete the Microsoft Entra configuration steps. 
+### 4. Next Steps
+- Copy the **URL matcher** and **IDP Service Principal**
+- Use them to configure the Edge Device Trust Connector in the Microsoft Edge management console
 
-#### 2. Create A New App Registration in Microsoft Entra 
+## Integrate with Microsoft Edge Management Console
+The Microsoft Edge Device Trust Connector must be configured to receive signals from Edge and share them with Omnissa Access.
 
-1.	Navigate to the [Microsoft Entra admin center](https://microsoft-onmicrosoft-com.access.mcas.ms/aad_login) > Applications > App registrations > New registration. 
-2.	Register your new application. Allow access to “Accounts in any organizational directory (Any Microsoft Entra ID tenant – Multitenant)”.  
-3.	Navigate to the newly created app registration. Use the left-side navigation, under “Manage”, to go to Certificates & Secrets. Create a new client secret for your application to be used in a later step. 
-4.	In the left-side navigation, go to Manage > API Permissions. Configure the required permissions on your newly created app registration to give the application permissions to access the Device Trust API. 
+1. **Navigate to the Microsoft Admin Center**  
+   Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
-    4.1.	Search for the “Microsoft Edge management service” in the “APIs my organization uses” tab. Click on the resulting row. NOTE: If you don’t see the application, you will need to add it to your tenant.  
+2. **Discover the Connector**  
+   Under **Discover Connectors**, locate the **Omnissa Device Trust Connector** and select **Set up**.
 
-    4.2 **If you can’t find the Microsoft Edge management Service in your tenant**  – You must add the application to your tenant to see it. Navigate to the Graph Explorer and sign in with your account. Once you’ve done so, copy the request shown and execute it (App ID is **ff846ae4-7ec9-42f4-8576eb14198ad5e1**). Ensure you grant the graph explorer permissions on the “Modify permissions” tab. After completing this step, you should see the Microsoft Edge management service in your tenant 
+3. **Select a Policy**  
+   In the **Choose policy** field, select a policy appropriate for your Connector configuration.
 
-   ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image1.png)
+4. **Enter URL Patterns**  
+   In the **URL patterns to allow, one per line** field, input the URL for your configuration.
 
-  4.3.	Select “Application permissions” and add the “DeviceTrust.Read.All” permission. 
+5. **Save the Configuration**  
+   Select **Save configuration** to apply your changes.
 
-## Configure the Connector in the Edge Management Service   
+## Add Device Signals as a Secondary Authentication Method
 
-1. **Navigate to the Microsoft Admin Center**
-Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+### 1. Link Method to Identity Provider
+- Go to: **Omnissa Access Console > Integrations > Identity Providers**
+- Select the Identity Provider
+- Enable: **Microsoft Edge for Business Device Signals** under Authentication Methods
+- Click **Save**
 
-2. **Discover the Connector** 
-Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**. 
+### 2. Add to Access Policy
+- Go to: **Resources > Policies**
+- Add or edit a policy
+- Click **Next** to open Configuration
+- Create or edit a rule:
 
-3. **Select a Policy** 
-In the **Choose policy** field, select a policy appropriate for your connector configuration. 
+| Field | Description |
+|-------|-------------|
+| If user's network range is | Select network range |
+| and user accessing content from | Select **Windows 10+** |
+| and user belongs to groups | Choose target group (or leave blank for all users) |
+| Then perform this action | **Authenticate using...** |
+| then the user may authenticate using | Select primary authentication method |
+| ADD AUTHENTICATION | Select **Microsoft Edge for Business Device Signals** as the secondary method |
 
-4. **Enter URL Patterns**
-In the **URL patterns to allow, one per line** field, input “https://duosecurity.com“. 
+Click **Next** and then **Save**.
 
-5. **Save the Configuration** 
-Select **Save configuration** to apply your changes. 
+### 3. Authentication Flow
+- User signs in with primary authentication
+- Edge checks device security status using configured signals
+- Omnissa Access approves/denies access based on compliance
 
-### Finish Trusted Endpoints Deployment   
-
-After creating the Edge for Business Device Trust Connector Trusted Endpoints integration, set the [Trusted Endpoints](https://duo.com/docs/policy#trusted-endpoints) policy to start checking for Edge for Business browser enrollment as users authenticate to Duo-protected services and applications.   
-
-When your trusted endpoints policy is applied to your Duo applications, return to the Edge for Business   
-
-Device Trust Connector [Trusted Endpoints] integration in the Admin Panel. The "Change Integration Status" section of the page shows the current integration status (disabled by default after creation). You can choose to either activate this integration only for members of a specified test group or groups, or activate for all users. 
-
- ![screenshot of duo connector.](media/microsoft-edge-connectors-duo/image2.png)  
-
-The [Device Insight](https://duo.com/docs/insight) and [Endpoints](https://duo.com/docs/endpoints) pages in the Duo Admin Panel show which access devices are verified.   
-
-### Verify Your Setup   
-
-Authenticate to a protected application using a managed Edge for Business browser.   
-
-When the Trusted Endpoints policy is set to “Allow all endpoints”, users receive access to the application (assuming the managed Edge browser passes all other policy verification), and Duo records the trusted or untrusted status of that browser.   
-
-If the Trusted Endpoints policy is set to “Require endpoints to be trusted” and Duo successfully verifies the managed Edge for Business browser's management status and configuration against the required policy settings, then the user receives access to the protected application.  
-
-If the managed Edge for Business browser fails the configuration and policy checks, then Duo will deny access to the application from the unmanaged browser.   
-
-  
+## Audit and Reporting
+- Go to: **Monitor > Reports** in Omnissa Access Console
+- Select **Audit Events** report type
+- Configure parameters and click **Show Results**
+- Report logs include signal status and authentication success/failure

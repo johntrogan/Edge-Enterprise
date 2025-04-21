@@ -48,27 +48,27 @@ Now that your Entra ID users are integrated with HYPR, you’ll need to configur
 
 2. Select **API permissions**, then click **Add a permission**. 
 
-  ![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/2.png)  
+  ![screenshot2 hypr edge API.](media/microsoft-edge-connectors-hypr/2.png)  
   
 3. Search for the “Microsoft Edge management service” in the **APIs my organization uses** tab, and click on the resulting row. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/3.png)  
+![screenshot3 hypr edge API.](media/microsoft-edge-connectors-hypr/3.png)  
 
    If the Microsoft Edge management service is not listed in your environment, you’ll need to add it to your tenant. To do this, navigate to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) and sign in with your account. Once signed in, copy the provided request and execute it (App ID: ff846ae4-7ec9-42f4-8576-eb14198ad5e1). 
 
    Make sure to grant Graph Explorer the necessary permissions under the **Modify permissions** tab. After completing these steps, the Microsoft Edge management service should appear in your tenant. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/4.png)  
+![screenshot4 hypr edge API.](media/microsoft-edge-connectors-hypr/4.png)  
 
 You can find more details about those steps in Microsoft’s [Create a service principal for an application guide](https://learn.microsoft.com/en-us/graph/tutorial-applications-basics?tabs=http#create-a-service-principal-for-an-application). 
 
 4. **Select Application Permissions** and add the “DeviceTrust.Read.All” permission. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/5.png)  
+![screenshot5 hypr edge API.](media/microsoft-edge-connectors-hypr/5.png)  
 
 5. After adding it, grant admin consent for the tenant. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/6.png) 
+![screenshot6 hypr edge API.](media/microsoft-edge-connectors-hypr/6.png) 
 
 ## 3. Configure the Connector in the Edge Management Service
 
@@ -79,7 +79,7 @@ You can find more details about those steps in Microsoft’s [Create a service p
    Under **Discover Connectors**, locate the **HYPR Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+   In the **Choose policy** field, select a policy appropriate for your Connector configuration.
 
 4. **Enter URL Patterns**  
    In the **URL patterns to allow, one per line** field, input the URL for your configuration.
@@ -95,19 +95,19 @@ The final step is to create a HYPR Adapt risk policy to evaluate Microsoft Edge 
 
 2. Access HYPR Control Center and navigate to **HYPR Adapt**. At the top right of the Risk Policies list, select **+ Risk Policy**. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/7.png) 
+![screenshot7 hypr edge API.](media/microsoft-edge-connectors-hypr/7.png) 
 
 3. Select the **HYPR Adapt for Microsoft Edge** for Business policy and provide a **Name** and a **Description**, if desired. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/8.png) 
+![screenshot8 hypr edge API.](media/microsoft-edge-connectors-hypr/8.png) 
 
 4. Your policy will now appear in the Risk policies list. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/9.png) 
+![screenshot9 hypr edge API.](media/microsoft-edge-connectors-hypr/9.png) 
 
 5. You can configure your policy as needed by clicking on **Configuration**. When satisfied with the settings, click **Save Configuration**. 
 
-![screenshot hypr edge API.](media/microsoft-edge-connectors-hypr/10.png) 
+![screenshot10 hypr edge API.](media/microsoft-edge-connectors-hypr/10.png) 
 
 6. Finally, assign the policy to your Entra ID integration. Follow the [Policy Assignments](https://docs.hypr.com/docs/adapt/adaptInstallCfg/adaptInstallCfgRiskPolicies/adapt-install-cfg-risk-policies/#policy-assignments) guide in HYPR’s documentation for more details.
 

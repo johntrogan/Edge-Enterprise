@@ -3,7 +3,7 @@ title: "Data Loss Prevention - Symantec"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 02/10/2025
+ms.date: 04/21/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Symantec"
 ---
 
-# Setup a Symantec Connector
+# Set up a Symantec Connector
 
 Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted or printed from the web.  
 

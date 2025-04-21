@@ -15,11 +15,11 @@ description: "Reporting Connectors"
 
 # Reporting Connectors
 
-Microsoft Edge for Business Reporting connectors enable admins to gain insights into browser-based security events with a direct connection between Edge for Business and your preferred security solution
+Microsoft Edge for Business Reporting Connectors enable admins to gain insights into browser-based security events with a direct Connection between Edge for Business and your preferred security solution
 
 ## Security Events
 
-The following security events can be enabled in a reporting connector:
+The following security events can be enabled in a reporting Connector:
 
 | Event Value               | Event Description                                                                                   |
 |---------------------------|------------------------------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ The following security events can be enabled in a reporting connector:
 
 ## Set Up a Reporting Connector
 
-Admins must set up a configuration policy to assign to any connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
 
 Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
  

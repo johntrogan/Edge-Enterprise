@@ -3,7 +3,7 @@ title: "RSA Documentation"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
-ms.date: 02/10/2025
+ms.date: 04/21/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -13,7 +13,7 @@ ms.custom: generated
 description: "RSA"
 ---
 
-# Setup a RSA Connector 
+# Set up a RSA Connector 
 
 Take control with the RSA Device Trust Connector for Microsoft Edge for Business. This connector leverages device signals from Microsoft Edge so only verified, managed endpoints can access critical apps. By coupling strong identity authentication with device posture checks, you extend protection far beyond just who logs in, accelerating Zero Trust maturity without complex setups. 
 
