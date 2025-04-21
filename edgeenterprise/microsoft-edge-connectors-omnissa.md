@@ -60,7 +60,8 @@ Device Trust Connector in Edge for Business signals make it possible to verify t
 
 ![screenshot1S hypr edge API.](media/microsoft-edge-connectors-omnissa/1.png)  
 
-### 3. Click **Save**.
+### 3. Click **Save**
+- Your Omnissa configuration is now complete. Saving will generate the values needed to connect with Microsoft Edge.
 
 ### 4. Next Steps
 - Copy the **URL matcher** and **IDP Service Principal**
