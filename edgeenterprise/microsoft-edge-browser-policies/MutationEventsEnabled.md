@@ -10,12 +10,12 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom:
-description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable deprecated/removed Mutation Events (deprecated)"
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable deprecated/removed Mutation Events (obsolete)"
 ---
 
 # MutationEventsEnabled
 
-## Enable deprecated/removed Mutation Events (deprecated)
+## Enable deprecated/removed Mutation Events (obsolete)
 > OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 136.
 
 ## Supported versions
@@ -31,7 +31,7 @@ If you enable this policy, mutation events will continue to be fired, even if th
 If you disable or don't configure this policy, these events will not be fired.
 
 Note:
-This policy is a temporary workaround and will be deprecated starting with Microsoft Edge version 137.
+This policy is a temporary workaround and will be obsolete starting with Microsoft Edge version 137.
 
 ## Supported features
 
@@ -50,7 +50,7 @@ This policy is a temporary workaround and will be deprecated starting with Micro
 ### Group Policy (ADMX) info
 
 - GP unique name: MutationEventsEnabled
-- GP name: Enable deprecated/removed Mutation Events (deprecated)
+- GP name: Enable deprecated/removed Mutation Events (obsolete)
 - GP path (Mandatory): N/A
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
