@@ -80,7 +80,7 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
    In the **Choose policy** field, select a policy appropriate for your Connector configuration.
 
 4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input.
+   In the **URL patterns to allow, one per line** field.
 
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
