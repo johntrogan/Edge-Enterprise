@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ImplicitSignInEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable implicit sign-in"
+---
+
+# ImplicitSignInEnabled
+
+## Enable implicit sign-in
+
+
+## Supported versions
+
+- On Windows since 93 or later
+
+## Description
+
+Configure this policy to allow/disallow implicit sign-in.
+
+If you have configured the [BrowserSignin](BrowserSignin.md) policy to 'Disable browser sign-in', this policy will not take any effect.
+
+If you enable or don't configure this setting, implicit sign-in will be enabled, Edge will attempt to sign the user into their profile based on what and how they sign in to their OS.
+
+If you disable this setting, implicit sign-in will be disabled.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ImplicitSignInEnabled
+- GP name: Enable implicit sign-in
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ImplicitSignInEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

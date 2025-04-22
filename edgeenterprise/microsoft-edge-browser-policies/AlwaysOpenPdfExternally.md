@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AlwaysOpenPdfExternally"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Always open PDF files externally"
+---
+
+# AlwaysOpenPdfExternally
+
+## Always open PDF files externally
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Disables the internal PDF viewer in Microsoft Edge.
+
+If you enable this policy Microsoft Edge treats PDF files as downloads and lets users open them with the default application.
+
+If Microsoft Edge is the default PDF reader, PDF files aren't downloaded and will continue to open in Microsoft Edge.
+
+If you don't configure this policy or disable it, Microsoft Edge will open PDF files (unless the user disables it).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AlwaysOpenPdfExternally
+- GP name: Always open PDF files externally
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AlwaysOpenPdfExternally
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AlwaysOpenPdfExternally
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

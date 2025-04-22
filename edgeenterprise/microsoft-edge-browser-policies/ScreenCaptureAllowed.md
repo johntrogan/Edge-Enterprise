@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ScreenCaptureAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow or deny screen capture"
+---
+
+# ScreenCaptureAllowed
+
+## Allow or deny screen capture
+
+
+## Supported versions
+
+- On Windows and macOS since 83 or later
+
+## Description
+
+If you enable this policy, or don't configure this policy, a web page can use screen-share APIs (for example, getDisplayMedia() or the Desktop Capture extension API) for a screen capture.
+If you disable this policy, calls to screen-share APIs will fail. For example, if you're using a web-based online meeting, video or screen sharing will not work.  However, this policy is not considered
+(and a site will be allowed to use screen-share APIs) if the site matches an origin pattern in any of the following policies:
+[ScreenCaptureAllowedByOrigins](ScreenCaptureAllowedByOrigins.md),
+[WindowCaptureAllowedByOrigins](WindowCaptureAllowedByOrigins.md),
+[TabCaptureAllowedByOrigins](TabCaptureAllowedByOrigins.md),
+[SameOriginTabCaptureAllowedByOrigins](SameOriginTabCaptureAllowedByOrigins.md).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ScreenCaptureAllowed
+- GP name: Allow or deny screen capture
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ScreenCaptureAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: ScreenCaptureAllowed
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

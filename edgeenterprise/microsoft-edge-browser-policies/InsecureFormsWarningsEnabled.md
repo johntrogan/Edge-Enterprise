@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InsecureFormsWarningsEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable warnings for insecure forms (deprecated)"
+---
+
+# InsecureFormsWarningsEnabled
+
+## Enable warnings for insecure forms (deprecated)
+> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+
+## Supported versions
+
+- On Windows and macOS since 86 or later
+
+## Description
+
+This policy controls the handling of insecure forms (forms submitted over HTTP) embedded in secure (HTTPS) sites in the browser.
+If you enable this policy or don't set it, a full page warning will be shown when an insecure form is submitted. Additionally, a warning bubble will be shown next to the form fields when they are focused, and autofill will be disabled for those forms.
+If you disable this policy, warnings will not be shown for insecure forms, and autofill will work normally.
+
+This policy may be removed as soon as Edge 132. The feature is enabled by default since Edge 131.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InsecureFormsWarningsEnabled
+- GP name: Enable warnings for insecure forms (deprecated)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InsecureFormsWarningsEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: InsecureFormsWarningsEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

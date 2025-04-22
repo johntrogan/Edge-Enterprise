@@ -1,0 +1,83 @@
+---
+title: "Microsoft Edge Browser Policy Documentation TargetBlankImpliesNoOpener"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Do not set window.opener for links targeting _blank (obsolete)"
+---
+
+# TargetBlankImpliesNoOpener
+
+## Do not set window.opener for links targeting _blank (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 102.
+
+## Supported versions
+
+- On Windows and macOS since 88, until 102
+
+## Description
+
+If you enable this policy or leave it unset, the window.opener property is set to null unless the anchor specifies rel="opener".
+
+If you disable this policy, popups that target _blank are permitted to access (via JavaScript) the page that requested to open the popup.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: TargetBlankImpliesNoOpener
+- GP name: Do not set window.opener for links targeting _blank (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: TargetBlankImpliesNoOpener
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: TargetBlankImpliesNoOpener
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,80 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SmartScreenForTrustedDownloadsEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Force Microsoft Defender SmartScreen checks on downloads from trusted sources"
+---
+
+# SmartScreenForTrustedDownloadsEnabled
+
+## Force Microsoft Defender SmartScreen checks on downloads from trusted sources
+
+
+## Supported versions
+
+- On Windows since 78 or later
+
+## Description
+
+This policy setting lets you configure whether Microsoft Defender SmartScreen checks download reputation from a trusted source.
+
+In Windows, the policy determines a trusted source by checking its Internet zone. If the source comes from the local system, intranet, or trusted sites zone, then the download is considered trusted and safe.
+
+If you enable or don't configure this setting, Microsoft Defender SmartScreen checks the download's reputation regardless of source.
+
+If you disable this setting, Microsoft Defender SmartScreen doesn't check the download's reputation when downloading from a trusted source.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SmartScreenForTrustedDownloadsEnabled
+- GP name: Force Microsoft Defender SmartScreen checks on downloads from trusted sources
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: SmartScreenForTrustedDownloadsEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

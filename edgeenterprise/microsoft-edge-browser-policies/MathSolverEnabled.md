@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation MathSolverEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Let users snip a Math problem and get the solution with a step-by-step explanation in Microsoft Edge (obsolete)"
+---
+
+# MathSolverEnabled
+
+## Let users snip a Math problem and get the solution with a step-by-step explanation in Microsoft Edge (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 125.
+
+## Supported versions
+
+- On Windows and macOS since 91, until 125
+
+## Description
+
+This policy is obsoleted because Math Solver is deprecated from Edge. This policy won't work in Microsoft Edge version 126. This policy lets you manage whether users can use the Math Solver tool in Microsoft Edge or not.
+
+If you enable or don't configure the policy, then a user can take a snip of the Math problem and get the solution including a step-by-step explanation of the solution in a Microsoft Edge side pane.
+
+If you disable the policy, then the Math Solver tool will be disabled and users will not be able to use it.
+
+Note: Setting the [ComponentUpdatesEnabled](ComponentUpdatesEnabled.md) policy to disabled will also disable the Math Solver component.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: MathSolverEnabled
+- GP name: Let users snip a Math problem and get the solution with a step-by-step explanation in Microsoft Edge (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: MathSolverEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: MathSolverEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

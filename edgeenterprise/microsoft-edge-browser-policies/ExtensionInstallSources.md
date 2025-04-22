@@ -1,0 +1,94 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ExtensionInstallSources"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure extension and user script install sources"
+---
+
+# ExtensionInstallSources
+
+## Configure extension and user script install sources
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Define URLs that can install extensions and themes.
+
+Define URLs that can install extensions and themes directly without having to drag and drop the packages to the edge://extensions page.
+
+Each item in this list is an extension-style match pattern (see [https://go.microsoft.com/fwlink/?linkid=2095039](https://go.microsoft.com/fwlink/?linkid=2095039)). Users can easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (in other words, the referrer) must be allowed by these patterns. Do not host the files at a location that requires authentication.
+
+The [ExtensionInstallBlocklist](ExtensionInstallBlocklist.md) policy takes precedence over this policy. Any extensions that's on the block list won't be installed, even if it comes from a site on this list.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ExtensionInstallSources
+- GP name: Configure extension and user script install sources
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://corp.contoso.com/*
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallSources\0 =
+```
+https://corp.contoso.com/*
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: ExtensionInstallSources
+- Example value:
+
+```xml
+<array>
+  <string>https://corp.contoso.com/*</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

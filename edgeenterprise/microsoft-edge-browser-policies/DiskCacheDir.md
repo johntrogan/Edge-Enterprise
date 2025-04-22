@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DiskCacheDir"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Set disk cache directory"
+---
+
+# DiskCacheDir
+
+## Set disk cache directory
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Configures the directory to use to store cached files.
+
+If you enable this policy, Microsoft Edge uses the provided directory regardless of whether the user has specified the '--disk-cache-dir' flag. To avoid data loss or other unexpected errors, don't configure this policy to a volume's root directory or to a directory used for other purposes, because Microsoft Edge manages its contents.
+
+See [https://go.microsoft.com/fwlink/?linkid=2095041](https://go.microsoft.com/fwlink/?linkid=2095041) for a list of variables you can use when specifying directories and paths.
+
+If you don't configure this policy, the default cache directory is used, and users can override that default with the '--disk-cache-dir' command line flag.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- String
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DiskCacheDir
+- GP name: Set disk cache directory
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+${user_home}/Edge_cache
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: DiskCacheDir
+- Value type: REG_SZ
+
+#### Example value
+
+```
+${user_home}/Edge_cache
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DiskCacheDir
+- Example value:
+
+```xml
+<string>${user_home}/Edge_cache</string>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

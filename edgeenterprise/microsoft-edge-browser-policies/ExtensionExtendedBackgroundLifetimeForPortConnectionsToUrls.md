@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure a list of origins that grant an extended background lifetime to connecting extensions."
+---
+
+# ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls
+
+## Configure a list of origins that grant an extended background lifetime to connecting extensions.
+
+
+## Supported versions
+
+- On Windows and macOS since 128 or later
+
+## Description
+
+Extensions that connect to one of these origins will keep running as long as the port is connected.
+If unset, the policy's default values are used. These are the app origins that offer SDKs that are known to not offer the possibility to restart a closed connection to a previous state:
+- Smart Card Connector
+- Citrix Receiver (stable, beta, back-up)
+- VMware Horizon (stable, beta)
+
+If set, the default value list is extended with the newly configured values. The defaults and policy-provided entries will grant the exception to the connecting extensions, as long as the port is connected.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls
+- GP name: Configure a list of origins that grant an extended background lifetime to connecting extensions.
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+chrome-extension://abcdefghijklmnopabcdefghijklmnop/
+```
+
+```
+chrome-extension://bcdefghijklmnopabcdefghijklmnopa/
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls\0 =
+```
+chrome-extension://abcdefghijklmnopabcdefghijklmnop/
+```
+
+SOFTWARE\Policies\Microsoft\Edge\ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls\1 =
+```
+chrome-extension://bcdefghijklmnopabcdefghijklmnopa/
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: ExtensionExtendedBackgroundLifetimeForPortConnectionsToUrls
+- Example value:
+
+```xml
+<array>
+  <string>chrome-extension://abcdefghijklmnopabcdefghijklmnop/</string>
+  <string>chrome-extension://bcdefghijklmnopabcdefghijklmnopa/</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

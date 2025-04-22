@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation HubsSidebarEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Show Hubs Sidebar"
+---
+
+# HubsSidebarEnabled
+
+## Show Hubs Sidebar
+
+
+## Supported versions
+
+- On Windows and macOS since 99 or later
+
+## Description
+
+The Sidebar is a launcher bar located on the right side of Microsoft Edge.
+
+If you enable this policy, the Sidebar is always visible.
+
+If you disable this policy, the Sidebar is never shown.
+
+If you don’t configure this policy, the Sidebar’s visibility follows the user’s Microsoft Edge settings.
+
+Note: The recommended version of this policy—also known as the “Default Settings (users can override)” policy—is obsolete. This policy has never supported the recommended capability.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: HubsSidebarEnabled
+- GP name: Show Hubs Sidebar
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: HubsSidebarEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: HubsSidebarEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

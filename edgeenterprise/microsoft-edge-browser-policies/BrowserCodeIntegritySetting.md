@@ -1,0 +1,99 @@
+---
+title: "Microsoft Edge Browser Policy Documentation BrowserCodeIntegritySetting"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure browser process code integrity guard setting"
+---
+
+# BrowserCodeIntegritySetting
+
+## Configure browser process code integrity guard setting
+
+
+## Supported versions
+
+- On Windows since 104 or later
+
+## Description
+
+This policy controls the use of code integrity guard in the browser process, which only allows Microsoft signed binaries to load.
+
+Setting this policy to Enabled will enable code integrity guard in the browser process.
+
+Setting this policy to Disabled, or if the policy is not set, will prevent the browser from enabling code integrity guard in the browser process.
+
+The policy value Audit (1) is obsolete as of version 110. Setting this value is equivalent to the Disabled value.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, or Windows 10 Pro or Enterprise instances that enrolled for device management.
+
+This policy will only take effect on Windows 10 RS2 and above.
+
+Policy options mapping:
+
+* Disabled (0) = Do not enable code integrity guard in the browser process.
+
+* Audit (1) = Enable code integrity guard audit mode in the browser process.
+
+* Enabled (2) = Enable code integrity guard enforcement in the browser process.
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- Disabled (0) = Do not enable code integrity guard in the browser process.
+- Audit (1) = Enable code integrity guard audit mode in the browser process.
+- Enabled (2) = Enable code integrity guard enforcement in the browser process.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: BrowserCodeIntegritySetting
+- GP name: Configure browser process code integrity guard setting
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Do not enable code integrity guard in the browser process.
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: BrowserCodeIntegritySetting
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

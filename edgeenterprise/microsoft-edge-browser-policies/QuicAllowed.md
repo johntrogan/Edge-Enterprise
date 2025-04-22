@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation QuicAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow QUIC protocol"
+---
+
+# QuicAllowed
+
+## Allow QUIC protocol
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Allows use of the QUIC protocol in Microsoft Edge.
+
+If you enable this policy or don't configure it, the QUIC protocol is allowed.
+
+If you disable this policy, the QUIC protocol is blocked.
+
+QUIC is a transport layer network protocol that can improve performance of web applications that currently use TCP.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: QuicAllowed
+- GP name: Allow QUIC protocol
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: QuicAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: QuicAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

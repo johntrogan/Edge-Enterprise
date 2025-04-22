@@ -1,0 +1,83 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationLocalFileShowContextMenu"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Show context menu to open a file:// link in Internet Explorer mode"
+---
+
+# InternetExplorerIntegrationLocalFileShowContextMenu
+
+## Show context menu to open a file:// link in Internet Explorer mode
+
+
+## Supported versions
+
+- On Windows since 88 or later
+
+## Description
+
+This policy controls the visibility of the 'Open link in new Internet Explorer mode tab' option on the context menu for file:// links.
+
+This setting works in conjunction with:
+[InternetExplorerIntegrationLevel](InternetExplorerIntegrationLevel.md) is set to 'IEMode'.
+
+If you set this policy to true, the 'Open link in new Internet Explorer mode tab' context menu item will be available for file:// links.
+
+If you set this policy to false or don't configure it, the context menu item will not be added.
+
+If the [InternetExplorerIntegrationReloadInIEModeAllowed](InternetExplorerIntegrationReloadInIEModeAllowed.md) policy allows users to reload sites in Internet Explorer mode, then the 'Open link in new Internet Explorer mode tab' context menu item will be available for all links, except links to sites explicitly configured by the site list to use Microsoft Edge mode. In this case, if you set this policy to true, the context menu item will be available for file:// links even for sites configured to use Microsoft Edge mode. If you set this policy to false or don't configure it, this policy has no effect.
+
+To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink/?linkid=2094210](https://go.microsoft.com/fwlink/?linkid=2094210)
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerIntegrationLocalFileShowContextMenu
+- GP name: Show context menu to open a file:// link in Internet Explorer mode
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerIntegrationLocalFileShowContextMenu
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

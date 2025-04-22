@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ProactiveAuthEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Proactive Authentication (obsolete)"
+---
+
+# ProactiveAuthEnabled
+
+## Enable Proactive Authentication (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 90.
+
+## Supported versions
+
+- On Windows and macOS since 77, until 90
+
+## Description
+
+This policy is obsolete because it does not work independently of browser sign in. It does not work in Microsoft Edge after version 90. If you want to configure browser sign in, use the [BrowserSignin](BrowserSignin.md) policy.
+
+Lets you configure whether to turn on Proactive Authentication in Microsoft Edge.
+
+If you enable this policy, Microsoft Edge tries to seamlessly authenticate to websites and services using the account which is signed-in to the browser.
+
+If you disable this policy, Microsoft Edge does not try to authenticate with websites or services using single sign-on (SSO). Authenticated experiences like the Enterprise New Tab Page will not work (e.g. recent and recommended Office documents will not be available).
+
+If you don't configure this policy, Proactive Authentication is turned on.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ProactiveAuthEnabled
+- GP name: Enable Proactive Authentication (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ProactiveAuthEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: ProactiveAuthEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

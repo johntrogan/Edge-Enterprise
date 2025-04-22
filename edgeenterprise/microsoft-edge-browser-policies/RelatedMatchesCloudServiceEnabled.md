@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RelatedMatchesCloudServiceEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure Related Matches in Find on Page (obsolete)"
+---
+
+# RelatedMatchesCloudServiceEnabled
+
+## Configure Related Matches in Find on Page (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 134.
+
+## Supported versions
+
+- On Windows and macOS since 99, until 134
+
+## Description
+
+Specifies how the user receives related matches in Find on Page, which provides spellcheck, synonyms, and Q&amp;A results in Microsoft Edge.
+
+If you enable or do not configure this policy, users can receive related matches in Find on Page on all sites. The results are processed through a cloud service.
+
+If you disable this policy, users can receive related matches in Find on Page on a limited set of sites. In this case, results are processed locally on the user's device.
+
+Note: This policy is obsoleted because this feature has never been enabled in Microsoft Edge. As a result, this policy is not supported in any version of Microsoft Edge.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RelatedMatchesCloudServiceEnabled
+- GP name: Configure Related Matches in Find on Page (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: RelatedMatchesCloudServiceEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: RelatedMatchesCloudServiceEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

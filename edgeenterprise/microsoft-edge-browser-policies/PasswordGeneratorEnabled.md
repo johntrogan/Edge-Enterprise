@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation PasswordGeneratorEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow users to get a strong password suggestion whenever they are creating an account online"
+---
+
+# PasswordGeneratorEnabled
+
+## Allow users to get a strong password suggestion whenever they are creating an account online
+
+
+## Supported versions
+
+- On Windows and macOS since 93 or later
+
+## Description
+
+Configures the Password Generator Settings toggle that enables/disables the feature for users.
+
+If you enable or don't configure this policy, then Password Generator will offer users a strong and unique password suggestion (via a dropdown) on Signup and Change Password pages.
+
+If you disable this policy, users will no longer see strong password suggestions on Signup or Change Password pages.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: PasswordGeneratorEnabled
+- GP name: Allow users to get a strong password suggestion whenever they are creating an account online
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: PasswordGeneratorEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: PasswordGeneratorEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

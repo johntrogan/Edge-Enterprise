@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation StricterMixedContentTreatmentEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable stricter treatment for mixed content (obsolete)"
+---
+
+# StricterMixedContentTreatmentEnabled
+
+## Enable stricter treatment for mixed content (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
+
+## Supported versions
+
+- On Windows and macOS since 81, until 84
+
+## Description
+
+This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to update their web content if it was found to be incompatible with stricter mixed content treatment.
+
+This policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.
+
+If you set this policy to true or not set, audio and video mixed content will be automatically upgraded to HTTPS (that is, the URL will be rewritten as HTTPS, without a fallback if the resource isn't available over HTTPS) and a 'Not Secure' warning will be shown in the URL bar for image mixed content.
+
+If you set the policy to false, auto upgrades will be disabled for audio and video, and no warning will be shown for images.
+
+This policy does not affect other types of mixed content other than audio, video, and images.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: StricterMixedContentTreatmentEnabled
+- GP name: Enable stricter treatment for mixed content (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: StricterMixedContentTreatmentEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: StricterMixedContentTreatmentEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

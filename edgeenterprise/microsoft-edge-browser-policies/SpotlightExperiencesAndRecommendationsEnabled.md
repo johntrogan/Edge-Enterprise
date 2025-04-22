@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SpotlightExperiencesAndRecommendationsEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services"
+---
+
+# SpotlightExperiencesAndRecommendationsEnabled
+
+## Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services
+
+
+## Supported versions
+
+- On Windows since 86 or later
+
+## Description
+
+Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services.
+
+If you enable or don't configure this setting, spotlight experiences and recommendations are turned on.
+
+If you disable this setting, spotlight experiences and recommendations are turned off.
+
+## Supported features
+
+- Can be mandatory: Yes
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SpotlightExperiencesAndRecommendationsEnabled
+- GP name: Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+- Path (Recommended): N/A
+- Value name: SpotlightExperiencesAndRecommendationsEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

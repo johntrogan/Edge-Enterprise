@@ -1,0 +1,102 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RestoreOnStartupURLs"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Sites to open when the browser starts"
+---
+
+# RestoreOnStartupURLs
+
+## Sites to open when the browser starts
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Specify a list of websites to open automatically when the browser starts. If you don't configure this policy, no site is opened on startup.
+
+This policy only works if you also set the [RestoreOnStartup](RestoreOnStartup.md) policy to 'Open a list of URLs' (4).
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory` or instances that enrolled for device management.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RestoreOnStartupURLs
+- GP name: Sites to open when the browser starts
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Startup, home page and new tab page
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://contoso.com
+```
+
+```
+https://www.fabrikam.com
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended\RestoreOnStartupURLs
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\0 =
+```
+https://contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\1 =
+```
+https://www.fabrikam.com
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: RestoreOnStartupURLs
+- Example value:
+
+```xml
+<array>
+  <string>https://contoso.com</string>
+  <string>https://www.fabrikam.com</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

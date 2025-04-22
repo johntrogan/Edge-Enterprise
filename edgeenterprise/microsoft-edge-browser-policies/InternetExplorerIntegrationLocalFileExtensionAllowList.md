@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationLocalFileExtensionAllowList"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Open local files in Internet Explorer mode file extension allow list"
+---
+
+# InternetExplorerIntegrationLocalFileExtensionAllowList
+
+## Open local files in Internet Explorer mode file extension allow list
+
+
+## Supported versions
+
+- On Windows since 88 or later
+
+## Description
+
+This policy limits which file:// URLs are allowed to be launched into Internet Explorer mode based on file extension.
+
+This setting works in conjunction with:
+[InternetExplorerIntegrationLevel](InternetExplorerIntegrationLevel.md) is set to 'IEMode'.
+
+When a file:// URL is requested to launch in Internet Explorer mode, the file extension of the URL must be present in this list in order for the URL to be allowed to launch in Internet Explorer mode. A URL which is blocked from opening in Internet Explorer mode will instead open in Edge mode.
+
+If you set this policy to the special value "*" or don't configure it, all file extensions are allowed.
+
+To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink/?linkid=2094210](https://go.microsoft.com/fwlink/?linkid=2094210)
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerIntegrationLocalFileExtensionAllowList
+- GP name: Open local files in Internet Explorer mode file extension allow list
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+.mht
+```
+
+```
+.pdf
+```
+
+```
+.vsdx
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\InternetExplorerIntegrationLocalFileExtensionAllowList\0 =
+```
+.mht
+```
+
+SOFTWARE\Policies\Microsoft\Edge\InternetExplorerIntegrationLocalFileExtensionAllowList\1 =
+```
+.pdf
+```
+
+SOFTWARE\Policies\Microsoft\Edge\InternetExplorerIntegrationLocalFileExtensionAllowList\2 =
+```
+.vsdx
+```
+
+
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

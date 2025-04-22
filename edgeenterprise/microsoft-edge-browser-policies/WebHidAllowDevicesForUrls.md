@@ -1,0 +1,132 @@
+---
+title: "Microsoft Edge Browser Policy Documentation WebHidAllowDevicesForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow listed sites connect to specific HID devices"
+---
+
+# WebHidAllowDevicesForUrls
+
+## Allow listed sites connect to specific HID devices
+
+
+## Supported versions
+
+- On Windows and macOS since 109 or later
+
+## Description
+
+This setting lets you list the URLs that specify which sites are automatically granted permission to access a HID device with the given vendor and product IDs.
+
+Setting the policy Each item in the list requires both devices and urls fields for the item to be valid, otherwise the item is ignored.
+
+  * Each item in the devices field must have a vendor_id and may have a product_id field.
+
+  * Omitting the product_id field will create a policy matching any device with the specified vendor ID.
+
+  * An item which has a product_id field without a vendor_id field is invalid and is ignored.
+
+If you don't set this policy, that means [DefaultWebHidGuardSetting](DefaultWebHidGuardSetting.md) applies, if it's set. If not, the user's personal setting applies.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+
+URLs in this policy shouldn't conflict with those configured through [WebHidBlockedForUrls](WebHidBlockedForUrls.md). If they do, this policy takes precedence over [WebHidBlockedForUrls](WebHidBlockedForUrls.md).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Dictionary
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: WebHidAllowDevicesForUrls
+- GP name: Allow listed sites connect to specific HID devices
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+[{"devices": [{"product_id": 5678, "vendor_id": 1234}], "urls": ["https://microsoft.com", "https://chromium.org"]}]
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: WebHidAllowDevicesForUrls
+- Value type: REG_SZ
+
+#### Example value
+
+```
+[{"devices": [{"product_id": 5678, "vendor_id": 1234}], "urls": ["https://microsoft.com", "https://chromium.org"]}]
+```
+
+
+#### Expanded example value
+
+```
+[
+  {
+    "devices": [
+      {
+        "product_id": 5678,
+        "vendor_id": 1234
+      }
+    ],
+    "urls": [
+      "https://microsoft.com",
+      "https://chromium.org"
+    ]
+  }
+]
+```
+
+## Mac information and settings
+
+- Preference Key name: WebHidAllowDevicesForUrls
+- Example value:
+
+```xml
+<key>WebHidAllowDevicesForUrls</key>
+<array>
+  <dict>
+    <key>devices</key>
+    <array>
+      <dict>
+        <key>product_id</key>
+        <integer>5678</integer>
+        <key>vendor_id</key>
+        <integer>1234</integer>
+      </dict>
+    </array>
+    <key>urls</key>
+    <array>
+      <string>https://microsoft.com</string>
+      <string>https://chromium.org</string>
+    </array>
+  </dict>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

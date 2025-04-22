@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RunAllFlashInAllowMode"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Extend Adobe Flash content setting to all content (obsolete)"
+---
+
+# RunAllFlashInAllowMode
+
+## Extend Adobe Flash content setting to all content (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 88.
+
+## Supported versions
+
+- On Windows and macOS since 77, until 88
+
+## Description
+
+This policy doesn't work because Flash is no longer supported by Microsoft Edge.
+
+If you enable this policy, all Adobe Flash content embedded in websites that are set to allow Adobe Flash in the content settings -- either by the user or by enterprise policy -- will run. This includes content from other origins and/or small content.
+
+To control which websites are allowed to run Adobe Flash, see the specifications in the [DefaultPluginsSetting](DefaultPluginsSetting.md), [PluginsAllowedForUrls](PluginsAllowedForUrls.md), and [PluginsBlockedForUrls](PluginsBlockedForUrls.md) policies.
+
+If you disable this policy or don't configure it, Adobe Flash content from other origins (from sites that aren't specified in the three policies mentioned immediately above) or small content might be blocked.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RunAllFlashInAllowMode
+- GP name: Extend Adobe Flash content setting to all content (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: RunAllFlashInAllowMode
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: RunAllFlashInAllowMode
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

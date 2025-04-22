@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerSetForegroundWhenActive"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Keep the active Microsoft Edge window with an Internet Explorer mode tab always in the foreground."
+---
+
+# InternetExplorerSetForegroundWhenActive
+
+## Keep the active Microsoft Edge window with an Internet Explorer mode tab always in the foreground.
+
+
+## Supported versions
+
+- On Windows since 126 or later
+
+## Description
+
+This policy controls whether to always keep the active Microsoft Edge window with an Internet Explorer mode tab in the foreground.
+
+If you enable this policy, the active Microsoft Edge window with an Internet Explorer mode tab will always be in the foreground.
+
+If you disable or don't configure this policy, the active Microsoft Edge window with an Internet Explorer mode tab will not be kept in the foreground.
+
+To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink/?linkid=2094210](https://go.microsoft.com/fwlink/?linkid=2094210)
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerSetForegroundWhenActive
+- GP name: Keep the active Microsoft Edge window with an Internet Explorer mode tab always in the foreground.
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerSetForegroundWhenActive
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

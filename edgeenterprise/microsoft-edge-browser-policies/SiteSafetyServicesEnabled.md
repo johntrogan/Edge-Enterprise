@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SiteSafetyServicesEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow users to configure Site safety services (obsolete)"
+---
+
+# SiteSafetyServicesEnabled
+
+## Allow users to configure Site safety services (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 127.
+
+## Supported versions
+
+- On Windows and macOS since 101, until 127
+
+## Description
+
+This policy is obselete as the feature is being removed after Microsoft Edge version 127.
+
+This policy disables site safety services from showing top site info in the page info dialog.
+
+If you enable this policy or don't configure it, the top site info will be shown.
+
+If you disable this policy, the top site info will not be shown.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SiteSafetyServicesEnabled
+- GP name: Allow users to configure Site safety services (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: SiteSafetyServicesEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: SiteSafetyServicesEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

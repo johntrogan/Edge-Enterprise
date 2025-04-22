@@ -1,0 +1,88 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SandboxExternalProtocolBlocked"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow Microsoft Edge to block navigations to external protocols in a sandboxed iframe"
+---
+
+# SandboxExternalProtocolBlocked
+
+## Allow Microsoft Edge to block navigations to external protocols in a sandboxed iframe
+
+
+## Supported versions
+
+- On Windows and macOS since 99 or later
+
+## Description
+
+Microsoft Edge will block navigations to external protocols inside a
+sandboxed iframe.
+
+If you enable or don't configure this policy, Microsoft Edge will block those navigations.
+
+If you disable this policy, Microsoft Edge will not block those navigations.
+
+This can be used by administrators who need more time to update their internal website affected by this new restriction. This Enterprise policy is temporary; it's intended to be removed after Microsoft Edge version 117.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SandboxExternalProtocolBlocked
+- GP name: Allow Microsoft Edge to block navigations to external protocols in a sandboxed iframe
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: SandboxExternalProtocolBlocked
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: SandboxExternalProtocolBlocked
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

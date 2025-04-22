@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EventPathEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Re-enable the Event.path API until Microsoft Edge version 115 (obsolete)"
+---
+
+# EventPathEnabled
+
+## Re-enable the Event.path API until Microsoft Edge version 115 (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 115.
+
+## Supported versions
+
+- On Windows and macOS since 107, until 115
+
+## Description
+
+Starting in Microsoft Edge version 109, the non-standard API Event.path will be removed to improve web compatibility. This policy re-enables the API until version 115.
+
+If you enable this policy, the Event.path API will be available.
+
+If you disable this policy, the Event.path API will be unavailable.
+
+If this policy is not set, the Event.path API will be in the following default states: available before version 109, and unavailable in version 109 to version 114.
+
+This policy will be made obsolete after Microsoft Edge version 115.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EventPathEnabled
+- GP name: Re-enable the Event.path API until Microsoft Edge version 115 (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EventPathEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: EventPathEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

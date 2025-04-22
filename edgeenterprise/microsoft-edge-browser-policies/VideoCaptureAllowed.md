@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation VideoCaptureAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow or block video capture"
+---
+
+# VideoCaptureAllowed
+
+## Allow or block video capture
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Control whether sites can capture video.
+
+If enabled or not configured (default), the user will be asked about video capture access for all sites except those with URLs configured in the [VideoCaptureAllowedUrls](VideoCaptureAllowedUrls.md) policy list, which will be granted access without prompting.
+
+If you disable this policy, the user isn't prompted, and video capture is only available to URLs configured in [VideoCaptureAllowedUrls](VideoCaptureAllowedUrls.md) policy.
+
+This policy affects all types of video inputs, not only the built-in camera.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: VideoCaptureAllowed
+- GP name: Allow or block video capture
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: VideoCaptureAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: VideoCaptureAllowed
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation IntensiveWakeUpThrottlingEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control the IntensiveWakeUpThrottling feature"
+---
+
+# IntensiveWakeUpThrottlingEnabled
+
+## Control the IntensiveWakeUpThrottling feature
+
+
+## Supported versions
+
+- On Windows and macOS since 85 or later
+
+## Description
+
+When enabled the IntensiveWakeUpThrottling feature causes Javascript timers in background tabs to be aggressively throttled and coalesced, running no more than once per minute after a page has been backgrounded for 5 minutes or more.
+
+This is a web standards compliant feature, but it may break functionality on some websites by causing certain actions to be delayed by up to a minute. However, it results in significant CPU and battery savings when enabled. See https://bit.ly/30b1XR4 for more details.
+
+If you enable this policy, the feature will be force enabled, and users will not be able to override this setting.
+If you disable this policy, the feature will be force disabled, and users will not be able to override this setting.
+If you don't configure this policy, the feature will be controlled by its own internal logic. Users can manually configure this setting.
+
+Note that the policy is applied per renderer process, with the most recent value of the policy setting in force when a renderer process starts. A full restart is required to ensure that all the loaded tabs receive a consistent policy setting. It is harmless for processes to be running with different values of this policy.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: IntensiveWakeUpThrottlingEnabled
+- GP name: Control the IntensiveWakeUpThrottling feature
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: IntensiveWakeUpThrottlingEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: IntensiveWakeUpThrottlingEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

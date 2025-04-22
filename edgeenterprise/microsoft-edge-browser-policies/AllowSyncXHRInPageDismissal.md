@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AllowSyncXHRInPageDismissal"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow pages to send synchronous XHR requests during page dismissal (obsolete)"
+---
+
+# AllowSyncXHRInPageDismissal
+
+## Allow pages to send synchronous XHR requests during page dismissal (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 99.
+
+## Supported versions
+
+- On Windows and macOS since 79, until 99
+
+## Description
+
+This policy is obsolete because it was only intended to be a short-term mechanism to give enterprises more time to update their web content if and when it was found to be incompatible with the change to disallow synchronous XHR requests during page dismissal. It doesn't work in Microsoft Edge after version 99.
+
+This policy lets you specify that a page can send synchronous XHR requests during page dismissal.
+
+If you enable this policy, pages can send synchronous XHR requests during page dismissal.
+
+If you disable this policy or don't configure this policy, pages aren't allowed to send synchronous XHR requests during page dismissal.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AllowSyncXHRInPageDismissal
+- GP name: Allow pages to send synchronous XHR requests during page dismissal (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AllowSyncXHRInPageDismissal
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AllowSyncXHRInPageDismissal
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

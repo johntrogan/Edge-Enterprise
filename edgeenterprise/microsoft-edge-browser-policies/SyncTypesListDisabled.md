@@ -1,0 +1,92 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SyncTypesListDisabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the list of types that are excluded from synchronization"
+---
+
+# SyncTypesListDisabled
+
+## Configure the list of types that are excluded from synchronization
+
+
+## Supported versions
+
+- On Windows and macOS since 83 or later
+
+## Description
+
+If you enable this policy all the specified data types will be excluded from synchronization. This policy can be used to limit the type of data uploaded to the Microsoft Edge synchronization service.
+
+You can provide one of the following data types for this policy: "favorites", "settings", "passwords", "addressesAndMore", "extensions", "history", "openTabs", "edgeWallet", "collections", "apps", and "edgeFeatureUsage". The "edgeFeatureUsage" data type will be supported starting in Microsoft Edge version 134. Note that these data type names are case sensitive.
+
+Users will not be able to override the disabled data types.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SyncTypesListDisabled
+- GP name: Configure the list of types that are excluded from synchronization
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+favorites
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\SyncTypesListDisabled\0 =
+```
+favorites
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: SyncTypesListDisabled
+- Example value:
+
+```xml
+<array>
+  <string>favorites</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

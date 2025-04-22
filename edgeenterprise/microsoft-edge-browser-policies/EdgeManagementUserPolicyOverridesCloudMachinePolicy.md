@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EdgeManagementUserPolicyOverridesCloudMachinePolicy"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow cloud-based Microsoft Edge management service user policies to override local user policies."
+---
+
+# EdgeManagementUserPolicyOverridesCloudMachinePolicy
+
+## Allow cloud-based Microsoft Edge management service user policies to override local user policies.
+
+
+## Supported versions
+
+- On Windows and macOS since 119 or later
+
+## Description
+
+If you enable this policy, cloud-based Microsoft Edge management service user policies takes precedence if it conflicts with local user policy.
+
+If you disable or don't configure this policy, Microsoft Edge management service user policies will take precedence.
+
+The policy can be combined with [EdgeManagementPolicyOverridesPlatformPolicy](EdgeManagementPolicyOverridesPlatformPolicy.md). If both policies are enabled, all cloud-based Microsoft Edge management service policies will take precedence over conflicting local service policies.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EdgeManagementUserPolicyOverridesCloudMachinePolicy
+- GP name: Allow cloud-based Microsoft Edge management service user policies to override local user policies.
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EdgeManagementUserPolicyOverridesCloudMachinePolicy
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: EdgeManagementUserPolicyOverridesCloudMachinePolicy
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

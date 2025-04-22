@@ -1,0 +1,99 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DefaultWebHidGuardSetting"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control use of the WebHID API"
+---
+
+# DefaultWebHidGuardSetting
+
+## Control use of the WebHID API
+
+
+## Supported versions
+
+- On Windows and macOS since 100 or later
+
+## Description
+
+Setting the policy to 3 lets websites ask for access to HID devices. Setting the policy to 2 denies access to HID devices.
+
+Leaving it unset lets websites ask for access, but users can change this setting.
+
+This policy can be overridden for specific url patterns using the [WebHidAskForUrls](WebHidAskForUrls.md) and [WebHidBlockedForUrls](WebHidBlockedForUrls.md) policies.
+
+Policy options mapping:
+
+* BlockWebHid (2) = Do not allow any site to request access to HID devices via the WebHID API
+
+* AskWebHid (3) = Allow sites to ask the user to grant access to a HID device
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- BlockWebHid (2) = Do not allow any site to request access to HID devices via the WebHID API
+- AskWebHid (3) = Allow sites to ask the user to grant access to a HID device
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DefaultWebHidGuardSetting
+- GP name: Control use of the WebHID API
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Do not allow any site to request access to HID devices via the WebHID API
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: DefaultWebHidGuardSetting
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000002
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DefaultWebHidGuardSetting
+- Example value:
+
+```xml
+<integer>2</integer>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

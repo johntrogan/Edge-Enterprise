@@ -1,0 +1,74 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ApplicationGuardTrafficIdentificationEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Application Guard Traffic Identification"
+---
+
+# ApplicationGuardTrafficIdentificationEnabled
+
+## Application Guard Traffic Identification
+
+
+## Supported versions
+
+- On Windows since 91 or later
+
+## Description
+
+If you enable or don't configure this policy, Application Guard will add an extra HTTP header (X-MS-ApplicationGuard-Initiated) to all outbound HTTP requests made from the Application Guard container.
+
+If you disable this policy, the extra header is not added to the traffic.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ApplicationGuardTrafficIdentificationEnabled
+- GP name: Application Guard Traffic Identification
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ApplicationGuardTrafficIdentificationEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

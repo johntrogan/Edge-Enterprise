@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationSiteListRefreshInterval"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure how frequently the Enterprise Mode Site List is refreshed"
+---
+
+# InternetExplorerIntegrationSiteListRefreshInterval
+
+## Configure how frequently the Enterprise Mode Site List is refreshed
+
+
+## Supported versions
+
+- On Windows since 93 or later
+
+## Description
+
+This setting lets you specify a custom refresh interval for the Enterprise Mode Site List. The refresh interval is specified in minutes. The minimum refresh interval is 30 minutes.
+
+This setting is applicable only when the [InternetExplorerIntegrationSiteList](InternetExplorerIntegrationSiteList.md) or [InternetExplorerIntegrationCloudSiteList](InternetExplorerIntegrationCloudSiteList.md) setting is configured.
+
+If you configure this policy, Microsoft Edge will attempt to retrieve an updated version of the configured Enterprise Mode Site List using the specified refresh interval.
+
+If you disable or don't configure this policy, Microsoft Edge will use a default refresh interval, it is 10080 minutes (7 days) starting from version 110 or later, 120 minutes from version 93 to 110, and 30 minutes before version 93.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerIntegrationSiteListRefreshInterval
+- GP name: Configure how frequently the Enterprise Mode Site List is refreshed
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+240
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerIntegrationSiteListRefreshInterval
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x000000f0
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

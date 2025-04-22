@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SmartScreenDnsRequestsEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Microsoft Defender SmartScreen DNS requests"
+---
+
+# SmartScreenDnsRequestsEnabled
+
+## Enable Microsoft Defender SmartScreen DNS requests
+
+
+## Supported versions
+
+- On Windows and macOS since 97 or later
+
+## Description
+
+This policy lets you configure whether to enable DNS requests made by Microsoft Defender SmartScreen. Note: Disabling DNS requests will prevent Microsoft Defender SmartScreen from getting IP addresses, and potentially impact the IP-based protections provided.
+
+If you enable or don't configure this setting, Microsoft Defender SmartScreen will make DNS requests.
+
+If you disable this setting, Microsoft Defender SmartScreen will not make any DNS requests.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SmartScreenDnsRequestsEnabled
+- GP name: Enable Microsoft Defender SmartScreen DNS requests
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: SmartScreenDnsRequestsEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: SmartScreenDnsRequestsEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation JavaScriptBlockedForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Block JavaScript on specific sites"
+---
+
+# JavaScriptBlockedForUrls
+
+## Block JavaScript on specific sites
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Define a list of sites, based on URL patterns, that aren't allowed to run JavaScript.
+
+If you don't configure this policy, [DefaultJavaScriptSetting](DefaultJavaScriptSetting.md) applies for all sites, if it's set. If not, the user's personal setting applies.
+
+For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
+
+Note that this policy blocks JavaScript based on whether the origin of the top-level document (usually the page URL that is also displayed in the address bar) matches any of the patterns. Therefore this policy is not appropriate for mitigating web supply-chain attacks. For example, supplying the pattern `https://[\*.]foo.com/` will not prevent a page hosted on, say, `https://contoso.com` from running a script loaded from `https://www.foo.com/example.js`. Furthermore, supplying the pattern `https://contoso.com/` will not prevent a document from `https://contoso.com` from running scripts if it is not the top-level document, but embedded as a sub-frame into a page hosted on another origin, say, `https://www.fabrikam.com`.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: JavaScriptBlockedForUrls
+- GP name: Block JavaScript on specific sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+[*.]contoso.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\JavaScriptBlockedForUrls\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\JavaScriptBlockedForUrls\1 =
+```
+[*.]contoso.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: JavaScriptBlockedForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

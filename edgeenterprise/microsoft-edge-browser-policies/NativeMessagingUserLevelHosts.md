@@ -1,0 +1,83 @@
+---
+title: "Microsoft Edge Browser Policy Documentation NativeMessagingUserLevelHosts"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow user-level native messaging hosts (installed without admin permissions)"
+---
+
+# NativeMessagingUserLevelHosts
+
+## Allow user-level native messaging hosts (installed without admin permissions)
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+If you set this policy to Enabled or leave it unset, Microsoft Edge can use native messaging hosts installed at the user level.
+
+If you set this policy to Disabled, Microsoft Edge can only use these hosts if they're installed at the system level.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: NativeMessagingUserLevelHosts
+- GP name: Allow user-level native messaging hosts (installed without admin permissions)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: NativeMessagingUserLevelHosts
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: NativeMessagingUserLevelHosts
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

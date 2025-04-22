@@ -1,0 +1,136 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AutoOpenAllowedForURLs"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: URLs where AutoOpenFileTypes can apply"
+---
+
+# AutoOpenAllowedForURLs
+
+## URLs where AutoOpenFileTypes can apply
+
+
+## Supported versions
+
+- On Windows and macOS since 85 or later
+
+## Description
+
+A list of URLs to which [AutoOpenFileTypes](AutoOpenFileTypes.md) will apply to. This policy has no impact on automatically open values set by users via the download shelf ... &gt; "Always open files of this type" menu entry.
+
+If you set URLs in this policy, files will only automatically open by policy if the URL is part of this set and the file type is listed in [AutoOpenFileTypes](AutoOpenFileTypes.md). If either condition is false, the download won't automatically open by policy.
+
+If you don't set this policy, all downloads where the file type is in [AutoOpenFileTypes](AutoOpenFileTypes.md) will automatically open.
+
+A URL pattern has to be formatted according to [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
+
+This policy does not work as expected with file://* wildcards.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AutoOpenAllowedForURLs
+- GP name: URLs where AutoOpenFileTypes can apply
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+example.com
+```
+
+```
+https://ssl.server.com
+```
+
+```
+hosting.com/good_path
+```
+
+```
+https://server:8080/path
+```
+
+```
+.exact.hostname.com
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\0 =
+```
+example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\1 =
+```
+https://ssl.server.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\2 =
+```
+hosting.com/good_path
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\3 =
+```
+https://server:8080/path
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\4 =
+```
+.exact.hostname.com
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: AutoOpenAllowedForURLs
+- Example value:
+
+```xml
+<array>
+  <string>example.com</string>
+  <string>https://ssl.server.com</string>
+  <string>hosting.com/good_path</string>
+  <string>https://server:8080/path</string>
+  <string>.exact.hostname.com</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

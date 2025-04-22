@@ -1,0 +1,99 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EnhanceSecurityModeBypassListDomains"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the list of domains for which enhance security mode will not be enforced"
+---
+
+# EnhanceSecurityModeBypassListDomains
+
+## Configure the list of domains for which enhance security mode will not be enforced
+
+
+## Supported versions
+
+- On Windows and macOS since 98 or later
+
+## Description
+
+Configure the list of enhance security trusted domains. This means that
+enhance security mode will not be enforced when loading the sites in trusted domains.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EnhanceSecurityModeBypassListDomains
+- GP name: Configure the list of domains for which enhance security mode will not be enforced
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+mydomain.com
+```
+
+```
+myuniversity.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeBypassListDomains\0 =
+```
+mydomain.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeBypassListDomains\1 =
+```
+myuniversity.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: EnhanceSecurityModeBypassListDomains
+- Example value:
+
+```xml
+<array>
+  <string>mydomain.com</string>
+  <string>myuniversity.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

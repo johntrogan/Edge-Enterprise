@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EdgeManagementExtensionsFeedbackEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Microsoft Edge management extensions feedback enabled"
+---
+
+# EdgeManagementExtensionsFeedbackEnabled
+
+## Microsoft Edge management extensions feedback enabled
+
+
+## Supported versions
+
+- On Windows and macOS since 115 or later
+
+## Description
+
+This setting controls whether Microsoft Edge sends data about blocked extensions to the Microsoft Edge management service.
+
+The 'EdgeManagementEnabled' policy must also be enabled for this setting to take effect.
+
+If you enable this policy, Microsoft Edge will send data to the Microsoft Edge service when a user tries to install a blocked extension.
+
+If you disable or don't configure this policy, Microsoft Edge won't send any data to the Microsoft Edge service about blocked extensions.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EdgeManagementExtensionsFeedbackEnabled
+- GP name: Microsoft Edge management extensions feedback enabled
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EdgeManagementExtensionsFeedbackEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: EdgeManagementExtensionsFeedbackEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

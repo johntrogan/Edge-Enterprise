@@ -1,0 +1,107 @@
+---
+title: "Microsoft Edge Browser Policy Documentation TyposquattingAllowListDomains"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the list of domains for which Edge Website Typo Protection won&#x27;t trigger warnings"
+---
+
+# TyposquattingAllowListDomains
+
+## Configure the list of domains for which Edge Website Typo Protection won't trigger warnings
+
+
+## Supported versions
+
+- On Windows and macOS since 121 or later
+
+## Description
+
+Configure the list of Edge Website Typo Protection trusted domains. This means:
+Edge Website Typo Protection won't check for potentially malicious typosquatting websites.
+
+If you enable this policy, Edge Website Typo Protection trusts these domains.
+If you disable or don't set this policy, default Edge Website Typo Protection protection is applied to all resources.
+
+This will only take effect when TyposquattingCheckerEnabled policy is not set or set to enabled.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10/11 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.
+Also note that this policy does not apply if your organization has enabled Microsoft Defender for Endpoint. You must configure your allow and block lists in Microsoft 365 Defender portal using Indicators (Settings &gt; Endpoints &gt; Indicators).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: TyposquattingAllowListDomains
+- GP name: Configure the list of domains for which Edge Website Typo Protection won't trigger warnings
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+mydomain.com
+```
+
+```
+myuniversity.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\TyposquattingAllowListDomains\0 =
+```
+mydomain.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\TyposquattingAllowListDomains\1 =
+```
+myuniversity.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: TyposquattingAllowListDomains
+- Example value:
+
+```xml
+<array>
+  <string>mydomain.com</string>
+  <string>myuniversity.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

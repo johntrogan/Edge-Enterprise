@@ -1,0 +1,112 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AutomaticFullscreenAllowedForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow automatic full screen on specified sites"
+---
+
+# AutomaticFullscreenAllowedForUrls
+
+## Allow automatic full screen on specified sites
+
+
+## Supported versions
+
+- On Windows and macOS since 132 or later
+
+## Description
+
+For security reasons, the
+requestFullscreen() web API
+requires a prior user gesture ("transient activation") to be called or it will
+fail. Users' personal settings may allow certain origins to call this API
+without a prior user gesture.
+
+This policy supersedes users' personal settings and allows matching origins to
+call the API without a prior user gesture.
+
+For detailed information about valid URL patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
+Wildcards (*) are allowed.
+
+Origins matching both blocked and allowed policy patterns will be blocked.
+Origins not specified by policy or user settings will require a prior user
+gesture to call this API.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AutomaticFullscreenAllowedForUrls
+- GP name: Allow automatic full screen on specified sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.example.com
+```
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\AutomaticFullscreenAllowedForUrls\0 =
+```
+https://www.example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutomaticFullscreenAllowedForUrls\1 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: AutomaticFullscreenAllowedForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.example.com</string>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

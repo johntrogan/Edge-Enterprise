@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation BuiltInDnsClientEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Use built-in DNS client"
+---
+
+# BuiltInDnsClientEnabled
+
+## Use built-in DNS client
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Controls whether to use the built-in DNS client.
+
+This policy controls which software stack is used to communicate with the DNS server: the operating system DNS client, or Microsoft Edge's built-in DNS client. This policy does not affect which DNS servers are used: if, for example, the operating system is configured to use an enterprise DNS server, that same server would be used by the built-in DNS client. It also does not control if DNS-over-HTTPS is used; Microsoft Edge always uses the built-in resolver for DNS-over-HTTPS requests. Please see the [DnsOverHttpsMode](DnsOverHttpsMode.md) policy for information on controlling DNS-over-HTTPS.
+
+If you enable this policy or you don't configure this policy, the built-in DNS client is used.
+
+If you disable this policy, the built-in DNS client is only used when DNS-over-HTTPS is in use.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: BuiltInDnsClientEnabled
+- GP name: Use built-in DNS client
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: BuiltInDnsClientEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: BuiltInDnsClientEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

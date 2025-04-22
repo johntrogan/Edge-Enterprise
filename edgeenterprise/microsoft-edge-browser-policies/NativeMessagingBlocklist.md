@@ -1,0 +1,100 @@
+---
+title: "Microsoft Edge Browser Policy Documentation NativeMessagingBlocklist"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure native messaging block list"
+---
+
+# NativeMessagingBlocklist
+
+## Configure native messaging block list
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Setting this policy specifies which native messaging hosts shouldn't be loaded. A deny list value of * means all native messaging hosts are denied unless they're explicitly allowed.
+
+If you leave this policy unset , Microsoft Edge loads all installed native messaging hosts.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: NativeMessagingBlocklist
+- GP name: Configure native messaging block list
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+com.native.messaging.host.name1
+```
+
+```
+com.native.messaging.host.name2
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\NativeMessagingBlocklist\0 =
+```
+com.native.messaging.host.name1
+```
+
+SOFTWARE\Policies\Microsoft\Edge\NativeMessagingBlocklist\1 =
+```
+com.native.messaging.host.name2
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: NativeMessagingBlocklist
+- Example value:
+
+```xml
+<array>
+  <string>com.native.messaging.host.name1</string>
+  <string>com.native.messaging.host.name2</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

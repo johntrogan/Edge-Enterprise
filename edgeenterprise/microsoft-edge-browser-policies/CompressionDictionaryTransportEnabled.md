@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation CompressionDictionaryTransportEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable compression dictionary transport support"
+---
+
+# CompressionDictionaryTransportEnabled
+
+## Enable compression dictionary transport support
+
+
+## Supported versions
+
+- On Windows and macOS since 118 or later
+
+## Description
+
+This feature enables the use of dictionary-specific content encodings in the Accept-Encoding request header ("sbr" and "zst-d") when dictionaries are available for use.
+
+If you enable this policy or don't configure it, Microsoft Edge will accept web contents using the compression dictionary transport feature.
+
+If you disable this policy, Microsoft Edge will turn off the compression dictionary transport feature.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: CompressionDictionaryTransportEnabled
+- GP name: Enable compression dictionary transport support
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: CompressionDictionaryTransportEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: CompressionDictionaryTransportEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

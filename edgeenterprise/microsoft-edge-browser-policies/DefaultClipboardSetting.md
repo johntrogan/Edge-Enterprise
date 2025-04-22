@@ -1,0 +1,103 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DefaultClipboardSetting"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Default clipboard site permission"
+---
+
+# DefaultClipboardSetting
+
+## Default clipboard site permission
+
+
+## Supported versions
+
+- On Windows and macOS since 109 or later
+
+## Description
+
+This policy controls the default value for the clipboard site permission.
+
+Setting the policy to 2 blocks sites from using the clipboard site permission.
+
+Setting the policy to 3 or leaving it unset lets the user change the setting and decide if the clipboard APIs are available when a site wants to use an API.
+
+This policy can be overridden for specific URL patterns using the [ClipboardAllowedForUrls](ClipboardAllowedForUrls.md) and [ClipboardBlockedForUrls](ClipboardBlockedForUrls.md) policies.
+
+This policy only affects clipboard operations controlled by the clipboard site permission and doesn't affect sanitized clipboard writes or trusted copy and paste operations.
+
+Policy options mapping:
+
+* BlockClipboard (2) = Do not allow any site to use the clipboard site permission
+
+* AskClipboard (3) = Allow sites to ask the user to grant the clipboard site permission
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- BlockClipboard (2) = Do not allow any site to use the clipboard site permission
+- AskClipboard (3) = Allow sites to ask the user to grant the clipboard site permission
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DefaultClipboardSetting
+- GP name: Default clipboard site permission
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Do not allow any site to use the clipboard site permission
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: DefaultClipboardSetting
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000002
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DefaultClipboardSetting
+- Example value:
+
+```xml
+<integer>2</integer>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

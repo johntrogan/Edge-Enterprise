@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation TranslateEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Translate"
+---
+
+# TranslateEnabled
+
+## Enable Translate
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Enables the integrated Microsoft translation service on Microsoft Edge.
+
+If you enable this policy, Microsoft Edge offers to translate a webpage by showing an integrated translate flyout when the language detected on a webpage isn't listed under preferred languages. A translate option is available on the right-click context menu.
+
+Users can also translate selected text on a webpage via the right-click context menu, or on a PDF via the PDF toolbar and the right-click context menu.
+
+If you don't configure this policy, the policy is enabled by default. Users can choose whether to use the translation functionality or not.
+
+You can disable this policy to disable all built-in translate features.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: TranslateEnabled
+- GP name: Enable Translate
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: TranslateEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: TranslateEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

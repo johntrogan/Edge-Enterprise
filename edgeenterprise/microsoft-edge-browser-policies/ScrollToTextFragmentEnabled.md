@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ScrollToTextFragmentEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable scrolling to text specified in URL fragments"
+---
+
+# ScrollToTextFragmentEnabled
+
+## Enable scrolling to text specified in URL fragments
+
+
+## Supported versions
+
+- On Windows and macOS since 83 or later
+
+## Description
+
+This feature lets hyperlink and address bar URL navigations target specific text on a web page, which will be scrolled to after the web page finishes loading.
+
+If you enable or don't configure this policy, web page scrolling to specific text fragments via a URL will be enabled.
+
+If you disable this policy, web page scrolling to specific text fragments via a URL will be disabled.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ScrollToTextFragmentEnabled
+- GP name: Enable scrolling to text specified in URL fragments
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ScrollToTextFragmentEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: ScrollToTextFragmentEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

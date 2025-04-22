@@ -1,0 +1,114 @@
+---
+title: "Microsoft Edge Browser Policy Documentation CookiesSessionOnlyForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Limit cookies from specific websites to the current session"
+---
+
+# CookiesSessionOnlyForUrls
+
+## Limit cookies from specific websites to the current session
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Cookies created by websites that match a URL pattern you define are deleted when the session ends (when the window closes).
+
+Cookies created by websites that don't match the pattern are controlled by the [DefaultCookiesSetting](DefaultCookiesSetting.md) policy (if set) or by the user's personal configuration. This is also the default behavior if you don't configure this policy.
+
+You can also use the [CookiesAllowedForUrls](CookiesAllowedForUrls.md) and [CookiesBlockedForUrls](CookiesBlockedForUrls.md) policies to control which websites can create cookies.
+
+Note there cannot be conflicting URL patterns set between these three policies:
+
+- [CookiesBlockedForUrls](CookiesBlockedForUrls.md)
+
+- [CookiesAllowedForUrls](CookiesAllowedForUrls.md)
+
+- CookiesSessionOnlyForUrls
+
+For detailed information on valid url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+
+If you set the [RestoreOnStartup](RestoreOnStartup.md) policy to restore URLs from previous sessions, this policy is ignored, and cookies are stored permanently for those sites.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: CookiesSessionOnlyForUrls
+- GP name: Limit cookies from specific websites to the current session
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+[*.]contoso.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\CookiesSessionOnlyForUrls\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\CookiesSessionOnlyForUrls\1 =
+```
+[*.]contoso.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: CookiesSessionOnlyForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

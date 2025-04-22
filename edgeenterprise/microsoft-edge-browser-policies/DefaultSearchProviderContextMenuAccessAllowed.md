@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DefaultSearchProviderContextMenuAccessAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow default search provider context menu search access"
+---
+
+# DefaultSearchProviderContextMenuAccessAllowed
+
+## Allow default search provider context menu search access
+
+
+## Supported versions
+
+- On Windows and macOS since 85 or later
+
+## Description
+
+Enables the use of a default search provider on the context menu.
+
+If you set this policy to disabled the search context menu item that relies on your default search provider and sidebar search will not be available.
+
+If this policy is set to enabled or not set, the context menu item for your default search provider and sidebar search will be available.
+
+The policy value is only applied when the [DefaultSearchProviderEnabled](DefaultSearchProviderEnabled.md) policy is enabled, and is not applicable otherwise.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DefaultSearchProviderContextMenuAccessAllowed
+- GP name: Allow default search provider context menu search access
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: DefaultSearchProviderContextMenuAccessAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DefaultSearchProviderContextMenuAccessAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

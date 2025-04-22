@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AuthSchemes"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Supported authentication schemes"
+---
+
+# AuthSchemes
+
+## Supported authentication schemes
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Specifies which HTTP authentication schemes are supported.
+
+You can configure the policy by using these values: 'basic', 'digest', 'ntlm', and 'negotiate'. Separate multiple values with commas.
+
+Note: All values for this policy are case sensitive.
+
+If you don't configure this policy, all four schemes are used.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- String
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AuthSchemes
+- GP name: Supported authentication schemes
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+basic,digest,ntlm,negotiate
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AuthSchemes
+- Value type: REG_SZ
+
+#### Example value
+
+```
+basic,digest,ntlm,negotiate
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AuthSchemes
+- Example value:
+
+```xml
+<string>basic,digest,ntlm,negotiate</string>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

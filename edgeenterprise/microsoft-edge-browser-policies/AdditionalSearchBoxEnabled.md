@@ -1,0 +1,86 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AdditionalSearchBoxEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable additional search box in browser"
+---
+
+# AdditionalSearchBoxEnabled
+
+## Enable additional search box in browser
+
+
+## Supported versions
+
+- On Windows and macOS since 123 or later
+
+## Description
+
+A search box is an additional text input field located next to the address bar in a web browser. It allows users to perform web searches directly from the browser interface.
+
+If you enable or don't configure this policy, the search box will be visible and available for use.
+Users can toggle the search box in Edge Settings page edge://settings/appearance#SearchBoxInToolbar.
+
+If you disable this policy, search box will not be visible, and users will have to use the address bar or navigate to a search engine to perform web searches.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AdditionalSearchBoxEnabled
+- GP name: Enable additional search box in browser
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AdditionalSearchBoxEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AdditionalSearchBoxEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

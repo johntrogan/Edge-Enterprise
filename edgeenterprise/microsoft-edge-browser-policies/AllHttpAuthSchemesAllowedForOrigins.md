@@ -1,0 +1,91 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AllHttpAuthSchemesAllowedForOrigins"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: List of origins that allow all HTTP authentication"
+---
+
+# AllHttpAuthSchemesAllowedForOrigins
+
+## List of origins that allow all HTTP authentication
+
+
+## Supported versions
+
+- On Windows and macOS since 102 or later
+
+## Description
+
+Set this policy to specify which origins allow all the HTTP authentication schemes Microsoft Edge supports regardless of the [AuthSchemes](AuthSchemes.md) policy.
+
+Format the origin pattern according to this format (https://support.google.com/chrome/a?p=url_blocklist_filter_format). Up to 1,000 exceptions can be defined in [AllHttpAuthSchemesAllowedForOrigins](AllHttpAuthSchemesAllowedForOrigins.md).
+Wildcards are allowed for the whole origin or parts of the origin. Parts include the scheme, host, or port.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AllHttpAuthSchemesAllowedForOrigins
+- GP name: List of origins that allow all HTTP authentication
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+*.example.com
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\AllHttpAuthSchemesAllowedForOrigins\0 =
+```
+*.example.com
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: AllHttpAuthSchemesAllowedForOrigins
+- Example value:
+
+```xml
+<array>
+  <string>*.example.com</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

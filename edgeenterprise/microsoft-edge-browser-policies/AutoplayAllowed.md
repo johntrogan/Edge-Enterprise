@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AutoplayAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow media autoplay for websites"
+---
+
+# AutoplayAllowed
+
+## Allow media autoplay for websites
+
+
+## Supported versions
+
+- On Windows and macOS since 78 or later
+
+## Description
+
+This policy sets the media autoplay policy for websites.
+
+The default setting, "Not configured" respects the current media autoplay settings and lets users configure their autoplay settings.
+
+Setting to "Enabled" sets media autoplay to "Allow".  All websites are allowed to autoplay media. Users can't override this policy.
+
+Setting to "Disabled" sets media autoplay to "Limit".  This limits websites that are allowed to autoplay media to webpages with high media engagement and active WebRTC streams. Prior to Microsoft Edge version 92, this would set media autoplay to "Block". Users can't override this policy.
+
+A tab will need to be closed and re-opened for this policy to take effect.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AutoplayAllowed
+- GP name: Allow media autoplay for websites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AutoplayAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AutoplayAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

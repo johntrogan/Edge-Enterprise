@@ -1,0 +1,106 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SSLErrorOverrideAllowedForOrigins"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow users to proceed from the HTTPS warning page for specific origins"
+---
+
+# SSLErrorOverrideAllowedForOrigins
+
+## Allow users to proceed from the HTTPS warning page for specific origins
+
+
+## Supported versions
+
+- On Windows and macOS since 90 or later
+
+## Description
+
+Microsoft Edge shows a warning page when users visit sites that have SSL errors.
+
+If you enable or don't configure the [SSLErrorOverrideAllowed](SSLErrorOverrideAllowed.md) policy, this policy does nothing.
+
+If you disable the [SSLErrorOverrideAllowed](SSLErrorOverrideAllowed.md) policy, configuring this policy lets you configure a list of origin patterns for sites where users can continue to click through SSL error pages. Users can't click through SSL error pages on origins that are not on this list.
+
+If you don't configure this policy, the [SSLErrorOverrideAllowed](SSLErrorOverrideAllowed.md) policy applies for all sites.
+
+For detailed information about valid origin patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy. This policy only matches based on origin, so any path or query in the URL pattern is ignored.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SSLErrorOverrideAllowedForOrigins
+- GP name: Allow users to proceed from the HTTPS warning page for specific origins
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.example.com
+```
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\SSLErrorOverrideAllowedForOrigins\0 =
+```
+https://www.example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\SSLErrorOverrideAllowedForOrigins\1 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: SSLErrorOverrideAllowedForOrigins
+- Example value:
+
+```xml
+<array>
+  <string>https://www.example.com</string>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

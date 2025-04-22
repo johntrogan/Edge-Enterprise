@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ZstdContentEncodingEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable zstd content encoding support"
+---
+
+# ZstdContentEncodingEnabled
+
+## Enable zstd content encoding support
+
+
+## Supported versions
+
+- On Windows and macOS since 125 or later
+
+## Description
+
+This feature enables advertising "zstd" support in the Accept-Encoding request header and support for decompressing zstd web content.
+
+If you enable or don't configure this policy, Microsoft Edge will accept server responses compressed with zstd.
+
+If you disable this policy, the zstd content encoding feature will not be advertised or supported when processing server responses.
+
+This policy is temporary and will be removed in the future.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ZstdContentEncodingEnabled
+- GP name: Enable zstd content encoding support
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ZstdContentEncodingEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: ZstdContentEncodingEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

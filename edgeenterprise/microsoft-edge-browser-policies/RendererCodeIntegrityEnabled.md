@@ -1,0 +1,75 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RendererCodeIntegrityEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable renderer code integrity (deprecated)"
+---
+
+# RendererCodeIntegrityEnabled
+
+## Enable renderer code integrity (deprecated)
+> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+
+## Supported versions
+
+- On Windows since 78 or later
+
+## Description
+
+Setting the policy to Enabled or leaving it unset turns Renderer Code Integrity on.
+Setting the policy to Disabled has a detrimental effect on Microsoft Edge's security and stability as unknown and potentially hostile code can load inside Microsoft Edge's renderer processes. Only turn off the policy if there are compatibility issues with third-party software that must run inside Microsoft Edge's renderer processes.
+
+This policy will be removed in Edge 119 and will be ignored if set.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RendererCodeIntegrityEnabled
+- GP name: Enable renderer code integrity (deprecated)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: RendererCodeIntegrityEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

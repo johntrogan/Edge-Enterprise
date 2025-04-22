@@ -1,0 +1,55 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AdHocCodeSigningForPWAsEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Native application signing during Progressive Web Application installation"
+---
+
+# AdHocCodeSigningForPWAsEnabled
+
+## Native application signing during Progressive Web Application installation
+
+
+## Supported versions
+
+- On macOS since 132 or later
+
+## Description
+
+Enabling this policy or leaving it unset enables the use of ad-hoc signatures for the native application that's created when installing a Progressive Web Application (PWA). This ensures that each installed application has a unique identity to macOS system components.
+
+Disabling this policy will result in every native application created when installing Progressive Web Applications having the same identity. This can interfere with macOS functionality.
+
+Only turn off the policy if you are using an endpoint security solution that blocks applications with an ad-hoc signature.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Mac information and settings
+
+- Preference Key name: AdHocCodeSigningForPWAsEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

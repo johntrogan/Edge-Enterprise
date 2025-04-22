@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SharedLinksEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Show links shared from Microsoft 365 apps in History"
+---
+
+# SharedLinksEnabled
+
+## Show links shared from Microsoft 365 apps in History
+
+
+## Supported versions
+
+- On Windows and macOS since 96 or later
+
+## Description
+
+Allows Microsoft Edge to display links recently shared by or shared with the user from Microsoft 365 apps in History.
+
+If you enable or don't configure this policy, Microsoft Edge displays links recently shared by or shared with the user from Microsoft 365 apps in History.
+
+If you disable this policy, Microsoft Edge does not display links recently shared by or shared with the user from Microsoft 365 apps in History. The control in Microsoft Edge settings is disabled and set to off.
+
+This policy only applies for Microsoft Edge local user profiles and profiles signed in using Azure Active Directory.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SharedLinksEnabled
+- GP name: Show links shared from Microsoft 365 apps in History
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: SharedLinksEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: SharedLinksEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

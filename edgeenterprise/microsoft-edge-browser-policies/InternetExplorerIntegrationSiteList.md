@@ -1,0 +1,72 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationSiteList"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the Enterprise Mode Site List"
+---
+
+# InternetExplorerIntegrationSiteList
+
+## Configure the Enterprise Mode Site List
+
+
+## Supported versions
+
+- On Windows since 78 or later
+
+## Description
+
+For guidance about configuring the optimal experience for Internet Explorer mode see [https://go.microsoft.com/fwlink/?linkid=2094210](https://go.microsoft.com/fwlink/?linkid=2094210)
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- String
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerIntegrationSiteList
+- GP name: Configure the Enterprise Mode Site List
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+https://internal.contoso.com/sitelist.xml
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerIntegrationSiteList
+- Value type: REG_SZ
+
+#### Example value
+
+```
+https://internal.contoso.com/sitelist.xml
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,83 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AllowWebAuthnWithBrokenTlsCerts"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow Web Authentication requests on sites with broken TLS certificates."
+---
+
+# AllowWebAuthnWithBrokenTlsCerts
+
+## Allow Web Authentication requests on sites with broken TLS certificates.
+
+
+## Supported versions
+
+- On Windows and macOS since 123 or later
+
+## Description
+
+If you enable this policy, Microsoft Edge will allow Web Authentication requests on websites that have TLS certificates with errors (i.e. websites considered not secure).
+
+If you disable or don't configure this policy, the default behavior of blocking such requests will apply.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AllowWebAuthnWithBrokenTlsCerts
+- GP name: Allow Web Authentication requests on sites with broken TLS certificates.
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AllowWebAuthnWithBrokenTlsCerts
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AllowWebAuthnWithBrokenTlsCerts
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

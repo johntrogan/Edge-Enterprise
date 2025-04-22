@@ -1,0 +1,96 @@
+---
+title: "Microsoft Edge Browser Policy Documentation JavaScriptOptimizerAllowedForSites"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow JavaScript optimization on these sites"
+---
+
+# JavaScriptOptimizerAllowedForSites
+
+## Allow JavaScript optimization on these sites
+
+
+## Supported versions
+
+- On Windows and macOS since 134 or later
+
+## Description
+
+Allows you to set a list of site url patterns that specify sites for which advanced JavaScript optimizations are enabled.
+
+For detailed information on valid site url patterns, please see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards, *, are allowed.
+
+JavaScript optimization policy exceptions will only be enforced at a site granularity (eTLD+1). A policy set for only subdomain.contoso.com will not correctly apply to contoso.com or subdomain.contoso.com since they both resolve to the same eTLD+1 (contoso.com) for which there is no policy. In this case, policy must be set on contoso.com to apply correctly for both contoso.com and subdomain.contoso.com.
+
+This policy applies on a frame-by-frame basis and not based on top level origin url alone, so e.g. if contoso.com is listed in the [JavaScriptOptimizerAllowedForSites](JavaScriptOptimizerAllowedForSites.md) policy but contoso.com loads a frame containing fabrikam.com then contoso.com will have JavaScript optimizations enabled, but fabrikam.com will use the policy from [DefaultJavaScriptOptimizerSetting](DefaultJavaScriptOptimizerSetting.md), if set, or default to JavaScript optimizations enabled. Blocklist entries have higher priority than allowlist entries, which in turn have higher priority than the configured default value.
+
+If you don't configure this policy for a site then the policy from [DefaultJavaScriptOptimizerSetting](DefaultJavaScriptOptimizerSetting.md) applies to the site, if set, otherwise Javascript optimization is enabled for the site.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: JavaScriptOptimizerAllowedForSites
+- GP name: Allow JavaScript optimization on these sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\JavaScriptOptimizerAllowedForSites\0 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: JavaScriptOptimizerAllowedForSites
+- Example value:
+
+```xml
+<array>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

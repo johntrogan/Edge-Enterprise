@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RemoteDebuggingAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow remote debugging"
+---
+
+# RemoteDebuggingAllowed
+
+## Allow remote debugging
+
+
+## Supported versions
+
+- On Windows and macOS since 93 or later
+
+## Description
+
+Controls whether users may use remote debugging.
+
+If you enable or don't configure this policy, users may use remote debugging by specifying --remote-debug-port and --remote-debugging-pipe command line switches.
+
+If you disable this policy, users are not allowed to use remote debugging.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RemoteDebuggingAllowed
+- GP name: Allow remote debugging
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: RemoteDebuggingAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: RemoteDebuggingAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

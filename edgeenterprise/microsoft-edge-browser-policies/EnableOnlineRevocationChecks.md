@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EnableOnlineRevocationChecks"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable online OCSP/CRL checks"
+---
+
+# EnableOnlineRevocationChecks
+
+## Enable online OCSP/CRL checks
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Online revocation checks don't provide a significant security benefit and are disabled by default.
+
+If you enable this policy, Microsoft Edge will perform soft-fail, online OCSP/CRL checks. "Soft fail" means that if the revocation server can't be reached, the certificate will be considered valid.
+
+If you disable the policy or don't configure it, Microsoft Edge won't perform online revocation checks.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EnableOnlineRevocationChecks
+- GP name: Enable online OCSP/CRL checks
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EnableOnlineRevocationChecks
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: EnableOnlineRevocationChecks
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

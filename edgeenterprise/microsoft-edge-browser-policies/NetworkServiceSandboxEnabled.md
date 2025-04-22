@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation NetworkServiceSandboxEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable the network service sandbox"
+---
+
+# NetworkServiceSandboxEnabled
+
+## Enable the network service sandbox
+
+
+## Supported versions
+
+- On Windows since 102 or later
+
+## Description
+
+This policy controls whether or not the network service process runs sandboxed.
+If this policy is enabled, the network service process will run sandboxed.
+If this policy is disabled, the network service process will run unsandboxed. This leaves users open to additional security risks related to running the network service unsandboxed.
+If this policy is not set, the default configuration for the network sandbox will be used. This may vary depending on Microsoft Edge release, currently running field trials, and platform.
+This policy is intended to give enterprises flexibility to disable the network sandbox if they use third party software that interferes with the network service sandbox.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: NetworkServiceSandboxEnabled
+- GP name: Enable the network service sandbox
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: NetworkServiceSandboxEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation CrossOriginWebAssemblyModuleSharingEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Specifies whether WebAssembly modules can be sent cross-origin (obsolete)"
+---
+
+# CrossOriginWebAssemblyModuleSharingEnabled
+
+## Specifies whether WebAssembly modules can be sent cross-origin (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 98.
+
+## Supported versions
+
+- On Windows and macOS since 95, until 98
+
+## Description
+
+Specifies whether WebAssembly modules can be sent to another window or worker cross-origin. Cross-origin WebAssembly module sharing was deprecated as part of the efforts to deprecate document.domain, see https://github.com/mikewest/deprecating-document-domain. This policy allowed re-enabling of cross-origin WebAssembly module sharing. This policy is obsolete because it was intended to offer a longer transition period in the deprecation process.
+
+If you enable this policy, sites can send WebAssembly modules cross-origin
+without restrictions.
+
+If you disable or don't configure this policy, sites can only send
+WebAssembly modules to windows and workers in the same origin.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: CrossOriginWebAssemblyModuleSharingEnabled
+- GP name: Specifies whether WebAssembly modules can be sent cross-origin (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: CrossOriginWebAssemblyModuleSharingEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: CrossOriginWebAssemblyModuleSharingEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

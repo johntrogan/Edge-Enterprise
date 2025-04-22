@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ApplicationBoundEncryptionEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Application Bound Encryption"
+---
+
+# ApplicationBoundEncryptionEnabled
+
+## Enable Application Bound Encryption
+
+
+## Supported versions
+
+- On Windows since 127 or later
+
+## Description
+
+Enabling this policy or leaving it unset binds the encryption keys used for local data storage to Microsoft Edge whenever possible.
+
+Disabling this policy has a detrimental effect on Microsoft Edge's security because unknown and potentially hostile apps can retrieve the encryption keys used to secure data.
+
+Only turn off this policy if there are compatibility issues, such as scenarios where other applications need legitimate access to Microsoft Edge's data. Encrypted user data is expected to be fully portable between different computers or the integrity and location of Microsoft Edge's executable files isn’t consistent.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ApplicationBoundEncryptionEnabled
+- GP name: Enable Application Bound Encryption
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ApplicationBoundEncryptionEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationWindowOpenHeightAdjustment"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the pixel adjustment between window.open heights sourced from IE mode pages vs. Edge mode pages"
+---
+
+# InternetExplorerIntegrationWindowOpenHeightAdjustment
+
+## Configure the pixel adjustment between window.open heights sourced from IE mode pages vs. Edge mode pages
+
+
+## Supported versions
+
+- On Windows since 95 or later
+
+## Description
+
+This setting lets you specify a custom adjustment to the height of popup windows generated via window.open from the Internet Explorer mode site.
+
+If you configure this policy, Microsoft Edge will add the adjustment value to the height, in pixels. The exact difference depends on the UI configuration of both IE and Edge, but a typical difference is 5.
+
+If you disable or don't configure this policy, Microsoft Edge will treat IE mode window.open the same as Edge mode window.open in window height calculations.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerIntegrationWindowOpenHeightAdjustment
+- GP name: Configure the pixel adjustment between window.open heights sourced from IE mode pages vs. Edge mode pages
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+5
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerIntegrationWindowOpenHeightAdjustment
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000005
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

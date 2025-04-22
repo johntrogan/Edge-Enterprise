@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SuperDragDropEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Super Drag Drop Enabled"
+---
+
+# SuperDragDropEnabled
+
+## Super Drag Drop Enabled
+
+
+## Supported versions
+
+- On Windows since 122 or later
+
+## Description
+
+This policy lets you configure the Super Drag Drop feature in Microsoft Edge.
+
+With this feature, users can drag a link or text from a webpage and drop it onto the same page. They can then either open the URL in a new tab or search the text using the default search engine.
+
+If you enable or don't configure this policy, you can use the Super Drag Drop feature on Microsoft Edge.
+
+If you disable this policy, you can't use the Super Drag Drop feature in Microsoft Edge.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SuperDragDropEnabled
+- GP name: Super Drag Drop Enabled
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: SuperDragDropEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

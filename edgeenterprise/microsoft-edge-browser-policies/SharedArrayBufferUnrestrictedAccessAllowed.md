@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation SharedArrayBufferUnrestrictedAccessAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context"
+---
+
+# SharedArrayBufferUnrestrictedAccessAllowed
+
+## Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context
+
+
+## Supported versions
+
+- On Windows and macOS since 92 or later
+
+## Description
+
+Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context.  A SharedArrayBuffer is a binary data buffer that can be used to create views on shared memory.  SharedArrayBuffers have a memory access vulnerability in several popular CPUs.
+
+If you enable this policy, sites are allowed to use SharedArrayBuffers with no restrictions.
+
+If you disable or don't configure this policy, sites are allowed to use SharedArrayBuffers only when cross-origin isolated.
+
+Microsoft Edge will require cross-origin isolation when using SharedArrayBuffers from Microsoft Edge 91 onward for Web Compatibility reasons.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: SharedArrayBufferUnrestrictedAccessAllowed
+- GP name: Specifies whether SharedArrayBuffers can be used in a non cross-origin-isolated context
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: SharedArrayBufferUnrestrictedAccessAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: SharedArrayBufferUnrestrictedAccessAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

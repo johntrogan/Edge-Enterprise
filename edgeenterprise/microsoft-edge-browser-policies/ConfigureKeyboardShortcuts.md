@@ -1,0 +1,91 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ConfigureKeyboardShortcuts"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure the list of commands for which to disable keyboard shortcuts"
+---
+
+# ConfigureKeyboardShortcuts
+
+## Configure the list of commands for which to disable keyboard shortcuts
+
+
+## Supported versions
+
+- On Windows since 101 or later
+
+## Description
+
+Configure the list of Microsoft Edge commands for which to disable keyboard shortcuts.
+
+See [https://go.microsoft.com/fwlink/?linkid=2186950](https://go.microsoft.com/fwlink/?linkid=2186950) for a list of possible commands to disable.
+
+If you enable this policy, commands in the 'disabled' list will no longer be activated by keyboard shortcuts.
+
+If you disable this policy, all keyboard shortcuts behave as usual.
+
+Note: Disabling a command will only remove its shortcut mapping. Commands in the 'disabled' list will still function if accessed via browser UI.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Dictionary
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ConfigureKeyboardShortcuts
+- GP name: Configure the list of commands for which to disable keyboard shortcuts
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+{"disabled": ["new_tab", "fullscreen"]}
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ConfigureKeyboardShortcuts
+- Value type: REG_SZ
+
+#### Example value
+
+```
+{"disabled": ["new_tab", "fullscreen"]}
+```
+
+
+#### Expanded example value
+
+```
+{
+  "disabled": [
+    "new_tab",
+    "fullscreen"
+  ]
+}
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

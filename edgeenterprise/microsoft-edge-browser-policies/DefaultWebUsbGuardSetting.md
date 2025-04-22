@@ -1,0 +1,99 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DefaultWebUsbGuardSetting"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control use of the WebUSB API"
+---
+
+# DefaultWebUsbGuardSetting
+
+## Control use of the WebUSB API
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Set whether websites can access connected USB devices. You can completely block access or ask the user each time a website wants to get access to connected USB devices.
+
+You can override this policy for specific URL patterns by using the [WebUsbAskForUrls](WebUsbAskForUrls.md) and [WebUsbBlockedForUrls](WebUsbBlockedForUrls.md) policies.
+
+If you don't configure this policy, sites can ask users whether they can access the connected USB devices ('AskWebUsb') by default, and users can change this setting.
+
+Policy options mapping:
+
+* BlockWebUsb (2) = Do not allow any site to request access to USB devices via the WebUSB API
+
+* AskWebUsb (3) = Allow sites to ask the user to grant access to a connected USB device
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- BlockWebUsb (2) = Do not allow any site to request access to USB devices via the WebUSB API
+- AskWebUsb (3) = Allow sites to ask the user to grant access to a connected USB device
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DefaultWebUsbGuardSetting
+- GP name: Control use of the WebUSB API
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Do not allow any site to request access to USB devices via the WebUSB API
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: DefaultWebUsbGuardSetting
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000002
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DefaultWebUsbGuardSetting
+- Example value:
+
+```xml
+<integer>2</integer>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

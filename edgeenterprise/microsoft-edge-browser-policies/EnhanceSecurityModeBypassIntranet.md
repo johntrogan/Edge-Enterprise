@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EnhanceSecurityModeBypassIntranet"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enhanced Security Mode configuration for Intranet zone sites"
+---
+
+# EnhanceSecurityModeBypassIntranet
+
+## Enhanced Security Mode configuration for Intranet zone sites
+
+
+## Supported versions
+
+- On Windows since 107 or later
+
+## Description
+
+Microsoft Edge will apply Enhanced Security Mode on Intranet zone sites by default. This may lead to Intranet zone sites acting in an unexpected manner.
+
+If you enable this policy, Microsoft Edge won't apply Enhanced Security Mode on Intranet zone sites.
+
+If you disable or don't configure this policy, Microsoft Edge will apply Enhanced Security Mode on Intranet zone sites.
+
+For detailed information about Enhanced Security Mode, see [https://go.microsoft.com/fwlink/?linkid=2185895](https://go.microsoft.com/fwlink/?linkid=2185895)
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EnhanceSecurityModeBypassIntranet
+- GP name: Enhanced Security Mode configuration for Intranet zone sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EnhanceSecurityModeBypassIntranet
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

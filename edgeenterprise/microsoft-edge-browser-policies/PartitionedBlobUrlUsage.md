@@ -1,0 +1,95 @@
+---
+title: "Microsoft Edge Browser Policy Documentation PartitionedBlobUrlUsage"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Manage Blob URL Partitioning During Fetching and Navigation"
+---
+
+# PartitionedBlobUrlUsage
+
+## Manage Blob URL Partitioning During Fetching and Navigation
+
+
+## Supported versions
+
+- On Windows and macOS since 135 or later
+
+## Description
+
+This policy controls whether Blob URLs are partitioned during fetching and navigation.
+If this policy is set to Enabled or not set, Blob URLs will be partitioned.
+If this policy is set to Disabled, Blob URLs won't be partitioned.  This is the Blob URL behavior prior to
+Microsoft Edge version 135.
+
+If storage partitioning is disabled for a given top-level origin by either
+ThirdPartyStoragePartitioningBlockedForOrigins
+or DefaultThirdPartyStoragePartitioningSetting,
+then Blob URLs will also not be partitioned.
+
+The policy is scheduled to be available through Microsoft Edge version 140. After this
+version, the policy will be removed, and Microsoft Edge will no longer support unpartitioned
+blob storage.
+
+For detailed information on third-party storage partitioning, please see https://github.com/privacycg/storage-partitioning.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: PartitionedBlobUrlUsage
+- GP name: Manage Blob URL Partitioning During Fetching and Navigation
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: PartitionedBlobUrlUsage
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: PartitionedBlobUrlUsage
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

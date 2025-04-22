@@ -1,0 +1,102 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InsecureContentBlockedForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Block insecure content on specified sites"
+---
+
+# InsecureContentBlockedForUrls
+
+## Block insecure content on specified sites
+
+
+## Supported versions
+
+- On Windows and macOS since 80 or later
+
+## Description
+
+Create a list of URL patterns to specify sites that aren't allowed to display blockable (i.e. active) mixed content (that is, HTTP content on HTTPS sites) and for which optionally blockable mixed content upgrades will be disabled.
+
+If you don't configure this policy, blockable mixed content will be blocked and optionally blockable mixed content will be upgraded. However, users will be allowed to set exceptions to allow insecure mixed content for specific sites.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). Wildcards (*) are allowed.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InsecureContentBlockedForUrls
+- GP name: Block insecure content on specified sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.example.com
+```
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\InsecureContentBlockedForUrls\0 =
+```
+https://www.example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\InsecureContentBlockedForUrls\1 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: InsecureContentBlockedForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.example.com</string>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

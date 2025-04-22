@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation FileSystemReadBlockedForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Block read access via the File System API on these sites"
+---
+
+# FileSystemReadBlockedForUrls
+
+## Block read access via the File System API on these sites
+
+
+## Supported versions
+
+- On Windows and macOS since 86 or later
+
+## Description
+
+If you set this policy, you can list the URL patterns that specify which sites can't ask users to grant them read access to files or directories in the host operating system's file system via the File System API.
+
+If you don't set this policy, [DefaultFileSystemReadGuardSetting](DefaultFileSystemReadGuardSetting.md) applies for all sites, if it's set. If not, users' personal settings apply.
+
+URL patterns can't conflict with [FileSystemReadAskForUrls](FileSystemReadAskForUrls.md). Neither policy takes precedence if a URL matches with both.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: FileSystemReadBlockedForUrls
+- GP name: Block read access via the File System API on these sites
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.example.com
+```
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\FileSystemReadBlockedForUrls\0 =
+```
+https://www.example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\FileSystemReadBlockedForUrls\1 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: FileSystemReadBlockedForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.example.com</string>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

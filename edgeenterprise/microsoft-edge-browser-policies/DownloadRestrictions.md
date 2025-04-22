@@ -1,0 +1,118 @@
+---
+title: "Microsoft Edge Browser Policy Documentation DownloadRestrictions"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow download restrictions"
+---
+
+# DownloadRestrictions
+
+## Allow download restrictions
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Configures the type of downloads that Microsoft Edge completely blocks, without letting users override the security decision.
+
+Set 'BlockDangerousDownloads' to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of known dangerous downloads or that have dangerous file type extensions.
+
+Set 'BlockPotentiallyDangerousDownloads' to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of potentially dangerous or unwanted downloads or that have dangerous file type extensions.
+
+Set 'BlockAllDownloads' to block all downloads.
+
+Set 'BlockMaliciousDownloads' to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of known malicious downloads.
+
+If you don't configure this policy or set the 'DefaultDownloadSecurity' option, the downloads go through the usual security restrictions based on Microsoft Defender SmartScreen analysis results.
+
+Note that these restrictions apply to downloads from web page content, as well as the 'download link...' context menu option. These restrictions don't apply to saving or downloading the currently displayed page, nor do they apply to the Save as PDF option from the printing options.
+
+See [https://go.microsoft.com/fwlink/?linkid=2094934](https://go.microsoft.com/fwlink/?linkid=2094934) for more info on Microsoft Defender SmartScreen.
+
+Policy options mapping:
+
+* DefaultDownloadSecurity (0) = No special restrictions
+
+* BlockDangerousDownloads (1) = Block malicious downloads and dangerous file types
+
+* BlockPotentiallyDangerousDownloads (2) = Block potentially dangerous or unwanted downloads and dangerous file types
+
+* BlockAllDownloads (3) = Block all downloads
+
+* BlockMaliciousDownloads (4) = Block malicious downloads
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- DefaultDownloadSecurity (0) = No special restrictions
+- BlockDangerousDownloads (1) = Block malicious downloads and dangerous file types
+- BlockPotentiallyDangerousDownloads (2) = Block potentially dangerous or unwanted downloads and dangerous file types
+- BlockAllDownloads (3) = Block all downloads
+- BlockMaliciousDownloads (4) = Block malicious downloads
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: DownloadRestrictions
+- GP name: Allow download restrictions
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Block potentially dangerous or unwanted downloads and dangerous file types
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: DownloadRestrictions
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000002
+```
+
+
+## Mac information and settings
+
+- Preference Key name: DownloadRestrictions
+- Example value:
+
+```xml
+<integer>2</integer>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

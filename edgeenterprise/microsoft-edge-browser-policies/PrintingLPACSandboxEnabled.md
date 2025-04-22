@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation PrintingLPACSandboxEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Printing LPAC Sandbox"
+---
+
+# PrintingLPACSandboxEnabled
+
+## Enable Printing LPAC Sandbox
+
+
+## Supported versions
+
+- On Windows since 129 or later
+
+## Description
+
+Setting this policy to Enabled or leaving it unset enables the LPAC Sandbox for printing services when the system configuration supports it.
+
+Setting this policy to Disabled has a detrimental effect on Microsoft Edge's security because services used for printing might run in a weaker sandbox configuration.
+
+Only turn this policy off if there are compatibility issues with third party software that prevent printing services from operating correctly inside the LPAC Sandbox.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: PrintingLPACSandboxEnabled
+- GP name: Enable Printing LPAC Sandbox
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: PrintingLPACSandboxEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

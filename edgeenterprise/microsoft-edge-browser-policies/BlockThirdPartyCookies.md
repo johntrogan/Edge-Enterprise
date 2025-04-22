@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation BlockThirdPartyCookies"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Block third party cookies"
+---
+
+# BlockThirdPartyCookies
+
+## Block third party cookies
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Block web page elements that aren't from the domain that's in the address bar from setting cookies.
+
+If you enable this policy, web page elements that are not from the domain that is in the address bar can't set cookies
+
+If you disable this policy, web page elements from domains other than in the address bar can set cookies.
+
+If you don't configure this policy, third-party cookies are enabled but users can change this setting.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: BlockThirdPartyCookies
+- GP name: Block third party cookies
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: BlockThirdPartyCookies
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: BlockThirdPartyCookies
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

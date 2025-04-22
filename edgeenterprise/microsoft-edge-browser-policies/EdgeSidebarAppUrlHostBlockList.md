@@ -1,0 +1,106 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EdgeSidebarAppUrlHostBlockList"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control which apps cannot be opened in Microsoft Edge sidebar"
+---
+
+# EdgeSidebarAppUrlHostBlockList
+
+## Control which apps cannot be opened in Microsoft Edge sidebar
+
+
+## Supported versions
+
+- On Windows and macOS since 127 or later
+
+## Description
+
+Define a list of sites, based on URL patterns, that cannot be opened in sidebar.
+
+If you don't configure this policy, a user can open any app in sidebar.
+
+If the [HubsSidebarEnabled](HubsSidebarEnabled.md) policy is disabled, this list isn't used and no sidebar can be opened.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2281313](https://go.microsoft.com/fwlink/?linkid=2281313).
+
+Note: A blocklist value of '\*' means all apps are blocked unless they are explicitly listed in the [EdgeSidebarAppUrlHostAllowList](EdgeSidebarAppUrlHostAllowList.md) policy.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EdgeSidebarAppUrlHostBlockList
+- GP name: Control which apps cannot be opened in Microsoft Edge sidebar
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+[*.]contoso.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostBlockList\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostBlockList\1 =
+```
+[*.]contoso.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: EdgeSidebarAppUrlHostBlockList
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation KioskSwipeGesturesEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Swipe gestures in Microsoft Edge kiosk mode enabled"
+---
+
+# KioskSwipeGesturesEnabled
+
+## Swipe gestures in Microsoft Edge kiosk mode enabled
+
+
+## Supported versions
+
+- On Windows since 101 or later
+
+## Description
+
+This policy only applies to Microsoft Edge kiosk mode.
+
+If you enable this policy or don't configure it, swipe gestures will behave as expected.
+
+If you disable this policy, the user will not be able to use swipe gestures (for example navigate forwards and backwards, refresh page).
+
+For detailed information on configuring kiosk mode, see [https://go.microsoft.com/fwlink/?linkid=2137578](https://go.microsoft.com/fwlink/?linkid=2137578).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: KioskSwipeGesturesEnabled
+- GP name: Swipe gestures in Microsoft Edge kiosk mode enabled
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: KioskSwipeGesturesEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

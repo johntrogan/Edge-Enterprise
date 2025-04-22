@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation UrlDiagnosticDataEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: URL reporting in Edge diagnostic data enabled"
+---
+
+# UrlDiagnosticDataEnabled
+
+## URL reporting in Edge diagnostic data enabled
+
+
+## Supported versions
+
+- On Windows and macOS since 122 or later
+
+## Description
+
+Controls sending URLs of pages visited and per-page usage in the Microsoft Edge optional diagnostics data to Microsoft to help make browsing and search better. This also includes identifiers and usage diagnostics of other browser components that can modify or provide content, such as extensions.
+
+This policy is applicable only if the [DiagnosticData](DiagnosticData.md) setting is set to 'OptionalData'. See the description of [DiagnosticData](DiagnosticData.md) for more information on how Microsoft Edge diagnostic data levels are set.
+
+If you enable or don't configure this setting, URLs are provided in optional diagnostic data.
+
+If you disable this setting, URLs are not reported in optional diagnostic data.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: UrlDiagnosticDataEnabled
+- GP name: URL reporting in Edge diagnostic data enabled
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: UrlDiagnosticDataEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: UrlDiagnosticDataEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

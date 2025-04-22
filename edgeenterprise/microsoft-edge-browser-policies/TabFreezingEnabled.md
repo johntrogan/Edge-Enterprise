@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation TabFreezingEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow freezing of background tabs (obsolete)"
+---
+
+# TabFreezingEnabled
+
+## Allow freezing of background tabs (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 86.
+
+## Supported versions
+
+- On Windows and macOS since 79, until 86
+
+## Description
+
+This policy doesn't work, use [SleepingTabsEnabled](SleepingTabsEnabled.md) instead.
+
+Controls whether Microsoft Edge can freeze tabs that are in the background for at least 5 minutes.
+
+Tab freezing reduces CPU, battery, and memory usage. Microsoft Edge uses heuristics to avoid freezing tabs that do useful work in the background, such as display notifications, play sound, and stream video.
+
+If you enable or don't configure this policy, tabs that have been in the background for at least 5 minutes might be frozen.
+
+If you disable this policy, no tabs will be frozen.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: TabFreezingEnabled
+- GP name: Allow freezing of background tabs (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: TabFreezingEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: TabFreezingEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

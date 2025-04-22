@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation WebRtcUdpPortRange"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Restrict the range of local UDP ports used by WebRTC"
+---
+
+# WebRtcUdpPortRange
+
+## Restrict the range of local UDP ports used by WebRTC
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Restricts the UDP port range used by WebRTC to a specified port interval (endpoints included).
+
+By configuring this policy, you specify the range of local UDP ports that WebRTC can use.
+
+If you don't configure this policy, or if you set it to an empty string or invalid port range, WebRTC can use any available local UDP port.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- String
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: WebRtcUdpPortRange
+- GP name: Restrict the range of local UDP ports used by WebRTC
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+10000-11999
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: WebRtcUdpPortRange
+- Value type: REG_SZ
+
+#### Example value
+
+```
+10000-11999
+```
+
+
+## Mac information and settings
+
+- Preference Key name: WebRtcUdpPortRange
+- Example value:
+
+```xml
+<string>10000-11999</string>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

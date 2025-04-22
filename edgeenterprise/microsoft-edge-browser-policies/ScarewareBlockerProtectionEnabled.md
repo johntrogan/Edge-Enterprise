@@ -1,0 +1,80 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ScarewareBlockerProtectionEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure Edge Scareware Blocker Protection"
+---
+
+# ScarewareBlockerProtectionEnabled
+
+## Configure Edge Scareware Blocker Protection
+
+
+## Supported versions
+
+- On Windows since 134 or later
+
+## Description
+
+This policy setting allows administrators to control whether Microsoft Edge enables the Scareware Blocker, an AI-powered feature that provides warning messages to help protect users from potential tech scams.
+
+If this policy is enabled, Edge Scareware Blocker will warn users of potential tech scams.
+
+If this policy is disabled, Edge Scareware Blocker will not warn users of potential tech scams.
+
+If this policy is not configured, Edge Scareware Blocker will not warn users of potential tech scams, but users can choose warnings in settings.
+
+By configuring this policy, administrators determine whether users receive proactive scam warnings or must manually enable them.
+
+## Supported features
+
+- Can be mandatory: Yes
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ScarewareBlockerProtectionEnabled
+- GP name: Configure Edge Scareware Blocker Protection
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Scareware Blocker settings
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Scareware Blocker settings
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: ScarewareBlockerProtectionEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,102 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ThirdPartyStoragePartitioningBlockedForOrigins"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Disable third-party storage partitioning for specific top-level origins"
+---
+
+# ThirdPartyStoragePartitioningBlockedForOrigins
+
+## Disable third-party storage partitioning for specific top-level origins
+
+
+## Supported versions
+
+- On Windows and macOS since 115 or later
+
+## Description
+
+This policy lets you set a list of URL patterns that specify top-level origins for which third-party storage partitioning (partitioning of cross-origin iframe storage) should be disabled.
+
+If this policy isn't set or a top-level origin doesn't match one of the URL patterns, then the value from [DefaultThirdPartyStoragePartitioningSetting](DefaultThirdPartyStoragePartitioningSetting.md) will be used.
+
+Note that the patterns you list are treated as origins, not URLs, so you shouldn't specify a path. For detailed information about valid origin patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ThirdPartyStoragePartitioningBlockedForOrigins
+- GP name: Disable third-party storage partitioning for specific top-level origins
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+www.example.com
+```
+
+```
+[*.]example.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\ThirdPartyStoragePartitioningBlockedForOrigins\0 =
+```
+www.example.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\ThirdPartyStoragePartitioningBlockedForOrigins\1 =
+```
+[*.]example.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: ThirdPartyStoragePartitioningBlockedForOrigins
+- Example value:
+
+```xml
+<array>
+  <string>www.example.com</string>
+  <string>[*.]example.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

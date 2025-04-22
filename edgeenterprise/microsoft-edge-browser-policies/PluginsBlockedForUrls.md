@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation PluginsBlockedForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Block the Adobe Flash plug-in on specific sites (obsolete)"
+---
+
+# PluginsBlockedForUrls
+
+## Block the Adobe Flash plug-in on specific sites (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 87.
+
+## Supported versions
+
+- On Windows and macOS since 77, until 87
+
+## Description
+
+This policy doesn't work because Flash is no longer supported by Microsoft Edge.
+
+Define a list of sites, based on URL patterns, that are blocked from running Adobe Flash.
+
+If you don't configure this policy, the global default value from the [DefaultPluginsSetting](DefaultPluginsSetting.md) policy (if set) or the user's personal configuration is used for all sites.
+
+For detailed information on valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). However, starting in M85, patterns with '\*' and '[\*.]' wildcards in the host are no longer supported for this policy.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: PluginsBlockedForUrls
+- GP name: Block the Adobe Flash plug-in on specific sites (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+http://contoso.edu:8080
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\PluginsBlockedForUrls\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\PluginsBlockedForUrls\1 =
+```
+http://contoso.edu:8080
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: PluginsBlockedForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>http://contoso.edu:8080</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

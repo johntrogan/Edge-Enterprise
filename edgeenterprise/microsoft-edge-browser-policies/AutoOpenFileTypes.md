@@ -1,0 +1,108 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AutoOpenFileTypes"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: List of file types that should be automatically opened on download"
+---
+
+# AutoOpenFileTypes
+
+## List of file types that should be automatically opened on download
+
+
+## Supported versions
+
+- On Windows and macOS since 85 or later
+
+## Description
+
+This policy sets a list of file types that should be automatically opened on download. Note: The leading separator should not be included when listing the file type, so list "txt" instead of ".txt".
+
+By default, these file types will be automatically opened on all URLs. You can use the [AutoOpenAllowedForURLs](AutoOpenAllowedForURLs.md) policy to restrict the URLs for which these file types will be automatically opened on.
+
+Files with types that should be automatically opened will still be subject to the enabled Microsoft Defender SmartScreen checks and won't be opened if they fail those checks.
+
+File types that a user has already specified to automatically be opened will continue to do so when downloaded. The user will continue to be able to specify other file types to be automatically opened.
+
+If you don't set this policy, only file types that a user has already specified to automatically be opened will do so when downloaded.
+
+This policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory or instances that enrolled for device management.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AutoOpenFileTypes
+- GP name: List of file types that should be automatically opened on download
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+exe
+```
+
+```
+txt
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\0 =
+```
+exe
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\1 =
+```
+txt
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: AutoOpenFileTypes
+- Example value:
+
+```xml
+<array>
+  <string>exe</string>
+  <string>txt</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AutofillAddressEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable AutoFill for addresses"
+---
+
+# AutofillAddressEnabled
+
+## Enable AutoFill for addresses
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Enables the AutoFill feature and allows users to auto-complete address information in web forms using previously stored information.
+
+If this policy is enabled or not configured, users can manage AutoFill for addresses in Microsoft Edge settings. AutoFill allows users to complete address fields in web forms using previously saved information.
+
+If this policy is disabled, Microsoft Edge does not suggest, fill in, or save address information. AutoFill is also disabled for all web forms except payment and password fields, and previously saved addresses are not available.
+
+Disabling this policy also turns off [EdgeAutofillMlEnabled](EdgeAutofillMlEnabled.md).
+
+Note that if you disable this policy you also stop all activity for all web forms, except payment and password forms. No further entries are saved, and Microsoft Edge won't suggest or AutoFill any previous entries.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AutofillAddressEnabled
+- GP name: Enable AutoFill for addresses
+- GP path (Mandatory): N/A
+- GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
+- Value name: AutofillAddressEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AutofillAddressEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

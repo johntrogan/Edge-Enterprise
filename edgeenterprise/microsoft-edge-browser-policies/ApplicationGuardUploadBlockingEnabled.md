@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ApplicationGuardUploadBlockingEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Prevents files from being uploaded while in Application Guard"
+---
+
+# ApplicationGuardUploadBlockingEnabled
+
+## Prevents files from being uploaded while in Application Guard
+
+
+## Supported versions
+
+- On Windows since 96 or later
+
+## Description
+
+Sets whether files can be uploaded while in Application Guard.
+
+If you enable this policy, users will not be able to upload files in Application Guard.
+
+If you disable or don't configure this policy, users will be able to upload files while in Application Guard.
+
+## Supported features
+
+- Can be mandatory: Yes
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ApplicationGuardUploadBlockingEnabled
+- GP name: Prevents files from being uploaded while in Application Guard
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Application Guard settings
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
+- Path (Recommended): N/A
+- Value name: ApplicationGuardUploadBlockingEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

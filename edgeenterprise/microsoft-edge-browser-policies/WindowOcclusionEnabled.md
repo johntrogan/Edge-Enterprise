@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation WindowOcclusionEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Window Occlusion"
+---
+
+# WindowOcclusionEnabled
+
+## Enable Window Occlusion
+
+
+## Supported versions
+
+- On Windows since 89 or later
+
+## Description
+
+Enables window occlusion in Microsoft Edge.
+
+If you enable this setting, to reduce CPU and power consumption Microsoft Edge will detect when a window is covered by other windows, and will suspend work painting pixels.
+
+If you disable this setting Microsoft Edge will not detect when a window is covered by other windows.
+
+If this policy is left not set, window hiding detection will be enabled.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: WindowOcclusionEnabled
+- GP name: Enable Window Occlusion
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: WindowOcclusionEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

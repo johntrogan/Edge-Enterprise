@@ -1,0 +1,85 @@
+---
+title: "Microsoft Edge Browser Policy Documentation NewTabPageAppLauncherEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Hide App Launcher on Microsoft Edge new tab page"
+---
+
+# NewTabPageAppLauncherEnabled
+
+## Hide App Launcher on Microsoft Edge new tab page
+
+
+## Supported versions
+
+- On Windows and macOS since 108 or later
+
+## Description
+
+By default, the App Launcher is shown every time a user opens a new tab page.
+
+If you enable or don't configure this policy, there is no change on the Microsoft Edge new tab page and App Launcher is there for users.
+
+If you disable this policy, App Launcher doesn't appear and users won't be able to launch M365 apps from Microsoft Edge new tab page via the App Launcher.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: NewTabPageAppLauncherEnabled
+- GP name: Hide App Launcher on Microsoft Edge new tab page
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: NewTabPageAppLauncherEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: NewTabPageAppLauncherEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

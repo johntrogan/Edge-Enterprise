@@ -1,0 +1,104 @@
+---
+title: "Microsoft Edge Browser Policy Documentation WebHidAllowAllDevicesForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow listed sites to connect to any HID device"
+---
+
+# WebHidAllowAllDevicesForUrls
+
+## Allow listed sites to connect to any HID device
+
+
+## Supported versions
+
+- On Windows and macOS since 109 or later
+
+## Description
+
+This setting allows you to list sites which are automatically granted permission to access all available devices.
+
+The URLs must be valid or the policy is ignored. Only the origin (scheme, host and port) of the URL is evaluated.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2095322](https://go.microsoft.com/fwlink/?linkid=2095322). * is not an accepted value for this policy.
+
+This policy overrides [DefaultWebHidGuardSetting](DefaultWebHidGuardSetting.md), [WebHidAskForUrls](WebHidAskForUrls.md), [WebHidBlockedForUrls](WebHidBlockedForUrls.md) and the user's preferences.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: WebHidAllowAllDevicesForUrls
+- GP name: Allow listed sites to connect to any HID device
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://microsoft.com
+```
+
+```
+https://chromium.org
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\WebHidAllowAllDevicesForUrls\0 =
+```
+https://microsoft.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\WebHidAllowAllDevicesForUrls\1 =
+```
+https://chromium.org
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: WebHidAllowAllDevicesForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://microsoft.com</string>
+  <string>https://chromium.org</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

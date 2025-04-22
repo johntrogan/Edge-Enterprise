@@ -1,0 +1,87 @@
+---
+title: "Microsoft Edge Browser Policy Documentation RestrictSigninToPattern"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Restrict which accounts can be used to sign in to Microsoft Edge"
+---
+
+# RestrictSigninToPattern
+
+## Restrict which accounts can be used to sign in to Microsoft Edge
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Determines which accounts can be used to sign in to the Microsoft Edge account that's chosen during the Sync opt-in flow.
+
+You can configure this policy to match multiple accounts using a Perl style regular expression for the pattern. If a user tries to sign in to the browser with an account whose username doesn't match this pattern, they are blocked and will get the appropriate error message. Note that pattern matches are case sensitive. For more information about the regular expression rules that are used, refer to https://go.microsoft.com/fwlink/p/?linkid=2133903.
+
+If you don't configure this policy or leave it blank, users can use any account to sign in to Microsoft Edge.
+
+Note that signed-in profiles with a username that doesn't match this pattern will be signed out after this policy is enabled.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- String
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: RestrictSigninToPattern
+- GP name: Restrict which accounts can be used to sign in to Microsoft Edge
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+.*@contoso.com
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: RestrictSigninToPattern
+- Value type: REG_SZ
+
+#### Example value
+
+```
+.*@contoso.com
+```
+
+
+## Mac information and settings
+
+- Preference Key name: RestrictSigninToPattern
+- Example value:
+
+```xml
+<string>.*@contoso.com</string>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

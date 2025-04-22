@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation OopPrintDriversAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Out-of-process print drivers allowed"
+---
+
+# OopPrintDriversAllowed
+
+## Out-of-process print drivers allowed
+
+
+## Supported versions
+
+- On Windows and macOS since 134 or later
+
+## Description
+
+This policy determines whether Microsoft Edge handles interactions with printer drivers through a separate service process.
+
+Using a service process for tasks like querying available printers, retrieving print driver settings, and submitting documents to local printers improves browser stability and prevents UI freezing during Print Preview.
+
+Enabled or Not Set: Microsoft Edge will use a separate service process for these printing tasks.
+
+Disabled: Microsoft Edge will perform these printing tasks within the browser process.
+
+Note: This policy will be deprecated in the future once the transition to out-of-process print drivers is fully implemented.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: OopPrintDriversAllowed
+- GP name: Out-of-process print drivers allowed
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: OopPrintDriversAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: OopPrintDriversAllowed
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

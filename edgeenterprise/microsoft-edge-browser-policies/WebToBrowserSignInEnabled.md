@@ -1,0 +1,83 @@
+---
+title: "Microsoft Edge Browser Policy Documentation WebToBrowserSignInEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Web To Browser Sign-in Enabled"
+---
+
+# WebToBrowserSignInEnabled
+
+## Web To Browser Sign-in Enabled
+
+
+## Supported versions
+
+- On Windows and macOS since 133 or later
+
+## Description
+
+Allow user to sign in to the same account in Microsoft Edge when a user signs in to a Microsoft website.
+If this policy is enabled or not configured, user are able to get sign in CTA or seamless sign in experience(if [SeamlessWebToBrowserSignInEnabled](SeamlessWebToBrowserSignInEnabled.md) is enabled) when user sign in on Microsoft website.
+If this policy is disabled, user will not get sign in CTA or seamless sign in experience when user sign in on Microsoft website.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: WebToBrowserSignInEnabled
+- GP name: Web To Browser Sign-in Enabled
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: WebToBrowserSignInEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: WebToBrowserSignInEnabled
+- Example value:
+
+```xml
+<false/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

@@ -1,0 +1,115 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AmbientAuthenticationInPrivateModesEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Ambient Authentication for InPrivate and Guest profiles"
+---
+
+# AmbientAuthenticationInPrivateModesEnabled
+
+## Enable Ambient Authentication for InPrivate and Guest profiles
+
+
+## Supported versions
+
+- On Windows and macOS since 81 or later
+
+## Description
+
+Configure this policy to allow/disallow ambient authentication for InPrivate and Guest profiles in Microsoft Edge.
+
+Ambient Authentication is http authentication with default credentials when explicit credentials aren't provided via NTLM/Kerberos/Negotiate challenge/response schemes.
+
+If you set the policy to 'RegularOnly', it allows ambient authentication for Regular sessions only. InPrivate and Guest sessions won't be allowed to ambiently authenticate.
+
+If you set the policy to 'InPrivateAndRegular', it allows ambient authentication for InPrivate and Regular sessions. Guest sessions won't be allowed to ambiently authenticate.
+
+If you set the policy to 'GuestAndRegular', it allows ambient authentication for Guest and Regular sessions. InPrivate sessions won't be allowed to ambiently authenticate
+
+If you set the policy to 'All', it allows ambient authentication for all sessions.
+
+Note that ambient authentication is always allowed on regular profiles.
+
+In Microsoft Edge version 81 and later, if the policy is left not set, ambient authentication will be enabled in regular sessions only.
+
+Policy options mapping:
+
+* RegularOnly (0) = Enable ambient authentication in regular sessions only
+
+* InPrivateAndRegular (1) = Enable ambient authentication in InPrivate and regular sessions
+
+* GuestAndRegular (2) = Enable ambient authentication in guest and regular sessions
+
+* All (3) = Enable ambient authentication in regular, InPrivate and guest sessions
+
+Use the preceding information when configuring this policy.
+
+## Policy options mapping:
+> Use this information when configuring this policy.
+
+- RegularOnly (0) = Enable ambient authentication in regular sessions only
+- InPrivateAndRegular (1) = Enable ambient authentication in InPrivate and regular sessions
+- GuestAndRegular (2) = Enable ambient authentication in guest and regular sessions
+- All (3) = Enable ambient authentication in regular, InPrivate and guest sessions
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Integer
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AmbientAuthenticationInPrivateModesEnabled
+- GP name: Enable Ambient Authentication for InPrivate and Guest profiles
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enable ambient authentication in regular sessions only
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: AmbientAuthenticationInPrivateModesEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## Mac information and settings
+
+- Preference Key name: AmbientAuthenticationInPrivateModesEnabled
+- Example value:
+
+```xml
+<integer>0</integer>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

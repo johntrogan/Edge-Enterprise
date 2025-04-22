@@ -1,0 +1,76 @@
+---
+title: "Microsoft Edge Browser Policy Documentation ForceBuiltInPushMessagingClient"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Forces Microsoft Edge to use its built-in WNS push client to connect to the Windows Push Notification Service."
+---
+
+# ForceBuiltInPushMessagingClient
+
+## Forces Microsoft Edge to use its built-in WNS push client to connect to the Windows Push Notification Service.
+
+
+## Supported versions
+
+- On Windows since 118 or later
+
+## Description
+
+In some environments, the Windows OS client can't connect to the Windows Push Notification Service (WNS). For these environments, you can use the Microsoft Edge built-in WNS push client, which may be able to connect successfully.
+
+If enabled, Microsoft Edge will use its built-in WNS push client to connect to WNS.
+
+If disabled or not configured, Microsoft Edge will use the Windows OS client to connect to the Windows Push Notification Service. This is the default setting.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: No
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: ForceBuiltInPushMessagingClient
+- GP name: Forces Microsoft Edge to use its built-in WNS push client to connect to the Windows Push Notification Service.
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: ForceBuiltInPushMessagingClient
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

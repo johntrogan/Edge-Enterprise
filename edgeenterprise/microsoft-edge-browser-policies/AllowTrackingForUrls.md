@@ -1,0 +1,102 @@
+---
+title: "Microsoft Edge Browser Policy Documentation AllowTrackingForUrls"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Configure tracking prevention exceptions for specific sites"
+---
+
+# AllowTrackingForUrls
+
+## Configure tracking prevention exceptions for specific sites
+
+
+## Supported versions
+
+- On Windows and macOS since 78 or later
+
+## Description
+
+Configure the list of URL patterns that are excluded from tracking prevention.
+
+If you configure this policy, the list of configured URL patterns is excluded from tracking prevention.
+
+If you don't configure this policy, the global default value from the "Block tracking of users' web-browsing activity" policy (if set) or the user's personal configuration is used for all sites.
+
+## Supported features
+
+- Can be mandatory: Yes
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: AllowTrackingForUrls
+- GP name: Configure tracking prevention exceptions for specific sites
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+[*.]contoso.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\AllowTrackingForUrls
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\AllowTrackingForUrls\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\AllowTrackingForUrls\1 =
+```
+[*.]contoso.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: AllowTrackingForUrls
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

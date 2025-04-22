@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerModeTabInEdgeModeAllowed"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow sites configured for Internet Explorer mode to open in Microsoft Edge"
+---
+
+# InternetExplorerModeTabInEdgeModeAllowed
+
+## Allow sites configured for Internet Explorer mode to open in Microsoft Edge
+
+
+## Supported versions
+
+- On Windows since 97 or later
+
+## Description
+
+This policy lets sites configured to open in Internet Explorer mode to be opened by Microsoft Edge for testing on a modern browser without removing them from the site list.
+
+Users can configure this setting in the "More tools" menu by selecting 'Open sites in Microsoft Edge'.
+
+If you enable this policy, the option to 'Open sites in Microsoft Edge' will be visible under "More tools". Users use this option to test IE mode sites on a modern browser.
+
+If you disable or don't configure this policy, users can't see the option 'Open in Microsoft Edge' under the "More tools" menu. However, users can access this menu option with the --ie-mode-test flag.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerModeTabInEdgeModeAllowed
+- GP name: Allow sites configured for Internet Explorer mode to open in Microsoft Edge
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Disabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerModeTabInEdgeModeAllowed
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000000
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

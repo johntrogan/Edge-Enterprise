@@ -1,0 +1,100 @@
+---
+title: "Microsoft Edge Browser Policy Documentation NativeMessagingAllowlist"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control which native messaging hosts users can use"
+---
+
+# NativeMessagingAllowlist
+
+## Control which native messaging hosts users can use
+
+
+## Supported versions
+
+- On Windows and macOS since 77 or later
+
+## Description
+
+Setting the policy specifies which native messaging hosts aren't subject to the deny list. A deny list value of * means all native messaging hosts are denied unless they're explicitly allowed.
+
+All native messaging hosts are allowed by default. However, if a native messaging host is denied by policy, the admin can use the allow list to change that policy.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: NativeMessagingAllowlist
+- GP name: Control which native messaging hosts users can use
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+com.native.messaging.host.name1
+```
+
+```
+com.native.messaging.host.name2
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\NativeMessagingAllowlist\0 =
+```
+com.native.messaging.host.name1
+```
+
+SOFTWARE\Policies\Microsoft\Edge\NativeMessagingAllowlist\1 =
+```
+com.native.messaging.host.name2
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: NativeMessagingAllowlist
+- Example value:
+
+```xml
+<array>
+  <string>com.native.messaging.host.name1</string>
+  <string>com.native.messaging.host.name2</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

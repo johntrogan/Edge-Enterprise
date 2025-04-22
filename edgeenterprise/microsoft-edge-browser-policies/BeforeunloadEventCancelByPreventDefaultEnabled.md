@@ -1,0 +1,90 @@
+---
+title: "Microsoft Edge Browser Policy Documentation BeforeunloadEventCancelByPreventDefaultEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)"
+---
+
+# BeforeunloadEventCancelByPreventDefaultEnabled
+
+## Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 130.
+
+## Supported versions
+
+- On Windows and macOS since 118, until 130
+
+## Description
+
+This policy provides a temporary opt-out for two related fixes to the behavior of the confirmation dialog that’s shown by the beforeunload event.
+
+When this policy is Enabled, the new (correct) behavior will be used.
+When this policy is Disabled, the old (legacy) behavior will be used.
+When this policy is left not set, the default behavior will be used.
+Note: This policy is a temporary workaround and will be removed in a future release.
+
+New and correct behavior: In `beforeunload`, calling `event.preventDefault()` will trigger the confirmation dialog. Setting `event.returnValue` to the empty string won’t trigger the confirmation dialog.
+
+Old and legacy behavior: In `beforeunload`, calling `event.preventDefault()` won’t trigger the confirmation dialog. Setting `event.returnValue` to the empty string will trigger the confirmation dialog.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: BeforeunloadEventCancelByPreventDefaultEnabled
+- GP name: Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: BeforeunloadEventCancelByPreventDefaultEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: BeforeunloadEventCancelByPreventDefaultEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

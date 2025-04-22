@@ -1,0 +1,78 @@
+---
+title: "Microsoft Edge Browser Policy Documentation InternetExplorerModeClearDataOnExitEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Clear history for IE and IE mode every time you exit"
+---
+
+# InternetExplorerModeClearDataOnExitEnabled
+
+## Clear history for IE and IE mode every time you exit
+
+
+## Supported versions
+
+- On Windows since 111 or later
+
+## Description
+
+This policy controls whether browsing history is deleted from Internet Explorer and Internet Explorer mode every time Microsoft Edge is closed.
+
+Users can configure this setting in the 'Clear browsing data for Internet Explorer' option in the Privacy, search, and services menu of Settings.
+
+If you enable this policy, on browser exit Internet Explorer browsing history will be cleared.
+
+If you disable or do not configure this policy, Internet Explorer browsing history will not be cleared on browser exit.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: No - Requires browser restart
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: Yes
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: InternetExplorerModeClearDataOnExitEnabled
+- GP name: Clear history for IE and IE mode every time you exit
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: InternetExplorerModeClearDataOnExitEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

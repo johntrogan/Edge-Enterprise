@@ -1,0 +1,106 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EdgeSidebarAppUrlHostAllowList"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Allow specific apps to be opened in Microsoft Edge sidebar"
+---
+
+# EdgeSidebarAppUrlHostAllowList
+
+## Allow specific apps to be opened in Microsoft Edge sidebar
+
+
+## Supported versions
+
+- On Windows and macOS since 131 or later
+
+## Description
+
+Define a list of sites, based on URL patterns, that are not subject to the [EdgeSidebarAppUrlHostBlockList](EdgeSidebarAppUrlHostBlockList.md).
+
+If you don't configure this policy, a user can open any app in sidebar except the urls listed in [EdgeSidebarAppUrlHostBlockList](EdgeSidebarAppUrlHostBlockList.md).
+
+If you configure this policy, the apps listed in the allow list could be opened in sidebar even if they are listed in the block list.
+
+By default, all apps are allowed. However, if you prohibited apps by policy, you can use the list of allowed apps to change that policy.
+
+For detailed information about valid url patterns, see [https://go.microsoft.com/fwlink/?linkid=2281313](https://go.microsoft.com/fwlink/?linkid=2281313).
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- List of strings
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EdgeSidebarAppUrlHostAllowList
+- GP name: Allow specific apps to be opened in Microsoft Edge sidebar
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+Show...
+
+```
+https://www.contoso.com
+```
+
+```
+[*.]contoso.edu
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: 1, 2, 3
+- Value type: List of REG_SZ
+
+#### Example value
+
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\0 =
+```
+https://www.contoso.com
+```
+
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\1 =
+```
+[*.]contoso.edu
+```
+
+
+
+
+## Mac information and settings
+
+- Preference Key name: EdgeSidebarAppUrlHostAllowList
+- Example value:
+
+```xml
+<array>
+  <string>https://www.contoso.com</string>
+  <string>[*.]contoso.edu</string>
+</array>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)

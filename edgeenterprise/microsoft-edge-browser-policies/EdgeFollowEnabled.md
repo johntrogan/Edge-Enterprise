@@ -1,0 +1,89 @@
+---
+title: "Microsoft Edge Browser Policy Documentation EdgeFollowEnabled"
+ms.author: jalam
+author: vmliramichael
+manager: nuyunzhang
+ms.date: 04/22/2025
+audience: ITPro
+ms.topic: reference
+ms.service: microsoft-edge
+ms.localizationpriority: high
+ms.collection: M365-modern-desktop
+ms.custom:
+description: "Windows and Mac documentation for supported Microsoft Edge Browser policy: Enable Follow service in Microsoft Edge (obsolete)"
+---
+
+# EdgeFollowEnabled
+
+## Enable Follow service in Microsoft Edge (obsolete)
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 126.
+
+## Supported versions
+
+- On Windows and macOS since 98, until 126
+
+## Description
+
+Lets Microsoft Edge browser enable Follow service and apply it to users.
+
+Users can use the Follow feature for an influencer, site, or topic in Microsoft Edge..
+
+If you enable or don't configure this policy, Follow in Microsoft Edge can be applied.
+
+If you disable this policy, Microsoft Edge will not communicate with Follow service to provide the follow feature.
+
+This policy is obsolete after version 126.
+
+## Supported features
+
+- Can be mandatory: No
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
+
+## Data type
+
+- Boolean
+
+## Windows information and settings
+
+### Group Policy (ADMX) info
+
+- GP unique name: EdgeFollowEnabled
+- GP name: Enable Follow service in Microsoft Edge (obsolete)
+- GP path (Mandatory): N/A
+- GP path (Recommended): N/A
+- GP ADMX file name: MSEdge.admx
+
+#### Example value
+
+```
+Enabled
+```
+
+### Registry settings
+
+- Path (Mandatory): N/A
+- Path (Recommended): N/A
+- Value name: EdgeFollowEnabled
+- Value type: REG_DWORD
+
+#### Example value
+
+```
+0x00000001
+```
+
+
+## Mac information and settings
+
+- Preference Key name: EdgeFollowEnabled
+- Example value:
+
+```xml
+<true/>
+```
+
+## See also
+- [Microsoft Edge - Policies](../microsoft-edge-policies.md)
