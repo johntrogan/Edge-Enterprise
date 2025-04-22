@@ -74,13 +74,13 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Omnissa Device Trust Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your Connector configuration.
 
 4. **Enter URL Patterns**  
-   In the **URL patterns to allow, one per line** field, input the URL for your configuration.
+   In the **URL patterns to allow, one per line** field, input.
 
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
@@ -104,7 +104,7 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
 | If user's network range is | Select network range |
 | and user accessing content from | Select **Windows 10+** |
 | and user belongs to groups | Choose target group (or leave blank for all users) |
-| Then perform this action | **Authenticate using...** |
+| Then perform this action | Require authentication using selected methods |
 | then the user may authenticate using | Select primary authentication method |
 | ADD AUTHENTICATION | Select **Microsoft Edge for Business Device Signals** as the secondary method |
 
