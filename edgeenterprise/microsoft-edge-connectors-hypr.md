@@ -25,7 +25,7 @@ Additionally, this integration supports a unified security posture across variou
 
 - Access to the Microsoft [Entra Admin Center](https://entra.microsoft.com/) 
 - Access to the Microsoft [365 Admin Center](https://admin.microsoft.com/#/Edge)  
-- Access to the Duo Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://duo.com/docs/admin-roles).   
+- Access to the Hypr Admin Panel as an administrator with the Owner, Administrator, or Application Manager [administrative roles](https://hypr.com/docs/admin-roles).   
 - Devices with Windows OS to be enrolled   
 
 ## 1. HYPR Device Trust Integration for Microsoft Edge for Business

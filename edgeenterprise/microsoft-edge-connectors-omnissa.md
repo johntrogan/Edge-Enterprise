@@ -74,7 +74,7 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
 
 2. **Discover the Connector**  
-   Under **Discover Connectors**, locate the **Cisco Duo Device Trust Connector** and select **Set up**.
+   Under **Discover Connectors**, locate the **Omnissa Device Trust Connector** and select **Set up**.
 
 3. **Select a Policy**  
    In the **Choose policy** field, select a policy appropriate for your Connector configuration.
@@ -85,7 +85,7 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
 5. **Provide Consent for the IDP Service Principal**
    In the **Application (client) ID** field, enter the IDP Service Principal and select **Consent** to grant Omnissa access to retrieve device signals.
 
-5. **Save the Configuration**  
+6. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
 ## Add Device Signals as a Secondary Authentication Method
