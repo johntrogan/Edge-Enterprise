@@ -117,10 +117,9 @@ These tables list all of the browser-related policies available in this release 
 ### [*Password manager and protection*](#password-manager-and-protection)
 
 |Policy Name|Caption|
-|:-|-|
+|:-|:-|
 |[BiometricAuthenticationBeforeFilling](#biometricauthenticationbeforefilling)|Enable device authentication for password autofill|
-
-| [PasswordManagerEnabled](#passwordmanagerenabled) | Enable saving passwords to the password manager |
+|[PasswordManagerEnabled](#passwordmanagerenabled)|Enable saving passwords to the password manager|
 
 <!-- ====================================== -->
 ### [*Idle browser actions*](#idle-browser-actions)
