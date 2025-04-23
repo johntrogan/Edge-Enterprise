@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ForceSyncTypes"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -56,8 +56,6 @@ Users will not be able to override the enabled data types.
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 favorites

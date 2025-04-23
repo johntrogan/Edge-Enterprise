@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExemptDomainFileTypePairsFro
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -54,7 +54,7 @@ Note that while the preceding example shows the suppression of file type extensi
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -70,13 +70,11 @@ Note that while the preceding example shows the suppression of file type extensi
 
 - GP unique name: ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
 - GP name: Disable download file type extension-based warnings for specified file types on domains (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 {'domains': ['https://contoso.com', 'contoso2.com'], 'file_extension': 'jnlp'}
@@ -88,7 +86,7 @@ Show...
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

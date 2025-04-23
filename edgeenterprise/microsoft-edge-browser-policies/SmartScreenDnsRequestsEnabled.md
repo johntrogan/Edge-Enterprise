@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SmartScreenDnsRequestsEnable
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -53,7 +53,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: SmartScreenDnsRequestsEnabled
 - GP name: Enable Microsoft Defender SmartScreen DNS requests
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/SmartScreen settings
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings
 - GP ADMX file name: MSEdge.admx
 
@@ -65,7 +65,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: SmartScreenDnsRequestsEnabled
 - Value type: REG_DWORD

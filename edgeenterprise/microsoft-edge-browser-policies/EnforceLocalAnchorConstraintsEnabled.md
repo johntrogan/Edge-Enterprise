@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EnforceLocalAnchorConstraint
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -43,7 +43,7 @@ This policy was removed in Microsoft Edge version 128. Starting with that versio
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -59,7 +59,7 @@ This policy was removed in Microsoft Edge version 128. Starting with that versio
 
 - GP unique name: EnforceLocalAnchorConstraintsEnabled
 - GP name: Determines whether the built-in certificate verifier will enforce constraints encoded into trust anchors loaded from the platform trust store (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -71,7 +71,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: EnforceLocalAnchorConstraintsEnabled
 - Value type: REG_DWORD

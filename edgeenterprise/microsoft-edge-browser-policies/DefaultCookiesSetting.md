@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultCookiesSetting"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -52,7 +52,7 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -68,7 +68,7 @@ Use the preceding information when configuring this policy.
 
 - GP unique name: DefaultCookiesSetting
 - GP name: Configure cookies
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -80,7 +80,7 @@ Let all sites create cookies
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: DefaultCookiesSetting
 - Value type: REG_DWORD

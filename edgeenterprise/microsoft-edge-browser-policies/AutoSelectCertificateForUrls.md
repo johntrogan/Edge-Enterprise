@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutoSelectCertificateForUrls
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ If you leave the policy unset, there's no autoselection for any site.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -61,13 +61,11 @@ If you leave the policy unset, there's no autoselection for any site.
 
 - GP unique name: AutoSelectCertificateForUrls
 - GP name: Automatically select client certificates for these sites
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 {"pattern":"https://www.contoso.com","filter":{"ISSUER":{"CN":"certificate issuer name", "L": "certificate issuer location", "O": "certificate issuer org", "OU": "certificate issuer org unit"}, "SUBJECT":{"CN":"certificate subject name", "L": "certificate subject location", "O": "certificate subject org", "OU": "certificate subject org unit"}}}
@@ -75,7 +73,7 @@ Show...
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

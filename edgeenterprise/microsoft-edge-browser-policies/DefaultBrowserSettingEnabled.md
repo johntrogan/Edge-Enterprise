@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultBrowserSettingEnabled
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ Note for Windows administrators: This policy only works for PCs running Windows 
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -53,7 +53,7 @@ Note for Windows administrators: This policy only works for PCs running Windows 
 
 - GP unique name: DefaultBrowserSettingEnabled
 - GP name: Set Microsoft Edge as default browser
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -65,7 +65,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: DefaultBrowserSettingEnabled
 - Value type: REG_DWORD

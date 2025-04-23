@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ApplicationGuardTrafficIdent
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,7 +33,7 @@ If you disable this policy, the extra header is not added to the traffic.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -49,7 +49,7 @@ If you disable this policy, the extra header is not added to the traffic.
 
 - GP unique name: ApplicationGuardTrafficIdentificationEnabled
 - GP name: Application Guard Traffic Identification
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Application Guard settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -61,7 +61,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ApplicationGuardTrafficIdentificationEnabled
 - Value type: REG_DWORD

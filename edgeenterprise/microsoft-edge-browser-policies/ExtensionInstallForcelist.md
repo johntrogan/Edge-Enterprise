@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExtensionInstallForcelist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ Note: This policy doesn't apply to InPrivate mode. Read about hosting extensions
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -61,13 +61,11 @@ Note: This policy doesn't apply to InPrivate mode. Read about hosting extensions
 
 - GP unique name: ExtensionInstallForcelist
 - GP name: Control which extensions are installed silently
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Extensions
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 gbchcmhmhahfdphkhkmpfmihenigjmpp;https://edge.microsoft.com/extensionwebstorebase/v1/crx
@@ -79,7 +77,7 @@ abcdefghijklmnopabcdefghijklmnop
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

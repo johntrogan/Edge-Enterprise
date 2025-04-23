@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HideFirstRunExperience"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -57,7 +57,7 @@ Note: The specific configuration options shown to the user in the First Run Expe
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -73,7 +73,7 @@ Note: The specific configuration options shown to the user in the First Run Expe
 
 - GP unique name: HideFirstRunExperience
 - GP name: Hide the First-run experience and splash screen
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -85,7 +85,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: HideFirstRunExperience
 - Value type: REG_DWORD

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation TLSCipherSuiteDenyList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ This policy does not affect QUIC-based connections. QUIC can be turned off via t
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -57,13 +57,11 @@ This policy does not affect QUIC-based connections. QUIC can be turned off via t
 
 - GP unique name: TLSCipherSuiteDenyList
 - GP name: Specify the TLS cipher suites to disable
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 0x1303
@@ -79,7 +77,7 @@ Show...
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

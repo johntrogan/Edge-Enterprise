@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation JavaScriptOptimizerBlockedFo
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ If you don't configure this policy for a site then the policy from [DefaultJavaS
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -57,13 +57,11 @@ If you don't configure this policy for a site then the policy from [DefaultJavaS
 
 - GP unique name: JavaScriptOptimizerBlockedForSites
 - GP name: Block JavaScript optimizations on these sites
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 [*.]example.edu
@@ -71,7 +69,7 @@ Show...
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\JavaScriptOptimizerBlockedForSites
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

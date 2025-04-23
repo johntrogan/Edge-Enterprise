@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelaunchNotification"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -53,7 +53,7 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -69,7 +69,7 @@ Use the preceding information when configuring this policy.
 
 - GP unique name: RelaunchNotification
 - GP name: Notify a user that a browser restart is recommended or required for pending updates
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -81,7 +81,7 @@ Recommended - Show a recurring prompt to the user indicating that a restart is r
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: RelaunchNotification
 - Value type: REG_DWORD

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation BrowsingDataLifetime"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -34,7 +34,7 @@ Microsoft Edge will regularly remove data of selected types that is older than '
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -50,7 +50,7 @@ Microsoft Edge will regularly remove data of selected types that is older than '
 
 - GP unique name: BrowsingDataLifetime
 - GP name: Browsing Data Lifetime Settings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -62,7 +62,7 @@ Microsoft Edge will regularly remove data of selected types that is older than '
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: BrowsingDataLifetime
 - Value type: REG_SZ

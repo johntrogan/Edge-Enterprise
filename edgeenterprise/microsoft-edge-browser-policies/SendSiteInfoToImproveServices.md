@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SendSiteInfoToImproveService
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ To enable this policy, [MetricsReportingEnabled](MetricsReportingEnabled.md) mus
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -57,7 +57,7 @@ To enable this policy, [MetricsReportingEnabled](MetricsReportingEnabled.md) mus
 
 - GP unique name: SendSiteInfoToImproveServices
 - GP name: Send site information to improve Microsoft services (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -69,7 +69,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: SendSiteInfoToImproveServices
 - Value type: REG_DWORD

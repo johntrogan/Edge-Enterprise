@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ShowHistoryThumbnails"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ When the feature is disabled, existing images are deleted on a per user basis, a
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -51,7 +51,7 @@ When the feature is disabled, existing images are deleted on a per user basis, a
 
 - GP unique name: ShowHistoryThumbnails
 - GP name: Show thumbnail images for browsing history
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ShowHistoryThumbnails
 - Value type: REG_DWORD

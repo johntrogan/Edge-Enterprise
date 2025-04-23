@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExemptFileTypeDownloadWarnin
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -52,7 +52,7 @@ Note that while the preceding example shows the suppression of file type extensi
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -68,7 +68,7 @@ Note that while the preceding example shows the suppression of file type extensi
 
 - GP unique name: ExemptFileTypeDownloadWarnings
 - GP name: Disable download file type extension-based warnings for specified file types on domains
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -80,7 +80,7 @@ Note that while the preceding example shows the suppression of file type extensi
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ExemptFileTypeDownloadWarnings
 - Value type: REG_SZ

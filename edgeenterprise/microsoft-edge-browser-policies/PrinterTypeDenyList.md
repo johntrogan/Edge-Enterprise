@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrinterTypeDenyList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -86,8 +86,6 @@ Use the preceding information when configuring this policy.
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 Local printer destinations

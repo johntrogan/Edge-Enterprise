@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PasswordProtectionLoginURLs"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -53,13 +53,11 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: PasswordProtectionLoginURLs
 - GP name: Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Password manager and protection
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://contoso.com/login.html
@@ -71,7 +69,7 @@ https://login.contoso.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\PasswordProtectionLoginURLs
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

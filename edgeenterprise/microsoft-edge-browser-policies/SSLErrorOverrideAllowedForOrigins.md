@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SSLErrorOverrideAllowedForOr
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ For detailed information about valid origin patterns, see [https://go.microsoft.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,13 +55,11 @@ For detailed information about valid origin patterns, see [https://go.microsoft.
 
 - GP unique name: SSLErrorOverrideAllowedForOrigins
 - GP name: Allow users to proceed from the HTTPS warning page for specific origins
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://www.example.com
@@ -73,7 +71,7 @@ https://www.example.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SSLErrorOverrideAllowedForOrigins
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

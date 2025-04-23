@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PreventTyposquattingPromptOv
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,7 +55,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: PreventTyposquattingPromptOverride
 - GP name: Prevent bypassing Edge Website Typo Protection prompts for sites
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Edge Website Typo Protection settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: PreventTyposquattingPromptOverride
 - Value type: REG_DWORD

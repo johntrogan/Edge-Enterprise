@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ForceCertificatePromptsOnMul
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ If you set this policy to False or don't configure it, Microsoft Edge will autom
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -53,7 +53,7 @@ If you set this policy to False or don't configure it, Microsoft Edge will autom
 
 - GP unique name: ForceCertificatePromptsOnMultipleMatches
 - GP name: Configure whether Microsoft Edge should automatically select a certificate when there are multiple certificate matches for a site configured with "AutoSelectCertificateForUrls" (deprecated)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -65,7 +65,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ForceCertificatePromptsOnMultipleMatches
 - Value type: REG_DWORD

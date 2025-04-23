@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ShowDownloadsInsecureWarning
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If you disable this policy, the warnings for insecure downloads will be suppress
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -51,7 +51,7 @@ If you disable this policy, the warnings for insecure downloads will be suppress
 
 - GP unique name: ShowDownloadsInsecureWarningsEnabled
 - GP name: Enable insecure download warnings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Downloads
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Downloads
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: ShowDownloadsInsecureWarningsEnabled
 - Value type: REG_DWORD

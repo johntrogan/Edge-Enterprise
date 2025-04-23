@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation MathSolverEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ Note: Setting the [ComponentUpdatesEnabled](ComponentUpdatesEnabled.md) policy t
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -53,7 +53,7 @@ Note: Setting the [ComponentUpdatesEnabled](ComponentUpdatesEnabled.md) policy t
 
 - GP unique name: MathSolverEnabled
 - GP name: Let users snip a Math problem and get the solution with a step-by-step explanation in Microsoft Edge (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -65,7 +65,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: MathSolverEnabled
 - Value type: REG_DWORD

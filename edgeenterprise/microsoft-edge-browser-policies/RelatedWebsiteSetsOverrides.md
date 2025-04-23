@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelatedWebsiteSetsOverrides"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -50,7 +50,7 @@ Wildcards (*) aren't supported as a policy value, or as a value within any Relat
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -66,7 +66,7 @@ Wildcards (*) aren't supported as a policy value, or as a value within any Relat
 
 - GP unique name: RelatedWebsiteSetsOverrides
 - GP name: Override Related Website Sets.
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Related Website Sets Settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -78,7 +78,7 @@ Wildcards (*) aren't supported as a policy value, or as a value within any Relat
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: RelatedWebsiteSetsOverrides
 - Value type: REG_SZ

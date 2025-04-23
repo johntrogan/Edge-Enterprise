@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EventPathEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ This policy will be made obsolete after Microsoft Edge version 115.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -55,7 +55,7 @@ This policy will be made obsolete after Microsoft Edge version 115.
 
 - GP unique name: EventPathEnabled
 - GP name: Re-enable the Event.path API until Microsoft Edge version 115 (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: EventPathEnabled
 - Value type: REG_DWORD

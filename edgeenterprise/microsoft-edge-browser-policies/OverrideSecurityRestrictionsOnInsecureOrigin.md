@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation OverrideSecurityRestrictions
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ For more information on secure contexts, see https://www.w3.org/TR/secure-contex
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -53,13 +53,11 @@ For more information on secure contexts, see https://www.w3.org/TR/secure-contex
 
 - GP unique name: OverrideSecurityRestrictionsOnInsecureOrigin
 - GP name: Control where security restrictions on insecure origins apply
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 http://testserver.contoso.com/
@@ -71,7 +69,7 @@ http://testserver.contoso.com/
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\OverrideSecurityRestrictionsOnInsecureOrigin
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

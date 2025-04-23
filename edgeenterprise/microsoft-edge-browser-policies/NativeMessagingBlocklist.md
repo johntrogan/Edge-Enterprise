@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NativeMessagingBlocklist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,7 +33,7 @@ If you leave this policy unset , Microsoft Edge loads all installed native messa
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -49,13 +49,11 @@ If you leave this policy unset , Microsoft Edge loads all installed native messa
 
 - GP unique name: NativeMessagingBlocklist
 - GP name: Configure native messaging block list
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Native Messaging
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 com.native.messaging.host.name1
@@ -67,7 +65,7 @@ com.native.messaging.host.name2
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\NativeMessagingBlocklist
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

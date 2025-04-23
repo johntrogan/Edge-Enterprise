@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NativeMessagingUserLevelHost
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,7 +33,7 @@ If you set this policy to Disabled, Microsoft Edge can only use these hosts if t
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -49,7 +49,7 @@ If you set this policy to Disabled, Microsoft Edge can only use these hosts if t
 
 - GP unique name: NativeMessagingUserLevelHosts
 - GP name: Allow user-level native messaging hosts (installed without admin permissions)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Native Messaging
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -61,7 +61,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: NativeMessagingUserLevelHosts
 - Value type: REG_DWORD

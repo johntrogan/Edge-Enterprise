@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DataURLWhitespacePreservatio
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ When this policy is set to False, the old behavior is enabled.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -53,7 +53,7 @@ When this policy is set to False, the old behavior is enabled.
 
 - GP unique name: DataURLWhitespacePreservationEnabled
 - GP name: DataURL Whitespace Preservation for all media types
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Network settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -65,7 +65,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: DataURLWhitespacePreservationEnabled
 - Value type: REG_DWORD

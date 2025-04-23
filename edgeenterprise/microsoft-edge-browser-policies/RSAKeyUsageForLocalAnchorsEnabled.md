@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RSAKeyUsageForLocalAnchorsEn
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,7 +72,7 @@ but the key check has been always enabled since Microsoft Edge version 124.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -88,7 +88,7 @@ but the key check has been always enabled since Microsoft Edge version 124.
 
 - GP unique name: RSAKeyUsageForLocalAnchorsEnabled
 - GP name: Check RSA key usage for server certificates issued by local trust anchors (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -100,7 +100,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: RSAKeyUsageForLocalAnchorsEnabled
 - Value type: REG_DWORD

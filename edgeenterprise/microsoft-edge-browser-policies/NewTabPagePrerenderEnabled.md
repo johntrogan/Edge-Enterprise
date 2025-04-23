@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPagePrerenderEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,7 @@ If you configure this policy, preloading the New tab page is enabled, and users 
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -47,7 +47,7 @@ If you configure this policy, preloading the New tab page is enabled, and users 
 
 - GP unique name: NewTabPagePrerenderEnabled
 - GP name: Enable preload of the new tab page for faster rendering
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Startup, home page and new tab page
 - GP ADMX file name: MSEdge.admx
 
@@ -59,7 +59,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: NewTabPagePrerenderEnabled
 - Value type: REG_DWORD

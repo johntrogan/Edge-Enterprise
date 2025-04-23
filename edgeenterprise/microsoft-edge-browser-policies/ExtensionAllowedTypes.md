@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExtensionAllowedTypes"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -73,7 +73,7 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -89,13 +89,11 @@ Use the preceding information when configuring this policy.
 
 - GP unique name: ExtensionAllowedTypes
 - GP name: Configure allowed extension types
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Extensions
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 Hosted app
@@ -103,7 +101,7 @@ Hosted app
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExtensionAllowedTypes
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

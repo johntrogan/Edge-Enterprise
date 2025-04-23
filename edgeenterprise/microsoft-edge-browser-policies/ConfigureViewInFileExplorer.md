@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ConfigureViewInFileExplorer"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -61,7 +61,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: ConfigureViewInFileExplorer
 - GP name: Configure the View in File Explorer feature for SharePoint pages in Microsoft Edge
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -73,7 +73,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ConfigureViewInFileExplorer
 - Value type: REG_SZ

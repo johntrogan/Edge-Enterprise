@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SerialAllowUsbDevicesForUrls
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ This policy only affects access to USB devices through the Web Serial API. To gr
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -55,7 +55,7 @@ This policy only affects access to USB devices through the Web Serial API. To gr
 
 - GP unique name: SerialAllowUsbDevicesForUrls
 - GP name: Automatically grant sites permission to connect to USB serial devices
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ This policy only affects access to USB devices through the Web Serial API. To gr
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: SerialAllowUsbDevicesForUrls
 - Value type: REG_SZ

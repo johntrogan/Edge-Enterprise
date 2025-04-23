@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SpellcheckLanguageBlocklist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ If a language is included in both the [SpellcheckLanguage](SpellcheckLanguage.md
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,13 +55,11 @@ If a language is included in both the [SpellcheckLanguage](SpellcheckLanguage.md
 
 - GP unique name: SpellcheckLanguageBlocklist
 - GP name: Force disable spellcheck languages
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 fr
@@ -73,7 +71,7 @@ es
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SpellcheckLanguageBlocklist
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EdgeEntraCopilotPageContext"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -49,7 +49,7 @@ Learn more about Copilot's data usage and consent at [https://go.microsoft.com/f
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -65,7 +65,7 @@ Learn more about Copilot's data usage and consent at [https://go.microsoft.com/f
 
 - GP unique name: EdgeEntraCopilotPageContext
 - GP name: Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -77,7 +77,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: EdgeEntraCopilotPageContext
 - Value type: REG_DWORD

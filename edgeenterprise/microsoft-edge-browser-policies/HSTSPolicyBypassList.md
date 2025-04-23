@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HSTSPolicyBypassList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -51,13 +51,11 @@ Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-
 
 - GP unique name: HSTSPolicyBypassList
 - GP name: Configure the list of names that will bypass the HSTS policy check
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 meet
@@ -65,7 +63,7 @@ meet
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\HSTSPolicyBypassList
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

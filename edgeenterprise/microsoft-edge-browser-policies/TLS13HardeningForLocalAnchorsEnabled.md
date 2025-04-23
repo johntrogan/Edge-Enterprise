@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation TLS13HardeningForLocalAnchor
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ This policy can be used to test for any affected proxies and upgrade them. Affec
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,7 +55,7 @@ This policy can be used to test for any affected proxies and upgrade them. Affec
 
 - GP unique name: TLS13HardeningForLocalAnchorsEnabled
 - GP name: Enable a TLS 1.3 security feature for local trust anchors (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: TLS13HardeningForLocalAnchorsEnabled
 - Value type: REG_DWORD

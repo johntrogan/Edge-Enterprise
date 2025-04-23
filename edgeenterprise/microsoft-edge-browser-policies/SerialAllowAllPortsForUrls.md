@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SerialAllowAllPortsForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ This policy overrides [DefaultSerialGuardSetting](DefaultSerialGuardSetting.md),
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -51,13 +51,11 @@ This policy overrides [DefaultSerialGuardSetting](DefaultSerialGuardSetting.md),
 
 - GP unique name: SerialAllowAllPortsForUrls
 - GP name: Automatically grant sites permission to connect all serial ports
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://www.example.com
@@ -65,7 +63,7 @@ https://www.example.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SerialAllowAllPortsForUrls
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

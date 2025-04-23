@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EnhanceSecurityModeEnforceLi
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -32,7 +32,7 @@ enhance security mode will always be enforced when loading the sites in untruste
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -48,13 +48,11 @@ enhance security mode will always be enforced when loading the sites in untruste
 
 - GP unique name: EnhanceSecurityModeEnforceListDomains
 - GP name: Configure the list of domains for which enhance security mode will always be enforced
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 mydomain.com
@@ -66,7 +64,7 @@ myuniversity.edu
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

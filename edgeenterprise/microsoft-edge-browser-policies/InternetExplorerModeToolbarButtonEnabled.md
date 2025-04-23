@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerModeToolbarB
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If you disable or don't configure this policy, the Reload in Internet Explorer m
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -51,7 +51,7 @@ If you disable or don't configure this policy, the Reload in Internet Explorer m
 
 - GP unique name: InternetExplorerModeToolbarButtonEnabled
 - GP name: Show the Reload in Internet Explorer mode button in the toolbar
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: InternetExplorerModeToolbarButtonEnabled
 - Value type: REG_DWORD

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebUsbAllowDevicesForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ URL patterns in this policy should not clash with the ones configured via [WebUs
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,7 +55,7 @@ URL patterns in this policy should not clash with the ones configured via [WebUs
 
 - GP unique name: WebUsbAllowDevicesForUrls
 - GP name: Grant access to specific sites to connect to specific USB devices
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ URL patterns in this policy should not clash with the ones configured via [WebUs
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: WebUsbAllowDevicesForUrls
 - Value type: REG_SZ

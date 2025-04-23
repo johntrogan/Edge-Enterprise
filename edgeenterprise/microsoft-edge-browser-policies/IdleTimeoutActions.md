@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation IdleTimeoutActions"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -80,7 +80,7 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -96,13 +96,11 @@ Use the preceding information when configuring this policy.
 
 - GP unique name: IdleTimeoutActions
 - GP name: Actions to run when the computer is idle
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Idle Browser Actions
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 Close Browsers
@@ -110,7 +108,7 @@ Close Browsers
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\IdleTimeoutActions
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

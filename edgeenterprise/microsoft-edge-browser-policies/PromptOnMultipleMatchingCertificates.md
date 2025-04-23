@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PromptOnMultipleMatchingCert
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,7 +33,7 @@ If this policy is set to False or not set, the user may only be prompted when no
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -49,7 +49,7 @@ If this policy is set to False or not set, the user may only be prompted when no
 
 - GP unique name: PromptOnMultipleMatchingCertificates
 - GP name: Prompt the user to select a certificate when multiple certificates match
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -61,7 +61,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: PromptOnMultipleMatchingCertificates
 - Value type: REG_DWORD

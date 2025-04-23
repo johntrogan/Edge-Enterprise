@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ClipboardBlockedForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ For more information about valid url patterns, see [https://go.microsoft.com/fwl
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -53,13 +53,11 @@ For more information about valid url patterns, see [https://go.microsoft.com/fwl
 
 - GP unique name: ClipboardBlockedForUrls
 - GP name: Block clipboard use on specific sites
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://www.example.com
@@ -71,7 +69,7 @@ https://www.example.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ClipboardBlockedForUrls
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

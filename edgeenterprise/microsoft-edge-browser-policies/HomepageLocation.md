@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HomepageLocation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -57,7 +57,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: HomepageLocation
 - GP name: Configure the home page URL
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Startup, home page and new tab page
 - GP ADMX file name: MSEdge.admx
 
@@ -69,7 +69,7 @@ https://www.contoso.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: HomepageLocation
 - Value type: REG_SZ

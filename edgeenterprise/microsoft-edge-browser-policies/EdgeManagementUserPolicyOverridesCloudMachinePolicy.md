@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EdgeManagementUserPolicyOver
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ The policy can be combined with [EdgeManagementPolicyOverridesPlatformPolicy](Ed
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -51,7 +51,7 @@ The policy can be combined with [EdgeManagementPolicyOverridesPlatformPolicy](Ed
 
 - GP unique name: EdgeManagementUserPolicyOverridesCloudMachinePolicy
 - GP name: Allow cloud-based Microsoft Edge management service user policies to override local user policies.
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Manageability
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: EdgeManagementUserPolicyOverridesCloudMachinePolicy
 - Value type: REG_DWORD

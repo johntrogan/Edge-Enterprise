@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebHidAllowDevicesWithHidUsa
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ URLs in this policy shouldn't conflict with those configured through [WebHidBloc
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -61,7 +61,7 @@ URLs in this policy shouldn't conflict with those configured through [WebHidBloc
 
 - GP unique name: WebHidAllowDevicesWithHidUsagesForUrls
 - GP name: Automatically grant permission to these sites to connect to HID devices containing top-level collections with the given HID usage
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Content settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -73,7 +73,7 @@ URLs in this policy shouldn't conflict with those configured through [WebHidBloc
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: WebHidAllowDevicesWithHidUsagesForUrls
 - Value type: REG_SZ

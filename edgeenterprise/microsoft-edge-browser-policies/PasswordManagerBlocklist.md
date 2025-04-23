@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PasswordManagerBlocklist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ If you configure this policy, that is, add domains for which password manager is
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -53,13 +53,11 @@ If you configure this policy, that is, add domains for which password manager is
 
 - GP unique name: PasswordManagerBlocklist
 - GP name: Configure the list of domains for which the password manager UI (Save and Fill) will be disabled
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Password manager and protection
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://contoso.com/
@@ -71,7 +69,7 @@ https://login.contoso.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\PasswordManagerBlocklist
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

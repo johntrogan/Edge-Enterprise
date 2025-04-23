@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SeamlessWebToBrowserSignInEn
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -34,7 +34,7 @@ If this policy is not configured, users can turn on/off Seamless Web to Browser 
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -50,7 +50,7 @@ If this policy is not configured, users can turn on/off Seamless Web to Browser 
 
 - GP unique name: SeamlessWebToBrowserSignInEnabled
 - GP name: Seamless Web To Browser Sign-in Enabled
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Identity and sign-in
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -62,7 +62,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: SeamlessWebToBrowserSignInEnabled
 - Value type: REG_DWORD

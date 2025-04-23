@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintingPaperSizeDefault"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If the page size is unavailable on the printer chosen by the user this policy is
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -51,7 +51,7 @@ If the page size is unavailable on the printer chosen by the user this policy is
 
 - GP unique name: PrintingPaperSizeDefault
 - GP name: Default printing page size
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Printing
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ If the page size is unavailable on the printer chosen by the user this policy is
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: PrintingPaperSizeDefault
 - Value type: REG_SZ

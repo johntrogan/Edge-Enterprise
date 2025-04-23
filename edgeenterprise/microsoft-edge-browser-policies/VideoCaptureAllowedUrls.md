@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation VideoCaptureAllowedUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,7 @@ Specify websites, based on URL patterns, that can use video capture devices with
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -47,13 +47,11 @@ Specify websites, based on URL patterns, that can use video capture devices with
 
 - GP unique name: VideoCaptureAllowedUrls
 - GP name: Sites that can access video capture devices without requesting permission
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 https://www.contoso.com/
@@ -65,7 +63,7 @@ https://[*.]contoso.edu/
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\VideoCaptureAllowedUrls
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

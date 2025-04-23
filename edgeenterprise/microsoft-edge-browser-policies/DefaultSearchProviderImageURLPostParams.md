@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultSearchProviderImageUR
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ Starting in Microsoft Edge 84, you can set this policy as a recommended policy. 
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -57,7 +57,7 @@ Starting in Microsoft Edge 84, you can set this policy as a recommended policy. 
 
 - GP unique name: DefaultSearchProviderImageURLPostParams
 - GP name: Parameters for an image URL that uses POST
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Default search provider
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Default search provider
 - GP ADMX file name: MSEdge.admx
 
@@ -69,7 +69,7 @@ content={imageThumbnail},url={imageURL},sbisrc={SearchSource}
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: DefaultSearchProviderImageURLPostParams
 - Value type: REG_SZ

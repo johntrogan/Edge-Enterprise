@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPageCompanyLogoBackpla
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If this policy is not configured, the default neutralStrokeActive (#cecece) colo
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -51,7 +51,7 @@ If this policy is not configured, the default neutralStrokeActive (#cecece) colo
 
 - GP unique name: NewTabPageCompanyLogoBackplateColor
 - GP name: Set the company logo backplate color on the new tab page.
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ If this policy is not configured, the default neutralStrokeActive (#cecece) colo
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: NewTabPageCompanyLogoBackplateColor
 - Value type: REG_SZ

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AllowTokenBindingForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -41,7 +41,7 @@ Starting in Microsoft Edge 86, this policy no longer supports dynamic refresh.
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -57,13 +57,11 @@ Starting in Microsoft Edge 86, this policy no longer supports dynamic refresh.
 
 - GP unique name: AllowTokenBindingForUrls
 - GP name: Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 mydomain.com
@@ -79,7 +77,7 @@ mydomain.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\AllowTokenBindingForUrls
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

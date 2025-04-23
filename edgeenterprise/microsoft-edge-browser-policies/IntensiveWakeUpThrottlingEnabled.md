@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation IntensiveWakeUpThrottlingEna
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ Note that the policy is applied per renderer process, with the most recent value
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: No
@@ -55,7 +55,7 @@ Note that the policy is applied per renderer process, with the most recent value
 
 - GP unique name: IntensiveWakeUpThrottlingEnabled
 - GP name: Control the IntensiveWakeUpThrottling feature
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -67,7 +67,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: IntensiveWakeUpThrottlingEnabled
 - Value type: REG_DWORD

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebRtcIPHandlingUrl"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -49,7 +49,7 @@ Handling types: https://tools.ietf.org/html/rfc8828.html#section-5.2
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -65,7 +65,7 @@ Handling types: https://tools.ietf.org/html/rfc8828.html#section-5.2
 
 - GP unique name: WebRtcIPHandlingUrl
 - GP name: WebRTC IP Handling Policy for URL Patterns
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/WebRtc settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -77,7 +77,7 @@ Handling types: https://tools.ietf.org/html/rfc8828.html#section-5.2
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: WebRtcIPHandlingUrl
 - Value type: REG_SZ

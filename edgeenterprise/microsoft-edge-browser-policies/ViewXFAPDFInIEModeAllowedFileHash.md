@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ViewXFAPDFInIEModeAllowedFil
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -58,8 +58,6 @@ For more information, see - [Get-FileHash](https://go.microsoft.com/fwlink/?link
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=

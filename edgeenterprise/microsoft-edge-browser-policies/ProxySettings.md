@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ProxySettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -71,7 +71,7 @@ For more detailed examples go to [https://go.microsoft.com/fwlink/?linkid=209493
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -87,7 +87,7 @@ For more detailed examples go to [https://go.microsoft.com/fwlink/?linkid=209493
 
 - GP unique name: ProxySettings
 - GP name: Proxy settings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Proxy server
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -99,7 +99,7 @@ For more detailed examples go to [https://go.microsoft.com/fwlink/?linkid=209493
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ProxySettings
 - Value type: REG_SZ

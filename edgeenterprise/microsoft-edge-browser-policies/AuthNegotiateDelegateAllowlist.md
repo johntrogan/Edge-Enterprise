@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AuthNegotiateDelegateAllowli
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If you don't configure this policy Microsoft Edge won't delegate user credential
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: No
@@ -51,7 +51,7 @@ If you don't configure this policy Microsoft Edge won't delegate user credential
 
 - GP unique name: AuthNegotiateDelegateAllowlist
 - GP name: Specifies a list of servers that Microsoft Edge can delegate user credentials to
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/HTTP authentication
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ contoso.com
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: AuthNegotiateDelegateAllowlist
 - Value type: REG_SZ

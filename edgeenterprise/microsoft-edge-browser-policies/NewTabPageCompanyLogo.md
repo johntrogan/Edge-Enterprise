@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPageCompanyLogo"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ For help with determining the SHA-256 hash, see [Get-FileHash](/powershell/modul
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -61,7 +61,7 @@ For help with determining the SHA-256 hash, see [Get-FileHash](/powershell/modul
 
 - GP unique name: NewTabPageCompanyLogo
 - GP name: Set new tab page company logo (obsolete)
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Startup, home page and new tab page
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -73,7 +73,7 @@ For help with determining the SHA-256 hash, see [Get-FileHash](/powershell/modul
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: NewTabPageCompanyLogo
 - Value type: REG_SZ

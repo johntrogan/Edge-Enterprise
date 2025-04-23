@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InsecurePrivateNetworkReques
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -44,7 +44,7 @@ When this policy enabled, websites are allowed to make requests to any network e
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -60,7 +60,7 @@ When this policy enabled, websites are allowed to make requests to any network e
 
 - GP unique name: InsecurePrivateNetworkRequestsAllowed
 - GP name: Specifies whether to allow websites to make requests to any network endpoint in an insecure manner.
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Private Network Request Settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -72,7 +72,7 @@ Disabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: InsecurePrivateNetworkRequestsAllowed
 - Value type: REG_DWORD

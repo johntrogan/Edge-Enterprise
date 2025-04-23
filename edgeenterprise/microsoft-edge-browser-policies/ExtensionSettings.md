@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExtensionSettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -61,7 +61,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 - GP unique name: ExtensionSettings
 - GP name: Configure extension management settings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Extensions
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -73,7 +73,7 @@ On macOS instances, apps and extensions from outside the Microsoft Edge Add-ons 
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: ExtensionSettings
 - Value type: REG_SZ

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebRtcUdpPortRange"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ If you don't configure this policy, or if you set it to an empty string or inval
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -51,7 +51,7 @@ If you don't configure this policy, or if you set it to an empty string or inval
 
 - GP unique name: WebRtcUdpPortRange
 - GP name: Restrict the range of local UDP ports used by WebRTC
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -63,7 +63,7 @@ If you don't configure this policy, or if you set it to an empty string or inval
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: WebRtcUdpPortRange
 - Value type: REG_SZ

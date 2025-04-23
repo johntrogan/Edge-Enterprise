@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SendIntranetToInternetExplor
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,7 @@ For guidance about configuring the optimal experience for Internet Explorer mode
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -47,7 +47,7 @@ For guidance about configuring the optimal experience for Internet Explorer mode
 
 - GP unique name: SendIntranetToInternetExplorer
 - GP name: Send all intranet sites to Internet Explorer
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -59,7 +59,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: SendIntranetToInternetExplorer
 - Value type: REG_DWORD

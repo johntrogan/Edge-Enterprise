@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintPreviewStickySettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -45,7 +45,7 @@ If you disable or don't configure this policy, print preview settings will not b
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: Yes
 - Dynamic Policy Refresh: No - Requires browser restart
 - Per Profile: Yes
@@ -61,7 +61,7 @@ If you disable or don't configure this policy, print preview settings will not b
 
 - GP unique name: PrintPreviewStickySettings
 - GP name: Configure the sticky print preview settings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Printing
 - GP path (Recommended): Administrative Templates/Microsoft Edge - Default Settings (users can override)/Printing
 - GP ADMX file name: MSEdge.admx
 
@@ -73,7 +73,7 @@ If you disable or don't configure this policy, print preview settings will not b
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended
 - Value name: PrintPreviewStickySettings
 - Value type: REG_SZ

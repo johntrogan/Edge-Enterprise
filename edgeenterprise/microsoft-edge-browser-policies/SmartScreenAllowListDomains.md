@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SmartScreenAllowListDomains"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,7 +39,7 @@ Note: If your organization has enabled Microsoft Defender for Endpoint, this pol
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -55,13 +55,11 @@ Note: If your organization has enabled Microsoft Defender for Endpoint, this pol
 
 - GP unique name: SmartScreenAllowListDomains
 - GP name: Configure the list of domains for which Microsoft Defender SmartScreen won't trigger warnings
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/SmartScreen settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
 #### Example value
-
-Show...
 
 ```
 mydomain.com
@@ -73,7 +71,7 @@ myuniversity.edu
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SmartScreenAllowListDomains
 - Path (Recommended): N/A
 - Value name: 1, 2, 3
 - Value type: List of REG_SZ

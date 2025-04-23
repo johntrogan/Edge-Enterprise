@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PreventSmartScreenPromptOver
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -38,7 +38,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 ## Supported features
 
-- Can be mandatory: No
+- Can be mandatory: Yes
 - Can be recommended: No
 - Dynamic Policy Refresh: Yes
 - Per Profile: Yes
@@ -54,7 +54,7 @@ This policy is available only on Windows instances that are joined to a Microsof
 
 - GP unique name: PreventSmartScreenPromptOverrideForFiles
 - GP name: Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads
-- GP path (Mandatory): N/A
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/SmartScreen settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
@@ -66,7 +66,7 @@ Enabled
 
 ### Registry settings
 
-- Path (Mandatory): N/A
+- Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge
 - Path (Recommended): N/A
 - Value name: PreventSmartScreenPromptOverrideForFiles
 - Value type: REG_DWORD
