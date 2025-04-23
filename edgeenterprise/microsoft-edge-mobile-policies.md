@@ -2421,9 +2421,8 @@ ProxySettings = {
 
 #### Enable device authentication for password autofill
 
-**Supported on:**  
+#### Supported on:
 Microsoft Edge (Android) since version 127  
-Microsoft Edge (iOS and iPadOS) since version 127
 
 #### Description  
 This policy controls whether users must authenticate with their device password, biometric authentication, or PIN before autofilling saved passwords in web forms.
@@ -2437,18 +2436,18 @@ This policy adds an extra layer of privacy by ensuring that only authorized user
 **true** = Require biometric or PIN before autofill  
 **false** = Biometric or PIN optional before autofill
 
----
-
-**Supported features:**  
+#### Supported features:
 - Dynamic Policy Refreshes: Yes  
 - Per Profile: Yes  
 - Can Be Recommended: Yes
 
-**Data Type:**  
-- Android: Boolean  
-- iOS: Boolean
+#### Data Type:
+- Android: Boolean 
 
-**Android and iOS restriction name:** `BiometricAuthenticationBeforeFilling`
+**Android restriction name:** 
+```
+BiometricAuthenticationBeforeFilling
+```
 
 ### PasswordManagerEnabled
 
