@@ -82,6 +82,9 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
 4. **Enter URL Patterns**  
    In the **URL patterns to allow, one per line** field.
 
+5. **Provide Consent for the IDP Service Principal**
+   In the **Application (client) ID** field, enter the IDP Service Principal and select **Consent** to grant Omnissa access to retrieve device signals.
+
 5. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
