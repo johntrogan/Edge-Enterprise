@@ -91,7 +91,7 @@ https://loaded-as-third-party.fabrikam.com,https://www.contoso.com
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\CookiesAllowedForUrls
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

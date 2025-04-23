@@ -96,7 +96,7 @@ Smart actions in PDF
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended\SmartActionsBlockList
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

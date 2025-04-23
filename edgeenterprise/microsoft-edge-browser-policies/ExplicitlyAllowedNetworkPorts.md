@@ -94,7 +94,7 @@ port 10080 (can be unblocked until 2022/04/01)
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\ExplicitlyAllowedNetworkPorts
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

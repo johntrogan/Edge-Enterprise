@@ -69,7 +69,7 @@ https://www.contoso.com
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\SleepingTabsBlockedForUrls
 - Path (Recommended): SOFTWARE\Policies\Microsoft\Edge\Recommended\SleepingTabsBlockedForUrls
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

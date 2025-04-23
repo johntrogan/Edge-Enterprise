@@ -64,7 +64,7 @@ Wildcards are allowed for the whole origin or parts of the origin. Parts include
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\AllHttpAuthSchemesAllowedForOrigins
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

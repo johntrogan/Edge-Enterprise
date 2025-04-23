@@ -66,7 +66,7 @@ myuniversity.edu
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

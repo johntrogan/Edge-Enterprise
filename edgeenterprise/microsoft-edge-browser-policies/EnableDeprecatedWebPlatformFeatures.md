@@ -82,7 +82,7 @@ Enable ExampleDeprecatedFeature API through 2008/09/02
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\EnableDeprecatedWebPlatformFeatures
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

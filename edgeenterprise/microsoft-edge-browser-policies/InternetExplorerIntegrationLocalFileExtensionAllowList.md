@@ -78,7 +78,7 @@ To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\InternetExplorerIntegrationLocalFileExtensionAllowList
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value

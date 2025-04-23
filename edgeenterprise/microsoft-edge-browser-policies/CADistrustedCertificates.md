@@ -65,7 +65,7 @@ MIIB/TCCAaOgAwIBAgIUQthnWVsd1jWpUCNBf/uILjXC+t4wCgYIKoZIzj0EAwIwVDELMAkGA1UEBhMC
 
 - Path (Mandatory): SOFTWARE\Policies\Microsoft\Edge\CADistrustedCertificates
 - Path (Recommended): N/A
-- Value name: 1, 2, 3
+- Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
 #### Example value
