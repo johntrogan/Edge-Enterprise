@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
-author: dan-wesley
+author: vmliramichael
 manager: venkatk
-ms.date: 12/09/2024
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -118,6 +118,8 @@ These tables list all of the browser-related policies available in this release 
 
 |Policy Name|Caption|
 |:-|-|
+|[BiometricAuthenticationBeforeFilling](#biometricauthenticationbeforefilling)|Enable device authentication for password autofill|
+
 | [PasswordManagerEnabled](#passwordmanagerenabled) | Enable saving passwords to the password manager |
 
 <!-- ====================================== -->
@@ -2415,6 +2417,39 @@ ProxySettings = {
 ## Password manager and protection policies
 
 [Back to top](#microsoft-edge-mobile---policies)
+
+### BiometricAuthenticationBeforeFilling
+
+#### Enable device authentication for password autofill
+
+**Supported on:**  
+Microsoft Edge (Android) since version 127  
+Microsoft Edge (iOS and iPadOS) since version 127
+
+#### Description  
+This policy controls whether users must authenticate with their device password, biometric authentication, or PIN before autofilling saved passwords in web forms.
+
+Setting the policy to **Enabled** means that Microsoft Edge will always require biometric authentication (such as fingerprint, face unlock) or PIN before autofilling saved passwords. Users cannot disable this in Microsoft Edge on Android or iOS.
+
+Setting the policy to **Disabled** or not configured means that users can choose whether or not to require biometric or PIN authentication before autofill. By default, the setting is off.
+
+This policy adds an extra layer of privacy by ensuring that only authorized users can use stored credentials.
+
+**true** = Require biometric or PIN before autofill  
+**false** = Biometric or PIN optional before autofill
+
+---
+
+**Supported features:**  
+- Dynamic Policy Refresh: Yes  
+- Per Profile: Yes  
+- Can Be Recommended: Yes
+
+**Data Type:**  
+- Android: Boolean  
+- iOS: Boolean
+
+**Android and iOS restriction name:** `BiometricAuthenticationBeforeFilling`
 
 ### PasswordManagerEnabled
 
