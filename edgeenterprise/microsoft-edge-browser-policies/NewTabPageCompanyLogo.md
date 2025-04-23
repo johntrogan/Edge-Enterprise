@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # NewTabPageCompanyLogo
 
 ## Set new tab page company logo (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 85.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 85.
 
 ## Supported versions
 

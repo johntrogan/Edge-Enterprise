@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # U2fSecurityKeyApiEnabled
 
 ## Allow using the deprecated U2F Security Key API (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 103.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 103.
 
 ## Supported versions
 

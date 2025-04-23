@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EnhanceSecurityModeOptOutUXEnabled
 
 ## Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 135.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 135.
 
 ## Supported versions
 

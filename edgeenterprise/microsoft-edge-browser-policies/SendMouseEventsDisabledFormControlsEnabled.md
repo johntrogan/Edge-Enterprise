@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # SendMouseEventsDisabledFormControlsEnabled
 
 ## Control the new behavior for event dispatching on disabled form controls (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 120.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 120.
 
 ## Supported versions
 

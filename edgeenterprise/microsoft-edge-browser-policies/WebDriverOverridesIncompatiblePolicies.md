@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # WebDriverOverridesIncompatiblePolicies
 
 ## Allow WebDriver to Override Incompatible Policies (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
 
 ## Supported versions
 

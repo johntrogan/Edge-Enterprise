@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # BeforeunloadEventCancelByPreventDefaultEnabled
 
 ## Control the behavior for the cancel dialog produced by the beforeunload event (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 130.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 130.
 
 ## Supported versions
 

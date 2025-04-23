@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # AddressBarMicrosoftSearchInBingProviderEnabled
 
 ## Enable Microsoft Search in Bing suggestions in the address bar (deprecated)
-> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+> DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
 
 ## Supported versions
 

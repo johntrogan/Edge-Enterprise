@@ -58,7 +58,6 @@ The following table lists all deprecated policies.
 |[ForceCertificatePromptsOnMultipleMatches](microsoft-edge-browser-policies/ForceCertificatePromptsOnMultipleMatches.md)|Configure whether Microsoft Edge should automatically select a certificate when there are multiple certificate matches for a site configured with "AutoSelectCertificateForUrls" (deprecated)|
 |[InsecureFormsWarningsEnabled](microsoft-edge-browser-policies/InsecureFormsWarningsEnabled.md)|Enable warnings for insecure forms (deprecated)|
 |[MicrosoftOfficeMenuEnabled](microsoft-edge-browser-policies/MicrosoftOfficeMenuEnabled.md)|Allow users to access the Microsoft Office menu (deprecated)|
-|[MutationEventsEnabled](microsoft-edge-browser-policies/MutationEventsEnabled.md)|Enable deprecated/removed Mutation Events (deprecated)|
 |[NativeWindowOcclusionEnabled](microsoft-edge-browser-policies/NativeWindowOcclusionEnabled.md)|Enable Native Window Occlusion (deprecated)|
 |[PromotionalTabsEnabled](microsoft-edge-browser-policies/PromotionalTabsEnabled.md)|Enable full-tab promotional content (deprecated)|
 |[RendererCodeIntegrityEnabled](microsoft-edge-browser-policies/RendererCodeIntegrityEnabled.md)|Enable renderer code integrity (deprecated)|
@@ -72,7 +71,7 @@ The following table lists the obsoleted policies for Microsoft Edge version 137.
 
 |Policy Name|Caption|
 |-|-|
-|[MutationEventsEnabled](microsoft-edge-browser-policies/MutationEventsEnabled.md)|Enable deprecated/removed Mutation Events (deprecated)|
+|[MutationEventsEnabled](microsoft-edge-browser-policies/MutationEventsEnabled.md)|Enable deprecated/removed Mutation Events (obsolete)|
 
 The following table lists the obsoleted policies for Microsoft Edge version 136.
 
@@ -825,7 +824,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="microsoftofficemenuenabled"></a><a id="allow-users-to-access-the-microsoft-office-menu-deprecated"></a>[MicrosoftOfficeMenuEnabled](microsoft-edge-browser-policies/MicrosoftOfficeMenuEnabled.md)|Allow users to access the Microsoft Office menu (deprecated)|
 |<a id="microsoftrootstoreenabled"></a><a id="determines-whether-the-microsoft-root-store-and-built-in-certificate-verifier-will-be-used-to-verify-server-certificates-obsolete"></a>[MicrosoftRootStoreEnabled](microsoft-edge-browser-policies/MicrosoftRootStoreEnabled.md)|Determines whether the Microsoft Root Store and built-in certificate verifier will be used to verify server certificates (obsolete)|
 |<a id="mousegestureenabled"></a><a id="mouse-gesture-enabled"></a>[MouseGestureEnabled](microsoft-edge-browser-policies/MouseGestureEnabled.md)|Mouse Gesture Enabled|
-|<a id="mutationeventsenabled"></a><a id="enable-deprecatedremoved-mutation-events-deprecated"></a>[MutationEventsEnabled](microsoft-edge-browser-policies/MutationEventsEnabled.md)|Enable deprecated/removed Mutation Events (deprecated)|
+|<a id="mutationeventsenabled"></a><a id="enable-deprecatedremoved-mutation-events-obsolete"></a>[MutationEventsEnabled](microsoft-edge-browser-policies/MutationEventsEnabled.md)|Enable deprecated/removed Mutation Events (obsolete)|
 |<a id="nativehostsexecutableslaunchdirectly"></a><a id="force-windows-executable-native-messaging-hosts-to-launch-directly"></a>[NativeHostsExecutablesLaunchDirectly](microsoft-edge-browser-policies/NativeHostsExecutablesLaunchDirectly.md)|Force Windows executable Native Messaging hosts to launch directly|
 |<a id="nativewindowocclusionenabled"></a><a id="enable-native-window-occlusion-deprecated"></a>[NativeWindowOcclusionEnabled](microsoft-edge-browser-policies/NativeWindowOcclusionEnabled.md)|Enable Native Window Occlusion (deprecated)|
 |<a id="navigationdelayforinitialsitelistdownloadtimeout"></a><a id="set-a-timeout-for-delay-of-tab-navigation-for-the-enterprise-mode-site-list"></a>[NavigationDelayForInitialSiteListDownloadTimeout](microsoft-edge-browser-policies/NavigationDelayForInitialSiteListDownloadTimeout.md)|Set a timeout for delay of tab navigation for the Enterprise Mode Site List|

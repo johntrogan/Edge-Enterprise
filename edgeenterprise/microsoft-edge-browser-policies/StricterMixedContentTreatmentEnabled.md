@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # StricterMixedContentTreatmentEnabled
 
 ## Enable stricter treatment for mixed content (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
 
 ## Supported versions
 

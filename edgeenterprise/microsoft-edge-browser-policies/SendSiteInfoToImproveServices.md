@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # SendSiteInfoToImproveServices
 
 ## Send site information to improve Microsoft services (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 88.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 88.
 
 ## Supported versions
 

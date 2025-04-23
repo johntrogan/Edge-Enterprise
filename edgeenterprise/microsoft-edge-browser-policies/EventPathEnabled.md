@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EventPathEnabled
 
 ## Re-enable the Event.path API until Microsoft Edge version 115 (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 115.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 115.
 
 ## Supported versions
 

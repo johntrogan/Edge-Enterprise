@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # DisplayCapturePermissionsPolicyEnabled
 
 ## Specifies whether the display-capture permissions-policy is checked or skipped (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 109.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 109.
 
 ## Supported versions
 

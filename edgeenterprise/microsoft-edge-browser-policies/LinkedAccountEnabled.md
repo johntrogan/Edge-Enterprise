@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation LinkedAccountEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # LinkedAccountEnabled
 
 ## Enable the linked account feature (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 133.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 133.
 
 ## Supported versions
 

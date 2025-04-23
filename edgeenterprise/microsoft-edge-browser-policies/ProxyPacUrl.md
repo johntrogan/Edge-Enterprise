@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ProxyPacUrl
 
 ## Set the proxy .pac file URL (deprecated)
-> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+> DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
 
 ## Supported versions
 

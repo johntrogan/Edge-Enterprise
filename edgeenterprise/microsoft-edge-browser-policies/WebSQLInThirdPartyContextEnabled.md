@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # WebSQLInThirdPartyContextEnabled
 
 ## Force WebSQL in third-party contexts to be re-enabled (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 100.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 100.
 
 ## Supported versions
 

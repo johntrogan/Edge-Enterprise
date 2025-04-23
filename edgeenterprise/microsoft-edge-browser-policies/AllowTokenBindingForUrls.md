@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # AllowTokenBindingForUrls
 
 ## Configure the list of sites for which Microsoft Edge will attempt to establish a Token Binding with (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 129.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 129.
 
 ## Supported versions
 

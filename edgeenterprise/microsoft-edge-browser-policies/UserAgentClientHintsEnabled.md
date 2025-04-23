@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # UserAgentClientHintsEnabled
 
 ## Enable the User-Agent Client Hints feature (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 93.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 93.
 
 ## Supported versions
 

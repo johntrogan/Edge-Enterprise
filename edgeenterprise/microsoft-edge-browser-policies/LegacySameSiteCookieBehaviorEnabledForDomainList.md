@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # LegacySameSiteCookieBehaviorEnabledForDomainList
 
 ## Revert to legacy SameSite behavior for cookies on specified sites (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 132.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 132.
 
 ## Supported versions
 

@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EnforceLocalAnchorConstraintsEnabled
 
 ## Determines whether the built-in certificate verifier will enforce constraints encoded into trust anchors loaded from the platform trust store (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 127.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 127.
 
 ## Supported versions
 

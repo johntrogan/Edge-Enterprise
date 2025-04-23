@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ThrottleNonVisibleCrossOriginIframesAllowed
 
 ## Allows enabling throttling of non-visible, cross-origin iframes (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 123.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 123.
 
 ## Supported versions
 

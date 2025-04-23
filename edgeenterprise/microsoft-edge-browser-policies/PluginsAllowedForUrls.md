@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # PluginsAllowedForUrls
 
 ## Allow the Adobe Flash plug-in on specific sites (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 87.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 87.
 
 ## Supported versions
 

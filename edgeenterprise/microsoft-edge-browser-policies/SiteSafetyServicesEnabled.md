@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # SiteSafetyServicesEnabled
 
 ## Allow users to configure Site safety services (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 127.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 127.
 
 ## Supported versions
 

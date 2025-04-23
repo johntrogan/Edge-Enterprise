@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # CrossOriginWebAssemblyModuleSharingEnabled
 
 ## Specifies whether WebAssembly modules can be sent cross-origin (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 98.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 98.
 
 ## Supported versions
 

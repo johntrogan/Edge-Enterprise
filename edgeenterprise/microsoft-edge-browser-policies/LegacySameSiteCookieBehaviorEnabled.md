@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # LegacySameSiteCookieBehaviorEnabled
 
 ## Enable default legacy SameSite cookie behavior setting (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 94.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 94.
 
 ## Supported versions
 

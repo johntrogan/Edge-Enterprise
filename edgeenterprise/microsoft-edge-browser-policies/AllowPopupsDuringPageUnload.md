@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # AllowPopupsDuringPageUnload
 
 ## Allows a page to show popups during its unloading (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 87.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 87.
 
 ## Supported versions
 

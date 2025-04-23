@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # CECPQ2Enabled
 
 ## CECPQ2 post-quantum key-agreement enabled for TLS (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 113.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 113.
 
 ## Supported versions
 

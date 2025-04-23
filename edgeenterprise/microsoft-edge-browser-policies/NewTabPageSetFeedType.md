@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # NewTabPageSetFeedType
 
 ## Configure the Microsoft Edge new tab page experience (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 92.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 92.
 
 ## Supported versions
 

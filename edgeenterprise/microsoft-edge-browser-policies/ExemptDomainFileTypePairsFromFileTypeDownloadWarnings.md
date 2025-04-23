@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ExemptDomainFileTypePairsFromFileTypeDownloadWarnings
 
 ## Disable download file type extension-based warnings for specified file types on domains (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 109.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 109.
 
 ## Supported versions
 

@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ImmersiveReaderPictureDictionaryEnabled
 
 ## Enable Picture Dictionary feature within Immersive Reader in Microsoft Edge (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 126.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 126.
 
 ## Supported versions
 

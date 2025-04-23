@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # MathSolverEnabled
 
 ## Let users snip a Math problem and get the solution with a step-by-step explanation in Microsoft Edge (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 125.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 125.
 
 ## Supported versions
 

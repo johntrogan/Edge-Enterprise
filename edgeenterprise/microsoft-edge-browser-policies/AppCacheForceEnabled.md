@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # AppCacheForceEnabled
 
 ## Allows the AppCache feature to be re-enabled, even if it's turned off by default (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 96.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 96.
 
 ## Supported versions
 

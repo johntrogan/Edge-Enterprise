@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # TabFreezingEnabled
 
 ## Allow freezing of background tabs (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 86.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 86.
 
 ## Supported versions
 

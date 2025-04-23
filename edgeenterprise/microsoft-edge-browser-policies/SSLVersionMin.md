@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # SSLVersionMin
 
 ## Minimum TLS version enabled (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 97.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 97.
 
 ## Supported versions
 

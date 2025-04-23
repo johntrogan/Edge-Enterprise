@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # RSAKeyUsageForLocalAnchorsEnabled
 
 ## Check RSA key usage for server certificates issued by local trust anchors (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 135.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 135.
 
 ## Supported versions
 

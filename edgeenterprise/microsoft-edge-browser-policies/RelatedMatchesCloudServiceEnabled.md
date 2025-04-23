@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # RelatedMatchesCloudServiceEnabled
 
 ## Configure Related Matches in Find on Page (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 134.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 134.
 
 ## Supported versions
 

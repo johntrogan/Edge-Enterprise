@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ForceNetworkInProcess
 
 ## Force networking code to run in the browser process (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 83.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 83.
 
 ## Supported versions
 

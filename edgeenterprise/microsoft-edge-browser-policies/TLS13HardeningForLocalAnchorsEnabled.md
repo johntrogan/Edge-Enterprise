@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # TLS13HardeningForLocalAnchorsEnabled
 
 ## Enable a TLS 1.3 security feature for local trust anchors (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 85.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 85.
 
 ## Supported versions
 

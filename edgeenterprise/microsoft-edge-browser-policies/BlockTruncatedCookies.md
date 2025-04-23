@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # BlockTruncatedCookies
 
 ## Block truncated cookies (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 131.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 131.
 
 ## Supported versions
 

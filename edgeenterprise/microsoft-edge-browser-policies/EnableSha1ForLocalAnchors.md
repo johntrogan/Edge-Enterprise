@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EnableSha1ForLocalAnchors
 
 ## Allow certificates signed using SHA-1 when issued by local trust anchors (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 91.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 91.
 
 ## Supported versions
 

@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ForceCertificatePromptsOnMultipleMatches
 
 ## Configure whether Microsoft Edge should automatically select a certificate when there are multiple certificate matches for a site configured with "AutoSelectCertificateForUrls" (deprecated)
-> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+> DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
 
 ## Supported versions
 

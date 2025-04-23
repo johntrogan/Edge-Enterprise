@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # TravelAssistanceEnabled
 
 ## Enable travel assistance (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 105.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 105.
 
 ## Supported versions
 

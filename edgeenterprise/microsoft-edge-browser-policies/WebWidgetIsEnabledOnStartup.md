@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebWidgetIsEnabledOnStartup"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # WebWidgetIsEnabledOnStartup
 
 ## Allow the Search bar at Windows startup (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 119.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 119.
 
 ## Supported versions
 

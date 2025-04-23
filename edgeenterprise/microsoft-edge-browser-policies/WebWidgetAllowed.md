@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebWidgetAllowed"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # WebWidgetAllowed
 
 ## Enable the Search bar (deprecated)
-> This policy is deprecated. It is currently supported but will become obsolete in a future release.
+> DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.
 
 ## Supported versions
 

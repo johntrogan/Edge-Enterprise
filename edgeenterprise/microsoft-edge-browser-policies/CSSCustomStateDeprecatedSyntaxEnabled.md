@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # CSSCustomStateDeprecatedSyntaxEnabled
 
 ## Controls whether the deprecated :--foo syntax for CSS custom state is enabled (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 132.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 132.
 
 ## Supported versions
 

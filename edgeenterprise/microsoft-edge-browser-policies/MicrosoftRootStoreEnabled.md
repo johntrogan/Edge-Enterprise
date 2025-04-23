@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # MicrosoftRootStoreEnabled
 
 ## Determines whether the Microsoft Root Store and built-in certificate verifier will be used to verify server certificates (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 114.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 114.
 
 ## Supported versions
 

@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EdgeEnhanceImagesEnabled
 
 ## Enhance images enabled (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 121.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 121.
 
 ## Supported versions
 

@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # WebSQLNonSecureContextEnabled
 
 ## Force WebSQL in non-secure contexts to be enabled (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 112.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 112.
 
 ## Supported versions
 

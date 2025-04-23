@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # ForceMajorVersionToMinorPositionInUserAgent
 
 ## Enable or disable freezing the User-Agent string at major version 99 (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 117.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 117.
 
 ## Supported versions
 

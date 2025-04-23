@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # TargetBlankImpliesNoOpener
 
 ## Do not set window.opener for links targeting _blank (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 102.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 102.
 
 ## Supported versions
 

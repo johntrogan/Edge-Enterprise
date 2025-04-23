@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # NewSmartScreenLibraryEnabled
 
 ## Enable new SmartScreen library (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 107.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 107.
 
 ## Supported versions
 

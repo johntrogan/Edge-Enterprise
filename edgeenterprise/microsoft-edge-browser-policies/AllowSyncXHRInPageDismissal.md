@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # AllowSyncXHRInPageDismissal
 
 ## Allow pages to send synchronous XHR requests during page dismissal (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 99.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 99.
 
 ## Supported versions
 

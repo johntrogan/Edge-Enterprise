@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # UserAgentClientHintsGREASEUpdateEnabled
 
 ## Control the User-Agent Client Hints GREASE Update feature (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 133.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 133.
 
 ## Supported versions
 

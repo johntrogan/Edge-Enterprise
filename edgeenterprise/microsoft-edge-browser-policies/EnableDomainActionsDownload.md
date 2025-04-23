@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EnableDomainActionsDownload"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -19,7 +19,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 # EnableDomainActionsDownload
 
 ## Enable Domain Actions Download from Microsoft (obsolete)
-> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 84.
+> OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 84.
 
 ## Supported versions
 
