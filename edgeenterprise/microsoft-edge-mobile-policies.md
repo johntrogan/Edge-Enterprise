@@ -2427,7 +2427,7 @@ ProxySettings = {
 #### Description  
 This policy controls whether users must authenticate with their device password, biometric authentication, or PIN before autofilling saved passwords in web forms.
 
-Setting the policy to **Enabled** means that Microsoft Edge will always require biometric authentication (such as fingerprint, face unlock) or PIN before autofilling saved passwords. Users cannot disable this in Microsoft Edge on Android or iOS.
+Setting the policy to **Enabled** means that Microsoft Edge will always require biometric authentication (such as fingerprint, face unlock) or PIN before autofilling saved passwords. Users cannot disable this in Microsoft Edge on Android.
 
 Setting the policy to **Disabled** or not configured means that users can choose whether or not to require biometric or PIN authentication before autofill. By default, the setting is off.
 
