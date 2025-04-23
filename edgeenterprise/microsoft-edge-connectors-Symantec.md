@@ -43,9 +43,7 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 
 1. On a Windows endpoint, **sign in** to Microsoft Edge for Business with a valid Microsoft Entra ID.
 
-2. **Navigate** to edge://management, and **verify** that the browser is managed by your organization.
-
-3. **Navigate** to edge://policy, and **verify** that the following policies are listed and that their **Status is OK**:
+2. **Navigate** to edge://policy, and **verify** that the following policies are listed and that their **Status is OK**:
    - OnBulkDataEntryEnterpriseConnector  
    - OnFileAttachedEnterpriseConnector  
    - OnPrintEnterpriseConnector
