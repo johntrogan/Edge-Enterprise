@@ -26,6 +26,10 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 135.0.3179.98: April 24, 2025
+
+Fixed various bugs and performance issues.
+
 ## Version 135.0.3179.85: April 17, 2025
 
 Fixed various bugs and performance issues.
