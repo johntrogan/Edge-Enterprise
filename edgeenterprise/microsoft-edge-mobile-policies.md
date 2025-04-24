@@ -3387,7 +3387,7 @@ true
 
   [Back to top](#microsoft-edge-mobile---policies)
   
-## Microsoft Edge website typo protection
+## Edge website typo protection
 
 [Back to top](#microsoft-edge-mobile---policies)
 
