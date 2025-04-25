@@ -223,7 +223,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
   Disabling Edge Bar through the [StandaloneHubsSidebarEnabled](/deployedge/microsoft-edge-policies#standalonehubssidebarenabled) policy continues to work, there's a fix to make the UI and briefcase icon appear on the *edge://settings/sidebar* page coming soon.
 
- - **Noto Fonts.**  This update enhances text quality and customer experience in web browsing for Chinese, Japanese, and Korean languages by introducing the Noto font family. This provides modern, comprehensive font support for these languages.  When the Noto CJK font becomes available, the default values for standard, serif, and sans-serif fonts will change to the Noto font.
+ - **Noto Fonts.**  This update enhances text quality and customer experience in web browsing for Chinese, Japanese, and Korean languages by introducing the Noto font family. This provides modern, comprehensive font support for these languages.  When the Noto CJK font becomes available, the default values for standard, serif, and sans-serif fonts will change to the Noto font. (Added: April 22, 2025)
 
 ### Policy updates
 

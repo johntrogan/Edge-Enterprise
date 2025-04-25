@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge Mobile Policy Documentation"
 ms.author: stmoody
-author: dan-wesley
+author: vmliramichael
 manager: venkatk
-ms.date: 12/09/2024
+ms.date: 04/23/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -117,8 +117,9 @@ These tables list all of the browser-related policies available in this release 
 ### [*Password manager and protection*](#password-manager-and-protection)
 
 |Policy Name|Caption|
-|:-|-|
-| [PasswordManagerEnabled](#passwordmanagerenabled) | Enable saving passwords to the password manager |
+|:-|:-|
+|[BiometricAuthenticationBeforeFilling](#biometricauthenticationbeforefilling)|Enable device authentication for password autofill|
+|[PasswordManagerEnabled](#passwordmanagerenabled)|Enable saving passwords to the password manager|
 
 <!-- ====================================== -->
 ### [*Idle browser actions*](#idle-browser-actions)
@@ -180,14 +181,14 @@ All recent versions of Samba and Microsoft&reg; Windows&reg; servers support NTL
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
+- Dynamic Policy Refreshes : Yes
 - Per Profile : No
 
 #### Data Type:
 
 Boolean
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -215,7 +216,7 @@ true
 
 Setting the policy specifies which HTTP authentication schemes Microsoft Edge supports.
 
-Leaving the policy unset employs all 4 schemes.
+Leaving the policy unset employs all four schemes.
 
 Valid values:
 
@@ -231,14 +232,14 @@ Note: Separate multiple values with commas.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
 String
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -273,14 +274,14 @@ Setting the policy to Disabled or leaving it unset means CNAME lookup determines
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
 Boolean
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -314,14 +315,14 @@ Note: Separate multiple server names with commas. Wildcards, *, are allowed.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
 String
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -347,20 +348,20 @@ AuthServerAllowlist
 
 #### Description
 
-Specifies the type of accounts provided by the Android authentication app that supports HTTP Negotiate authentication (such as Kerberos authentication). This information should be available from the supplier of the authentication app. For more details see, [Write a SPNEGO Authenticator for Microsoft Edge on Android](/DeployEdge/edge-learnmore-write-spnego-authenticator).
+Specifies the type of accounts provided by the Android authentication app that supports HTTP Negotiate authentication (such as Kerberos authentication). This information should be available from the supplier of the authentication app. For more information, see, [Write a SPNEGO Authenticator for Microsoft Edge on Android](/DeployEdge/edge-learnmore-write-spnego-authenticator).
 
 If you disable or don't configure this policy, HTTP Negotiate authentication on Android is turned off.
 
-If you enable the policy, Microsoft Edge will use the value to specify the Android authentication app
+If you enable the policy, Microsoft Edge uses the value to specify the Android authentication app
 
 #### Supported features:
 
-- Dynamic Policy Refresh : No
-- Per Profile : No
+- Dynamic Policy Refreshes: No
+- Per Profile: No
 
 #### Data Type:
 
-Android:String
+Android: String
 
 #### Android restriction name:
 
@@ -392,14 +393,14 @@ Leaving the policy unset means Microsoft Edge won't delegate user credentials, e
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
 String
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -430,14 +431,14 @@ Setting the policy specifies for which origins to allow all the HTTP authenticat
 Format the origin pattern according to this format (https://go.microsoft.com/fwlink/?linkid=2095322). Up to 1,000 exceptions can be defined in AllHttpAuthSchemesAllowedForOrigins. Wildcards are allowed for the whole origin or parts of the origin, either the scheme, host, port.
 
 #### Supported features:
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -476,18 +477,18 @@ Setting the policy to 1 lets websites display pop-ups. Setting the policy to 2 d
 Leaving it unset means BlockPopups applies, but users can change this setting.
 
 - 1 = Allow all sites to show pop-ups
-- 2 = Do not allow any site to show pop-ups
+- 2 = Don't allow any site to show pop-ups
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Integer
+Android: Integer
 
-iOS:Integer
+iOS: Integer
 
 #### Android and iOS restriction name:
 
@@ -514,14 +515,14 @@ DefaultPopupsSetting
 
 #### Description
 
-Define a list of sites, based on URL patterns, that can open pop-up windows. * is not an accepted value for this policy.
+Define a list of sites, based on URL patterns, that can open pop-up windows. * isn't an accepted value for this policy.
 
 If you don't configure this policy, the global default value from the [DefaultPopupsSetting](/deployedge/microsoft-edge-mobile-policies#defaultpopupssetting) policy (if set) or the user's personal configuration is used for all sites.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -567,14 +568,14 @@ PopupsAllowedForUrls
 
 #### Description
 
-Define a list of sites, based on URL patterns, that are blocked from opening pop-up windows. * is not an accepted value for this policy.
+Define a list of sites, based on URL patterns, that are blocked from opening pop-up windows. * isn't an accepted value for this policy.
 
 If you don't configure this policy, the global default value from the [DefaultPopupsSetting](/deployedge/microsoft-edge-mobile-policies#defaultpopupssetting) policy (if set) or the user's personal configuration is used for all sites.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -622,22 +623,22 @@ Unless the RestoreOnStartup policy is set to permanently restore URLs from previ
 
 Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults.
 
-While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict.
+While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these three policies must not conflict.
 
 - 1 = Allow all sites to set local data
-- 2 = Do not allow any site to set local data
-- 4 = Keep cookies for the duration of the session
+- 2 = Don't allow any site to set local data
+- 4 = Keep cookies during the session
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 Integer
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -666,22 +667,22 @@ DefaultCookiesSetting
 
 Allows you to set a list of url patterns that specify sites which are allowed to set cookies.
 
-If this policy is left not set the global default value will be used for all sites either from the DefaultCookiesSetting policy if it is set, or the user's personal configuration otherwise.
+If this policy is left not set the global default value will be used for all sites either from the DefaultCookiesSetting policy if it's set, or the user's personal configuration otherwise.
 
-See also policies CookiesBlockedForUrls and CookiesSessionOnlyForUrls. Note that there must be no conflicting URL patterns between these three policies - it is unspecified which policy takes precedence.
+See also policies CookiesBlockedForUrls and CookiesSessionOnlyForUrls. There must be no conflicting URL patterns between these three policies - it's unspecified which policy takes precedence.
 
-For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * is not an accepted value for this policy.
+For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * isn't an accepted value for this policy.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -715,20 +716,20 @@ Setting the policy lets you make a list of URL patterns that specify sites that 
 
 Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies.
 
-While no specific policy takes precedence, see CookiesAllowedForUrls and CookiesSessionOnlyForUrls. URL patterns among these 3 policies must not conflict.
+While no specific policy takes precedence, see CookiesAllowedForUrls and CookiesSessionOnlyForUrls. URL patterns among these three policies must not conflict.
 
-For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * is not an accepted value for this policy.
+For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * isn't an accepted value for this policy.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -762,20 +763,20 @@ Unless the RestoreOnStartup policy is set to permanently restore URLs from previ
 
 Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults.
 
-While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict.
+While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these three policies must not conflict.
 
-For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * is not an accepted value for this policy.
+For detailed information on valid url patterns, please see https://go.microsoft.com/fwlink/?linkid=2095322. * isn't an accepted value for this policy.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -820,15 +821,15 @@ If you set the policy, users can't change it in Microsoft Edge. If not set, the 
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -862,15 +863,15 @@ Leaving DefaultSearchProviderName unset means the hostname specified by the sear
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -904,15 +905,15 @@ You can specify Google's search URL as: '{google:baseURL}search?q={searchTerms}&
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -947,15 +948,15 @@ Leaving DefaultSearchProviderSearchURLPostParams unset means search requests are
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -990,17 +991,17 @@ Leaving DefaultSearchProviderAlternateURLs unset means no alternate URLs are use
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1038,17 +1039,17 @@ Leaving DefaultSearchProviderEncodings unset puts UTF-8 in use.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
-iOS:string
+iOS: string
 
 #### Android and iOS restriction name:
 
@@ -1088,15 +1089,15 @@ Leaving DefaultSearchProviderImageURL unset means no image search is used.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
 Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1130,15 +1131,15 @@ Leaving DefaultSearchProviderImageURLPostParams unset means image search request
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1172,15 +1173,15 @@ Leaving DefaultSearchProviderKeyword unset means no keyword activates the search
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1215,15 +1216,15 @@ Leaving DefaultSearchProviderNewTabURL unset means no new tab page is provided.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1241,7 +1242,7 @@ https://search.my.company/newtab
 
 ### DefaultSearchProviderSuggestURL
 
-#### Default search provider suggest URL
+#### Default search provider suggests URL
 
 #### Supported on:
 
@@ -1255,19 +1256,19 @@ If DefaultSearchProviderEnabled is on, then setting DefaultSearchProviderSuggest
 
 You can specify Bing's search URL as: '{bing:baseURL}search?q={searchTerms}'.
 
-specify Google's search URL as: '{google:baseURL}complete/search?output=chrome&q={searchTerms}'.
+Specify Google's search URL as: '{google:baseURL}complete/search?output=chrome&q={searchTerms}'.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1297,19 +1298,19 @@ https://search.my.company/suggest?q={searchTerms}
 
 If DefaultSearchProviderEnabled is on, then setting DefaultSearchProviderSuggestURLPostParams specifies the parameters during suggestion search with POST. It consists of comma-separated, name-value pairs. If a value is a template parameter, such as '{searchTerms}', real search terms data replaces it.
 
-Leaving DefaultSearchProviderSuggestURLPostParams unset unset means suggest search requests are sent using the GET method.
+Leaving DefaultSearchProviderSuggestURLPostParams unset means suggest search requests are sent using the GET method.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1325,7 +1326,7 @@ q={searchTerms},ie=utf-8,oe=utf-8
 
 [Back to top](#microsoft-edge-mobile---policies)
 
-## Edge specific policies
+## Microsoft Edge specific policies
 
 [Back to top](#microsoft-edge-mobile---policies)
 
@@ -1341,23 +1342,23 @@ q={searchTerms},ie=utf-8,oe=utf-8
 
 #### Description
 
-Edge for iOS and Android allows organizations to disable the New Tab Page experience and instead have a web site launch when the user opens a new tab. 
+Microsoft Edge for iOS and Android allows organizations to disable the New Tab Page experience and instead have a web site launch when the user opens a new tab. 
 
 While this is a supported scenario, Microsoft recommends organizations take advantage of the New Tab Page experience to provide dynamic content that is relevant to the user.
 
-**Note:** If you have configured URLAllowlist or URLBlocklist, ensure that **about://newtab** is added to the URLAllowlist to enable EdgeNewTabPageCustomURL to function properly.
+**Note:** If you have configured URL Allowlist or URLBlocklist, ensure that **about://newtab** is added to the URLAllowlist to enable EdgeNewTabPageCustomURL to function properly.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 - Can Be Recommended : Yes
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1385,21 +1386,21 @@ https://www.bing.com
 
 #### Description
 
-By default, users have the My Apps bookmark configured within the organization folder inside Edge for iOS and Android.
+By default, users have the My Apps bookmark configured within the organization folder inside Microsoft Edge for iOS and Android.
 
-- true = Shows My Apps within the Edge for iOS and Android bookmarks 
-- false (Default) = Hides My Apps within Edge for iOS and Android
+- true = Shows My Apps within the Microsoft Edge for iOS and Android bookmarks 
+- false (Default) = Hides My Apps within Microsoft Edge for iOS and Android
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -1426,7 +1427,7 @@ true
 
 #### Description
 
-By default, Edge for iOS and Android uses the HTTPS protocol handler when the user doesn't specify the protocol in the URL. 
+By default, Microsoft Edge for iOS and Android uses the HTTPS protocol handler when the user doesn't specify the protocol in the URL. 
 
 Generally, this is considered a best practice, but can be disabled.
 
@@ -1435,12 +1436,12 @@ Generally, this is considered a best practice, but can be disabled.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
 iOS: Boolean
 
@@ -1469,7 +1470,7 @@ true
 
 #### Description
 
-By default, Edge for iOS and Android prompts users for usage data collection to personalize their browsing experience. Organizations can disable this data sharing by preventing this prompt from being shown to end users.
+By default, Microsoft Edge for iOS and Android prompts users for usage data collection to personalize their browsing experience. Organizations can disable this data sharing by preventing this prompt from being shown to end users.
 
 EdgeDisableShareUsageData:
 - true = Disables this prompt from displaying to end users
@@ -1477,14 +1478,14 @@ EdgeDisableShareUsageData:
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -1512,7 +1513,7 @@ true
 
 #### Description
 
-Edge for iOS and Android allows organizations to disable certain features that are enabled by default. To disable these features, configure the following setting:
+Microsoft Edge for iOS and Android allows organizations to disable certain features that are enabled by default. To disable these features, configure the following setting:
 
 - password = Disables prompts that offer to save passwords for the end user
 - inprivate = Disables InPrivate browsing
@@ -1520,9 +1521,9 @@ Edge for iOS and Android allows organizations to disable certain features that a
 - translator = Disables translator, as of version 112
 - readaloud = Disables Read Aloud, as of version 112
 - drop = Disables Drop, which lets you send documents and messages to different devices directly from your browser, as of version 112
-- developertools grays out the build version numbers to prevent users from accessing Developer options (Edge for Android only), as of version 112
+- developer tools gray out the built version numbers to prevent users from accessing Developer options (Microsoft Edge for Android only), as of version 112
 - coupons = Disables coupons/shopping feature, as of version 117
-- extensions = Disables extensions (Edge for Android only), as of version 122
+- extensions = Disables extensions (Microsoft Edge for Android only), as of version 122
 - webinspector = Disables Web Inspector settings, as of version 128
 - share = Disables Share under menu, as of version 129
 - sendtodevices = Disables Send to devices under menu, as of version 129
@@ -1532,14 +1533,14 @@ To disable multiple features, separate values with |. For example, inprivate|pas
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -1565,23 +1566,23 @@ inprivate | password
 
 #### Description
 
-Edge for Android can be enabled as a kiosk app with the following settings:
+Microsoft Edge for Android can be enabled as a kiosk app with the following settings:
 
 EdgeEnableKioskMode:
 
-- true = Enables kiosk mode for Edge for Android 
+- true = Enables kiosk mode for Microsoft Edge for Android 
 - false (Default) = Disables kiosk mode
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
 Boolean
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -1609,7 +1610,7 @@ true
 
 #### Description
 
-Edge for Android address bar in kiosk mode can be hidden with the following settings:
+Microsoft Edge for Android address bar in kiosk mode can be hidden with the following settings:
 
 
 EdgeShowAddressBarInKioskMode:
@@ -1619,14 +1620,14 @@ EdgeShowAddressBarInKioskMode:
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
 Boolean
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -1654,7 +1655,7 @@ true
 
 #### Description
 
-Edge for Android bottom bar in kiosk mode can be hidden with the following settings:
+Microsoft Edge for Android bottom bar in kiosk mode can be hidden with the following settings:
 
 
 EdgeShowBottomBarInKioskMode
@@ -1664,14 +1665,14 @@ EdgeShowBottomBarInKioskMode
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
 Boolean
 
-Android:choice
+Android: choice
 
 #### Android restriction name:
 
@@ -1712,20 +1713,20 @@ Addresses and more (autofill form entry)
 
 Sync functionality is enabled via user consent and users can turn sync on or off for each of the data types listed above.
 
-For more information see [Microsoft Edge Sync](/DeployEdge/microsoft-edge-enterprise-sync).
+For more information, see [Microsoft Edge Sync](/DeployEdge/microsoft-edge-enterprise-sync).
 
-Organizations have the capability to disable Edge sync on iOS and Android.
+Organizations have the capability to disable Microsoft Edge sync on iOS and Android.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -1754,7 +1755,7 @@ true
 
 #### Description
 
-Edge for iOS and Android allows users to import passwords from Password Manager. Admins can disable import  passwords with the following settings:
+Microsoft Edge for iOS and Android allows users to import passwords from Password Manager. Admins can disable import  passwords with the following settings:
 
 EdgeImportPasswordsDisabled
 
@@ -1763,18 +1764,18 @@ EdgeImportPasswordsDisabled
 
 Note:
 
-In the Password Manager of Edge for iOS, there is an **Add** button. When the import passwords feature is disabled, the **Add** button will also be disabled.
+In the Password Manager of Microsoft Edge for iOS, there's an **Add** button. When the import passwords feature is disabled, the **Add** button will also be disabled.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### #### Android and iOS restriction name:
 
@@ -1803,7 +1804,7 @@ true
 The layers of the network architecture are called the network stack. 
 The layers of a network stack are broadly divided into sections, such as Network Interface, Network Driver Interface Specification (NDIS), Protocol Stack, System Drivers, and User-Mode Applications.
 
-By default, Microsoft Edge for both iOS and Android use the Chromium network stack for Microsoft Edge service communication, including sync services and auto search suggestions. Microsoft Edge for iOS also provides the iOS network stack as a configurable option for Microsoft Edge service communication.
+By default, Microsoft Edge for both iOS and Android uses the Chromium network stack for Microsoft Edge service communication, including sync services and auto search suggestions. Microsoft Edge for iOS also provides the iOS network stack as a configurable option for Microsoft Edge service communication.
 
 Organizations can modify their network stack preference by configuring the following setting.
 
@@ -1812,14 +1813,14 @@ Organizations can modify their network stack preference by configuring the follo
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
 Integer
 
-iOS:choice
+iOS: choice
 
 #### Android restriction name:
 
@@ -1841,18 +1842,18 @@ EdgeNetworkStackPref
 
 This policy allows administrators to enable or disable the detection of overlay permissions in Microsoft Edge. 
 
-If any app on the device has overlay drawing permissions, then Microsoft Edge will display an error message stating, "This site can't ask for your permission. Close any bubbles or overlays from other apps, then try again" when the browser requests any device permissions.
+If any app on the device has overlay drawing permissions, then Microsoft Edge displays an error message stating, "This site can't ask for your permission. Close any bubbles or overlays from other apps, then try again" when the browser requests any device permissions.
 
-If enabled or left unset, Microsoft Edge will turn on this detection feature to remind users of potential risks.
+If enabled or left unset, Microsoft Edge turns on this detection feature to remind users of potential risks.
 
-If you disable this policy, Microsoft Edge will turn off this detection feature.
+If you disable this policy, Microsoft Edge turns off this detection feature.
 
-Please note that disabling overlay permission detection may increase the risk of malicious overlays or pop-ups gaining access to sensitive information without user consent. Therefore, it's recommended to use this policy with caution and only in trusted environments or when there's a specific need to bypass overlay detection.
+Disabling overlay permission detection may increase the risk of malicious overlays or pop-ups gaining access to sensitive information without user consent. Therefore, it's recommended to use this policy with caution and only in trusted environments or when there's a specific need to bypass overlay detection.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 Android: boolean
@@ -1881,20 +1882,20 @@ true
 
 #### Description
 
-Pull your organization's brand logo into Edge for iOS and Android.  You need to maintain your organization logo and brand color via [steps](/entra/fundamentals/how-to-customize-branding). **Banner logo** will be used as your organization and Page background color will be used as brand color. To apply brand logo, users need to sign in to Edge with work account.
+Pull your organization's brand logo into Microsoft Edge for iOS and Android.  You need to maintain your organization logo and brand color via [steps](/entra/fundamentals/how-to-customize-branding). **Banner logo** is used as your organization and Page background color will be used as brand color. To apply brand logo, users need to sign in to Microsoft Edge with work account.
 
 - true = Show organization's brand logo
-- false (Default) = Do not show organization's brand logo
+- false (Default) = Don't show organization's brand logo
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
-iOS:Boolean
+Android: Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -1919,20 +1920,20 @@ true
 
 #### Description
 
-Pull your organization's brand color into Edge for iOS and Android. You need to maintain your organization brand color via [steps](/entra/fundamentals/how-to-customize-branding). **Page background color** will be used as brand color. To apply brand color, users need to sign in to Edge with work account.
+Pull your organization's brand color into Microsoft Edge for iOS and Android. You need to maintain your organization brand color via [steps](/entra/fundamentals/how-to-customize-branding). **Page background color** is used as brand color. To apply brand color, users need to sign in to Microsoft Edge with work account.
 
 - true = Show organization's brand color
-- false (Default) = Do not show organization's brand color
+- false (Default) = Don't show organization's brand color
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
-iOS:Boolean
+Android: Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -1950,7 +1951,7 @@ true
 
 ### EdgeProxyPacUrl
 
-#### Specify a URL to a proxy auto-config (PAC) file
+#### Specify a URL to a proxy autoconfig (PAC) file
 
 **Note:** This policy is in public preview and might be removed.
 
@@ -1960,12 +1961,12 @@ true
 
 #### Description
 
-Specify a URL to a proxy auto-config (PAC) file
+Specify a URL to a proxy autoconfig (PAC) file
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -1987,7 +1988,7 @@ https://internal.contoso.com/example.pac
 
 ### EdgeBlockSignInEnabled
 
-#### Block users from signing in to Edge
+#### Block users from signing in to Microsoft Edge
 
 #### Supported on:
 
@@ -1997,18 +1998,18 @@ https://internal.contoso.com/example.pac
 
 #### Description
 
-By default, users are allowed to sign in to Edge with their personal accounts or work accounts. You can enable this policy to block users from signing in to Edge.
+By default, users are allowed to sign in to Microsoft Edge with their personal accounts or work accounts. You can enable this policy to block users from signing in to Microsoft Edge.
 
 #### Supported features:
-- Dynamic Policy Refresh: Yes
+- Dynamic Policy Refreshes: Yes
 
-- Per Profile : No
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2025,21 +2026,21 @@ true
 [Back to top](#microsoft-edge-mobile---policies)
 
 ### EdgeOneAuthProxy
-#### Specify a dedicated proxy to sign in to Edge in Android
+#### Specify a dedicated proxy to sign in to Microsoft Edge in Android
 #### Supported on:
 
 - Microsoft Edge (Android) since version 121
 
 #### Description
 
-A Proxy Auto-Configuration (PAC) is typically configured in the VPN profile. However, due to platform limitation, the PAC cannot be recognized by Android WebView, which is used during Edge sign-in process. Users may not be able to sign in to Edge in Android.
+A Proxy Auto-Configuration (PAC) is typically configured in the VPN profile. However, due to platform limitation, the PAC can't be recognized by Android WebView, which is used during Microsoft Edge sign-in process. Users may not be able to sign in to Microsoft Edge in Android.
 
-You can specify dedicated proxy for users to sign in to Edge in Android.
+You can specify dedicated proxy for users to sign in to Microsoft Edge in Android.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
@@ -2061,7 +2062,7 @@ http://MyProxy.com:8080
 
 ### EdgeLockedViewModeEnabled
 
-#### Edge locked view mode
+#### Microsoft Edge locked view mode
 
 #### Supported on:
 
@@ -2074,7 +2075,7 @@ http://MyProxy.com:8080
 This policy allows organizations to restrict various browser functionalities, providing a controlled and focused browsing experience.
 
 - The URL address bar becomes read-only, preventing users from making changes to the web address
-- Users are not allowed to create new tabs
+- Users aren't allowed to create new tabs
 - The contextual search feature on web pages is disabled
 - The following buttons under the overflow menu are disabled
 
@@ -2088,8 +2089,8 @@ This policy allows organizations to restrict various browser functionalities, pr
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -2113,7 +2114,7 @@ true
 
 ### EdgeLockedViewModeAllowedActions
 
-#### Configure allowed actions in Edge locked view mode
+#### Configure allowed actions in Microsoft Edge locked view mode
 
 #### Supported on:
 
@@ -2123,13 +2124,13 @@ true
 
 #### Description
 
-By default, users are not allowed to create new tabs in locked view mode. To allow tab creation, set policy EdgeLockedViewModeAllowedActions.
+By default, users aren't allowed to create new tabs in locked view mode. To allow tab creation, set policy EdgeLockedViewModeAllowedActions.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
+- Dynamic Policy Refreshes: Yes
 
-- Per Profile : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -2159,18 +2160,18 @@ newtabs
 
 #### Description
 
-By default, users can use Copilot in Edge mobile. You can disable Copilot by configuring the policy to false.
+By default, users can use Copilot in Microsoft Edge mobile. You can disable Copilot by configuring the policy to false.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2199,17 +2200,17 @@ false
 
 The **Custom** layout is the default one for the new tab page. It shows top site shortcuts and news feed with wallpaper. Users can change the layout according to their preferences. Organizations can also manage the layout settings.
 
-focused = Focused is selected<br>
-inspirational = Inspirational is selected<br>
-informational = Informational is selected<br>
-custom (Default) = Custom is selected, top site shortcuts toggle is on, wallpaper toggle is on, and news feed toggle is on
+Focused = Focused is selected<br>
+Inspirational = Inspirational is selected<br>
+Informational = Informational is selected<br>
+Custom (Default) = Custom is selected, top site shortcuts toggle is on, wallpaper toggle is on, and news feed toggle is on
 
-Note that EdgeNewTabPageLayout policy is intended to set the initial layout. Users can change page layout settings based on their reference. Therefore, EdgeNewTabPageLayout policy only takes effect if users do not change layout settings. You can enforce EdgeNewTabPageLayout policy by configuring EdgeNewTabPageLayoutUserSelectable=false.
+Note that EdgeNewTabPageLayout policy is intended to set the initial layout. Users can change page layout settings based on their reference. Therefore, EdgeNewTabPageLayout policy only takes effect if users don't change layout settings. You can enforce EdgeNewTabPageLayout policy by configuring EdgeNewTabPageLayoutUserSelectable=false.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
@@ -2239,19 +2240,19 @@ focused
 
 #### Description
 
-By default, topsites, wallpaper and newsfeed are turned on in the custom setting. Organization can manage the custom setting.
-This policy only takes affect when EdgeNewTabPageLayout is configured as custom.
+By default, topside, wallpaper, and newsfeed are turned on in the custom setting. Organization can manage the custom setting.
+This policy only takes effect when EdgeNewTabPageLayout is configured as custom.
 
-topsites = Turn on top site shortcuts<br>
-wallpaper = Turn on wallpaper<br>
-newsfeed = Turn on news feed<br>
+Topsites = Turn-on top site shortcuts<br>
+Wallpaper = Turn-on wallpaper<br>
+Newsfeed = Turn-on news feed<br>
 
 To configure multiple features, separate values with |. 
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
@@ -2285,12 +2286,12 @@ topsites | newsfeed
 By default, users can change their settings on their own. Organization can manage whether the New Tab Page layout can be changed by users.
 
 - true (default) = Users can change the page layout settings
-- false = Users cannot change the page layout settings. The page layout is determined by the values specified via the policy or default values will be used
+- false = Users can't change the page layout settings. The page layout is determined by the values specified via the policy or default values are used
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
@@ -2323,7 +2324,7 @@ false
 
 #### Description
 
-By default, Edge for iOS and Android starts in shared device mode when the devices are enrolled with shared device mode. You can disable shared device mode even in shared devices.
+By default, Microsoft Edge for iOS and Android starts in shared device mode when the devices are enrolled with shared device mode. You can disable shared device mode even in shared devices.
 
 EdgeSharedDeviceSupportEnabled:
 
@@ -2332,8 +2333,8 @@ EdgeSharedDeviceSupportEnabled:
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -2375,7 +2376,7 @@ Setting the policy configures the proxy settings for Chrome and ARC-apps, which 
 
 Leaving the policy unset lets users choose their proxy settings.
 
-Setting the ProxySettings policy accepts the following fields: * ProxyMode, which lets you specify the proxy server Microsoft Edge uses and prevents users from changing proxy settings * ProxyPacUrl, a URL to a proxy .pac file * ProxyPacMandatory, which prevents the network stack from falling back to direct connections with invalid or unavailable PAC script * ProxyServer, a URL of the proxy server * ProxyBypassList, a list of hosts for which the proxy will be bypassed
+Setting the ProxySettings policy accepts the following fields: * ProxyMode, which lets you specify the proxy server Microsoft Edge uses and prevents users from changing proxy settings * ProxyPacUrl, a URL to a proxy.pac file * ProxyPacMandatory, which prevents the network stack from falling back to direct connections with invalid or unavailable PAC script * ProxyServer, a URL of the proxy server * ProxyBypassList, a list of hosts for which the proxy will be bypassed
 
 The ProxyServerMode field is deprecated in favor of the ProxyMode field.
 
@@ -2416,6 +2417,38 @@ ProxySettings = {
 
 [Back to top](#microsoft-edge-mobile---policies)
 
+### BiometricAuthenticationBeforeFilling
+
+#### Enable device authentication for password autofill
+
+#### Supported on:
+- Microsoft Edge (Android) since version 135
+
+#### Description  
+This policy controls whether users must authenticate with their device password, biometric authentication, or PIN before autofilling saved passwords in web forms.
+
+Setting the policy to **Enabled** means that Microsoft Edge will always require biometric authentication (such as fingerprint, face unlock) or PIN before autofilling saved passwords. Users cannot disable this in Microsoft Edge on Android.
+
+Setting the policy to **Disabled** or not configured means that users can choose whether or not to require biometric or PIN authentication before autofill. By default, the setting is off.
+
+This policy adds an extra layer of privacy by ensuring that only authorized users can use stored credentials.
+
+**true** = Require biometric or PIN before autofill  
+**false** = Biometric or PIN optional before autofill
+
+#### Supported features:
+- Dynamic Policy Refreshes: Yes  
+- Per Profile: Yes  
+- Can Be Recommended: Yes
+
+#### Data Type:
+- Android: Boolean 
+
+#### Android restriction name:
+```
+BiometricAuthenticationBeforeFilling
+```
+
 ### PasswordManagerEnabled
 
 #### Enable saving passwords to the password manager
@@ -2439,15 +2472,15 @@ If the policy is set, users can't change it in Microsoft Edge. If not set, the u
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2481,7 +2514,7 @@ Triggers an action when the computer is idle.
 
 If this policy is set, it specifies the length of time without user input (in minutes) before the browser runs actions configured via the IdleTimeoutActions policy.
 
-If this policy is not set, no action will be ran.
+If this policy isn't set, no action is ran.
 
 The minimum threshold is 1 minute.
 
@@ -2489,8 +2522,8 @@ The minimum threshold is 1 minute.
 
 #### Supported features
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
 
 #### Data type
 
@@ -2605,16 +2638,16 @@ Leaving the policy unset allows no exceptions to URLBlocklist.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -2668,16 +2701,16 @@ Note: Blocking internal edge://* can lead to unexpected errors or may be circumv
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:String
+Android: String
 
-iOS:String
+iOS: String
 
 #### Android and iOS restriction name:
 
@@ -2737,14 +2770,14 @@ Setting the policy to Disabled prevent users from clicking through any warning p
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2778,14 +2811,14 @@ A URL pattern follows this format (https://go.microsoft.com/fwlink/?linkid=20953
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -2828,14 +2861,14 @@ Leaving the policy unset means that if certificates requiring disclosure through
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 List of strings
 
-Android:string
+Android: string
 
 #### Android restriction name:
 
@@ -2866,7 +2899,7 @@ CertificateTransparencyEnforcementDisabledForCas
 
 #### Description
 
-Setting the policy to Enabled means browsing history is not saved, tab syncing is off and users can't change this setting.
+Setting the policy to Enabled means browsing history isn't saved, tab syncing is off and users can't change this setting.
 
 Setting the policy to Disabled or leaving it unset saves browsing history.
 
@@ -2875,14 +2908,14 @@ Setting the policy to Disabled or leaving it unset saves browsing history.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2914,22 +2947,22 @@ Setting the policy to True turns on search suggestions in Microsoft Edge's addre
 
 Suggestions based on bookmarks or history are unaffected by the policy.
 
-If you set the policy, users can't change it. If not set, search suggestions are on at first, but users can turn them off any time.
+If you set the policy, users can't change it. If not set, search suggestions are on at first, but users can turn them off anytime.
 
 - true = Enable search suggestions
 - false = Disable search suggestions
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refreshes : Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -2967,15 +3000,15 @@ If you set the policy, users can't change this function. Leaving it unset lets t
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
-- Can Be Recommended : Yes
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Can Be Recommended: Yes
 
 #### Data Type:
 
 Android:Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -3009,7 +3042,7 @@ If 'Enabled' is selected or the policy is left unset, pages may be opened in InP
 
 If 'Disabled' is selected, pages will not be opened in InPrivate mode.
 
-If 'Forced' is selected, pages will be opened ONLY in InPrivate mode.
+If 'Forced' is selected, pages are opened ONLY in InPrivate mode.
 
 Note: On iOS, if the policy is changed during a session, it will only take effect on relaunch.
 
@@ -3019,15 +3052,15 @@ Note: On iOS, if the policy is changed during a session, it will only take effec
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
+- Dynamic Policy Refreshes : Yes
 
-- Per Profile : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
 Android:Integer
 
-iOS:Integer
+iOS: Integer
 
 [Back to top](#microsoft-edge-mobile---policies)
 
@@ -3052,12 +3085,12 @@ If you don't configure this setting, users can choose whether to use Microsoft D
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes : Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 iOS: Boolean
 
 [Back to top](#microsoft-edge-mobile---policies)
@@ -3072,26 +3105,26 @@ Microsoft Edge (Android) since version 118
 
 #### Description:
 
-When this policy is set to enabled, Microsoft Edge will perform verification of server certificates using the built-in certificate verifier with the Microsoft Root Store as the source of public trust.
+When this policy is set to be enabled, Microsoft Edge performs verification of server certificates using the built-in certificate verifier with the Microsoft Root Store as the source of public trust.
 
-When this policy is set to disabled, Microsoft Edge will use the system certificate verifier and system root certificates.
+When this policy is set to disabled, Microsoft Edge uses the system certificate verifier and system root certificates.
 
-When this policy is not set, the Microsoft Root Store or system provided roots may be used.
+When this policy isn't set, the Microsoft Root Store or system provided roots may be used.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : No
-- Per Profile : No
+- Dynamic Policy Refreshes: No
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
 #### Android restriction name:
 
 MicrosoftRootStoreEnabled
 
-##### Example value :
+##### Example value:
 
 ```
 true
@@ -3115,13 +3148,13 @@ Setting the policy sets up a list of bookmarks where each one is a dictionary wi
 
 These keys hold the bookmark's name and target. Admins can set up a subfolder by defining a bookmark without a "url" key, but with an additional "children" key. This key also has a list of bookmarks, some of which can also be folders. Microsoft Edge amends incomplete URLs as if they were submitted through the address bar. For example, "microsoft.com" becomes `https://microsoft.com/`.
 
-Users can't change the folders the bookmarks are placed in (though they can hide it from the bookmark bar). The default folder name for managed bookmarks is "Managed bookmarks" but it can be changed by adding a new sub-dictionary to the policy with a single key named "toplevel_name" with the desired folder name as its value. Managed bookmarks are not synced to the user account and extensions can't modify them.
+Users can't change the folders the bookmarks are placed in (though they can hide it from the bookmark bar). The default folder name for managed bookmarks is "Managed bookmarks" but it can be changed by adding a new sub-dictionary to the policy with a single key named "toplevel_name" with the desired folder name as its value. Managed bookmarks aren't synced to the user account and extensions can't modify them.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
+- Dynamic Policy Refreshes: Yes
 
-- Per Profile : Yes
+- Per Profile: Yes
 
 #### Data Type:
 
@@ -3238,7 +3271,7 @@ If you set this policy to 'FullMode', the full payload is downloaded from the Ex
 
 If you set this policy to 'ConfigurationsOnlyMode', only the configuration payload is downloaded.
 
-If you set this policy to 'RestrictedMode', the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
+If you set this policy to 'RestrictedMode', the communication with the Experimentation and Configuration Service is stopped completely. Microsoft doesn't recommend this setting.
 
 If you don't configure this policy on a managed device, the behavior on Beta and Stable channels is the same as the 'ConfigurationsOnlyMode'. On Canary and Dev channels the behavior is the same as 'FullMode'.
 
@@ -3256,15 +3289,15 @@ Use the preceding information when configuring this policy.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
+- Dynamic Policy Refreshes: Yes
 
-- Per Profile : No
+- Per Profile: No
 
 #### Data Type:
 
-Android:Integer
+Android: Integer
 
-iOS:Integer
+iOS: Integer
 
 #### Android and iOS restriction name:
 
@@ -3292,19 +3325,19 @@ ExperimentationAndConfigurationServiceControl
 
 #### Description
 
-If you enable this policy, the First-run experience will not be shown to users when they run Microsoft Edge for the first time.
-If you disable or don't configure this policy, the First-run experience will be shown.
+If you enable this policy, the First-run experience won't be shown to users when they run Microsoft Edge for the first time.
+If you disable or don't configure this policy, the First-run experience is shown.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 ####  Android and iOS restriction name:
 
@@ -3329,19 +3362,19 @@ true
 #### Description
 
 If you set this policy to True, Microsoft Edge always checks whether it's the default browser on startup and, if possible, automatically registers itself.
-If you set this policy to False, Microsoft Edge is stopped from ever checking if it's the default and turns user controls off for this option.
+If you set this policy to False, Microsoft Edge is stopped from ever checking if it's the default and turns off user controls for this option.
 If you don't set this policy, Microsoft Edge lets users control whether it's the default and, if not, whether user notifications should appear.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
-iOS:Boolean
+iOS: Boolean
 
 #### Android and iOS restriction name:
 
@@ -3360,7 +3393,7 @@ true
 
 ### PreventTyposquattingPromptOverride
 
-#### Prevent bypassing Edge Website Typo Protection prompts for sites
+#### Prevent bypassing Microsoft Edge Website Typo Protection prompts for sites
 
 #### Supported on:
 
@@ -3368,22 +3401,22 @@ true
 
 #### Description
 
-This policy setting lets you decide whether users can override the Edge Website Typo Protection warnings about potential typosquatting websites.
+This policy setting lets you decide whether users can override the Microsoft Edge Website Typo Protection warnings about potential typosquatting websites.
 
-If you enable this setting, users can't ignore Edge Website Typo Protection warnings and they are blocked from continuing to the site.
+If you enable this setting, users can't ignore Microsoft Edge Website Typo Protection warnings and they're blocked from continuing to the site.
 
-If you disable or don't configure this setting, users can ignore Edge Website Typo Protection warnings and continue to the site.
+If you disable or don't configure this setting, users can ignore Microsoft Edge Website Typo Protection warnings and continue to the site.
 
-This will only take effect when TyposquattingCheckerEnabled policy is not set or set to enabled.
+This will only take effect when TyposquattingCheckerEnabled policy isn't set or set to enabled.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : No
+- Dynamic Policy Refreshes: Yes
+- Per Profile: No
 
 #### Data Type:
 
-Android:Boolean
+Android: Boolean
 
 #### Android restriction name:
 
@@ -3401,7 +3434,7 @@ true
 
 ### TyposquattingAllowListDomains
 
-#### Configure the list of domains for which Edge Website Typo Protection won't trigger warnings
+#### Configure the list of domains for which Microsoft Edge Website Typo Protection won't trigger warnings
 
 #### Supported on:
 
@@ -3410,17 +3443,17 @@ true
 
 #### Description
 
-Configure the list of Edge Website Typo Protection trusted domains. This means: Edge Website Typo Protection won't check for potentially malicious typosquatting websites.
+Configure the list of Microsoft Edge Website Typo Protection trusted domains. This means: Microsoft Edge Website Typo Protection won't check for potentially malicious typosquatting websites.
 
-If you enable this policy, Edge Website Typo Protection trusts these domains. 
+If you enable this policy, Microsoft Edge Website Typo Protection trusts these domains. 
 If you disable or don't set this policy, default Edge Website Typo Protection protection is applied to all resources.
 
-This will only take effect when TyposquattingCheckerEnabled policy is not set or set to enabled.
+This will only take effect when TyposquattingCheckerEnabled policy isn't set or set to enabled.
 
 #### Supported features:
 
-- Dynamic Policy Refresh : Yes
-- Per Profile : Yes
+- Dynamic Policy Refreshes: Yes
+- Per Profile: Yes
 
 #### Data Type:
 
