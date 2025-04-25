@@ -1,5 +1,5 @@
 ---
-title: "Ping Identity"
+title: "PingOne DaVinci"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -10,10 +10,10 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ms.custom: generated
-description: "Ping"
+description: "PingOne"
 ---
 
-# Set up PingOne DaVinci Connector
+# Set up a PingOne DaVinci Connector
 
 The Microsoft Edge for Business connector lets you use Microsoft Edge for Business to improve authentication security in your PingOne DaVinci flow.
 
