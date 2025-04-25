@@ -48,20 +48,14 @@ The following signals are sent to the IDP during the device trust flow:
 | Site Isolation Enabled                 | Browser Information    | Whether site isolation is enabled in the browser                 |
 | Password Protection Warning Trigger    | Security Features      | A warning triggered for password-related protections             |
 
-## Set up a Device Trust Connector
-
-Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-
-Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
-
 ## Device Trust Providers
 
 | Connector         | Documentation Link                                                                 |
 |-------------------|-------------------------------------------------------------------------------------|
 | Cisco Duo   | [Set up a Cisco Duo Device Trust Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |    
-| RSA               | [Set up a RSA Device Trust Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-rsa?branch=pr-en-us-5295)                 |
+| RSA               | [Set up a RSA Device Trust Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connehttps://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295ctors-rsa?branch=pr-en-us-5295)                 |
 | Omnissa              | [Set up an Omnissa Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
 | Ping Identity     | [Set up a Ping Identity Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295) |  
-
+|HYPR     | [Set up a HYPR Identity Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-hypr?branch=pr-en-us-5295) |  
 
 

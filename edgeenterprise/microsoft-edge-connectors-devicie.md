@@ -50,6 +50,8 @@ Once setup is complete, browser telemetry — including health indicators, exten
 ## Configure the Connector in the Edge Management Service
 
 1. Navigate to [Microsoft Admin Center](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors).
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 
 2. Under **Discover Connectors**, find the **Devicie Reporting Connector** and select **Set up**.
 

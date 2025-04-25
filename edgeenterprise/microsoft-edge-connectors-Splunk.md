@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge Splunk"
+title: "Splunk"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -24,6 +24,8 @@ Follow the steps [here](https://docs.splunk.com/Documentation/Splunk/9.4.1/Data/
 ## Configure the Connector in the Edge Management Service
 
 1. Navigate to [Microsoft Admin Center](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors).
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 
 2. Under **Discover Connectors**, find the **Splunk Reporting Connector** and select **Set up**.
 
@@ -34,9 +36,11 @@ Follow the steps [here](https://docs.splunk.com/Documentation/Splunk/9.4.1/Data/
    - **Port**
    - **Token ID**
 
+   **Note:** Only enter your domain name, not the full path to your Splunk HEC. Adding the full path will result in an error because the `services/collector/event` portion is appended programmatically. 
+
 5. Select **Test Connection** to confirm the Connection is successful.
 
-6. Under **User & Browser events**, select the desired browser events to be sent to the Devicie endpoint.
+6. Under **User & Browser events**, select the desired browser events to be sent to the Splunk endpoint.
 
 7. Select the desired **Optional events** and **Devices events**.
 

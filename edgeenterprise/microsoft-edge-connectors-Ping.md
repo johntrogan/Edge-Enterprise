@@ -69,6 +69,8 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
 ## Configure the Connector in the Edge Management Service
 
 1. Sign on to **Microsoft 365 admin center**.
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 2. Navigate to the **Microsoft Edge configuration**.
 3. Navigate to the **Connectors** tab and click **Set up** under the **Ping Identity Device Trust** feature.
 4. In the right panel put in the following PingOne DaVinci domains:
@@ -78,7 +80,7 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
    - auth.pingone.asia
    - auth.pingone.au
 
-![screenshot3 hypr edge API.](media/microsoft-edge-connectors-ping/3.png) 
+<!--[screenshot3 hypr edge API.](media/microsoft-edge-connectors-ping/3.png) -->
 
 5. Click **Save Configuration**
 

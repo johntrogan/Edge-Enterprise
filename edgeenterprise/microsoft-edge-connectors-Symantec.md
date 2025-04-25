@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Symantec"
 ---
 
-# Set up a Symantec Connector
+# Set up a Symantec DLP Connector
 
 Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted or printed from the web.  
 
@@ -21,6 +21,8 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 
 2. **Discover the Connector**  
    Under **Discover Connectors**, locate the **Symatec DLP Connector** and select **Set up**.

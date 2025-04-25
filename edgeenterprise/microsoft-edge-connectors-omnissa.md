@@ -19,19 +19,19 @@ Device Trust Connector in Edge for Business signals make it possible to verify t
 
  The verification of unmanaged devices prior to granting access to apps and resources is  simplified via the Omnissa integration within the Microsoft Trust Connector in  Edge for Business and an authentication adapter within Omnissa Access. Within  Omnissa Access, Device conditional access rules can be created that require specific device  signal criteria to be met. 
 
- You can configure Microsoft Edge for Business Device Signals as an authentication  factor in Omnissa Access to support authentication for managed profiles on Windows  devices. You enable and configure the adapter in the Omnissa Access console to  retrieve device-level signals from the Edge browser. Users can sign in to Omnissa  Access from an Edge browser with a managed profile on a Windows machine. 
+ You can configure Microsoft Edge for Business Device Signals as an authentication  factor in Omnissa Access to support authentication for managed policy on Windows  devices. You enable and configure the adapter in the Omnissa Access console to  retrieve device-level signals from the Edge browser. Users can sign in to Omnissa  Access from an Edge browser with a managed policy on a Windows machine. 
 
  The Edge for Business Device Signals authentication is based on the device signal  attributes that you enable when you configure the adapter in the Omnissa Access  console. You must also integrate Omnissa Access with the Microsoft Edge Device Trust  connector in the Microsoft Edge management service console. After completing the  setup in both the Omnissa and Microsoft consoles, you configure access policy rules in  the Omnissa Access console. 
  
  When users use the Edge browser to sign in, after their initial credentials are  authenticated, the second-factor authentication through Edge checks the device  security status based on the device signal attributes that you configured. Omnissa  Access retrieves the signal status from the Edge integration. 
- Edge for Business Device Signals authentication is available for users running the Edge  browser with a managed profile on Windows devices. 
+ Edge for Business Device Signals authentication is available for users running the Edge  browser with a managed policy on Windows devices. 
  
  **Note : This authentication method is not available for managed browsers.**
 
 ## Prerequisites
 - Omnissa Access SaaS tenant
 - Microsoft Entra tenant ID
-- Managed profiles
+- Managed policy files
 - Subscription plan:
   - Education: Microsoft 365 A3, A5
   - Business: Microsoft 365 Business Standard, Premium
@@ -51,7 +51,7 @@ Device Trust Connector in Edge for Business signals make it possible to verify t
 | URLs matcher to trigger Microsoft Edge inline flow | Copy and save this URL for use in the Edge management service |
 | IDP Service Principal | Copy and save this value for the Edge management service |
 | Microsoft Tenant ID | Enter your Microsoft Entra ID tenant ID |
-| Allow access if not a managed Microsoft Edge browser | This setting is deactivated by default to prevent access from browsers without a managed profile. Activating this setting is not recommended. If support for unmanaged browsers is required, configure an alternative authentication method that provides strong validation as fallback. |
+| Allow access if not a managed Microsoft Edge browser | This setting is deactivated by default to prevent access from browsers without a managed policy. Activating this setting is not recommended. If support for unmanaged browsers is required, configure an alternative authentication method that provides strong validation as fallback. |
 | Verify device's disk encryption status | Enable this setting to require device disk encryption. When multiple options are selected, validation uses OR logic. <br> • **Encrypted**: Main disk must be encrypted. <br> • **Encrypted \| Unspecified**: Main disk is encrypted or Edge did not send the signal. <br> • **Encrypted \| Unknown**: Main disk is encrypted or Edge could not evaluate the state. <br> • **Encrypted \| Unspecified \| Unknown**: Any of the above conditions is valid. |
 | Verify device's firewall status       | Enable this setting to require a firewall. Validation passes if any selected condition is met. <br> • **Enabled**: Firewall is enabled. <br> • **Enabled \| Unspecified**: Firewall is enabled or Edge did not send the signal. <br> • **Enabled \| Unknown**: Firewall is enabled or Edge could not determine the status. <br> • **Enabled \| Unspecified \| Unknown**: Any of the above conditions is valid. |
 | Verify device's screen lock status   | Enable this setting to require screen lock with a password. Validation passes if any selected condition is met. <br> • **Enabled**: Screen lock is enabled. <br> • **Enabled \| Unspecified**: Screen lock is enabled or Edge did not send the signal. <br> • **Enabled \| Unknown**: Screen lock is enabled or Edge could not determine the status. <br> • **Enabled \| Unspecified \| Unknown**: Any of the above conditions is valid. |
@@ -71,6 +71,8 @@ The Microsoft Edge Device Trust Connector must be configured to receive signals 
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 
 2. **Discover the Connector**  
    Under **Discover Connectors**, locate the **Omnissa Device Trust Connector** and select **Set up**.

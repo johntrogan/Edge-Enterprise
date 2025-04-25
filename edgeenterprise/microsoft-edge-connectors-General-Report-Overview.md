@@ -36,12 +36,6 @@ The following security events can be enabled in a reporting Connector:
 | Login                     | A sign-in to a domain in the specified list is successful.                                           |
 | Password breach           | A password is detected as compromised as part of a known data breach.                               |
 
-## Set Up a Reporting Connector
-
-Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration profile](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-
-Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
- 
 
 ## Reporting Providers
 
