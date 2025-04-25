@@ -154,7 +154,7 @@
          href: microsoft-edge-connectors-General-Report-Overview.md
        - name: Splunk
          href: microsoft-edge-connectors-Splunk.md
-       - name: Crowdstrike
+       - name: CrowdStrike
          href: microsoft-edge-connectors-crowdstrike.md
        - name: Devicie
          href: microsoft-edge-connectors-devicie.md
