@@ -69,7 +69,7 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
 ## Configure the Connector in the Microsoft Edge Management Service
 
 1. Sign on to **Microsoft 365 admin center**.
-   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service?branch=pr-5295).
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service).
    - Once you have at least one configuration policy created, visit [the Connectors page in the Microsoft Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Microsoft Edge Management Service.
 2. Navigate to the **Microsoft Edge configuration**.
 3. Navigate to the **Connectors** tab and select **Set up** under the **Ping Identity Device Trust** feature.
