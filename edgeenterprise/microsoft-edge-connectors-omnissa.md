@@ -15,7 +15,7 @@ description: "Omnissa"
 
 # Set up an Omnissa Device Trust Connector 
 
-Device Trust Connector in Edge for Business signals make it possible to verify the  posture of an unmanaged device or a third-party managed device prior to allowing  access to company resources. A managed Edge web browser can collect information  about the security posture of a device and share it with Omnissa Access so that a  posture-informed access decision can be made in real time. 
+Edge for Business Device Trust Connector signals make it possible to verify the  posture of an unmanaged device or a third-party managed device prior to allowing  access to company resources. A managed Edge web browser can collect information  about the security posture of a device and share it with Omnissa Access so that a  posture-informed access decision can be made in real time. 
 
  The verification of unmanaged devices prior to granting access to apps and resources is  simplified via the Omnissa integration within the Microsoft Trust Connector in  Edge for Business and an authentication adapter within Omnissa Access. Within  Omnissa Access, Device conditional access rules can be created that require specific device  signal criteria to be met. 
 
