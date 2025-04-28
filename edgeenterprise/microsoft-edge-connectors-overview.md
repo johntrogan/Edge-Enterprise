@@ -27,13 +27,13 @@ Edge for Business supports a wide range of security providers, offering key cont
 
 Edge for Business supports three different connector types. 
 
-### [Device Trust](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-general-device-trust-overview?branch=pr-en-us-5295)
+### [Device Trust](/deployedge/microsoft-edge-connectors-general-device-trust-overview?branch=pr-en-us-5295)
 Integrate your preferred identity management tools with Edge for Business to easily verify device trustworthiness and safeguard access to your critical applications.
 
-### [Data Loss Prevention](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-data-loss-prevention-overview?branch=pr-en-us-5295)
+### [Data Loss Prevention](/deployedge/microsoft-edge-connectors-data-loss-prevention-overview?branch=pr-en-us-5295)
 Protect your organization's sensitive data by integrating your preferred data loss prevention solution into Edge for Business.
 
-### [Reporting](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-general-report-overview?branch=pr-en-us-5295)
+### [Reporting](/deployedge/microsoft-edge-connectors-general-report-overview?branch=pr-en-us-5295)
 Gain insights into browser-based security events with a direct connection between Edge for Business and your preferred security solution.
 
 ---
@@ -43,7 +43,7 @@ Gain insights into browser-based security events with a direct connection betwee
 - Microsoft Edge version 135.0.3179.85 or greater installed  
 - Microsoft Edge Administrator permissions in Microsoft 365 Admin Center  
 - Supported operating systems: Windows 10/11 or Windows Server 2016 or later  
-  - [See Microsoft Edge Supported Operating Systems for details](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-supported-operating-systems?branch=pr-en-us-5295)  
+  - [See Microsoft Edge Supported Operating Systems for details](/deployedge/microsoft-edge-supported-operating-systems?branch=pr-en-us-5295)  
 
 ## Access the Edge Management Service
 

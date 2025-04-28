@@ -52,10 +52,10 @@ The following signals are sent to the IDP during the device trust flow:
 
 | Connector         | Documentation Link                                                                 |
 |-------------------|-------------------------------------------------------------------------------------|
-| Cisco Duo   | [Set up a Cisco Duo Device Trust Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |    
-| RSA               | [Set up a RSA Device Trust Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connehttps://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295ctors-rsa?branch=pr-en-us-5295)                 |
-| Omnissa              | [Set up an Omnissa Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
-| Ping Identity     | [Set up a Ping Identity Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295) |  
-|HYPR     | [Set up a HYPR Identity Trust Device Connector](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-hypr?branch=pr-en-us-5295) |  
+| Cisco Duo   | [Set up a Cisco Duo Device Trust Connector](/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |    
+| RSA               | [Set up a RSA Device Trust Connector](/deployedge/microsoft-edge-connehttps://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295ctors-rsa?branch=pr-en-us-5295)                 |
+| Omnissa              | [Set up an Omnissa Trust Device Connector](/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
+| Ping Identity     | [Set up a Ping Identity Trust Device Connector](/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295) |  
+|HYPR     | [Set up a HYPR Identity Trust Device Connector](/deployedge/microsoft-edge-connectors-hypr?branch=pr-en-us-5295) |  
 
 

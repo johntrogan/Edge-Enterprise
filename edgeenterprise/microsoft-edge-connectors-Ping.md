@@ -69,7 +69,7 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
 ## Configure the Connector in the Edge Management Service
 
 1. Sign on to **Microsoft 365 admin center**.
-   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](https://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
+   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
    - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
 2. Navigate to the **Microsoft Edge configuration**.
 3. Navigate to the **Connectors** tab and click **Set up** under the **Ping Identity Device Trust** feature.
@@ -88,7 +88,7 @@ The Microsoft Edge for Business Device Trust is now configured.
 
 ## Configuring the Microsoft Edge for Business connector
 
-Add the connector in DaVinci as shown in *Adding a connector*, then configure it as follows.
+Add the connector in DaVinci then configure it as follows.
 
 ### Connector configuration
 
@@ -96,10 +96,10 @@ Add the connector in DaVinci as shown in *Adding a connector*, then configure it
   The tenant ID of your Microsoft Azure Tenant.
 
 - **Client ID**  
-  The client ID you created in *Setting up Microsoft Edge for Business*.
+  The client ID you created you created in previous steps.
 
 - **Client Secret**  
-  The client secret you created in *Setting up Microsoft Edge for Business*.
+  The client secret you created in previous steps.
 
 ## Using the connector in a flow
 
