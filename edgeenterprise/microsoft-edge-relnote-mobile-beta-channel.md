@@ -28,6 +28,32 @@ Archived versions of these release notes are available at [Archived release note
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 136.0.3240.34 (Android and iOS): April 24, 2025
+
+Fixed various bugs and performance issues, general updates, and enhancements.
+
+## General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 20.4.1
+- [iOS] Upgrade MAM Tunnel SDK to version 1.3.1
+
+## Bug fixes
+
+- [Android] Fix the issue about unintentional uploading of data from the personal profile are allowed
+- [Android] Fix the issue about inPrivate tabs still can be added in landscape mode after been disabled by policy
+- [Android] Fix the issue about the EdgeShowBottomBarInKioskMode may not work on some device
+- [iOS] Fix the issue about PacProxy incorrect redirection behavior
+- [iOS] Fix some leak issue under InPrivate Mode when setting InPrivateModeAvailability
+- [iOS & Android] Fix the issue of the EdgeRestoreBrowsingOption MDM Policy taking no effect
+
+## New enhancements
+
+- [Android] Improve the user experience when disable Print feature
+- [iOS] Improve the user experience of guided switch
+- [iOS] Support strict mode for Proactive Auth
+- [iOS] Improve the user experience of APP Proxy
+- [iOS & Android] Improve the user experience of shared device mode
+
 ## Version 136.0.3240.30 (Android and iOS): April 22, 2025
 
 Fixed various bugs and performance issues.
