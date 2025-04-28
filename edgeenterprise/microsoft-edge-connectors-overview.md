@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Overview"
 ---
 
-# Microsoft Edge for Business Connectors
+# Microsoft Edge for Business Security Connectors
 
 Microsoft Edge for Business offers seamless, native integration with your existing security solutions through Edge for Business connectors, enhancing device trust, reporting and data loss prevention capabilities.  
 
