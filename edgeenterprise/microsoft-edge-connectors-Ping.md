@@ -28,7 +28,7 @@ You can use the Microsoft Edge for Business connector to include operating syste
 For information and setup help, see these instructions:
 
 - Microsoft Edge for Business documentation  
-  https://www.microsoft.com/en-us/edge/business/?form=MA13FJ
+  https://www.microsoft.com/edge/business/?form=MA13FJ
 
 - Register an application with the Microsoft identity platform
 

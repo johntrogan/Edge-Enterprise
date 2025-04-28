@@ -41,9 +41,9 @@ The following security events can be enabled in a reporting Connector:
 
 | Connector     | Documentation Link                                                                 |
 |---------------|-------------------------------------------------------------------------------------|
-| Splunk        | [Set up a Splunk Reporting Connector](/deployedge/microsoft-edge-connectors-splunk?branch=pr-en-us-5295)        |
-| Devicie       | [Set up a Devicie Reporting Connector](/deployedge/microsoft-edge-connectors-devicie?branch=pr-en-us-5295)       |
-| Crowdstrike   | [Set up a Crowdstrike Reporting Connector](/deployedge/microsoft-edge-connectors-crowdstrike?branch=pr-en-us-5295)   |
+| Splunk        | [Set up a Splunk Reporting Connector](/deployedge/microsoft-edge-connectors-splunk)        |
+| Devicie       | [Set up a Devicie Reporting Connector](/deployedge/microsoft-edge-connectors-devicie)       |
+| Crowdstrike   | [Set up a Crowdstrike Reporting Connector](/deployedge/microsoft-edge-connectors-crowdstrike)   |
 
 
 
