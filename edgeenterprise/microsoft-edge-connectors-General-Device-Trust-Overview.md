@@ -53,7 +53,7 @@ The following signals are sent to the IDP during the device trust flow:
 | Connector         | Documentation Link                                                                 |
 |-------------------|-------------------------------------------------------------------------------------|
 | Cisco Duo   | [Set up a Cisco Duo Device Trust Connector](/deployedge/microsoft-edge-connectors-duo?branch=pr-en-us-5295) |    
-| RSA               | [Set up a RSA Device Trust Connector](/deployedge/microsoft-edge-connehttps://review.learn.microsoft.com/en-us/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295ctors-rsa?branch=pr-en-us-5295)                 |
+| RSA               | [Set up a RSA Device Trust Connector](/deployedge/microsoft-edge-connectors-rsa?branch=pr-en-us-52955)                 |
 | Omnissa              | [Set up an Omnissa Trust Device Connector](/deployedge/microsoft-edge-connectors-omnissa?branch=pr-en-us-5295)                 |
 | Ping Identity     | [Set up a Ping Identity Trust Device Connector](/deployedge/microsoft-edge-connectors-ping?branch=pr-en-us-5295) |  
 |HYPR     | [Set up a HYPR Identity Trust Device Connector](/deployedge/microsoft-edge-connectors-hypr?branch=pr-en-us-5295) |  
