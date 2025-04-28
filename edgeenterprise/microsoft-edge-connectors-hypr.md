@@ -40,7 +40,7 @@ You can find the complete steps to configure this integration in HYPR’s [Entra
 
 ### Configure Edge for Business Device Trust Integration
 
-Now that your Entra ID users are integrated with HYPR, you’ll need to configure Edge for Business for the Device Trust integration. Perform the following steps through the Entra portal using an account with proper administrative permissions.
+Now that your Entra ID users are integrated with HYPR, you need to configure Edge for Business for the Device Trust integration. Perform the following steps through the Entra portal using an account with proper administrative permissions.
 
 ## 2. Grant API Permission to the HYPR Application  
 
@@ -54,7 +54,7 @@ Now that your Entra ID users are integrated with HYPR, you’ll need to configur
 
 <!--![screenshot3 hypr edge API.](media/microsoft-edge-connectors-hypr/3.png) -->
 
-   If the Microsoft Edge management service is not listed in your environment, you’ll need to add it to your tenant. To do this, navigate to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) and sign in with your account. Once signed in, copy the provided request and execute it (App ID: ff846ae4-7ec9-42f4-8576-eb14198ad5e1). 
+   If the Microsoft Edge management service isn't listed in your environment, you need to add it to your tenant. To do this, navigate to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) and sign in with your account. Once signed in, copy the provided request and execute it (App ID: ff846ae4-7ec9-42f4-8576-eb14198ad5e1). 
 
    Make sure to grant Graph Explorer the necessary permissions under the **Modify permissions** tab. After completing these steps, the Microsoft Edge management service should appear in your tenant. 
 
