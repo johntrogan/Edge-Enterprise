@@ -30,5 +30,5 @@ The following user actions can send content to the Data Loss Prevention Connecto
 
 | Connector         | Documentation Link                                                                 |
 |-------------------|-------------------------------------------------------------------------------------|
-| Symantec DLP   | [Set up a Symantec DLP Data Loss Connector](/deployedge/microsoft-edge-connectors-symantec?branch=pr-en-us-52955) |    
+| Symantec DLP   | [Set up a Symantec DLP Data Loss Connector](/deployedge/microsoft-edge-connectors-symantec) |    
 
