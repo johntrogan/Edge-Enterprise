@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Splunk"
 ---
 
-# Set up a Splunk Connector Overview
+# Set up a Splunk Connector
 
 Integrating Splunk with Edge for Business enables organizations to better collect, analyze, and extract insights from security events. Send browser events directly to Splunk for more visibility across managed browsers to make better-informed security decisions.  
 
