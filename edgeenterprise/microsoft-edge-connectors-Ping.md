@@ -25,7 +25,7 @@ You can use the Microsoft Edge for Business connector to include operating syste
 
 ### Resources
 
-For information and setup help, see the following:
+For information and setup help, see these instructions:
 
 - Microsoft Edge for Business documentation  
   https://www.microsoft.com/en-us/edge/business/?form=MA13FJ
@@ -39,7 +39,7 @@ For information and setup help, see the following:
 
 ## Requirements
 
-To use the Microsoft Edge for Business PingOne DaVinci connector you must have access to register an application through Microsoft Entra and assigning it the required Device Trust permissions. As well, access to the Microsoft 365 admin center is required to configure the Edge for Business Policies.
+To use the Microsoft Edge for Business PingOne DaVinci connector, you must have access to register an application through Microsoft Entra and assigning it the required Device Trust permissions. As well, access to the Microsoft 365 admin center is required to configure the Microsoft Edge for Business Policies.
 
 ### Setting up Azure App Registration
 
@@ -51,28 +51,28 @@ To use the Microsoft Edge for Business PingOne DaVinci connector you must have a
    - Configure the required permissions on the newly created App Registration to give the application permissions to access the Device Trust API.
    - Search for the **Microsoft Edge management service** in the *APIs my organization uses* tab.
    - Select **Application permissions** and add the `DeviceTrust.Read.All` permission.
-   - Once added, click the **Grant admin consent** confirmation.
-   - Click **Register**.
+   - Once added, select the **Grant admin consent** confirmation.
+   - Select **Register**.
 
-On your app’s Overview page, note the **Application (client) ID** and **Directory (tenant) ID**. You’ll use these in the connector configuration.
+On your app’s Overview page, note the **Application (client) ID** and **Directory (tenant) ID**. You use these items in the connector configuration.
 
 ![screenshot1 hypr edge API.](media/microsoft-edge-connectors-ping/1.png) 
 
 ### Create a client secret:
 
-- Under Manage, click **Certificates & secrets**. On the *Client secrets* tab, click **New client secret**.
-- Enter a name and select an expiry time. Click **Add**.
-- Note the **Value** of the secret. You’ll use this in the connector configuration.  
+- Under Manage, select **Certificates & secrets**. On the *Client secrets* tab, select **New client secret**.
+- Enter a name and select an expiry time. Select **Add**.
+- Note the **Value** of the secret. You use this item in the connector configuration.  
 
 ![screenshot2 hypr edge API.](media/microsoft-edge-connectors-ping/2.png) 
 
-## Configure the Connector in the Edge Management Service
+## Configure the Connector in the Microsoft Edge Management Service
 
 1. Sign on to **Microsoft 365 admin center**.
    -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Microsoft Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Microsoft Edge Management Service.
 2. Navigate to the **Microsoft Edge configuration**.
-3. Navigate to the **Connectors** tab and click **Set up** under the **Ping Identity Device Trust** feature.
+3. Navigate to the **Connectors** tab and select **Set up** under the **Ping Identity Device Trust** feature.
 4. In the right panel put in the following PingOne DaVinci domains:
    - auth.pingone.com
    - auth.pingone.ca
@@ -82,7 +82,7 @@ On your app’s Overview page, note the **Application (client) ID** and **Direct
 
 <!--[screenshot3 hypr edge API.](media/microsoft-edge-connectors-ping/3.png) -->
 
-5. Click **Save Configuration**
+5. Select **Save Configuration**
 
 The Microsoft Edge for Business Device Trust is now configured.
 
@@ -96,7 +96,7 @@ Add the connector in DaVinci then configure it as follows.
   The tenant ID of your Microsoft Azure Tenant.
 
 - **Client ID**  
-  The client ID you created you created in previous steps.
+  The client ID you created in previous steps.
 
 - **Client Secret**  
   The client secret you created in previous steps.
@@ -107,7 +107,7 @@ Add the connector in DaVinci then configure it as follows.
 
 The Device Trust capability allows PingOne DaVinci to receive the Microsoft Edge for Business Device Signals which include the device attributes such as Serial Number, MAC Addresses, and Hostname. Also, the CrowdStrike agent ID is included if the CrowdStrike agent is installed.
 
-See below for an example of a PingOne DaVinci flow which blocks access to users who are not using the expected Microsoft Edge for Business enrolled browser:
+See for an example of a PingOne DaVinci flow which blocks access to users who aren't using the expected Microsoft Edge for Business enrolled browser:
 
 ![screenshot4 hypr edge API.](media/microsoft-edge-connectors-ping/4.png) 
 

@@ -36,7 +36,7 @@ Follow the steps [here](https://docs.splunk.com/Documentation/Splunk/9.4.1/Data/
    - **Port**
    - **Token ID**
 
-   **Note:** Only enter your domain name, not the full path to your Splunk HEC. Adding the full path will result in an error because the `services/collector/event` portion is appended programmatically. 
+   **Note:** Only enter your domain name, not the full path to your Splunk HEC. Adding the full path results in an error because the `services/collector/event` portion is appended programmatically. 
 
 5. Select **Test Connection** to confirm the Connection is successful.
 
@@ -48,4 +48,4 @@ Follow the steps [here](https://docs.splunk.com/Documentation/Splunk/9.4.1/Data/
 
 ## See the Events in Splunk
 
-Once you have set up the HTTP event collector and have configured the connector in the Edge Management Service, you will start to see the events show up in Splunk.
+Once you have set up the HTTP event collector and have configured the connector in the Microsoft Edge Management Service, you'll start to see the events show up in Splunk.

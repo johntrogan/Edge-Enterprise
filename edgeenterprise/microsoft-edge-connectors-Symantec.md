@@ -15,20 +15,20 @@ description: "Symantec"
 
 # Set up a Symantec DLP Connector
 
-Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted or printed from the web.  
+Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted, or printed from the web.  
 
-## Configure the Connector in the Edge Management Service
+## Configure the Connector in the Microsoft Edge Management Service
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
    -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Microsoft Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Microsoft Edge Management Service.
 
 2. **Discover the Connector**  
    Under **Discover Connectors**, locate the **Symatec DLP Connector** and select **Set up**.
 
 3. **Select a Policy**  
-   In the **Choose policy** field, select a policy appropriate for your connector configuration.
+   In the **Chosen policy** field, select a policy appropriate for your connector configuration.
 
 4. **Enable data loss prevention for browser actions**  
    **Select** the user actions you want to be scanned by Symantec’s DLP agent. 

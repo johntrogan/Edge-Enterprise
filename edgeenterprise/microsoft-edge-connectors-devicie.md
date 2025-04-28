@@ -15,7 +15,7 @@ description: "Devicie"
 
 # Set up a Devicie Connector
 
-Devicie extends the power of Microsoft Intune by automating policy enforcement, compliance, and security configurations across managed devices. Designed for MSPs and enterprises, Devicie eliminates manual processes, ensuring endpoints remain secure, up-to-date, and aligned with organizational policies. With multi-tenant automation and hyperautomation capabilities, organizations can efficiently scale their endpoint management while maintaining a seamless user experience. 
+Devicie extends the power of Microsoft Intune by automating policy enforcement, compliance, and security configurations across managed devices. For Managed Service Providers and Enterprises, Devicie eliminates manual processes, ensuring endpoints remain secure, up-to-date, and aligned with organizational policies. With multitenant automation and hyperautomation capabilities, organizations can efficiently scale their endpoint management while maintaining a seamless user experience. 
 
 ## Benefits for Administrators
 
@@ -45,17 +45,17 @@ In the **settings tab**, locate your **endpoint name** and **reporting k
 Use the retrieved endpoint name and key to configure the Devicie Connector within the Microsoft Edge for Business portal.
 
   4. **Validate integration**  
-Once setup is complete, browser telemetry — including health indicators, extensions, and user behavior — will automatically populate in your Devicie Browser Health dashboard.
+Once setup is complete, browser telemetry—including health indicators, extensions, and user behavior will populate automatically in your Devicie Browser Health dashboard.
 
-## Configure the Connector in the Edge Management Service
+## Configure the Connector in the Microsoft Edge Management Service
 
 1. Navigate to [Microsoft Admin Center](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors).
    -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service?branch=pr-en-us-5295).
-   - Once you have at least one configuration policy created, visit [the Connectors page in the Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Edge Management Service.
+   - Once you have at least one configuration policy created, visit [the Connectors page in the Microsoft Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Microsoft Edge Management Service.
 
 2. Under **Discover Connectors**, find the **Devicie Reporting Connector** and select **Set up**.
 
-3. In the **Choose policy** field, select a policy for your Connector configuration.
+3. In the **Chosen policy** field, select a policy for your Connector configuration.
 
 4. Enter the following fields:
    - **Host address**
