@@ -26,9 +26,11 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 Fixed various bugs and performance issues.
 
+- Find your Edge profile in the toolbar. With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we have moved the Profile pill to the toolbar. It will also appear as a minimized icon only, without a text label, by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Update as of Microsoft Edge version 136.0.3240.45:**  Companies with organization branding changes configured through the Edge management service will experience these Profile pill changes.
+
 ## Version 136.0.3240.37: April 25, 2025
 
-Fixed various bugs and performance issues.
+Fixed various bugs and performance issues and policy updates.
 
 ### Fixes
 
