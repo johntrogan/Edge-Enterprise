@@ -48,7 +48,7 @@ Fixed various bugs and performance issues, general updates, bug fixes, enhanceme
 ### Bug fixes
 
 - [iOS] Fix managed bookmarks dismiss under AAD account (without "XXX's Favorites" folder under favorites)
-- [iOS] Fix downloaded files not properly moved in work profile
+- [iOS] Fix downloaded files not properly moved in work profile mode
 - [iOS] Fix a bug related to MAM Tunnel can't be disconnected automatically when change to personal account
 - [iOS] Fix disableFeatures policy - InPrivate mode disablement bug & support policy auto change
 (The problem is when set `com.microsoft.intune.mam.managedbrowser.disabledFeatures='inprivate'`, the InPrivate mode can still be accessed, and the corresponding toolbar button remains functional. Expects the policy to support dynamic switching without needing to restart Microsoft Edge. When the policy disables InPrivate mode, the application should automatically exit InPrivate mode and close all open InPrivate tabs)
