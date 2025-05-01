@@ -53,7 +53,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - **Rework of Work Feed on Edge New Tab Page (NTP).** The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid-April 2025, users will have an updated My Feed experience rolling out on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
  
 
-  New tab page policies continue to be enforced and not impacted by this updated Work Feed experience. For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and The ['Work feed' tab in Microsoft Edge.](/office/use-the-work-tab-on-the-microsoft-edge-home-page-db32c45f-7f35-479d-b4a8-f015b55333dc) 
+  New tab page policies continue to be enforced and not impacted by this updated Work Feed experience. For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and The ['Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/use-the-work-tab-on-the-microsoft-edge-home-page-db32c45f-7f35-479d-b4a8-f015b55333dc) 
 
  
 
