@@ -96,22 +96,23 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 #### New policies
 
-- [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) - Enable Microsoft Bing trending suggestions in the address bar
-- [NewTabPageCompanyLogoBackplateColor](/deployedge/microsoft-edge-policies#newtabpagecompanylogobackplatecolor) - Set the company logo backplate color on the new tab page
-- [PartitionedBlobUrlUsage](/deployedge/microsoft-edge-policies#partitionedbloburlusage) - Manage Blob URL Partitioning During Fetching and Navigation
-- [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-policies#webcontentfilteringblockedcategories) - Configure Web Content Filtering
-- [WebRtcIPHandlingUrl](/deployedge/microsoft-edge-policies#webrtciphandlingurl) - WebRTC IP Handling Policy for URL Patterns
+- [HttpsUpgradesEnabled](/deployedge/microsoft-edge-policies#httpsupgradesenabled) - Enable automatic HTTPS upgrades
+
+- [PasswordExportEnabled](/deployedge/microsoft-edge-policies#passwordexportenabled) - Enable exporting saved passwords from Password Manager
+
+- [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) - Controls the display of the profile button label for the work or school profile
 
 #### Deprecated policies
 
-- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar.
+- [AutomaticHttpsDefault](/deployedge/microsoft-edge-policies#automatichttpsdefault) - Configure Automatic HTTPS (deprecated)
 
 #### Obsoleted policies
 
-- [RelatedMatchesCloudServiceEnabled](/deployedge/microsoft-edge-policies#relatedmatchescloudserviceenabled) - Configure Related Matches in Find on Page (obsolete)
+- [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)
 
->[!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes May. 2025.](/microsoft-edge/web-platform/release-notes/136)
+- [NewBaseUrlInheritanceBehaviorAllowed](/deployedge/microsoft-edge-policies#newbaseurlinheritancebehaviorallowed) - Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)
+
+- [RSAKeyUsageForLocalAnchorsEnabled](/deployedge/microsoft-edge-policies#rsakeyusageforlocalanchorsenabled) - Check RSA key usage for server certificates issued by local trust anchors (obsolete)
 
 ## Version 135.0.3179.98: April 24, 2025
 
