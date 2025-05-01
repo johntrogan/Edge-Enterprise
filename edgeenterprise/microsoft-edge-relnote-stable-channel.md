@@ -111,7 +111,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - [RSAKeyUsageForLocalAnchorsEnabled](/deployedge/microsoft-edge-policies#rsakeyusageforlocalanchorsenabled) - Check RSA key usage for server certificates issued by local trust anchors (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes May. 2025.](/microsoft-edge/web-platform/release-notes/136)
+>For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes May 2025.](/microsoft-edge/web-platform/release-notes/136)
 
 ## Version 135.0.3179.98: April 24, 2025
 
