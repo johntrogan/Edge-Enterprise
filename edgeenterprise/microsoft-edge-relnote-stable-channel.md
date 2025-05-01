@@ -97,9 +97,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 #### New policies
 
 - [HttpsUpgradesEnabled](/deployedge/microsoft-edge-policies#httpsupgradesenabled) - Enable automatic HTTPS upgrades
-
 - [PasswordExportEnabled](/deployedge/microsoft-edge-policies#passwordexportenabled) - Enable exporting saved passwords from Password Manager
-
 - [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) - Controls the display of the profile button label for the work or school profile
 
 #### Deprecated policies
@@ -109,10 +107,11 @@ The following Dev channel updates preceded this Stable channel release. The foll
 #### Obsoleted policies
 
 - [EnhanceSecurityModeOptOutUXEnabled](/deployedge/microsoft-edge-policies#enhancesecuritymodeoptoutuxenabled) - Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)
-
 - [NewBaseUrlInheritanceBehaviorAllowed](/deployedge/microsoft-edge-policies#newbaseurlinheritancebehaviorallowed) - Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)
-
 - [RSAKeyUsageForLocalAnchorsEnabled](/deployedge/microsoft-edge-policies#rsakeyusageforlocalanchorsenabled) - Check RSA key usage for server certificates issued by local trust anchors (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 136 web platform release notes May. 2025.](/microsoft-edge/web-platform/release-notes/136)
 
 ## Version 135.0.3179.98: April 24, 2025
 
