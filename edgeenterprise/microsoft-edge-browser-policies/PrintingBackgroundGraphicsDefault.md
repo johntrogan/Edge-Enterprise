@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintingBackgroundGraphicsDe
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -80,7 +80,7 @@ Enable background graphics printing mode by default
 - Value name: PrintingBackgroundGraphicsDefault
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 enabled

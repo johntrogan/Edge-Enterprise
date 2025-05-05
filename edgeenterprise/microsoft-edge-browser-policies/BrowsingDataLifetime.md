@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation BrowsingDataLifetime"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -67,14 +67,14 @@ Microsoft Edge will regularly remove data of selected types that is older than '
 - Value name: BrowsingDataLifetime
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"data_types": ["browsing_history"], "time_to_live_in_hours": 24}, {"data_types": ["password_signin", "autofill"], "time_to_live_in_hours": 12}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

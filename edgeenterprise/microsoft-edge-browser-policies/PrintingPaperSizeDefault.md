@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintingPaperSizeDefault"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -68,14 +68,14 @@ If the page size is unavailable on the printer chosen by the user this policy is
 - Value name: PrintingPaperSizeDefault
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"custom_size": {"height": 297000, "width": 210000}, "name": "custom"}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

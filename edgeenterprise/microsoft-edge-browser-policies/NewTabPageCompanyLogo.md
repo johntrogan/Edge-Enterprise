@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPageCompanyLogo"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -78,14 +78,14 @@ For help with determining the SHA-256 hash, see [Get-FileHash](/powershell/modul
 - Value name: NewTabPageCompanyLogo
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"default_logo": {"hash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29", "url": "https://www.contoso.com/logo.png"}, "light_logo": {"hash": "517d286edb416bb2625ccfcba9de78296e90da8e32330d4c9c8275c4c1c33737", "url": "https://www.contoso.com/light_logo.png"}}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

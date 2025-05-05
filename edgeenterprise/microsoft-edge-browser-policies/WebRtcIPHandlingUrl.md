@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebRtcIPHandlingUrl"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -82,14 +82,14 @@ Handling types: https://tools.ietf.org/html/rfc8828.html#section-5.2
 - Value name: WebRtcIPHandlingUrl
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"handling": "default_public_and_private_interfaces", "url": "https://www.example.com"}, {"handling": "default_public_interface_only", "url": "https://[*.]example.edu"}, {"handling": "disable_non_proxied_udp", "url": "*"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

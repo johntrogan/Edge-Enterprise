@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutomaticProfileSwitchingSit
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,14 +74,14 @@ The 'profile' field can take one of the following values:
 - Value name: AutomaticProfileSwitchingSiteList
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"profile": "Work", "site": "work.com"}, {"profile": "Personal", "site": "personal.com"}, {"profile": "No preference", "site": "nopreference.com"}, {"profile": "*@contoso.com", "site": "contoso.com"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

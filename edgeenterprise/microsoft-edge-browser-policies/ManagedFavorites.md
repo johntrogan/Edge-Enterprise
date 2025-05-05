@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ManagedFavorites"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,14 +70,14 @@ Managed favorites are not synced to the user account and can't be modified by ex
 - Value name: ManagedFavorites
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"toplevel_name": "My managed favorites folder"}, {"name": "Microsoft", "url": "microsoft.com"}, {"name": "Bing", "url": "bing.com"}, {"children": [{"name": "Microsoft Edge Insiders", "url": "www.microsoftedgeinsider.com"}, {"name": "Microsoft Edge", "url": "www.microsoft.com/windows/microsoft-edge"}], "name": "Microsoft Edge links"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

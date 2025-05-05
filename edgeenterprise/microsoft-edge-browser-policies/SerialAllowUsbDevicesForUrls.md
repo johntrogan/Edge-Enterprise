@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SerialAllowUsbDevicesForUrls
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,14 +72,14 @@ This policy only affects access to USB devices through the Web Serial API. To gr
 - Value name: SerialAllowUsbDevicesForUrls
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"devices": [{"product_id": 5678, "vendor_id": 1234}], "urls": ["https://specific-device.example.com"]}, {"devices": [{"vendor_id": 1234}], "urls": ["https://all-vendor-devices.example.com"]}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

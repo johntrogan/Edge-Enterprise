@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SleepingTabsTimeout"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -103,7 +103,7 @@ Use the preceding information when configuring this policy.
 - Value name: SleepingTabsTimeout
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x00000384

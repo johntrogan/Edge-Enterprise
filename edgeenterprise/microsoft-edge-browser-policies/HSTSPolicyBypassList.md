@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HSTSPolicyBypassList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -68,7 +68,7 @@ meet
 - Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
-#### Example value
+#### Example registry value
 
 SOFTWARE\Policies\Microsoft\Edge\HSTSPolicyBypassList\0 =
 ```

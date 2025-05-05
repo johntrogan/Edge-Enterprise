@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultSearchProviderName"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,7 +72,7 @@ My Intranet Search
 - Value name: DefaultSearchProviderName
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 My Intranet Search

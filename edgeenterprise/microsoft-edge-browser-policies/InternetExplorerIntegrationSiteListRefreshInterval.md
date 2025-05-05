@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationS
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ If you disable or don't configure this policy, Microsoft Edge will use a default
 - Value name: InternetExplorerIntegrationSiteListRefreshInterval
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x000000f0

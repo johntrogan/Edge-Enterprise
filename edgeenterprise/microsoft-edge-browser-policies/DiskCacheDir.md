@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DiskCacheDir"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ ${user_home}/Edge_cache
 - Value name: DiskCacheDir
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 ${user_home}/Edge_cache

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AuthServerAllowlist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -68,7 +68,7 @@ If you don't configure this policy, Microsoft Edge tries to detect if a server i
 - Value name: AuthServerAllowlist
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 *contoso.com,contoso.com

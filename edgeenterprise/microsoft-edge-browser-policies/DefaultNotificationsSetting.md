@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultNotificationsSetting"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -83,7 +83,7 @@ Don't allow any site to show desktop notifications
 - Value name: DefaultNotificationsSetting
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x00000002

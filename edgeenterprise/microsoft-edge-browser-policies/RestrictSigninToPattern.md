@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RestrictSigninToPattern"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ Note that signed-in profiles with a username that doesn't match this pattern wil
 - Value name: RestrictSigninToPattern
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 .*@contoso.com

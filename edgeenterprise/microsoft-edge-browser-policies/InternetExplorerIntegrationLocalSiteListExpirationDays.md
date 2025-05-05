@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationL
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,7 +74,7 @@ To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink
 - Value name: InternetExplorerIntegrationLocalSiteListExpirationDays
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x0000001e

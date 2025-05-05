@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ApplicationGuardContainerPro
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -85,14 +85,14 @@ For more information about identifying Application Guard traffic via dual proxy,
 - Value name: ApplicationGuardContainerProxy
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"ProxyMode": "direct", "ProxyPacUrl": "https://internal.site/example.pac", "ProxyServer": "123.123.123.123:8080"}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

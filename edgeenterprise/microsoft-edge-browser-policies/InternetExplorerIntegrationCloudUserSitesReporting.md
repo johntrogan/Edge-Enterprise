@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationC
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,7 +74,7 @@ aba95e58-070f-4784-8dcd-e5fd46c2c6d6
 - Value name: InternetExplorerIntegrationCloudUserSitesReporting
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 aba95e58-070f-4784-8dcd-e5fd46c2c6d6

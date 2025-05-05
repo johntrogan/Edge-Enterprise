@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ConfigureKeyboardShortcuts"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,14 +72,14 @@ Note: Disabling a command will only remove its shortcut mapping. Commands in the
 - Value name: ConfigureKeyboardShortcuts
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"disabled": ["new_tab", "fullscreen"]}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

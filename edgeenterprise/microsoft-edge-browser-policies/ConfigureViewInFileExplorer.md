@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ConfigureViewInFileExplorer"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -78,14 +78,14 @@ This policy is available only on Windows instances that are joined to a Microsof
 - Value name: ConfigureViewInFileExplorer
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"cookies": ["rtFa", "FedAuth"], "domain": "contoso.sharepoint.com"}, {"cookies": ["rtFa", "FedAuth"], "domain": "contoso2.sharepoint.com"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPageManagedQuickLinks"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,14 +74,14 @@ If the policy is set as recommended, pinned tiles will remain in the list but th
 - Value name: NewTabPageManagedQuickLinks
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"pinned": true, "title": "Contoso Portal", "url": "https://contoso.com"}, {"title": "Fabrikam", "url": "https://fabrikam.com"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

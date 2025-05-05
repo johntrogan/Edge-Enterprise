@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelaunchWindow"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -71,14 +71,14 @@ Warning: Setting this policy may delay application of software updates.
 - Value name: RelaunchWindow
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"entries": [{"duration_mins": 240, "start": {"hour": 2, "minute": 15}}]}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

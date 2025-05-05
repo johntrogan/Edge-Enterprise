@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WorkspacesNavigationSettings
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,14 +72,14 @@ Note, format url_patterns according to [https://go.microsoft.com/fwlink/?linkid=
 - Value name: WorkspacesNavigationSettings
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"navigation_options": {"do_not_send_to": true, "remove_all_query_parameters": true}, "url_patterns": ["https://contoso.com", "https://www.fabrikam.com", ".exact.hostname.com"]}, {"navigation_options": {"query_parameters_to_remove": ["username", "login_hint"]}, "url_patterns": ["https://adatum.com"]}, {"navigation_options": {"do_not_send_from": true, "prefer_initial_url": true}, "url_regex_patterns": ["\\Ahttps://.*?tafe\\..*?trs.*?\\.fabrikam.com/Sts"]}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

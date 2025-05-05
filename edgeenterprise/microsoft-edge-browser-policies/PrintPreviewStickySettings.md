@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintPreviewStickySettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -78,14 +78,14 @@ If you disable or don't configure this policy, print preview settings will not b
 - Value name: PrintPreviewStickySettings
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"layout": false, "margins": true, "scaleType": false, "size": true}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

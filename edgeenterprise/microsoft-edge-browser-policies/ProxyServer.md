@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ProxyServer"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,7 +74,7 @@ For more options and detailed examples, see [https://go.microsoft.com/fwlink/?li
 - Value name: ProxyServer
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 123.123.123.123:8080

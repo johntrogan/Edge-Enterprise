@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintRasterizePdfDpi"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ If you set this policy to zero or don't configure it, the system default resolut
 - Value name: PrintRasterizePdfDpi
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x0000012c

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationS
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -64,7 +64,7 @@ https://internal.contoso.com/sitelist.xml
 - Value name: InternetExplorerIntegrationSiteList
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 https://internal.contoso.com/sitelist.xml

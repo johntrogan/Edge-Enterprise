@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DiskCacheSize"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,7 +72,7 @@ Note: The value specified in this policy is used as a hint to various cache subs
 - Value name: DiskCacheSize
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x06400000

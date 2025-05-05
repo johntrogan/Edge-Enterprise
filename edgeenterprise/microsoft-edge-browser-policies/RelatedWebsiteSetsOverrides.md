@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelatedWebsiteSetsOverrides"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -83,14 +83,14 @@ Wildcards (*) aren't supported as a policy value, or as a value within any Relat
 - Value name: RelatedWebsiteSetsOverrides
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"additions": [{"associatedSites": ["https://associate2.test"], "ccTLDs": {"https://associate2.test": ["https://associate2.com"]}, "primary": "https://primary2.test", "serviceSites": ["https://associate2-content.test"]}], "replacements": [{"associatedSites": ["https://associate1.test"], "ccTLDs": {"https://associate1.test": ["https://associate1.co.uk"]}, "primary": "https://primary1.test", "serviceSites": ["https://associate1-content.test"]}]}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

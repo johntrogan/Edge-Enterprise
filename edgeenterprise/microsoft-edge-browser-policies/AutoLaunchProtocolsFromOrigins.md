@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutoLaunchProtocolsFromOrigi
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -80,14 +80,14 @@ This policy does not work as expected with file://* wildcards.
 - Value name: AutoLaunchProtocolsFromOrigins
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"allowed_origins": ["example.com", "http://www.example.com:8080"], "protocol": "spotify"}, {"allowed_origins": ["https://example.com", "https://.mail.example.com"], "protocol": "msteams"}, {"allowed_origins": ["*"], "protocol": "msoutlook"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

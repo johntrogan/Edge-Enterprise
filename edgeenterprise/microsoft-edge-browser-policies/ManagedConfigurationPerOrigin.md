@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ManagedConfigurationPerOrigi
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -66,14 +66,14 @@ Managed Configuration API is a key-value configuration that can be accessed via 
 - Value name: ManagedConfigurationPerOrigin
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"managed_configuration_hash": "asd891jedasd12ue9h", "managed_configuration_url": "https://static.contoso.com/configuration.json", "origin": "https://www.contoso.com"}, {"managed_configuration_hash": "djio12easd89u12aws", "managed_configuration_url": "https://static.contoso.com/configuration2.json", "origin": "https://www.example.com"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

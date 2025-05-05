@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebUsbAllowDevicesForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,14 +72,14 @@ URL patterns in this policy should not clash with the ones configured via [WebUs
 - Value name: WebUsbAllowDevicesForUrls
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"devices": [{"product_id": 5678, "vendor_id": 1234}], "urls": ["https://contoso.com", "https://fabrikam.com"]}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

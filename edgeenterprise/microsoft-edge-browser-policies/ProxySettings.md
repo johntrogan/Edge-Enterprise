@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ProxySettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -104,14 +104,14 @@ For more detailed examples go to [https://go.microsoft.com/fwlink/?linkid=209493
 - Value name: ProxySettings
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 {"ProxyBypassList": "https://www.example1.com,https://www.example2.com,https://internalsite/", "ProxyMode": "pac_script", "ProxyPacMandatory": false, "ProxyPacUrl": "https://internal.site/example.pac", "ProxyServer": "123.123.123.123:8080"}
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 {

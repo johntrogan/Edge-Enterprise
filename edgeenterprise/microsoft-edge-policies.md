@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/29/2025
+ms.date: 04/28/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge

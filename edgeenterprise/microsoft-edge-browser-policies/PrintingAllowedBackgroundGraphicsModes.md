@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PrintingAllowedBackgroundGra
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -81,7 +81,7 @@ Allow printing only with background graphics
 - Value name: PrintingAllowedBackgroundGraphicsModes
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 enabled

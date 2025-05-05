@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebAppSettings"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -81,14 +81,14 @@ This should be used with caution, since it can override any OS integration that 
 - Value name: WebAppSettings
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"manifest_id": "https://foo.example/index.html", "run_on_os_login": "allowed"}, {"manifest_id": "https://bar.example/index.html", "run_on_os_login": "allowed"}, {"manifest_id": "https://foobar.example/index.html", "prevent_close_after_run_on_os_login": true, "run_on_os_login": "run_windowed"}, {"manifest_id": "*", "run_on_os_login": "blocked"}, {"force_unregister_os_integration": true, "manifest_id": "https://foo.example/index.html"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

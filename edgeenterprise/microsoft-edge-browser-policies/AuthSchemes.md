@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AuthSchemes"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ basic,digest,ntlm,negotiate
 - Value name: AuthSchemes
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 basic,digest,ntlm,negotiate

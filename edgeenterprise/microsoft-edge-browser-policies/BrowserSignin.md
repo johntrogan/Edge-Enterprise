@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation BrowserSignin"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -89,7 +89,7 @@ Force users to sign-in to use the browser (all profiles)
 - Value name: BrowserSignin
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x00000002

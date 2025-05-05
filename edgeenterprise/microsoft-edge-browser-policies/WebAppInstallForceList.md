@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebAppInstallForceList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -105,14 +105,14 @@ If disabled or unset, the web app at the given url will be installed normally.
 - Value name: WebAppInstallForceList
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"create_desktop_shortcut": true, "default_launch_container": "window", "url": "https://www.contoso.com/maps"}, {"default_launch_container": "tab", "url": "https://app.contoso.edu"}, {"default_launch_container": "window", "fallback_app_name": "Editor", "url": "https://app.contoso.edu/editor"}, {"custom_name": "Spreadsheets", "default_launch_container": "window", "install_as_shortcut": true, "url": "https://app.contoso.edu/sheets"}, {"custom_icon": {"hash": "c28f469c450e9ab2b86ea47038d2b324c6ad3b1e9a4bd8960da13214afd0ca38", "url": "https://mydomain.example.com/sunny_icon.png"}, "url": "https://weather.example.com"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

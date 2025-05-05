@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebHidAllowDevicesWithHidUsa
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -78,14 +78,14 @@ URLs in this policy shouldn't conflict with those configured through [WebHidBloc
 - Value name: WebHidAllowDevicesWithHidUsagesForUrls
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"urls": ["https://microsoft.com", "https://chromium.org"], "usages": [{"usage": 5678, "usage_page": 1234}]}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

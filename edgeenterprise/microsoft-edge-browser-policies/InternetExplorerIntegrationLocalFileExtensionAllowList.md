@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InternetExplorerIntegrationL
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -81,7 +81,7 @@ To learn more about Internet Explorer mode, see [https://go.microsoft.com/fwlink
 - Value name: 1, 2, 3, ...
 - Value type: List of REG_SZ
 
-#### Example value
+#### Example registry value
 
 SOFTWARE\Policies\Microsoft\Edge\InternetExplorerIntegrationLocalFileExtensionAllowList\0 =
 ```

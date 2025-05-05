@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExemptFileTypeDownloadWarnin
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -85,14 +85,14 @@ Note that while the preceding example shows the suppression of file type extensi
 - Value name: ExemptFileTypeDownloadWarnings
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 [{"domains": ["https://contoso.com", "contoso2.com"], "file_extension": "jnlp"}, {"domains": ["*"], "file_extension": "swf"}]
 ```
 
 
-#### Expanded example value
+#### Expanded example registry value
 
 ```
 [

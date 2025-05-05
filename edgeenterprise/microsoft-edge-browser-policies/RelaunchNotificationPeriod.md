@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelaunchNotificationPeriod"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/23/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -68,7 +68,7 @@ If not set, the default period of 604800000 milliseconds (one week) is used.
 - Value name: RelaunchNotificationPeriod
 - Value type: REG_DWORD
 
-#### Example value
+#### Example registry value
 
 ```
 0x240c8400

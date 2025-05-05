@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DnsOverHttpsTemplates"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/22/2025
+ms.date: 05/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -72,7 +72,7 @@ https://dns.example.net/dns-query{?dns}
 - Value name: DnsOverHttpsTemplates
 - Value type: REG_SZ
 
-#### Example value
+#### Example registry value
 
 ```
 https://dns.example.net/dns-query{?dns}
