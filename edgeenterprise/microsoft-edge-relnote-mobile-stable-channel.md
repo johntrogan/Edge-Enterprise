@@ -23,6 +23,26 @@ All the Stable channel security updates are listed in [Release notes for Microso
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
 
+## Version 136.0.3240.50 (Android): May 6, 2025
+
+Fixed various bugs, new enhancements and performance issues.
+
+### Bug fixes
+
+- [Android] Fix the issue about unintentional uploading of data from the personal profile are allowed
+- [Android] Fix the issue about inPrivate tabs still can be added in landscape mode after been disabled by policy
+- [Android] Fix the issue about the EdgeShowBottomBarInKioskMode may not work on some device
+- [Android] Fix the issue of the EdgeRestoreBrowsingOption MDM Policy taking no effect
+
+### New enhancements
+
+- [Android] Improve the user experience when disable Print feature
+- [Android] Improve the user experience of shared device mode
+
+## Version 135.0.3179.98 (Android): April 28, 2025
+
+Fixed various bugs and performance issues.
+
 ## Version 135.0.3179.98 (Android and iOS): April 28, 2025
 
 Fixed various bugs and performance issues.
