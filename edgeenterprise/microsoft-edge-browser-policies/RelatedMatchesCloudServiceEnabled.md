@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RelatedMatchesCloudServiceEn
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/06/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,7 +33,7 @@ If you enable or do not configure this policy, users can receive related matches
 
 If you disable this policy, users can receive related matches in Find on Page on a limited set of sites. In this case, results are processed locally on the user's device.
 
-Note: This policy is obsoleted because this feature has never been enabled in Microsoft Edge. As a result, this policy is not supported in any version of Microsoft Edge.
+Note: This policy is obsolete. The associated cloud service has been discontinued, so the feature and policy are not supported on any versions of Microsoft Edge.
 
 ## Supported features
 

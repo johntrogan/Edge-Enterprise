@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebContentFilteringBlockedCa
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/06/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -27,17 +27,24 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-You can configure this policy to block certain categories of URLs. Blocking a category prevents users in specified device groups from accessing URLs associated with the category.
+Configure this policy to block access to specific categories of websites in Microsoft Edge on Windows devices. Web Content Filtering is available exclusively in Microsoft Edge on Windows and requires the appropriate Microsoft 365 licensing.
 
-The list of possible categories, their Category String, and their description are detailed at [https://go.microsoft.com/fwlink/?linkid=2249965](https://go.microsoft.com/fwlink/?linkid=2249965)
+When this policy is enabled, users are blocked from accessing URLs that fall within the defined list of content categories. You can configure this by adding Category Strings to the list of blocked categories.
 
-To block a category, add the Category String of the category to the following List of blocked categories If you leave this policy unset or disable the policy, no URLs will be blocked.
+If the policy is not configured or is disabled, no categories will be blocked.
 
-If you want to block a specific URL without blocking an entire category, add the URL to the list of blocked URLs using the [URLBlocklist](URLBlocklist.md) policy.
+To view the list of supported content categories, including each Category String and its definition, refer to: https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering?view=o365-worldwide#category-definitions
 
-If you want a specific URL in a blocked category to be accessible, add the URL to the list of allowed URLs using the [URLAllowlist](URLAllowlist.md) policy.
+To block a specific URL outside of a category, use the “Block access to a list of URLs” policy.
 
-This Web Content Filtering policy only works on Microsoft Edge on Windows 10 devices or above.
+To allow a specific URL that falls under a blocked category, use the “Define a list of allowed URLs” policy.
+
+Note: This policy is supported only when deployed through the Edge management service, not via Microsoft Intune.
+
+To use this policy, your organization must have one of the following licenses:
+- Microsoft 365 A1, A3, or A5
+- Microsoft 365 Business Premium
+- Microsoft 365 Business Basic or Standard with Intune Plan 1 or Plan 2
 
 Policy options mapping:
 

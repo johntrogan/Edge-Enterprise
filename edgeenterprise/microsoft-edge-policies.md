@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 04/28/2025
+ms.date: 05/06/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,15 +31,14 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
-There are no new policies in Microsoft Edge version 137.
+There are no new policies in Microsoft Edge version 138.
 
-The following table lists the new policies for Microsoft Edge version 136.
+The following table lists the new policies for Microsoft Edge version 137.
 
 |Policy Name|Caption|
 |-|-|
-|<a id="passwordexportenabled" href="microsoft-edge-browser-policies/PasswordExportEnabled.md" target="_blank">PasswordExportEnabled</a>|Enable exporting saved passwords from Password Manager|
-|<a id="profiletypeinprofilebuttonenabled" href="microsoft-edge-browser-policies/ProfileTypeInProfileButtonEnabled.md" target="_blank">ProfileTypeInProfileButtonEnabled</a>|Controls the display of the profile button label for the work or school profile|
-|<a id="httpsupgradesenabled" href="microsoft-edge-browser-policies/HttpsUpgradesEnabled.md" target="_blank">HttpsUpgradesEnabled</a>|Enable automatic HTTPS upgrades|
+|<a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
+|<a id="webauthenticationremotedesktopallowedorigins" href="microsoft-edge-browser-policies/WebAuthenticationRemoteDesktopAllowedOrigins.md" target="_blank">WebAuthenticationRemoteDesktopAllowedOrigins</a>|Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications.|
 
 ## Deprecated policies
 
@@ -51,7 +50,6 @@ The following table lists all deprecated policies.
 |<a id="proxymode" href="microsoft-edge-browser-policies/ProxyMode.md" target="_blank">ProxyMode</a>|Configure proxy server settings (deprecated)|
 |<a id="proxypacurl" href="microsoft-edge-browser-policies/ProxyPacUrl.md" target="_blank">ProxyPacUrl</a>|Set the proxy .pac file URL (deprecated)|
 |<a id="proxyserver" href="microsoft-edge-browser-policies/ProxyServer.md" target="_blank">ProxyServer</a>|Configure address or URL of proxy server (deprecated)|
-|<a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (deprecated)|
 |<a id="allowgamesmenu" href="microsoft-edge-browser-policies/AllowGamesMenu.md" target="_blank">AllowGamesMenu</a>|Allow users to access the games menu (deprecated)|
 |<a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (deprecated)|
 |<a id="backgroundtemplatelistupdatesenabled" href="microsoft-edge-browser-policies/BackgroundTemplateListUpdatesEnabled.md" target="_blank">BackgroundTemplateListUpdatesEnabled</a>|Enables background updates to the list of available templates for Collections and other features that use templates (deprecated)|
@@ -67,19 +65,14 @@ The following table lists all deprecated policies.
 
 ## Obsolete policies
 
+There are no obsoleted policies in Microsoft Edge version 138.
+
 The following table lists the obsoleted policies for Microsoft Edge version 137.
 
 |Policy Name|Caption|
 |-|-|
+|<a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
 |<a id="mutationeventsenabled" href="microsoft-edge-browser-policies/MutationEventsEnabled.md" target="_blank">MutationEventsEnabled</a>|Enable deprecated/removed Mutation Events (obsolete)|
-
-The following table lists the obsoleted policies for Microsoft Edge version 136.
-
-|Policy Name|Caption|
-|-|-|
-|<a id="enhancesecuritymodeoptoutuxenabled" href="microsoft-edge-browser-policies/EnhanceSecurityModeOptOutUXEnabled.md" target="_blank">EnhanceSecurityModeOptOutUXEnabled</a>|Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)|
-|<a id="newbaseurlinheritancebehaviorallowed" href="microsoft-edge-browser-policies/NewBaseUrlInheritanceBehaviorAllowed.md" target="_blank">NewBaseUrlInheritanceBehaviorAllowed</a>|Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)|
-|<a id="rsakeyusageforlocalanchorsenabled" href="microsoft-edge-browser-policies/RSAKeyUsageForLocalAnchorsEnabled.md" target="_blank">RSAKeyUsageForLocalAnchorsEnabled</a>|Check RSA key usage for server certificates issued by local trust anchors (obsolete)|
 
 ## Available policies
 
@@ -395,6 +388,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="block-truncated-cookies-obsolete"></a><a id="blocktruncatedcookies" href="microsoft-edge-browser-policies/BlockTruncatedCookies.md" target="_blank">BlockTruncatedCookies</a>|Block truncated cookies (obsolete)|
 |<a id="enable-compression-dictionary-transport-support"></a><a id="compressiondictionarytransportenabled" href="microsoft-edge-browser-policies/CompressionDictionaryTransportEnabled.md" target="_blank">CompressionDictionaryTransportEnabled</a>|Enable compression dictionary transport support|
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
+|<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
 |<a id="enable-zstd-content-encoding-support"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support|
 
@@ -583,7 +577,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="native-application-signing-during-progressive-web-application-installation"></a><a id="adhoccodesigningforpwasenabled" href="microsoft-edge-browser-policies/AdHocCodeSigningForPWAsEnabled.md" target="_blank">AdHocCodeSigningForPWAsEnabled</a>|Native application signing during Progressive Web Application installation|
 |<a id="enable-additional-search-box-in-browser"></a><a id="additionalsearchboxenabled" href="microsoft-edge-browser-policies/AdditionalSearchBoxEnabled.md" target="_blank">AdditionalSearchBoxEnabled</a>|Enable additional search box in browser|
 |<a id="configure-address-bar-editing"></a><a id="addressbareditingenabled" href="microsoft-edge-browser-policies/AddressBarEditingEnabled.md" target="_blank">AddressBarEditingEnabled</a>|Configure address bar editing|
-|<a id="enable-microsoft-search-in-bing-suggestions-in-the-address-bar-deprecated"></a><a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (deprecated)|
+|<a id="enable-microsoft-search-in-bing-suggestions-in-the-address-bar-obsolete"></a><a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
 |<a id="enable-microsoft-bing-trending-suggestions-in-the-address-bar"></a><a id="addressbartrendingsuggestenabled" href="microsoft-edge-browser-policies/AddressBarTrendingSuggestEnabled.md" target="_blank">AddressBarTrendingSuggestEnabled</a>|Enable Microsoft Bing trending suggestions in the address bar|
 |<a id="enable-work-search-suggestions-in-the-address-bar"></a><a id="addressbarworksearchresultsenabled" href="microsoft-edge-browser-policies/AddressBarWorkSearchResultsEnabled.md" target="_blank">AddressBarWorkSearchResultsEnabled</a>|Enable Work Search suggestions in the address bar|
 |<a id="ads-setting-for-sites-with-intrusive-ads"></a><a id="adssettingforintrusiveadssites" href="microsoft-edge-browser-policies/AdsSettingForIntrusiveAdsSites.md" target="_blank">AdsSettingForIntrusiveAdsSites</a>|Ads setting for sites with intrusive ads|
@@ -959,6 +953,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="configure-list-of-force-installed-web-apps"></a><a id="webappinstallforcelist" href="microsoft-edge-browser-policies/WebAppInstallForceList.md" target="_blank">WebAppInstallForceList</a>|Configure list of force-installed Web Apps|
 |<a id="web-app-management-settings"></a><a id="webappsettings" href="microsoft-edge-browser-policies/WebAppSettings.md" target="_blank">WebAppSettings</a>|Web App management settings|
 |<a id="enable-adaptive-buffering-for-web-audio"></a><a id="webaudiooutputbufferingenabled" href="microsoft-edge-browser-policies/WebAudioOutputBufferingEnabled.md" target="_blank">WebAudioOutputBufferingEnabled</a>|Enable adaptive buffering for Web Audio|
+|<a id="allowed-origins-for-proxied-webauthn-requests-from-remote-desktop-applications"></a><a id="webauthenticationremotedesktopallowedorigins" href="microsoft-edge-browser-policies/WebAuthenticationRemoteDesktopAllowedOrigins.md" target="_blank">WebAuthenticationRemoteDesktopAllowedOrigins</a>|Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications.|
 |<a id="enable-the-screenshot-previously-named-web-capture-feature-in-microsoft-edge"></a><a id="webcaptureenabled" href="microsoft-edge-browser-policies/WebCaptureEnabled.md" target="_blank">WebCaptureEnabled</a>|Enable the Screenshot (previously named Web Capture) feature in Microsoft Edge|
 |<a id="re-enable-web-components-v0-api-until-m84-obsolete"></a><a id="webcomponentsv0enabled" href="microsoft-edge-browser-policies/WebComponentsV0Enabled.md" target="_blank">WebComponentsV0Enabled</a>|Re-enable Web Components v0 API until M84 (obsolete)|
 |<a id="configure-web-content-filtering"></a><a id="webcontentfilteringblockedcategories" href="microsoft-edge-browser-policies/WebContentFilteringBlockedCategories.md" target="_blank">WebContentFilteringBlockedCategories</a>|Configure Web Content Filtering|

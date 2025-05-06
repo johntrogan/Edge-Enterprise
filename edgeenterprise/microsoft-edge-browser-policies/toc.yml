@@ -350,6 +350,8 @@
     href: CompressionDictionaryTransportEnabled.md
   - name: DataURLWhitespacePreservationEnabled
     href: DataURLWhitespacePreservationEnabled.md
+  - name: HappyEyeballsV3Enabled
+    href: HappyEyeballsV3Enabled.md
   - name: IPv6ReachabilityOverrideEnabled
     href: IPv6ReachabilityOverrideEnabled.md
   - name: ZstdContentEncodingEnabled
@@ -1328,6 +1330,8 @@
     href: WebAppSettings.md
   - name: WebAudioOutputBufferingEnabled
     href: WebAudioOutputBufferingEnabled.md
+  - name: WebAuthenticationRemoteDesktopAllowedOrigins
+    href: WebAuthenticationRemoteDesktopAllowedOrigins.md
   - name: WebCaptureEnabled
     href: WebCaptureEnabled.md
   - name: WebComponentsV0Enabled
