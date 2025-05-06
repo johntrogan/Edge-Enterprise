@@ -33,7 +33,7 @@ When this policy is enabled, users are blocked from accessing URLs that fall wit
 
 If the policy is not configured or is disabled, no categories will be blocked.
 
-To view the list of supported content categories, including each Category String and its definition, refer to: https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering?view=o365-worldwide#category-definitions
+To view the list of supported content categories, including each Category String and its definition, refer to: [Web content filtering](/defender-endpoint/web-content-filtering)
 
 To block a specific URL outside of a category, use the “Block access to a list of URLs” policy.
 
