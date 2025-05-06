@@ -44,7 +44,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/DeployEdge/breadcrumb/toc.json",
       "recommendations": true,
-      "searchScope": ["EdgePolicies", "Microsoft Edge"],
+      "searchScope": ["Microsoft Edge"],
       "feedback_system": "Standard",
             "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
       "uhfHeaderId": "MSDocsHeader-MSEdge",
@@ -64,7 +64,11 @@
         "Ruchika-mittal01"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+            "searchScope": {
+                "microsoft-edge-browser-policies/**/*.md": ["EdgePolicies", "Microsoft Edge"],
+                "microsoft-edge-policies.md": ["EdgePolicies", "Microsoft Edge"]
+            }},
     "template": [],
     "dest": "Edge-Enterprise",
     "markdownEngineName": "markdig"
