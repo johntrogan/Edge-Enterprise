@@ -171,6 +171,13 @@ The service that supports Web Content Filtering. For more information, see [Conf
 - `https://edge.microsoft.com/webcontentfiltering/api/guestmode-categories`
 - `https://edge.microsoft.com/webcontentfiltering/settings/v1`
 
+## Password Monitor
+ 
+The service that supports Password Monitor. For more information, see Password Monitor.
+
+- `https://edge.microsoft.com/passwordbreachservice/v1/passwords/breach/query`
+- `https://edge.microsoft.com/passwordbreachservice/v1/passwords/breach/prequery`
+
 ## Feedback and Diagnostics
 
 The service that supports feedback and diagnostics for desktop and mobile users.
