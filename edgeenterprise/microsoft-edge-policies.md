@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/06/2025
+ms.date: 05/07/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,14 +31,20 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
-There are no new policies in Microsoft Edge version 138.
-
 The following table lists the new policies for Microsoft Edge version 137.
 
 |Policy Name|Caption|
 |-|-|
 |<a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="webauthenticationremotedesktopallowedorigins" href="microsoft-edge-browser-policies/WebAuthenticationRemoteDesktopAllowedOrigins.md" target="_blank">WebAuthenticationRemoteDesktopAllowedOrigins</a>|Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications.|
+
+The following table lists the new policies for Microsoft Edge version 136.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="passwordexportenabled" href="microsoft-edge-browser-policies/PasswordExportEnabled.md" target="_blank">PasswordExportEnabled</a>|Enable exporting saved passwords from Password Manager|
+|<a id="profiletypeinprofilebuttonenabled" href="microsoft-edge-browser-policies/ProfileTypeInProfileButtonEnabled.md" target="_blank">ProfileTypeInProfileButtonEnabled</a>|Controls the display of the profile button label for the work or school profile|
+|<a id="httpsupgradesenabled" href="microsoft-edge-browser-policies/HttpsUpgradesEnabled.md" target="_blank">HttpsUpgradesEnabled</a>|Enable automatic HTTPS upgrades|
 
 ## Deprecated policies
 
@@ -65,14 +71,20 @@ The following table lists all deprecated policies.
 
 ## Obsolete policies
 
-There are no obsoleted policies in Microsoft Edge version 138.
-
 The following table lists the obsoleted policies for Microsoft Edge version 137.
 
 |Policy Name|Caption|
 |-|-|
 |<a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
 |<a id="mutationeventsenabled" href="microsoft-edge-browser-policies/MutationEventsEnabled.md" target="_blank">MutationEventsEnabled</a>|Enable deprecated/removed Mutation Events (obsolete)|
+
+The following table lists the obsoleted policies for Microsoft Edge version 136.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="enhancesecuritymodeoptoutuxenabled" href="microsoft-edge-browser-policies/EnhanceSecurityModeOptOutUXEnabled.md" target="_blank">EnhanceSecurityModeOptOutUXEnabled</a>|Manage opt-out user experience for Enhanced Security Mode (ESM) in Microsoft Edge (obsolete)|
+|<a id="newbaseurlinheritancebehaviorallowed" href="microsoft-edge-browser-policies/NewBaseUrlInheritanceBehaviorAllowed.md" target="_blank">NewBaseUrlInheritanceBehaviorAllowed</a>|Allows enabling the feature NewBaseUrlInheritanceBehavior (obsolete)|
+|<a id="rsakeyusageforlocalanchorsenabled" href="microsoft-edge-browser-policies/RSAKeyUsageForLocalAnchorsEnabled.md" target="_blank">RSAKeyUsageForLocalAnchorsEnabled</a>|Check RSA key usage for server certificates issued by local trust anchors (obsolete)|
 
 ## Available policies
 
