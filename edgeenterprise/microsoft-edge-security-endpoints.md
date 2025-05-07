@@ -1,9 +1,9 @@
 ---
 title: "Allowlist for Microsoft Edge endpoints"
 ms.author: leahtu
-author: dan-wesley
+author: vmliramichael
 manager: archandr
-ms.date: 12/18/2024
+ms.date: 5/07/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -170,6 +170,13 @@ The service that supports Web Content Filtering. For more information, see [Conf
 - `https://edge.microsoft.com/webcontentfiltering/api/categories`
 - `https://edge.microsoft.com/webcontentfiltering/api/guestmode-categories`
 - `https://edge.microsoft.com/webcontentfiltering/settings/v1`
+
+## Password Monitor
+ 
+The service that supports Password Monitor. For more information, see [Password Monitor](/deployedge/microsoft-edge-security-password-monitor).
+
+- `https://edge.microsoft.com/passwordbreachservice/v1/passwords/breach/query`
+- `https://edge.microsoft.com/passwordbreachservice/v1/passwords/breach/prequery`
 
 ## Feedback and Diagnostics
 
