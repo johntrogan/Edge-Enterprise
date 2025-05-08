@@ -36,9 +36,9 @@ Using Settings Catalog in Microsoft Intune, you can manage Microsoft Edge polici
   - Windows 10, version 1803 with [KB4512509](https://support.microsoft.com/kb/4512509) installed
   - Windows 10, version 1709 with [KB4516071](https://support.microsoft.com/kb/4516071) installed
 
-### Use Settings Catalog to create a policy for Microsoft Edge
+### Use the Settings Catalog to create a policy for Microsoft Edge
 
-This procedure leverages Settings catalog that are built into Intune.
+This procedure leverages the Settings Catalog that is built into Intune.
 
 1. Sign in to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) portal.
 2. Select **Devices** in the left-hand navigation pane.
