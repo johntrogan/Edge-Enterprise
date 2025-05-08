@@ -32,23 +32,23 @@ To streamline communication, the Dev Channel updates section is being discontinu
 
 ### Announcements
 
-- **Deprecation of Microsoft Edge features.**  The following Microsoft Edge features are being deprecated and are scheduled for removal by mid-to-late May: Image Editor, Image Hover menu, Mini menu, Video super resolution, and Wallet Hub.  
+- **Deprecation of Microsoft Edge features.**  The following Microsoft Edge features are being deprecated and are scheduled for removal by mid-to-late May: Image Editor, Image Hovers menu, Mini menu, Video super resolution, and Wallet Hub.  
  
 ### Feature Updates
 
-- **Changes to Wallet in Microsoft Edge.**  Wallet is being phased out to support a streamlined experience within Microsoft Edge.  In Microsoft Edge version 137, the Wallet entry in Settings will be removed and a new entry will be added for Passwords/Personal Information/Payment management functions.   Also, a new personal information management design will be available in Microsoft Edge Settings.   **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Changes to Wallet in Microsoft Edge.**  Wallet is being phased out to support a streamlined experience within Microsoft Edge.  In Microsoft Edge version 137, the Wallet entry in Settings will be removed and a new entry will be added for Passwords/Personal Information/Payment management functions.   Also, a new personal information management design is available in Microsoft Edge Settings.   **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
-- **Edge contextual capabilities in Business Chat work tab.**  Microsoft Copilot in Edge now supports page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions will be accessible for users when using Copilot through the Edge side pane.  
+- **Edge contextual capabilities in Business Chat work tab.**  Microsoft Copilot in Edge now supports page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
  
   A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  Note: This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout
 
-- **Update to Mutation Event policy.**  Support for mutation events was removed in Microsoft Edge version 127.   The [MutationEventsEnabled](deployedge/microsoft-edge-policies#mutationeventsenabled) policy provided a temporary option for admins to continue to use the deprecated and removed set of platform events.  In Microsoft Edge version 137, the [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy is obsolete and no longer works.  The [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) API can be used instead.
+- **Update to Mutation Event policy.**  Support for mutation events was removed in Microsoft Edge version 127.   The [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy provided a temporary option for admins to continue to use the deprecated and removed set of platform events.  In Microsoft Edge version 137, the [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy is obsolete and no longer works.  The [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) API can be used instead.
  
 - **Picture in Picture Player Enhancements.**  Users can now open videos as picture-in-picture and easily pause, play, skip forward or backward and seek from the progress bar right from the picture-in-picture window. Continue watching videos anywhere on the screen while multitasking. Simply click the picture-in-picture icon on a video in Microsoft Edge to get started.
  
 - **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  Note: This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Add text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
  
 ### Policy updates
 
@@ -76,7 +76,7 @@ Fixed various bugs and performance issues.
 
 ## Version 136.0.3240.45: April 29, 2025
 
-Fixed various bugs, performance issues and feature updates.
+Fixed various bugs, performance issues, and feature updates.
 
 ### Feature update
 
