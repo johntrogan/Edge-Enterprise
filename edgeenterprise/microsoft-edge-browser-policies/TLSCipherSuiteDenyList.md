@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation TLSCipherSuiteDenyList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -84,17 +84,17 @@ This policy does not affect QUIC-based connections. QUIC can be turned off via t
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\0 =
+SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\1 =
 ```
 0x1303
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\1 =
+SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\2 =
 ```
 0xcca8
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\2 =
+SOFTWARE\Policies\Microsoft\Edge\TLSCipherSuiteDenyList\3 =
 ```
 0xcca9
 ```

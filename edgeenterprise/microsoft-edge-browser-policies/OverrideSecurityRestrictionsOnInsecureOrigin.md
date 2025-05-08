@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation OverrideSecurityRestrictions
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -76,12 +76,12 @@ http://testserver.contoso.com/
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\OverrideSecurityRestrictionsOnInsecureOrigin\0 =
+SOFTWARE\Policies\Microsoft\Edge\OverrideSecurityRestrictionsOnInsecureOrigin\1 =
 ```
 http://testserver.contoso.com/
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\OverrideSecurityRestrictionsOnInsecureOrigin\1 =
+SOFTWARE\Policies\Microsoft\Edge\OverrideSecurityRestrictionsOnInsecureOrigin\2 =
 ```
 *.contoso.com
 ```

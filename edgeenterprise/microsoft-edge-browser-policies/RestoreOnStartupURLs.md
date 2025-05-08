@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation RestoreOnStartupURLs"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -74,12 +74,12 @@ https://www.fabrikam.com
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\0 =
+SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\1 =
 ```
 https://contoso.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\1 =
+SOFTWARE\Policies\Microsoft\Edge\RestoreOnStartupURLs\2 =
 ```
 https://www.fabrikam.com
 ```

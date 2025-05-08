@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation JavaScriptJitBlockedForSites
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -76,7 +76,7 @@ If you don't configure this policy for a site then the policy from [DefaultJavaS
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\JavaScriptJitBlockedForSites\0 =
+SOFTWARE\Policies\Microsoft\Edge\JavaScriptJitBlockedForSites\1 =
 ```
 [*.]example.edu
 ```

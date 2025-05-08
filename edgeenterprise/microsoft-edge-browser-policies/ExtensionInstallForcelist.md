@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExtensionInstallForcelist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -84,12 +84,12 @@ abcdefghijklmnopabcdefghijklmnop
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\0 =
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 =
 ```
 gbchcmhmhahfdphkhkmpfmihenigjmpp;https://edge.microsoft.com/extensionwebstorebase/v1/crx
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 =
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\2 =
 ```
 abcdefghijklmnopabcdefghijklmnop
 ```

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ScreenCaptureWithoutGestureA
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -83,12 +83,12 @@ https://www.example.com
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ScreenCaptureWithoutGestureAllowedForOrigins\0 =
+SOFTWARE\Policies\Microsoft\Edge\ScreenCaptureWithoutGestureAllowedForOrigins\1 =
 ```
 https://www.example.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ScreenCaptureWithoutGestureAllowedForOrigins\1 =
+SOFTWARE\Policies\Microsoft\Edge\ScreenCaptureWithoutGestureAllowedForOrigins\2 =
 ```
 [*.]example.edu
 ```

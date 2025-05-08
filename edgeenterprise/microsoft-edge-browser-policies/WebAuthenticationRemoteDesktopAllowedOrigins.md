@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebAuthenticationRemoteDeskt
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/06/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -73,7 +73,7 @@ https://server:8080/
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\WebAuthenticationRemoteDesktopAllowedOrigins\0 =
+SOFTWARE\Policies\Microsoft\Edge\WebAuthenticationRemoteDesktopAllowedOrigins\1 =
 ```
 https://server:8080/
 ```

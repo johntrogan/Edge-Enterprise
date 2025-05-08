@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExemptDomainFileTypePairsFro
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -93,12 +93,12 @@ Note that while the preceding example shows the suppression of file type extensi
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\0 =
+SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\1 =
 ```
 {'domains': ['https://contoso.com', 'contoso2.com'], 'file_extension': 'jnlp'}
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\1 =
+SOFTWARE\Policies\Microsoft\Edge\ExemptDomainFileTypePairsFromFileTypeDownloadWarnings\2 =
 ```
 {'domains': ['*'], 'file_extension': 'swf'}
 ```

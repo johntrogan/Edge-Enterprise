@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutoOpenFileTypes"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -80,12 +80,12 @@ txt
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\0 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\1 =
 ```
 exe
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\1 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenFileTypes\2 =
 ```
 txt
 ```

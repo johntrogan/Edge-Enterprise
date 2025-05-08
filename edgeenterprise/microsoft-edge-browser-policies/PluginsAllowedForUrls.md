@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PluginsAllowedForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -76,12 +76,12 @@ http://contoso.edu:8080
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\PluginsAllowedForUrls\0 =
+SOFTWARE\Policies\Microsoft\Edge\PluginsAllowedForUrls\1 =
 ```
 https://www.contoso.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\PluginsAllowedForUrls\1 =
+SOFTWARE\Policies\Microsoft\Edge\PluginsAllowedForUrls\2 =
 ```
 http://contoso.edu:8080
 ```

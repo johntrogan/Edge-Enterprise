@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AllHttpAuthSchemesAllowedFor
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -69,7 +69,7 @@ Wildcards are allowed for the whole origin or parts of the origin. Parts include
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\AllHttpAuthSchemesAllowedForOrigins\0 =
+SOFTWARE\Policies\Microsoft\Edge\AllHttpAuthSchemesAllowedForOrigins\1 =
 ```
 *.example.com
 ```

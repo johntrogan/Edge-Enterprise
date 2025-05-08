@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutoSelectCertificateForUrls
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -80,7 +80,7 @@ If you leave the policy unset, there's no autoselection for any site.
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls\0 =
+SOFTWARE\Policies\Microsoft\Edge\AutoSelectCertificateForUrls\1 =
 ```
 {"pattern":"https://www.contoso.com","filter":{"ISSUER":{"CN":"certificate issuer name", "L": "certificate issuer location", "O": "certificate issuer org", "OU": "certificate issuer org unit"}, "SUBJECT":{"CN":"certificate subject name", "L": "certificate subject location", "O": "certificate subject org", "OU": "certificate subject org unit"}}}
 ```

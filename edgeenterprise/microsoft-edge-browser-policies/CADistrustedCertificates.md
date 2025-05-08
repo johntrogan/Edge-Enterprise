@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation CADistrustedCertificates"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,7 +70,7 @@ MIIB/TCCAaOgAwIBAgIUQthnWVsd1jWpUCNBf/uILjXC+t4wCgYIKoZIzj0EAwIwVDELMAkGA1UEBhMC
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\CADistrustedCertificates\0 =
+SOFTWARE\Policies\Microsoft\Edge\CADistrustedCertificates\1 =
 ```
 MIIB/TCCAaOgAwIBAgIUQthnWVsd1jWpUCNBf/uILjXC+t4wCgYIKoZIzj0EAwIwVDELMAkGA1UEBhMCVVMxETAPBgNVBAgMCFZpcmdpbmlhMQ8wDQYDVQQHDAZSZXN0b24xITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yMzEyMDcxNjE5NTVaFw0yMzEyMjExNjE5NTVaMFQxCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhWaXJnaW5pYTEPMA0GA1UEBwwGUmVzdG9uMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQ9Akav/KB0aVA9FM1QK4J1CEHn5rFOyY/nxcr5HG3+Fom0Kwu5zTR/kz9eOYgtG/1NmCzbiEKaULDfzA8V9aJ7o1MwUTAdBgNVHQ4EFgQUq37bLKiuw8Y/G+rurMf46hw7EekwHwYDVR0jBBgwFoAUq37bLKiuw8Y/G+rurMf46hw7EekwDwYDVR0TAQH/BAUwAwEB/zAKBggqhkjOPQQDAgNIADBFAiEA/JhtLSgtVOcXkgFJ9V5Vb6lhGdiKQFfzO9wTxPeCxCECIFePYPucys2n/r9MOBMHiX/8068ssv+uceqokzUg0mAb
 ```

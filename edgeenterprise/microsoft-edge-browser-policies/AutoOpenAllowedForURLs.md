@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation AutoOpenAllowedForURLs"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -90,27 +90,27 @@ https://server:8080/path
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\0 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\1 =
 ```
 example.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\1 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\2 =
 ```
 https://ssl.server.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\2 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\3 =
 ```
 hosting.com/good_path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\3 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\4 =
 ```
 https://server:8080/path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\4 =
+SOFTWARE\Policies\Microsoft\Edge\AutoOpenAllowedForURLs\5 =
 ```
 .exact.hostname.com
 ```

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebHidAskForUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -84,12 +84,12 @@ https://chromium.org
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\WebHidAskForUrls\0 =
+SOFTWARE\Policies\Microsoft\Edge\WebHidAskForUrls\1 =
 ```
 https://microsoft.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\WebHidAskForUrls\1 =
+SOFTWARE\Policies\Microsoft\Edge\WebHidAskForUrls\2 =
 ```
 https://chromium.org
 ```

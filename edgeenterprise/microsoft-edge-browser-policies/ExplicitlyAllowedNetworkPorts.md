@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ExplicitlyAllowedNetworkPort
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -99,7 +99,7 @@ port 10080 (can be unblocked until 2022/04/01)
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ExplicitlyAllowedNetworkPorts\0 =
+SOFTWARE\Policies\Microsoft\Edge\ExplicitlyAllowedNetworkPorts\1 =
 ```
 10080
 ```

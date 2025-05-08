@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation URLAllowlist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -96,27 +96,27 @@ https://server:8080/path
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\0 =
+SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\1 =
 ```
 contoso.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\1 =
+SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\2 =
 ```
 https://ssl.server.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\2 =
+SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\3 =
 ```
 hosting.com/good_path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\3 =
+SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\4 =
 ```
 https://server:8080/path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\4 =
+SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\5 =
 ```
 .exact.hostname.com
 ```

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EnableDeprecatedWebPlatformF
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -87,7 +87,7 @@ Enable ExampleDeprecatedFeature API through 2008/09/02
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\EnableDeprecatedWebPlatformFeatures\0 =
+SOFTWARE\Policies\Microsoft\Edge\EnableDeprecatedWebPlatformFeatures\1 =
 ```
 ExampleDeprecatedFeature_EffectiveUntil20080902
 ```

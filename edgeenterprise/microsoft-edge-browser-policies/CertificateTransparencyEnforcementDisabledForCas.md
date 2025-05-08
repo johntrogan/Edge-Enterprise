@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation CertificateTransparencyEnfor
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -81,12 +81,12 @@ sha256//////////////////////w==
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\CertificateTransparencyEnforcementDisabledForCas\0 =
+SOFTWARE\Policies\Microsoft\Edge\CertificateTransparencyEnforcementDisabledForCas\1 =
 ```
 sha256/AAAAAAAAAAAAAAAAAAAAAA==
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\CertificateTransparencyEnforcementDisabledForCas\1 =
+SOFTWARE\Policies\Microsoft\Edge\CertificateTransparencyEnforcementDisabledForCas\2 =
 ```
 sha256//////////////////////w==
 ```

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebContentFilteringBlockedCa
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/06/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -174,17 +174,17 @@ Games
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\0 =
+SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\1 =
 ```
 gambling
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\1 =
+SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\2 =
 ```
 streaming_and_downloads
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\2 =
+SOFTWARE\Policies\Microsoft\Edge\WebContentFilteringBlockedCategories\3 =
 ```
 games
 ```

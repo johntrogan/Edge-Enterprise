@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EnhanceSecurityModeEnforceLi
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -71,12 +71,12 @@ myuniversity.edu
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains\0 =
+SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains\1 =
 ```
 mydomain.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains\1 =
+SOFTWARE\Policies\Microsoft\Edge\EnhanceSecurityModeEnforceListDomains\2 =
 ```
 myuniversity.edu
 ```

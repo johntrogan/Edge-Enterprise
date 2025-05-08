@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ViewXFAPDFInIEModeAllowedFil
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -76,12 +76,12 @@ nFeL0Q+9HX7WFI3RsmSDFTlUtrbclXH67MTdXDwWuu4=
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\0 =
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\1 =
 ```
 pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\1 =
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedFileHash\2 =
 ```
 nFeL0Q+9HX7WFI3RsmSDFTlUtrbclXH67MTdXDwWuu4=
 ```

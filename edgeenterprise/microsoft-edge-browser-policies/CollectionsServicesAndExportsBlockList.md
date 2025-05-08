@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation CollectionsServicesAndExport
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -115,27 +115,27 @@ Send collection to Microsoft OneNote
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\0 =
+SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\1 =
 ```
 collections_share
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\1 =
+SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\2 =
 ```
 local_pdf
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\2 =
+SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\3 =
 ```
 send_word
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\3 =
+SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\4 =
 ```
 send_excel
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\4 =
+SOFTWARE\Policies\Microsoft\Edge\CollectionsServicesAndExportsBlockList\5 =
 ```
 send_onenote
 ```

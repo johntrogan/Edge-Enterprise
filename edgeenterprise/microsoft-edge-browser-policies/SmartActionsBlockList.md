@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SmartActionsBlockList"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -101,17 +101,17 @@ Smart actions in PDF
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\0 =
+SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\1 =
 ```
 smart_actions
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\1 =
+SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\2 =
 ```
 smart_actions_website
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\2 =
+SOFTWARE\Policies\Microsoft\Edge\SmartActionsBlockList\3 =
 ```
 smart_actions_pdf
 ```

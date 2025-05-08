@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation DefaultSearchProviderEncodin
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -84,22 +84,22 @@ ISO-8859-1
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\0 =
+SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\1 =
 ```
 UTF-8
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\1 =
+SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\2 =
 ```
 UTF-16
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\2 =
+SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\3 =
 ```
 GB2312
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\3 =
+SOFTWARE\Policies\Microsoft\Edge\DefaultSearchProviderEncodings\4 =
 ```
 ISO-8859-1
 ```

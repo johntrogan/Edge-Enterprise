@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation URLBlocklist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -102,37 +102,37 @@ custom_scheme:*
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\0 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\1 =
 ```
 contoso.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\1 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\2 =
 ```
 https://ssl.server.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\2 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\3 =
 ```
 hosting.com/bad_path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\3 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\4 =
 ```
 https://server:8080/path
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\4 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\5 =
 ```
 .exact.hostname.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\5 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\6 =
 ```
 custom_scheme:*
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\6 =
+SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\7 =
 ```
 *
 ```

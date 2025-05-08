@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation VideoCaptureAllowedUrls"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -70,12 +70,12 @@ https://[*.]contoso.edu/
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\VideoCaptureAllowedUrls\0 =
+SOFTWARE\Policies\Microsoft\Edge\VideoCaptureAllowedUrls\1 =
 ```
 https://www.contoso.com/
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\VideoCaptureAllowedUrls\1 =
+SOFTWARE\Policies\Microsoft\Edge\VideoCaptureAllowedUrls\2 =
 ```
 https://[*.]contoso.edu/
 ```

@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InsecurePrivateNetworkReques
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -76,12 +76,12 @@ http://www.example.com:8080
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\InsecurePrivateNetworkRequestsAllowedForUrls\0 =
+SOFTWARE\Policies\Microsoft\Edge\InsecurePrivateNetworkRequestsAllowedForUrls\1 =
 ```
 http://www.example.com:8080
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\InsecurePrivateNetworkRequestsAllowedForUrls\1 =
+SOFTWARE\Policies\Microsoft\Edge\InsecurePrivateNetworkRequestsAllowedForUrls\2 =
 ```
 [*.]example.edu
 ```

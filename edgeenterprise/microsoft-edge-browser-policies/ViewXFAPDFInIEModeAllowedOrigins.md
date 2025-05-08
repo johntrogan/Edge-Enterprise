@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ViewXFAPDFInIEModeAllowedOri
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -88,17 +88,17 @@ file://account_forms/
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\0 =
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\1 =
 ```
 https://contesso.sharepoint.com/accounts/
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\1 =
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\2 =
 ```
 https://contesso.sharepoint.com/transport/
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\2 =
+SOFTWARE\Policies\Microsoft\Edge\ViewXFAPDFInIEModeAllowedOrigins\3 =
 ```
 file://account_forms/
 ```

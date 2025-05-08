@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EdgeSidebarAppUrlHostAllowLi
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/08/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -78,12 +78,12 @@ https://www.contoso.com
 
 #### Example registry value
 
-SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\0 =
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\1 =
 ```
 https://www.contoso.com
 ```
 
-SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\1 =
+SOFTWARE\Policies\Microsoft\Edge\EdgeSidebarAppUrlHostAllowList\2 =
 ```
 [*.]contoso.edu
 ```
