@@ -64,7 +64,11 @@
         "Ruchika-mittal01"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+            "searchScope": {
+                "microsoft-edge-browser-policies/**/*.md": ["EdgePolicies", "Microsoft Edge"],
+                "microsoft-edge-policies.md": ["EdgePolicies", "Microsoft Edge"]
+            }},
     "template": [],
     "dest": "Edge-Enterprise",
     "markdownEngineName": "markdig"
