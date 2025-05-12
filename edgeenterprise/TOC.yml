@@ -278,7 +278,7 @@
 - name: Microsoft Edge Reference
   items:
    - name: Browser policy reference
-     href: microsoft-edge-policies.md
+     href: microsoft-edge-browser-policies/toc.yml
    - name: EdgeUpdater policy reference
      href: microsoft-edge-edgeupdater-policies-mac.md
    - name: Update policy reference
