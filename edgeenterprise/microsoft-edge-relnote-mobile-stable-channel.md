@@ -25,11 +25,11 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 ## Version 136.0.3240.71 (iOS): May 12, 2025
 
-Fixed various bugs, general updates, new enhancements.
+Fixed various bugs and performance issues.
 
 ## Version 136.0.3240.64 (Android): May 11, 2025
 
-Fixed various bugs, general updates, new enhancements.
+Fixed various bugs and performance issues.
 
 ## Version 136.0.3240.61 (iOS): May 8, 2025
 
