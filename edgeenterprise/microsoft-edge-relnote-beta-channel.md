@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/25/2025
+ms.date: 05/12/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -48,7 +48,7 @@ To streamline communication, the Dev Channel updates section is being discontinu
  
 - **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Add text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
  
 ### Policy updates
 
@@ -80,7 +80,7 @@ Fixed various bugs, performance issues, and feature updates.
 
 ### Feature update
 
-- **Find your Edge profile in the toolbar.** With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we have moved the Profile pill to the toolbar. It will also appear as a minimized icon only, without a text label, by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Update as of Microsoft Edge version 136.0.3240.45:**  Companies with organization branding changes configured through the Edge management service will experience these Profile pill changes.
+- **Find your Edge profile in the toolbar.** With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we have moved the Profile pill to the toolbar. It will also appear as a minimized icon only, without a text label, by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Update as of Microsoft Edge version 136.0.3240.45:**  Companies with organization branding change configured through the Edge management service experiences these Profile pill changes.
 
 ## Version 136.0.3240.37: April 25, 2025
 
