@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/25/2025
+ms.date: 05/12/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -21,6 +21,51 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+
+## Version 137.0.3296.16: May 12, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and site compatibility impacting changes.
+
+### Dev channel updates
+
+To streamline communication, the Dev Channel updates section is being discontinued in Microsoft Edge Beta and Stable Release Notes.
+
+### Announcements
+
+- **Deprecation of Microsoft Edge features.**  The following Microsoft Edge features are being deprecated and are scheduled for removal by mid-to-late May: Image Editor, Image Hovers menu, Mini menu, Video super resolution, and Wallet Hub.  
+ 
+### Feature Updates
+
+- **Changes to Wallet in Microsoft Edge.**  Wallet is being phased out to support a streamlined experience within Microsoft Edge.  In Microsoft Edge version 137, the Wallet entry in Settings will be removed and a new entry will be added for Passwords/Personal Information/Payment management functions.   Also, a new personal information management design is available in Microsoft Edge Settings.   **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **Edge contextual capabilities in Business Chat work tab.**  Microsoft Copilot in Edge now supports page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Edge side pane.  
+ 
+  A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout
+
+- **Update to Mutation Event policy.**  Support for mutation events was removed in Microsoft Edge version 127.   The [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy provided a temporary option for admins to continue to use the deprecated and removed set of platform events.  In Microsoft Edge version 137, the [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy is obsolete and no longer works.  The [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) API can be used instead.
+ 
+- **Picture in Picture Player Enhancements.**  Users can now open videos as picture-in-picture and easily pause, play, skip forward or backward and seek from the progress bar right from the picture-in-picture window. Continue watching videos anywhere on the screen while multitasking. Simply click the picture-in-picture icon on a video in Microsoft Edge to get started.
+ 
+- **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
+ 
+### Policy updates
+
+#### New policies
+
+- [HappyEyeballsV3Enabled](/deployedge/microsoft-edge-policies#happyeyeballsv3enabled) - Use the Happy Eyeballs V3 algorithm for connection attempts
+- [WebAuthenticationRemoteDesktopAllowedOrigins](/deployedge/microsoft-edge-policies#webauthenticationremotedesktopallowedorigins) - Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications
+
+#### Obsoleted policies
+
+- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar (obsolete)
+- [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) - Enable deprecated/removed Mutation Events (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 137 web platform release notes (May 2025)](/microsoft-edge/web-platform/release-notes/137)
+
+
 ## Version 136.0.3240.50: May 1, 2025
 
 Fixed various bugs and performance issues.
@@ -31,11 +76,11 @@ Fixed various bugs and performance issues.
 
 ## Version 136.0.3240.45: April 29, 2025
 
-Fixed various bugs, performance issues and feature updates.
+Fixed various bugs, performance issues, and feature updates.
 
 ### Feature update
 
-- **Find your Edge profile in the toolbar.** With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we have moved the Profile pill to the toolbar. It will also appear as a minimized icon only, without a text label, by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Update as of Microsoft Edge version 136.0.3240.45:**  Companies with organization branding changes configured through the Edge management service will experience these Profile pill changes.
+- **Find your Edge profile in the toolbar.** With multiple tabs open, the tab strip is valuable space for you to find the right tabs quickly. To increase visibility of tab titles, we have moved the Profile pill to the toolbar. It will also appear as a minimized icon only, without a text label, by default.  Admins can use the [ProfileTypeInProfileButtonEnabled](/deployedge/microsoft-edge-policies#profiletypeinprofilebuttonenabled) policy to control whether the label for the work or school profile type is shown in the profile button. **Update as of Microsoft Edge version 136.0.3240.45:**  Companies with organization branding change configured through the Edge management service experiences these Profile pill changes.
 
 ## Version 136.0.3240.37: April 25, 2025
 
@@ -688,7 +733,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Feature updates
 
-- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler does not prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
+- **Cancel dialog for `beforeunload` event.** Microsoft Edge changed the behavior of the canceled dialog for the `beforeunload` event. Calling `event.preventDefault` in a `beforeunload` event handler doesn't prevent the dialog from being shown. Instead, `event.returnValue = ''` needs to be called in the `beforeunload` event handler to prevent the canceled dialog. The [BeforeunloadEventCancelByPreventDefaultEnabled](/deployedge/microsoft-edge-policies?branch=pr-en-us-4908#beforeunloadeventcancelbypreventdefaultenabled) policy is obsolete and no longer works after Microsoft Edge version 130.
 
 - **Get the latest updates effortlessly with instant update.** Instant update in Microsoft Edge ensures you get the latest browser updates automatically, when you step away from your computer. You can keep browsing, knowing that you already have the latest updates to keep you safe online. For more information, see [Get instant updates in Microsoft Edge - Microsoft Support](https://support.microsoft.com/microsoft-edge/get-instant-updates-in-microsoft-edge-4820adad-dd32-470c-9bd9-dba1de71a7f1). **Note:** This feature is in private preview for enterprise customers. Future feature updates are available via Microsoft Edge release notes.
 
