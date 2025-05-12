@@ -69,10 +69,6 @@ Fixed various bugs, new enhancements and performance issues.
 - [Android] Improve the user experience when disable Print feature
 - [Android] Improve the user experience of shared device mode
 
-## Version 136.0.3240.64 (Android and iOS): April 28, 2025
-
-Fixed various bugs and performance issues.
-
 ## Version 135.0.3179.85 (Android and iOS): April 21, 2025
 
 Fixed various bugs and performance issues.
