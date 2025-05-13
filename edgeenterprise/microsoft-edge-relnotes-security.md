@@ -146,7 +146,7 @@ This update contains the following Microsoft Edge-specific update:
 
 ## January 16, 2025
 
-Microsoft has released the latest **Edge Update (Version 1.3.195.43)**, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+Microsoft has released the latest **Edge Update (Version 1.3.195.43)**, For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
 This release contains the following Microsoft Edge Update specific security fix:
 
