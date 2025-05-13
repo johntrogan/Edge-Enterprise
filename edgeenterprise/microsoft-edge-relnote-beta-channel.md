@@ -70,6 +70,8 @@ To streamline communication, the Dev Channel updates section is being discontinu
 
 Fixed various bugs and performance issues.
 
+- **Higher coverage of Digital Signature Verification in PDF.**  Microsoft Edge now provides broader support for verifying digital signatures within PDFs, ensuring higher coverage and accuracy. This improvement helps users confirm the authenticity and integrity of their documents more reliably, enhancing security and compliance for enterprise environments. This change is available in the new Microsoft Edge built-in PDF reader powered by Adobe Acrobat.
+
 ## Version 136.0.3240.47: April 30, 2025
 
 Fixed various bugs and performance issues.

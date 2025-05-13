@@ -58,8 +58,9 @@ The following Dev channel updates preceded this Stable channel release. The foll
 ### Feature updates
 
 - **New feature available in Microsoft Edge for Business.**  Announcing the launch of Edge for Business security connectors.  Microsoft Edge for Business offers seamless, native integration with existing security solutions through Edge for Business connectors, enhancing device trust, reporting and data loss prevention capabilities.  Admins can easily deploy, configure, and manage connectors through the Edge management service.  Edge for Business supports a wide range of security providers, offering key controls and capabilities familiar to Admins.  For more information, see [Connectors Overview | Microsoft Learn.](/deployedge/microsoft-edge-connectors-overview) 
- 
 
+- **Higher coverage of Digital Signature Verification in PDF.**  Microsoft Edge now provides broader support for verifying digital signatures within PDFs, ensuring higher coverage and accuracy. This improvement helps users confirm the authenticity and integrity of their documents more reliably, enhancing security and compliance for enterprise environments. This change is available in the new Microsoft Edge built-in PDF reader powered by Adobe Acrobat.
+ 
 - **Rework of Work Feed on Edge New Tab Page (NTP).** The Work Feed experience, available on the New Tab Page (NTP) for Work Feed-eligible Commercial users with a Microsoft 365 subscription, will have changing and updated functionalities. These changes include renewed focus on productivity and M365 modules. Starting in mid-April 2025, users will have an updated My Feed experience rolling out on the enterprise new tab page. Users will no longer be able to view content and activity from their network, and instead will experience quick access to recently used M365 documents, recent SharePoint sites, upcoming Outlook events, M365 apps, and To-Do tasks.
  
 
