@@ -518,7 +518,7 @@
     href: SmartScreenForTrustedDownloadsEnabled.md
   - name: SmartScreenPuaEnabled
     href: SmartScreenPuaEnabled.md
-- name: Startup, home page and new tab page
+- name: Startup&comma; home page and new tab page
   items:
   - name: HomepageIsNewTabPage
     href: HomepageIsNewTabPage.md
@@ -1078,6 +1078,12 @@
     href: NewPDFReaderEnabled.md
   - name: NonRemovableProfileEnabled
     href: NonRemovableProfileEnabled.md
+  - name: OnBulkDataEntryEnterpriseConnector
+    href: OnBulkDataEntryEnterpriseConnector.md
+  - name: OnFileAttachedEnterpriseConnector
+    href: OnFileAttachedEnterpriseConnector.md
+  - name: OnPrintEnterpriseConnector
+    href: OnPrintEnterpriseConnector.md
   - name: OrganizationLogoOverlayOnAppIconEnabled
     href: OrganizationLogoOverlayOnAppIconEnabled.md
   - name: OrganizationalBrandingOnWorkProfileUIEnabled

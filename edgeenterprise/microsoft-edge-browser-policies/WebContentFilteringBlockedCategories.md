@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation WebContentFilteringBlockedCa
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/08/2025
+ms.date: 05/13/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -96,6 +96,10 @@ Policy options mapping:
 
 * web_based_email (web_based_email) = Web Based Email
 
+* gen_ai (gen_ai) = Gen AI
+
+* shopping (shopping) = Shopping
+
 * none (none) = None
 
 Use the preceding information when configuring this policy.
@@ -127,6 +131,8 @@ Use the preceding information when configuring this policy.
 - violence = Violence
 - weapons = Weapons
 - web_based_email = Web Based Email
+- gen_ai = Gen AI
+- shopping = Shopping
 - none = None
 
 ## Supported features
