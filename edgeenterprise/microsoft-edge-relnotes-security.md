@@ -142,8 +142,15 @@ Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0
 
 This update contains the following Microsoft Edge-specific update:
 
-- [CVE-2025-21399](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21399)
 - [CVE-2025-21185](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21185)
+
+## January 16, 2025
+
+Microsoft has released the latest **Edge Update (Version 1.3.195.43)**, For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This release contains the following Microsoft Edge Update specific security fix:
+
+- [CVE-2025-21399](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21399)
 
 ## January 10, 2025
 
