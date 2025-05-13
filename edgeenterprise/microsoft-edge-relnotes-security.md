@@ -138,12 +138,20 @@ This update contains the following Microsoft Edge-specific update:
 
 ## January 17, 2025
 
-Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.115)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 132.0.2957.115)**. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge-specific update:
+
+- [CVE-2025-21185](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21185)
+
+## January 16, 2025
+
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 1.3.195.43)** which incorporates the latest updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
 This update contains the following Microsoft Edge-specific update:
 
 - [CVE-2025-21399](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21399)
-- [CVE-2025-21185](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21185)
+
 
 ## January 10, 2025
 
