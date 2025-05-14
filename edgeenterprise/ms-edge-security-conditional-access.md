@@ -22,7 +22,7 @@ When it comes to managing and protecting your cloud resources, identity and acce
 
 Conditional Access gives you a balance between security and productivity. For more information, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access), a detailed guide to help plan and deploy Conditional Access in Microsoft Entra ID (*formerly known as Azure Active Directory*). (For more information about this name change, see [New name for Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
 
-Microsoft Edge natively supports access to Conditional Access protected resources on both [managed](#accessing-ca-protected-urls-with-microsoft-edge-on-managed-devices) and [unmanaged](#accessing-ca-protected-urls-with-microsoft-edge-on-byod-using-intune-mam) devices.
+Microsoft Edge natively supports access to Conditional Access protected resources on both [managed](#accessing-conditional-access-protected-urls-with-microsoft-edge-on-managed-devices) and [unmanaged](#accessing-conditional-access-protected-urls-with-microsoft-edge-on-byod-using-intune-mam) devices.
 
 > [!NOTE]
 > We have exempted Edge Auth from enforcing specific device-based Conditional Access controls during the authentication bootstrap process. Specifically, the following controls are currently exempted: `RequireApprovedApp`, `RequireCompliantApp`, and `RequireCompliantDevice`. However, `RequireDomainJoinedDevice` is **not** exempted and will be enforced.
