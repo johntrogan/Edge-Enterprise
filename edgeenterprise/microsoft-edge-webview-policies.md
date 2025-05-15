@@ -131,7 +131,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder = "Name: *, Va
 
   #### Description
 
-  This policy configures the channel search kind for WebView2 applications. By default the channel search kind is 0, which is equivalent to the "Most Stable" search kind in the corresponding WebView2 API; This indicates that WebView2 environment creation should search for a release channel from the most to least stable: WebView2 Runtime, Beta, Dev, and Canary.
+  This policy configures the channel search kind for WebView2 applications. By default the channel search kind is 0, which is equivalent to the "Most Stable" search kind in the corresponding WebView2 API; This policy indicates that WebView2 environment creation should search for a release channel from the most to least stable: WebView2 Runtime, Beta, Dev, and Canary.
 
 To reverse the default search order and use the "Least Stable" search kind, set this policy to 1.
 
@@ -187,7 +187,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\ChannelSearchKind = "Name: WebView2API
 
   #### Description
 
-  This policy is deprecated in favor of ChannelSearchKind, which has the same functionality, and will become obsolete in 124 release. The default channel search order is WebView2 Runtime, Beta, Dev, and Canary.
+  This policy is deprecated in favor of ChannelSearchKind, which has the same functionality, and will be obsolete in 124 release. The default channel search order is WebView2 Runtime, Beta, Dev, and Canary.
 
 To reverse the default search order, set this policy to 1.
 
@@ -493,9 +493,9 @@ Configuration payload may also contain a list of actions to take on certain doma
 
 If you set this policy to 'FullMode', the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads.
 
-If you set this policy to 'ConfigurationsOnlyMode', only the configuration payload is downloaded.
+If you set this policy to 'ConfigurationsOnlyMode' -  only the configuration payload is downloaded.
 
-If you set this policy to 'RestrictedMode', the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
+If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
 
 If you don't configure this policy on a managed device, the behavior on Beta and Stable channels is the same as the 'ConfigurationsOnlyMode'. On Canary and Dev channels the behavior is the same as 'FullMode'.
 
@@ -561,7 +561,7 @@ Use the preceding information when configuring this policy.
   #### Description
 
   Unload event handlers are being deprecated. Whether they fire depends on the unload Permissions-Policy.
-Currently, they're allowed by policy by default. In the future they'll gradually move to being disallowed by default and sites must explicitly enable them using Permissions-Policy headers.
+Currently, allowed by policy by default. In the future, they'll gradually move to being disallowed by default and sites must explicitly enable them using Permissions-Policy headers.
 This enterprise policy can be used to opt out of this gradual deprecation by forcing the default to stay enabled.
 
 Pages might depend on unload event handlers to save data or signal the end of a user session to the server.
@@ -570,7 +570,7 @@ Recommended alternatives exist, but the unload event has been used for a long ti
 
 If you disable this policy or don't configure it, unload event handlers will gradually be deprecated in-line with the deprecation rollout and sites which don't set Permissions-Policy header will stop firing `unload` events.
 
-If you enable this policy then unload event handlers will continue to work by default.
+If you enable this policy, then unload event handlers continue to work by default.
 
   #### Supported features:
 
