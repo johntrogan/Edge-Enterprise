@@ -3,7 +3,7 @@ title: "Release notes for Microsoft Edge Security Updates"
 ms.author: pchiquini
 author: vmliramichael
 manager: robfranco
-ms.date: 04/22/2025
+ms.date: 05/15/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -16,9 +16,14 @@ description: "Release notes for Microsoft Edge Security Updates"
 
 These release notes provide information about security fixes that are included in updates to Microsoft Edge Stable channel.
 
-## May 14, 2025
+## May 15, 2025
 
-Microsoft is aware of the recent exploits existing in the wild. We are actively working on releasing a security fix.  
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 136.0.3240.76)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This update contains the following Microsoft Edge specific security fixes:
+
+- [CVE-2025-4664](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4664)
+- [CVE-2025-4609](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-4609)
 
 ## May 8, 2025
 
