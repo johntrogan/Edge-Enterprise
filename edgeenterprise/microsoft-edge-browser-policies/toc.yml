@@ -1078,6 +1078,12 @@
     href: NewPDFReaderEnabled.md
   - name: NonRemovableProfileEnabled
     href: NonRemovableProfileEnabled.md
+  - name: OnBulkDataEntryEnterpriseConnector
+    href: OnBulkDataEntryEnterpriseConnector.md
+  - name: OnFileAttachedEnterpriseConnector
+    href: OnFileAttachedEnterpriseConnector.md
+  - name: OnPrintEnterpriseConnector
+    href: OnPrintEnterpriseConnector.md
   - name: OrganizationLogoOverlayOnAppIconEnabled
     href: OrganizationLogoOverlayOnAppIconEnabled.md
   - name: OrganizationalBrandingOnWorkProfileUIEnabled
