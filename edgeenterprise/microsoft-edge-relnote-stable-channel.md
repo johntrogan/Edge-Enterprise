@@ -28,7 +28,9 @@ These release notes provide information about new features and nonsecurity updat
 
 ## Version 136.0.3240.76: May 15, 2025
 
-Fixed various bugs and performance issues.Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-15-2025).
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-15-2025).
 
 ## Version 136.0.3240.64: May 8, 2025
 
