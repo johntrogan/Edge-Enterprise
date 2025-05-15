@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/17/2025
+ms.date: 05/15/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -25,6 +25,12 @@ These release notes provide information about new features and nonsecurity updat
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md).
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 136.0.3240.76: May 15, 2025
+
+Fixed various bugs and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-15-2025).
 
 ## Version 136.0.3240.64: May 8, 2025
 
