@@ -21,6 +21,17 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 137.0.3296.30: May 19, 2025
+
+Fixed various bugs and performance issues and policy updates.SS
+
+#### New policies
+
+- [OnBulkDataEntryEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onbulkdataentryenterpriseconnector) - Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors
+
+- [OnFileAttachedEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onfileattachedenterpriseconnector) - Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors
+
+- [OnPrintEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onprintenterpriseconnector) - Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors
 
 ## Version 137.0.3296.16: May 12, 2025
 
