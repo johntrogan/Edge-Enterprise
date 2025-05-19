@@ -23,15 +23,19 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 137.0.3296.30: May 19, 2025
 
-Fixed various bugs and performance issues and policy updates.SS
+Fixed various bugs and performance issues and policy updates.
+
+### Policy updates
 
 #### New policies
 
 - [OnBulkDataEntryEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onbulkdataentryenterpriseconnector) - Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors
-
 - [OnFileAttachedEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onfileattachedenterpriseconnector) - Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors
-
 - [OnPrintEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onprintenterpriseconnector) - Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors
+
+### Fixes
+
+- Fixed an issue which affected users with the 'Auto hidden' sidebar visibility setting and caused their Outlook or Teams links to not show sidepane content as expected.
 
 ## Version 137.0.3296.16: May 12, 2025
 
