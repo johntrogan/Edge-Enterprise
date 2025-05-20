@@ -43,10 +43,12 @@ Before you can set up WCF you must meet the following prerequisites.
 
 This section describes and illustrates the steps for your organization:
 
-- [Enable WCF for a configuration policy](#enable-wcf-for-a-security-group)
+- [Enable WCF for a configuration policy](#enable-wcf-for-a-configuration-policy)
 - [Assign the WCF policy to a group](#assign-the-wcf-policy-to-a-group)
-- [Manging users access requests](#managing-users-access-requests)
-- [Verify that the WCF policy was applied correctly](#verify-that-the-wcf-policy-got-applied)
+- [Manage exceptions via allow and block lists](#manage-exceptions-via-allow-and-block-lists)
+- [Enable diagnostic data (optional)](#enable-diagnostic-data-optional)
+- [Verify that the WCF policy was applied correctly](#verify-that-the-wcf-policy-was-applied-correctly)
+- [Managing User Access Requests](#managing-user-access-requests)
 
 ### Enable WCF for a configuration policy
 
