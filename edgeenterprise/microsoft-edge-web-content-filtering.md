@@ -33,7 +33,7 @@ Before you can set up WCF you must meet the following prerequisites.
 1. On managed Windows devices where WCF policy needs to be applied:  
    - Be signed in with work or school account on a device running Windows 10 or later.
    - Have Microsoft Edge Version 135 or higher installed.
-2. You must be a [Microsoft Edge Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#edge-administrator) or a [Global Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-administrator) to access this experience in Microsoft 365 Admin Center.
+2. You must be a [Microsoft Edge Administrator](/entra/identity/role-based-access-control/permissions-reference#edge-administrator) or a [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to access this experience in Microsoft 365 Admin Center.
 3. Your organization must have a M365 A1/A3/A5 license, Business Premium license, or Business Basic or Standard license with Intune Plan 1 or 2.
 
 > [!NOTE]
@@ -56,7 +56,7 @@ To enable WCF for a configuration policy:
 
 1. From the Microsoft 365 admin center, navigate to Settings -> Microsoft Edge -> Configuration policies.
 
-2. If you don’t yet have a configuration policy in the Edge management service assigned to your target. Microsoft Entra group, create one by following these steps: [Create a configuration policy.](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service#create-a-configuration-policy)
+2. If you don’t yet have a configuration policy in the Edge management service assigned to your target. Microsoft Entra group, create one by following these steps: [Create a configuration policy.](/deployedge/microsoft-edge-management-service#create-a-configuration-policy)
 
 3. Navigate to your desired configuration policy by clicking on it. 
 
