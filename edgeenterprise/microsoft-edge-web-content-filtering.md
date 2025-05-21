@@ -19,7 +19,7 @@ This article describes how to configure Web Content Filtering (WCF) for Microsof
 
 ## Introduction
 
-Microsoft Edge is already one of the most secure browsers with features like phishing protection, typosquatting, and more to protect users when they're browsing online. Adding to these security features, Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Using this feature, you can choose [categories of websites](edge-learnmore-wcf-supported-categories.md) that users are not allowed to access while using Microsoft Edge.
+Microsoft Edge is already one of the most secure browsers with features like phishing protection, typosquatting, and more to protect users when they're browsing online. Adding to these security features, Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Using this feature, you can choose [categories of websites](edge-learnmore-wcf-supported-categories.md) that users aren't allowed to access while using Microsoft Edge.
 
 You can set up web content filtering for your organization via the Microsoft Edge management service using the  following steps. 
 
@@ -62,12 +62,12 @@ To enable WCF for a configuration policy:
 
 4. From the configuration policy, navigate to **Customization Settings -> Web content filtering**.
 
-5. On the **Web content filtering** controls page, you’ll find all the settings to manage WCF for your organization. Under Blocked categories, check all the categories that you want to  block and then select **Save changes**. 
+5. On the **Web content filtering** controls page, you find all the settings to manage WCF for your organization. Under Blocked categories, check all the categories that you want to  block and then select **Save changes**. 
 
 ![Pick blocked categories for Web content filtering.](media/microsoft-edge-web-content-filtering/pic4.png)
 
 > [!IMPORTANT]
-> Users with configured security settings may still be at risk on other browsers. To mitigate this risk, enabling web content filtering through the Edge management service also blocks user access to other browsers. When WCF is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
+> Users with configured security settings may still be at risk on other browsers. To mitigate this risk, enabling web content filtering through the Edge management service also blocks user access to other browsers. When WCF is enabled, a new configuration policy is created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
 
 ### Manage exceptions via allow and block lists
 
@@ -82,7 +82,7 @@ If you want to allow a particular URL that is part of a blocked category, then y
 ![Enter URL for allowed sites in Web content filtering.](media/microsoft-edge-web-content-filtering/pic5.png)
 
 > [!TIP]
-> Instead of adding the URLs manually, you can import them in bulk using a .csv or .json file with the **Import** option. You could also bulk export the list if you want to re-use it for a different group/policy. 
+> Instead of adding the URLs manually, you can import them in bulk using a .csv or .json file with the **Import** option. You could also bulk export the list if you want to reuse it for a different group/policy. 
 
 Similarly, if you want to block a particular URL or list of URLs, you can repeat the previous steps in the **Blocked sites** section.
  
@@ -92,11 +92,11 @@ Similarly, if you want to block a particular URL or list of URLs, you can repeat
 > In addition to specific URLs you can use URL patterns with supported wildcard characters. Refer to [this page](/DeployEdge/edge-learnmmore-url-list-filter%20format) for more information.
 
 > [!IMPORTANT]
-> URLs added to the Allowed sites list will take precedence over the Blocked sites list and Blocked categories. You can read more about this [here](/deployedge/microsoft-edge-policies#urlallowlist).
+> URLs added to the Allowed sites list takes precedence over the Blocked sites list and Blocked categories. You can read more about this [here](/deployedge/microsoft-edge-policies#urlallowlist).
 
 ### Enable diagnostic data (optional)
 
-Web Content Filtering (WCF) on Microsoft Edge is in preview and our aim is to make it as safe and seamless as possible. To help improve the feature and diagnose any issues that might arise during the preview, we recommend that you enable Optional data for the devices on which you are enabling WCF. Microsoft values your privacy, and we will not collect or use any personal identifiable information.
+Web Content Filtering (WCF) on Microsoft Edge is in preview and our aim is to make it as safe and seamless as possible. To help improve the feature and diagnose any issues that might arise during the preview, we recommend that you enable Optional data for the devices on which you're enabling WCF. Microsoft values your privacy, and we won't collect or use any personal identifiable information.
 
 1. To enable **Diagnostic data**, open the policy configuration page and go to **Settings**.
 2. Select **Add setting**.
@@ -122,7 +122,7 @@ Now that the policy has WCF, Allowlist & Blocklist, and Diagnostic data settings
 
 You can check whether the policy was applied to a user's Edge browser by navigating to edge://settings/privacy. Under **Privacy, search, and services > Security** you should see the **Web content filtering** setting is enabled.
  
-When a user tries to access a site that is blocked by WCF, they will see a screen like the one in the next screenshot.
+When a user tries to access a site that is blocked by WCF, they'll see a screen like the one in the next screenshot.
  
 ![Prompt to get permission to access blocked site.](media/microsoft-edge-web-content-filtering/edge-wcf15-site-perm-prompt.png)
 
@@ -130,11 +130,11 @@ When a user tries to access a site that is blocked by WCF, they will see a scree
 > It can take up to 90 minutes for policies set via the Edge management service be applied to user devices.
 
 > [!TIP]
-> If you have the same policy setup via Intune and EMX, Intune policy takes precedence by default. You can override this default behavior using the [EdgeManagementPolicyOverridesPlatformPolicy](/deployedge/microsoft-edge-policies#edgemanagementpolicyoverridesplatformpolicy) and the  [EdgeManagementUserPolicyOverridesCloudMachinePolicy](/deployedge/microsoft-edge-policies#edgemanagementuserpolicyoverridescloudmachinepolicy) settings in the browser policy documentation.
+> If you have the same policy set up via Intune and EMX, Intune policy takes precedence by default. You can override this default behavior using the [EdgeManagementPolicyOverridesPlatformPolicy](/deployedge/microsoft-edge-policies#edgemanagementpolicyoverridesplatformpolicy) and the  [EdgeManagementUserPolicyOverridesCloudMachinePolicy](/deployedge/microsoft-edge-policies#edgemanagementuserpolicyoverridescloudmachinepolicy) settings in the browser policy documentation.
 
 ### Managing User Access Requests
 
-If a user encounters a blocked site which they need to access for a legitimate business reason, or that they believe should not be blocked, they may request access. These requests can then be granted or denied by an administrator from the Edge management service.
+If a user encounters a blocked site which they need to access for a legitimate business reason, or that they believe shouldn't be blocked, they may request access. These requests can then be granted or denied by an administrator from the Edge management service.
 
 > [!NOTE]  
 > Requests are currently enabled for cloud-based configuration profiles.  
