@@ -132,7 +132,7 @@ When a user tries to access a site that is blocked by WCF, they will see a scree
 > [!TIP]
 > If you have the same policy setup via Intune and EMX, Intune policy takes precedence by default. You can override this default behavior using the [EdgeManagementPolicyOverridesPlatformPolicy](/deployedge/microsoft-edge-policies#edgemanagementpolicyoverridesplatformpolicy) and the  [EdgeManagementUserPolicyOverridesCloudMachinePolicy](/deployedge/microsoft-edge-policies#edgemanagementuserpolicyoverridescloudmachinepolicy) settings in the browser policy documentation.
 
-## Managing User Access Requests
+### Managing User Access Requests
 
 If a user encounters a blocked site which they need to access for a legitimate business reason, or that they believe should not be blocked, they may request access. These requests can then be granted or denied by an administrator from the Edge management service.
 
