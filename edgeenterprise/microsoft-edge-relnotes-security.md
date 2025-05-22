@@ -65,6 +65,14 @@ Microsoft has released the **latest Microsoft Edge Stable Channel (Version 134.0
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 134.0.3124.83)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
+## March - 21, 2025
+
+Microsoft has released the latest **Edge Update (Version 1.3.195.45)**, For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
+
+This release contains the following Microsoft Edge Update specific security fix:
+
+- [CVE-2025-29795](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29795)
+
 ## March 13, 2025
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 134.0.3124.68)**, which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
