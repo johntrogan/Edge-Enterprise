@@ -26,6 +26,22 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 136.0.3240.92: May 23, 2025
+
+Fixed various bugs, feature updates and performance issues.
+
+### Announcement
+
+- **Copilot on the Microsoft Edge New Tab Page (NTP)**.  Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page.  Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot.  Copilot admin policies continue to be enforced and will still apply.  NTP changes are rolled out to all Microsoft Edge release channels. Note: These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+ 
+### Fixes
+
+- Fixed an issue that may have affected extensions that bring up a window.  Extensions designed to run continuously were being paused in the background when the window was minimized or occluded.
+
+- Fixed an issue which caused the Microsoft Defender Application Guard window to automatically close 1 minute after launch without any user interaction. 
+ 
+- Fixed an issue which caused text to not be displayed and other rendering issues when viewing certain PDF files containing Japanese fonts.
+
 ## Version 136.0.3240.76: May 15, 2025
 
 Fixed various bugs and performance issues.
