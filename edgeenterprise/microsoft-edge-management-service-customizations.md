@@ -102,6 +102,21 @@ You can specify individual hostnames and the profile you would like them to open
 
 To add settings that help protect against security threats, navigate to the security settings tab. Here you can choose to configure settings that help protect your users against security vulnerabilities.
 
+#### Enable enhanced security mode
+
+[Enhanced security mode](/deployedge/microsoft-edge-security-browse-safer) helps reduce the risk of an attack caused by memory-related vulnerabilities by automatically applying stricter security settings on unfamiliar sites. To enable this mode:
+
+1. Turn on the **Enhanced security mode toggle**.
+2. Specify the **Balanced** or **Strict** mode depending on the level of security you would like.
+3. Select **Save changes**.
+
+#### Block other browsers
+
+> [!NOTE]
+> This setting is only available for customers with a Microsoft Intune license.
+
+Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
+
 ### Secure Password Deployment (in preview)
 
 > [!NOTE]
@@ -117,21 +132,6 @@ To deploy a set of credentials for a site:
 3. Select **Add** at the bottom of the panel.
 
 Once successfully added and deployed, users should be able to see the shared username and password when attempting to log into the specified site. These credentials will appear in the autofill dropdown and password manager and be marked with an indicator that the credentials were shared by their organization.
-
-#### Enable enhanced security mode
-
-[Enhanced security mode](/deployedge/microsoft-edge-security-browse-safer) helps reduce the risk of an attack caused by memory-related vulnerabilities by automatically applying stricter security settings on unfamiliar sites. To enable this mode:
-
-1. Turn on the **Enhanced security mode toggle**.
-2. Specify the **Balanced** or **Strict** mode depending on the level of security you would like.
-3. Select **Save changes**.
-
-#### Block other browsers
-
-> [!NOTE]
-> This setting is only available for customers with a Microsoft Intune license.
-
-Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
 
 ## See also
 
