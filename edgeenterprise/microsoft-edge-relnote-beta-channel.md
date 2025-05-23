@@ -23,7 +23,15 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 137.0.3296.39: May 23, 2025
 
-Fixed various bugs and performance issues and policy updates.
+Fixed various bug, performance issues and feature updates.
+
+### Announcement
+
+- **Copilot on the Microsoft Edge New Tab Page (NTP).** Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page. Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot. Copilot admin policies continue to be enforced and will still apply. NTP changes are rolled out to all Microsoft Edge release channels. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+
+### Feature updates
+
+ - **Blocking inappropriate sites on Edge for Business.**  Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Configure the feature using the Microsoft Edge management service.  Admins can block millions of inappropriate sites by simply selecting categories. This feature updates daily and works even when devices are off the organization’s network.  For more information, see [Configure Web Content Filtering on Edge](/deployedge/microsoft-edge-web-content-filtering).  **Note:** This experience is in public preview.  
 
 ## Version 137.0.3296.30: May 19, 2025
 
