@@ -23,7 +23,7 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 137.0.3296.39: May 23, 2025
 
-Fixed various bug, performance issues and feature updates.
+Fixed various bug, performance issues, and feature updates.
 
 ### Announcement
 
@@ -99,7 +99,7 @@ Fixed various bugs, performance issues, and feature updates.
 
 ### Feature update
 
-- **Higher coverage of Digital Signature Verification in PDF.**  Microsoft Edge now provides broader support for verifying digital signatures within PDFs, ensuring higher coverage and accuracy. This improvement helps users confirm the authenticity and integrity of their documents more reliably, enhancing security and compliance for enterprise environments. This change is available in the new Microsoft Edge built-in PDF reader powered by Adobe Acrobat.
+- **Higher coverage of Digital Signature Verification in PDF.**  Microsoft Edge now provides broader support for verifying digital signatures within PDFs, ensuring higher coverage and accuracy. This improvement helps users confirm the authenticity and integrity of their documents more reliably, enhancing security, and compliance for enterprise environments. This change is available in the new Microsoft Edge built-in PDF reader powered by Adobe Acrobat.
 
 ## Version 136.0.3240.47: April 30, 2025
 
