@@ -30,7 +30,7 @@ Archived versions of these release notes are available at [Archived release note
 
 ## Version 137.0.3296.36 (Android and iOS): May 23, 2025
 
-Fixed various bugs and performance issues.
+Fixed various bugs, and performance issues.
 
 ## Version 137.0.3296.31 (Android and iOS): May 20, 2025
 
