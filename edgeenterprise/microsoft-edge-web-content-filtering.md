@@ -3,7 +3,7 @@ title: "Configure Web Content Filtering on Edge"
 ms.author: ssatti
 author: vmliramichael
 manager: vesesha
-ms.date: 05/20/2025
+ms.date: 05/27/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -163,6 +163,24 @@ URLs allowed via requests will automatically add the domain name to the allow li
 6. Click **Save**. 
 
 To change a block or allow setting from a resolved request, remove the site from the appropriate block or allow list.
+
+### Web Content Filtering in Edge Reporting  
+
+ You can analyze the web activity trends in your organization by [searching the audit log](/purview/audit-search) on [Microsoft Purview](/purview/). The following fields are associated with the Web Content Filtering records that are sent to Microsoft Purview - 
+
+Workload: MicrosoftEdge 
+
+Record Type: WebContentFiltering 
+
+Activities: Allowed URL Navigation in Microsoft Edge, Blocked URL Navigation in Microsoft Edge 
+
+You can use the above to run a search job on the Audit solution of Microsoft Purview. 
+
+![PurviewDetails](media/microsoft-edge-web-content-filtering/1A.png)
+
+You can view more details of each URL navigation in the search result by clicking on it or by exporting the results of any search query. 
+
+![PurviewDetails_export](media/microsoft-edge-web-content-filtering/1A.png)
 
 
 ## See also
