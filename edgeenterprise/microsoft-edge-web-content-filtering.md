@@ -166,13 +166,13 @@ To change a block or allow setting from a resolved request, remove the site from
 
 ### Web Content Filtering in Edge Reporting  
 
- You can analyze the web activity trends in your organization by [searching the audit log](/purview/audit-search) on [Microsoft Purview](/purview/). The following fields are associated with the Web Content Filtering records that are sent to Microsoft Purview - 
+ You can analyze the web activity trends in your organization by [searching the audit log](/purview/audit-search) on [Microsoft Purview](/purview/). The following fields are associated with the Web Content Filtering records that are sent to Microsoft Purview. 
 
-Workload: MicrosoftEdge 
+- **Workload:** MicrosoftEdge 
 
-Record Type: WebContentFiltering 
+- **Record Type:** WebContentFiltering 
 
-Activities: Allowed URL Navigation in Microsoft Edge, Blocked URL Navigation in Microsoft Edge 
+- **Activities:** Allowed URL Navigation in Microsoft Edge, Blocked URL Navigation in Microsoft Edge 
 
 You can use the above to run a search job on the Audit solution of Microsoft Purview. 
 
@@ -180,7 +180,7 @@ You can use the above to run a search job on the Audit solution of Microsoft Pur
 
 You can view more details of each URL navigation in the search result by clicking on it or by exporting the results of any search query. 
 
-![PurviewDetails_export](media/microsoft-edge-web-content-filtering/1A.png)
+![PurviewDetails_export](media/microsoft-edge-web-content-filtering/2A.png)
 
 
 ## See also
