@@ -19,7 +19,6 @@ These release notes provide information about security fixes that are included i
 ## may 27,2025 
 Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix. 
 
-
 ## May 19, 2025
 
 Microsoft has released the latest **Edge Update (Version 1.3.195.61)**, For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
