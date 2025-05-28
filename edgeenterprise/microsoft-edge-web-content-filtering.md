@@ -164,7 +164,7 @@ URLs allowed via requests will automatically add the domain name to the allow li
 
 To change a block or allow setting from a resolved request, remove the site from the appropriate block or allow list.
 
-### Web Content Filtering in Edge Reporting  
+## Reporting  
 
  You can analyze the web activity trends in your organization by [searching the audit log](/purview/audit-search) on [Microsoft Purview](/purview/). The following fields are associated with the Web Content Filtering records that are sent to Microsoft Purview. 
 
