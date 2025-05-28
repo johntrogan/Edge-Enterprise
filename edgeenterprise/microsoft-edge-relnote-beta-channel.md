@@ -27,7 +27,7 @@ Fixed various bug, performance issues, and feature updates.
 
 ### Announcement
 
-- **Copilot on the Microsoft Edge New Tab Page (NTP).** Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page. Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot. Copilot admin policies continue to be enforced and will still apply. NTP changes are rolled out to all Microsoft Edge release channels. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+- **Copilot on the Microsoft Edge New Tab Page (NTP).** Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page. Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot. The Copilot admin policy [NewTabPageBingChatEnabled](/deployedge/microsoft-edge-browser-policies/newtabpagebingchatenabled) continues to be enforced and will still apply. NTP changes are rolled out to all Microsoft Edge release channels. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
 
 ### Feature updates
 
@@ -75,7 +75,7 @@ To streamline communication, the Dev Channel updates section is being discontinu
  
 - **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat.  **Note:** This feature has been rolled back due to technical issues.  It is planned to be turned on in a future Microsoft Edge version.  Broad availability will be announced via Microsoft Edge release notes. (*Updated May 28, 2025*)
  
 ### Policy updates
 

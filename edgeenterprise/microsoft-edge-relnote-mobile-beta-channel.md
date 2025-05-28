@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/22/2025
+ms.date: 05/27/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -27,6 +27,10 @@ Archived versions of these release notes are available at [Archived release note
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 137.0.3296.46 (Android and iOS): May 27, 2025
+
+Fixed various bugs, and performance issues.
 
 ## Version 137.0.3296.36 (Android and iOS): May 23, 2025
 
