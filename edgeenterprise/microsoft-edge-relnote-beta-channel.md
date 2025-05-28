@@ -27,7 +27,7 @@ Fixed various bug, performance issues, and feature updates.
 
 ### Announcement
 
-- **Copilot on the Microsoft Edge New Tab Page (NTP).** Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page. Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot. The Copilot admin policy [NewTabPageBingChatEnabled](/deployedge/microsoft-edge-browser-policies/newtabpagebingchatenabled) continues to be enforced and will still apply. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+- **Copilot on the Microsoft Edge New Tab Page (NTP).** Starting at the end of May 2025, users may see suggested work and productivity-related Copilot prompts by their search box on the NTP page. Also, users may see the Copilot icon in their search box allowing them to click on the icon to send their current search query to Copilot. The Copilot admin policy [NewTabPageBingChatEnabled](/deployedge/microsoft-edge-browser-policies/newtabpagebingchatenabled) continues to be enforced and will still apply. NTP changes are rolled out to all Microsoft Edge release channels. **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
 
 ### Feature updates
 
