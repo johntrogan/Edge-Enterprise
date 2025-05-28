@@ -75,7 +75,7 @@ To streamline communication, the Dev Channel updates section is being discontinu
  
 - **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat. 
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat.  **Note:** This feature has been rolled back due to technical issues.  It is planned to be turned on in a future Microsoft Edge version.  Broad availability will be announced via Microsoft Edge release notes. (*Updated May 28, 2025*)
  
 ### Policy updates
 
