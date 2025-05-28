@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 05/12/2025
+ms.date: 05/28/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -20,6 +20,9 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 137.0.3296.50: May 28, 2025
+Fixed various bugs and performance issues.
 
 ## Version 137.0.3296.39: May 23, 2025
 
@@ -140,7 +143,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 - [Dev Channel update to 136.0.3193.0 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3193-0-is-live-/4396080)
 - [Dev Channel update to 136.0.3193.2 is live. | Microsoft Community Hub](https://techcommunity.microsoft.com/discussions/edgeinsiderannouncements/dev-channel-update-to-136-0-3209-2-is-live-/4397722)
 
-## Announcements
+### Announcements
 
 - **Root certificate store update.**  Microsoft Edge’s root store is provided by the Microsoft Trusted Root Program. A [recent update](/security/trusted-root/2025/february-2025) makes certificates no longer trusted by default if they validate to one of the listed Entrust root certificates **and** the certificate’s earliest Signed Certificate Timestamp (SCT) is dated **after** April 16, 2025 7:00:00 AM UTC. Enterprises running a website that uses an impacted certificate should acquire and deploy a new certificate not impacted by this change before that date. Alternatively, enterprises can override the constraint by installing the applicable root certificate as a locally trusted root with the operating system; enterprises pursuing this option should carefully evaluate the risk of doing so.
 
@@ -149,7 +152,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
   New tab page policies continue to be enforced and not impacted by this updated Work Feed experience. For more information, see [Microsoft Edge Enterprise new tab page](/deployedge/microsoft-edge-enterprise-ntp) and [The 'Work feed' tab in Microsoft Edge.](https://support.microsoft.com/en-gb/office/use-the-work-tab-on-the-microsoft-edge-home-page-db32c45f-7f35-479d-b4a8-f015b55333dc) **Note:** This feature is a controlled feature rollout with flighting starting in early April 2025. If you don't see this feature, check back as we continue our rollout.
 
-## Feature Updates
+### Feature Updates
 
 - **Change to Microsoft Edge Updates Alerting.** Updates to Microsoft Edge now appear as a badge on the **Settings and more** menu (the “…” on the menu bar).
 
