@@ -26,6 +26,56 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 137.*.****.**: May **, 2025
+
+Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+
+### Dev channel updates
+
+To streamline communication, the Dev Channel updates section is being discontinued in Microsoft Edge Beta and Stable Release Notes.
+
+### Fixes
+
+- Fixed an issue which affected users with the 'Auto hidden' sidebar visibility setting and caused their Outlook or Teams links to not show sidepane content as expected.
+
+### Announcements
+
+- **Deprecation of Microsoft Edge features.**  The following Microsoft Edge features are being deprecated and are scheduled for removal by mid-to-late May: Image Editor, Image Hover menu, Mini menu, Video super resolution, and Wallet Hub. 
+
+### Feature Updates
+
+- **Changes to Wallet in Microsoft Edge.**  Wallet is being phased out to support a streamlined experience within Microsoft Edge.  In Microsoft Edge version 137, the Wallet entry in Settings will be removed and a new entry will be added for passwords, payment, and personal information management functions.  Also, a new personal information management design will be available in Microsoft Edge Settings.  For more information, see [Changes to Wallet in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/changes-to-wallet-in-microsoft-edge-bc52418a-4d35-444e-845c-e09df6033b81).
+
+- **Blocking inappropriate sites on Edge for Business.**  Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Configure the feature using the Microsoft Edge management service.  Admins can block millions of inappropriate sites by simply selecting categories. This feature updates daily and works even when devices are off the organization’s network.  For more information, see [Configure Web Content Filtering on Microsoft Edge](/deployedge/microsoft-edge-web-content-filtering).  **Note:** This experience is in public preview.  
+ 
+- **Edge contextual capabilities in Business Chat work tab.**  Microsoft Copilot in Microsoft Edge now supports page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature will also include contextual prompt suggestions to help users ask relevant questions about open pages in Microsoft Edge. Page summarization and contextual prompt suggestions are accessible for users when using Copilot through the Microsoft Edge side pane.  
+ 
+  A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout
+
+- **Update to Mutation Event policy.**  Support for mutation events was removed in Microsoft Edge version 127.   The [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy provided a temporary option for admins to continue to use the deprecated and removed set of platform events.  In Microsoft Edge version 137, the [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) policy is obsolete and no longer works.  The [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) API can be used instead.
+ 
+- **Picture in Picture Player Enhancements.**  Users can now open videos as picture-in-picture and easily pause, play, skip forward or backward and seek from the progress bar right from the picture-in-picture window. Continue watching videos anywhere on the screen while multitasking. Simply click the picture-in-picture icon on a video in Microsoft Edge to get started.
+
+- **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+### Policy updates
+
+#### New policies
+
+- [HappyEyeballsV3Enabled](/deployedge/microsoft-edge-policies#happyeyeballsv3enabled) - Use the Happy Eyeballs V3 algorithm for connection attempts
+- [OnBulkDataEntryEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onbulkdataentryenterpriseconnector) - Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors
+- [OnFileAttachedEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onfileattachedenterpriseconnector) - Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors
+- [OnPrintEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onprintenterpriseconnector) - Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors
+- [WebAuthenticationRemoteDesktopAllowedOrigins](/deployedge/microsoft-edge-policies#webauthenticationremotedesktopallowedorigins) - Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications
+
+#### Obsoleted policies
+
+- [AddressBarMicrosoftSearchInBingProviderEnabled](/deployedge/microsoft-edge-policies#addressbarmicrosoftsearchinbingproviderenabled) - Enable Microsoft Search in Bing suggestions in the address bar (obsolete)
+- [MutationEventsEnabled](/deployedge/microsoft-edge-policies#mutationeventsenabled) - Enable deprecated/removed Mutation Events (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 137 web platform release notes (May 2025)](/microsoft-edge/web-platform/release-notes/137)
+
 ## Version 136.0.3240.92: May 23, 2025
 
 Fixed various bugs, feature updates and performance issues.
