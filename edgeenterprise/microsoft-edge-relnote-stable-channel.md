@@ -30,6 +30,8 @@ These release notes provide information about new features and nonsecurity updat
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
 
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#May-29-2025).
+
 ### Dev channel updates
 
 To streamline communication, the Dev Channel updates section is being discontinued in Microsoft Edge Beta and Stable Release Notes.
