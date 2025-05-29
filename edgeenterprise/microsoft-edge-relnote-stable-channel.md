@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 05/15/2025
+ms.date: 05/29/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -26,7 +26,7 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 137**: May 29, 2025
+## Version 137.0.3296.52: May 29, 2025
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
 
