@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HappyEyeballsV3Enabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/06/2025
+ms.date: 05/28/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -29,9 +29,9 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 Controls whether Microsoft Edge uses the Happy Eyeballs V3 algorithm to optimize connection attempts. This algorithm improves reliability and performance in dual-stack (IPv4/IPv6) networks by racing connection attempts across IP versions and HTTP protocols (e.g., HTTP/3 vs. others). For more details, see https://datatracker.ietf.org/doc/draft-pauly-happy-happyeyeballs-v3.
 
-Enabled or not configured: Uses the algorithm for connection attempts.
+Enabled: Uses the algorithm for connection attempts.
 
-Disabled: Disables the algorithm.
+Disabled or not configured: Disables the algorithm.
 
 Note: This policy supports dynamic refresh.
 

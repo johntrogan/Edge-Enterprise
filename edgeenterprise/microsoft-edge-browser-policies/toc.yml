@@ -274,6 +274,8 @@
     href: AutomaticProfileSwitchingSiteList.md
   - name: EdgeDefaultProfileEnabled
     href: EdgeDefaultProfileEnabled.md
+  - name: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled
+    href: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md
   - name: GuidedSwitchEnabled
     href: GuidedSwitchEnabled.md
   - name: ImplicitSignInEnabled
@@ -518,7 +520,7 @@
     href: SmartScreenForTrustedDownloadsEnabled.md
   - name: SmartScreenPuaEnabled
     href: SmartScreenPuaEnabled.md
-- name: Startup, home page and new tab page
+- name: Startup&comma; home page and new tab page
   items:
   - name: HomepageIsNewTabPage
     href: HomepageIsNewTabPage.md
@@ -680,6 +682,8 @@
     href: BrowserSignin.md
   - name: BrowsingDataLifetime
     href: BrowsingDataLifetime.md
+  - name: BuiltInAIAPIsEnabled
+    href: BuiltInAIAPIsEnabled.md
   - name: BuiltInDnsClientEnabled
     href: BuiltInDnsClientEnabled.md
   - name: BuiltinCertificateVerifierEnabled

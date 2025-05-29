@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation PartitionedBlobUrlUsage"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 05/28/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,7 +37,7 @@ ThirdPartyStoragePartitioningBlockedForOrigins
 or DefaultThirdPartyStoragePartitioningSetting,
 then Blob URLs will also not be partitioned.
 
-The policy is scheduled to be available through Microsoft Edge version 140. After this
+The policy is scheduled to be available through Microsoft Edge version 143. After this
 version, the policy will be removed, and Microsoft Edge will no longer support unpartitioned
 blob storage.
 
