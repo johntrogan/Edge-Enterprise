@@ -106,7 +106,7 @@ Web Content Filtering (WCF) on Microsoft Edge is in preview and our aim is to ma
 3. Search for "DiagnosticData" and on the **Configure a setting** panel, under **Required data**, set the value to **Optional data**.
 4. Select **Save**.
  
-![Search for DiagnosticData and configure Optional data as Required.](media/microsoft-edge-web-content-filtering/pic8.png)
+![Elementary School Policy.](media/microsoft-edge-web-content-filtering/pic8.png)
 
 ### Assign the WCF policy to a group
 
