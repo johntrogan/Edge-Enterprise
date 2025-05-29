@@ -99,8 +99,7 @@ To enable protected remote or home access to org data from Microsoft Edge for Bu
 - Intune Application Protection Policies (APP) to secure org data and ensure the client device is healthy when using Microsoft Edge for Business.  
 - Windows Security Center client threat defense integrated with Intune APP to detect local health threats on personal Windows devices.
 - Application Protection Conditional Access to ensure the device is protected and healthy before granting protected service access via Microsoft Entra ID (formerly *Azure Active Directory*).
-- App Launcher (waffle menu) unsupported when using MAM for Windows. Users cannot open Microsoft 365 web apps (such as Outlook) through the App Launcher on the new tab page when MAM protections are applied.
-- The App Launcher (the waffle icon in the upper-left corner of the new tab page that opens Microsoft 365 apps like Outlook on the web) is not supported when Edge is running under MAM for Windows. Users will not be able to launch applications through this menu while MAM protections are active.
+- The App Launcher (waffle menu) is unsupported when using MAM for Windows. Users cannot open Microsoft 365 web apps (such as Outlook) through the App Launcher on the new tab page when MAM protections are applied.
 
 ### Prerequisites
 
