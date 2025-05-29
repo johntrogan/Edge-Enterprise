@@ -26,6 +26,12 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 136.0.3240.104: May 29, 2025
+
+Fixed various bugs and performance issues for Extended Stable Channel.
+
+Extended Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-29-2025).
+
 ## Version 137.0.3296.52: May 29, 2025
 
 Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
@@ -81,6 +87,8 @@ To streamline communication, the Dev Channel updates section is being discontinu
 ## Version 136.0.3240.92: May 23, 2025
 
 Fixed various bugs, feature updates, and performance issues.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-15-2025).
 
 ### Announcement
 
