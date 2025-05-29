@@ -65,8 +65,21 @@ Microsoft Edge sync for Microsoft Entra accounts is available for any of the fol
 - Microsoft 365 Business Premium, Business Standard, or Business Basic
 
   > [!NOTE]
-  > Business Basic or Business Standard is supported, but tenants created before 2021 need to have Microsoft Purview Rights Management Service (RMS) - RMS_S_BASIC enabled.  Customers can check if RMS is enabled in their tenants by following [Get-AipServiceConfiguration (AIPService) | Microsoft Learn](/powershell/module/aipservice/get-aipserviceconfiguration). Customers can enable RMS in their tenants by following [Enable-AipService (AIPService) | Microsoft Learn](/powershell/module/aipservice/enable-aipservice).  Customers that are having a sync issue should review [Diagnose and fix Microsoft Edge sync issues](/deployedge/microsoft-edge-troubleshoot-enterprise-sync) and [Reset Microsoft Edge data](/deployedge/edge-learnmore-reset-data-in-cloud) in the cloud before filing a support request. Business Premium includes Microsoft Entra ID Plan 1 and Microsoft Edge Enterprise Sync Services are available, see [Microsoft 365 Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf).
+  > Microsoft 365 Business Basic or Business Standard can support Microsoft Edge sync, but tenants created before 2021 need to have Microsoft Purview Rights Management Service (RMS) - RMS_S_BASIC enabled.  Customers can check if RMS is enabled in their tenants by following [Get-AipServiceConfiguration (AIPService) | Microsoft Learn](/powershell/module/aipservice/get-aipserviceconfiguration). Customers can enable RMS in their tenants by following [Enable-AipService (AIPService) | Microsoft Learn](/powershell/module/aipservice/enable-aipservice).  Customers that are having a sync issue should review [Diagnose and fix Microsoft Edge sync issues](/deployedge/microsoft-edge-troubleshoot-enterprise-sync) and [Reset Microsoft Edge data](/deployedge/edge-learnmore-reset-data-in-cloud) in the cloud before filing a support request. Business Premium includes Microsoft Entra ID Plan 1 and Microsoft Edge Enterprise Sync Services are available, see [Microsoft 365 Small and Medium-sized Businesses](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/modern-work-plan-comparison-smb5.pdf).
  
+### Known limitations with Business Basic and Business Standard
+While Microsoft 365 Business Basic and Business Standard licenses are not listed in the core supported environments table, they can support Microsoft Edge sync if Microsoft Purview Rights Management (RMS) is enabled.
+
+Tenants created before 2021 may not have RMS enabled by default. Without it, sync features such as passwords, favorites, and settings may fail silently—leading to confusion even when the license appears valid.
+
+To ensure sync works as expected:
+
+1. Verify if RMS is enabled: `Get-AipServiceConfiguration`
+
+2. Enable RMS if needed: `Enable-AipService`S
+
+### Supported Microsoft 365 subscriptions that include RMS
+The following subscription types include Azure Information Protection (AIP), which enables RMS and supports Microsoft Edge sync:
 
 - Office 365 E1 and above
 - All EDU subscriptions, including:
@@ -74,7 +87,7 @@ Microsoft Edge sync for Microsoft Entra accounts is available for any of the fol
   - Exchange Online for Students or Faculty
   - O365 A1 or above
   - Microsoft 365 A1 or above
-  - Azure Information Protection P1 or P2 for Students or Faculty
+- Azure Information Protection P1 or P2 for Students or Faculty
 
 ## Sync group policies
 
