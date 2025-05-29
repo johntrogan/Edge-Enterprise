@@ -72,12 +72,6 @@ While Microsoft 365 Business Basic and Business Standard licenses are not listed
 
 Tenants created before 2021 may not have RMS enabled by default. Without it, sync features such as passwords, favorites, and settings may fail silently—leading to confusion even when the license appears valid.
 
-To ensure sync works as expected:
-
-1. Verify if RMS is enabled: `Get-AipServiceConfiguration`
-
-2. Enable RMS if needed: `Enable-AipService`S
-
 ### Supported Microsoft 365 subscriptions that include RMS
 The following subscription types include Azure Information Protection (AIP), which enables RMS and supports Microsoft Edge sync:
 
