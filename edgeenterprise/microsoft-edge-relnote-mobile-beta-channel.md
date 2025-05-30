@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 04/22/2025
+ms.date: 05/27/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -27,6 +27,45 @@ Archived versions of these release notes are available at [Archived release note
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 137.0.3296.51 (Android and iOS): May 29, 2025
+
+Fixed various bugs, and performance issues.
+
+## Version 137.0.3296.46 (Android and iOS): May 27, 2025
+
+Fixed various bugs, and performance issues.
+
+## Version 137.0.3296.36 (Android and iOS): May 23, 2025
+
+Fixed various bugs, and performance issues.
+
+## Version 137.0.3296.31 (Android and iOS): May 20, 2025
+
+Fixed various bugs and performance issues, general updates, and enhancements.
+
+## General Updates
+
+- **[iOS]** Upgrade Intune MAM SDK to version `20.5.1`
+- **[iOS]** Upgrade MAM Tunnel SDK to version `1.3.3`
+- **[iOS & Android]** Upgrade OneAuth SDK to version `6.1.0`
+
+## New Policies
+
+- **[iOS]** Support new App Proxy pre-authentication strict mode policy that ensures URL access must wait until pre-authentication is completed.  
+  - MAM Key: `com.microsoft.intune.mam.managedbrowser.AppProxyPreAuthStrictModeEnabled`  
+  - Value: `true` = enable, `false` = disable (default)
+
+## Bug Fixes
+
+- **[Android]** Fixed an issue where the Custom URL policy does not work on tablet devices
+- **[Android]** Fixed an issue where the Custom Brand Logo and Brand Color do not appear
+- **[iOS]** Fixed a blank page issue after configuring the `openInPrivateIfBlocked` policy
+
+## New Enhancements
+
+- **[iOS]** Improved the user experience for web single sign-on
+- **[iOS]** Improved the user experience for shared device mode
 
 ## Version 137.0.3296.21 (Android and iOS): May 16, 2025
 
