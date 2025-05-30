@@ -26,6 +26,7 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+
 ## Version 136.0.3240.104: May 29, 2025
 
 Fixed various bugs and performance issues for Extended Stable Channel.
@@ -284,6 +285,8 @@ The following Dev channel updates preceded this Stable channel release. The foll
 - **New Tab Page trending suggestions in address bar.** On the Microsoft Edge New Tab Page, Microsoft Bing trending suggestions appear in the address bar dropdown when users select the address bar. Administrators can control the availability of this feature using the [AddressBarTrendingSuggestEnabled](/deployedge/microsoft-edge-policies#addressbartrendingsuggestenabled) policy.
 
 - **Authorized group setting in Microsoft Edge for Business.** The authorized group setting ensures that Edge respects the settings for “Printer groups”, “Removable USB device groups”, and “Network share groups” in the Microsoft Purview compliance portal. This change prevents users from bypassing Data Loss Prevention (DLP) protections by using Edge, thereby enhancing security and compliance.
+
+- **Intune policies in the Edge management service.** Admins now can set Intune policies via the Edge management service, alongside the existing cloud policies. This enables admins to deploy both browser policies in the cloud and Intune policies from a single pane, making it easy to keep users safe and the browser workflow streamlined. This feature comes along with a new policy creation wizard that will streamline the creation process into a comprehensive, step-by-step flow.
 
 ### Policy updates
 
