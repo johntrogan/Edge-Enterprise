@@ -27,11 +27,11 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-List of URL patterns. Requests initiated from websites served by matching origins are not subject to Private Network Access checks.
+List of URL patterns. Requests initiated from websites served by matching origins aren't subject to Private Network Access checks.
 
-If this policy is not set, this policy behaves as if set to the empty list.
+If this policy isn't set, this policy behaves as if set to the empty list.
 
-For origins not covered by the patterns specified here, the global default value will be used either from the [InsecurePrivateNetworkRequestsAllowed](InsecurePrivateNetworkRequestsAllowed.md) policy, if it is set, or the user's personal configuration otherwise.
+For origins not covered by the patterns specified here, the global default value is used either from the [InsecurePrivateNetworkRequestsAllowed](InsecurePrivateNetworkRequestsAllowed.md) policy, if it's set, or the user's personal configuration otherwise.
 
 For detailed information on valid URL patterns, see [Filter format for URL list-based policies](/DeployEdge/edge-learnmmore-url-list-filter%20format).
 

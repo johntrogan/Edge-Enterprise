@@ -30,14 +30,14 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 Specifies whether to apply restrictions to requests to more private
 network endpoints
 
-When this policy is Enabled, any time when a warning is supposed to be displayed in the DevTools due to Private Network Access checks failing, the request is blocked.
+When this policy is Enabled, anytime when a warning is supposed to be displayed in the DevTools due to Private Network Access checks failing, the request is blocked.
 
-When this policy is Disabled or unset, all Private Network Access warnings are not enforced and the requests are not blocked.
+When this policy is Disabled or unset, all Private Network Access warnings aren't enforced and the requests aren't blocked.
 
 See https://wicg.github.io/private-network-access/ for Private Network Access restrictions.
 
 Note: A network endpoint is more private than another if:
-1) Its IP address is localhost and the other is not.
+1) Its IP address is localhost and the other isn't.
 2) Its IP address is private and the other is public.
 
 This policy is obsolete. The earlier blanket override has been replaced by the permission-based Local Network Access model, which blocks cross-space requests until users give explicit consent.
