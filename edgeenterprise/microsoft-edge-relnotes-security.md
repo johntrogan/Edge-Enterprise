@@ -20,8 +20,6 @@ These release notes provide information about security fixes that are included i
 
 Microsoft is aware of the recent exploits existing in the wild. We are actively working on releasing a security fix. 
 
-- Google is aware that an exploit for CVE-2025-5419 exists in the wild.
-
 ## May 29, 2025
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 137.0.3296.52)**, and **Microsoft Extended Edge Stable Channel (Version 136.0.3240.104)** which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
