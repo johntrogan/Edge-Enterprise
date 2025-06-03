@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Mobile Stable Channel"
 ms.author: chfen
 author: vmliramichael
 manager: alexyuan
-ms.date: 04/21/2025
+ms.date: 06/3/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -22,6 +22,33 @@ All the Stable channel security updates are listed in [Release notes for Microso
 
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
+
+## Version 137.0.3296.53 (Android and iOS): June 3, 2025
+
+Fixed various bugs and performance issues, general updates, and enhancements.
+
+### General Updates
+
+- **[iOS]** Upgrade Intune MAM SDK to version `20.5.1`
+- **[iOS]** Upgrade MAM Tunnel SDK to version `1.3.3`
+- **[iOS & Android]** Upgrade OneAuth SDK to version `6.1.0`
+
+### New Policies
+
+- **[iOS]** Support new App Proxy pre-authentication strict mode policy that ensures URL access must wait until pre-authentication is completed.  
+  - MAM Key: `com.microsoft.intune.mam.managedbrowser.AppProxyPreAuthStrictModeEnabled`  
+  - Value: `true` = enable, `false` = disable (default)
+
+### Bug Fixes
+
+- **[Android]** Fixed an issue where the Custom URL policy does not work on tablet devices
+- **[Android]** Fixed an issue where the Custom Brand Logo and Brand Color do not appear
+- **[iOS]** Fixed a blank page issue after configuring the `openInPrivateIfBlocked` policy
+
+### New Enhancements
+
+- **[iOS]** Improved the user experience for web single sign-on
+- **[iOS]** Improved the user experience for shared device mode
 
 ## Version 136.0.3240.91 (Android and iOS): May 27, 2025
 
