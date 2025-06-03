@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/13/2025
+ms.date: 05/28/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,12 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
-There are no new policies in Microsoft Edge version 138.
+The following table lists the new policies for Microsoft Edge version 138.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
+|<a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
 
 The following table lists the new policies for Microsoft Edge version 137.
 
@@ -68,7 +73,13 @@ The following table lists all deprecated policies.
 
 ## Obsolete policies
 
-There are no obsoleted policies in Microsoft Edge version 138.
+The following table lists the obsoleted policies for Microsoft Edge version 138.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)|
+|<a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)|
+|<a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)|
 
 The following table lists the obsoleted policies for Microsoft Edge version 137.
 
@@ -323,6 +334,7 @@ These tables list all of the browser-related group policies available in this re
 |-|-|
 |<a id="configure-the-automatic-profile-switching-site-list"></a><a id="automaticprofileswitchingsitelist" href="microsoft-edge-browser-policies/AutomaticProfileSwitchingSiteList.md" target="_blank">AutomaticProfileSwitchingSiteList</a>|Configure the automatic profile switching site list|
 |<a id="default-profile-setting-enabled"></a><a id="edgedefaultprofileenabled" href="microsoft-edge-browser-policies/EdgeDefaultProfileEnabled.md" target="_blank">EdgeDefaultProfileEnabled</a>|Default Profile Setting Enabled|
+|<a id="use-primary-work-profile-as-default-to-open-external-links"></a><a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
 |<a id="guided-switch-enabled"></a><a id="guidedswitchenabled" href="microsoft-edge-browser-policies/GuidedSwitchEnabled.md" target="_blank">GuidedSwitchEnabled</a>|Guided Switch Enabled|
 |<a id="enable-implicit-sign-in"></a><a id="implicitsigninenabled" href="microsoft-edge-browser-policies/ImplicitSignInEnabled.md" target="_blank">ImplicitSignInEnabled</a>|Enable implicit sign-in|
 |<a id="enable-the-linked-account-feature-obsolete"></a><a id="linkedaccountenabled" href="microsoft-edge-browser-policies/LinkedAccountEnabled.md" target="_blank">LinkedAccountEnabled</a>|Enable the linked account feature (obsolete)|
@@ -474,9 +486,9 @@ These tables list all of the browser-related group policies available in this re
 
 |Policy Name|Caption|
 |-|-|
-|<a id="specifies-whether-to-allow-websites-to-make-requests-to-any-network-endpoint-in-an-insecure-manner"></a><a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner.|
-|<a id="allow-the-listed-sites-to-make-requests-to-more-private-network-endpoints-from-in-an-insecure-manner"></a><a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner|
-|<a id="specifies-whether-to-apply-restrictions-to-requests-to-more-private-network-endpoints"></a><a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints|
+|<a id="specifies-whether-to-allow-websites-to-make-requests-to-any-network-endpoint-in-an-insecure-manner-obsolete"></a><a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)|
+|<a id="allow-the-listed-sites-to-make-requests-to-more-private-network-endpoints-from-in-an-insecure-manner-obsolete"></a><a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)|
+|<a id="specifies-whether-to-apply-restrictions-to-requests-to-more-private-network-endpoints-obsolete"></a><a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)|
 
 <a id="profile-settings-policies"></a>
 ### Profile settings
@@ -631,6 +643,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="allow-queries-to-a-browser-network-time-service"></a><a id="browsernetworktimequeriesenabled" href="microsoft-edge-browser-policies/BrowserNetworkTimeQueriesEnabled.md" target="_blank">BrowserNetworkTimeQueriesEnabled</a>|Allow queries to a Browser Network Time service|
 |<a id="browser-sign-in-settings"></a><a id="browsersignin" href="microsoft-edge-browser-policies/BrowserSignin.md" target="_blank">BrowserSignin</a>|Browser sign-in settings|
 |<a id="browsing-data-lifetime-settings"></a><a id="browsingdatalifetime" href="microsoft-edge-browser-policies/BrowsingDataLifetime.md" target="_blank">BrowsingDataLifetime</a>|Browsing Data Lifetime Settings|
+|<a id="allow-pages-to-use-the-built-in-ai-apis"></a><a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
 |<a id="use-built-in-dns-client"></a><a id="builtindnsclientenabled" href="microsoft-edge-browser-policies/BuiltInDnsClientEnabled.md" target="_blank">BuiltInDnsClientEnabled</a>|Use built-in DNS client|
 |<a id="determines-whether-the-built-in-certificate-verifier-will-be-used-to-verify-server-certificates-obsolete"></a><a id="builtincertificateverifierenabled" href="microsoft-edge-browser-policies/BuiltinCertificateVerifierEnabled.md" target="_blank">BuiltinCertificateVerifierEnabled</a>|Determines whether the built-in certificate verifier will be used to verify server certificates (obsolete)|
 |<a id="cecpq2-post-quantum-key-agreement-enabled-for-tls-obsolete"></a><a id="cecpq2enabled" href="microsoft-edge-browser-policies/CECPQ2Enabled.md" target="_blank">CECPQ2Enabled</a>|CECPQ2 post-quantum key-agreement enabled for TLS (obsolete)|
