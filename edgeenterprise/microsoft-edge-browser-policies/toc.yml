@@ -274,6 +274,8 @@
     href: AutomaticProfileSwitchingSiteList.md
   - name: EdgeDefaultProfileEnabled
     href: EdgeDefaultProfileEnabled.md
+  - name: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled
+    href: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md
   - name: GuidedSwitchEnabled
     href: GuidedSwitchEnabled.md
   - name: ImplicitSignInEnabled
@@ -680,6 +682,8 @@
     href: BrowserSignin.md
   - name: BrowsingDataLifetime
     href: BrowsingDataLifetime.md
+  - name: BuiltInAIAPIsEnabled
+    href: BuiltInAIAPIsEnabled.md
   - name: BuiltInDnsClientEnabled
     href: BuiltInDnsClientEnabled.md
   - name: BuiltinCertificateVerifierEnabled
