@@ -16,7 +16,7 @@ description: "Step-by-step guide to configure Microsoft Purview Data Loss Preven
 
 After you create a DLP policy in Purview, you must turn on the appropriate settings in Microsoft Edge to guarantee users in the policy can’t avoid the protections that block them from using non-compliant browsers.
 
-[Learn more about how to turn on Microsoft Edge settings for users in a policy.](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service)
+[Learn more about how to turn on Microsoft Edge settings for users in a policy.](/deployedge/microsoft-edge-management-service)
 
 > [!IMPORTANT]
 > As a prerequisite, create a DLP policy in Purview before you turn on any settings in Microsoft Edge.
