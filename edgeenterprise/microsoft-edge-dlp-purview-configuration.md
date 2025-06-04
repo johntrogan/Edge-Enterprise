@@ -34,16 +34,17 @@ To successfully implement a Purview DLP policy that targets cloud apps, you must
 
 ## Step 2: Create a configuration policy for Microsoft Edge
 
-Create a new configuration policy.
+[Create a new configuration policy](/deployedge/microsoft-edge-management-service#get-started-with-configuration-policies-1).
 
 > [!IMPORTANT]
-> Make sure to follow these guidelines.
+> Follow the steps to create a new configuration policy, in brief:
 
-- For **policy type**, choose “Cloud policy.”
-- Include the same users scoped in the DLP policy.
-- Settings aren’t required.
-- You don’t need to modify the dropdown.
-- Add security groups or all users in the tenant.
+1. For **policy type**, choose “Cloud policy.”  
+2. Include the same users scoped in the DLP policy.  
+3. Settings aren’t required.  
+4. You don’t need to modify the dropdown.  
+5. Add security groups or all users in the tenant.
+tenant.
 
 Click **Save**.
 
@@ -61,7 +62,7 @@ To turn on these settings:
 > Anytime you edit settings in this tab, they'll show up in the “Settings” page on the left.
 
 2. Select **Security settings**.
-3. Check the box titled **“Block set domains where Purview in-browser protections don’t apply.”**
+3. Check the box titled **“Block use of cloud apps in browsers where Purview in-browser protections doesn’t apply.”**
 
 > [!NOTE]
 > This ensures that when a user signs in to Microsoft Edge for Business on a new device using their EntraID credentials, the Purview DLP policies are automatically applied to that device.
@@ -74,7 +75,7 @@ Click **Save changes**.
 
 ## Delete the configuration policy with the Purview DLP policies
 
-If you’re an admin, you can delete the configuration policy that was deployed to users or uncheck the “Block set domains” box.
+If you’re an admin, you can delete the configuration policy that was deployed to users or uncheck the feature configuration.
 
 ### To delete the configuration policy:
 
@@ -87,12 +88,13 @@ If you’re an admin, you can delete the configuration policy that was deployed 
 
 ---
 
-### To uncheck the “Block set domains” box:
+### To uncheck the feature configuration box:
 
 1. Go to the policy.
 2. Select the **Customization Settings** tab.
 3. Select **Security settings**.
-4. Uncheck the box titled **“Block set domains where Purview in-browser protections doesn’t apply.”**
+4. Uncheck the box titled **“Block use of cloud apps in browsers where Purview in-browser protections doesn’t apply.”**
+5. Click **Save changes**.
 
 ![Picture3](media/microsoft-edge-dlp-purview-configuration/3.png)
 
