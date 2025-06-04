@@ -116,6 +116,8 @@
      items:
       - name: Get started with configuration profiles
         href: microsoft-edge-management-service.md
+      - name: Activate your DLP policy in Microsoft Edge
+        href: microsoft-edge-dlp-purview-configuration.md
       - name: Monitoring dashboard
         href: microsoft-edge-management-service-monitoring-dashboard.md
       - name: Extensions management
