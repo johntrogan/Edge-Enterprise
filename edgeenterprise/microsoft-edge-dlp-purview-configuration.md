@@ -14,7 +14,7 @@ description: "Step-by-step guide to configure Microsoft Purview Data Loss Preven
 
 # Activate your DLP policy in Microsoft Edge
 
-After you create a DLP policy in Purview, you must turn on the appropriate settings in Microsoft Edge to guarantee users in the policy can’t avoid the protections that block them from using non-compliant browsers.
+After you create a DLP policy in Purview, you must turn on the appropriate settings in Microsoft Edge to guarantee users in the policy can’t avoid the protections that block them from using noncompliant browsers.
 
 [Learn more about how to turn on Microsoft Edge settings for users in a policy.](/deployedge/microsoft-edge-management-service)
 
@@ -25,7 +25,7 @@ After you create a DLP policy in Purview, you must turn on the appropriate setti
 
 ## Step 1: Set up an Edge Management Service
 
-To successfully implement a Purview DLP policy that targets cloud apps, you must also set up an Edge Management Service that blocks non-compliant browsers.
+To successfully implement a Purview DLP policy that targets cloud apps, you must also set up an Edge Management Service that blocks noncompliant browsers.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage).
 2. Sign in and select **Settings** > **Microsoft Edge**.
@@ -51,14 +51,14 @@ Click **Save**.
 
 ## Step 3: Turn on Microsoft Edge settings
 
-Once you’ve created a configuration policy, turn on the settings that guarantee users can’t avoid the protections blocking them from using non-compliant browsers.
+Once you’ve created a configuration policy, turn on the settings that guarantee users can’t avoid the protections blocking them from using noncompliant browsers.
 
 To turn on these settings:
 
 1. In the newly created policy, select the **Customization Settings** tab.
 
 > [!TIP]
-> Anytime you edit settings in this tab, they will show up in the “Settings” page on the left.
+> Anytime you edit settings in this tab, they'll show up in the “Settings” page on the left.
 
 2. Select **Security settings**.
 3. Check the box titled **“Block set domains where Purview in-browser protections don’t apply.”**
@@ -74,7 +74,7 @@ Click **Save changes**.
 
 ## Delete the configuration policy with the Purview DLP policies
 
-If you’re an admin you can delete the configuration policy that was deployed to users or uncheck the “Block set domains” box.
+If you’re an admin, you can delete the configuration policy that was deployed to users or uncheck the “Block set domains” box.
 
 ### To delete the configuration policy:
 
