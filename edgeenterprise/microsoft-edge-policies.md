@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/28/2025
+ms.date: 06/05/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -37,6 +37,8 @@ The following table lists the new policies for Microsoft Edge version 138.
 |-|-|
 |<a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
 |<a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
+|<a id="edgehistoryaisearchenabled" href="microsoft-edge-browser-policies/EdgeHistoryAISearchEnabled.md" target="_blank">EdgeHistoryAISearchEnabled</a>|Control access to AI-enhanced search in History|
+|<a id="tls13earlydataenabled" href="microsoft-edge-browser-policies/TLS13EarlyDataEnabled.md" target="_blank">TLS13EarlyDataEnabled</a>|Control whether TLS 1.3 Early Data is enabled in Microsoft Edge|
 
 The following table lists the new policies for Microsoft Edge version 137.
 
@@ -77,6 +79,7 @@ The following table lists the obsoleted policies for Microsoft Edge version 138.
 
 |Policy Name|Caption|
 |-|-|
+|<a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 |<a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)|
 |<a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)|
 |<a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)|
@@ -405,7 +408,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
 |<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
-|<a id="enable-zstd-content-encoding-support"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support|
+|<a id="enable-zstd-content-encoding-support-obsolete"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 
 <a id="pdf-reader-policies"></a>
 ### PDF Reader
@@ -660,7 +663,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="block-access-to-a-specified-list-of-services-and-export-targets-in-collections"></a><a id="collectionsservicesandexportsblocklist" href="microsoft-edge-browser-policies/CollectionsServicesAndExportsBlockList.md" target="_blank">CollectionsServicesAndExportsBlockList</a>|Block access to a specified list of services and export targets in Collections|
 |<a id="enable-security-warnings-for-command-line-flags"></a><a id="commandlineflagsecuritywarningsenabled" href="microsoft-edge-browser-policies/CommandLineFlagSecurityWarningsEnabled.md" target="_blank">CommandLineFlagSecurityWarningsEnabled</a>|Enable security warnings for command-line flags|
 |<a id="enable-component-updates-in-microsoft-edge"></a><a id="componentupdatesenabled" href="microsoft-edge-browser-policies/ComponentUpdatesEnabled.md" target="_blank">ComponentUpdatesEnabled</a>|Enable component updates in Microsoft Edge|
-|<a id="compose-is-enabled-for-writing-on-the-web"></a><a id="composeinlineenabled" href="microsoft-edge-browser-policies/ComposeInlineEnabled.md" target="_blank">ComposeInlineEnabled</a>|Compose is enabled for writing on the web|
+|<a id="control-access-to-microsoft-365-copilot-writing-assistance-in-microsoft-edge-for-business"></a><a id="composeinlineenabled" href="microsoft-edge-browser-policies/ComposeInlineEnabled.md" target="_blank">ComposeInlineEnabled</a>|Control access to Microsoft 365 Copilot writing assistance in Microsoft Edge for Business|
 |<a id="configure-do-not-track"></a><a id="configuredonottrack" href="microsoft-edge-browser-policies/ConfigureDoNotTrack.md" target="_blank">ConfigureDoNotTrack</a>|Configure Do Not Track|
 |<a id="configure-the-default-paste-format-of-urls-copied-from-microsoft-edge-and-determine-if-additional-formats-will-be-available-to-users"></a><a id="configurefriendlyurlformat" href="microsoft-edge-browser-policies/ConfigureFriendlyURLFormat.md" target="_blank">ConfigureFriendlyURLFormat</a>|Configure the default paste format of URLs copied from Microsoft Edge, and determine if additional formats will be available to users|
 |<a id="configure-the-list-of-commands-for-which-to-disable-keyboard-shortcuts"></a><a id="configurekeyboardshortcuts" href="microsoft-edge-browser-policies/ConfigureKeyboardShortcuts.md" target="_blank">ConfigureKeyboardShortcuts</a>|Configure the list of commands for which to disable keyboard shortcuts|
@@ -710,6 +713,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enhance-images-enabled-obsolete"></a><a id="edgeenhanceimagesenabled" href="microsoft-edge-browser-policies/EdgeEnhanceImagesEnabled.md" target="_blank">EdgeEnhanceImagesEnabled</a>|Enhance images enabled (obsolete)|
 |<a id="control-copilot-access-to-microsoft-edge-page-content-for-entra-account-user-profiles-when-using-copilot-in-the-microsoft-edge-sidepane"></a><a id="edgeentracopilotpagecontext" href="microsoft-edge-browser-policies/EdgeEntraCopilotPageContext.md" target="_blank">EdgeEntraCopilotPageContext</a>|Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane|
 |<a id="enable-follow-service-in-microsoft-edge-obsolete"></a><a id="edgefollowenabled" href="microsoft-edge-browser-policies/EdgeFollowEnabled.md" target="_blank">EdgeFollowEnabled</a>|Enable Follow service in Microsoft Edge (obsolete)|
+|<a id="control-access-to-ai-enhanced-search-in-history"></a><a id="edgehistoryaisearchenabled" href="microsoft-edge-browser-policies/EdgeHistoryAISearchEnabled.md" target="_blank">EdgeHistoryAISearchEnabled</a>|Control access to AI-enhanced search in History|
 |<a id="enable-open-in-sidebar"></a><a id="edgeopeninsidebarenabled" href="microsoft-edge-browser-policies/EdgeOpenInSidebarEnabled.md" target="_blank">EdgeOpenInSidebarEnabled</a>|Enable open in sidebar|
 |<a id="shopping-in-microsoft-edge-enabled"></a><a id="edgeshoppingassistantenabled" href="microsoft-edge-browser-policies/EdgeShoppingAssistantEnabled.md" target="_blank">EdgeShoppingAssistantEnabled</a>|Shopping in Microsoft Edge Enabled|
 |<a id="allow-specific-apps-to-be-opened-in-microsoft-edge-sidebar"></a><a id="edgesidebarappurlhostallowlist" href="microsoft-edge-browser-policies/EdgeSidebarAppUrlHostAllowList.md" target="_blank">EdgeSidebarAppUrlHostAllowList</a>|Allow specific apps to be opened in Microsoft Edge sidebar|
@@ -937,6 +941,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="suppress-the-unsupported-os-warning"></a><a id="suppressunsupportedoswarning" href="microsoft-edge-browser-policies/SuppressUnsupportedOSWarning.md" target="_blank">SuppressUnsupportedOSWarning</a>|Suppress the unsupported OS warning|
 |<a id="disable-synchronization-of-data-using-microsoft-sync-services"></a><a id="syncdisabled" href="microsoft-edge-browser-policies/SyncDisabled.md" target="_blank">SyncDisabled</a>|Disable synchronization of data using Microsoft sync services|
 |<a id="configure-the-list-of-types-that-are-excluded-from-synchronization"></a><a id="synctypeslistdisabled" href="microsoft-edge-browser-policies/SyncTypesListDisabled.md" target="_blank">SyncTypesListDisabled</a>|Configure the list of types that are excluded from synchronization|
+|<a id="control-whether-tls-13-early-data-is-enabled-in-microsoft-edge"></a><a id="tls13earlydataenabled" href="microsoft-edge-browser-policies/TLS13EarlyDataEnabled.md" target="_blank">TLS13EarlyDataEnabled</a>|Control whether TLS 1.3 Early Data is enabled in Microsoft Edge|
 |<a id="enable-a-tls-13-security-feature-for-local-trust-anchors-obsolete"></a><a id="tls13hardeningforlocalanchorsenabled" href="microsoft-edge-browser-policies/TLS13HardeningForLocalAnchorsEnabled.md" target="_blank">TLS13HardeningForLocalAnchorsEnabled</a>|Enable a TLS 1.3 security feature for local trust anchors (obsolete)|
 |<a id="specify-the-tls-cipher-suites-to-disable"></a><a id="tlsciphersuitedenylist" href="microsoft-edge-browser-policies/TLSCipherSuiteDenyList.md" target="_blank">TLSCipherSuiteDenyList</a>|Specify the TLS cipher suites to disable|
 |<a id="allow-freezing-of-background-tabs-obsolete"></a><a id="tabfreezingenabled" href="microsoft-edge-browser-policies/TabFreezingEnabled.md" target="_blank">TabFreezingEnabled</a>|Allow freezing of background tabs (obsolete)|
