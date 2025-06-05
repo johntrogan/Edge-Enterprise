@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge WebView2 Policy Documentation"
 ms.author: stmoody
-author: vmliramichael
+author: dan-wesley
 manager: venkatk
-ms.date: 05/12/2025
+ms.date: 06/03/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -46,7 +46,7 @@ These tables list all of the group policies available in this release of Microso
 |-|-|
 |[AccessControlAllowMethodsInCORSPreflightSpecConformant](#accesscontrolallowmethodsincorspreflightspecconformant)|Make Access-Control-Allow-Methods matching in CORS preflight spec conformant|
 |[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies (obsolete)|
-|[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support|
+|[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support (obsolete)|
 ### [*Additional*](#additional-policies)
 
 |Policy Name|Caption|
@@ -131,7 +131,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder = "Name: *, Va
 
   #### Description
 
-  This policy configures the channel search kind for WebView2 applications. By default the channel search kind is 0, which is equivalent to the "Most Stable" search kind in the corresponding WebView2 API; This policy indicates that WebView2 environment creation should search for a release channel from the most to least stable: WebView2 Runtime, Beta, Dev, and Canary.
+  This policy configures the channel search kind for WebView2 applications. By default the channel search kind is 0, which is equivalent to the "Most Stable" search kind in the corresponding WebView2 API; This indicates that WebView2 environment creation should search for a release channel from the most to least stable: WebView2 Runtime, Beta, Dev, and Canary.
 
 To reverse the default search order and use the "Least Stable" search kind, set this policy to 1.
 
@@ -187,7 +187,7 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\ChannelSearchKind = "Name: WebView2API
 
   #### Description
 
-  This policy is deprecated in favor of ChannelSearchKind, which has the same functionality, and will be obsolete in 124 release. The default channel search order is WebView2 Runtime, Beta, Dev, and Canary.
+  This policy is deprecated in favor of ChannelSearchKind, which has the same functionality, and will become obsolete in 124 release. The default channel search order is WebView2 Runtime, Beta, Dev, and Canary.
 
 To reverse the default search order, set this policy to 1.
 
@@ -305,12 +305,12 @@ SOFTWARE\Policies\Microsoft\Edge\WebView2\ReleaseChannels = "Name: WebView2APISa
 
 If you disable this policy, request methods are uppercased. This is the behavior on or before Microsoft Edge 108.
 
-If you enable or don't configure this policy, request methods aren't uppercased, unless matching case-insensitively with DELETE, GET, HEAD, OPTIONS, POST, or PUT.
+If you enable or don't configure this policy, request methods are not uppercased, unless matching case-insensitively with DELETE, GET, HEAD, OPTIONS, POST, or PUT.
 
 This would reject fetch(url, {method: 'Foo'}) + "Access-Control-Allow-Methods: FOO" response header,
 and would accept fetch(url, {method: 'Foo'}) + "Access-Control-Allow-Methods: Foo" response header.
 
-Note: request methods "post" and "put" aren't affected, while "patch" is affected.
+Note: request methods "post" and "put" are not affected, while "patch" is affected.
 
 This policy is intended to be temporary and will be removed in the future.
 
@@ -365,13 +365,13 @@ This policy is intended to be temporary and will be removed in the future.
 
   This policy provides a temporary opt-out for changes to how Microsoft Edge handles cookies set via JavaScript that contain certain control characters (NULL, carriage return, and line feed).
 Previously, the presence of any of these characters in a cookie string would cause it to be truncated but still set.
-Now, the presence of these characters causes the whole cookie string to be ignored.
+Now, the presence of these characters will cause the whole cookie string to be ignored.
 
 If you enable or don't configure this policy, the new behavior is enabled.
 
 If you disable this policy, the old behavior is enabled.
 
-This policy is obsolete because this policy was originally implemented as a safety measure if there's breakage, but none has been reported.
+This policy is obsolete because this policy was originally implemented as a safety measure in case of breakage, but none have been reported.
 
   #### Supported features:
 
@@ -412,23 +412,26 @@ This policy is obsolete because this policy was originally implemented as a safe
 
   ### ZstdContentEncodingEnabled
 
-  #### Enable zstd content encoding support
+  #### Enable zstd content encoding support (obsolete)
 
   
-  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 137.
   #### Supported versions:
 
-  - On Windows since 125 or later
+  - On Windows since 125, until 137
 
   #### Description
 
-  This feature enables advertising "zstd" support in the Accept-Encoding request header and support for decompressing zstd web content.
+  This policy controls whether Microsoft Edge supports Zstandard (zstd) content encoding.
 
-If you enable or don't configure this policy, Microsoft Edge accepts server responses compressed with zstd.
+Enabled – Edge advertises zstd in the Accept-Encoding request header and can decompress responses encoded with zstd.
 
-If you disable this policy, the zstd content encoding feature won't be advertised or supported when processing server responses.
+Disabled – Edge does not advertise or support zstd content encoding.
 
-This policy is temporary and will be removed in the future.
+Not configured – The default behavior is to enable support for zstd content encoding.
+
+NOTE:
+This policy has been made obsolete starting with Microsoft Edge version 138 because Microsoft Edge now always supports zstd content encoding.
 
   #### Supported features:
 
@@ -445,7 +448,7 @@ This policy is temporary and will be removed in the future.
   ##### Group Policy (ADMX) info
 
   - GP unique name: ZstdContentEncodingEnabled
-  - GP name: Enable zstd content encoding support
+  - GP name: Enable zstd content encoding support (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge WebView2/Network settings
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdgeWebView2.admx
@@ -493,9 +496,9 @@ Configuration payload may also contain a list of actions to take on certain doma
 
 If you set this policy to 'FullMode', the full payload is downloaded from the Experimentation and Configuration Service. This includes both the experimentation and configuration payloads.
 
-If you set this policy to 'ConfigurationsOnlyMode' -  only the configuration payload is downloaded.
+If you set this policy to 'ConfigurationsOnlyMode', only the configuration payload is downloaded.
 
-If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
+If you set this policy to 'RestrictedMode', the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
 
 If you don't configure this policy on a managed device, the behavior on Beta and Stable channels is the same as the 'ConfigurationsOnlyMode'. On Canary and Dev channels the behavior is the same as 'FullMode'.
 
@@ -560,17 +563,17 @@ Use the preceding information when configuring this policy.
 
   #### Description
 
-  Unload event handlers are being deprecated. Whether they fire depends on the unload Permissions-Policy.
-Currently, allowed by policy by default. In the future, they'll gradually move to being disallowed by default and sites must explicitly enable them using Permissions-Policy headers.
+  unload event handlers are being deprecated. Whether they fire depends on the unload Permissions-Policy.
+Currently, they are allowed by policy by default. In the future they will gradually move to being disallowed by default and sites must explicitly enable them using Permissions-Policy headers.
 This enterprise policy can be used to opt out of this gradual deprecation by forcing the default to stay enabled.
 
 Pages might depend on unload event handlers to save data or signal the end of a user session to the server.
-This isn't recommended because it's unreliable and impacts performance by blocking use of BackForwardCache.
+This is not recommended because it's unreliable and impacts performance by blocking use of BackForwardCache.
 Recommended alternatives exist, but the unload event has been used for a long time. Some applications might still rely on them.
 
 If you disable this policy or don't configure it, unload event handlers will gradually be deprecated in-line with the deprecation rollout and sites which don't set Permissions-Policy header will stop firing `unload` events.
 
-If you enable this policy, then unload event handlers continue to work by default.
+If you enable this policy then unload event handlers will continue to work by default.
 
   #### Supported features:
 
@@ -621,13 +624,13 @@ If you enable this policy, then unload event handlers continue to work by defaul
 
   #### Description
 
-  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that won't be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that don't support HTTPS, without needing to disable "AutomaticHttpsDefault" or "HttpsUpgradesEnabled".
+  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable "AutomaticHttpsDefault" or "HttpsUpgradesEnabled".
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 
-Blanket host wildcards (that is, "*" or "[*]") aren't allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
+Blanket host wildcards (i.e., "*" or "[*]") are not allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
 
-Note: This policy doesn't apply to HSTS upgrades.
+Note: This policy does not apply to HSTS upgrades.
 
   #### Supported features:
 
@@ -739,13 +742,13 @@ The policy has been obsoleted starting from Microsoft Edge version 136, but the 
 
   This policy configures WebView2 applications to launch the new version of the PDF reader that's powered by Adobe Acrobat's PDF reader. The new PDF reader ensures that there's no loss of functionality and delivers an enhanced PDF experience. This experience includes richer rendering, improved performance, strong security for PDF file handling, and greater accessibility.
 
-If this policy is specified for an application, it's possible that it may impact other related applications as well. The policy is applied to all WebView2s sharing the same WebView2 user data folder. These WebView2s could potentially belong to multiple applications if those applications, which are likely from the same product family, are designed to share the same user data folder.
+If this policy is specified for an application, it is possible that it may impact other related applications as well. The policy is applied to all WebView2s sharing the same WebView2 user data folder. These WebView2s could potentially belong to multiple applications if those applications, which are likely from the same product family, are designed to share the same user data folder.
 
 Use a name-value pair to enable the new PDF reader for the application. Set the name to the Application User Model ID or the executable file name. You can use the "*" wildcard as value name to apply to all applications. Set the Value to true to enable the new reader or set it to false to use the existing one.
 
-If you enable this policy for the specified WebView2 applications, they use the new Adobe Acrobat powered PDF reader to open all PDF files.
+If you enable this policy for the specified WebView2 applications, they will use the new Adobe Acrobat powered PDF reader to open all PDF files.
 
-If you disable the policy for the specified WebView2 applications or don't configure it, they use the existing PDF reader to open all PDF files.
+If you disable the policy for the specified WebView2 applications or don't configure it, they will use the existing PDF reader to open all PDF files.
 
   #### Supported features:
 
@@ -812,27 +815,27 @@ Microsoft Edge 123 and earlier have the
 following behavior:
 
 If this policy is set to enabled,
-Microsoft Edge performs this key
+Microsoft Edge will perform this key
 check. This helps prevent attacks where an attacker manipulates the browser into
-interpreting a key in ways that the certificate owner didn't intend.
+interpreting a key in ways that the certificate owner did not intend.
 
 If this policy is set to disabled,
-Microsoft Edge skips this key check-in
+Microsoft Edge will skip this key check in
 HTTPS connections that negotiate TLS 1.2 and use an RSA certificate that
 chains to a local trust anchor. Examples of local trust anchors include
 policy-provided or user-installed root certificates. In all other cases, the
 check is performed independent of this policy's setting.
 
-If this policy isn't configured,
-Microsoft Edge behaves as if the
+If this policy is not configured,
+Microsoft Edge will behave as if the
 policy is enabled.
 
 This policy is available for administrators to preview the behavior of a
 future release, which will enable this check by default. At that point, this
-policy remains temporarily available for administrators that need more
+policy will remain temporarily available for administrators that need more
 time to update their certificates to meet the new RSA key usage requirements.
 
-Connections that fail this check fail with the error
+Connections that fail this check will fail with the error
 ERR_SSL_KEY_USAGE_INCOMPATIBLE. Sites that fail with this error likely have a
 misconfigured certificate. Modern ECDHE_RSA cipher suites use the
 "digitalSignature" key usage option, while legacy RSA decryption cipher suites
