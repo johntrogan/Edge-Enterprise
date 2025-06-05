@@ -27,9 +27,9 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-The HTML parser is being changed to allow additional HTML tags inside the &lt;select&gt; element. This policy supports the old HTML parser behavior through Microsoft Edge version 138.
+The HTML parser is being changed to allow extra HTML tags inside the &lt;select&gt; element. This policy supports the old HTML parser behavior through Microsoft Edge version 138.
 
-If this policy is enabled or unset, the HTML parser will allow additional tags inside the &lt;select&gt; element.
+If this policy is enabled or unset, the HTML parser allows additional tags inside the &lt;select&gt; element.
 
 If this policy is disabled, then the HTML parser will restrict which tags can be put in the &lt;select&gt; element.
 

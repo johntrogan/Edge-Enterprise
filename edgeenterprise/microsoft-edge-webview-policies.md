@@ -371,7 +371,7 @@ If you enable or don't configure this policy, the new behavior is enabled.
 
 If you disable this policy, the old behavior is enabled.
 
-This policy is obsolete because this policy was originally implemented as a safety measure if there's breakage, but none has been reported.
+This policy is obsolete because this policy was originally implemented as a safety measure if there's breakage, but none reported.
 
   #### Supported features:
 
@@ -426,7 +426,7 @@ This policy is obsolete because this policy was originally implemented as a safe
 
 Enabled – Edge advertises zstd in the Accept-Encoding request header and can decompress responses encoded with zstd.
 
-Disabled – Edge does not advertise or support zstd content encoding.
+Disabled – Edge doesn't advertise or support zstd content encoding.
 
 Not configured – The default behavior is to enable support for zstd content encoding.
 
@@ -498,7 +498,7 @@ If you set this policy to 'FullMode', the full payload is downloaded from the Ex
 
 If you set this policy to 'ConfigurationsOnlyMode' -  only the configuration payload is downloaded.
 
-If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
+If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft doesn't recommend this setting.
 
 If you don't configure this policy on a managed device, the behavior on Beta and Stable channels is the same as the 'ConfigurationsOnlyMode'. On Canary and Dev channels the behavior is the same as 'FullMode'.
 

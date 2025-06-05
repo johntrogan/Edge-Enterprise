@@ -27,15 +27,15 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-This policy controls whether Blob URLs are partitioned during fetching and navigation.
+PartitionedBlobUrlUsage policy controls whether Blob URLs are partitioned during fetching and navigation.
 If this policy is set to Enabled or not set, Blob URLs are partitioned.
-If this policy is set to Disabled, Blob URLs won't be partitioned. This represents the Blob URL behavior before
+If this policy is set to Disabled, Blob URLs won't be partitioned. PartitionedBlobUrlUsage represents the Blob URL behavior before
 Microsoft Edge version 135.
 
 If storage partitioning is disabled for a given top-level origin either by
 ThirdPartyStoragePartitioningBlockedForOrigins
 or DefaultThirdPartyStoragePartitioningSetting,
-then Blob URLs will also not be partitioned.
+then Blob URLs doesn't partition.
 
 The policy is scheduled to be available through Microsoft Edge version 143. After this
 version, the policy will be removed, and Microsoft Edge will no longer support unpartitioned
