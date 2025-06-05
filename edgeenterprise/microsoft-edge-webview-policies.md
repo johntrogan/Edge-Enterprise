@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge WebView2 Policy Documentation"
-ms.author: stmoody
+ms.author: jalam
 author: vmliramichael
-manager: venkatk
-ms.date: 05/12/2025
+manager: nuyunzhang
+ms.date: 06/05/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -46,7 +46,7 @@ These tables list all of the group policies available in this release of Microso
 |-|-|
 |[AccessControlAllowMethodsInCORSPreflightSpecConformant](#accesscontrolallowmethodsincorspreflightspecconformant)|Make Access-Control-Allow-Methods matching in CORS preflight spec conformant|
 |[BlockTruncatedCookies](#blocktruncatedcookies)|Block truncated cookies (obsolete)|
-|[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support|
+|[ZstdContentEncodingEnabled](#zstdcontentencodingenabled)|Enable zstd content encoding support (obsolete)|
 ### [*Additional*](#additional-policies)
 
 |Policy Name|Caption|
@@ -371,7 +371,7 @@ If you enable or don't configure this policy, the new behavior is enabled.
 
 If you disable this policy, the old behavior is enabled.
 
-This policy is obsolete because this policy was originally implemented as a safety measure if there's breakage, but none has been reported.
+This policy is obsolete because this policy was originally implemented as a safety measure if there's breakage, but none reported.
 
   #### Supported features:
 
@@ -412,23 +412,26 @@ This policy is obsolete because this policy was originally implemented as a safe
 
   ### ZstdContentEncodingEnabled
 
-  #### Enable zstd content encoding support
+  #### Enable zstd content encoding support (obsolete)
 
   
-  
+  >OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 137.
   #### Supported versions:
 
-  - On Windows since 125 or later
+  - On Windows since 125, until 137
 
   #### Description
 
-  This feature enables advertising "zstd" support in the Accept-Encoding request header and support for decompressing zstd web content.
+  This policy controls whether Microsoft Edge supports Zstandard (zstd) content encoding.
 
-If you enable or don't configure this policy, Microsoft Edge accepts server responses compressed with zstd.
+Enabled – Edge advertises zstd in the Accept-Encoding request header and can decompress responses encoded with zstd.
 
-If you disable this policy, the zstd content encoding feature won't be advertised or supported when processing server responses.
+Disabled – Edge doesn't advertise or support zstd content encoding.
 
-This policy is temporary and will be removed in the future.
+Not configured – The default behavior is to enable support for zstd content encoding.
+
+NOTE:
+This policy has been made obsolete starting with Microsoft Edge version 138 because Microsoft Edge now always supports zstd content encoding.
 
   #### Supported features:
 
@@ -445,7 +448,7 @@ This policy is temporary and will be removed in the future.
   ##### Group Policy (ADMX) info
 
   - GP unique name: ZstdContentEncodingEnabled
-  - GP name: Enable zstd content encoding support
+  - GP name: Enable zstd content encoding support (obsolete)
   - GP path (Mandatory): Administrative Templates/Microsoft Edge WebView2/Network settings
   - GP path (Recommended): N/A
   - GP ADMX file name: MSEdgeWebView2.admx
@@ -495,7 +498,7 @@ If you set this policy to 'FullMode', the full payload is downloaded from the Ex
 
 If you set this policy to 'ConfigurationsOnlyMode' -  only the configuration payload is downloaded.
 
-If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft does not recommend this setting.
+If you set this policy to 'RestrictedMode' -  the communication with the Experimentation and Configuration Service is stopped completely. Microsoft doesn't recommend this setting.
 
 If you don't configure this policy on a managed device, the behavior on Beta and Stable channels is the same as the 'ConfigurationsOnlyMode'. On Canary and Dev channels the behavior is the same as 'FullMode'.
 
