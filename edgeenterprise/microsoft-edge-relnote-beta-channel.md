@@ -23,7 +23,7 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 138.x.x.x: June 5, 2025
 
-Fixed various bugs and performance issues and policy updates.
+Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
 
 ### Fixes
 
