@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation InsecurePrivateNetworkReques
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/28/2025
+ms.date: 06/03/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -18,7 +18,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 # InsecurePrivateNetworkRequestsAllowed
 
-## Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (Obsolete)
+## Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)
 > OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge version 137.
 
 ## Supported versions
