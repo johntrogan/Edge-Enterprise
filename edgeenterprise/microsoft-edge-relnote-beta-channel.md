@@ -35,7 +35,7 @@ Fixed an issue which caused WebDriver automation to fail in Microsoft Edge versi
 
 -	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle will be available in Autofill settings (edge://settings/autofill/personalInfo). This will allow users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
  
-       This new setting is manageable via existing policies in Autofill (e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy will turn off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+       This new setting is manageable via existing policies in Autofill e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy will turn off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **AI-powered History search**. Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can control availability to this feature using the [EdgeHistoryAISearchEnabled policy](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled). **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
@@ -62,7 +62,7 @@ Fixed an issue which caused WebDriver automation to fail in Microsoft Edge versi
 - [ZstdContentEncodingEnabled](/deployedge/microsoft-edge-browser-policies/zstdcontentencodingenabled) - Enable zstd content encoding support (obsolete)
 
 >[!NOTE]
-For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
+>For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
 
 ## Version 137.0.3296.58: June 2, 2025
 
