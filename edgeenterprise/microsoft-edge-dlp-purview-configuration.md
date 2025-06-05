@@ -34,10 +34,7 @@ To successfully implement a Purview DLP policy that targets cloud apps, you must
 
 ## Step 2: Create a configuration policy for Microsoft Edge
 
-[Create a new configuration policy](/deployedge/microsoft-edge-management-service#get-started-with-configuration-policies-1).
-
-> [!IMPORTANT]
-> Follow the steps to create a new configuration policy, in brief:
+Follow the steps to create a [new configuration policy](/deployedge/microsoft-edge-management-service#get-started-with-configuration-policies-1), in brief:
 
 1. For **policy type**, choose “Cloud policy.”  
 2. Include the same users scoped in the DLP policy.  
@@ -45,8 +42,7 @@ To successfully implement a Purview DLP policy that targets cloud apps, you must
 4. You don’t need to modify the dropdown.  
 5. Add security groups or all users in the tenant.
 tenant.
-
-Click **Save**.
+6. Click **Save**.
 
 ---
 
@@ -63,13 +59,12 @@ To turn on these settings:
 
 2. Select **Security settings**.
 3. Check the box titled **“Block use of cloud apps in browsers where Purview in-browser protections doesn’t apply.”**
+4. Click **Save changes**.
 
 > [!NOTE]
 > This ensures that when a user signs in to Microsoft Edge for Business on a new device using their EntraID credentials, the Purview DLP policies are automatically applied to that device.
 
 ![Picture](media/microsoft-edge-dlp-purview-configuration/1.png)
-
-Click **Save changes**.
 
 ---
 
@@ -102,9 +97,9 @@ If you’re an admin, you can delete the configuration policy that was deployed 
 
 ## FAQs
 
-### Will my other settings still work if I check the “Block set domains” box?
+### Will my other settings still work if I check the “Configure enhanced security mode” box?
 
-No, the **“Block set domains”** box takes precedence over all other settings. Only one setting can be turned on at a time.
+No, the **“Configure enhanced security mode”** box takes precedence over all other settings. Only one setting can be turned on at a time.
 
 ### Can I use manual and automated configurations with this new feature?
 
