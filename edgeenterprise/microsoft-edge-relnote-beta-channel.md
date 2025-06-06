@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 05/28/2025
+ms.date: 06/5/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -20,6 +20,51 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 138.0.3351.14: June 5, 2025
+
+Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
+
+### Fixes
+
+Fixed an issue which caused WebDriver automation to fail in Microsoft Edge versions 133 and later. 
+ 
+### Feature Updates
+
+- **Use Primary work profile as default profile to open external links**. Microsoft Edge currently opens external links using the “Last Used” profile by default. While for enterprise users, the Primary Work Profile (signed in with a Microsoft Entra ID for enrolling the device) is normally the best profile for opening external links. With this feature, for Windows, Edge will check if it the Primary Work Profile exists and make it the default profile for opening external links if available. For Mac and Linux, if only one work profile signed in with a Microsoft Entra ID account is found, it’s treated as the Primary Work Profile. Admins can control availability to this feature using the [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **Media control center**.  With media control center in Microsoft Edge, users can easily manage and control multiple media sources from any website, all in one place. Quickly access videos in picture-in-picture mode, cast media to other devices, and control music, video, or any other sounds playing in Edge. Simply click on the media control center icon, depicted as a music note icon, found to the right of the address bar when media with sounds are playing to get started.
+
+-	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle will be available in Autofill settings (edge://settings/autofill/personalInfo). This will allow users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
+ 
+       This new setting is manageable via existing policies in Autofill e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy will turn off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **AI-powered History search**. Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can control availability to this feature using the [EdgeHistoryAISearchEnabled policy](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled). **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Adding support for viewing Sensitivity labels applied to a Microsoft Information Protection (MIP) Protected PDF**. Enterprise customers can view sensitivity labels applied to MIP protected PDF to be well informed of the data classification to enable them to handle such sensitive documents. This change is available in the new Microsoft Edge built-in PDF reader. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Microsoft 365 Copilot Chat Summarization in Microsoft Edge Context Menu**. Microsoft Edge is introducing a Microsoft 365 Copilot Chat summarization menu item to our context menu. This feature will help users quickly unpack and ask questions about their open page. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Improvements to surfacing performance notifications**. Microsoft Edge is making improvements to how users can learn about and improve their browser's responsiveness. Performance and Extensions Detector notifications may appear in the **Settings and more menu** when Edge's performance slows. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+### Policy updates
+
+#### New policies
+
+- [BuiltInAIAPIsEnabled](/deployedge/microsoft-edge-browser-policies/builtinaiapisenabled) - Allow pages to use the built-in AI APIs
+- [EdgeHistoryAISearchEnabled](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled) - Control access to AI-enhanced search in History
+- [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) - Use Primary Work Profile as default to open external link
+- [TLS13EarlyDataEnabled](/deployedge/microsoft-edge-browser-policies/tls13earlydataenabled) - Control whether TLS 1.3 Early Data is enabled in Microsoft Edge 
+
+#### Obsoleted policies
+
+- [InsecurePrivateNetworkRequestsAllowed](/deployedge/microsoft-edge-browser-policies/insecureprivatenetworkrequestsallowed) - Specifies whether to allow websites to make requests to any network endpoint in an insecure manner (obsolete)
+- [InsecurePrivateNetworkRequestsAllowedForUrls](/deployedge/microsoft-edge-browser-policies/insecureprivatenetworkrequestsallowedforurls) - Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)
+- [PrivateNetworkAccessRestrictionsEnabled](/deployedge/microsoft-edge-browser-policies/privatenetworkaccessrestrictionsenabled) - Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)
+- [ZstdContentEncodingEnabled](/deployedge/microsoft-edge-browser-policies/zstdcontentencodingenabled) - Enable zstd content encoding support (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
 
 ## Version 137.0.3296.58: June 2, 2025
 
