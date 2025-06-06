@@ -97,9 +97,9 @@ If you’re an admin, you can delete the configuration policy that was deployed 
 
 ## FAQs
 
-### Will my other settings still work if I check the “Configure enhanced security mode” box?
+### Will my other settings still work if I check the “Block other browsers” box?
 
-No, the **“Configure enhanced security mode”** box takes precedence over all other settings. Only one setting can be turned on at a time.
+No, the **“Block other browsers”** box takes precedence over all other settings. Only one setting can be turned on at a time.
 
 ### Can I use manual and automated configurations with this new feature?
 
