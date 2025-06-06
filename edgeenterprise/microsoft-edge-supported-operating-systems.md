@@ -35,6 +35,7 @@ This article describes the supported operating systems that apply to Microsoft E
 - Windows 10 IoT Enterprise SAC ****
 - Windows 10 IoT Enterprise 2019 LTSC ****
 - Windows 11
+- Windows 11 Enterprise multi-session
 
 > [!NOTE]
 > In version 128, Microsoft Edge will stop supporting CPUs that lack SSE3. Devices with these CPUs will not receive any more updates.
