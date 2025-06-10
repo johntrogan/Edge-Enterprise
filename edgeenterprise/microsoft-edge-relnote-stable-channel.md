@@ -35,7 +35,7 @@ Fixed various bugs and performance issues for Stable Channel.
 
 Fixed various bugs and performance issues for Extended Stable Channel.
 
-Ecxtendedf Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#june-4-2025).
+Extended Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#june-4-2025).
 
 
 ## Version 137.0.3296.62: June 3, 2025
