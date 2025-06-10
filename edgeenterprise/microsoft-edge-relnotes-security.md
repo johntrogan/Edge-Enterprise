@@ -19,7 +19,7 @@ These release notes provide information about security fixes that are included i
 
 ## June 10, 2025
 
-Microsoft is aware of the recent exploits existing in the wild. We are actively working on releasing a security fix. 
+Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix. 
 
 ## June 3, 2025
 
