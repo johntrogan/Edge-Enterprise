@@ -33,20 +33,21 @@ The charts below illustrate scenarios in which Copilot in Edge for Business may 
 
 Edge for Business is integrated with Microsoft Purview and Intune MAM to provide Copilot blocking mechanisms through DLP. The table below outlines all the policies and their setting value for which Copilot will be **BLOCKED** from accessing page content.
 
-| DLP Provider                            | Policy             | Policy Value |
-|----------------------------------------|--------------------|--------------|
-| **Microsoft Purview**                  | Copy               | Block or override |
-|                                        | Print              | Block or override |
-|                                        | Save Webpage As    | Block or override |
-| **Intune MAM**                          | Clipboard          | Block |
-|                                        | Print              | Block |
-|                                        | Upload             | Block |
-|                                        | Download           | Block |
-| **Microsoft Purview Session Policies** | Download           | Block |
-|                                        | Copy               | Block |
-|                                        | Print              | Block |
-|                                        | Dev tools          | Block |
-| **Microsoft Purview Information Protection (MIP)***For Office documents* |  Extract | Block |
+| DLP Provider                            | Policy             | Policy Value         |
+|----------------------------------------|--------------------|-----------------------|
+| **Microsoft Purview**                  | Copy               | Block or override     |
+|                                        | Print              | Block or override     |
+|                                        | Save Webpage As    | Block or override     |
+| **Intune MAM**                          | Clipboard          | Block                 |
+|                                        | Print              | Block                 |
+|                                        | Upload             | Block                 |
+|                                        | Download           | Block                 |
+| **Microsoft Purview Session Policies** | Download           | Block                 |
+|                                        | Copy               | Block                 |
+|                                        | Print              | Block                 |
+|                                        | Dev tools          | Block                 |
+| **Microsoft Purview Information Protection (MIP)** <br> *For Office documents* | Extract | Block |
+
 
 ---
 
