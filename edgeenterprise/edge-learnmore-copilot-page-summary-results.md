@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 description: "This article shows the results of Copilot page summary tests."
 ---
 
-# Copilot in Edge webpage summarization behavior
+# Microsoft 365 Copilot Chat in Edge and Access to Page Content  
 
 The charts below illustrate scenarios in which Copilot in Edge for Business may access page content across different document types. This information will be updated when support for summarization increases. This chart covers the behavior of Microsoft 365 Copilot Chat in Edge for Business which is accessible in the sidepane.  
 
