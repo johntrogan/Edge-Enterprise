@@ -14,27 +14,46 @@ description: "This article shows the results of Copilot page summary tests."
 
 # Copilot in Edge webpage summarization behavior
 
-The following chart explains the current behavior of Copilot in Edge webpage summarization on various document types. This information will be updated when support for summarization increases. This chart covers the behavior in Copilot both when enterprise data protection is applied and when it is not. Support for these document types only applies to Copilot in Edge.
+The charts below illustrate scenarios in which Copilot in Edge for Business may access page content across different document types. This information will be updated when support for summarization increases. This chart covers the behavior of Microsoft 365 Copilot Chat in Edge for Business which is accessible in the sidepane.  
 
 > [!NOTE]
 > Contextual grounding in Copilot in Edge: This is the ability to ground a chat conversation in the current webpage context. It applies to prompts such as "Summarize this document" or "What does this page say about…" in reference to the tab currently being viewed by the user in the main Edge window. Contextual grounding only applies to instances of chat when using Copilot in the Edge sidebar, because desktop/full-screen instances do not allow for simultaneous web context.
 
-| Document type | Copilot and Copilot with Enterprise Data Protection |
-|:-----|:-----|
-| Intranet Sites such as SharePoint | Summarization is supported<br>\* Embedded Office docs in SharePoint aren't supported |
-| Public Sites such as Wikipedia    | Summarization is supported |
-| Outlook Web App                   | Summarization is supported |
-| PDFs                              | Summarization is supported |
-| Office Documents                  | Summarization isn't supported |
-| Sites protected by Purview DLP Policies ** | Summarization isn't supported |
-| Sites protected by MAM Policies ^^   |  Summarization isn't supported |
-| Sites protected by MDA Policies ++ | Summarization isn't supported |
+| Document type                    | Copilot access to page content                                     |
+|----------------------------------|---------------------------------------------------------------------|
+| Microsoft 365 Copilot Chat       | Copilot access to page content is supported                        |
+| Intranet Sites such as SharePoint| Copilot access to page content is supported  <br> *Embedded Office docs in SharePoint aren't supported* |
+| Public Sites such as Wikipedia   | Copilot access to page content is supported                        |
+| Outlook Web App                  | Copilot access to page content is supported                        |
+| PDFs                             | Copilot access to page content is supported                        |
+| Office Documents                 | Copilot access to page content isn't supported                     |
 
-** Sites protected by Purview DLP Policies disallow summarization if any policy&mdash;except for "paste"&mdash;is set to "block" or "override."
 
-++ Sites protected by MDA Policies disallow summarization if any policy is set to "audit" or "block."
+## Blocking Copilot Chat in Edge for Business Access to Page Content through DLP
 
-^^ Sites protected by MAM Policies disallow summarization if any policy is set to "block."
+Edge for Business is integrated with Microsoft Purview and Intune MAM to provide Copilot blocking mechanisms through DLP. The table below outlines all the policies and their setting value for which Copilot will be **BLOCKED** from accessing page content.
+
+| DLP Provider                            | Policy             | Policy Value |
+|----------------------------------------|--------------------|--------------|
+| **Microsoft Purview**                  | Copy               | Block or override |
+|                                        | Print              | Block or override |
+|                                        | Save Webpage As    | Block or override |
+| **Intune MAM**                          | Clipboard          | Block |
+|                                        | Print              | Block |
+|                                        | Upload             | Block |
+|                                        | Download           | Block |
+| **Microsoft Purview Session Policies** | Download           | Block |
+|                                        | Copy               | Block |
+|                                        | Print              | Block |
+|                                        | Dev tools          | Block |
+| **Microsoft Purview Information Protection (MIP)***For Office documents* |  Extract | Block |
+
+---
+
+## Blocking Copilot Chat in Edge Access to Page Content through Group Policy
+
+Please use our [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-browser-policies/edgeentracopilotpagecontext) group policy to block Copilot’s access to page content in your tenant.  
+
 
 ## See also
 
