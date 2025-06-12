@@ -356,6 +356,8 @@
     href: HappyEyeballsV3Enabled.md
   - name: IPv6ReachabilityOverrideEnabled
     href: IPv6ReachabilityOverrideEnabled.md
+  - name: LocalNetworkAccessRestrictionsEnabled
+    href: LocalNetworkAccessRestrictionsEnabled.md
   - name: ZstdContentEncodingEnabled
     href: ZstdContentEncodingEnabled.md
 - name: PDF Reader
@@ -1118,6 +1120,8 @@
     href: PinningWizardAllowed.md
   - name: PostQuantumKeyAgreementEnabled
     href: PostQuantumKeyAgreementEnabled.md
+  - name: PrefetchWithServiceWorkerEnabled
+    href: PrefetchWithServiceWorkerEnabled.md
   - name: ProactiveAuthEnabled
     href: ProactiveAuthEnabled.md
   - name: PromotionalTabsEnabled
