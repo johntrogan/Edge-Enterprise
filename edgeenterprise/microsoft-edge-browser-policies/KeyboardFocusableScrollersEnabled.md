@@ -31,7 +31,7 @@ This policy provides a temporary opt-out for the new keyboard focusable scroller
 
 When this policy is Enabled or unset, scrollers without focusable children are keyboard focusable by default.
 
-When this policy is Disabled, scrollers are not keyboard focusable by default.
+When this policy is Disabled, scrollers aren't keyboard focusable by default.
 
 This policy is a temporary workaround. Starting in Microsoft Edge version 139, this policy is obsolete.
 
