@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation EdgeOpenExternalLinksWithPri
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/10/2025
+ms.date: 05/28/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -29,16 +29,16 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 This policy controls whether Microsoft Edge uses the Primary Work Profile as the default profile when opening external links.
 1. On Windows, the Primary Work Profile refers to the profile signed in with the Entra ID account used to enroll the device.
-2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting does not apply.
+2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting doesn't apply.
 
 Policy behavior:
-1. If enabled or not configured, Microsoft Edge will use the Primary Work Profile as the default for opening external links.
+1. If enabled or not configured, Microsoft Edge uses the Primary Work Profile as the default for opening external links.
 2. If disabled, the last used profile becomes the default for opening external links.
 
-Note: This policy does not override the following scenarios:
+Note: This policy doesn't override the following scenarios:
 1. If the EdgeDefaultProfileEnabled policy is set, it takes precedence over this policy.
 2. External links opened from Outlook or Microsoft Teams may be configured to launch in a specific profile, which can override the Primary Work Profile setting.
-3. If the user sets a preference for "Default profile for external links" in Profile preferences, that setting will take effect.
+3. If the user sets a preference for "Default profile for external links" in Profile preferences, that setting takes effect.
 
 ## Supported features
 
