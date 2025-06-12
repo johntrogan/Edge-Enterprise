@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation NewTabPageBingChatEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 06/12/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -27,11 +27,11 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-By default, there are two Bing chat entry-points on new tab page. One is inside the new tab page search box, and one is in the Bing Autosuggest drawer on-click.
+By default, the Microsoft Edge new tab page includes three Bing Chat entry points: one inside the search box, one in the Bing autosuggest dropdown when users click or begin typing in the box, and one as a suggested prompt below the box.
 
-If you enable or don't configure this policy, there is no change on the Microsoft Edge Enterprise new tab page and the Bing chat entry-points are there for users.
+If you enable or don't configure this policy, these Bing Chat entry points continue to appear on the new tab page.
 
-If you disable this policy, Bing chat entry-points don't appear on the new tab page.
+If you disable this policy, all Bing Chat entry points are removed from the new tab page.
 
 ## Supported features
 
