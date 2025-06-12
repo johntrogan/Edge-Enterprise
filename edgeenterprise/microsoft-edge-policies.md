@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/05/2025
+ms.date: 06/10/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,24 +31,18 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
+There are no new policies in Microsoft Edge version 139.
+
 The following table lists the new policies for Microsoft Edge version 138.
 
 |Policy Name|Caption|
 |-|-|
 |<a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
+|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
 |<a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
 |<a id="edgehistoryaisearchenabled" href="microsoft-edge-browser-policies/EdgeHistoryAISearchEnabled.md" target="_blank">EdgeHistoryAISearchEnabled</a>|Control access to AI-enhanced search in History|
+|<a id="prefetchwithserviceworkerenabled" href="microsoft-edge-browser-policies/PrefetchWithServiceWorkerEnabled.md" target="_blank">PrefetchWithServiceWorkerEnabled</a>|Allow SpeculationRules prefetch for ServiceWorker-controlled URLs|
 |<a id="tls13earlydataenabled" href="microsoft-edge-browser-policies/TLS13EarlyDataEnabled.md" target="_blank">TLS13EarlyDataEnabled</a>|Control whether TLS 1.3 Early Data is enabled in Microsoft Edge|
-
-The following table lists the new policies for Microsoft Edge version 137.
-
-|Policy Name|Caption|
-|-|-|
-|<a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
-|<a id="onbulkdataentryenterpriseconnector" href="microsoft-edge-browser-policies/OnBulkDataEntryEnterpriseConnector.md" target="_blank">OnBulkDataEntryEnterpriseConnector</a>|Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors|
-|<a id="onfileattachedenterpriseconnector" href="microsoft-edge-browser-policies/OnFileAttachedEnterpriseConnector.md" target="_blank">OnFileAttachedEnterpriseConnector</a>|Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors|
-|<a id="onprintenterpriseconnector" href="microsoft-edge-browser-policies/OnPrintEnterpriseConnector.md" target="_blank">OnPrintEnterpriseConnector</a>|Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors|
-|<a id="webauthenticationremotedesktopallowedorigins" href="microsoft-edge-browser-policies/WebAuthenticationRemoteDesktopAllowedOrigins.md" target="_blank">WebAuthenticationRemoteDesktopAllowedOrigins</a>|Allowed Origins for Proxied WebAuthn Requests from Remote Desktop Applications.|
 
 ## Deprecated policies
 
@@ -56,6 +50,7 @@ The following table lists all deprecated policies.
 
 |Policy Name|Caption|
 |-|-|
+|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
 |<a id="proxybypasslist" href="microsoft-edge-browser-policies/ProxyBypassList.md" target="_blank">ProxyBypassList</a>|Configure proxy bypass rules (deprecated)|
 |<a id="proxymode" href="microsoft-edge-browser-policies/ProxyMode.md" target="_blank">ProxyMode</a>|Configure proxy server settings (deprecated)|
 |<a id="proxypacurl" href="microsoft-edge-browser-policies/ProxyPacUrl.md" target="_blank">ProxyPacUrl</a>|Set the proxy .pac file URL (deprecated)|
@@ -75,6 +70,13 @@ The following table lists all deprecated policies.
 
 ## Obsolete policies
 
+The following table lists the obsoleted policies for Microsoft Edge version 139.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="keyboardfocusablescrollersenabled" href="microsoft-edge-browser-policies/KeyboardFocusableScrollersEnabled.md" target="_blank">KeyboardFocusableScrollersEnabled</a>|Enable keyboard focusable scrollers (obsolete)|
+|<a id="selectparserrelaxationenabled" href="microsoft-edge-browser-policies/SelectParserRelaxationEnabled.md" target="_blank">SelectParserRelaxationEnabled</a>|Controls whether the new HTML parser behavior for the &lt;select&gt; element is enabled (obsolete)|
+
 The following table lists the obsoleted policies for Microsoft Edge version 138.
 
 |Policy Name|Caption|
@@ -83,13 +85,6 @@ The following table lists the obsoleted policies for Microsoft Edge version 138.
 |<a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)|
 |<a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)|
 |<a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)|
-
-The following table lists the obsoleted policies for Microsoft Edge version 137.
-
-|Policy Name|Caption|
-|-|-|
-|<a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
-|<a id="mutationeventsenabled" href="microsoft-edge-browser-policies/MutationEventsEnabled.md" target="_blank">MutationEventsEnabled</a>|Enable deprecated/removed Mutation Events (obsolete)|
 
 ## Available policies
 
@@ -408,6 +403,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
 |<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
+|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network-deprecated"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
 |<a id="enable-zstd-content-encoding-support-obsolete"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 
 <a id="pdf-reader-policies"></a>
@@ -819,7 +815,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="display-zoom-in-ie-mode-tabs-with-dpi-scale-included-like-it-is-in-internet-explorer"></a><a id="internetexplorerzoomdisplay" href="microsoft-edge-browser-policies/InternetExplorerZoomDisplay.md" target="_blank">InternetExplorerZoomDisplay</a>|Display zoom in IE Mode tabs with DPI Scale included like it is in Internet Explorer|
 |<a id="intranet-redirection-behavior"></a><a id="intranetredirectbehavior" href="microsoft-edge-browser-policies/IntranetRedirectBehavior.md" target="_blank">IntranetRedirectBehavior</a>|Intranet Redirection Behavior|
 |<a id="enable-site-isolation-for-specific-origins"></a><a id="isolateorigins" href="microsoft-edge-browser-policies/IsolateOrigins.md" target="_blank">IsolateOrigins</a>|Enable site isolation for specific origins|
-|<a id="enable-keyboard-focusable-scrollers"></a><a id="keyboardfocusablescrollersenabled" href="microsoft-edge-browser-policies/KeyboardFocusableScrollersEnabled.md" target="_blank">KeyboardFocusableScrollersEnabled</a>|Enable keyboard focusable scrollers|
+|<a id="enable-keyboard-focusable-scrollers-obsolete"></a><a id="keyboardfocusablescrollersenabled" href="microsoft-edge-browser-policies/KeyboardFocusableScrollersEnabled.md" target="_blank">KeyboardFocusableScrollersEnabled</a>|Enable keyboard focusable scrollers (obsolete)|
 |<a id="live-captions-allowed"></a><a id="livecaptionsallowed" href="microsoft-edge-browser-policies/LiveCaptionsAllowed.md" target="_blank">LiveCaptionsAllowed</a>|Live captions allowed|
 |<a id="enable-windows-to-search-local-microsoft-edge-browsing-data"></a><a id="localbrowserdatashareenabled" href="microsoft-edge-browser-policies/LocalBrowserDataShareEnabled.md" target="_blank">LocalBrowserDataShareEnabled</a>|Enable Windows to search local Microsoft Edge browsing data|
 |<a id="allow-suggestions-from-local-providers"></a><a id="localprovidersenabled" href="microsoft-edge-browser-policies/LocalProvidersEnabled.md" target="_blank">LocalProvidersEnabled</a>|Allow suggestions from local providers|
@@ -864,6 +860,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enable-picture-in-picture-overlay-feature-on-supported-webpages-in-microsoft-edge"></a><a id="pictureinpictureoverlayenabled" href="microsoft-edge-browser-policies/PictureInPictureOverlayEnabled.md" target="_blank">PictureInPictureOverlayEnabled</a>|Enable Picture in Picture overlay feature on supported webpages in Microsoft Edge|
 |<a id="allow-pin-to-taskbar-wizard"></a><a id="pinningwizardallowed" href="microsoft-edge-browser-policies/PinningWizardAllowed.md" target="_blank">PinningWizardAllowed</a>|Allow Pin to taskbar wizard|
 |<a id="enable-post-quantum-key-agreement-for-tls"></a><a id="postquantumkeyagreementenabled" href="microsoft-edge-browser-policies/PostQuantumKeyAgreementEnabled.md" target="_blank">PostQuantumKeyAgreementEnabled</a>|Enable post-quantum key agreement for TLS|
+|<a id="allow-speculationrules-prefetch-for-serviceworker-controlled-urls"></a><a id="prefetchwithserviceworkerenabled" href="microsoft-edge-browser-policies/PrefetchWithServiceWorkerEnabled.md" target="_blank">PrefetchWithServiceWorkerEnabled</a>|Allow SpeculationRules prefetch for ServiceWorker-controlled URLs|
 |<a id="enable-proactive-authentication-obsolete"></a><a id="proactiveauthenabled" href="microsoft-edge-browser-policies/ProactiveAuthEnabled.md" target="_blank">ProactiveAuthEnabled</a>|Enable Proactive Authentication (obsolete)|
 |<a id="enable-full-tab-promotional-content-deprecated"></a><a id="promotionaltabsenabled" href="microsoft-edge-browser-policies/PromotionalTabsEnabled.md" target="_blank">PromotionalTabsEnabled</a>|Enable full-tab promotional content (deprecated)|
 |<a id="ask-where-to-save-downloaded-files"></a><a id="promptfordownloadlocation" href="microsoft-edge-browser-policies/PromptForDownloadLocation.md" target="_blank">PromptForDownloadLocation</a>|Ask where to save downloaded files|
@@ -906,7 +903,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enable-the-search-bar"></a><a id="searchbarallowed" href="microsoft-edge-browser-policies/SearchbarAllowed.md" target="_blank">SearchbarAllowed</a>|Enable the Search bar|
 |<a id="allow-the-search-bar-at-windows-startup"></a><a id="searchbarisenabledonstartup" href="microsoft-edge-browser-policies/SearchbarIsEnabledOnStartup.md" target="_blank">SearchbarIsEnabledOnStartup</a>|Allow the Search bar at Windows startup|
 |<a id="websites-or-domains-that-dont-need-permission-to-use-direct-security-key-attestation"></a><a id="securitykeypermitattestation" href="microsoft-edge-browser-policies/SecurityKeyPermitAttestation.md" target="_blank">SecurityKeyPermitAttestation</a>|Websites or domains that don't need permission to use direct Security Key attestation|
-|<a id="controls-whether-the-new-html-parser-behavior-for-the-select-element-is-enabled"></a><a id="selectparserrelaxationenabled" href="microsoft-edge-browser-policies/SelectParserRelaxationEnabled.md" target="_blank">SelectParserRelaxationEnabled</a>|Controls whether the new HTML parser behavior for the &lt;select&gt; element is enabled|
+|<a id="controls-whether-the-new-html-parser-behavior-for-the-select-element-is-enabled-obsolete"></a><a id="selectparserrelaxationenabled" href="microsoft-edge-browser-policies/SelectParserRelaxationEnabled.md" target="_blank">SelectParserRelaxationEnabled</a>|Controls whether the new HTML parser behavior for the &lt;select&gt; element is enabled (obsolete)|
 |<a id="send-all-intranet-sites-to-internet-explorer"></a><a id="sendintranettointernetexplorer" href="microsoft-edge-browser-policies/SendIntranetToInternetExplorer.md" target="_blank">SendIntranetToInternetExplorer</a>|Send all intranet sites to Internet Explorer|
 |<a id="control-the-new-behavior-for-event-dispatching-on-disabled-form-controls-obsolete"></a><a id="sendmouseeventsdisabledformcontrolsenabled" href="microsoft-edge-browser-policies/SendMouseEventsDisabledFormControlsEnabled.md" target="_blank">SendMouseEventsDisabledFormControlsEnabled</a>|Control the new behavior for event dispatching on disabled form controls (obsolete)|
 |<a id="send-site-information-to-improve-microsoft-services-obsolete"></a><a id="sendsiteinfotoimproveservices" href="microsoft-edge-browser-policies/SendSiteInfoToImproveServices.md" target="_blank">SendSiteInfoToImproveServices</a>|Send site information to improve Microsoft services (obsolete)|
