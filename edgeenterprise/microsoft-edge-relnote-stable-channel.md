@@ -26,6 +26,16 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 137.0.3296.83: June 13, 2025
+
+Fixed various bugs, feature updates and performance issues for Stable Channel.
+
+### Feature updates
+
+- **Secure Password Deployment in the Edge management service**. The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture. 
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#june-13-2025).
+
 ## Version 136.0.3240.124: June 12, 2025
 
 Fixed various bugs and performance issues for Extended Stable Channel.
