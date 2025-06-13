@@ -30,9 +30,9 @@ These release notes provide information about new features and nonsecurity updat
 
 Fixed various bugs, feature updates and performance issues for Stable Channel.
 
-## Feature updates
+### Feature updates
 
-- Secure Password Deployment in the Edge management service. The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture. 
+- **Secure Password Deployment in the Edge management service**. The secure password deployment feature in the Edge management service enables admins to deploy encrypted shared passwords to a set of users, allowing them to log into websites seamlessly without ever seeing the actual passwords. This reduces the risk of unauthorized access and enhances the organization's overall security posture. 
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#june-13-2025).
 
