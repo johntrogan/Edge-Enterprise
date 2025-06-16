@@ -21,7 +21,7 @@ This article provides an FAQ for Microsoft Edge extensions.
 
 ## What is the update URL for the Microsoft Edge Add-ons store?
 
-The update URL for extensions hosted on Microsoft Edge Add-ons is: https://edge.microsoft.com/extensionwebstorebase/v1/crx
+The update URL for extensions hosted on Microsoft Edge Add-ons is: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`
 
 ## What is the update URL for Chrome Web Store extensions?
 
