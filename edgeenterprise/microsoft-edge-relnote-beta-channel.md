@@ -26,15 +26,13 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 Fixed various bugs, feature update, and performance issues.
 
 ### Fixes 
- 
 - Fixed an issue where re-enabled `<textarea>` elements remained noneditable.  This issue affected activating a role assignment in Privileged Identity Management.  
  
 ### Feature updates
- 
 - **Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-browser-policies/webcontentfilteringblockedcategories) policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and don't comply with the organization's security policies.
  
 ### Policy updates
- 
+
 #### New policies
 - [PrefetchWithServiceWorkerEnabled](/deployedge/microsoft-edge-browser-policies/prefetchwithserviceworkerenabled) - Allow SpeculationRules prefetch for ServiceWorker-controlled URLs
 - [LocalNetworkAccessRestrictionsEnabled](/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled) - Specifies whether to block requests from public websites
