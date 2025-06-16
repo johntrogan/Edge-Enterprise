@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 06/5/2025
+ms.date: 06/16/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -31,7 +31,7 @@ Fixed various bugs, feature update and performance issues.
  
 ### Feature updates
  
-- **Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-browser-policies/webcontentfilteringblockedcategories) policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and do not comply with the organization's security policies.
+- **Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-browser-policies/webcontentfilteringblockedcategories) policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and don't comply with the organization's security policies.
  
 ### Policy updates
  
@@ -52,23 +52,23 @@ Fixed various bugs and performance issues, feature updates, policy updates, and 
 
 ### Fixes
 
-Fixed an issue which caused WebDriver automation to fail in Microsoft Edge versions 133 and later. 
+Fixed an issue, which caused WebDriver automation to fail in Microsoft Edge versions 133 and later. 
  
 ### Feature Updates
 
-- **Use Primary work profile as default profile to open external links**. Microsoft Edge currently opens external links using the “Last Used” profile by default. While for enterprise users, the Primary Work Profile (signed in with a Microsoft Entra ID for enrolling the device) is normally the best profile for opening external links. With this feature, for Windows, Edge will check if it the Primary Work Profile exists and make it the default profile for opening external links if available. For Mac and Linux, if only one work profile signed in with a Microsoft Entra ID account is found, it’s treated as the Primary Work Profile. Admins can control availability to this feature using the [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Use Primary work profile as default profile to open external links**. Microsoft Edge currently opens external links using the “Last Used” profile by default. While for enterprise users, the Primary Work Profile (signed in with a Microsoft Entra ID for enrolling the device) is normally the best profile for opening external links. With this feature, for Windows, Edge checks if it the Primary Work Profile exists and makes it the default profile for opening external links if available. For Mac and Linux, if only one work profile signed in with a Microsoft Entra ID account is found, it’s treated as the Primary Work Profile. Admins can control availability to this feature using the [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **Media control center**.  With media control center in Microsoft Edge, users can easily manage and control multiple media sources from any website, all in one place. Quickly access videos in picture-in-picture mode, cast media to other devices, and control music, video, or any other sounds playing in Edge. Simply click on the media control center icon, depicted as a music note icon, found to the right of the address bar when media with sounds are playing to get started.
 
--	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle will be available in Autofill settings (edge://settings/autofill/personalInfo). This will allow users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
+-	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle is available in Autofill settings (edge://settings/autofill/personalInfo). This allows users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
  
-       This new setting is manageable via existing policies in Autofill e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy will turn off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+       This new setting is manageable via existing policies in Autofill e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy turns off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **AI-powered History search**. Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can control availability to this feature using the [EdgeHistoryAISearchEnabled policy](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled). **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
 - **Adding support for viewing Sensitivity labels applied to a Microsoft Information Protection (MIP) Protected PDF**. Enterprise customers can view sensitivity labels applied to MIP protected PDF to be well informed of the data classification to enable them to handle such sensitive documents. This change is available in the new Microsoft Edge built-in PDF reader. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Microsoft 365 Copilot Chat Summarization in Microsoft Edge Context Menu**. Microsoft Edge is introducing a Microsoft 365 Copilot Chat summarization menu item to our context menu. This feature will help users quickly unpack and ask questions about their open page. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+- **Microsoft 365 Copilot Chat Summarization in Microsoft Edge Context Menu**. Microsoft Edge is introducing a Microsoft 365 Copilot Chat summarization menu item to our context menu. This feature helps users quickly unpack and ask questions about their open page. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
 - **Improvements to surfacing performance notifications**. Microsoft Edge is making improvements to how users can learn about and improve their browser's responsiveness. Performance and Extensions Detector notifications may appear in the **Settings and more menu** when Edge's performance slows. **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
@@ -129,7 +129,7 @@ Fixed various bugs and performance issues and policy updates.
 
 ### Fixes
 
-- Fixed an issue which affected users with the 'Auto hidden' sidebar visibility setting and caused their Outlook or Teams links to not show sidepane content as expected.
+- Fixed an issue, which affected users with the 'Auto hidden' sidebar visibility setting and caused their Outlook or Teams links to not show sidepane content as expected.
 
 ## Version 137.0.3296.16: May 12, 2025
 
