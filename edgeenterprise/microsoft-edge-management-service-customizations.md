@@ -117,10 +117,7 @@ To add settings that help protect against security threats, navigate to the secu
 
 Users with configured security settings may still be at risk on other browsers. To mitigate this risk, you can choose to block other browsers. When this setting is enabled, a new configuration policy will be created in Intune. Any modifications you make to this new policy in Intune or in a configuration policy with identical groups in the Microsoft Edge management service may lead to unexpected behaviors.
 
-### Secure Password Deployment (in preview)
-
-> [!NOTE]
-> This experience is currently in preview. You can opt in to this preview by navigating to **Settings > Org settings > Organization profile > Release preferences,** and selecting a targeted release option.
+### Secure Password Deployment
 
 To deploy a secure set of credentials for your users to access certain sites, navigate to the **Secure Password Deployment** tab. Here you can specify a site URL as well as the username and password you would like your users to have for access to that site. This will allow your users to log into websites seamlessly without ever needing to see the actual password, which also reduces the risk of unauthorized access and enhances your organization's overall security posture.
 
