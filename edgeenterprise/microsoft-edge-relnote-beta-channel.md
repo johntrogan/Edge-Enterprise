@@ -23,11 +23,11 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 138.0.3351.34: June 16, 2025
 
-Fixed various bugs, feature update and performance issues.
+Fixed various bugs, feature update, and performance issues.
 
 ### Fixes 
  
-- Fixed an issue where re-enabled `<textarea>` elements remained non-editable.  This issue affected activating a role assignment in Privileged Identity Management.  
+- Fixed an issue where re-enabled `<textarea>` elements remained noneditable.  This issue affected activating a role assignment in Privileged Identity Management.  
  
 ### Feature updates
  
@@ -60,9 +60,9 @@ Fixed an issue, which caused WebDriver automation to fail in Microsoft Edge vers
 
 - **Media control center**.  With media control center in Microsoft Edge, users can easily manage and control multiple media sources from any website, all in one place. Quickly access videos in picture-in-picture mode, cast media to other devices, and control music, video, or any other sounds playing in Edge. Simply click on the media control center icon, depicted as a music note icon, found to the right of the address bar when media with sounds are playing to get started.
 
--	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle is available in Autofill settings (edge://settings/autofill/personalInfo). This allows users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
+-	**New Autofill Personal Information Settings Configuration**. A web form field collection consent toggle is available in Autofill settings (edge://settings/autofill/personalInfo). This allows users to consent to Microsoft Edge collecting web form field labels (for example, "First Name," "Email") to improve Autofill suggestion accuracy. Only field labels are collected and not user-entered data. The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/privacy/privacystatement).
  
-       This new setting is manageable via existing policies in Autofill e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy turns off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+       This new setting is manageable via existing policies in Autofill,  for example, [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) is the parent setting for EdgeAutofillMlEnabled. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled) policy turns off this setting.  **Note:** This feature is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
 - **AI-powered History search**. Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can control availability to this feature using the [EdgeHistoryAISearchEnabled policy](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled). **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
@@ -113,7 +113,7 @@ Fixed various bug, performance issues, and feature updates.
 
 ### Feature updates
 
- - **Blocking inappropriate sites on Edge for Business.**  Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Configure the feature using the Microsoft Edge management service.  Admins can block millions of inappropriate sites by simply selecting categories. This feature updates daily and works even when devices are off the organization’s network.  For more information, see [Configure Web Content Filtering on Microsoft Edge](/deployedge/microsoft-edge-web-content-filtering).  **Note:** This experience is in public preview.  
+ - **Blocking inappropriate sites on Edge for Business.**  Microsoft Edge is introducing Web Content Filtering (WCF) for EDU and SMB organizations to help them keep students and employees safe online. Configure the feature using the Microsoft Edge management service.  Admins can block millions of inappropriate sites by selecting categories. This feature updates daily and works even when devices are off the organization’s network.  For more information, see [Configure Web Content Filtering on Microsoft Edge](/deployedge/microsoft-edge-web-content-filtering).  **Note:** This experience is in public preview.  
 
 ## Version 137.0.3296.30: May 19, 2025
 
@@ -157,7 +157,7 @@ To streamline communication, the Dev Channel updates section is being discontinu
  
 - **Find on Page in Microsoft Edge for Business** will soon be integrated with Microsoft 365 Copilot Chat.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat.  **Note:** This feature has been rolled back due to technical issues.  It is planned to be turned on in a future Microsoft Edge version.  Broad availability will be announced via Microsoft Edge release notes. (*Updated May 28, 2025*)
+- **Added language support for PDF Add text feature.**  Support for non-English languages has been added to the Added text feature.  This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat.  **Note:** This feature has been rolled back due to technical issues.  It's planned to be turned on in a future Microsoft Edge version.  Broad availability is announced via Microsoft Edge release notes. (*Updated May 28, 2025*)
  
 ### Policy updates
 
@@ -201,7 +201,7 @@ Fixed various bugs and performance issues.
 
 ### Fixes
 
-- Fixed an issue which caused some customers to unexpectedly start seeing the sidepane open (when the sidebar was in the OFF state) with context when clicking on Teams and Outlook links. 
+- Fixed an issue, which caused some customers to unexpectedly start seeing the sidepane open (when the sidebar was in the OFF state) with context when clicking on Teams and Outlook links. 
 
 ## Version 136.0.3240.29: April 22, 2025
 
@@ -473,13 +473,13 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 ### Fixes
 
-- Fixed an issue which prevented users from selecting 'Report this file as safe' when downloading a file.  
+- Fixed an issue, which prevented users from selecting 'Report this file as safe' when downloading a file.  
 
 ### Feature updates
 
 - **Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH).** Sovereign cloud customers (including GCCH) are able to open MIP protected PDF content in Microsoft Edge. This change is available in the Microsoft Edge built-in PDF reader powered by Adobe Acrobat and the legacy Microsoft Edge PDF engine.
 
-- **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
+- **Non-special scheme URL handling.** Nonspecial scheme URL handling is updated to become compliant with the URL Standard (https://url.spec.whatwg.org/). This change has site compatibility impacts, which might require changes to your web sites. For more information and web developer guidance, see http://bit.ly/url-non-special.
 
 - **Deprecate `textprediction` attribute.** Removes support for the `textprediction` HTML attribute, which is a nonstandard attribute that's used to enable or disable the browser-based Text Prediction feature for long-form text inputs. Instead, use the standardized `writingsuggestions` attribute, which functions similarly to `textprediction`, but also applies to other writing-assistance features that browsers may provide. Sites that explicitly set `textprediction` to `true` or `false` can instead set `writingsuggestions` to the same value. For more information, see [Writing suggestions](https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions) in the HTML specification.
 
@@ -517,7 +517,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **CSS advanced attr() function.** Implements the augmentation to `attr()` specified in CSS Level 5, which allows types besides `<string>` and use in all CSS properties (in addition to the existing support for the pseudo-element `content`).
 
-- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when in their open state, and matches `<select>` and `<input>` when they are in modes which have a picker and the picker is showing.
+- **CSS `:open` pseudo-class.** The `:open` pseudo-class matches `<dialog>` and `<details>` when in their open state, and matches `<select>` and `<input>` when they are in modes, which have a picker and the picker is showing.
 
 - **CSS scroll state container queries.** Use container queries to style descendants of containers based on their scroll state.
 
@@ -753,7 +753,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **`PushMessageData::bytes()`.** The `PushMessageData` interface mimics the `Body` interface, which was amended earlier this year with a new `bytes()` method, following the principle that APIs should generally vend byte buffers as `Uint8Arrays`. Microsoft Edge 132 realigns with the `Body` interface by providing the `bytes()` accessor on the `PushMessageData` interface as well.
 
-- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries be saved and reused on a per-page basis. Two per-page-load budgets are charged the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
+- **Saved queries in `sharedStorage.selectURL`.** `sharedStorage.selectURL()` now lets queries be saved and reused on a per-page basis. Two per-page-load budgets are charged as the first time a saved query is run but not for subsequent runs of the saved query during the same page-load. This change is accomplished with a `savedQuery` parameter in the options for `selectURL()` that names the query.
 
 - **Throw exception for pop overs and dialogs in non-active documents.** Previously calling `showPopover()` or `showModal()` on a popover or dialog that resides within an inactive document would silently fail. No exception was thrown, but since the document is inactive, no popover or dialog would be shown. As of Microsoft Edge 132, these situations now throw `InvalidStateError`.
 
@@ -773,7 +773,7 @@ The following Dev channel updates preceded this Beta channel release. These note
 
 - **New origin trials: Explicit Compile Hints with Magic Comments.** This feature lets you attach information about which functions should be eager parsed and compiled in JavaScript files. The information is encoded as magic comments.
 
-- **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage`  no longer extends`EventTarget`.
+- **`navigator.storage` no longer an EventTarget.** `navigator.storage` was made as an `EventTarget` for the Storage Pressure Event, which never made it past the prototype phase. This dead code is being removed and as a result, `navigator.storage`  no longer extends`EventTarget`.
 
 - **Remove Prefixed HTMLVideoElement Fullscreen APIs.** The prefixed HTMLVideoElement fullscreen APIs have been deprecated from Microsoft Edge.
 
@@ -813,7 +813,7 @@ Fixed various bugs and performance issues, and feature updates.
 
 - **Changes to Kyber.** The Kyber algorithm was standardized with minor technical changes and renamed to the Module Lattice Key Encapsulation Mechanism (ML-KEM). ML-KEM is implemented in the BoringSSL cryptography library, which allows for it to be utilized by services that depend on this library.
 
-  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility the following changes in Microsoft Edge will be made:
+  The changes to the final version of ML-KEM make it incompatible with the previously deployed version of Kyber. Due to this incompatibility, the following changes in Microsoft Edge will be made:
 
   - Microsoft Edge switches from supporting Kyber to ML-KEM.
   - Microsoft Edge offers a key share prediction for hybrid ML-KEM (codepoint 0x11EC).
