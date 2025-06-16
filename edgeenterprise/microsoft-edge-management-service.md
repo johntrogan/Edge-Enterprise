@@ -24,7 +24,7 @@ The Microsoft Edge management service is a platform in the Microsoft 365 admin c
 - You must be using one of the following supported operating systems: Windows 10/11 or Windows Server 2016 or later. See [Microsoft Edge Supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems) for specifics.
 
 > [!IMPORTANT]
-> The Microsoft Edge management service uses the Cloud Policy service, which currently isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD. [Learn more about the Cloud Policy service for Microsoft 365](/deployoffice/admincenter/overview-cloud-policy#requirements-for-using-cloud-policy).
+>  The Microsoft Edge management service is currently not available to customers with GCC plans and supports management of Windows 10 and 11 devices only.
 
 <!-- ====================================================================== -->
 ## Access the experience
