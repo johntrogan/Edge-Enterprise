@@ -25,7 +25,7 @@ The update URL for extensions hosted on Microsoft Edge Add-ons is: `https://edge
 
 ## What is the update URL for Chrome Web Store extensions?
 
-The update URL for extensions hosted on Chrome Webstore is: [https://clients2.google.com/service/update2/crx](https://clients2.google.com/service/update2/crx)
+The update URL for extensions hosted on Chrome Webstore is: `https://clients2.google.com/service/update2/crx`
 
 ## See also
 
