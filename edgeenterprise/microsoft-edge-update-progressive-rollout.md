@@ -25,7 +25,7 @@ By monitoring the health of our updates closely and rolling out the updates over
 
 ## How will the updates work?
 
-Each installation of Microsoft Edge is assigned as an upgrade value. When we start rolling out incrementally, the update is done when the value on your device falls within the upgrade value range. As the rollout progresses (within a few days), all users will eventually get the update. Browser updates with critical security fixes have a faster rollout cadence than updates that don't have critical security fixes.  Update is done to ensure quick protection from vulnerabilities.
+Each installation of Microsoft Edge is assigned as an upgrade value. When we start rolling out incrementally, the update is done when the value on your device falls within the upgrade value range. As the rollout progresses (within a few days), all users receive the update. Browser updates with critical security fixes have a faster rollout cadence than updates that don't have critical security fixes.  Update is done to ensure quick protection from vulnerabilities.
 
 ## How does this affect enterprises?
 
