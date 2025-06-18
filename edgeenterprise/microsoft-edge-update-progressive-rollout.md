@@ -21,11 +21,11 @@ With the Microsoft Edge 83 release, gradual rollouts of major updates to Microso
 
 ## Why do we need progressive rollout?
 
-By monitoring the health of our updates closely and rolling out the updates over the course of several days, we can limit the effect of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts are enabled for all Windows 7, Windows 8 & 8.1, and Windows 10/11 versions of Microsoft Edge. Starting with the January 17, release (version 132.0.2957.115), Microsoft Edge on macOS Stable also follows the progressive rollout process, aligning with the Windows release strategy.
+By monitoring the health of our updates closely and rolling out the updates over the course of several days, we can limit the effect of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts are enabled for all Windows 7, Windows 8 & 8.1, and Windows 10/11 versions of Microsoft Edge. Starting with the January 17 release (version 132.0.2957.115), the Stable channel of Microsoft Edge on macOS also follows the progressive rollout process, aligning with the Windows release strategy.
 
 ## How will the updates work?
 
-Each installation of Microsoft Edge is assigned as an upgrade value. When we start rolling out incrementally, the update is done when the value on your device falls within the upgrade value range. As the rollout progresses (within a few days), all users receive the update. Browser updates with critical security fixes have a faster rollout cadence than updates that don't have critical security fixes.  Update is done to ensure quick protection from vulnerabilities.
+Each installation of Microsoft Edge is assigned as an upgrade value. When we start rolling out incrementally, the update is done when the value on your device falls within the upgrade value range. As the rollout progresses (within a few days), all users  the update. Browser updates with critical security fixes have a faster rollout cadence than updates that don't have critical security fixes.  Update is done to ensure quick protection from vulnerabilities.
 
 ## How does this affect enterprises?
 
