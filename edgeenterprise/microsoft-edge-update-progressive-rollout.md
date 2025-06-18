@@ -21,7 +21,7 @@ With the Microsoft Edge 83 release, gradual rollouts of major updates to Microso
 
 ## Why do we need progressive rollout?
 
-By monitoring the health of our updates closely and rolling out the updates over the course of several days, we can limit the effect of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts are enabled for all Windows 7, Windows 8 & 8.1, and Windows 10/11 versions of Microsoft Edge. Microsoft Edge on Mac is supported as soon as it's ready.
+By monitoring the health of our updates closely and rolling out the updates over the course of several days, we can limit the effect of issues that might occur with the new update. With Microsoft Edge release 83, Progressive Rollouts are enabled for all Windows 7, Windows 8 & 8.1, and Windows 10/11 versions of Microsoft Edge. Starting with the January 17, release (version 132.0.2957.115), Microsoft Edge on macOS Stable also follows the progressive rollout process, aligning with the Windows release strategy.
 
 ## How will the updates work?
 
