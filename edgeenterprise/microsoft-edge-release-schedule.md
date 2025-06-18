@@ -34,7 +34,7 @@ The following table lists the planned and actual release dates for major release
 | Version | Release status | Beta Channel<br>Release week | Stable Channel<br>Release week | Extended Stable Channel<br>Release week |
 |:-----|:-----|:-----|:-----|:-----|
 | 140 | Target release | Week of 14-Aug-2025 | Week of 04-Sep-2025 | Week of 04-Sep-2025 |
-| 139 | Target release | Week of 17-Jul-2025 | Week of 07-Aug-2025 | Not applicable |
+| 139 | Target release | Week of 3-Jul-2025 | Week of 07-Aug-2025 | Not applicable |
 | 138 | Release<br>version | 5-June-2025<br>[138.0.3351.14](/deployedge/microsoft-edge-relnote-beta-channel#version-1380335114-june-6-2025) | Week of 26-Jun-2025 | Week of 26-Jun-2025 |
 | 137 | Release<br>version | 12-May-2025<br>[137.0.3296.16](/deployedge/microsoft-edge-relnote-beta-channel#version-1370329616-may-12-2025) | 29-May-2025<br>[137.0.3296.52](/deployedge/microsoft-edge-relnote-stable-channel#version-1370329652-may-29-2025) | Not applicable |
 | 136 | Release<br>version | 11-April-2025<br>[136.0.3240.8](/deployedge/microsoft-edge-relnote-beta-channel#version-136032408-april-11-2025) | 01-May-2025<br>[136.0.3240.50](/deployedge/microsoft-edge-relnote-stable-channel#version-1360324050-may-1-2025) | 01-May-2025<br>[136.0.3240.50](/deployedge/microsoft-edge-relnote-stable-channel#version-1360324050-may-1-2025) |
