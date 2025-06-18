@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/12/2025
+ms.date: 06/16/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,11 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
-There are no new policies in Microsoft Edge version 139.
+The following table lists the new policies for Microsoft Edge version 139.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="edgeopenexternallinkswithappspecifiedprofile" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithAppSpecifiedProfile.md" target="_blank">EdgeOpenExternalLinksWithAppSpecifiedProfile</a>|Prioritize App specified profile to open external links|
 
 The following table lists the new policies for Microsoft Edge version 138.
 
@@ -332,6 +336,7 @@ These tables list all of the browser-related group policies available in this re
 |-|-|
 |<a id="configure-the-automatic-profile-switching-site-list"></a><a id="automaticprofileswitchingsitelist" href="microsoft-edge-browser-policies/AutomaticProfileSwitchingSiteList.md" target="_blank">AutomaticProfileSwitchingSiteList</a>|Configure the automatic profile switching site list|
 |<a id="default-profile-setting-enabled"></a><a id="edgedefaultprofileenabled" href="microsoft-edge-browser-policies/EdgeDefaultProfileEnabled.md" target="_blank">EdgeDefaultProfileEnabled</a>|Default Profile Setting Enabled|
+|<a id="prioritize-app-specified-profile-to-open-external-links"></a><a id="edgeopenexternallinkswithappspecifiedprofile" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithAppSpecifiedProfile.md" target="_blank">EdgeOpenExternalLinksWithAppSpecifiedProfile</a>|Prioritize App specified profile to open external links|
 |<a id="use-primary-work-profile-as-default-to-open-external-links"></a><a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
 |<a id="guided-switch-enabled"></a><a id="guidedswitchenabled" href="microsoft-edge-browser-policies/GuidedSwitchEnabled.md" target="_blank">GuidedSwitchEnabled</a>|Guided Switch Enabled|
 |<a id="enable-implicit-sign-in"></a><a id="implicitsigninenabled" href="microsoft-edge-browser-policies/ImplicitSignInEnabled.md" target="_blank">ImplicitSignInEnabled</a>|Enable implicit sign-in|

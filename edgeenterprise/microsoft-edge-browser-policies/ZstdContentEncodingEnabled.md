@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation ZstdContentEncodingEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/05/2025
+ms.date: 06/16/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,7 +31,7 @@ This policy controls whether Microsoft Edge supports Zstandard (zstd) content en
 
 Enabled – Edge advertises zstd in the Accept-Encoding request header and can decompress responses encoded with zstd.
 
-Disabled – Edge doesn't advertise or support zstd content encoding.
+Disabled – Edge does not advertise or support zstd content encoding.
 
 Not configured – The default behavior is to enable support for zstd content encoding.
 

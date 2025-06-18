@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SelectParserRelaxationEnable
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/12/2025
+ms.date: 06/16/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -27,7 +27,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-The HTML parser is being changed to allow extra HTML tags inside the &lt;select&gt; element. This policy supports the old HTML parser behavior through Microsoft Edge version 138.
+The HTML parser is being changed to allow additional HTML tags inside the &lt;select&gt; element. This policy supports the old HTML parser behavior through Microsoft Edge version 138.
 
 If this policy is enabled or unset, the HTML parser allows additional tags inside the &lt;select&gt; element.
 
