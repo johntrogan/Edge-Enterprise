@@ -1,5 +1,5 @@
 ---
-title: "Splunk"
+title: "KnowBe4"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
