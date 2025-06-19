@@ -274,6 +274,8 @@
     href: AutomaticProfileSwitchingSiteList.md
   - name: EdgeDefaultProfileEnabled
     href: EdgeDefaultProfileEnabled.md
+  - name: EdgeOpenExternalLinksWithAppSpecifiedProfile
+    href: EdgeOpenExternalLinksWithAppSpecifiedProfile.md
   - name: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled
     href: EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md
   - name: GuidedSwitchEnabled
