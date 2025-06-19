@@ -32,21 +32,21 @@ Archived versions of these release notes are available at [Archived release note
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
 
-### General updates
+### General Updates
 
 - [iOS & Android] Upgrade OneAuth SDK to version 6.3.0
 - [Android] Support MAM Tunnel in Android Custom Tabs
 
 ### New Policy
 
-- [ios] Support certificate-based authentication in iOS (To enable this feature, need to configure com.microsoft.intune.mam.managedbrowser.`SystemKeychainCertificateAuthEnabled=true`)
+- [iOS] Support certificate-based authentication in iOS (To enable this feature, need to configure com.microsoft.intune.mam.managedbrowser.`SystemKeychainCertificateAuthEnabled=true`)
  
-### Bug fixes
+### Bug Fixes
 
 - [Android] Fix the issue about the bottom bar couldn't be hidden completely
 - [Android] Fix video playback issues when using ExoPlayer
  
-### New enhancements
+### New Enhancements
 
 - [iOS] Improve the user experience of web single sign-on
 - [iOS] Improve the user experience of shared device mode
