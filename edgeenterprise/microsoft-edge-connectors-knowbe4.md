@@ -29,7 +29,9 @@ To set up the Microsoft Edge for Business integration in SecurityCoach, follow t
 1. Log in to your KnowBe4 console.
 2. Navigate to **SecurityCoach > Setup > Security Vendor Integrations**.
 3. Locate the **Microsoft Edge for Business** vendor tile and click **Configure**. The Microsoft Edge for Business integration page will open.
+
 ![image1.](media/microsoft-edge-connectors-knowbe4/img1.png)  
+
 4. Click **Enable Integration** to enable the integration in SecurityCoach and generate your **Organization Key**.
 ![image2.](media/microsoft-edge-connectors-knowbe4/img2.png) 
 5. Copy and save your **Organization Key**. You’ll need it in the next section.
