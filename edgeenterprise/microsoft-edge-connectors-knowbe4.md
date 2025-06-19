@@ -1,5 +1,5 @@
 ---
-title: "Splunk"
+title: "Set up a KnowBe4 Connector"
 ms.author: stmoody
 author: vmliramichael
 manager: venkatk
@@ -104,27 +104,5 @@ If you need to delete the integration, follow these steps:
 5. In the pop-up window, click **Confirm** to delete the integration.
 ![image13.](media/microsoft-edge-connectors-knowbe4/img13.png)
   
-## Configure the Connector in the Microsoft Edge Management Service
-
-1. Navigate to [Microsoft Admin Center](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors).
-   -   Admins must set up a configuration policy to assign to any Connector configuration. [Follow this guide to create a configuration policy](/deployedge/microsoft-edge-management-service).
-   - Once you have at least one configuration policy created, visit [the Connectors page in the Microsoft Edge Management Service](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors) to access the Connectors page in the Microsoft Edge Management Service.
-
-2. Under **Discover Connectors**, find the **KnowBe4 Reporting Connector** and select **Set up**.
-
-3. In the **Chosen policy** field, select a policy for your Connector configuration.
-
-4. Enter the following fields:
-   - **Host address**
-   - **Port**
-   - **Token ID**
-
-5. Select **Test Connection** to confirm the Connection is successful.
-
-6. Under **User & Browser events**, select the desired browser events to be sent to the Devicie endpoint.
-
-7. Select the desired **Optional events** and **Devices events**.
-
-8. Select **Save configuration**.
 
 
