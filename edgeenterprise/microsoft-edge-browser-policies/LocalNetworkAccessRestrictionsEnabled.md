@@ -35,9 +35,7 @@ any request that would otherwise trigger a DevTools warning
 due to Local Network Access checks.
 These requests are denied without prompting the user.
 
-If you disable or don't configure this policy, Microsoft Edge handles
-these requests using the default behavior, which may include showing warnings in DevTools
-and allowing the request to proceed depending on the context.
+If you disable or don't configure this policy, Microsoft Edge handles these requests using the default behavior, which may include showing warnings in DevTools and allowing the request to proceed depending on the context.
 
 Note: This feature improves local network security by deprecating direct access to private IP addresses from public websites
 unless explicitly granted by the user.
