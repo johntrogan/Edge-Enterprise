@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation SelectParserRelaxationEnable
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/16/2025
+ms.date: 06/19/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
