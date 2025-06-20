@@ -20,10 +20,6 @@ These release notes provide information about security fixes that are included i
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 137.0.3296.93)** which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
 
-## June 17, 2025
-
-Microsoft is aware of the recent Chromium security fixes. We are actively working on releasing a security fix. 
-
 ## June 13, 2025
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 137.0.3296.83)** which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
