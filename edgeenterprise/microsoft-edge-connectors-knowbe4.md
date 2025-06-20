@@ -88,7 +88,7 @@ To set up the Microsoft Edge for Business integration in your Microsoft 365 acco
 
 5. Select **Test Connection** to confirm the Connection is successful.
 
-6. Under **User & Browser events**, select the desired browser events to be sent to the Devicie endpoint.
+6. Under **User & Browser events**, select the desired browser events to be sent to the **KnowBe4** endpoint.
 
 7. Select the desired **Optional events** and **Devices events**.
 
