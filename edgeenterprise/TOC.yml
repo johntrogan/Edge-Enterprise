@@ -160,6 +160,8 @@
           href: microsoft-edge-connectors-crowdstrike.md
         - name: Devicie
           href: microsoft-edge-connectors-devicie.md
+        - name: KnowBe4
+          href: microsoft-edge-connectors-knowbe4.md
    - name: Microsoft Edge Workspaces
      href: microsoft-edge-workspaces.md
    - name: Microsoft Edge for Virtual desktop infrastructure 
