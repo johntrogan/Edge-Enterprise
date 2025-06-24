@@ -39,6 +39,43 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 6. **Save the Configuration**  
    Select **Save configuration** to apply your changes.
 
+In addition to using the Microsoft Edge Management Service, you can now enable the Symantec DLP Connector using either Group Policy or Microsoft Intune.
+
+### Enable the Symantec DLP Connector using Group Policy (GPO)
+
+You can enable the Symantec DLP Connector using Group Policy by setting the following policy:
+
+- **Policy name:** `EdgeSymantecDLPCloudConnectorEnabled`  
+- **Registry location:**  
+  `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge`  
+- **Value name:** `EdgeSymantecDLPCloudConnectorEnabled`  
+- **Data type:** `REG_DWORD`  
+- **Value:**  
+  `1` = Enabled  
+  `0` = Disabled (default)
+
+This policy enables the Symantec DLP cloud connector at startup, allowing Microsoft Edge to communicate with the Symantec endpoint protection cloud service if the appropriate token is present.
+
+> [!NOTE]  
+> This policy is available starting with Microsoft Edge version 123.  
+> For full policy reference, see [Microsoft Edge policies](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies).
+
+### Enable the Symantec DLP Connector using Microsoft Intune
+
+You can also configure the Symantec DLP Connector using Microsoft Intune via Administrative Templates:
+
+1. Sign in to the **Intune Admin Center**.
+2. Navigate to:  
+   `Devices > Configuration profiles > Create profile`
+3. Choose:
+   - **Platform:** Windows 10 and later  
+   - **Profile type:** Administrative Templates
+4. In the profile editor, go to:  
+   `Microsoft Edge > Symantec DLP Cloud Connector`
+5. Set **Enable Symantec DLP Cloud Connector** to **Enabled**.
+
+This policy deployment will apply the same setting as the GPO method, enabling the connector for managed devices using cloud policy.
+
 ## Symantec Configuration 
 
 ### 1. **Verify** that the Configuration Policy was Deployed Successfully
