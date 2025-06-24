@@ -62,10 +62,10 @@ This policy enables the Symantec DLP cloud connector at startup, allowing Micros
 
 ### Enable the Symantec DLP Connector using Microsoft Intune
 
-You can also configure the Symantec DLP Connector using Microsoft Intune via Administrative Templates:
+You can also enable the Symantec DLP Connector using Microsoft Intune via Administrative Templates.
 
 1. Sign in to the **Intune Admin Center**.
-2. Navigate to:  
+2. Go to:  
    `Devices > Configuration profiles > Create profile`
 3. Choose:
    - **Platform:** Windows 10 and later  
@@ -73,6 +73,10 @@ You can also configure the Symantec DLP Connector using Microsoft Intune via Adm
 4. In the profile editor, go to:  
    `Microsoft Edge > Symantec DLP Cloud Connector`
 5. Set **Enable Symantec DLP Cloud Connector** to **Enabled**.
+6. Assign the policy to the relevant device group and save.
+
+> [!TIP]  
+> For more information about Administrative Templates, see [Create an Administrative Template profile in Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/device-profile-create).
 
 This policy deployment will apply the same setting as the GPO method, enabling the connector for managed devices using cloud policy.
 
