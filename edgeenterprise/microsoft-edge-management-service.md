@@ -40,13 +40,13 @@ Use these steps to access the experience:
 
 A configuration policy file contains all the browser policy configurations, including extension settings.
 
-Each configuration policy can be assigned to multiple Microsoft Entra groups, and a group can be assigned to multiple configuration policies. When a group is assigned to multiple configuration policies, the settings merge if there are no conflicting settings. If a user is a member of multiple Microsoft Entra groups with conflicting policy settings, then the policy priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. Please note that Intune configuration policies do not have priority, and any conflicting settings will not be automatically resolved.
+Each configuration policy can be assigned to multiple Microsoft Entra groups, and a group can be assigned to multiple configuration policies. When a user is assigned to multiple configuration policies, the settings merge and the user will receive all applicable settings if there are no conflicts. If a user is assigned to multiple configuration policies with conflicting settings, then the policy priority is used to determine which configuration is applied. The highest priority is applied, with "0" being the highest priority that you can assign. Please note that Intune configuration policies do not have priority, and any conflicting settings will not be automatically resolved.
 
 #### Cloud policies 
 
 A configuration policy that has been created using the Cloud Policy service will only be available to manage in the Edge management service. The following features are currently only available using a Cloud policy: 
 
-- **Prioritization:** Configuration policies with conflicting settings will - take the value of the policy with the highest priority.  
+- **Prioritization:** Configuration policies with conflicting settings will take the value of the policy with the highest priority.  
 
 - **Extension requests:** Admins will be able to view the extensions that users have requested and take action to approve or deny these requests. 
 
