@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Beta Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 06/16/2025
+ms.date: 06/25/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -20,6 +20,10 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
+
+## Version 138.0.3351.52: June 25, 2025
+
+Fixed various bugs, and performance issues.
 
 ## Version 138.0.3351.42: June 20, 2025
 
