@@ -1058,6 +1058,8 @@
     href: MediaRouterCastAllowAllIPs.md
   - name: MetricsReportingEnabled
     href: MetricsReportingEnabled.md
+  - name: Microsoft365CopilotChatIconEnabled
+    href: Microsoft365CopilotChatIconEnabled.md
   - name: MicrosoftEdgeInsiderPromotionEnabled
     href: MicrosoftEdgeInsiderPromotionEnabled.md
   - name: MicrosoftEditorProofingEnabled
