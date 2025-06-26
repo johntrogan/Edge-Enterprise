@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/19/2025
+ms.date: 06/20/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -36,13 +36,14 @@ The following table lists the new policies for Microsoft Edge version 139.
 |Policy Name|Caption|
 |-|-|
 |<a id="edgeopenexternallinkswithappspecifiedprofile" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithAppSpecifiedProfile.md" target="_blank">EdgeOpenExternalLinksWithAppSpecifiedProfile</a>|Prioritize App specified profile to open external links|
+|<a id="microsoft365copilotchaticonenabled" href="microsoft-edge-browser-policies/Microsoft365CopilotChatIconEnabled.md" target="_blank">Microsoft365CopilotChatIconEnabled</a>|Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar|
 
 The following table lists the new policies for Microsoft Edge version 138.
 
 |Policy Name|Caption|
 |-|-|
 |<a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
-|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
+|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network.|
 |<a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
 |<a id="edgehistoryaisearchenabled" href="microsoft-edge-browser-policies/EdgeHistoryAISearchEnabled.md" target="_blank">EdgeHistoryAISearchEnabled</a>|Control access to AI-enhanced search in History|
 |<a id="prefetchwithserviceworkerenabled" href="microsoft-edge-browser-policies/PrefetchWithServiceWorkerEnabled.md" target="_blank">PrefetchWithServiceWorkerEnabled</a>|Allow SpeculationRules prefetch for ServiceWorker-controlled URLs|
@@ -54,7 +55,6 @@ The following table lists all deprecated policies.
 
 |Policy Name|Caption|
 |-|-|
-|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
 |<a id="proxybypasslist" href="microsoft-edge-browser-policies/ProxyBypassList.md" target="_blank">ProxyBypassList</a>|Configure proxy bypass rules (deprecated)|
 |<a id="proxymode" href="microsoft-edge-browser-policies/ProxyMode.md" target="_blank">ProxyMode</a>|Configure proxy server settings (deprecated)|
 |<a id="proxypacurl" href="microsoft-edge-browser-policies/ProxyPacUrl.md" target="_blank">ProxyPacUrl</a>|Set the proxy .pac file URL (deprecated)|
@@ -408,7 +408,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
 |<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
-|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network-deprecated"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
+|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network.|
 |<a id="enable-zstd-content-encoding-support-obsolete"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 
 <a id="pdf-reader-policies"></a>
@@ -833,6 +833,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="maximum-number-of-concurrent-connections-to-the-proxy-server"></a><a id="maxconnectionsperproxy" href="microsoft-edge-browser-policies/MaxConnectionsPerProxy.md" target="_blank">MaxConnectionsPerProxy</a>|Maximum number of concurrent connections to the proxy server|
 |<a id="allow-google-cast-to-connect-to-cast-devices-on-all-ip-addresses"></a><a id="mediaroutercastallowallips" href="microsoft-edge-browser-policies/MediaRouterCastAllowAllIPs.md" target="_blank">MediaRouterCastAllowAllIPs</a>|Allow Google Cast to connect to Cast devices on all IP addresses|
 |<a id="enable-usage-and-crash-related-data-reporting-obsolete"></a><a id="metricsreportingenabled" href="microsoft-edge-browser-policies/MetricsReportingEnabled.md" target="_blank">MetricsReportingEnabled</a>|Enable usage and crash-related data reporting (obsolete)|
+|<a id="control-whether-microsoft-365-copilot-chat-shows-in-the-microsoft-edge-for-business-toolbar"></a><a id="microsoft365copilotchaticonenabled" href="microsoft-edge-browser-policies/Microsoft365CopilotChatIconEnabled.md" target="_blank">Microsoft365CopilotChatIconEnabled</a>|Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar|
 |<a id="microsoft-edge-insider-promotion-enabled"></a><a id="microsoftedgeinsiderpromotionenabled" href="microsoft-edge-browser-policies/MicrosoftEdgeInsiderPromotionEnabled.md" target="_blank">MicrosoftEdgeInsiderPromotionEnabled</a>|Microsoft Edge Insider Promotion Enabled|
 |<a id="spell-checking-provided-by-microsoft-editor"></a><a id="microsofteditorproofingenabled" href="microsoft-edge-browser-policies/MicrosoftEditorProofingEnabled.md" target="_blank">MicrosoftEditorProofingEnabled</a>|Spell checking provided by Microsoft Editor|
 |<a id="synonyms-are-provided-when-using-microsoft-editor-spell-checker"></a><a id="microsofteditorsynonymsenabled" href="microsoft-edge-browser-policies/MicrosoftEditorSynonymsEnabled.md" target="_blank">MicrosoftEditorSynonymsEnabled</a>|Synonyms are provided when using Microsoft Editor spell checker|

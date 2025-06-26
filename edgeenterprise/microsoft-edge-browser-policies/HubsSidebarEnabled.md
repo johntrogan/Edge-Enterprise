@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HubsSidebarEnabled"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/01/2025
+ms.date: 06/20/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,9 +33,11 @@ If you enable this policy, the Sidebar is always visible.
 
 If you disable this policy, the Sidebar is never shown.
 
-If you don’t configure this policy, the Sidebar’s visibility follows the user’s Microsoft Edge settings.
+If you don't configure this policy, the Sidebar's visibility follows the user's Microsoft Edge settings.
 
-Note: The recommended version of this policy—also known as the “Default Settings (users can override)” policy—is obsolete. This policy has never supported the recommended capability.
+When this policy and [Microsoft365CopilotChatIconEnabled](Microsoft365CopilotChatIconEnabled.md) are both set, [Microsoft365CopilotChatIconEnabled](Microsoft365CopilotChatIconEnabled.md) will override the value for this policy to control the display of Copilot in the toolbar. The [Microsoft365CopilotChatIconEnabled](Microsoft365CopilotChatIconEnabled.md) policy will soon be the only means of controlling the display of Copilot in the toolbar.
+
+Note: The recommended version of this policy-also known as the "Default Settings (users can override)" policy-is obsolete. This policy has never supported the recommended capability.
 
 ## Supported features
 
