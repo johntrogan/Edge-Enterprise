@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 05/29/2025
+ms.date: 06/26/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -26,10 +26,9 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-
 ## Version 138.0.3351.55: June 26, 2025
 
-Fixed various bugs and performance issues, Dev channel updates, feature updates, policy updates, and web platform release notes.
+Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#June-26-2025).
 
@@ -45,7 +44,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 - **New Autofill Personal Information Settings Configuration**.  A web form field collection consent toggle will be available in Autofill settings (edge://settings/autofill/personalInfo). This will allow users to consent to Microsoft Edge collecting web form field labels (e.g., "First Name," "Email") to improve Autofill suggestion accuracy.  Only field labels are collected and not user-entered data.  The web field labels are stored securely per Microsoft's [privacy standards](https://www.microsoft.com/en-us/privacy/privacystatement).
  
-- **This new setting is manageable via existing policies in Autofill** (e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled)) is the parent setting for (EdgeAutofillMlEnabled)[/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled]. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the EdgeAutofillMlEnabled policy will turn off this setting.  **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
+  This new setting is manageable via existing policies in Autofill (e.g., [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled), [EdgeAutofillMlEnabled](/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled). [AutofillAddressEnabled](/deployedge/microsoft-edge-browser-policies/autofilladdressenabled)) is the parent setting for (EdgeAutofillMlEnabled)[/deployedge/microsoft-edge-browser-policies/edgeautofillmlenabled]. The EdgeAutofillMlEnabled policy is the parent of this new setting, thus turning off the EdgeAutofillMlEnabled policy will turn off this setting.  **Note:** These features are a controlled feature rollout. If you don't see these features, check back as we continue our rollout.
 
 - **AI-powered History search**. Enhanced search finds sites in your History even when you use a synonym, phrase, or typo. After this feature is turned on, sites you visit will be shown in enhanced history search results. An on-device model is trained using your data, which never leaves your device and is never sent to Microsoft. Admins can control availability to this feature using the [EdgeHistoryAISearchEnabled](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
@@ -62,7 +61,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 #### New policies
 
 - [BuiltInAIAPIsEnabled](/deployedge/microsoft-edge-browser-policies/builtinaiapisenabled) - Allow pages to use the built-in AI APIs
-- [EdgeHistorhttps://file+.vscode-resource.vscode-cdn.net/deployedge/microsoft-edge-browser-policies/insecureprivatenetworkrequestsallowedyAISearchEnabled](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled) - Control access to AI-enhanced search in History
+- [EdgeHistoryAISearchEnabled](/deployedge/microsoft-edge-browser-policies/edgehistoryaisearchenabled) - Control access to AI-enhanced search in History
 - [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) - Use Primary Work Profile as default to open external link
 - [LocalNetworkAccessRestrictionsEnabled](/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled) - Specifies whether to block requests from public websites
 - [PrefetchWithServiceWorkerEnabled](/deployedge/microsoft-edge-browser-policies/prefetchwithserviceworkerenabled) - Allow SpeculationRules prefetch for ServiceWorker-controlled URLs
@@ -76,7 +75,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 - [ZstdContentEncodingEnabled](/deployedge/microsoft-edge-browser-policies/zstdcontentencodingenabled) - Enable zstd content encoding support (obsolete)
 
 >[!NOTE]
->For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138
+>For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
 
 ## Version 137.0.3296.93: June 20, 2025
 
