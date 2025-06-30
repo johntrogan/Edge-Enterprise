@@ -23,6 +23,29 @@ All the Stable channel security updates are listed in [Release notes for Microso
 > [!NOTE]
 > For the Stable Channel, updates roll out progressively over one or more days. To learn more, see [Progressive rollouts for Microsoft Edge updates](./microsoft-edge-update-progressive-rollout.md). There might be a delay before the new release is populated to the App Store (iOS) and Google Play (Android). 
 
+## Version 138.0.3351.55 (Android and iOS): June 30, 2025
+
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### General Updates
+
+- [iOS & Android] Upgrade OneAuth SDK to version 6.3.0
+- [Android] Support MAM Tunnel in Android Custom Tabs
+
+### New Policy
+
+- [iOS] Support certificate-based authentication in iOS (To enable this feature, need to configure com.microsoft.intune.mam.managedbrowser.`SystemKeychainCertificateAuthEnabled=true`)
+ 
+### Bug Fixes
+
+- [Android] Fix the issue about the bottom bar couldn't be hidden completely
+- [Android] Fix video playback issues when using ExoPlayer
+ 
+### New Enhancements
+
+- [iOS] Improve the user experience of web single sign-on
+- [iOS] Improve the user experience of shared device mode
+
 ## Version 137.0.3296.92 (Android and iOS): June 23, 2025
 
 Fixed various bugs and performance issues.
