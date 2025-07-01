@@ -60,7 +60,7 @@ unless explicitly granted by the user.
 
 - GP unique name: LocalNetworkAccessRestrictionsEnabled
 - GP name: Specifies whether to block requests from public websites to devices on a user's local network.
-- GP path (Mandatory): Administrative Templates/Microsoft Edge/Local Network Access settings
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Network settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
