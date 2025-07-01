@@ -3,7 +3,7 @@ title: "Microsoft Edge release notes for Stable Channel"
 ms.author: archandr
 author: vmliramichael
 manager: likuba
-ms.date: 06/26/2025
+ms.date: 07/1/2025
 audience: ITPro
 ms.topic: release-notes
 ms.service: microsoft-edge
@@ -76,6 +76,12 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 >[!NOTE]
 >For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
+
+## Version 138.0.3351.6: July 1, 2025
+
+Fixed various bugs and performance issues for Stable Channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-1-2025).
 
 ## Version 137.0.3296.93: June 20, 2025
 
