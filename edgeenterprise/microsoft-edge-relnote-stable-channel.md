@@ -26,6 +26,12 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 138.0.3351.6: July 1, 2025
+
+Fixed various bugs and performance issues for Stable Channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-1-2025).
+
 ## Version 138.0.3351.55: June 26, 2025
 
 Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
@@ -76,12 +82,6 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 >[!NOTE]
 >For the latest web platform features and updates, see [Microsoft Edge 138 web platform release notes (June 2025)](/microsoft-edge/web-platform/release-notes/138)
-
-## Version 138.0.3351.6: July 1, 2025
-
-Fixed various bugs and performance issues for Stable Channel.
-
-Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-1-2025).
 
 ## Version 137.0.3296.93: June 20, 2025
 
