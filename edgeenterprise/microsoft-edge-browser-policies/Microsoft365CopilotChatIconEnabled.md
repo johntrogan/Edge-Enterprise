@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation Microsoft365CopilotChatIconE
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/26/2025
+ms.date: 07/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -33,11 +33,11 @@ This policy only applies when users are accessing Copilot in the sidepane.
 
 If the policy is enabled: Copilot will appear in the toolbar.
 
-If the policy is disabled: Copilot won't appear in the toolbar.
+If the policy is disabled: Copilot will not appear in the toolbar.
 
-If the policy isn't configured: Otherwise, Copilot shows in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.
+If the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.
 
-When both this policy and [HubsSidebarEnabled](HubsSidebarEnabled.md) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy isn't configured and [HubsSidebarEnabled](HubsSidebarEnabled.md) is disabled, Copilot will remain hidden. In a future release, this policy is the sole control for managing Copilot's visibility in the toolbar.
+When both this policy and [HubsSidebarEnabled](HubsSidebarEnabled.md) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and [HubsSidebarEnabled](HubsSidebarEnabled.md) is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.
 
 ## Supported features
 
