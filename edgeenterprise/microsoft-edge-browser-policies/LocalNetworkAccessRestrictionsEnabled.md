@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation LocalNetworkAccessRestrictio
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/01/2025
+ms.date: 06/26/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
