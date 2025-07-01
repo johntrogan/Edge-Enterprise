@@ -22,10 +22,6 @@ Microsoft has released the latest **Microsoft Edge Stable Channel (Version 138.0
 
 - [CVE-2025-49713](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-49713)
 
-## June 30, 2025
-
-Microsoft is aware of the recent exploits existing in the wild. We are actively working on releasing a security fix. 
-
 ## June 26, 2025
 
 Microsoft has released the latest **Microsoft Edge Stable Channel (Version 138.0.3351.55)** which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide).
