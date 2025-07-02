@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/26/2025
+ms.date: 07/01/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,6 +35,7 @@ The following table lists the new policies for Microsoft Edge version 139.
 
 |Policy Name|Caption|
 |-|-|
+|<a id="mandatoryextensionsforinprivatenavigation" href="microsoft-edge-browser-policies/MandatoryExtensionsForInPrivateNavigation.md" target="_blank">MandatoryExtensionsForInPrivateNavigation</a>|Specify extensions users must allow in order to navigate using InPrivate mode|
 |<a id="edgeopenexternallinkswithappspecifiedprofile" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithAppSpecifiedProfile.md" target="_blank">EdgeOpenExternalLinksWithAppSpecifiedProfile</a>|Prioritize App specified profile to open external links|
 |<a id="microsoft365copilotchaticonenabled" href="microsoft-edge-browser-policies/Microsoft365CopilotChatIconEnabled.md" target="_blank">Microsoft365CopilotChatIconEnabled</a>|Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar|
 
@@ -298,6 +299,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="blocklist-for-extension-install-types"></a><a id="extensioninstalltypeblocklist" href="microsoft-edge-browser-policies/ExtensionInstallTypeBlocklist.md" target="_blank">ExtensionInstallTypeBlocklist</a>|Blocklist for extension install types|
 |<a id="control-manifest-v2-extension-availability"></a><a id="extensionmanifestv2availability" href="microsoft-edge-browser-policies/ExtensionManifestV2Availability.md" target="_blank">ExtensionManifestV2Availability</a>|Control Manifest v2 extension availability|
 |<a id="configure-extension-management-settings"></a><a id="extensionsettings" href="microsoft-edge-browser-policies/ExtensionSettings.md" target="_blank">ExtensionSettings</a>|Configure extension management settings|
+|<a id="specify-extensions-users-must-allow-in-order-to-navigate-using-inprivate-mode"></a><a id="mandatoryextensionsforinprivatenavigation" href="microsoft-edge-browser-policies/MandatoryExtensionsForInPrivateNavigation.md" target="_blank">MandatoryExtensionsForInPrivateNavigation</a>|Specify extensions users must allow in order to navigate using InPrivate mode|
 
 <a id="games-settings-policies"></a>
 ### Games settings
