@@ -238,6 +238,8 @@
     href: ExtensionManifestV2Availability.md
   - name: ExtensionSettings
     href: ExtensionSettings.md
+  - name: MandatoryExtensionsForInPrivateNavigation
+    href: MandatoryExtensionsForInPrivateNavigation.md
 - name: Games settings
   items:
   - name: GamerModeEnabled
