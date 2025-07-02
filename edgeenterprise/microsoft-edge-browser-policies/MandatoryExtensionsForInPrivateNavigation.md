@@ -29,9 +29,9 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.
 
-If users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.
+If users don't allow all listed extensions to run in InPrivate mode, they'll be unable to navigate using InPrivate.
 
-If any extension in the list is not installed, InPrivate navigation is blocked.
+If any extension in the list isn't installed, InPrivate navigation is blocked.
 
 This policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.
 
