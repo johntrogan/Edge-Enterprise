@@ -21,6 +21,42 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 139.0.3405.13: July 3, 2025
+
+Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
+
+### Feature Updates
+
+- **Open external links in another profile when recommended by external applications**.  When Microsoft Edge is set as the default browser to open external links from applications, Microsoft Edge must determine which profile to open the links. Users can control which profile to use through the “Default profile for external links” setting. Applications such as Microsoft Teams or Outlook can also recommend a profile for the links. Currently, the user setting is prioritized over application recommendations. With this feature, the application recommended profile is given priority, instead of the profile selected in the setting. Admins can control the availability of the feature using the [EdgeOpenExternalLinksWithAppSpecifiedProfile](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithappspecifiedprofile) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+
+- **Changes to Wallet in Microsoft Edge**. Wallet is being phased out to support a streamlined experience within Microsoft Edge. This affects the Wallet feature in Settings and the Mini Wallet found by clicking the profile icon in the top banner.  Users are directed to the new Passwords, Payment, and Personal Information management experience in Settings. Also, a new Password management experience is available in Settings. For more information, see [Changes to Wallet in Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/changes-to-wallet-in-microsoft-edge-bc52418a-4d35-444e-845c-e09df6033b81).  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Introducing a new policy that can enable/disable Microsoft 365 Copilot Chat in Edge for Business from showing in the toolbar**. Edge for Business will now have a dedicated policy, [Microsoft365CopilotChatIconEnabled](/deployedge/microsoft-edge-browser-policies/microsoft365copilotchaticonenabled), to enable and disable Copilot in Edge from showing in the Edge toolbar. When both this policy and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy isn't configured and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) is disabled, Copilot will remain hidden. In a future release, this policy is the sole control for managing Copilot's visibility in the toolbar.
+ 
+- **Real-time notifications for compromised passwords**. Microsoft Edge is integrating an in-context password breach notification system. This feature proactively informs users if their saved sign-in credentials have been compromised in known data breaches, enabling them to take immediate action to secure their accounts.  Admins can control availability to this feature using the [PasswordMonitorAllowed](/deployedge/microsoft-edge-browser-policies/passwordmonitorallowed) policy.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
+ 
+- **Edge Settings Improvements**.  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface.
+ 
+- **Web AI APIs for prompt engineering and writing assistance**. Microsoft Edge now implements the [Writing Assistance APIs](https://learn.microsoft.com/microsoft-edge/web-platform/writing-assistance-apis) and the [Prompt API](https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api) (for Edge extensions) with a local language model, [Phi-4-mini](https://huggingface.co/microsoft/Phi-4-mini-instruct), that is built into the browser. These easy-to-use JavaScript APIs are made available via Edge flags (set to Enabled, by default) so that sites and extensions can apply AI capabilities on the web. The small language model is downloaded as the first time any of these APIs is used and later shared across all domains, serving local AI use-cases with reduced cost, network independence, and increased privacy (since data input to the model doesn't leave the user’s device). Admins can control the availability of these APIs via the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-browser-policies/genailocalfoundationalmodelsettings) policy. These APIs are currently not implemented in China. Read the announcement [here](https://blogs.windows.com/msedgedev/2025/05/19/introducing-the-prompt-and-writing-assistance-apis/), and feel free to provide [feedback](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
+ 
+- **Enhancements to Performance and Secure network**.  Microsoft is introducing an improvement to the **Settings and more** menu (“…” on the menu bar).  **Browser essentials** is being separated into two distinct experiences (**Performance, Secure Network**) - both available from the **Settings and more** menu.  
+ 
+### Policy updates
+
+#### New policies
+
+- [EdgeOpenExternalLinksWithAppSpecifiedProfile](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithappspecifiedprofile) - Prioritize App specified profile to open external links
+- [MandatoryExtensionsForInPrivateNavigation](/deployedge/microsoft-edge-browser-policies/mandatoryextensionsforinprivatenavigation) - Specify extensions users must allow in order to navigate using InPrivate mode
+- [Microsoft365CopilotChatIconEnabled](/deployedge/microsoft-edge-browser-policies/microsoft365copilotchaticonenabled) - Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar
+
+### Obsoleted policies
+
+- [KeyboardFocusableScrollersEnabled](/deployedge/microsoft-edge-browser-policies/keyboardfocusablescrollersenabled) - Enable keyboard focusable scrollers (obsolete)
+- [SelectParserRelaxationEnabled](/deployedge/microsoft-edge-browser-policies/selectparserrelaxationenabled) - Controls whether the new HTML parser behavior for the `SELECT`element is enabled (obsolete)
+
+>[!NOTE]
+>For the latest web platform features and updates, see [Microsoft Edge 139 web platform release notes (August 2025)](/microsoft-edge/web-platform/release-notes/139)
+
 ## Version 138.0.3351.65: July 1, 2025
 
 Fixed various bugs, and performance issues.
