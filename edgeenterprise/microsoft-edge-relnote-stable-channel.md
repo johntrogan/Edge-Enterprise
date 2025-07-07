@@ -26,6 +26,19 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 138.0.3351.77: July 7, 2025
+
+Fixed various bugs and performance issues and feature updates.
+
+### Fixes
+
+- Reverted a change that caused audio issues when playing videos with AAC audio on certain websites.  This is planned to be a temporary mitigation, as the root cause is a bug in outdated versions of the HLS.js library used by websites.  Affected site owners are encouraged to update to a newer version of HLS.js to ensure compatibility.
+
+### Feature Updates
+
+- **Find on Page in Microsoft Edge for Business will soon be integrated with Microsoft 365 Copilot Chat**.  Microsoft Edge for Business is introducing Microsoft 365 Copilot Chat to Find on Page (CTRL+F). This feature seeks to help users more easily find relevant content and save time.
+
+
 ## Version 138.0.3351.65: July 1, 2025
 
 Fixed various bugs and performance issues for Stable Channel.
