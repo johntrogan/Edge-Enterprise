@@ -72,7 +72,14 @@ Not directly, but you can determine which profiles can sign on to Microsoft Edge
 
 ### Is it possible to prevent sign-in and sync with an enterprise account on an unmanaged/non-compliant device?
 
-Currently it's not possible to prevent Microsoft Entra sign-in to Microsoft Edge on unmanaged devices without disrupting your other Conditional Access (CA) protected applications. However, enterprise sync can be blocked on such devices by adding the "Microsoft Azure Information Protection" app to the CA policy.
+You can prevent users from signing in and syncing with an enterprise account in Microsoft Edge on unmanaged or non-compliant Windows, iOS, and Android devices by using Mobile Application Management (MAM) without requiring device enrollment.
+
+To enforce this, configure a Conditional Access policy targeting the Microsoft Edge app and apply MAM settings. This blocks both sign-in and sync on devices that do not meet compliance or management requirements, while preserving access on managed devices.
+
+**Note:** Blocking Edge sign-in and sync using MAM is not currently supported on iOS.
+
+For more details, see:
+Data protection for [Windows MAM | Microsoft Learn](/intune/intune-service/apps/protect-mam-windows#conditional-access-compliance-1)
 
 ## See also
 
