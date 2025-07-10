@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HttpAllowlist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/08/2025
+ms.date: 07/06/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -27,7 +27,7 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable [AutomaticHttpsDefault](AutomaticHttpsDefault.md) or [HttpsUpgradesEnabled](HttpsUpgradesEnabled.md).
+Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable [HttpsUpgradesEnabled](HttpsUpgradesEnabled.md).
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 

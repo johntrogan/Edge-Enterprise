@@ -324,6 +324,10 @@
     href: KioskDeleteDownloadsOnExit.md
   - name: KioskSwipeGesturesEnabled
     href: KioskSwipeGesturesEnabled.md
+- name: Local Network Access settings
+  items:
+  - name: LocalNetworkAccessRestrictionsEnabled
+    href: LocalNetworkAccessRestrictionsEnabled.md
 - name: Manageability
   items:
   - name: EdgeManagementEnabled
@@ -360,8 +364,6 @@
     href: HappyEyeballsV3Enabled.md
   - name: IPv6ReachabilityOverrideEnabled
     href: IPv6ReachabilityOverrideEnabled.md
-  - name: LocalNetworkAccessRestrictionsEnabled
-    href: LocalNetworkAccessRestrictionsEnabled.md
   - name: ZstdContentEncodingEnabled
     href: ZstdContentEncodingEnabled.md
 - name: PDF Reader
@@ -526,7 +528,7 @@
     href: SmartScreenForTrustedDownloadsEnabled.md
   - name: SmartScreenPuaEnabled
     href: SmartScreenPuaEnabled.md
-- name: Startup, home page and new tab page
+- name: Startup&comma; home page and new tab page
   items:
   - name: HomepageIsNewTabPage
     href: HomepageIsNewTabPage.md
@@ -582,6 +584,8 @@
     href: AccessibilityImageLabelsEnabled.md
   - name: AdHocCodeSigningForPWAsEnabled
     href: AdHocCodeSigningForPWAsEnabled.md
+  - name: AdditionalDnsQueryTypesEnabled
+    href: AdditionalDnsQueryTypesEnabled.md
   - name: AdditionalSearchBoxEnabled
     href: AdditionalSearchBoxEnabled.md
   - name: AddressBarEditingEnabled
@@ -850,6 +854,8 @@
     href: EnableOnlineRevocationChecks.md
   - name: EnableSha1ForLocalAnchors
     href: EnableSha1ForLocalAnchors.md
+  - name: EnableUnsafeSwiftShader
+    href: EnableUnsafeSwiftShader.md
   - name: EncryptedClientHelloEnabled
     href: EncryptedClientHelloEnabled.md
   - name: EnforceLocalAnchorConstraintsEnabled
@@ -1098,6 +1104,8 @@
     href: OnFileAttachedEnterpriseConnector.md
   - name: OnPrintEnterpriseConnector
     href: OnPrintEnterpriseConnector.md
+  - name: OnSecurityEventEnterpriseConnector
+    href: OnSecurityEventEnterpriseConnector.md
   - name: OrganizationLogoOverlayOnAppIconEnabled
     href: OrganizationLogoOverlayOnAppIconEnabled.md
   - name: OrganizationalBrandingOnWorkProfileUIEnabled
