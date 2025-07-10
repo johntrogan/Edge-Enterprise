@@ -130,6 +130,7 @@ Follow these steps to reorder the priority of a configuration policy:
 > [!NOTE]
 > Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device.
 
+
 ### Imported/Exported Behaviors
 
 #### 1. Cloud Policies in EMX Portal
@@ -153,6 +154,7 @@ Follow these steps to reorder the priority of a configuration policy:
 *When importing back into EMX, **EMX-specific settings like Org Branding will be removed.**
 
  ![screenshot of duo connector1.](media/microsoft-edge-management-service/1.png)
+ 
 
 ### Enable the Microsoft Edge management service
 
