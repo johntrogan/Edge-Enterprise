@@ -27,13 +27,13 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.
+Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration isn't available.
 
-When enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.
+When enabled, Microsoft Edge uses SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.
 
-Starting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.
+Starting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation fails in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.
 
-If you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.
+If you disable or don't configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it doesn't handle context creation failures.
 
 Note: This is a temporary policy and will be removed in a future release.
 
@@ -55,7 +55,7 @@ Note: This is a temporary policy and will be removed in a future release.
 
 - GP unique name: EnableUnsafeSwiftShader
 - GP name: Allow software WebGL fallback using SwiftShader
-- GP path (Mandatory): Administrative Templates/Microsoft Edge
+- GP path (Mandatory): Administrative Templates/Microsoft Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
