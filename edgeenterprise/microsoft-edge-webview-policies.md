@@ -624,7 +624,7 @@ If you enable this policy, then unload event handlers continue to work by defaul
 
   #### Description
 
-  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that won't be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that don't support HTTPS, without needing to disable "AutomaticHttpsDefault" or "HttpsUpgradesEnabled".
+  Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that won't be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that don't support HTTPS, without needing to disable "HttpsUpgradesEnabled".
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 
