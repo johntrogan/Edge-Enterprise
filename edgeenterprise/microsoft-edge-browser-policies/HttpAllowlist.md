@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HttpAllowlist"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/06/2025
+ms.date: 07/10/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge

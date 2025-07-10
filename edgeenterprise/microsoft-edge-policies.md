@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/06/2025
+ms.date: 07/10/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -107,7 +107,6 @@ These tables list all of the browser-related group policies available in this re
 - [Idle Browser Actions](#idle-browser-actions)
 - [Immersive Reader settings](#immersive-reader-settings)
 - [Kiosk Mode settings](#kiosk-mode-settings)
-- [Local Network Access settings](#local-network-access-settings)
 - [Manageability](#manageability)
 - [Native Messaging](#native-messaging)
 - [Network settings](#network-settings)
@@ -374,13 +373,6 @@ These tables list all of the browser-related group policies available in this re
 |<a id="delete-files-downloaded-as-part-of-kiosk-session-when-microsoft-edge-closes"></a><a id="kioskdeletedownloadsonexit" href="microsoft-edge-browser-policies/KioskDeleteDownloadsOnExit.md" target="_blank">KioskDeleteDownloadsOnExit</a>|Delete files downloaded as part of kiosk session when Microsoft Edge closes|
 |<a id="swipe-gestures-in-microsoft-edge-kiosk-mode-enabled"></a><a id="kioskswipegesturesenabled" href="microsoft-edge-browser-policies/KioskSwipeGesturesEnabled.md" target="_blank">KioskSwipeGesturesEnabled</a>|Swipe gestures in Microsoft Edge kiosk mode enabled|
 
-<a id="local-network-access-settings-policies"></a>
-### Local Network Access settings
-
-|Policy Name|Caption|
-|-|-|
-|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network.|
-
 <a id="manageability-policies"></a>
 ### Manageability
 
@@ -413,6 +405,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
 |<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
+|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network.|
 |<a id="enable-zstd-content-encoding-support-obsolete"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 
 <a id="pdf-reader-policies"></a>
