@@ -32,7 +32,7 @@ Fixed various bugs and performance issues for Stable Channel.
 
 ### Improved reliability
 
-Fixed a browser crash that occurred when the [BrowsingDataLifetime](/deployedge/microsoft-edge-browser-policies/browsingdatalifetime) policy was enabled.
+- Fixed a browser crash that occurred when the [BrowsingDataLifetime](/deployedge/microsoft-edge-browser-policies/browsingdatalifetime) policy was enabled.
 
 ## Version 138.0.3351.77: July 7, 2025
 
