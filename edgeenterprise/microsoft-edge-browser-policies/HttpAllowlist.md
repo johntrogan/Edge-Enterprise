@@ -27,13 +27,13 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that will not be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that do not support HTTPS, without needing to disable [HttpsUpgradesEnabled](HttpsUpgradesEnabled.md).
+Setting the policy specifies a list of hostnames or hostname patterns (such as '[\*.]example.com') that won't be upgraded to HTTPS. Organizations can use this policy to maintain access to servers that don't support HTTPS, without needing to disable [HttpsUpgradesEnabled](HttpsUpgradesEnabled.md).
 
 Supplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase.
 
-Blanket host wildcards (i.e., "*" or "[*]") are not allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
+Blanket host wildcards (that is, "*" or "[*]") aren't allowed. Instead, HTTPS-First Mode and HTTPS Upgrades should be explicitly disabled via their specific policies.
 
-Note: This policy does not apply to HSTS upgrades.
+Note: This policy doesn't apply to HSTS upgrades.
 
 ## Supported features
 

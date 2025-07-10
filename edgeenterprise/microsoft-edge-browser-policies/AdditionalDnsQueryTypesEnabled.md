@@ -33,9 +33,9 @@ If this policy is unset or set to Enabled, additional record types such as HTTPS
 
 If this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.
 
-This setting does not affect DNS queries made via Secure DNS, which may always use additional record types.
+This setting doesn't affect DNS queries made via Secure DNS, which may always use another record types.
 
-Note: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query additional DNS types during insecure requests.
+Note: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query another DNS types during insecure requests.
 
 ## Supported features
 
@@ -54,7 +54,7 @@ Note: This is a temporary policy and is planned for removal in a future version 
 ### Group Policy (ADMX) info
 
 - GP unique name: AdditionalDnsQueryTypesEnabled
-- GP name: Allow DNS queries for additional DNS record types
+- GP name: Allow DNS queries for another DNS record types
 - GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
