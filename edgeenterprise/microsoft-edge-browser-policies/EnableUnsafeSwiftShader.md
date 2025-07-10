@@ -55,7 +55,7 @@ Note: This is a temporary policy and will be removed in a future release.
 
 - GP unique name: EnableUnsafeSwiftShader
 - GP name: Allow software WebGL fallback using SwiftShader
-- GP path (Mandatory): Administrative Templates/Microsoft Microsoft Edge
+- GP path (Mandatory): Administrative Templates/Microsoft Edge
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 
