@@ -17,7 +17,9 @@ description: "Symantec"
 
 Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Prevention Endpoint. This integration delivers a more secure browsing experience as it allows customers to identify, monitor and protect sensitive, confidential or regulated data.  This includes controlling data that is uploaded, pasted, or printed from the web.  
 
-## Configure the Connector in the Microsoft Edge Management Service
+## Edge Connector Configuration
+
+### Using the Microsoft Edge Management Service
 
 1. **Navigate to the Microsoft Admin Center**  
    Go to [https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors](https://admin.microsoft.com/Adminportal/Home#/Edge/Connectors)
@@ -41,44 +43,34 @@ Prevent data loss with Microsoft Edge for Business and Symantec Data Loss Preven
 
 In addition to using the Microsoft Edge Management Service, you can now enable the Symantec DLP Connector using either Group Policy or Microsoft Intune.
 
-### Enable the Symantec DLP Connector using Group Policy (GPO)
+### Using Group Policy (GPO)
 
-You can enable the Symantec DLP Connector using Group Policy by setting the following policy:
+You can enable the Symantec DLP Connector using Group Policy:
 
-- **Policy name:** `EdgeSymantecDLPCloudConnectorEnabled`  
-- **Registry location:**  
-  `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge`  
-- **Value name:** `EdgeSymantecDLPCloudConnectorEnabled`  
-- **Data type:** `REG_DWORD`  
-- **Value:**  
-  `1` = Enabled  
-  `0` = Disabled (default)
+1. Install the Microsoft Edge administrative template, see https://learn.microsoft.com/en-us/DeployEdge/configure-microsoft-edge
+2. Configure any combination of the following 3 settings depending on which user actions you want to be scanned by Symantec's DLP agent
+   - **Paste**: `Administrative Templates > Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
+   - **Upload**: `Administrative Templates > Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
+   - **Print**: `Administrative Templates > Microsoft Edge > Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors`
+3. Configure the following fields in the policy:
+   - Set the `service_provider` to `brcm_edge_cas`.
+   - Set `enable` to `[{"tags":["dlp"],"url_list":["*"]}]` to allow all URLs to be scanned.
+   - Set the remaining fields as desired.
 
-This policy enables the Symantec DLP cloud connector at startup, allowing Microsoft Edge to communicate with the Symantec endpoint protection cloud service if the appropriate token is present.
-
-> [!NOTE]  
-> This policy is available starting with Microsoft Edge version 123.  
-> For full policy reference, see [Microsoft Edge policies](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies).
-
-### Enable the Symantec DLP Connector using Microsoft Intune
-
+### Using Microsoft Intune
 You can also enable the Symantec DLP Connector using Microsoft Intune via Administrative Templates.
 
-1. Sign in to the **Intune Admin Center**.
-2. Go to:  
-   `Devices > Configuration profiles > Create profile`
-3. Choose:
-   - **Platform:** Windows 10 and later  
-   - **Profile type:** Administrative Templates
-4. In the profile editor, go to:  
-   `Microsoft Edge > Symantec DLP Cloud Connector`
-5. Set **Enable Symantec DLP Cloud Connector** to **Enabled**.
-6. Assign the policy to the relevant device group and save.
-
-> [!TIP]  
-> For more information about Administrative Templates, see [Create an Administrative Template profile in Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/device-profile-create).
-
-This policy deployment will apply the same setting as the GPO method, enabling the connector for managed devices using cloud policy.
+1. Sign in to the [Intune Admin Center](https://intune.microsoft.com).
+2. Create or modify an existing policy, see https://learn.microsoft.com/en-us/DeployEdge/configure-edge-with-intune
+3. Under the `Configuration settings`, set any combination of the following 3 settings depending on which user actions you want to be scanned by Symantec's DLP agent
+   - **Paste**: `Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
+   - **Upload**: `Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
+   - **Print**: `Microsoft Edge > Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors`
+4. Configure the following fields in the policy:
+   - Set the `service_provider` to `brcm_edge_cas`.
+   - Set `enable` to `[{"tags":["dlp"],"url_list":["*"]}]` to allow all URLs to be scanned.
+   - Set the remaining fields as desired.
+5. Assign the policy to the relevant device group and save.
 
 ## Symantec Configuration 
 
