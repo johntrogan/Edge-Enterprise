@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/19/2025
+ms.date: 07/10/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -31,22 +31,21 @@ Starting in Microsoft Edge version 116, certain policies will not be applied to 
 
 ## New policies
 
+The following table lists the new policies for Microsoft Edge version 140.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for additional DNS record types|
+
 The following table lists the new policies for Microsoft Edge version 139.
 
 |Policy Name|Caption|
 |-|-|
+|<a id="mandatoryextensionsforinprivatenavigation" href="microsoft-edge-browser-policies/MandatoryExtensionsForInPrivateNavigation.md" target="_blank">MandatoryExtensionsForInPrivateNavigation</a>|Specify extensions users must allow in order to navigate using InPrivate mode|
 |<a id="edgeopenexternallinkswithappspecifiedprofile" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithAppSpecifiedProfile.md" target="_blank">EdgeOpenExternalLinksWithAppSpecifiedProfile</a>|Prioritize App specified profile to open external links|
-
-The following table lists the new policies for Microsoft Edge version 138.
-
-|Policy Name|Caption|
-|-|-|
-|<a id="edgeopenexternallinkswithprimaryworkprofileenabled" href="microsoft-edge-browser-policies/EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled.md" target="_blank">EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled</a>|Use Primary Work Profile as default to open external links|
-|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
-|<a id="builtinaiapisenabled" href="microsoft-edge-browser-policies/BuiltInAIAPIsEnabled.md" target="_blank">BuiltInAIAPIsEnabled</a>|Allow pages to use the built-in AI APIs.|
-|<a id="edgehistoryaisearchenabled" href="microsoft-edge-browser-policies/EdgeHistoryAISearchEnabled.md" target="_blank">EdgeHistoryAISearchEnabled</a>|Control access to AI-enhanced search in History|
-|<a id="prefetchwithserviceworkerenabled" href="microsoft-edge-browser-policies/PrefetchWithServiceWorkerEnabled.md" target="_blank">PrefetchWithServiceWorkerEnabled</a>|Allow SpeculationRules prefetch for ServiceWorker-controlled URLs|
-|<a id="tls13earlydataenabled" href="microsoft-edge-browser-policies/TLS13EarlyDataEnabled.md" target="_blank">TLS13EarlyDataEnabled</a>|Control whether TLS 1.3 Early Data is enabled in Microsoft Edge|
+|<a id="enableunsafeswiftshader" href="microsoft-edge-browser-policies/EnableUnsafeSwiftShader.md" target="_blank">EnableUnsafeSwiftShader</a>|Allow software WebGL fallback using SwiftShader|
+|<a id="microsoft365copilotchaticonenabled" href="microsoft-edge-browser-policies/Microsoft365CopilotChatIconEnabled.md" target="_blank">Microsoft365CopilotChatIconEnabled</a>|Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar|
+|<a id="onsecurityevententerpriseconnector" href="microsoft-edge-browser-policies/OnSecurityEventEnterpriseConnector.md" target="_blank">OnSecurityEventEnterpriseConnector</a>|Configuration policy for Microsoft Edge for Business Reporting Connectors|
 
 ## Deprecated policies
 
@@ -54,13 +53,13 @@ The following table lists all deprecated policies.
 
 |Policy Name|Caption|
 |-|-|
-|<a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
+|<a id="defaultthirdpartystoragepartitioningsetting" href="microsoft-edge-browser-policies/DefaultThirdPartyStoragePartitioningSetting.md" target="_blank">DefaultThirdPartyStoragePartitioningSetting</a>|Default setting for third-party storage partitioning (deprecated)|
+|<a id="thirdpartystoragepartitioningblockedfororigins" href="microsoft-edge-browser-policies/ThirdPartyStoragePartitioningBlockedForOrigins.md" target="_blank">ThirdPartyStoragePartitioningBlockedForOrigins</a>|Disable third-party storage partitioning for specific top-level origins (deprecated)|
 |<a id="proxybypasslist" href="microsoft-edge-browser-policies/ProxyBypassList.md" target="_blank">ProxyBypassList</a>|Configure proxy bypass rules (deprecated)|
 |<a id="proxymode" href="microsoft-edge-browser-policies/ProxyMode.md" target="_blank">ProxyMode</a>|Configure proxy server settings (deprecated)|
 |<a id="proxypacurl" href="microsoft-edge-browser-policies/ProxyPacUrl.md" target="_blank">ProxyPacUrl</a>|Set the proxy .pac file URL (deprecated)|
 |<a id="proxyserver" href="microsoft-edge-browser-policies/ProxyServer.md" target="_blank">ProxyServer</a>|Configure address or URL of proxy server (deprecated)|
 |<a id="allowgamesmenu" href="microsoft-edge-browser-policies/AllowGamesMenu.md" target="_blank">AllowGamesMenu</a>|Allow users to access the games menu (deprecated)|
-|<a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (deprecated)|
 |<a id="backgroundtemplatelistupdatesenabled" href="microsoft-edge-browser-policies/BackgroundTemplateListUpdatesEnabled.md" target="_blank">BackgroundTemplateListUpdatesEnabled</a>|Enables background updates to the list of available templates for Collections and other features that use templates (deprecated)|
 |<a id="forcecertificatepromptsonmultiplematches" href="microsoft-edge-browser-policies/ForceCertificatePromptsOnMultipleMatches.md" target="_blank">ForceCertificatePromptsOnMultipleMatches</a>|Configure whether Microsoft Edge should automatically select a certificate when there are multiple certificate matches for a site configured with "AutoSelectCertificateForUrls" (deprecated)|
 |<a id="insecureformswarningsenabled" href="microsoft-edge-browser-policies/InsecureFormsWarningsEnabled.md" target="_blank">InsecureFormsWarningsEnabled</a>|Enable warnings for insecure forms (deprecated)|
@@ -74,21 +73,18 @@ The following table lists all deprecated policies.
 
 ## Obsolete policies
 
+The following table lists the obsoleted policies for Microsoft Edge version 140.
+
+|Policy Name|Caption|
+|-|-|
+|<a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (obsolete)|
+
 The following table lists the obsoleted policies for Microsoft Edge version 139.
 
 |Policy Name|Caption|
 |-|-|
 |<a id="keyboardfocusablescrollersenabled" href="microsoft-edge-browser-policies/KeyboardFocusableScrollersEnabled.md" target="_blank">KeyboardFocusableScrollersEnabled</a>|Enable keyboard focusable scrollers (obsolete)|
 |<a id="selectparserrelaxationenabled" href="microsoft-edge-browser-policies/SelectParserRelaxationEnabled.md" target="_blank">SelectParserRelaxationEnabled</a>|Controls whether the new HTML parser behavior for the &lt;select&gt; element is enabled (obsolete)|
-
-The following table lists the obsoleted policies for Microsoft Edge version 138.
-
-|Policy Name|Caption|
-|-|-|
-|<a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
-|<a id="insecureprivatenetworkrequestsallowed" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowed.md" target="_blank">InsecurePrivateNetworkRequestsAllowed</a>|Specifies whether to allow websites to make requests to any network endpoint in an insecure manner. (obsolete)|
-|<a id="insecureprivatenetworkrequestsallowedforurls" href="microsoft-edge-browser-policies/InsecurePrivateNetworkRequestsAllowedForUrls.md" target="_blank">InsecurePrivateNetworkRequestsAllowedForUrls</a>|Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (obsolete)|
-|<a id="privatenetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/PrivateNetworkAccessRestrictionsEnabled.md" target="_blank">PrivateNetworkAccessRestrictionsEnabled</a>|Specifies whether to apply restrictions to requests to more private network endpoints (obsolete)|
 
 ## Available policies
 
@@ -189,7 +185,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="default-notification-setting"></a><a id="defaultnotificationssetting" href="microsoft-edge-browser-policies/DefaultNotificationsSetting.md" target="_blank">DefaultNotificationsSetting</a>|Default notification setting|
 |<a id="default-adobe-flash-setting-obsolete"></a><a id="defaultpluginssetting" href="microsoft-edge-browser-policies/DefaultPluginsSetting.md" target="_blank">DefaultPluginsSetting</a>|Default Adobe Flash setting (obsolete)|
 |<a id="default-pop-up-window-setting"></a><a id="defaultpopupssetting" href="microsoft-edge-browser-policies/DefaultPopupsSetting.md" target="_blank">DefaultPopupsSetting</a>|Default pop-up window setting|
-|<a id="default-setting-for-third-party-storage-partitioning"></a><a id="defaultthirdpartystoragepartitioningsetting" href="microsoft-edge-browser-policies/DefaultThirdPartyStoragePartitioningSetting.md" target="_blank">DefaultThirdPartyStoragePartitioningSetting</a>|Default setting for third-party storage partitioning|
+|<a id="default-setting-for-third-party-storage-partitioning-deprecated"></a><a id="defaultthirdpartystoragepartitioningsetting" href="microsoft-edge-browser-policies/DefaultThirdPartyStoragePartitioningSetting.md" target="_blank">DefaultThirdPartyStoragePartitioningSetting</a>|Default setting for third-party storage partitioning (deprecated)|
 |<a id="control-use-of-the-web-bluetooth-api"></a><a id="defaultwebbluetoothguardsetting" href="microsoft-edge-browser-policies/DefaultWebBluetoothGuardSetting.md" target="_blank">DefaultWebBluetoothGuardSetting</a>|Control use of the Web Bluetooth API|
 |<a id="control-use-of-the-webhid-api"></a><a id="defaultwebhidguardsetting" href="microsoft-edge-browser-policies/DefaultWebHidGuardSetting.md" target="_blank">DefaultWebHidGuardSetting</a>|Control use of the WebHID API|
 |<a id="control-use-of-the-webusb-api"></a><a id="defaultwebusbguardsetting" href="microsoft-edge-browser-policies/DefaultWebUsbGuardSetting.md" target="_blank">DefaultWebUsbGuardSetting</a>|Control use of the WebUSB API|
@@ -223,7 +219,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="automatically-grant-sites-permission-to-connect-to-usb-serial-devices"></a><a id="serialallowusbdevicesforurls" href="microsoft-edge-browser-policies/SerialAllowUsbDevicesForUrls.md" target="_blank">SerialAllowUsbDevicesForUrls</a>|Automatically grant sites permission to connect to USB serial devices|
 |<a id="allow-notifications-to-set-microsoft-edge-as-default-pdf-reader"></a><a id="showpdfdefaultrecommendationsenabled" href="microsoft-edge-browser-policies/ShowPDFDefaultRecommendationsEnabled.md" target="_blank">ShowPDFDefaultRecommendationsEnabled</a>|Allow notifications to set Microsoft Edge as default PDF reader|
 |<a id="choose-whether-users-can-receive-customized-background-images-and-text-suggestions-notifications-and-tips-for-microsoft-services"></a><a id="spotlightexperiencesandrecommendationsenabled" href="microsoft-edge-browser-policies/SpotlightExperiencesAndRecommendationsEnabled.md" target="_blank">SpotlightExperiencesAndRecommendationsEnabled</a>|Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services|
-|<a id="disable-third-party-storage-partitioning-for-specific-top-level-origins"></a><a id="thirdpartystoragepartitioningblockedfororigins" href="microsoft-edge-browser-policies/ThirdPartyStoragePartitioningBlockedForOrigins.md" target="_blank">ThirdPartyStoragePartitioningBlockedForOrigins</a>|Disable third-party storage partitioning for specific top-level origins|
+|<a id="disable-third-party-storage-partitioning-for-specific-top-level-origins-deprecated"></a><a id="thirdpartystoragepartitioningblockedfororigins" href="microsoft-edge-browser-policies/ThirdPartyStoragePartitioningBlockedForOrigins.md" target="_blank">ThirdPartyStoragePartitioningBlockedForOrigins</a>|Disable third-party storage partitioning for specific top-level origins (deprecated)|
 |<a id="allow-listed-sites-to-connect-to-any-hid-device"></a><a id="webhidallowalldevicesforurls" href="microsoft-edge-browser-policies/WebHidAllowAllDevicesForUrls.md" target="_blank">WebHidAllowAllDevicesForUrls</a>|Allow listed sites to connect to any HID device|
 |<a id="allow-listed-sites-connect-to-specific-hid-devices"></a><a id="webhidallowdevicesforurls" href="microsoft-edge-browser-policies/WebHidAllowDevicesForUrls.md" target="_blank">WebHidAllowDevicesForUrls</a>|Allow listed sites connect to specific HID devices|
 |<a id="automatically-grant-permission-to-these-sites-to-connect-to-hid-devices-containing-top-level-collections-with-the-given-hid-usage"></a><a id="webhidallowdeviceswithhidusagesforurls" href="microsoft-edge-browser-policies/WebHidAllowDevicesWithHidUsagesForUrls.md" target="_blank">WebHidAllowDevicesWithHidUsagesForUrls</a>|Automatically grant permission to these sites to connect to HID devices containing top-level collections with the given HID usage|
@@ -298,6 +294,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="blocklist-for-extension-install-types"></a><a id="extensioninstalltypeblocklist" href="microsoft-edge-browser-policies/ExtensionInstallTypeBlocklist.md" target="_blank">ExtensionInstallTypeBlocklist</a>|Blocklist for extension install types|
 |<a id="control-manifest-v2-extension-availability"></a><a id="extensionmanifestv2availability" href="microsoft-edge-browser-policies/ExtensionManifestV2Availability.md" target="_blank">ExtensionManifestV2Availability</a>|Control Manifest v2 extension availability|
 |<a id="configure-extension-management-settings"></a><a id="extensionsettings" href="microsoft-edge-browser-policies/ExtensionSettings.md" target="_blank">ExtensionSettings</a>|Configure extension management settings|
+|<a id="specify-extensions-users-must-allow-in-order-to-navigate-using-inprivate-mode"></a><a id="mandatoryextensionsforinprivatenavigation" href="microsoft-edge-browser-policies/MandatoryExtensionsForInPrivateNavigation.md" target="_blank">MandatoryExtensionsForInPrivateNavigation</a>|Specify extensions users must allow in order to navigate using InPrivate mode|
 
 <a id="games-settings-policies"></a>
 ### Games settings
@@ -408,7 +405,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="dataurl-whitespace-preservation-for-all-media-types"></a><a id="dataurlwhitespacepreservationenabled" href="microsoft-edge-browser-policies/DataURLWhitespacePreservationEnabled.md" target="_blank">DataURLWhitespacePreservationEnabled</a>|DataURL Whitespace Preservation for all media types|
 |<a id="use-the-happy-eyeballs-v3-algorithm-for-connection-attempts"></a><a id="happyeyeballsv3enabled" href="microsoft-edge-browser-policies/HappyEyeballsV3Enabled.md" target="_blank">HappyEyeballsV3Enabled</a>|Use the Happy Eyeballs V3 algorithm for connection attempts|
 |<a id="enable-ipv6-reachability-check-override"></a><a id="ipv6reachabilityoverrideenabled" href="microsoft-edge-browser-policies/IPv6ReachabilityOverrideEnabled.md" target="_blank">IPv6ReachabilityOverrideEnabled</a>|Enable IPv6 reachability check override|
-|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network-deprecated"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)|
+|<a id="specifies-whether-to-block-requests-from-public-websites-to-devices-on-a-users-local-network"></a><a id="localnetworkaccessrestrictionsenabled" href="microsoft-edge-browser-policies/LocalNetworkAccessRestrictionsEnabled.md" target="_blank">LocalNetworkAccessRestrictionsEnabled</a>|Specifies whether to block requests from public websites to devices on a user's local network.|
 |<a id="enable-zstd-content-encoding-support-obsolete"></a><a id="zstdcontentencodingenabled" href="microsoft-edge-browser-policies/ZstdContentEncodingEnabled.md" target="_blank">ZstdContentEncodingEnabled</a>|Enable zstd content encoding support (obsolete)|
 
 <a id="pdf-reader-policies"></a>
@@ -594,6 +591,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enables-dall-e-themes-generation"></a><a id="aigenthemesenabled" href="microsoft-edge-browser-policies/AIGenThemesEnabled.md" target="_blank">AIGenThemesEnabled</a>|Enables DALL-E themes generation|
 |<a id="let-screen-reader-users-get-image-descriptions-from-microsoft"></a><a id="accessibilityimagelabelsenabled" href="microsoft-edge-browser-policies/AccessibilityImageLabelsEnabled.md" target="_blank">AccessibilityImageLabelsEnabled</a>|Let screen reader users get image descriptions from Microsoft|
 |<a id="native-application-signing-during-progressive-web-application-installation"></a><a id="adhoccodesigningforpwasenabled" href="microsoft-edge-browser-policies/AdHocCodeSigningForPWAsEnabled.md" target="_blank">AdHocCodeSigningForPWAsEnabled</a>|Native application signing during Progressive Web Application installation|
+|<a id="allow-dns-queries-for-additional-dns-record-types"></a><a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for additional DNS record types|
 |<a id="enable-additional-search-box-in-browser"></a><a id="additionalsearchboxenabled" href="microsoft-edge-browser-policies/AdditionalSearchBoxEnabled.md" target="_blank">AdditionalSearchBoxEnabled</a>|Enable additional search box in browser|
 |<a id="configure-address-bar-editing"></a><a id="addressbareditingenabled" href="microsoft-edge-browser-policies/AddressBarEditingEnabled.md" target="_blank">AddressBarEditingEnabled</a>|Configure address bar editing|
 |<a id="enable-microsoft-search-in-bing-suggestions-in-the-address-bar-obsolete"></a><a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
@@ -632,7 +630,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enable-autofill-for-addresses"></a><a id="autofilladdressenabled" href="microsoft-edge-browser-policies/AutofillAddressEnabled.md" target="_blank">AutofillAddressEnabled</a>|Enable AutoFill for addresses|
 |<a id="enable-autofill-for-payment-instruments"></a><a id="autofillcreditcardenabled" href="microsoft-edge-browser-policies/AutofillCreditCardEnabled.md" target="_blank">AutofillCreditCardEnabled</a>|Enable AutoFill for payment instruments|
 |<a id="save-and-fill-memberships"></a><a id="autofillmembershipsenabled" href="microsoft-edge-browser-policies/AutofillMembershipsEnabled.md" target="_blank">AutofillMembershipsEnabled</a>|Save and fill memberships|
-|<a id="configure-automatic-https-deprecated"></a><a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (deprecated)|
+|<a id="configure-automatic-https-obsolete"></a><a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (obsolete)|
 |<a id="allow-media-autoplay-for-websites"></a><a id="autoplayallowed" href="microsoft-edge-browser-policies/AutoplayAllowed.md" target="_blank">AutoplayAllowed</a>|Allow media autoplay for websites|
 |<a id="allow-media-autoplay-on-specific-sites"></a><a id="autoplayallowlist" href="microsoft-edge-browser-policies/AutoplayAllowlist.md" target="_blank">AutoplayAllowlist</a>|Allow media autoplay on specific sites|
 |<a id="continue-running-background-apps-after-microsoft-edge-closes"></a><a id="backgroundmodeenabled" href="microsoft-edge-browser-policies/BackgroundModeEnabled.md" target="_blank">BackgroundModeEnabled</a>|Continue running background apps after Microsoft Edge closes|
@@ -728,6 +726,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enable-domain-actions-download-from-microsoft-obsolete"></a><a id="enabledomainactionsdownload" href="microsoft-edge-browser-policies/EnableDomainActionsDownload.md" target="_blank">EnableDomainActionsDownload</a>|Enable Domain Actions Download from Microsoft (obsolete)|
 |<a id="enable-online-ocspcrl-checks"></a><a id="enableonlinerevocationchecks" href="microsoft-edge-browser-policies/EnableOnlineRevocationChecks.md" target="_blank">EnableOnlineRevocationChecks</a>|Enable online OCSP/CRL checks|
 |<a id="allow-certificates-signed-using-sha-1-when-issued-by-local-trust-anchors-obsolete"></a><a id="enablesha1forlocalanchors" href="microsoft-edge-browser-policies/EnableSha1ForLocalAnchors.md" target="_blank">EnableSha1ForLocalAnchors</a>|Allow certificates signed using SHA-1 when issued by local trust anchors (obsolete)|
+|<a id="allow-software-webgl-fallback-using-swiftshader"></a><a id="enableunsafeswiftshader" href="microsoft-edge-browser-policies/EnableUnsafeSwiftShader.md" target="_blank">EnableUnsafeSwiftShader</a>|Allow software WebGL fallback using SwiftShader|
 |<a id="tls-encrypted-clienthello-enabled"></a><a id="encryptedclienthelloenabled" href="microsoft-edge-browser-policies/EncryptedClientHelloEnabled.md" target="_blank">EncryptedClientHelloEnabled</a>|TLS Encrypted ClientHello Enabled|
 |<a id="determines-whether-the-built-in-certificate-verifier-will-enforce-constraints-encoded-into-trust-anchors-loaded-from-the-platform-trust-store-obsolete"></a><a id="enforcelocalanchorconstraintsenabled" href="microsoft-edge-browser-policies/EnforceLocalAnchorConstraintsEnabled.md" target="_blank">EnforceLocalAnchorConstraintsEnabled</a>|Determines whether the built-in certificate verifier will enforce constraints encoded into trust anchors loaded from the platform trust store (obsolete)|
 |<a id="enhance-the-security-state-in-microsoft-edge"></a><a id="enhancesecuritymode" href="microsoft-edge-browser-policies/EnhanceSecurityMode.md" target="_blank">EnhanceSecurityMode</a>|Enhance the security state in Microsoft Edge|
@@ -833,6 +832,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="maximum-number-of-concurrent-connections-to-the-proxy-server"></a><a id="maxconnectionsperproxy" href="microsoft-edge-browser-policies/MaxConnectionsPerProxy.md" target="_blank">MaxConnectionsPerProxy</a>|Maximum number of concurrent connections to the proxy server|
 |<a id="allow-google-cast-to-connect-to-cast-devices-on-all-ip-addresses"></a><a id="mediaroutercastallowallips" href="microsoft-edge-browser-policies/MediaRouterCastAllowAllIPs.md" target="_blank">MediaRouterCastAllowAllIPs</a>|Allow Google Cast to connect to Cast devices on all IP addresses|
 |<a id="enable-usage-and-crash-related-data-reporting-obsolete"></a><a id="metricsreportingenabled" href="microsoft-edge-browser-policies/MetricsReportingEnabled.md" target="_blank">MetricsReportingEnabled</a>|Enable usage and crash-related data reporting (obsolete)|
+|<a id="control-whether-microsoft-365-copilot-chat-shows-in-the-microsoft-edge-for-business-toolbar"></a><a id="microsoft365copilotchaticonenabled" href="microsoft-edge-browser-policies/Microsoft365CopilotChatIconEnabled.md" target="_blank">Microsoft365CopilotChatIconEnabled</a>|Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar|
 |<a id="microsoft-edge-insider-promotion-enabled"></a><a id="microsoftedgeinsiderpromotionenabled" href="microsoft-edge-browser-policies/MicrosoftEdgeInsiderPromotionEnabled.md" target="_blank">MicrosoftEdgeInsiderPromotionEnabled</a>|Microsoft Edge Insider Promotion Enabled|
 |<a id="spell-checking-provided-by-microsoft-editor"></a><a id="microsofteditorproofingenabled" href="microsoft-edge-browser-policies/MicrosoftEditorProofingEnabled.md" target="_blank">MicrosoftEditorProofingEnabled</a>|Spell checking provided by Microsoft Editor|
 |<a id="synonyms-are-provided-when-using-microsoft-editor-spell-checker"></a><a id="microsofteditorsynonymsenabled" href="microsoft-edge-browser-policies/MicrosoftEditorSynonymsEnabled.md" target="_blank">MicrosoftEditorSynonymsEnabled</a>|Synonyms are provided when using Microsoft Editor spell checker|
@@ -851,6 +851,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="configuration-policy-for-bulk-data-entry-for-microsoft-edge-for-business-data-loss-prevention-connectors"></a><a id="onbulkdataentryenterpriseconnector" href="microsoft-edge-browser-policies/OnBulkDataEntryEnterpriseConnector.md" target="_blank">OnBulkDataEntryEnterpriseConnector</a>|Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors|
 |<a id="configuration-policy-for-files-attached-for-microsoft-edge-for-business-data-loss-prevention-connectors"></a><a id="onfileattachedenterpriseconnector" href="microsoft-edge-browser-policies/OnFileAttachedEnterpriseConnector.md" target="_blank">OnFileAttachedEnterpriseConnector</a>|Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors|
 |<a id="configuration-policy-for-print-for-microsoft-edge-for-business-data-loss-prevention-connectors"></a><a id="onprintenterpriseconnector" href="microsoft-edge-browser-policies/OnPrintEnterpriseConnector.md" target="_blank">OnPrintEnterpriseConnector</a>|Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors|
+|<a id="configuration-policy-for-microsoft-edge-for-business-reporting-connectors"></a><a id="onsecurityevententerpriseconnector" href="microsoft-edge-browser-policies/OnSecurityEventEnterpriseConnector.md" target="_blank">OnSecurityEventEnterpriseConnector</a>|Configuration policy for Microsoft Edge for Business Reporting Connectors|
 |<a id="allow-your-organizations-logo-from-microsoft-entra-to-be-overlaid-on-the-microsoft-edge-app-icon-of-a-work-or-school-profile"></a><a id="organizationlogooverlayonappiconenabled" href="microsoft-edge-browser-policies/OrganizationLogoOverlayOnAppIconEnabled.md" target="_blank">OrganizationLogoOverlayOnAppIconEnabled</a>|Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile|
 |<a id="allow-the-use-of-your-organizations-branding-assets-from-microsoft-entra-on-the-profile-related-ui-of-a-work-or-school-profile"></a><a id="organizationalbrandingonworkprofileuienabled" href="microsoft-edge-browser-policies/OrganizationalBrandingOnWorkProfileUIEnabled.md" target="_blank">OrganizationalBrandingOnWorkProfileUIEnabled</a>|Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile|
 |<a id="origin-keyed-agent-clustering-enabled-by-default"></a><a id="originagentclusterdefaultenabled" href="microsoft-edge-browser-policies/OriginAgentClusterDefaultEnabled.md" target="_blank">OriginAgentClusterDefaultEnabled</a>|Origin-keyed agent clustering enabled by default|

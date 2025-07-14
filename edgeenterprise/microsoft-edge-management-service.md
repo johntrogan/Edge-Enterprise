@@ -40,13 +40,13 @@ Use these steps to access the experience:
 
 A configuration policy file contains all the browser policy configurations, including extension settings.
 
-Each configuration policy can be assigned to multiple Microsoft Entra groups, and a group can be assigned to multiple configuration policies. When a group is assigned to multiple configuration policies, the settings merge if there are no conflicting settings. If a user is a member of multiple Microsoft Entra groups with conflicting policy settings, then the policy priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. Please note that Intune configuration policies do not have priority, and any conflicting settings will not be automatically resolved.
+Each configuration policy can be assigned to multiple Microsoft Entra groups, and a group can be assigned to multiple configuration policies. When a user is assigned to multiple configuration policies, the settings merge and the user will receive all applicable settings if there are no conflicts. If a user is assigned to multiple configuration policies with conflicting settings, then the policy priority is used to determine which configuration is applied. The highest priority is applied, with "0" being the highest priority that you can assign. Please note that Intune configuration policies do not have priority, and any conflicting settings will not be automatically resolved.
 
 #### Cloud policies 
 
 A configuration policy that has been created using the Cloud Policy service will only be available to manage in the Edge management service. The following features are currently only available using a Cloud policy: 
 
-- **Prioritization:** Configuration policies with conflicting settings will - take the value of the policy with the highest priority.  
+- **Prioritization:** Configuration policies with conflicting settings will take the value of the policy with the highest priority.  
 
 - **Extension requests:** Admins will be able to view the extensions that users have requested and take action to approve or deny these requests. 
 
@@ -129,6 +129,31 @@ Follow these steps to reorder the priority of a configuration policy:
 
 > [!NOTE]
 > Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device.
+
+
+#### Importing or exporting a configuration policy
+
+##### Cloud Policies
+| Action                                                                 | Supported |
+|------------------------------------------------------------------------|-----------|
+| **Can be exported**                                                    | Yes       |
+| **Can be imported*** (via Edge Management Service portal)             | Yes       |
+
+*When importing a configuration policy into the Edge management service, any Cloud-specific settings (ie. organization branding) wil be removed.
+
+---
+
+##### Intune Policies
+
+| Action                                                                                     | Supported |
+|--------------------------------------------------------------------------------------------|-----------|
+| **Cannot be imported directly into the Intune Portal**                                     | No        |
+| **Can be imported into an Intune policy*** (via Edge Management Service portal)           | Yes       |
+
+*When importing a configuration policy back into the Edge management service, any Cloud-specific settings (ie. organization branding) will be removed.
+
+ ![screenshot of duo connector1.](media/microsoft-edge-management-service/1.png)
+ 
 
 ### Enable the Microsoft Edge management service
 

@@ -48,7 +48,7 @@ Not today. For customers in the GCC High cloud and Azure Government DoD cloud, M
 
 ### Does Microsoft Edge sync support Microsoft Azure operated by 21Vianet?
 
-Not today. For customers in Microsoft Azure operated by 21Vianet, Microsoft Edge sync is not supported.
+Not today. For customers in Microsoft Azure operated by 21Vianet, Microsoft Edge sync isn't supported.
 
 ## Applying Sync
 
@@ -62,7 +62,7 @@ There are no plans to support this syncing. If you still need IE in your environ
 
 ### Will Microsoft Edge sync with Microsoft Edge Legacy?
 
-No, it won't. We believe connecting these two ecosystems will lead to compromises in the reliability of sync in the Microsoft Edge. We'll ensure that existing data is migrated to the Microsoft Edge. Users will also be able to import data from browser of their choice, which also means that Microsoft Edge won't have a way to sync with IE.
+No, it won't. We believe connecting these two ecosystems lead to compromises in the reliability of sync in the Microsoft Edge. We ensure that existing data is migrated to the Microsoft Edge. Users will also be able to import data from browser of their choice, which also means that Microsoft Edge won't have a way to sync with IE.
 
 ## Managing Sync
 
@@ -72,7 +72,14 @@ Not directly, but you can determine which profiles can sign on to Microsoft Edge
 
 ### Is it possible to prevent sign-in and sync with an enterprise account on an unmanaged/non-compliant device?
 
-Currently it's not possible to prevent Microsoft Entra sign-in to Microsoft Edge on unmanaged devices without disrupting your other Conditional Access (CA) protected applications. However, enterprise sync can be blocked on such devices by adding the "Microsoft Azure Information Protection" app to the CA policy.
+You can prevent users from signing in and syncing with an enterprise account in Microsoft Edge on unmanaged or noncompliant Windows, iOS, and Android devices by using Mobile Application Management (MAM) without requiring device enrollment.
+
+To enforce this, configure a Conditional Access policy targeting the Microsoft Edge app and apply MAM settings. This blocks both sign-in and sync on devices that don't meet compliance or management requirements, while preserving access on managed devices.
+
+**Note:** Blocking Edge sign-in and sync using MAM isn't currently supported on iOS.
+
+For more details, see:
+[Data protection for Windows MAM | Microsoft Learn](https://learn.microsoft.com/intune/intune-service/apps/protect-mam-windows#conditional-access-compliance-1)
 
 ## See also
 
