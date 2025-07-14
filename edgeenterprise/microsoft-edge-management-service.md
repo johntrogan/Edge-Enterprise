@@ -130,6 +130,31 @@ Follow these steps to reorder the priority of a configuration policy:
 > [!NOTE]
 > Any policies you apply with Microsoft Edge management service will be overridden if they conflict with an existing Group Policy Object (GPO) or Mobile Device Management (MDM) policy that's set on the device.
 
+
+#### Importing or exporting a configuration policy
+
+##### Cloud Policies
+| Action                                                                 | Supported |
+|------------------------------------------------------------------------|-----------|
+| **Can be exported**                                                    | Yes       |
+| **Can be imported*** (via Edge Management Service portal)             | Yes       |
+
+*When importing a configuration policy into the Edge management service, any Cloud-specific settings (ie. organization branding) wil be removed.
+
+---
+
+##### Intune Policies
+
+| Action                                                                                     | Supported |
+|--------------------------------------------------------------------------------------------|-----------|
+| **Cannot be imported directly into the Intune Portal**                                     | No        |
+| **Can be imported into an Intune policy*** (via Edge Management Service portal)           | Yes       |
+
+*When importing a configuration policy back into the Edge management service, any Cloud-specific settings (ie. organization branding) will be removed.
+
+ ![screenshot of duo connector1.](media/microsoft-edge-management-service/1.png)
+ 
+
 ### Enable the Microsoft Edge management service
 
 Use the following sections as a guide to enable the Microsoft Edge management service.
