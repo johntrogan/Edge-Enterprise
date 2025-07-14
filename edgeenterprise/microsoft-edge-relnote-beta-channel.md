@@ -23,7 +23,16 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 ## Version 139.0.3405.36: July 14, 2025
 
-Fixed various bugs, and performance issues.
+Fixed various bugs, policy updates, and performance issues.
+
+### Fixes
+
+- Fixed an issue where MIP-protected PDF files from different sovereign cloud environments (including GCCH) failed to open and instead displayed the error message: “Need permissions. Contact the owner of the file to give you permissions.”
+
+### New policies
+
+- [EnableUnsafeSwiftShader](/deployedge/microsoft-edge-browser-policies/enableunsafeswiftshader) - Allow software WebGL fallback using SwiftShader
+- [OnSecurityEventEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onsecurityevententerpriseconnector) - Configuration policy for Microsoft Edge for Business Reporting Connectors
 
 ## Version 139.0.3405.21: July 7, 2025
 
