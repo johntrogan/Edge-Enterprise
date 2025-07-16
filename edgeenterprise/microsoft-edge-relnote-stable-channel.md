@@ -30,9 +30,9 @@ These release notes provide information about new features and nonsecurity updat
 
 Fixed various bugs, feature updates, and performance issues for Stable Channel.
 
-### Feature updates
-
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-16-2025).
+
+### Feature updates
 
 - **Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-browser-policies/webcontentfilteringblockedcategories) policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and don't comply with the organization's security policies.
 
