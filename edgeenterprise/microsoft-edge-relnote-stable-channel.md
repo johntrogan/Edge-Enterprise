@@ -26,6 +26,16 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 138.0.3351.95: July 16, 2025
+
+Fixed various bugs, feature updates and performance issues for Stable Channel.
+
+### Feature updates
+
+- ***Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the WebContentFilteringBlockedCategories policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and do not comply with the organization's security policies.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-16-2025).
+
 ## Version 138.0.3351.83: July 10, 2025
 
 Fixed various bugs and performance issues for Stable Channel.
