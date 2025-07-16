@@ -107,7 +107,6 @@ These tables list all of the browser-related group policies available in this re
 - [Idle Browser Actions](#idle-browser-actions)
 - [Immersive Reader settings](#immersive-reader-settings)
 - [Kiosk Mode settings](#kiosk-mode-settings)
-- [Local Network Access settings](#local-network-access-settings)
 - [Manageability](#manageability)
 - [Native Messaging](#native-messaging)
 - [Network settings](#network-settings)
