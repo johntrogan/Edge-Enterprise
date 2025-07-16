@@ -26,6 +26,16 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 138.0.3351.95: July 16, 2025
+
+Fixed various bugs, feature updates, and performance issues for Stable Channel.
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-16-2025).
+
+### Feature updates
+
+- **Microsoft Edge policies to manage Shadow IT**. This feature restricts access to non-Microsoft Generative AI tools using Edge policies.  Using the [WebContentFilteringBlockedCategories](/deployedge/microsoft-edge-browser-policies/webcontentfilteringblockedcategories) policy, admins can restrict access to other LLMs (except Copilot Chat) along with all browsers (except Microsoft Edge). This helps admins address the shadow IT problem, which is the use of Gen AI tools without oversight of IT admins in the organization. Some of these Gen AI apps can cause data loss and don't comply with the organization's security policies.
+
 ## Version 138.0.3351.83: July 10, 2025
 
 Fixed various bugs and performance issues for Stable Channel.
@@ -61,7 +71,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 ### Fixes
 
-- Fixed an issue which caused WebDriver automation to fail in Microsoft Edge versions 133 and later. 
+- Fixed an issue, which caused WebDriver automation to fail in Microsoft Edge versions 133 and later. 
  
 - Fixed an issue where re-enabled `<textarea>` elements remained noneditable.  This issue affected activating a role assignment in Privileged Identity Management.  
  
@@ -116,7 +126,7 @@ Fixed various bugs and performance issues for Extended Stable Channel.
 
 ## Version 137.0.3296.83: June 13, 2025
 
-Fixed various bugs, feature updates and performance issues for Stable Channel.
+Fixed various bugs, feature updates, and performance issues for Stable Channel.
 
 ### Feature updates
 
@@ -153,7 +163,7 @@ Fixed various bugs and performance issues for Stable Channel.
 
 ### Fixes
 
-- Fixed an issue which may have caused unexpected leading spaces in the browser window title.  This behavior affected some customers’ automation workflow for non-English language environments
+- Fixed an issue, which may have caused unexpected leading spaces in the browser window title.  This behavior affected some customers’ automation workflow for non-English language environments
 
 ## Version 136.0.3240.104: May 29, 2025
 
@@ -229,7 +239,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 - Fixed an issue which caused the Microsoft Defender Application Guard window to automatically close 1 minute after launch without any user interaction. 
  
-- Fixed an issue which caused text to not be displayed and other rendering issues when viewing certain PDF files containing Japanese fonts.
+- Fixed an issue, which caused text to not be displayed and other rendering issues when viewing certain PDF files containing Japanese fonts.
 
 ## Version 136.0.3240.76: May 15, 2025
 
@@ -243,7 +253,7 @@ Fixed various bugs and performance issues.
 
 ### Fixes
 
-- Fixed an issue which prevented Microsoft Editor from working and from offering suggestions for misspelled words.
+- Fixed an issue, which prevented Microsoft Editor from working and from offering suggestions for misspelled words.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#may-8-2025).
 
@@ -264,7 +274,7 @@ The following Dev channel updates preceded this Stable channel release. The foll
 
 ### Fixes
 
-- Fixed an issue which caused some customers to unexpectedly start seeing the sidepane open (when the sidebar was in the OFF state) with context when clicking on Teams and Outlook links
+- Fixed an issue, which caused some customers to unexpectedly start seeing the sidepane open (when the sidebar was in the OFF state) with context when clicking on Teams and Outlook links
  
 ### Feature updates
 
