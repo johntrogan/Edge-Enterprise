@@ -56,10 +56,11 @@ This article describes the supported operating systems that apply to Microsoft E
 
 ### macOS
 
-- macOS 11 and later starting with Microsoft Edge 129
+- macOS 11 (Big Sur) supported from Edge 129 through 138
+- macOS 12 (Monterey) or later required for Microsoft Edge 139 and newer
 
 > [!NOTE]
-> Microsoft Edge 127 and 128 will keep working on Catalina 10.5 but won't get updates after Microsoft Edge 129 is released.
+> Starting with Microsoft Edge version 139, users may encounter installation or launch issues on macOS 11. We recommend upgrading to macOS 12 or later for continued compatibility.
 
 ### iOS
 
