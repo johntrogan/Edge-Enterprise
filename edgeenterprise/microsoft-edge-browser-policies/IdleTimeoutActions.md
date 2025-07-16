@@ -90,11 +90,11 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Can be mandatory: Yes
-- Can be recommended: No
-- Dynamic Policy Refresh: Yes
-- Per Profile: Yes
-- Applies to a profile that is signed in with a Microsoft account: No
+- Is this policy mandatory? Yes
+- Is this policy recommended? No
+- Does this policy support dynamic refresh? Yes
+- Is this policy applied per profile? Yes
+- Does this policy apply to profiles signed in with a Microsoft account? No
 
 ## Data type
 
