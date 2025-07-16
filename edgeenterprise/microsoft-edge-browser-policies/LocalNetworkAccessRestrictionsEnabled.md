@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation LocalNetworkAccessRestrictio
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 06/26/2025
+ms.date: 07/11/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -60,7 +60,7 @@ unless explicitly granted by the user.
 
 - GP unique name: LocalNetworkAccessRestrictionsEnabled
 - GP name: Specifies whether to block requests from public websites to devices on a user's local network.
-- GP path (Mandatory): Administrative Templates/Microsoft Edge/Network settings
+- GP path (Mandatory): Administrative Templates/Microsoft Edge/Local Network Access settings
 - GP path (Recommended): N/A
 - GP ADMX file name: MSEdge.admx
 

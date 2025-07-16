@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation IdleTimeoutActions"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 05/08/2025
+ms.date: 07/11/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -39,6 +39,10 @@ Supported actions are:
 
 'reload_pages': reload all webpages. For some pages, the user may be prompted for confirmation first.
 
+'sign_out': sign out of browser. (This only applies to iOS.)
+
+'close_tabs': close all open tabs and create a NTP (New Tab Page). Supported in Android and iOS.
+
 'clear_browsing_history', 'clear_download_history', 'clear_cookies_and_other_site_data', 'clear_cached_images_and_files', 'clear_password_signing', 'clear_autofill', 'clear_site_settings': clear the corresponding browsing data.
 
 Setting 'clear_browsing_history', 'clear_password_signing', 'clear_autofill', and 'clear_site_settings' will disable sync for the respective data types if sync is not already disabled by setting either the SyncDisabled policy or BrowserSignin to disabled.
@@ -63,6 +67,10 @@ Policy options mapping:
 
 * reload_pages (reload_pages) = Reload Pages
 
+* sign_out (sign_out) = Sign Out
+
+* close_tabs (close_tabs) = Close Tabs
+
 Use the preceding information when configuring this policy.
 
 ## Policy options mapping:
@@ -77,6 +85,8 @@ Use the preceding information when configuring this policy.
 - clear_autofill = Clear Autofill
 - clear_site_settings = Clear Site Settings
 - reload_pages = Reload Pages
+- sign_out = Sign Out
+- close_tabs = Close Tabs
 
 ## Supported features
 
