@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/10/2025
+ms.date: 07/16/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -35,7 +35,7 @@ The following table lists the new policies for Microsoft Edge version 140.
 
 |Policy Name|Caption|
 |-|-|
-|<a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for additional DNS record types|
+|<a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for more DNS record types|
 
 The following table lists the new policies for Microsoft Edge version 139.
 
@@ -591,7 +591,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="enables-dall-e-themes-generation"></a><a id="aigenthemesenabled" href="microsoft-edge-browser-policies/AIGenThemesEnabled.md" target="_blank">AIGenThemesEnabled</a>|Enables DALL-E themes generation|
 |<a id="let-screen-reader-users-get-image-descriptions-from-microsoft"></a><a id="accessibilityimagelabelsenabled" href="microsoft-edge-browser-policies/AccessibilityImageLabelsEnabled.md" target="_blank">AccessibilityImageLabelsEnabled</a>|Let screen reader users get image descriptions from Microsoft|
 |<a id="native-application-signing-during-progressive-web-application-installation"></a><a id="adhoccodesigningforpwasenabled" href="microsoft-edge-browser-policies/AdHocCodeSigningForPWAsEnabled.md" target="_blank">AdHocCodeSigningForPWAsEnabled</a>|Native application signing during Progressive Web Application installation|
-|<a id="allow-dns-queries-for-additional-dns-record-types"></a><a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for additional DNS record types|
+|<a id="allow-dns-queries-for-more-dns-record-types"></a><a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for more DNS record types|
 |<a id="enable-additional-search-box-in-browser"></a><a id="additionalsearchboxenabled" href="microsoft-edge-browser-policies/AdditionalSearchBoxEnabled.md" target="_blank">AdditionalSearchBoxEnabled</a>|Enable additional search box in browser|
 |<a id="configure-address-bar-editing"></a><a id="addressbareditingenabled" href="microsoft-edge-browser-policies/AddressBarEditingEnabled.md" target="_blank">AddressBarEditingEnabled</a>|Configure address bar editing|
 |<a id="enable-microsoft-search-in-bing-suggestions-in-the-address-bar-obsolete"></a><a id="addressbarmicrosoftsearchinbingproviderenabled" href="microsoft-edge-browser-policies/AddressBarMicrosoftSearchInBingProviderEnabled.md" target="_blank">AddressBarMicrosoftSearchInBingProviderEnabled</a>|Enable Microsoft Search in Bing suggestions in the address bar (obsolete)|
