@@ -34,8 +34,10 @@ This article describes the supported operating systems that apply to Microsoft E
 - Windows 10 Enterprise multi-session
 - Windows 10 IoT Enterprise SAC ****
 - Windows 10 IoT Enterprise 2019 LTSC ****
+- Windows 10 IoT Enterprise 2021 LTSC
 - Windows 11
 - Windows 11 Enterprise multi-session
+- Windows 11 IoT Enterprise 2024 LTSC
 
 > [!NOTE]
 > In version 128, Microsoft Edge will stop supporting CPUs that lack SSE3. Devices with these CPUs will not receive any more updates.
@@ -54,10 +56,11 @@ This article describes the supported operating systems that apply to Microsoft E
 
 ### macOS
 
-- macOS 11 and later starting with Microsoft Edge 129
+- macOS 11 (Big Sur) supported from Edge 129 through 138
+- macOS 12 (Monterey) or later required for Microsoft Edge 139 and newer
 
 > [!NOTE]
-> Microsoft Edge 127 and 128 will keep working on Catalina 10.5 but won't get updates after Microsoft Edge 129 is released.
+> Starting with Microsoft Edge version 139, users may encounter installation or launch issues on macOS 11. We recommend upgrading to macOS 12 or later for continued compatibility.
 
 ### iOS
 
