@@ -13,7 +13,7 @@ ms.custom: generated
 description: "Trellix"
 ---
 
-# Set up a Symantec DLP Trellix
+# Set up a Trellix  DLP  Connector
 
 Trellix Data Loss Prevention (DLP) is designed to help customers confidently secure
 their sensitive data. As organizations increasingly adopt cloud-based applications
