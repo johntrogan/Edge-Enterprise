@@ -13,6 +13,8 @@ ms.custom: generated
 description: "Trellix"
 ---
 
+# Set up a Symantec DLP Trellix
+
 Trellix Data Loss Prevention (DLP) is designed to help customers confidently secure
 their sensitive data. As organizations increasingly adopt cloud-based applications
 and services, Trellix has partnered with Microsoft Edge for Business to deploy a
