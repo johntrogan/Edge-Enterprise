@@ -150,6 +150,8 @@
           href: microsoft-edge-connectors-Data-Loss-Prevention-Overview.md
         - name: Symantec DLP
           href: microsoft-edge-connectors-Symantec.md
+        - name: Trellix
+          href: microsoft-edge-connectors-trellix.md
       - name: Reporting Connectors
         items:
         - name: Reporting Connectors Overview
