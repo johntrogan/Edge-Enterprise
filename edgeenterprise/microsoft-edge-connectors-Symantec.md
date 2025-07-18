@@ -47,7 +47,7 @@ In addition to using the Microsoft Edge Management Service, you can now enable t
 
 You can enable the Symantec DLP Connector using Group Policy:
 
-1. Install the Microsoft Edge administrative template, see https://learn.microsoft.com/en-us/DeployEdge/configure-microsoft-edge
+1. Install the Microsoft Edge administrative template, [see this link.](/DeployEdge/configure-microsoft-edge)
 2. Configure any combination of the following 3 settings depending on which user actions you want to be scanned by Symantec's DLP agent
    - **Paste**: `Administrative Templates > Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Upload**: `Administrative Templates > Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
@@ -61,7 +61,7 @@ You can enable the Symantec DLP Connector using Group Policy:
 You can also enable the Symantec DLP Connector using Microsoft Intune via Administrative Templates.
 
 1. Sign in to the [Intune Admin Center](https://intune.microsoft.com).
-2. Create or modify an existing policy, see https://learn.microsoft.com/en-us/DeployEdge/configure-edge-with-intune
+2. Create or modify an existing policy, [see this link](/DeployEdge/configure-edge-with-intune)
 3. Under the `Configuration settings`, set any combination of the following 3 settings depending on which user actions you want to be scanned by Symantec's DLP agent
    - **Paste**: `Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Upload**: `Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
