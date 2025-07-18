@@ -21,6 +21,23 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 139.0.3405.42: July 17, 2025
+
+Fixed various bugs, and performance issues.
+
+## Version 139.0.3405.36: July 14, 2025
+
+Fixed various bugs, policy updates, and performance issues.
+
+### Fixes
+
+- Fixed an issue where MIP-protected PDF files from different sovereign cloud environments (including GCCH) failed to open and instead displayed the error message: “Need permissions. Contact the owner of the file to give you permissions.”
+
+### New policies
+
+- [EnableUnsafeSwiftShader](/deployedge/microsoft-edge-browser-policies/enableunsafeswiftshader) - Allow software WebGL fallback using SwiftShader
+- [OnSecurityEventEnterpriseConnector](/deployedge/microsoft-edge-browser-policies/onsecurityevententerpriseconnector) - Configuration policy for Microsoft Edge for Business Reporting Connectors
+
 ## Version 139.0.3405.21: July 7, 2025
 
 Fixed various bugs, and performance issues.
@@ -41,7 +58,7 @@ Fixed various bugs and performance issues, feature updates, policy updates, and 
  
 - **Edge Settings Improvements**.  Edge Settings is migrating to WebUI2 to boost page responsiveness and introducing a series of minor visual and content upgrades to improve overall usability and utility. This includes optimizing for concise wording of individual settings, simplifying the number of pages and reorganizing content, and creating a cohesive user interface.
  
-- **Web AI APIs for prompt engineering and writing assistance**. Microsoft Edge now implements the [Writing Assistance APIs](https://learn.microsoft.com/microsoft-edge/web-platform/writing-assistance-apis) and the [Prompt API](https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api) (for Edge extensions) with a local language model, [Phi-4-mini](https://huggingface.co/microsoft/Phi-4-mini-instruct), that is built into the browser. These easy-to-use JavaScript APIs are made available via Edge flags (set to Enabled, by default) so that sites and extensions can apply AI capabilities on the web. The small language model is downloaded as the first time any of these APIs is used and later shared across all domains, serving local AI use-cases with reduced cost, network independence, and increased privacy (since data input to the model doesn't leave the user’s device). Admins can control the availability of these APIs via the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-browser-policies/genailocalfoundationalmodelsettings) policy. These APIs are currently not implemented in China. Read the announcement [here](https://blogs.windows.com/msedgedev/2025/05/19/introducing-the-prompt-and-writing-assistance-apis/), and feel free to provide [feedback](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
+- **Web AI APIs for prompt and writing assistance**. Microsoft Edge now implements the [Writing Assistance APIs](https://learn.microsoft.com/microsoft-edge/web-platform/writing-assistance-apis) and the [Prompt API](https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api) (for Edge extensions) with a local language model, [Phi-4-mini](https://huggingface.co/microsoft/Phi-4-mini-instruct), that is built into the browser. These easy-to-use JavaScript APIs are made available via Edge flags (set to Enabled, by default for the Summarizer and Disabled by default for the rest) so that sites and extensions can apply AI capabilities on the web. The small language model is downloaded as the first time any of these APIs is used and later shared across all domains, serving local AI use-cases with reduced cost, network independence, and increased privacy (since data input to the model doesn't leave the user’s device). Admins can control the availability of these APIs via the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-browser-policies/genailocalfoundationalmodelsettings) policy. These APIs are currently not implemented in China. Read the announcement [here](https://blogs.windows.com/msedgedev/2025/05/19/introducing-the-prompt-and-writing-assistance-apis/), and feel free to provide [feedback](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
  
 - **Enhancements to Performance and Secure network**.  Microsoft is introducing an improvement to the **Settings and more** menu (“…” on the menu bar).  **Browser essentials** is being separated into two distinct experiences (**Performance, Secure Network**) - both available from the **Settings and more** menu.  
  
