@@ -35,6 +35,10 @@ Windows Server Update Services (WSUS) has updates for each version of Windows 10
 
 Windows updates to install Microsoft Edge aren't available for these versions. Consider other options for deploying Microsoft Edge to these devices such as [Configuration Manager](/configmgr/apps/deploy-use/deploy-edge?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json) or [Intune](/mem/intune/apps/apps-windows-edge/?bc=%2fDeployEdge%2fbreadcrumb%2ftoc.json&toc=%2fDeployEdge%2ftoc.json).
 
+## Promote adoption
+
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
+
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)

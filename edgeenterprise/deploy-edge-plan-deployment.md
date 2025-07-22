@@ -210,6 +210,10 @@ After you deploy your pilot, you want to capture all the feedback you get from y
 
 After finishing the pilot and updating your deployment plan with lessons learned from the pilot, you're ready to do a full deployment of Microsoft Edge to all your users.  Congratulations!
 
+## Promote adoption
+
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has resources to standardize on Edge for Business, communicate with your users, and help your users optimize their work day. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
+
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)

@@ -56,23 +56,6 @@ Inside the browser, you see the new profile pill label, profile flyout visual tr
 
 ![Updated visual treatment for browser](media/microsoft-edge-for-business/image-pill-with-flyout-center.png)
 
-## Automatic switching with the Enterprise personal browsing experience
-
-> [!NOTE]
-> Applies when device has at least one Microsoft Entra ID (formerly *Azure Active Directory*) profile and one MSA profile (existing or new).
-
-Enterprise personal browsing is designed to keep work and personal browsing separate for the end users via the new automatic switching mechanism. When the device has an existing MSA profile or creates a new one, it enables automatic switching to enforce the browsing context separation. We continue to update our automatic switching logic to support more sites.
-
-Microsoft Edge for Business is available now, and the personal browser profile is lightly managed, without requiring more configuration. The personal browser profile automatically inherits only the following policy categories:
-
-- Security Policies (for example, Application Guard, Enhanced Security Mode, and others)
-- Data Compliance Policies (for example, Microsoft Purview DLP, Microsoft Insider Risk Management)
-- Microsoft Edge Update Policies (for example, Enforcing Microsoft Edge Update Rules)
-
-For more information about the Enterprise personal browser and the policies that only apply to the work browser profile, see [policies](/DeployEdge/edge-learnmore-personal-browser-policies).
-
-![Smart switching from work to personal browser](media/microsoft-edge-for-business/smart-switch-transition-1200.png)
-
 ## Organization Branding
 
 Want to customize the look of Edge for Business?
@@ -117,6 +100,10 @@ To enable protected remote or home access to org data from Microsoft Edge for Bu
 - Intune Application Protection Policies (APP) to secure org data and ensure the client device is healthy when using Microsoft Edge for Business for mobile.
 
 For more information, see [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge).
+
+## Promote adoption
+
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
 
 ## Provide feedback
 
