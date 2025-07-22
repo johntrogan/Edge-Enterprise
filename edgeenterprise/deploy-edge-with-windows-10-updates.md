@@ -18,14 +18,14 @@ The article provides information for users who are deploying Microsoft Edge by u
 
 ## For Windows 10 October 2020 Update
 
-Windows 10 October 2020 Update and later include Microsoft Edge pre-installed as the default browser. However, version 84 of Microsoft Edge that shipped with Windows 10 October 2020 Update, and version 92 of Microsoft Edge that shipped with Windows 10 November 2021 Update, are now outdated. While Microsoft Edge will automatically update itself to a newer version after a user has logged on, since the timing of the update is dependant upon various factors, this can be unpredictable. For organizations that desire greater control and want to ensure that Microsoft Edge (Stable channel) is updated to the latest version before user sign-in, the following PowerShell command can be used to force a Microsoft Edge update during Windows OOBE.
+Windows 10 October 2020 Update and later include Microsoft Edge preinstalled as the default browser. However, version 84 of Microsoft Edge that shipped with Windows 10 October 2020 Update, and version 92 of Microsoft Edge that shipped with Windows 10 November 2021 Update, are now outdated. While Microsoft Edge will automatically update itself to a newer version after a user has logged on, since the timing of the update is dependant upon various factors, this can be unpredictable. For organizations that desire greater control and want to ensure that Microsoft Edge (Stable channel) is updated to the latest version before user sign-in, the following PowerShell command can be used to force a Microsoft Edge update during Windows OOBE.
 
 `Start-Process -FilePath "C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" -argumentlist "/silent /install appguid={56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}&appname=Microsoft%20Edge&needsadmin=True"`
 
 If using Windows Autopilot, it's possible to wrap this script as an \.intunewin file using the [Microsoft Win32 content prep tool](/mem/intune/apps/apps-win32-prepare). It can then be set as a required app for the Enrollment Status Page (ESP) if desired.
 
 > [!NOTE]
-> If you currently leverage policies such as [Target Channel override](/deployedge/microsoft-edge-update-policies#target-channel-override) or [Target Version override](/deployedge/microsoft-edge-update-policies#targetversionprefix) to remain on an older version of Microsoft Edge, be aware that the above script will not take any policies into account, and will simply update to the latest version. By default, Microsoft Edge does not downgrade itself, including once such policies are later received.
+> If you currently leverage policies such as [Target Channel override](/deployedge/microsoft-edge-update-policies#target-channel-override) or [Target Version override](/deployedge/microsoft-edge-update-policies#targetversionprefix) to remain on an older version of Microsoft Edge, be aware that the above script will not take any policies into account, and will simply update to the latest version. By default, Microsoft Edge doesn't downgrade itself, including once such policies are later received.
 
 ## For Windows 10 releases Windows 10 April 2018 Update through Windows 10 April 2020 Update
 

@@ -1,9 +1,9 @@
 ---
 title: "Automate Microsoft Edge for macOS deployment with Jamf"
-ms.author: kvice
+ms.author: dan-wesley
 author: dan-wesley
 manager: laurawi
-ms.date: 07/18/2024
+ms.date: 7/22/2025
 audience: ITPro
 ms.topic: install-set-up-deploy
 ms.service: microsoft-edge
