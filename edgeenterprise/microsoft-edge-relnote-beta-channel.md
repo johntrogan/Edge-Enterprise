@@ -29,7 +29,7 @@ Fixed various bugs, and performance issues.
 
 - Fixed an issue which affected IE mode, including errors when displaying PDF files, running Java applets, and showing the Information Bar in IE mode.  
 
-- Fixed a browser crash that occurred on first launch when the BrowserSignin policy was enabled and configured to "Force (2) = Force users to sign-in to use the browser (all profiles)."
+- Fixed a browser crash that occurred on first launch when the [BrowserSignin](/deployedge/microsoft-edge-browser-policies/browsersignin) policy was enabled and configured to "Force (2) = Force users to sign-in to use the browser (all profiles)."
 
 ## Version 139.0.3405.42: July 17, 2025
 
