@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Edge customer adoption materials"
+title: "Microsoft Edge for Business customer adoption materials"
 ms.author: archandr
 author: dan-wesley
 manager: likuba
@@ -9,10 +9,10 @@ ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-description: "Microsoft Edge customer adoption materials"
+description: "Microsoft Edge for Business customer adoption materials"
 ---
 
-# Customer adoption materials for Microsoft Edge
+# Microsoft Edge for Business customer adoption materials
 
 To support the deployment and adoption of Microsoft Edge, see the following collected materials and resources. A zip file of these materials and resources is provided for you to download.
 
@@ -20,23 +20,18 @@ Check back for more materials as they're made available.
 
 ## Customer adoption kit
 
-The customer adoption kit contains the following material:
-- Internet Explorer Retirement Kit **(Available in English, German, Spanish, French, Japanese, Korean, Chinese (Simplified))**
-    - Adoption emails
-    - Flyers
-    - Infographic
-    - Site Collection Form
-- General Adoption Kit
-    - IT Deployment Guide
-    - How to Get Started User Guide
-    - Adoption Email Templates
-    - Banners
-    - Digital Signage
-    - One-Pagers
-    - Demo Video and GIFs
-    - Web Resource Links
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has the following resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday:
+- **“How to standardize on Microsoft Edge for Business” one-pager:** Provides the steps to set Edge for Business as an organization’s primary browser
+- **Customizable email template:** Announces Edge as the preferred browser with getting started instructions
+- **“Meet Microsoft Edge” video:** Provides an overview of Microsoft Edge and its benefits at work
+- **“Get started with Microsoft Edge” video:** Provides step-by-step instructions on transferring data and using foundational features
+- **Microsoft 365 Copilot Chat in Edge video:** Introduces built-in AI chat with Copilot Chat, its benefits, access methods, and work-related use cases
+- **Organization tip sheet:** Offers tips for how to stay organized at work using Edge
+- **Accessibility tip sheet:** Shares how to elevate the browsing experience by improving readability and enhancing focus
+- **AI tip sheet:** Provides tips on how to get started with and use AI for work with Microsoft 365 Copilot Chat in Edge
+- **Training guide:** Provides training on key features
 
-The adoption kit is available in English and several other languages, including French, German, and Japanese. Select your preferred language at the [Microsoft Edge Customer Adoption Kit download center](https://www.microsoft.com/download/details.aspx?id=102119).
+Download the kit [here](https://www.microsoft.com/download/details.aspx?id=102119).
 
 ### Internet Explorer (IE) Retirement Resources
 

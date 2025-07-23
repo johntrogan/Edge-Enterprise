@@ -139,6 +139,10 @@ The following table lists provider support statements for Microsoft Edge.
 | Zoom  | Zoom  | https://support.zoom.us/hc/en-us/articles/201362023-System-Requirements-for-PC-Mac-and-Linux#h_92957a85-2506-43a2-bd4a-5bb274778518  |
 | ZScaler  | Zscaler   | https://help.zscaler.com/zia/supported-browsers |
 
+### Promote adoption
+
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
+
 ## See also
 
 - [Microsoft Edge Enterprise landing page](https://aka.ms/EdgeEnterprise)
