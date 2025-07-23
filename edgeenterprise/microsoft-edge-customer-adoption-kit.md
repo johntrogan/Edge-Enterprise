@@ -21,15 +21,16 @@ Check back for more materials as they're made available.
 ## Customer adoption kit
 
 Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has the following resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday:
-- “How to standardize on Microsoft Edge for Business” one-pager: Provides the steps to set Edge for Business as an organization’s primary browser
-- Customizable email template: Announces Edge as the preferred browser with getting started instructions
-- “Meet Microsoft Edge” video: Provides an overview of Microsoft Edge and its benefits at work
-- “Get started with Microsoft Edge” video: Provides step-by-step instructions on transferring data and using foundational features
-- Microsoft 365 Copilot Chat in Edge video: Introduces built-in AI chat with Copilot Chat, its benefits, access methods, and work-related use cases
-- Organization tip sheet: Offers tips for how to stay organized at work using Edge
-- Accessibility tip sheet: Shares how to elevate the browsing experience by improving readability and enhancing focus
-- AI tip sheet: Provides tips on how to get started with and use AI for work with Microsoft 365 Copilot Chat in Edge
-- Training guide: Provides training on key features
+- **“How to standardize on Microsoft Edge for Business” one-pager:** Provides the steps to set Edge for Business as an organization’s primary browser
+- **Customizable email template:** Announces Edge as the preferred browser with getting started instructions
+- **“Meet Microsoft Edge” video:** Provides an overview of Microsoft Edge and its benefits at work
+- **“Get started with Microsoft Edge” video:** Provides step-by-step instructions on transferring data and using foundational features
+- **Microsoft 365 Copilot Chat in Edge video:** Introduces built-in AI chat with Copilot Chat, its benefits, access methods, and work-related use cases
+- **Organization tip sheet:** Offers tips for how to stay organized at work using Edge
+- **Accessibility tip sheet:** Shares how to elevate the browsing experience by improving readability and enhancing focus
+- **AI tip sheet:** Provides tips on how to get started with and use AI for work with Microsoft 365 Copilot Chat in Edge
+- **Training guide:** Provides training on key features
+
 Download the kit [here](https://www.microsoft.com/download/details.aspx?id=102119).
 
 ### Internet Explorer (IE) Retirement Resources
