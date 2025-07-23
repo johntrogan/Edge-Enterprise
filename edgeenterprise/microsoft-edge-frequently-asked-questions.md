@@ -56,6 +56,10 @@ Yes. There are packages in the [Microsoft Update Catalog](https://www.catalog.up
 
 Yes. For more information, see [Configure Microsoft Edge using Initial Preferences settings for the first run.](./initial-preferences-support-on-microsoft-edge-browser.md)
 
+## How can I promote Microsoft Edge for Business to my users?
+
+Check out the Microsoft Edge Adoption Kit, with resources to standardize on Edge for Business, communicate with your users, and help your users optimize their work day. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
+
 ## See also
 
 - [Microsoft Edge documentation landing page](./index.yml)

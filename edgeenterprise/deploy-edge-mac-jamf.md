@@ -1,9 +1,9 @@
 ---
 title: "Automate Microsoft Edge for macOS deployment with Jamf"
-ms.author: kvice
+ms.author: dan-wesley
 author: dan-wesley
 manager: laurawi
-ms.date: 07/18/2024
+ms.date: 7/22/2025
 audience: ITPro
 ms.topic: install-set-up-deploy
 ms.service: microsoft-edge
@@ -84,6 +84,10 @@ Before you deploy Microsoft Edge, make sure you meet the following prerequisites
     > You can return to a deployment policy at any time to change settings.
 
 Congratulations! You've just finished configuring Jamf to deploy Microsoft Edge for macOS. When the trigger condition you defined is true, the package will get deployed to the computers you specified.
+
+## Promote adoption
+
+Accelerate your organization’s Edge for Business journey with the Microsoft Edge for Business Adoption Kit. This kit has resources to standardize on Edge for Business, communicate with your users, and help your users optimize their workday. Download the kit [here](https://aka.ms/EdgeforBusinessAdoptionKit)
 
 ## See also
 
