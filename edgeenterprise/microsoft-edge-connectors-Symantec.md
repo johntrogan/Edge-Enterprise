@@ -52,10 +52,15 @@ You can enable the Symantec DLP Connector using Group Policy:
    - **Paste**: `Administrative Templates > Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Upload**: `Administrative Templates > Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Print**: `Administrative Templates > Microsoft Edge > Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors`
-3. Configure the following fields in the policy:
-   - Set the `service_provider` to `brcm_edge_cas`.
-   - Set `enable` to `[{"tags":["dlp"],"url_list":["*"]}]` to allow all URLs to be scanned.
-   - Set the remaining fields as desired.
+3. Configure the following fields in the policy with the **recommended values** from Symantec:
+
+   | Setting              | Value                                                                 |
+   |----------------------|-----------------------------------------------------------------------|
+   | `block_until_verdict`| `1`                                                                   |
+   | `default_action`     | `allow`                                                               |
+   | `Enabled`            | `{"tags":["dlp"], "url_list":["*"]}`                                  |
+   | `minimum_data_size`  | *(Configure only for OnBulkDataEntryEnterpriseConnector policy)*      |
+   | `service_provider`   | `brcm_edge_cas`       
 
 ### Using Microsoft Intune
 You can also enable the Symantec DLP Connector using Microsoft Intune via Administrative Templates.
@@ -66,10 +71,15 @@ You can also enable the Symantec DLP Connector using Microsoft Intune via Admini
    - **Paste**: `Microsoft Edge > Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Upload**: `Microsoft Edge > Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors`
    - **Print**: `Microsoft Edge > Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors`
-4. Configure the following fields in the policy:
-   - Set the `service_provider` to `brcm_edge_cas`.
-   - Set `enable` to `[{"tags":["dlp"],"url_list":["*"]}]` to allow all URLs to be scanned.
-   - Set the remaining fields as desired.
+4. Configure the following fields in the policy with the **recommended values** from Symantec:
+
+   | Setting              | Value                                                                 |
+   |----------------------|-----------------------------------------------------------------------|
+   | `block_until_verdict`| `1`                                                                   |
+   | `default_action`     | `allow`                                                               |
+   | `Enabled`            | `{"tags":["dlp"], "url_list":["*"]}`                                  |
+   | `minimum_data_size`  | *(Configure only for OnBulkDataEntryEnterpriseConnector policy)*      |
+   | `service_provider`   | `brcm_edge_cas`           
 5. Assign the policy to the relevant device group and save.
 
 ## Symantec Configuration 
@@ -98,7 +108,8 @@ You can also enable the Symantec DLP Connector using Microsoft Intune via Admini
 
 3. **Save** your changes.
 
-4. For more information about configuring print monitoring, **see** Printer/Fax settings.
+4. For more information about configuring print monitoring, see [Adding and editing agent configurations](https://techdocs.broadcom.com/us/en/symantec-security-software/information-security/data-loss-prevention/25-1/Managing/Data-Identifiers/adding-and-editing-agent-configurations.html) and [Printer/Fax settings](https://techdocs.broadcom.com/us/en/symantec-security-software/information-security/data-loss-prevention/25-1/Managing/Endpoints/agent-configuration-for-printers-and-faxes.html).
+
 
 ### 3. **Enable** Monitoring using the Symantec Content Analysis Connector in the Advanced Agent Settings
 
@@ -122,4 +133,6 @@ You can also enable the Symantec DLP Connector using Microsoft Intune via Admini
 ### 5. **Ensure** that End-Users are Signed In to Microsoft Edge for Business
 
 1. **Ensure** that end-users **sign in** to Microsoft Edge for Business with a valid Microsoft Entra ID.
+
+
 
