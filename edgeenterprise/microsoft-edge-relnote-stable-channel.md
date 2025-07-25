@@ -32,6 +32,13 @@ Fixed various bugs, feature updates, and performance issues for Stable Channel.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-25-2025).
 
+### Feature updates
+
+- Edge contextual capabilities in Business Chat work tab.  Microsoft Copilot in Edge now supports page summarization and contextual queries to the Work tab for Microsoft 365 Copilot Business Chat. With this feature, users can ask Copilot contextual queries such as “summarize this page.” This feature also includes contextual prompt suggestions to help users ask relevant questions about open pages in Edge. Page summarization and contextual prompt suggestions is accessible for users when using Copilot through the Edge side pane. 
+ 
+
+  A Microsoft 365 Copilot license is required to use this feature.  Administrators can control the availability using the [EdgeEntraCopilotPageContext](/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext) policy.  
+
 
 ## Version 138.0.3351.95: July 16, 2025
 
