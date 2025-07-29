@@ -84,7 +84,7 @@ Fixed various bugs, and performance issues.
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
 
-### General Updates
+### General updates
 
 - [iOS & Android] Upgrade OneAuth SDK to version 6.3.0
 - [Android] Support MAM Tunnel in Android Custom Tabs
