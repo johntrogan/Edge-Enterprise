@@ -30,7 +30,27 @@ Archived versions of these release notes are available at [Archived release note
 
 ## Version 139.0.3405.55 (Android and iOS): July 25, 2025
 
-Fixed various bugs, and performance issues.
+Fixed various bugs and performance issues, general updates, new policies, and enhancements.
+
+### New Policy
+
+- [iOS & Android] Support new policy to disable the ability to edit or add favorites (To enable this feature, need to configure com.microsoft.intune.mam.managedbrowser.EditFavoritesEnabled=false)
+ 
+### Bug fixes
+
+- [iOS] Fix the issue about the web page is in disabled state when returning to the foreground after IdleTimeoutAction policy is configured
+- [iOS] Fix the issue about incorrectly prevent disallowed downloads to OneDrive under application protection policy
+- [iOS] Fix the issue about the address bar is not disabled when EdgeLockedViewModeEnabled policy is set
+- [Android] Fix the issue about the bottom bar couldn't be hidden completely under EdgeShowBottomBarInKioskMode policy
+- [Android] Fix the issue about not enforced with existing normal tabs when InPrivateModeAvailability policy is configured
+
+### New enhancements
+
+- [iOS] Improve the user experience of App Proxy
+- [iOS] Improve the user experience of web single sign-on
+- [iOS] Improve the user experience of authentication in B2B environment
+- [Android] Improve the user experience of the EdgeBlockSignInEnabled policy
+- [Android] Improve the user experience of the My Apps bookmark policy
 
 ## Version 139.0.3405.51 (Android and iOS): July 22, 2025
 
@@ -64,7 +84,7 @@ Fixed various bugs, and performance issues.
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
 
-### General Updates
+### General updates
 
 - [iOS & Android] Upgrade OneAuth SDK to version 6.3.0
 - [Android] Support MAM Tunnel in Android Custom Tabs
