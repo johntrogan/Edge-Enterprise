@@ -21,6 +21,10 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 139.0.3405.64: July 28, 2025
+
+Fixed various bugs, and performance issues.
+
 ## Version 139.0.3405.52: July 22, 2025
 
 Fixed various bugs, and performance issues.
@@ -94,7 +98,11 @@ Fixed various bugs, and performance issues.
 
 ## Version 138.0.3351.55: June 26, 2025
 
-Fixed various bugs, and performance issues.
+Fixed various bugs, feaure update and performance issues.
+
+### Feature updates
+
+- **Inline protections integrated with Microsoft Purview**. Microsoft Edge for Business is introducing integrated protections using Microsoft Purview. Without using browser extensions, [Admins in Purview can configure policies to collect and protect data that users share with unmanaged generative AI apps](https://learn.microsoft.com/purview/dlp-browser-dlp-learn), detecting for sensitive information inline and auditing or blocking the interaction accordingly.
 
 ## Version 138.0.3351.52: June 25, 2025
 
