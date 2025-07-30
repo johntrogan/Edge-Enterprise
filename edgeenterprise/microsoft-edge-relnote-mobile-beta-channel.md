@@ -32,6 +32,12 @@ Archived versions of these release notes are available at [Archived release note
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
 
+### General updates
+
+- [iOS] Upgrade Intune MAM SDK to version 20.6.1
+- [iOS] Upgrade MAM Tunnel SDK to version 1.4.0
+- [Android] Upgrade Intune MAM SDK to version 11.3.0 
+
 ### New Policy
 
 - [iOS & Android] Support new policy to disable the ability to edit or add favorites (To enable this feature, need to configure com.microsoft.intune.mam.managedbrowser.EditFavoritesEnabled=false)
