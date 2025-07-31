@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation IdleTimeoutActions"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/16/2025
+ms.date: 07/24/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -29,23 +29,23 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 When the timeout from the IdleTimeout policy is reached, the browser runs the actions configured in this policy.
 
-If you don't configure the IdleTimeout policy, this policy has no effect.
+If you do not configure the IdleTimeout policy, this policy has no effect.
 
-If you don't configure this policy or no actions are selected, the IdleTimeout policy has no effect.
+If you do not configure this policy or no actions are selected, the IdleTimeout policy has no effect.
 
 Supported actions are:
 
 'close_browsers': close all browser windows and PWAs for this profile.
 
-'reload_pages': reload all webpages. For some pages, the user might be prompted for confirmation first.
+'reload_pages': reload all webpages. For some pages, the user may be prompted for confirmation first.
 
-'sign_out': sign out of browser. (This action only applies to iOS.)
+'sign_out': sign out of browser. (This only applies to iOS.)
 
-'close_tabs': close all open tabs and create an NTP (New Tab Page). Supported in Android and iOS.
+'close_tabs': close all open tabs and create a NTP (New Tab Page). Supported in Android and iOS.
 
 'clear_browsing_history', 'clear_download_history', 'clear_cookies_and_other_site_data', 'clear_cached_images_and_files', 'clear_password_signing', 'clear_autofill', 'clear_site_settings': clear the corresponding browsing data.
 
-Setting 'clear_browsing_history', 'clear_password_signing', 'clear_autofill', and 'clear_site_settings' disables sync for the respective data types if sync isn't already disabled by setting either the SyncDisabled policy or BrowserSignin to disabled.
+Setting 'clear_browsing_history', 'clear_password_signing', 'clear_autofill', and 'clear_site_settings' will disable sync for the respective data types if sync is not already disabled by setting either the SyncDisabled policy or BrowserSignin to disabled.
 
 Policy options mapping:
 
@@ -59,7 +59,7 @@ Policy options mapping:
 
 * clear_cached_images_and_files (clear_cached_images_and_files) = Clear Cached Images and Files
 
-* clear_password_signin (clear_password_signin) = Clear Password sign in
+* clear_password_signin (clear_password_signin) = Clear Password Signin
 
 * clear_autofill (clear_autofill) = Clear Autofill
 
@@ -81,7 +81,7 @@ Use the preceding information when configuring this policy.
 - clear_download_history = Clear Download History
 - clear_cookies_and_other_site_data = Clear Cookies and Other Site Data
 - clear_cached_images_and_files = Clear Cached Images and Files
-- clear_password_signin = Clear Password sign in
+- clear_password_signin = Clear Password Signin
 - clear_autofill = Clear Autofill
 - clear_site_settings = Clear Site Settings
 - reload_pages = Reload Pages
@@ -90,11 +90,11 @@ Use the preceding information when configuring this policy.
 
 ## Supported features
 
-- Is this policy mandatory? Yes
-- Is this policy recommended? No
-- Does this policy support dynamic refresh? Yes
-- Is this policy applied per profile? Yes
-- Does this policy apply to profiles signed in with a Microsoft account? No
+- Can be mandatory: Yes
+- Can be recommended: No
+- Dynamic Policy Refresh: Yes
+- Per Profile: Yes
+- Applies to a profile that is signed in with a Microsoft account: No
 
 ## Data type
 
