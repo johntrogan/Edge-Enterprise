@@ -12,10 +12,9 @@ ms.collection: M365-modern-desktop
 description: "Release notes for Microsoft Edge Security Updates"
 ---
 
-# Release notes for Microsoft Edge Security Updates
+## July 31, 2025
 
-These release notes provide information about security fixes that are included in updates to 
-Microsoft Edge Stable channel.
+Microsoft has released the latest **Microsoft Edge Stable Channel (Version 138.0.3351.121)** which incorporates the latest Security Updates of the Chromium project. For more information, see the [Security Update Guide](https://msrc.microsoft.com/update-guide). 
 
 ## July 29, 2025
 
