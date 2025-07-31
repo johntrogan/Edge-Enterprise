@@ -29,6 +29,8 @@ These release notes provide information about new features and nonsecurity updat
 
 ## Version 138.0.3351.121: July 31, 2025
 
+Fixed various bugs and performance issues for Stable Channel
+
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-31-2025).
 
 ## Version 138.0.3351.109: July 25, 2025
