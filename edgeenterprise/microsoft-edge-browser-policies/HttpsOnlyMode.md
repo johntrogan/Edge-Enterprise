@@ -27,22 +27,22 @@ description: "Windows and Mac documentation for supported Microsoft Edge Browser
 
 ## Description
 
-This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.
+This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigating to HTTPS.
 
-If this setting is not set or is set to allowed, users will be able to enable HTTPS-Only Mode.
-If this setting is set to disallowed, users will not be able to enable HTTPS-Only Mode.
-If this setting is set to force_enabled, HTTPS-Only Mode will be enabled in Strict mode and users will not be able to disable it.
-If this setting is set to force_balanced_enabled, HTTPS-Only Mode will be enabled in Balanced mode and users will not be able to disable it.
+If this setting isn't set or is set to allowed, users are able to enable HTTPS-Only Mode.
+If this setting is set to `disallowed`, users won't be able to enable HTTPS-Only Mode.
+If this setting is set to force_enabled, HTTPS-Only Mode is enabled in Strict mode and users won't be able to disable it.
+If this setting is set to force_balanced_enabled, HTTPS-Only Mode is enabled in Balanced mode and users won't be able to disable it.
 
-If you set this policy to a value that is not supported by the version of Microsoft Edge that receives the policy, Microsoft Edge will default to the allowed setting.
+If you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the allowed setting.
 
 The separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.
 
 Policy options mapping:
 
-* allowed (allowed) = Do not restrict users' HTTPS-Only Mode setting
+* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting
 
-* disallowed (disallowed) = Do not allow users to enable any HTTPS-Only Mode
+* disallowed (disallowed) = Don't allow users to enable any HTTPS-Only Mode
 
 * force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode
 
@@ -53,8 +53,8 @@ Use the preceding information when configuring this policy.
 ## Policy options mapping:
 > Use this information when configuring this policy.
 
-- allowed = Do not restrict users' HTTPS-Only Mode setting
-- disallowed = Do not allow users to enable any HTTPS-Only Mode
+- allowed = Don't restrict users' HTTPS-Only Mode setting
+- disallowed = Don't allow users to enable any HTTPS-Only Mode
 - force_enabled = Force enable HTTPS-Only Mode in Strict mode
 - force_balanced_enabled = Force enable HTTPS-Only Mode in Balanced Mode
 

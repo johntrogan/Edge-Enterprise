@@ -33,7 +33,7 @@ This policy determines which updater is used to update Microsoft Edge.
 
 If you enable this policy, Microsoft Edge will only use Microsoft AutoUpdate for updates.
 
-If you disable or do not configure this policy, Microsoft Edge will be updated using EdgeUpdater.
+If you disable or don't configure this policy, Microsoft Edge is updated using EdgeUpdater.
 
 Note: This policy is no longer applicable starting with Microsoft Edge version 140.
 
