@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation HttpsOnlyMode"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/24/2025
+ms.date: 07/31/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
