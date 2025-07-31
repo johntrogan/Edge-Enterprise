@@ -3,7 +3,7 @@ title: "Microsoft Edge Browser Policy Documentation"
 ms.author: jalam
 author: vmliramichael
 manager: nuyunzhang
-ms.date: 07/16/2025
+ms.date: 07/24/2025
 audience: ITPro
 ms.topic: reference
 ms.service: microsoft-edge
@@ -36,6 +36,7 @@ The following table lists the new policies for Microsoft Edge version 140.
 |Policy Name|Caption|
 |-|-|
 |<a id="additionaldnsquerytypesenabled" href="microsoft-edge-browser-policies/AdditionalDnsQueryTypesEnabled.md" target="_blank">AdditionalDnsQueryTypesEnabled</a>|Allow DNS queries for more DNS record types|
+|<a id="httpsonlymode" href="microsoft-edge-browser-policies/HttpsOnlyMode.md" target="_blank">HttpsOnlyMode</a>|Allow HTTPS-Only Mode to be enabled|
 
 The following table lists the new policies for Microsoft Edge version 139.
 
@@ -78,6 +79,7 @@ The following table lists the obsoleted policies for Microsoft Edge version 140.
 |Policy Name|Caption|
 |-|-|
 |<a id="automatichttpsdefault" href="microsoft-edge-browser-policies/AutomaticHttpsDefault.md" target="_blank">AutomaticHttpsDefault</a>|Configure Automatic HTTPS (obsolete)|
+|<a id="mauenabled" href="microsoft-edge-browser-policies/MAUEnabled.md" target="_blank">MAUEnabled</a>|Always use Microsoft AutoUpdate as the updater for Microsoft Edge (obsolete)|
 
 The following table lists the obsoleted policies for Microsoft Edge version 139.
 
@@ -770,6 +772,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="hide-the-one-time-redirection-dialog-and-the-banner-on-microsoft-edge"></a><a id="hideinternetexplorerredirectuxforincompatiblesitesenabled" href="microsoft-edge-browser-policies/HideInternetExplorerRedirectUXForIncompatibleSitesEnabled.md" target="_blank">HideInternetExplorerRedirectUXForIncompatibleSitesEnabled</a>|Hide the one-time redirection dialog and the banner on Microsoft Edge|
 |<a id="hide-restore-pages-dialog-after-browser-crash"></a><a id="hiderestoredialogenabled" href="microsoft-edge-browser-policies/HideRestoreDialogEnabled.md" target="_blank">HideRestoreDialogEnabled</a>|Hide restore pages dialog after browser crash|
 |<a id="http-allowlist"></a><a id="httpallowlist" href="microsoft-edge-browser-policies/HttpAllowlist.md" target="_blank">HttpAllowlist</a>|HTTP Allowlist|
+|<a id="allow-https-only-mode-to-be-enabled"></a><a id="httpsonlymode" href="microsoft-edge-browser-policies/HttpsOnlyMode.md" target="_blank">HttpsOnlyMode</a>|Allow HTTPS-Only Mode to be enabled|
 |<a id="enable-automatic-https-upgrades"></a><a id="httpsupgradesenabled" href="microsoft-edge-browser-policies/HttpsUpgradesEnabled.md" target="_blank">HttpsUpgradesEnabled</a>|Enable automatic HTTPS upgrades|
 |<a id="show-hubs-sidebar"></a><a id="hubssidebarenabled" href="microsoft-edge-browser-policies/HubsSidebarEnabled.md" target="_blank">HubsSidebarEnabled</a>|Show Hubs Sidebar|
 |<a id="allow-importing-of-autofill-form-data"></a><a id="importautofillformdata" href="microsoft-edge-browser-policies/ImportAutofillFormData.md" target="_blank">ImportAutofillFormData</a>|Allow importing of autofill form data|
@@ -823,7 +826,7 @@ These tables list all of the browser-related group policies available in this re
 |<a id="live-captions-allowed"></a><a id="livecaptionsallowed" href="microsoft-edge-browser-policies/LiveCaptionsAllowed.md" target="_blank">LiveCaptionsAllowed</a>|Live captions allowed|
 |<a id="enable-windows-to-search-local-microsoft-edge-browsing-data"></a><a id="localbrowserdatashareenabled" href="microsoft-edge-browser-policies/LocalBrowserDataShareEnabled.md" target="_blank">LocalBrowserDataShareEnabled</a>|Enable Windows to search local Microsoft Edge browsing data|
 |<a id="allow-suggestions-from-local-providers"></a><a id="localprovidersenabled" href="microsoft-edge-browser-policies/LocalProvidersEnabled.md" target="_blank">LocalProvidersEnabled</a>|Allow suggestions from local providers|
-|<a id="always-use-microsoft-autoupdate-as-the-updater-for-microsoft-edge"></a><a id="mauenabled" href="microsoft-edge-browser-policies/MAUEnabled.md" target="_blank">MAUEnabled</a>|Always use Microsoft AutoUpdate as the updater for Microsoft Edge|
+|<a id="always-use-microsoft-autoupdate-as-the-updater-for-microsoft-edge-obsolete"></a><a id="mauenabled" href="microsoft-edge-browser-policies/MAUEnabled.md" target="_blank">MAUEnabled</a>|Always use Microsoft AutoUpdate as the updater for Microsoft Edge (obsolete)|
 |<a id="allow-single-sign-on-for-microsoft-personal-sites-using-this-profile"></a><a id="msawebsitessousingthisprofileallowed" href="microsoft-edge-browser-policies/MSAWebSiteSSOUsingThisProfileAllowed.md" target="_blank">MSAWebSiteSSOUsingThisProfileAllowed</a>|Allow single sign-on for Microsoft personal sites using this profile|
 |<a id="sets-managed-configuration-values-for-websites-to-specific-origins"></a><a id="managedconfigurationperorigin" href="microsoft-edge-browser-policies/ManagedConfigurationPerOrigin.md" target="_blank">ManagedConfigurationPerOrigin</a>|Sets managed configuration values for websites to specific origins|
 |<a id="configure-favorites"></a><a id="managedfavorites" href="microsoft-edge-browser-policies/ManagedFavorites.md" target="_blank">ManagedFavorites</a>|Configure favorites|
