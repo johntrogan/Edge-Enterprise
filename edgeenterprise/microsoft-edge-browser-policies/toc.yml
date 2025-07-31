@@ -940,6 +940,8 @@
     href: HideRestoreDialogEnabled.md
   - name: HttpAllowlist
     href: HttpAllowlist.md
+  - name: HttpsOnlyMode
+    href: HttpsOnlyMode.md
   - name: HttpsUpgradesEnabled
     href: HttpsUpgradesEnabled.md
   - name: HubsSidebarEnabled
