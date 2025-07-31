@@ -28,6 +28,10 @@ Archived versions of these release notes are available at [Archived release note
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+## Version 139.0.3405.69 (Android and iOS): July 31, 2025
+
+Fixed various bugs, and performance issues.
+
 ## Version 139.0.3405.55 (Android and iOS): July 25, 2025
 
 Fixed various bugs and performance issues, general updates, new policies, and enhancements.
