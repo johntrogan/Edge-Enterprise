@@ -26,6 +26,13 @@ These release notes provide information about new features and nonsecurity updat
 >
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
+
+## Version 138.0.3351.121: July 31, 2025
+
+Fixed various bugs and performance issues for Stable Channel
+
+Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#july-31-2025).
+
 ## Version 138.0.3351.109: July 25, 2025
 
 Fixed various bugs, feature updates, and performance issues for Stable Channel.
@@ -91,7 +98,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
  
 ### Feature updates
 
-- **Inline protections integrated with Microsoft Purview**. Microsoft Edge for Business is introducing integrated protections using Microsoft Purview. Without using browser extensions, [Admins in Purview can configure policies to collect and protect data that users share with unmanaged generative AI apps](https://learn.microsoft.com/purview/dlp-browser-dlp-learn), detecting for sensitive information inline and auditing or blocking the interaction accordingly.
+- **Inline protections integrated with Microsoft Purview**. Microsoft Edge for Business is introducing integrated protections using Microsoft Purview. Without using browser extensions, [Admins in Purview can configure policies to collect and protect data that users share with unmanaged generative AI apps](/purview/dlp-browser-dlp-learn), detecting for sensitive information inline and auditing or blocking the interaction accordingly.
 
 - **Use Primary work profile as default profile to open external links**.  Microsoft Edge currently opens external links using the “Last Used” profile by default. While for enterprise users, the Primary Work Profile (signed in with a Microsoft Entra ID for enrolling the device) is normally the best profile for opening external links. With this feature, for Windows, Edge checks if the Primary Work Profile exists and makes it the default profile for opening external links if available. For Mac and Linux, if only one work profile signed in with a Microsoft Entra ID account is found, it’s treated as the Primary Work Profile. Admins can control availability to this feature using the  [EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled](/deployedge/microsoft-edge-browser-policies/edgeopenexternallinkswithprimaryworkprofileenabled) policy. **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
 
