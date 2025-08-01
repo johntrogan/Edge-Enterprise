@@ -25,6 +25,12 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 
 Fixed various bugs, and performance issues.
 
+### Fixes
+
+- **Reset Microsoft Edge enterprise sync**.  For users having problems syncing browsing data across other signed-in devices, they can reset sync data from the Microsoft servers via Edge Settings edge://settings/profiles/sync/reset. This option should only be used if the sync data is available on one of the user's devices or if they want to delete all sync data from the servers.  **Note**: In Microsoft Edge 139, reset sync is enabled for users encountering a "No permissions" MIP error and in Microsoft Edge 140, reset sync is enabled for users encountering a "Service disabled" MIP error.  
+
+- **Update to Microsoft AutoUpdate policy**. The [MAUEnabled](/deployedge/microsoft-edge-browser-policies/mauenabled) policy allowed admins to continue using Microsoft AutoUpdate on macOS. Since Microsoft Edge now uses EdgeUpdate, the [MAUEnabled](/deployedge/microsoft-edge-browser-policies/mauenabled) policy is planned to be obsoleted in Microsoft Edge version 140. 
+
 ## Version 139.0.3405.64: July 28, 2025
 
 Fixed various bugs, and performance issues.
