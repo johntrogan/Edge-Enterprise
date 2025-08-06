@@ -60,7 +60,7 @@ Now that your Entra ID users are integrated with HYPR, you need to configure Edg
 
 <!--![screenshot4 hypr edge API.](media/microsoft-edge-connectors-hypr/4.png) -->
 
-You can find more details about those steps in Microsoft’s [Create a service principal for an application guide](https://learn.microsoft.com/graph/tutorial-applications-basics?tabs=http#create-a-service-principal-for-an-application). 
+You can find more details about those steps in Microsoft’s [Create a service principal for an application guide](/graph/tutorial-applications-basics?tabs=http#create-a-service-principal-for-an-application). 
 
 4. **Select Application Permissions** and add the “DeviceTrust.Read.All” permission. 
 
