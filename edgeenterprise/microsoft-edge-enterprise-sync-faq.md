@@ -79,7 +79,7 @@ To enforce this, configure a Conditional Access policy targeting the Microsoft E
 **Note:** Blocking Edge sign-in and sync using MAM isn't currently supported on iOS.
 
 For more details, see:
-[Data protection for Windows MAM | Microsoft Learn](https://learn.microsoft.com/intune/intune-service/apps/protect-mam-windows#conditional-access-compliance-1)
+[Data protection for Windows MAM | Microsoft Learn](/intune/intune-service/apps/protect-mam-windows#conditional-access-compliance-1)
 
 ## See also
 
