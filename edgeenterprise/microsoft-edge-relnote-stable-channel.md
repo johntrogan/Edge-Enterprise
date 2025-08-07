@@ -28,7 +28,7 @@ These release notes provide information about new features and nonsecurity updat
 
 ## Version 138.0.3351.132: August 7, 2025
 
-Fixed various bugs, feature updates, and performance issues for Extended Stable Channel.
+Fixed various bugs, and performance issues for Extended Stable Channel.
 
 ## Version 138.0.3351.121: July 31, 2025
 
