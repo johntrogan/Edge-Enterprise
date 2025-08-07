@@ -1,9 +1,9 @@
 ---
 title: "Microsoft Edge for Business Recommended Configuration Settings"
 ms.author: mollymcnutt
-author: dan-wesley
+author: vmliramichael
 manager: archandr
-ms.date: 04/04/2024
+ms.date: 08/07/2024
 audience: ITPro
 ms.topic: best-practice
 ms.service: microsoft-edge
@@ -66,8 +66,7 @@ Edge provides a broad spectrum of capabilities to enable secure network access t
 
 1. [Microsoft Entra's Conditional Access](/entra/identity/conditional-access/overview) systems work seamlessly in Edge to provide productive protection of company assets and prevent unauthorized access.  
 2. Edge uses [Microsoft Intune Mobile Application Management](/mem/intune/fundamentals/deployment-guide-enrollment-mamwe) and Microsoft Defender with Cloud Apps (coming soon) to enforce compliant device usage on unmanaged devices to provide optimal security.  
-3. Edge integrates with [Azure Application Proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) to secure remote access to on-premises applications.
-4. Edge uses Zero Trust Network Access (ZTNA) infrastructure, powered by [Microsoft Entra](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-private-access) to help enforce compliance network access [in preview].  
+3. Edge integrates with [Azure Application Proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) to secure remote access to on-premises applications. 
 
 ## Safely introducing AI to the organization
 
