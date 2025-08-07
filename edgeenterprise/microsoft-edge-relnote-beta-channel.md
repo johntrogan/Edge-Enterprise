@@ -21,7 +21,7 @@ Get the latest Microsoft Edge for Business updates for your business, school, or
 > [!NOTE]
 > Microsoft Edge Web Platform constantly evolves to improve user experience, security, and privacy. To learn more, see [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes).
 
-## Version 139.0.3405.85: August 7, 2025
+## Version 139.0.3405.86: August 7, 2025
 
 Fixed various bugs, and performance issues.
 
