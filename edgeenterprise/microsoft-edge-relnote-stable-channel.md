@@ -28,7 +28,7 @@ These release notes provide information about new features and nonsecurity updat
 
 ## Version 139.0.3405.86: August 7, 2025
 
-Fixed various bugs and performance issues for Stable Channel
+Fixed various bugs and performance issues, feature updates, policy updates, and web platform release notes.
 
 Stable channel security updates are listed [here](/deployedge/microsoft-edge-relnotes-security#August-7-2025).
 
@@ -48,7 +48,7 @@ Stable channel security updates are listed [here](/deployedge/microsoft-edge-rel
 
 - **Changes to Wallet in Microsoft Edge**. Wallet is being phased out to support a streamlined experience within Microsoft Edge. This affects the Wallet feature in Settings and the Mini Wallet found by clicking the profile icon in the top banner.  Users are directed to the new Passwords, Payment, and Personal Information management experience in Settings. Also, a new Password management experience is available in Settings. For more information, see Changes to Wallet in [Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/changes-to-wallet-in-microsoft-edge-bc52418a-4d35-444e-845c-e09df6033b81).  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
-- **Introducing a new policy that can enable/disable Microsoft 365 Copilot Chat in Edge for Business from showing in the toolbar**. Edge for Business now has a dedicated policy, [Microsoft365CopilotChatIconEnabled](/deployedge/microsoft-edge-browser-policies/microsoft365copilotchaticonenabled), to enable and disable **Copilot in Edge from showing in the Edge toolbar. When both this policy and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy isn't configured and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) is disabled, Copilot will remain hidden. In a future release, this policy is the sole control for managing Copilot's visibility in the toolbar.
+- **Introducing a new policy that can enable/disable Microsoft 365 Copilot Chat in Edge for Business from showing in the toolbar**. Edge for Business now has a dedicated policy, [Microsoft365CopilotChatIconEnabled](/deployedge/microsoft-edge-browser-policies/microsoft365copilotchaticonenabled), to enable and disable Copilot in Edge from showing in the Edge toolbar. When both this policy and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy isn't configured and [HubsSidebarEnabled](/deployedge/microsoft-edge-browser-policies/hubssidebarenabled) is disabled, Copilot will remain hidden. In a future release, this policy is the sole control for managing Copilot's visibility in the toolbar.
  
 - **Real-time notifications for compromised passwords**. Microsoft Edge is integrating an in-context password breach notification system. This feature proactively informs users if their saved login credentials have been compromised in known data breaches, enabling them to take immediate action to secure their accounts.  Admins can control availability to this feature using the [PasswordMonitorAllowed](/deployedge/microsoft-edge-browser-policies/passwordmonitorallowed) policy.  **Note:** This is a controlled feature rollout. If you don't see this feature, check back as we continue our rollout.
  
